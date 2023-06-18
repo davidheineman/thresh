@@ -1,0 +1,117 @@
+
+  
+  .quality-selection {
+    display         : none;
+    /* position        : absolute; */
+    position: relative;
+    background-color: rgb(248, 248, 248);;
+    padding         : 10px;
+    /* text-align   : center; */
+    /* width           : 640px; */
+    /* max-width    : 400px; */
+    margin-left: auto;
+    margin-right: auto;
+    z-index         : 100;
+  }
+
+  .active {
+    display: block;
+  }
+  
+  /* #dropdown-button-container {
+    text-align: center;
+  } */
+  /*
+  #explanation_div {
+    padding-top: 20px;
+  } */
+  
+  .single_part {
+    border-top: 1px solid #d6d6d6;
+  }
+  
+  .single_part_error_qual {
+    border-top: 3px solid #d6d6d6;
+  }
+  
+  #close-icon {
+    display      : inline-block;
+    cursor       : pointer;
+    border-radius: 60px;
+    /* box-shadow: 0px 0px 2px #888; */
+    padding      : 0.25em 0.3em;
+  }
+  
+  #close-icon:hover {
+    background-color: #C0C0C0;
+  }
+  
+
+  
+  .alignment {
+    vertical-align: top;
+    display       : inline-block;
+  }
+  
+  .quality {
+    font-size  : 24px;
+    font-weight: 300;
+    line-height: 32px;
+    margin     : 0px;
+    display    : inline-block
+  }
+  
+  /*
+  .situation-display {
+      padding-left: 10px;
+  } */
+  
+  .disable {
+    opacity       : .3;
+    cursor        : default;
+    outline       : none;
+    pointer-events: none;
+  }
+  
+  .selection_a {
+    /* color: #FFFFFF; */
+    background     : #FFD700;
+    padding        : 5px;
+    line-height    : 1.5;
+    text-decoration: none;
+  }
+  
+  .selection_a_antecedent {
+    background     : #FBF1A9;
+    padding        : 5px;
+    line-height    : 1.8;
+    text-decoration: none;
+  }
+  
+  
+  #selection_text {
+    text-align   : center;
+    margin-top   : 8px;
+    margin-bottom: 5px;
+  }
+  
+  #selection_antecedent {
+    margin-bottom: 0;
+  }
+
+  .tracked-light {
+    letter-spacing: .05em;
+  }
+
+.confirm-button {
+  background-color: #3e6ae1;
+  color: #FFFFFF;
+}
+
+.cancel-button {
+  background-color: white;
+}
+
+.span-selection-div {
+  display: none;
+}

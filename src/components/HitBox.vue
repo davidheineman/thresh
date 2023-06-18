@@ -1,0 +1,240 @@
+<script setup>
+  import Sent from "./Sent.vue";
+  import _ from 'lodash';
+  import { handle_file_download, handle_file_upload } from "../assets/js/file-util.js";
+  import { CONFIG } from "../assets/js/constants.js";
+</script>
+
+<script>
+export default {
+    props: [
+        'hits_data',
+        'current_hit',
+        'total_hits',
+        'edits_dict',
+        'set_hit',
+        'selected_span_in_simplified',
+        'selected_span_in_simplified_indexs',
+        'selected_span_in_simplified_category',
+        'selected_span_in_original',
+        'selected_span_in_original_indexs',
+        'selected_span_in_original_category',
+        'selected_edits_html',
+        'selected_edits',
+        'set_selected_edits',
+        'selected_split',
+        'selected_split_id',
+        'set_span_text',
+        'set_span_indices',
+        'set_edit_html',
+        'set_span_category',
+        'refresh_interface_edit',
+        'set_hits_data',
+        'lines',
+        'set_lines'
+    ],
+    data() {
+        return {}
+    },
+    watch: {
+        current_hit() {
+            this.setup_hit_box();
+        },
+        hits_data() {
+            this.setup_hit_box();
+        },
+    },
+    methods: {
+        setup_hit_box() {
+            // this.process_original_html();
+            // this.process_simplified_html();
+            // this.process_edits_html();
+            $(`.circle`).removeClass('circle-active');
+            $(`#circle-${this.current_hit}`).addClass('circle-active');
+            if ("bookmark" in this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1]["bookmark"]) {
+                $(`.bookmark`).addClass('bookmark-active');
+            } else {
+                $(`.bookmark`).removeClass('bookmark-active');
+            }
+            if ("comment" in this.hits_data[this.current_hit - 1]) {
+                $(`#comment_area`).val(this.hits_data[this.current_hit - 1]["comment"]);
+            } else {
+                $(`#comment_area`).val('');
+            }
+        },
+        go_to_hit(hit_num) {
+            if (hit_num > this.total_hits) {
+                this.set_hit(this.total_hits);
+            } else if (hit_num < 1) {
+                this.set_hit(1);
+            } else {
+                this.set_hit(hit_num);
+            }
+            this.setup_hit_box();
+        },
+        go_to_hit_circle(hit_num) {
+            if (hit_num > this.total_hits) {
+                this.set_hit(this.total_hits);
+            } else if (hit_num < 1) {
+                this.set_hit(1);
+            } else {
+                this.set_hit(hit_num);
+            }
+            this.setup_hit_box();
+        },
+        bookmark_hit() {
+            let new_hits_data = _.cloneDeep(this.hits_data);
+            if ("bookmark" in this.hits_data[this.current_hit - 1]) {
+                new_hits_data[this.current_hit - 1].bookmark = !this.hits_data[this.current_hit - 1].bookmark
+                this.set_hits_data(new_hits_data)
+            } else {
+                new_hits_data[this.current_hit - 1].bookmark = true
+                this.set_hits_data(new_hits_data)
+            }
+            if ($(".bookmark").hasClass("bookmark-active")) {
+                $(".bookmark").removeClass("bookmark-active");
+                $(`#circle-${this.current_hit}`).removeClass('circle-bookmark');
+            } else {
+                $(".bookmark").addClass("bookmark-active")
+                $(`#circle-${this.current_hit}`).addClass('circle-bookmark');
+            }
+        },
+        restart_hit() {
+            let new_hits_data = _.cloneDeep(this.hits_data);
+            new_hits_data[this.current_hit - 1].edits = []
+
+            // TODO: Adds a selectable edit for split sentences
+            // let simplified_text = new_hits_data[this.current_hit - 1].simplified;
+            // let split_signs = [...simplified_text.matchAll(/\|\|/gi)].map(a => a.index);
+            // for (let i = 0; i < split_signs.length; i++) {
+            //     split_sign = split_signs[i];
+            //     new_hits_data[this.current_hit - 1].simplified_spans.push([2, split_sign, split_sign + 2, i]);
+            // }
+
+            this.set_hits_data(new_hits_data)
+            this.refresh_interface_edit();
+            this.setup_hit_box();
+        },
+        remove_selected(category, start, end) {
+            if (this.span_type == 'original') {
+                let txt = this.hits_data[this.current_hit - 1].original
+                // remove [start,end] from selected_span_in_original_indexs
+
+                let new_span_indices = this.selected_span_in_original_indexs
+                for (let index in new_span_indices) {
+                    let span = new_span_indices[index]
+                    if (span[0] == start && span[1] == end) {
+                        new_span_indices.splice(index, 1)
+                        break
+                    }
+                }
+                this.set_span_indices(new_span_indices, 'original');
+
+                // this.selected_span_in_original_indexs.push([start, end]);
+                let new_span_text = "";
+                // iterate through this.selected_span_in_original_indexs
+                for (let i = 0; i < new_span_indices.length; i++) {
+                    let [start, end] = new_span_indices[i];
+                    // let selected_span = new_span_text.substring(start, end);
+                    new_span_text += `<span class="bg-substitution-light">\xa0`;
+                    new_span_text += `<span @click="remove_selected('${category}',${start},${end})" class="hover-white black br-pill mr1 pointer">✘</span>`
+                    new_span_text += txt.substring(start, end) + '\xa0';
+                    new_span_text += `</span>`;
+                    new_span_text += "&nbsp&nbsp";
+                }
+                this.set_span_text(new_span_text, 'original');
+                // this.process_original_html_with_selected_span(category);
+            } else if (this.span_type == 'simplified')  {
+                let txt = this.hits_data[this.current_hit - 1].simplified
+                // remove [start,end] from selected_span_in_simplified_indexs
+
+                let new_span_indices = this.selected_span_in_simplified_indexs
+                for (let index in new_span_indices) {
+                    let span = new_span_indices[index]
+                    if (span[0] == start && span[1] == end) {
+                        new_span_indices.splice(index, 1)
+                        break
+                    }
+                }
+                this.set_span_indices(new_span_indices, 'simplified')
+
+                // this.selected_span_in_simplified_indexs.push([start, end]);
+                let new_span_text = "";
+                // iterate through this.selected_span_in_simplified_indexs
+                for (let i = 0; i < new_span_indices.length; i++) {
+                    let [start, end] = new_span_indices[i];
+                    let selected_span = new_span_text.substring(start, end);
+                    new_span_text += `<span class="bg-substitution-light">\xa0`;
+                    new_span_text += `<span @click="remove_selected('${category}',${start},${end})" class="hover-white black br-pill mr1 pointer">✘</span>`
+                    new_span_text += txt.substring(start, end) + '\xa0';
+                    new_span_text += `</span>`;
+                    new_span_text += "&nbsp&nbsp";
+                }
+                this.set_span_text(new_span_text, 'simplified');
+                // this.process_simplified_html_with_selected_span(category);
+            }
+        },
+        file_download() {
+            handle_file_download(this.hits_data)
+        },
+        async file_upload(e) {
+            let new_hits_data = await handle_file_upload(e);
+            this.set_hits_data(new_hits_data);
+            this.set_hit(1);
+            this.setup_hit_box();
+        }
+    }
+}
+</script>
+
+<template>
+    <section id="hit">
+        <div class="cf mt1">
+            <div class="fl mb3 tc f3 w-20 mt1 hit-selector">
+                <button @click="go_to_hit(current_hit - 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&lt;&nbsp;</button>
+                Hit <span>{{ current_hit }}</span> / <span>{{ total_hits }}&nbsp;</span>
+                <button @click="go_to_hit(current_hit + 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&gt;&nbsp;</button>
+            </div>
+            <div class="fr mt1 mr1">
+                <input type="button" id="download-btn" @click="file_download"/>
+                <label class="file-upload file-download br-100 w2-5 h2-5 pointer" for="download-btn"><i class="fa fa-arrow-down"></i></label>
+            </div>
+
+            <div class="fr mt1 mr2 ml2">
+                <input type="file" id="upload-btn" @change="file_upload"/>
+                <label class="file-upload br-100 w2-5 h2-5 pointer" for="upload-btn"><i class="fa fa-arrow-up"></i></label>
+            </div>
+
+            <div class="fr mr3">
+                <div>
+                    <span v-for="n in Math.floor(total_hits / 2)" v-bind:key="'circle-' + n" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
+                </div>
+                <div class="mt2">
+                    <span v-for="n in Math.ceil(total_hits / 2)" v-bind:key="'circle-' + (n + Math.floor(total_hits / 2))" @click="go_to_hit_circle(n + Math.floor(total_hits / 2), $e)" class="circle pointer"><span class="tooltiptext">{{n + Math.floor(total_hits / 2)}}</span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="ba b--black-80 br2 pa2">
+                <div class="cf">
+                    <p class="fl f3 mt1 mb1 orig-sentence-header">
+                        <span class="f5">{{ CONFIG.input_label }}:</span>
+                    </p>
+                    <div class="fr">
+                        <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
+                        <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1"></i>
+                    </div>
+                </div>
+                
+                <Sent sent_type="original" v-bind="$props" :remove_selected="remove_selected" />
+
+                <p class="f3 mb1">
+                    <span class="f5">{{ CONFIG.output_label }}:</span>
+                </p>
+
+                <Sent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" />
+
+            </div>
+        </div>
+    </section>
+</template>

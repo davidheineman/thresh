@@ -1,0 +1,93 @@
+# likert-3 =
+# - name: minor
+#   label: "1 - minor"
+# - name: somewhat
+#   label: "2 - somewhat"
+# - name: major
+#   label: "3 - a lot"
+
+# binary = 
+# - name: yes
+#   label: "Yes"
+# - name: no
+#   label: "No"
+instructions: "This is a demo interface to show some custom features! This instruction text is customizable."
+input_label: "Input Sentence Label"
+output_label: "Output Sentence Label"
+edits:
+  - name: type_1
+    label: "Edit Type 1"
+    type: primitive
+    color: red
+    icon: fa-check
+    enable_input: true
+    annotation:
+      - name: overall_type
+        question: "Here's an example question."
+        options:
+          - name: answer_name_1
+            label: "Answer 1"
+            question: "Likert scale!"
+            options: likert-3
+          - name: answer_name_none
+            label: "No scale"
+          - name: answer_name_3
+            label: "Answer 3"
+            question: "Likert scale!"
+            options: likert-3
+      - name: further_question
+        question: "Here's a further binary question."
+        options: binary
+      - name: grammar_error
+        question: "How about a grammar error?"
+        options: binary
+  - name: insertion
+    label: "Edit Type 2"
+    type: primitive
+    color: green
+    icon: fa-xmark
+    enable_ouptut: true
+    annotation:
+      - name: insertion_type
+        question: "Select the type of this insertion edit."
+        options:
+          - name: elaboration
+            label: "Elaboration"
+            question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+            options: likert-3
+          - name: trivial_insertion
+            label: "Trivial Insertion"
+            question: "Does it help you to read and understand the sentence?"
+            options:
+              - name: yes
+                label: "Yes"
+                question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+                options: likert-3
+              - name: no
+                label: "No"
+          - name: repetition
+            label: "Repetition"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: contradiction
+            label: "Contradiction"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: facutal_error
+            label: "Factual Error"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: irrelevant
+            label: "Irrelevant"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+      - name: grammar_error
+        question: "Does this insertion edit introduce any fluency / grammar error?"
+        options: binary
+  - name: substitution
+    label: "Edit Type 3"
+    type: primitive
+    color: blue
+    icon: fa-bolt
+    enable_input: true
+    enable_output: true

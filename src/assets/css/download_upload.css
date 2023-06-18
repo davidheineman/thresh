@@ -1,0 +1,42 @@
+.file-upload {
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to bottom, #3e6ae1 50%, #FFFFFF 50%);
+    background-size: 100% 200%;
+    transition: all 0.6s;
+    color: #FFFFFF;
+    /* font-size: 100px; */
+  }
+
+  #download-btn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -9999px;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+  }
+
+  #upload-btn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -9999px;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+  }
+  
+  .file-download:hover {
+    background-position: 0 -100% !important;
+    color: #3e6ae1;
+  }
+    
+    .file-upload:hover {
+    background-position: 0 100%;
+    color: #3e6ae1;
+    }
