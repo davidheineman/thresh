@@ -1,6 +1,5 @@
 <script setup>
   import _ from 'lodash';
-  import { CONFIG } from "../assets/js/constants.js";
 </script>
 
 <script>

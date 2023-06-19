@@ -1,6 +1,11 @@
-<script setup>
-  import { CONFIG } from "../assets/js/constants.js";
+<script>
+export default {
+  props: [
+    'config'
+  ],
+}
 </script>
+
 
 <template>
     <section id="helper_list" class="w-15">
@@ -9,6 +14,6 @@
         <p class="mv2">If you have any question, please don't hesitate to ask us over <b>slack</b>.</p>
         <p class="mt2 mb0">Have fun!!!</p> -->
 
-        <p class="mt0 mb2">{{ CONFIG.instructions }}</p>
+        <p class="mt0 mb2">{{ this.config.config.instructions }}</p>
     </section>
 </template>

@@ -2,7 +2,7 @@
 import VRuntimeTemplate from "vue3-runtime-template";
 import _ from 'lodash';
 import { LeaderLine } from '../assets/js/leader-line.min.js';
-import { EMPTY_ANNOTATION, EMPTY_CONNECTED_TYPES, EMPTY_CONSTITUENT_TYPES, CONFIG } from "../assets/js/constants.js";
+import { EMPTY_ANNOTATION, EMPTY_CONNECTED_TYPES, EMPTY_CONSTITUENT_TYPES } from "../assets/js/constants.js";
 </script>
 
 <script>
@@ -21,7 +21,8 @@ export default {
         'annotating_edit_span',
         'set_annotating_edit_span',
         'lines',
-        'set_lines'
+        'set_lines',
+        'config'
     ],
     data() {
         return {
@@ -243,7 +244,7 @@ export default {
             return edit['annotation'] != null
         },
         getEditConfig(category) {
-            return CONFIG['edits'].find(function(entry) {
+            return this.config.config['edits'].find(function(entry) {
                 return entry['name'] === category;
             });
         },
@@ -460,8 +461,8 @@ export default {
                         <span class="f4 i black-60">this edit is not annotated yet, click <i class="fa-solid fa-pencil"></i> to start!</span>
                     `;
                 } else {
-                    const EDIT_CONFIG = this.getEditConfig(key)
-                    let ann_html = this.getAnnotationHtml(EDIT_CONFIG['annotation'], edit['annotation'])
+                    const edit_config = this.getEditConfig(key)
+                    let ann_html = this.getAnnotationHtml(edit_config['annotation'], edit['annotation'])
                     new_html += `<span class="f4 i">${ann_html}</span>`;
                 }
 

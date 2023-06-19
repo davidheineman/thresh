@@ -140,19 +140,6 @@
     background-color: rgb(255, 82, 82)
 }
 
-
-#response_box {
-    position: fixed;
-    top: 72px;
-    left: 83%;
-}
-
-#helper_list {
-    position: fixed;
-    top: 72px;
-    left: 2%;
-}
-
 .w2-5 {
     width: 2.3em;
 }
@@ -177,7 +164,7 @@ textarea {
 }
 
 .w-65 {
-    width: 65%;
+    width: 95%;
 }
 
 span.outside {
@@ -194,4 +181,8 @@ span.middleside {
 
 .lh-paras-2 {
     line-height: 2;
+}
+
+.custom_style {
+    display: none
 }

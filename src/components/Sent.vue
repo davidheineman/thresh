@@ -150,12 +150,10 @@ export default {
 
                 if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
                     sentence_html += `
-                        <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">
-                    `;
+                        <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">`;
                 } else {
                     sentence_html += `
-                        <span @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${edit['category']} border-${edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${edit['category']}" data-id="${edit['category']}-${edit['id']}" ${composite_info}>
-                    `;
+                        <span @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${edit['category']} border-${edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${edit['category']}" data-id="${edit['category']}-${edit['id']}" ${composite_info}>`;
                 }
 
                 let start_i = i
@@ -184,12 +182,10 @@ export default {
 
                     if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
                         sentence_html += `
-                            <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">
-                        `;
+                            <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">`;
                     } else {
                         sentence_html += `
-                            <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_edit['category']} border-${next_edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${next_edit['category']}" data-id="${next_edit['category']}-${next_edit['id']}" ${composite_info}>
-                        `;
+                            <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_edit['category']} border-${next_edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${next_edit['category']}" data-id="${next_edit['category']}-${next_edit['id']}" ${composite_info}>`;
                     }
 
                     i++;
@@ -206,19 +202,15 @@ export default {
                         
                         if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
                             sentence_html += `
-                                <span @mouseover.stop @mouseout.stop class="bg-${next_category}-light span">
-                            `;
+                                <span @mouseover.stop @mouseout.stop class="bg-${next_category}-light span">`;
                         } else {
                             sentence_html += `
-                                <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_next_edit['category']} border-${next_next_edit['category']}${light} pointer span ${span_class}" data-category="${next_next_edit['category']}" data-id="${next_next_edit['category']}-${next_next_edit['id']}" ${composite_info}>
-                            `;
+                                <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_next_edit['category']} border-${next_next_edit['category']}${light} pointer span ${span_class}" data-category="${next_next_edit['category']}" data-id="${next_next_edit['category']}-${next_next_edit['id']}" ${composite_info}>`;
                         }
 
                         sentence_html += `
-                                ${sent.substring(next_next_edit[sent_type][0], next_next_edit[sent_type][1])}
-                            </span>
-                            ${sent.substring(next_next_edit[sent_type][1], edit[sent_type][1])}
-                        </span>`;
+                                ${sent.substring(next_next_edit[sent_type][0], next_next_edit[sent_type][1])}</span>
+                            ${sent.substring(next_next_edit[sent_type][1], edit[sent_type][1])}</span>`;
 
                         i++;
                         edit = edits[i]
@@ -227,8 +219,7 @@ export default {
                     } else {
                         next_edit = edits[i + 1]
                         sentence_html += `
-                            ${sent.substring(next_edit[sent_type][0], next_edit[sent_type][1])}
-                        </span>`;
+                            ${sent.substring(next_edit[sent_type][0], next_edit[sent_type][1])}</span>`;
                     }
                 }
 
@@ -238,13 +229,11 @@ export default {
                         final_idx -= 1                        
                     }
                     sentence_html += `
-                        ${sent.substring(edits[final_idx][sent_type][1], edits[start_i][sent_type][1])}
-                    </span>`;
+                        ${sent.substring(edits[final_idx][sent_type][1], edits[start_i][sent_type][1])}</span>`;
                     prev_idx = edits[start_i][sent_type][1];
                 } else {
                     sentence_html += `
-                        ${sent.substring(edits[start_i][sent_type][0], edits[start_i][sent_type][1])}
-                    </span>`;
+                        ${sent.substring(edits[start_i][sent_type][0], edits[start_i][sent_type][1])}</span>`;
                     prev_idx = edits[start_i][sent_type][1];
                 }
             }

@@ -3,7 +3,7 @@
   import CompiledSpan from "./CompiledSpan.vue";
   import Question from "./Question.vue";
   import _ from 'lodash';
-  import { CONFIG, EMPTY_CONSTITUENT_TYPES } from "../assets/js/constants.js";
+  import { EMPTY_CONSTITUENT_TYPES } from "../assets/js/constants.js";
 </script>
 
 <script>
@@ -29,7 +29,8 @@ export default {
         'annotating_edit_span_category_id',
         'set_annotating_edit_span_category_id',
         'annotating_edit_span',
-        'set_annotating_edit_span'
+        'set_annotating_edit_span',
+        'config'
     ],
     data() {
         let edit_state = this.initalize_edit_state()
@@ -50,8 +51,8 @@ export default {
                 return edit_options
             }
             let edit_state = {}
-            for (const edit_idx in CONFIG.edits) {
-                let edit_type = CONFIG.edits[edit_idx]
+            for (const edit_idx in this.config.config.edits) {
+                let edit_type = this.config.config.edits[edit_idx]
                 edit_state[edit_type.name] = parse_options(edit_type.annotation)
             }
             return edit_state
@@ -93,7 +94,7 @@ export default {
                 }
             }
 
-            const config_category = CONFIG.edits.find((edit) => edit.name === selected_category)
+            const config_category = this.config.config.edits.find((edit) => edit.name === selected_category)
 
             let new_span = {
                 'category': selected_category,
@@ -236,7 +237,7 @@ export default {
                         <p class="mb2 b tracked-light"><i>Select the Edit Category.</i>
                         </p>
                         <div class="tc mb3">
-                            <div v-for="item in CONFIG.edits" :key="item.id" class="w-15 mr2 dib">
+                            <div v-for="item in this.config.config.edits" :key="item.id" class="w-15 mr2 dib">
                                 <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" name="edit_cotegory"
                                     :id="`edit_cotegory-${item.name}`" :value="item.name">
                                 <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`">
@@ -246,14 +247,14 @@ export default {
                             </div>
                         </div>
 
-                        <div v-for="item in CONFIG.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
+                        <div v-for="item in this.config.config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
-                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ CONFIG.input_label }}</i>.</p>
+                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.config.input_label }}</i>.</p>
                                 <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_span_in_original}}</span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
-                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ CONFIG.output_label }}</i>.</p>
+                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.config.output_label }}</i>.</p>
                                     <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_span_in_simplified}}</span></p>
                                 </div>
                             </div>
@@ -275,7 +276,7 @@ export default {
             </div>
         </div>
 
-        <div v-for="item in CONFIG.edits" :key="item.id">
+        <div v-for="item in this.config.config.edits" :key="item.id">
             <div class="quality-selection w-100" :id="`${item.name}_edit_annotation`" :data-category="item.name">
                 <p class="f3 courier ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
                 <div class="f4 mt0 mb2 tc">

@@ -30,6 +30,4 @@ export const EMPTY_ANNOTATION = Object.fromEntries(EDIT_TYPES.map(t => [t, {}]))
 export const EMPTY_CONSTITUENT_TYPES = Object.fromEntries(CONSTITUENT_TYPES.map(t => [t, {}]));
 export const EMPTY_CONNECTED_TYPES = Object.fromEntries(CONNECTED_TYPES.map(t => [t, {}]));
 
-
-
 export const DOWNLOAD_FILE_NAME = "annotations.json";

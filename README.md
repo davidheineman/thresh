@@ -1,29 +1,9 @@
-# salsa
+# Annotation Tool Builder
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+### Set up
+- Clone repo into local directory, then `cd nlproc.tools`
+- Set up Vue: `npm install`
+- To run a dev environment: `npm run dev`
+- When you're done making changes: `npm run build`
+- If you want to run a linter on your code: `npm run lint`
+- If you want to deploy to GitHub pages: `npm run deploy`. This creates a `gh-pages` branch. You will need to go into GitHub Pages settings and set the source branch to `gh-pages`.

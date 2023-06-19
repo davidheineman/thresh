@@ -5,8 +5,9 @@
   import Instructions from "./Instructions.vue";
   import HitBox from "./HitBox.vue";
 
-  import { download_data, get_file_path } from "../assets/js/file-util.js";
-  import { EMPTY_ANNOTATION, EMPTY_CONSTITUENT_TYPES, EMPTY_CONNECTED_TYPES, CONFIG } from "../assets/js/constants.js";
+  import tinycolor from 'tinycolor2';
+
+  import { EMPTY_ANNOTATION, EMPTY_CONSTITUENT_TYPES, EMPTY_CONNECTED_TYPES } from "../assets/js/constants.js";
 </script>
 
 <script>
@@ -58,10 +59,17 @@
                   structure: ''
                 },
                 set_annotating_edit_span: this.set_annotating_edit_span,
-
-                css: this.compile_style()
             }
         }
+    },
+    props: [
+      'input_data',
+      'config'
+    ],
+    watch: {
+      input_data() {
+        this.set_hits_data(this.input_data.data);
+      }
     },
     methods: {
         set_hit(hit_num) {
@@ -155,47 +163,53 @@
           }
 
           let css = ``
-          for (const edit of CONFIG.edits) {
+          for (const edit of this.config.config.edits) {
             let color = edit.color
             if (colors.hasOwnProperty(color)) {
               color = colors[color]
             }
+
+            let light_color = tinycolor(color).lighten(25).toHexString();
             
             css += `
               .border-${edit.name} { border-bottom: 3px solid ${color}; }
               .border-${edit.name}-all { border: 2px solid ${color}; }
               .bg-${edit.name} { background-color: ${color}; }
               .txt-${edit.name} { color: ${color}; }
-              .bg-${edit.name}-light { background-color: #F4B8B1; }
-              .border-${edit.name}-light { border-bottom: 3px solid #F4B8B1; }
-              .border-${edit.name}-light-all { border: 2px solid #F4B8B1; }
-              .txt-${edit.name}-light { color: #F4B8B1; }
+              .bg-${edit.name}-light { background-color: ${light_color}; }
+              .border-${edit.name}-light { border-bottom: 3px solid ${light_color}; }
+              .border-${edit.name}-light-all { border: 2px solid ${light_color}; }
+              .txt-${edit.name}-light { color: ${light_color}; }
             `
           }
-          // return `<style>${css}</style>`
           return css
         }
     },
-    created: function() {
-        let file_path = get_file_path();
-        download_data(file_path).then((data) => {
-          this.set_hits_data(data);
-        })
+    updated() {
+      $('#custom_style').html(`<style>${this.compile_style()}</style>`)
     }
   }
   
 </script>
 
 <template>
-  <main>
-    <component :is="compile_style"></component>
-    <div class="container w-65 mv3 mb-3 card-body" :style="css">
-      <Instructions />
-      <CommentBox v-bind="ann_state" />
-      <HitBox v-bind="ann_state" />
-      <AnnotationEditor v-bind="ann_state" />
-      <AnnotationViewer v-bind="ann_state" />
-    </div>
-  </main>
+  <div class="container w-65 mv3 mb-3 card-body">
+    <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
+    <!-- <Instructions :config="config" /> -->
+    <!-- <CommentBox v-bind="ann_state" :config="config" /> -->
+    <HitBox v-bind="ann_state" :config="config" />
+    <AnnotationEditor v-bind="ann_state" :config="config" />
+    <AnnotationViewer v-bind="ann_state" :config="config" />
+  </div>
 </template>
 
+<style>
+  @import '../assets/css/index.css';
+  @import '../assets/css/selection.css';
+  @import '../assets/css/button.css';
+  @import '../assets/css/select_box.css';
+  @import '../assets/css/download_upload.css';
+  @import 'https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css';
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+</style>

@@ -1,0 +1,112 @@
+.builder {
+    display: flex;
+    height: 100vh; 
+    flex: 1;
+}
+
+.editor {
+    flex: 1;
+    padding: 10px;
+    border-right: 5px solid #181818;
+    background-color: #353535;
+    overflow: hidden;
+}
+
+.sandbox {
+    flex: 1;
+    padding: 10px;
+    position: sticky;
+    overflow-y: auto;
+}
+
+.editor-container {
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 5px solid #1e1e1e; */
+    padding-right: 10px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.config-editor-container {
+    height: 65%;
+}
+
+.data-editor-container {
+    height: 25%;
+
+}
+
+#data-editor, #config-editor {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.submit-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.resize-handle {
+    width: 6px;
+    height: 100%;
+    background-color: #1e1e1e;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    cursor: col-resize;
+}
+
+/* Adds buttons to resize handle */
+.resize-handle::before,
+.resize-handle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.resize-handle::before {
+  transform: translate(-50%, -50%) translateY(-5px) translateX(1.5px);
+}
+.resize-handle::after {
+  transform: translate(-50%, -50%) translateY(5px) translateX(1.5px);
+}
+
+/* TODO: Use a bootstrap library for styling code */
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-right: 8px
+}
+.btn-green {
+    background-color: #4CAF50;
+}
+.btn-green:hover {
+    background-color: #45a049;
+}
+.btn-green:active {
+    background-color: #3c903c;
+}
+.btn-blue {
+    background-color: #4c63af;
+}
+.btn-blue:hover {
+    background-color: #456ca0;
+}
+.btn-blue:active {
+    background-color: #3c5990;
+}
+

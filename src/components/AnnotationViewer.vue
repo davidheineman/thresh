@@ -18,7 +18,8 @@ export default {
         'annotating_edit_span',
         'set_annotating_edit_span',
         'lines',
-        'set_lines'
+        'set_lines',
+        'config'
     ],
     data() {
         return {}
@@ -72,7 +73,7 @@ export default {
             </div>
         </div>
         <div>
-            <EditList v-bind="$props" />
+            <EditList v-bind="$props" :config="config" />
         </div>
         <div id="hits-data" class="mt1 dn">{{ hits_data }}</div>
     </section>

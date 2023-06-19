@@ -5,17 +5,24 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && git add -f ./dist && git commit -m 'deploy' && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
+    "@monaco-editor/loader": "^1.3.3",
     "jquery": "^3.7.0",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
+    "monaco-editor": "^0.39.0",
+    "monaco-editor-vue": "^1.0.10",
+    "monaco-yaml": "^4.0.4",
+    "tinycolor2": "^1.6.0",
     "vue": "^3.3.2",
     "vue3-runtime-template": "^1.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.3.5"
+    "vite": "^4.3.5",
+    "vite-plugin-monaco-editor": "^1.1.0"
   }
 }

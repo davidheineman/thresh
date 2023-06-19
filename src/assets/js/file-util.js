@@ -1,4 +1,4 @@
-import { EMPTY_ANNOTATION, DOWNLOAD_FILE_NAME } from './constants.js';
+import { DOWNLOAD_FILE_NAME } from './constants.js';
 
 export async function parseJsonFile(file) {
     return new Promise((resolve, reject) => {
@@ -12,11 +12,6 @@ export async function parseJsonFile(file) {
 export async function handle_file_upload(e) {
     let file = e.target.files[0];
     let new_data = await parseJsonFile(file);
-    for (let i = 0; i < new_data.length; i++) {
-        if (new_data[i].annotations == undefined) {
-            new_data[i].annotations = EMPTY_ANNOTATION
-        }
-    }
     return new_data
 }
 
@@ -41,11 +36,6 @@ export function download_data(file_path) {
         .then(r => r.json())
         .then(json => {
             let hits_data = json;
-            for (let i = 0; i < hits_data.length; i++) {
-                if (hits_data[i].annotations == undefined) {
-                    hits_data[i].annotations = EMPTY_ANNOTATION
-                }
-            }
             return hits_data;
         });
 }

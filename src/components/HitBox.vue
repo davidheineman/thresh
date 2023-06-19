@@ -2,7 +2,6 @@
   import Sent from "./Sent.vue";
   import _ from 'lodash';
   import { handle_file_download, handle_file_upload } from "../assets/js/file-util.js";
-  import { CONFIG } from "../assets/js/constants.js";
 </script>
 
 <script>
@@ -31,7 +30,8 @@ export default {
         'refresh_interface_edit',
         'set_hits_data',
         'lines',
-        'set_lines'
+        'set_lines',
+        'config'
     ],
     data() {
         return {}
@@ -218,7 +218,7 @@ export default {
             <div class="ba b--black-80 br2 pa2">
                 <div class="cf">
                     <p class="fl f3 mt1 mb1 orig-sentence-header">
-                        <span class="f5">{{ CONFIG.input_label }}:</span>
+                        <span class="f5">{{ this.config.config.input_label }}:</span>
                     </p>
                     <div class="fr">
                         <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
@@ -229,7 +229,7 @@ export default {
                 <Sent sent_type="original" v-bind="$props" :remove_selected="remove_selected" />
 
                 <p class="f3 mb1">
-                    <span class="f5">{{ CONFIG.output_label }}:</span>
+                    <span class="f5">{{ this.config.config.output_label }}:</span>
                 </p>
 
                 <Sent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" />

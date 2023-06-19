@@ -10,7 +10,7 @@ const parsedYaml = yaml.load(fs.readFileSync(template_path, 'utf8'));
 
 export default defineConfig({
   plugins: [
-    vue(),
+    vue()
   ],
   resolve: {
     alias: {
@@ -20,5 +20,6 @@ export default defineConfig({
   },
   define: {
     globalTemplate: JSON.stringify(parsedYaml)
-  }
+  },
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
 })

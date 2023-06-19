@@ -1,16 +1,3 @@
-# likert-3 =
-# - name: minor
-#   label: "1 - minor"
-# - name: somewhat
-#   label: "2 - somewhat"
-# - name: major
-#   label: "3 - a lot"
-
-# binary = 
-# - name: yes
-#   label: "Yes"
-# - name: no
-#   label: "No"
 instructions: "This is a demo interface to show some custom features! This instruction text is customizable."
 input_label: "Input Sentence Label"
 output_label: "Output Sentence Label"
