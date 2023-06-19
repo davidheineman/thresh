@@ -39,3 +39,9 @@ export function download_data(file_path) {
             return hits_data;
         });
 }
+
+export function download_config(file_path) {
+    return fetch(file_path)
+        .then(response => response.text())
+        .then(r => {return r});
+}
