@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "annotation_id": 1,
+        "sentence_id": 1,
+        "batch": 1,
+        "hit_id": 1,
+        "user": "demo-user",
+        "system": "dataset/system-name",
+        "original": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization.",
+        "simplified": "L'actrice primée devenue PDG de Goop est actuellement en cour pour un accident de ski en 2016, l'homme qui est entré en collision avec elle essayant d'obtenir des millions d'indemnisation.",
+        "edits": []
+    }
+]
