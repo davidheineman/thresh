@@ -1,5 +1,3 @@
-export const CONFIG = globalTemplate;
-
 // All edit types
 export const EDIT_TYPES = [
     'deletion',

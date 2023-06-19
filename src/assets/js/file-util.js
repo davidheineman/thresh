@@ -28,7 +28,7 @@ export function get_file_path() {
     if (data_path != null) {
         return data_path
     }
-    return 'demo.json' // for testing - https://raw.githubusercontent.com/Yao-Dou/ts-annotation-tool/main/data/test_set_inspection_annotated/batch_1_ayush.json
+    return null
 }
 
 export function download_data(file_path) {

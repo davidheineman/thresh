@@ -2,7 +2,6 @@
   import Interface from "./Interface.vue";
 
   import { download_data, get_file_path } from "../assets/js/file-util.js";
-  import { CONFIG } from "../assets/js/constants.js";
 
   import jsyaml from 'js-yaml';
   import MonacoEditor from 'monaco-editor-vue';
@@ -20,6 +19,11 @@ export default {
 
             dataEditor: null,
             configEditor: null,
+
+            getDataValue: null,
+            getConfigValue: null,
+            setDataValue: null,
+            setConfigValue: null,
         }
     },
     components: {
@@ -31,38 +35,47 @@ export default {
             if (data != this.dataInput) {
                 this.dataInput = JSON.stringify(data, null, 2)
             }
+            this.setDataValue(this.dataInput)
         },
         set_config(config) {
             this.config = config
             if (config != this.configInput) {
                 this.configInput = jsyaml.dump(config)
             }
+            this.setConfigValue(this.configInput)
         },
-        async update_config() {
-            // console.log(Object.freeze(this.dataEditor).getValue())
-            // this.config = jsyaml.load(Object.freeze(this.dataEditor).get())
-            // this.data = JSON.parse(this.configEditor.getValue())
+        async compile() {
+            this.config = jsyaml.load(this.getConfigValue())
+            this.data = JSON.parse(this.getDataValue())
         },
         async update_editors() {
             return new Promise((resolve, reject) => {
                 loader.init().then((monaco) => {
+                    var dataValue = `${this.data}`
                     const dataEditor = monaco.editor.create(document.getElementById('data-editor'), {
-                        value: `${this.data}`,
+                        value: dataValue,
                         language: 'json',
                         minimap: { enabled: false },
                         automaticLayout: true,
                         theme: "vs-dark",
                     });
+                    dataEditor.onDidChangeModelContent((e) => { dataValue = dataEditor.getValue(); });
+                    const getDataValue = () => { return dataValue }
+                    const setDataValue = (val) => { dataEditor.setValue(val) }
 
+                    var configValue = jsyaml.dump(this.config)
                     const configEditor = monaco.editor.create(document.getElementById('config-editor'), {
-                        value: `${jsyaml.dump(this.config)}`,
+                        value: `${configValue}`,
                         language: 'yaml',
                         minimap: { enabled: false },
                         automaticLayout: true,
                         theme: "vs-dark",
                     });
+                    configEditor.onDidChangeModelContent((e) => { configValue = configEditor.getValue(); });
+                    const getConfigValue = () => { return configValue }
+                    const setConfigValue = (val) => { configEditor.setValue(val) }
 
-                    resolve({ dataEditor, configEditor });
+                    resolve({ dataEditor, configEditor, getDataValue, getConfigValue, setDataValue, setConfigValue });
                 }).catch((error) => {
                     reject(error);
                 });
@@ -70,11 +83,18 @@ export default {
         }
     },
     created: function() {
-        let file_path = get_file_path();
-        download_data(file_path).then((data) => {
-          this.set_data(data)
-        })
-        this.set_config(CONFIG)
+        // Load data
+        // let file_path = get_file_path();
+        // download_data(file_path).then((data) => {
+        //   this.data = data
+        // })
+
+        // Load YML config
+        // const fs = require('fs');
+        // const yaml = require('js-yaml');
+        // const template_path = 'src/assets/template.yml';
+        // const parsedYaml = yaml.load(fs.readFileSync(template_path, 'utf8'));
+        // this.config = CONFIG 
 
         // const resizeHandle = document.querySelector('.resize-handle');
         // const container = document.querySelector('.builder');
@@ -101,9 +121,15 @@ export default {
         // });
         },
         async mounted() {
-            const { dataEditor, configEditor } = await this.update_editors();
-            this.dataEditor = dataEditor;
-            this.configEditor = configEditor;
+            const { dataEditor, configEditor, getDataValue, getConfigValue, setDataValue, setConfigValue } = await this.update_editors();
+            this.dataEditor = dataEditor
+            this.configEditor = configEditor
+            this.getDataValue = getDataValue
+            this.getConfigValue = getConfigValue
+            this.setDataValue = setDataValue
+            this.setConfigValue = setConfigValue
+            this.set_data(this.data)
+            this.set_config(this.config)
         },
     }
 </script>
@@ -112,15 +138,15 @@ export default {
     <main>
         <div class="builder">
             <div class="editor" id="editor">
+                <div class='submit-container'>
+                    <button class='submit-button btn-blue'>Deploy</button>
+                    <button class='submit-button btn-green' @click="compile">Compile →</button>
+                </div>
                 <div class='editor-container config-editor-container'>
                     <div id='config-editor' />
                 </div>
                 <div class='editor-container data-editor-container'>
                     <div id='data-editor' />
-                </div>
-                <div class='submit-container'>
-                    <button class='submit-button btn-blue' @click="update_config">Deploy</button>
-                    <button class='submit-button btn-green' @click="update_config">Compile →</button>
                 </div>
             </div>
             <div class="resize-handle" />

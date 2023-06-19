@@ -34,7 +34,6 @@
 
 .data-editor-container {
     height: 25%;
-
 }
 
 #data-editor, #config-editor {
@@ -43,6 +42,7 @@
 }
 
 .submit-container {
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
