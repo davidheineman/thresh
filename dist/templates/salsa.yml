@@ -1,0 +1,256 @@
+template_name: salsa
+instructions: "Please make sure you select all the edits, some edits may be easily missed when the sentence is too long."
+input_label: "Original Sentence"
+output_label: "Simplified Sentence"
+edits:
+  - name: deletion
+    label: "Deletion"
+    type: primitive
+    color: red
+    icon: fa-delete-left
+    enable_input: true
+    annotation:
+      - name: deletion_type
+        question: "Select the type of this deletion edit."
+        options:
+          - name: good_deletion
+            label: "Delete Insignificant Information"
+            question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+            options: likert-3
+          - name: trivial_deletion
+            label: "Trivial Deletion"
+          - name: bad_deletion
+            label: "Delete Significant Information"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+      - name: coreference
+        question: "Does this deletion result in coreference error?"
+        options: binary
+      - name: grammar_error
+        question: "Does this deletion edit introduce any fluency / grammar error?"
+        options: binary
+  - name: insertion
+    label: "Insertion"
+    type: primitive
+    color: green
+    icon: fa-circle-plus
+    enable_output: true
+    annotation:
+      - name: insertion_type
+        question: "Select the type of this insertion edit."
+        options:
+          - name: elaboration
+            label: "Elaboration"
+            question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+            options: likert-3
+          - name: trivial_insertion
+            label: "Trivial Insertion"
+            question: "Does it help you to read and understand the sentence?"
+            options:
+              - name: yes
+                label: "Yes"
+                question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+                options: likert-3
+              - name: no
+                label: "No"
+          - name: repetition
+            label: "Repetition"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: contradiction
+            label: "Contradiction"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: facutal_error
+            label: "Factual Error"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: irrelevant
+            label: "Irrelevant"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+      - name: grammar_error
+        question: "Does this insertion edit introduce any fluency / grammar error?"
+        options: binary
+  - name: substitution
+    label: "Substitution"
+    type: primitive
+    color: blue
+    icon: fa-sort
+    enable_input: true
+    enable_output: true
+    multi_span: true
+    annotation:
+    - name: substitution_info_change
+      question: "Compared to the original phrase, the new phrase expresses:"
+      options:
+      - name: same
+        label: "The same meaning"
+        question: "Select the impact of this paraphrase edit on the sentence simplicity."
+        options: 
+        - name: bad
+          label: "Negative impact"
+          question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+          options: likert-3
+        - name: trivial
+          label: "No impact"
+        - name: good
+          label: "Positive impact"
+          question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+          options: likert-3
+      - name: less
+        label: "Less information"
+        question: "Is the deleted information significant or not?"
+        options: 
+          - name: good_deletion
+            label: "Delete Insignificant Information"
+            question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+            options: likert-3
+          - name: trivial_deletion
+            label: "Trivial Deletion"
+          - name: bad_deletion
+            label: "Delete Significant Information"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+      - name: more
+        label: "More information"
+        question: "Select the type."
+        options: 
+          - name: elaboration
+            label: "Elaboration"
+            question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+            options: likert-3
+          - name: trivial_insertion
+            label: "Trivial Insertion"
+            question: "Does it help you to read and understand the sentence?"
+            options:
+              - name: yes
+                label: "Yes"
+                question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+                options: likert-3
+              - name: no
+                label: "No"
+          - name: repetition
+            label: "Repetition"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: contradiction
+            label: "Contradiction"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: facutal_error
+            label: "Factual Error"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+          - name: irrelevant
+            label: "Irrelevant"
+            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+            options: likert-3
+      - name: different
+        label: "Different information"
+        question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+        options: likert-3
+    - name: grammar_error
+      question: "Does this substitution edit introduce any fluency / grammar error?"
+      options: binary
+  - name: reorder
+    label: "Reorder"
+    type: primitive
+    color: light_green
+    icon: fa-arrows-left-right
+    enable_input: true
+    enable_output: true
+    annotation:
+    - name: reorder_level
+      question: "Does this reordering happen on a word-level or component-level?"
+      options:
+      - name: word_level
+        label: "Word-level"
+        question: "Select the impact of this reordering edit on the sentence simplicity."
+        options:
+        - name: bad
+          label: "Negative impact"
+          question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+          options: likert-3
+        - name: trivial
+          label: "No impact"
+        - name: good
+          label: "Positive impact"
+          question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+          options: likert-3
+      - name: component_level
+        label: "Component-level"
+        question: "Select the impact of this reordering edit on the sentence simplicity."
+        options:
+        - name: bad
+          label: "Negative impact"
+          question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+          options: likert-3
+        - name: trivial
+          label: "No impact"
+        - name: good
+          label: "Positive impact"
+          question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+          options: likert-3
+    - name: grammar_error
+      question: "Does this reorder edit introduce any fluency / grammar error?"
+      options: binary   
+  - name: split
+    label: "Split"
+    color: yellow
+    icon: fa-grip-lines-vertical
+    type: composite
+    annotation:
+    - name: impact
+      question: "Select the impact of this structure edit on the sentence simplicity."
+      options: 
+      - name: bad
+        label: "Negative impact"
+        question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+        options: likert-3
+      - name: trivial
+        label: "No impact"
+      - name: good
+        label: "Positive impact"
+        question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+        options: likert-3
+    - name: grammar_error
+      question: "Does this split edit introduce any fluency / grammar error?"
+      options: binary 
+  - name: structure
+    label: "Structure"
+    color: orange
+    icon: fa-tree
+    type: composite
+    annotation:
+    - name: structure_type
+      question: "Select the type of this structure change edit."
+      options: 
+      - name: voice
+        label: "Voice Change"
+      - name: pos
+        label: "POS Change"
+      - name: tense
+        label: "Tense Change"
+      - name: grammar_number
+        label: "Grammatical Number"
+      - name: clausal
+        label: "Clausal Change"
+      - name: transition
+        label: "Transition Change"
+    - name: impact
+      question: "Select the impact of this structure edit on the sentence simplicity."
+      options: 
+      - name: bad
+        label: "Negative impact"
+        question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+        options: likert-3
+      - name: trivial
+        label: "No impact"
+      - name: good
+        label: "Positive impact"
+        question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+        options: likert-3
+    - name: grammar_error
+      question: "Does this structure edit introduce any fluency / grammar error?"
+      options: binary 
