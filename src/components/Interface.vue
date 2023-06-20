@@ -72,10 +72,7 @@
         this.consume_data()
       },
       config() {
-        if (this.config.config.template_label) {
-          $('title').text(this.config.config.template_label);
-          // TODO: Add - tagline
-        }
+        this.consume_config()
       }
     },
     methods: {
@@ -83,6 +80,12 @@
           let d = _.cloneDeep(this.input_data.data)
           this.set_hits_data(d)
           this.set_hit(1)
+        },
+        consume_config() {
+          if (this.config.config.template_label) {
+            $('title').text(this.config.config.template_label);
+            // TODO: Add - tagline
+          }
         },
         set_hit(hit_num) {
             this.ann_state.current_hit = hit_num;
@@ -202,7 +205,8 @@
     }, 
     mounted() {
       this.consume_data()
-    }
+      this.consume_config()
+    } 
   }
   
 </script>
