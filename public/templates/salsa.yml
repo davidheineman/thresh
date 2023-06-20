@@ -1,4 +1,6 @@
 template_name: salsa
+template_label: 💃 SALSA
+template_description: Success and FAilure Linguistic Simplification Annotation
 instructions: "Please make sure you select all the edits, some edits may be easily missed when the sentence is too long."
 input_label: "Original Sentence"
 output_label: "Simplified Sentence"

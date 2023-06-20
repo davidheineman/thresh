@@ -34,10 +34,7 @@ export function get_file_path() {
 export function download_data(file_path) {
     return fetch(file_path)
         .then(r => r.json())
-        .then(json => {
-            let hits_data = json;
-            return hits_data;
-        });
+        .then(json => { return json; });
 }
 
 export function download_config(file_path) {

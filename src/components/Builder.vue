@@ -1,13 +1,26 @@
 <script setup>
-  import Interface from "./Interface.vue";
+    import Interface from "./Interface.vue";
 
-  import { download_data, download_config, get_file_path } from "../assets/js/file-util.js";
+    import { download_data, download_config, get_file_path } from "../assets/js/file-util.js";
 
-  import jsyaml from 'js-yaml';
-  import MonacoEditor from 'monaco-editor-vue';
+    import jsyaml from 'js-yaml';
+    import * as monaco from 'monaco-editor'
+    import loader from "@monaco-editor/loader";
 
-  import loader from "@monaco-editor/loader";
+    // Configure Monaco editor
+    loader.config({ paths: { vs: 'https://unpkg.com/monaco-editor@0.33.0/min/vs' } }) // or local
+    import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker';
+    import jsonWorker from 'monaco-editor/esm/vs/language/json/json.worker?worker';
 
+    self.MonacoEnvironment = {
+        getWorker(_workerId, label) {
+            switch (label) {
+                case 'json': return new jsonWorker();
+                // case 'yaml': new Worker(new URL('monaco-yaml/yaml.worker', import.meta.url));
+                default: return new editorWorker();
+            }
+        }
+    }
 </script>
 
 <script>
@@ -25,9 +38,6 @@ export default {
             setDataValue: null,
             setConfigValue: null,
         }
-    },
-    components: {
-        MonacoEditor
     },
     methods: {
         set_data(data) {
@@ -149,7 +159,12 @@ export default {
             </div>
             <div class="resize-handle" />
             <div class="sandbox">
-                <div v-if="config != null">
+                <div v-if="
+                    config != null && 
+                    config != undefined &&
+                    data != null &&
+                    data != undefined
+                ">
                     <Interface 
                         :input_data={data}
                         :config={config}

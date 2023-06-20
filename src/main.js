@@ -1,5 +1,5 @@
-// import { createApp } from 'vue'
-import { createApp } from 'vue/dist/vue.esm-bundler.js';
+import { createApp, h } from "vue/dist/vue.esm-bundler.js"
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
 // Add global imports
@@ -7,19 +7,20 @@ import './assets/js/font-awesome.min.js';
 import $ from 'jquery';
 window.jQuery = window.$ = $
 
-// Configure Monaco editor
-import * as monaco from 'monaco-editor';
-import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker';
-import jsonWorker from 'monaco-editor/esm/vs/language/json/json.worker?worker';
+const routes = [
+    { path: '/salsa', component: () => import("./components/Viewer.vue") },
+    { path: '/', component: () => import("./components/Builder.vue") },
+]
 
-self.MonacoEnvironment = {
-    getWorker(_workerId, label) {
-        switch (label) {
-            case 'json': return new jsonWorker();
-            // case 'yaml': new Worker(new URL('monaco-yaml/yaml.worker', import.meta.url));
-            default: return new editorWorker();
-        }
-    }
-};
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
 
-createApp(App).mount('#app')
+const app = createApp({
+    render: () => (
+        h(App)
+    ),
+})
+app.use(router)
+app.mount('#app')

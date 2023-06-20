@@ -1,9 +1,5 @@
-<script setup>
-  import Builder from "./components/Builder.vue";
-</script>
-
 <template>
   <main>
-    <Builder />
+    <router-view />
   </main>
 </template>

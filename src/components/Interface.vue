@@ -6,6 +6,7 @@
   import HitBox from "./HitBox.vue";
 
   import tinycolor from 'tinycolor2';
+  import _ from 'lodash';
 
   import { EMPTY_ANNOTATION, EMPTY_CONSTITUENT_TYPES, EMPTY_CONNECTED_TYPES } from "../assets/js/constants.js";
 </script>
@@ -68,10 +69,21 @@
     ],
     watch: {
       input_data() {
-        this.set_hits_data(this.input_data.data);
+        this.consume_data()
+      },
+      config() {
+        if (this.config.config.template_label) {
+          $('title').text(this.config.config.template_label);
+          // TODO: Add - tagline
+        }
       }
     },
     methods: {
+        consume_data() {
+          let d = _.cloneDeep(this.input_data.data)
+          this.set_hits_data(d)
+          this.set_hit(1)
+        },
         set_hit(hit_num) {
             this.ann_state.current_hit = hit_num;
         },
@@ -187,6 +199,9 @@
     },
     updated() {
       $('#custom_style').html(`<style>${this.compile_style()}</style>`)
+    }, 
+    mounted() {
+      this.consume_data()
     }
   }
   
