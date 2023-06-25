@@ -1,7 +1,7 @@
 <script setup>
     import Interface from "./Interface.vue";
 
-    import { download_data, download_config, get_file_path } from "../assets/js/file-util.js";
+    import { download_data, download_config, get_file_path } from "../../assets/js/file-util.js";
 
     import jsyaml from 'js-yaml';
     import * as monaco from 'monaco-editor'
@@ -115,9 +115,11 @@ export default {
         // Load config
         let template = '/templates/salsa.yml'
         download_config(template).then((config) => {
-            const parsedYaml = jsyaml.load(config);
-            this.config = parsedYaml
-            this.set_config(this.config)
+            let parsedYaml = jsyaml.load(config);
+            // console.log(parsedYaml)
+            // parsedYaml = {config: parsedYaml}
+            // Essentially in prod it doesn't add the unnecessary .config key...
+            this.set_config(parsedYaml)
         })
 
         // Resize handle
@@ -167,7 +169,7 @@ export default {
                 ">
                     <Interface 
                         :input_data={data}
-                        :config={config}
+                        :consumed_config={config}
                     />
                 </div>
             </div>
@@ -176,5 +178,5 @@ export default {
 </template>
 
 <style>
-  @import '../assets/css/editor.css';
+  @import '../../assets/css/editor.css';
 </style>

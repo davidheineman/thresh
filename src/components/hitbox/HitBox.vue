@@ -1,7 +1,7 @@
 <script setup>
   import Sent from "./Sent.vue";
   import _ from 'lodash';
-  import { handle_file_download, handle_file_upload } from "../assets/js/file-util.js";
+  import { handle_file_download, handle_file_upload } from "../../assets/js/file-util.js";
 </script>
 
 <script>
@@ -12,17 +12,10 @@ export default {
         'total_hits',
         'edits_dict',
         'set_hit',
-        'selected_span_in_simplified',
-        'selected_span_in_simplified_indexs',
-        'selected_span_in_simplified_category',
-        'selected_span_in_original',
-        'selected_span_in_original_indexs',
-        'selected_span_in_original_category',
+        'selected_state',
         'selected_edits_html',
         'selected_edits',
         'set_selected_edits',
-        'selected_split',
-        'selected_split_id',
         'set_span_text',
         'set_span_indices',
         'set_edit_html',
@@ -31,7 +24,8 @@ export default {
         'set_hits_data',
         'lines',
         'set_lines',
-        'config'
+        'config',
+        'hit_box_config'
     ],
     data() {
         return {}
@@ -46,20 +40,17 @@ export default {
     },
     methods: {
         setup_hit_box() {
-            // this.process_original_html();
-            // this.process_simplified_html();
-            // this.process_edits_html();
             $(`.circle`).removeClass('circle-active');
-            $(`#circle-${this.current_hit}`).addClass('circle-active');
+            $(`.bookmark`).removeClass('bookmark-active');
+
+            $(`#circle-${this.current_hit}`).addClass('circle-active');            
+            $(`#comment_area`).val('');
+
             if ("bookmark" in this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1]["bookmark"]) {
                 $(`.bookmark`).addClass('bookmark-active');
-            } else {
-                $(`.bookmark`).removeClass('bookmark-active');
             }
             if ("comment" in this.hits_data[this.current_hit - 1]) {
                 $(`#comment_area`).val(this.hits_data[this.current_hit - 1]["comment"]);
-            } else {
-                $(`#comment_area`).val('');
             }
         },
         go_to_hit(hit_num) {
@@ -120,7 +111,7 @@ export default {
                 let txt = this.hits_data[this.current_hit - 1].original
                 // remove [start,end] from selected_span_in_original_indexs
 
-                let new_span_indices = this.selected_span_in_original_indexs
+                let new_span_indices = this.selected_state.original_idx
                 for (let index in new_span_indices) {
                     let span = new_span_indices[index]
                     if (span[0] == start && span[1] == end) {
@@ -148,7 +139,7 @@ export default {
                 let txt = this.hits_data[this.current_hit - 1].simplified
                 // remove [start,end] from selected_span_in_simplified_indexs
 
-                let new_span_indices = this.selected_span_in_simplified_indexs
+                let new_span_indices = this.selected_state.simplified_idx
                 for (let index in new_span_indices) {
                     let span = new_span_indices[index]
                     if (span[0] == start && span[1] == end) {
@@ -183,7 +174,7 @@ export default {
             this.set_hit(1);
             this.setup_hit_box();
         }
-    }
+    },
 }
 </script>
 
@@ -207,10 +198,10 @@ export default {
 
             <div class="fr mr3">
                 <div>
-                    <span v-for="n in Math.floor(total_hits / 2)" v-bind:key="'circle-' + n" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
+                    <span v-for="n in Math.floor(total_hits / 2)" v-bind:key="'circle-' + n" v-bind:id="'circle-' + n" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
                 </div>
                 <div class="mt2">
-                    <span v-for="n in Math.ceil(total_hits / 2)" v-bind:key="'circle-' + (n + Math.floor(total_hits / 2))" @click="go_to_hit_circle(n + Math.floor(total_hits / 2), $e)" class="circle pointer"><span class="tooltiptext">{{n + Math.floor(total_hits / 2)}}</span></span>
+                    <span v-for="n in Math.ceil(total_hits / 2)" v-bind:key="'circle-' + (n + Math.floor(total_hits / 2))" v-bind:id="'circle-' + (n + Math.floor(total_hits / 2))" @click="go_to_hit_circle(n + Math.floor(total_hits / 2), $e)" class="circle pointer"><span class="tooltiptext">{{n + Math.floor(total_hits / 2)}}</span></span>
                 </div>
             </div>
         </div>
@@ -218,7 +209,7 @@ export default {
             <div class="ba b--black-80 br2 pa2">
                 <div class="cf">
                     <p class="fl f3 mt1 mb1 orig-sentence-header">
-                        <span class="f5">{{ this.config.config.input_label }}:</span>
+                        <span class="f5">{{ this.config.input_label }}:</span>
                     </p>
                     <div class="fr">
                         <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
@@ -229,7 +220,7 @@ export default {
                 <Sent sent_type="original" v-bind="$props" :remove_selected="remove_selected" />
 
                 <p class="f3 mb1">
-                    <span class="f5">{{ this.config.config.output_label }}:</span>
+                    <span class="f5">{{ this.config.output_label }}:</span>
                 </p>
 
                 <Sent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" />

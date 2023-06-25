@@ -158,7 +158,7 @@ edits:
   - name: reorder
     label: "Reorder"
     type: primitive
-    color: light_green
+    color: teal
     icon: fa-arrows-left-right
     enable_input: true
     enable_output: true

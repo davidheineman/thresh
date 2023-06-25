@@ -1,7 +1,7 @@
 <script setup>
     import _ from 'lodash';
     import OriginalSent from "./OriginalSent.vue";
-    import SimplifiedSent from "./SimplifiedSent.vue";
+    import SimplifiedSent from "../hitbox/SimplifiedSent.vue";
 </script>
 
 <script>
@@ -18,23 +18,19 @@ export default {
         'selected_edits_html',
         'selected_edits',
         'set_selected_edits',
-        'selected_split',
-        'selected_split_id',
         'set_span_text',
         'set_span_indices',
         'set_span_category',
         'remove_selected',
         'lines',
         'set_lines',
+        'set_edit_html',
+        'hit_box_config',
+        'config',
 
         'sent_type',
 
-        'selected_span_in_original',
-        'selected_span_in_original_indexs',
-        'selected_span_in_original_category',
-        'selected_span_in_simplified',
-        'selected_span_in_simplified_indexs',
-        'selected_span_in_simplified_category',
+        'selected_state',
     ],
     methods: {
         process_edit_list(edits, sent_type) {
@@ -95,21 +91,188 @@ export default {
         },
         get_selected_index(sent_type) {
             if (sent_type == 'input_idx') {
-                return _.cloneDeep(this.selected_span_in_original_indexs)
+                return _.cloneDeep(this.selected_state.original_idx)
             }
             if (sent_type == 'output_idx') {
-                return _.cloneDeep(this.selected_span_in_simplified_indexs)
+                return _.cloneDeep(this.selected_state.simplified_idx)
             }
             return undefined
         },
         multi_select_enabled(sent_type) {
             if (sent_type == 'input_idx') {
-                return this.enable_multi_select_original_sentence
+                return this.hit_box_config.enable_multi_select_original_sentence
             }
             if (sent_type == 'output_idx') {
-                return this.enable_multi_select_simplified_sentence
+                return this.hit_box_config.enable_multi_select_simplified_sentence
             }
             return undefined
+        },
+        hover_span(e) {
+            if ($(".quality-selection").is(":visible")) {
+                return
+            }
+
+            const category = e.target.dataset.category
+            const id = e.target.dataset.id
+            const real_id = id.split("-")[1]
+
+            let color_code, color_class;
+            if (e.target.classList.contains(`border-${category}-light`)) {
+                color_code = `bg-${category}-light`
+                color_class = "rgba(173, 197, 250, 1.0)"
+            } else {
+                color_code = `bg-${category}`
+                color_class = "rgba(33, 134, 235, 1.0)"
+            }
+
+            let spans = $(`.${category}[data-id=${id}]`)
+            let below_spans= $(`.${category}_below[data-id=${id}]`)
+            spans.addClass(`white ${color_code}`)
+            below_spans.addClass(`white ${color_code}`)
+            below_spans.removeClass(`txt-${category} txt-${category}-light`)
+
+            try {
+                if (category == 'substitution') {
+                    this.lines[category][real_id].color = color_class
+                }
+            } catch (e) { console.log(e) }
+        },
+        un_hover_span(e) {
+            if ($(".quality-selection").is(":visible")) {
+                return
+            }
+
+            const category = e.target.dataset.category
+            const id = e.target.dataset.id
+            const real_id = id.split("-")[1]
+
+            let color_code, color_class;
+            if (e.target.classList.contains(`border-${category}-light`)) {
+                color_code = "rgba(173, 197, 250, 0.4)"
+                color_class = `txt-${category}-light`
+            } else {
+                color_code = "rgba(33, 134, 235, 0.46)"
+                color_class = `txt-${category}`
+            }
+
+            let spans = $(`.${category}[data-id=${id}]`)
+            let below_spans= $(`.${category}_below[data-id=${id}]`)
+            below_spans.addClass(color_class)
+            spans.removeClass(`white bg-${category} bg-${category}-light`)
+            below_spans.removeClass(`white bg-${category} bg-${category}-light`)
+
+            try {
+                if (category == 'substitution') {
+                    this.lines[category][real_id].color = color_code
+                }
+            } catch (e) { console.log(e) }
+        },
+        getEditConfig(category) {
+            return this.config['edits'].find(function(entry) {
+                return entry['name'] === category;
+            });
+        },
+        click_span(e) {
+            const edits_dict = this.edits_dict
+            const category = e.target.dataset.category
+            const id = e.target.dataset.id
+            const real_id = id.split("-")[1]
+
+            if ($(".quality-selection").is(":visible")) {
+                if (this.getEditConfig(category)['type'] && this.getEditConfig(category)['type'] == 'composite') { return }
+
+                const selected_span = this.hits_data[this.current_hit - 1]['edits'].find(function(entry) {
+                    return entry['category'] === category && entry['id'] === parseInt(real_id);
+                });
+
+                // Has this been selected before?
+                const exists = this.selected_edits.find(function(entry) {
+                    return entry['category'] === category && entry['id'] === parseInt(real_id);
+                }) === undefined ? false : true;
+                
+                // Rules for selecting split signs
+                if ($("input[name=edit_cotegory]:checked").val() == 'split') {
+                    let normal_id = parseInt(real_id) + 1
+                    if (e.target.classList.contains(`split-sign`)) {
+                        if (normal_id == 1) {
+                            this.selected_state.selected_split = `the 1st split`
+                        } else if (normal_id == 2) {
+                            this.selected_state.selected_split = `the 2nd split`
+                        } else if (normal_id == 3) {
+                            this.selected_state.selected_split = `the 3rd split`
+                        } else {
+                            this.selected_state.selected_split = `the ${normal_id}th split`
+                        }
+                        this.selected_state.split_id = parseInt(real_id)
+                    } 
+                }
+
+                let new_selected_edits = _.cloneDeep(this.selected_edits);
+                if (!exists) {
+                    // Select edit
+                    new_selected_edits.push(selected_span)
+                } else {
+                    // Unselect edit
+                    new_selected_edits = new_selected_edits.filter(o => o.category !== category || o.id !== parseInt(real_id));
+                }
+                
+                // Render selected edits
+                let new_edit_html = ""
+                for (const edit of new_selected_edits) {
+                    // TODO: Reference edit rendering code instead
+                    // TODO: substrings are calcuated using the old span system
+
+                    const key = edit.category
+                    if (key == 'deletion') {
+                        new_edit_html += `<span class="edit-type txt-${key}">delete </span>`;
+                        new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
+                        new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].original.substring(edit[1],edit[2])}&nbsp`;
+                        new_edit_html += `</span>`;
+                        new_edit_html += ",&nbsp&nbsp";
+                    } else if (key == 'insertion') {
+                        new_edit_html += `<span class="edit-type txt-${key}">insert </span>`;
+                        new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
+                        new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].simplified.substring(edit[1],edit[2])}&nbsp`;
+                        new_edit_html += `</span>`;
+                        new_edit_html += ",&nbsp&nbsp";
+                    } else if (key == 'substitution') {
+                        new_edit_html += `<span class="edit-type txt-${key}">substitute </span>`;
+                        let original_spans_for_subs = edit["original"]
+                        let simplified_spans_for_subs = edit["simplified"]
+                        for (let j = 0; j < original_spans_for_subs.length; j++) {
+                            if (j != 0) {
+                                new_edit_html += `<span class="edit-type txt-${key}"> and </span>`;
+                            }
+                            new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
+                            new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].original.substring(original_spans_for_subs[j][1], original_spans_for_subs[j][2])}&nbsp`;
+                            new_edit_html += `</span>`;
+                        }
+
+                        new_edit_html += `<span class="edit-type txt-${key}"> with </span>`;
+                        for (let j = 0; j < simplified_spans_for_subs.length; j++) {
+                            if (j != 0) {
+                                new_edit_html += `<span class="edit-type txt-${key}"> and </span>`;
+                            }
+                            new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
+                            new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].simplified.substring(simplified_spans_for_subs[j][1],simplified_spans_for_subs[j][2])}&nbsp`;
+                            new_edit_html += `</span>`;
+                        }
+                        new_edit_html += ",&nbsp&nbsp";
+                    } else if (key == 'reorder') {
+                        new_edit_html += `<span class="edit-type txt-${key}">reorder </span>`;
+                        new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
+                        // new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].original.substring(edit[0][1],edit[0][2])}&nbsp`;
+                        new_edit_html += `</span>`;
+                        new_edit_html += ",&nbsp&nbsp";
+                    }
+                }
+                
+                this.set_selected_edits(new_selected_edits)
+                this.set_edit_html(new_edit_html)
+            } else {
+                // This provides the default behavior: simply triggering another action
+                $(`.annotation-icon[data-id=${id}]`).click()
+            }
         },
         render_sentence(sent, sent_type, span_class, selected_category) {
             let prev_idx = 0
@@ -118,7 +281,7 @@ export default {
             let hit_edits = _.cloneDeep(this.hits_data[this.current_hit - 1].edits)
 
             // Add selected edits
-            const includes_selection = selected_category != null
+            const includes_selection = selected_category != null && selected_category != ''
             if (includes_selection) {
                 const selected_idx = this.get_selected_index(sent_type)
                 if (this.multi_select_enabled(sent_type) && Array.isArray(selected_idx[0])) {
@@ -248,10 +411,14 @@ export default {
 <template>
     <div>
         <template v-if="sent_type === 'original'">
-            <OriginalSent sent_type="original" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" :render_sentence="render_sentence" />
+            <OriginalSent sent_type="original" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
+            :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" 
+            :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" />
         </template>
         <template v-else-if="sent_type === 'simplified'">
-            <SimplifiedSent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" :render_sentence="render_sentence" />
+            <SimplifiedSent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
+            :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" 
+            :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" />
         </template>
     </div>
 </template>

@@ -74,4 +74,16 @@
             "annotation": null
         }
     ]
-}]
+}, {
+    "id": 2,
+    "annotation_id": 2,
+    "sentence_id": 2,
+    "batch": 1,
+    "hit_id": 2,
+    "user": "demo-user",
+    "system": "dataset/system-name",
+    "original": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization (Paltrow in turn claims he was the one crashing rather than the other way around).",
+    "simplified": "The famous actress who now runs Goop is in court because of a skiing accident that happened in 2016. || The man who crashed into her is asking for millions of dollars in compensation, but she says he was actually the one who caused the accident.",
+    "edits": []
+}
+]

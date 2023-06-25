@@ -8,8 +8,8 @@ import $ from 'jquery';
 window.jQuery = window.$ = $
 
 const routes = [
-    { path: '/salsa', component: () => import("./components/Viewer.vue") },
-    { path: '/', component: () => import("./components/Builder.vue") },
+    { path: '/salsa', component: () => import("./components/pages/Viewer.vue") },
+    { path: '/', component: () => import("./components/pages/Builder.vue") },
 ]
 
 const router = createRouter({

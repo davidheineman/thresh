@@ -1,9 +1,6 @@
 <script setup>
-  import SelectedSpan from "./SelectedSpan.vue";
-  import CompiledSpan from "./CompiledSpan.vue";
   import Question from "./Question.vue";
   import _ from 'lodash';
-  import { EMPTY_CONSTITUENT_TYPES } from "../assets/js/constants.js";
 </script>
 
 <script>
@@ -14,12 +11,7 @@ export default {
         'current_hit',
         'selected_edits_html',
         'selected_edits',
-        'selected_split',
-        'selected_split_id',
-        'selected_span_in_original',
-        'selected_span_in_simplified',
-        'selected_span_in_original_indexs',
-        'selected_span_in_simplified_indexs',
+        'selected_state',
         'set_span_text',
         'set_span_indices',
         'set_hits_data',
@@ -30,7 +22,8 @@ export default {
         'set_annotating_edit_span_category_id',
         'annotating_edit_span',
         'set_annotating_edit_span',
-        'config'
+        'set_hit_box_config',
+        'config',
     ],
     data() {
         let edit_state = this.initalize_edit_state()
@@ -40,20 +33,20 @@ export default {
         }
     },
     methods: {
+        parse_options(edit_config) {
+            if (typeof edit_config !== "object") { return null }
+            let edit_options = {}
+            for (const option_idx in edit_config) {
+                edit_options['val'] = null
+                edit_options[edit_config[option_idx].name] = this.parse_options(edit_config[option_idx].options)
+            } 
+            return edit_options
+        },
         initalize_edit_state() {
-            function parse_options(edit_config) {
-                if (typeof edit_config !== "object") { return null }
-                let edit_options = {}
-                for (const option_idx in edit_config) {
-                    edit_options['val'] = null
-                    edit_options[edit_config[option_idx].name] = parse_options(edit_config[option_idx].options)
-                } 
-                return edit_options
-            }
             let edit_state = {}
-            for (const edit_idx in this.config.config.edits) {
-                let edit_type = this.config.config.edits[edit_idx]
-                edit_state[edit_type.name] = parse_options(edit_type.annotation)
+            for (const edit_idx in this.config.edits) {
+                let edit_type = this.config.edits[edit_idx]
+                edit_state[edit_type.name] = this.parse_options(edit_type.annotation)
             }
             return edit_state
         },
@@ -64,17 +57,6 @@ export default {
         cancel_click() {
             $(".icon-default").removeClass("open")
             this.refresh_edit();
-            // this.process_original_html();
-            this.original_html = this.original_html + "1"
-            this.original_html = this.original_html.slice(0, -1);
-
-            // this.process_simplified_html();
-            this.simplified_html = this.simplified_html + "1"
-            this.simplified_html = this.simplified_html.slice(0, -1);
-
-            // this.process_edits_html();
-            this.edits_html = this.edits_html + "1"
-            this.edits_html = this.edits_html.slice(0, -1);
         },
         save_click() {
             let new_hits_data = _.cloneDeep(this.hits_data);
@@ -94,7 +76,7 @@ export default {
                 }
             }
 
-            const config_category = this.config.config.edits.find((edit) => edit.name === selected_category)
+            const config_category = this.config.edits.find((edit) => edit.name === selected_category)
 
             let new_span = {
                 'category': selected_category,
@@ -104,54 +86,46 @@ export default {
 
             if (config_category['type'] == 'primitive') {
                 if (config_category['enable_input']) {
-                    new_span['input_idx'] = [this.selected_span_in_original_indexs]
+                    new_span['input_idx'] = [this.selected_state.original_idx]
                 }
                 if (config_category['enable_output']) {
-                    new_span['output_idx'] = [this.selected_span_in_simplified_indexs]
+                    new_span['output_idx'] = [this.selected_state.simplified_idx]
                 }
             }
 
             if (config_category['type'] == 'composite') {
-                // TODO: Fix this implementation
-
-                let selected_edits_key_map = EMPTY_CONSTITUENT_TYPES
-
-                for (let temp_category in this.selected_edits) {
-                    let j = 1;
-                    for (let temp_id in this.selected_edits[temp_category]) {
-                        selected_edits_key_map[temp_category][temp_id] = j;
-                        j++;
+                // 1) Add the existing edits (only certian fields) to constituent_edis
+                let constituent_edits = []
+                for (let edit of this.selected_edits) {
+                    let composite_span = {
+                        id: edit.id,
+                        category: edit.category
                     }
+                    if (edit.input_idx) { composite_span['input_idx'] = edit.input_idx }
+                    if (edit.output_idx) { composite_span['output_idx'] = edit.output_idx }
+                    constituent_edits.push(composite_span)
                 }
+                new_span['constituent_edits'] = constituent_edits
 
-                let newspans = []
-                for (let i = 0; i < original_spans.length; i++) {
-                    let span = original_spans[i]
-                    let span_category = this.id_to_category[span[0]]
-                    let span_id = span[3]
-                    if ((span_category in this.selected_edits) && (span[3] in this.selected_edits[span_category])) {
-                        span.push(span[0])
-                        span.push(selected_edits_key_map[span_category][span[3]])
-                        span[0] = this.category_to_id[selected_category]
-                        if (selected_category == "split") {
-                            span[3] = this.selected_split_id
-                        } else if (selected_category == "structure") {
-                            span[3] = max_key + 1
-                        }
-
-                        if (span_id in this.hits_data[this.current_hit - 1]["annotations"][span_category]) {
-                            let new_hits_data = _.cloneDeep(this.hits_data);
-                            delete new_hits_data[this.current_hit - 1]["annotations"][span_category][span_id]
-                            this.set_hits_data(new_hits_data)
-                        }
-                    }
-                    newspans.push(span)
+                // 2) Delete these edits
+                for (let old_edit of constituent_edits) {
+                    new_hits_data[this.current_hit - 1].edits = new_hits_data[this.current_hit - 1].edits.filter(
+                        o => o.category !== old_edit.category || o.id !== old_edit.id
+                    );
                 }
             }
 
             new_hits_data[this.current_hit - 1].edits.push(new_span)
             
             this.set_hits_data(new_hits_data)
+            this.refresh_edit();
+        },
+        cancel_annotation_click(category, e) {
+            const id = this.annotating_edit_span_category_id
+            $(".icon-default").removeClass("open")
+
+            this.reset_annotation_colors(category, id)
+            this.set_hits_data(_.cloneDeep(this.hits_data))
             this.refresh_edit();
         },
         save_annotation_click(category, e) {
@@ -166,12 +140,39 @@ export default {
 
             annotating_span.annotation = new_annotation
 
+            this.reset_annotation_colors(category, edit_id)
+
             this.set_hits_data(new_hits_data)
             this.refresh_edit();
         },
+        reset_annotation_colors(category, id) {
+            let annotating_span = this.hits_data[this.current_hit - 1]['edits'].find(function(entry) {
+                return entry['category'] === category && entry['id'] === id;
+            });
+
+            let color_class, border_class;
+            if (!annotating_span.annotation || annotating_span.annotation == null) {
+                color_class = `txt-${category}-light`
+                border_class = `border-${category}-light`
+            } else {
+                color_class = `txt-${category}`
+                border_class = `border-${category}`
+            }
+
+            let spans = $(`.${category}[data-id=${category}-${id}]`)
+            let below_spans= $(`.${category}_below[data-id=${category}-${id}]`)
+            below_spans.addClass(color_class)
+            spans.removeClass(`white bg-${category} bg-${category}-light`)
+            spans.addClass(border_class)
+            below_spans.removeClass(`white bg-${category} bg-${category}-light`)
+        },
+        getEditConfig(category) {
+            return this.config['edits'].find(function(entry) {
+                return entry['name'] === category;
+            });
+        },
         refresh_edit() {
             this.set_editor_state(false);
-            this.refresh_interface_edit()
 
             $("input[name=edit_cotegory]").prop("checked", false);
             $(".checkbox-tools").prop("checked", false);
@@ -183,40 +184,36 @@ export default {
             $(".child-question").hide();
 
             this.edit_state = this.initalize_edit_state()
+            this.refresh_interface_edit()
         },
         show_span_selection(e) {
             $(`.span-selection-div`).hide(400);
             $(`.span-selection-div[data-category=${e.target.value}]`).slideDown(400);
-            this.selected_add_edit_category_temp = e.target.value;
+            const edit_config = this.getEditConfig(e.target.value);
 
-            // This is where edit-specific logic is implemented
+            this.refresh_interface_edit()
 
-            // if (e.target.value == 'deletion') {
-            //     this.enable_select_original_sentence = true;
-            //     this.enable_select_simplified_sentence = false;
-            //     this.enable_multi_select_original_sentence = false;
-            //     this.enable_multi_select_simplified_sentence = false;
-            // }  else if (e.target.value == 'substitution' || e.target.value == 'reorder') {
-            //     this.enable_select_original_sentence = true;
-            //     this.enable_select_simplified_sentence = true;
-            //     if (e.target.value == 'substitution') {
-            //         this.enable_multi_select_original_sentence = true;
-            //         this.enable_multi_select_simplified_sentence = true;
-            //     } else {
-            //         this.enable_multi_select_original_sentence = false;
-            //         this.enable_multi_select_simplified_sentence = false;
-            //     }
-            // } else if (e.target.value == 'split' || e.target.value == 'structure') {
-            //     this.enable_select_original_sentence = false;
-            //     this.enable_select_simplified_sentence = false;
-            //     this.enable_multi_select_original_sentence = false;
-            //     this.enable_multi_select_simplified_sentence = false;
-            // } else {
-            //     this.enable_select_simplified_sentence = true;
-            //     this.enable_select_original_sentence = false;
-            //     this.enable_multi_select_original_sentence = false;
-            //     this.enable_multi_select_simplified_sentence = false;
-            // }
+            let new_hit_box_config = {
+                enable_select_original_sentence: false,
+                enable_select_simplified_sentence: false,
+                enable_multi_select_original_sentence: false,
+                enable_multi_select_simplified_sentence: false,
+            }
+                        
+            if (edit_config['enable_input']) {
+                new_hit_box_config.enable_select_original_sentence = true;
+                if (edit_config['multi_span']) {
+                    new_hit_box_config.enable_multi_select_original_sentence = true;
+                }
+            } 
+            if (edit_config['enable_output']) {
+                new_hit_box_config.enable_select_simplified_sentence = true;
+                if (edit_config['multi_span']) {
+                    new_hit_box_config.enable_multi_select_simplified_sentence = true;
+                }
+            }
+
+            this.set_hit_box_config(new_hit_box_config)
 
             this.set_span_text("", "original");
             this.set_span_text("", "simplified");
@@ -237,7 +234,7 @@ export default {
                         <p class="mb2 b tracked-light"><i>Select the Edit Category.</i>
                         </p>
                         <div class="tc mb3">
-                            <div v-for="item in this.config.config.edits" :key="item.id" class="w-15 mr2 dib">
+                            <div v-for="item in this.config.edits" :key="item.id" class="w-15 mr2 dib">
                                 <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" name="edit_cotegory"
                                     :id="`edit_cotegory-${item.name}`" :value="item.name">
                                 <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`">
@@ -247,20 +244,20 @@ export default {
                             </div>
                         </div>
 
-                        <div v-for="item in this.config.config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
+                        <div v-for="item in this.config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
-                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.config.input_label }}</i>.</p>
+                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.input_label }}</i>.</p>
                                 <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_span_in_original}}</span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
-                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.config.output_label }}</i>.</p>
-                                    <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_span_in_simplified}}</span></p>
+                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.output_label }}</i>.</p>
+                                    <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_state.simplified_span}}</span></p>
                                 </div>
                             </div>
                             <div v-if="item.type == 'composite'">
-                                <div class="span-selection-div" data-category="item.name">
-                                    <!-- <p class="mt0 mb2 b tracked-light">Click a split sign <i class="fa-solid fa-grip-lines-vertical fa-lg txt-split"></i> : <span class="txt-split">{{selected_split}}</span></p> -->
+                                <div class="span-selection-div" :data-category="item.name">
+                                    <!-- <p class="mt0 mb2 b tracked-light">Click a split sign <i class="fa-solid fa-grip-lines-vertical fa-lg txt-split"></i> : <span class="txt-split">{{selected_state.split}}</span></p> -->
                                     <p class="mt0 mb2 b tracked-light">Click the edits that associated with this {{ item.name }} change edit.</p>
                                     <p class="tracked-light lh-paras-2">Selected edits: <span v-html="selected_edits_html"></span></p>
                                 </div>
@@ -276,7 +273,7 @@ export default {
             </div>
         </div>
 
-        <div v-for="item in this.config.config.edits" :key="item.id">
+        <div v-for="item in this.config.edits" :key="item.id">
             <div class="quality-selection w-100" :id="`${item.name}_edit_annotation`" :data-category="item.name">
                 <p class="f3 courier ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
                 <div class="f4 mt0 mb2 tc">
@@ -297,7 +294,7 @@ export default {
                         </div>
                     </div>
                     <div class="buttons tc">
-                        <button @click="cancel_click" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">Cancel <i class="fa-solid fa-close"></i></button>
+                        <button @click="cancel_annotation_click(item.name, $e)" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">Cancel <i class="fa-solid fa-close"></i></button>
                         <!-- :class="{'o-40': save_validated_deletion, 'grow': !save_validated_deletion}" :disabled="save_validated_deletion" -->
                         <button @click="save_annotation_click(item.name, $e)" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns">Save <i class="fa-solid fa-check"></i></button>
                     </div>

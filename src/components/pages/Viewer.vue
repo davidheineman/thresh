@@ -1,7 +1,7 @@
 <script setup>
     import Interface from "./Interface.vue";
 
-    import { download_data, download_config, get_file_path } from "../assets/js/file-util.js";
+    import { download_data, download_config, get_file_path } from "../../assets/js/file-util.js";
     import jsyaml from 'js-yaml';
 </script>
 
@@ -10,7 +10,7 @@ export default {
     data() {
         return {
             data: null,
-            config: null,
+            consumed_config: null,
         }
     },
     methods: {
@@ -18,7 +18,7 @@ export default {
             this.data = data
         },
         set_config(config) {
-            this.config = config
+            this.consumed_config = config
         },
     },
     created: async function() {
@@ -43,13 +43,13 @@ export default {
 
 <template>
     <main v-if="
-        config != null && 
-        config != undefined &&
+        consumed_config != null && 
+        consumed_config != undefined &&
         data != null &&
         data != undefined">
         <Interface 
             :input_data={data}
-            :config={config}
+            :consumed_config={consumed_config}
         />
     </main>
 </template>
