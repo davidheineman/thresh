@@ -44,9 +44,8 @@ export default {
         },
         initalize_edit_state() {
             let edit_state = {}
-            for (const edit_idx in this.config.edits) {
-                let edit_type = this.config.edits[edit_idx]
-                edit_state[edit_type.name] = this.parse_options(edit_type.annotation)
+            for (const edit of this.config.edits) {
+                edit_state[edit.name] = this.parse_options(edit.annotation)
             }
             return edit_state
         },
@@ -70,7 +69,6 @@ export default {
             // Get highest key
             let max_key = 0;
             for (const edit of edits_data) {
-                console.log(edit)
                 if (edit['category'] == selected_category && parseInt(edit['id']) > max_key) {
                     max_key = parseInt(edit['id']);
                 }
@@ -86,10 +84,18 @@ export default {
 
             if (config_category['type'] == 'primitive') {
                 if (config_category['enable_input']) {
-                    new_span['input_idx'] = [this.selected_state.original_idx]
+                    let new_idx = this.selected_state.original_idx
+                    if (!config_category['multi_span']) {
+                        new_idx = [new_idx]
+                    }
+                    new_span['input_idx'] = new_idx
                 }
                 if (config_category['enable_output']) {
-                    new_span['output_idx'] = [this.selected_state.simplified_idx]
+                    let new_idx = this.selected_state.simplified_idx
+                    if (!config_category['multi_span']) {
+                        new_idx = [new_idx]
+                    }
+                    new_span['output_idx'] = new_idx
                 }
             }
 
@@ -174,10 +180,14 @@ export default {
         refresh_edit() {
             this.set_editor_state(false);
 
+            let classList = this.config.edits.map(function(edit) {
+                return `txt-${edit.name}`;
+            }).join(' ');
+            $(".annotation-icon").removeClass(classList);
+
             $("input[name=edit_cotegory]").prop("checked", false);
             $(".checkbox-tools").prop("checked", false);
             $(".checkbox-tools-yes-no").prop("checked", false);
-            $(".annotation-icon").removeClass('txt-substitution txt-insertion txt-deletion txt-split');
             $('.quality-selection').hide(400);
             $(".span-selection-div").hide(400);
 
@@ -234,7 +244,7 @@ export default {
                         <p class="mb2 b tracked-light"><i>Select the Edit Category.</i>
                         </p>
                         <div class="tc mb3">
-                            <div v-for="item in this.config.edits" :key="item.id" class="w-15 mr2 dib">
+                            <div v-for="item in config.edits" :key="item.id" class="w-15 mr2 dib">
                                 <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" name="edit_cotegory"
                                     :id="`edit_cotegory-${item.name}`" :value="item.name">
                                 <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`">
@@ -244,15 +254,15 @@ export default {
                             </div>
                         </div>
 
-                        <div v-for="item in this.config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
+                        <div v-for="item in config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
-                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.input_label }}</i>.</p>
-                                <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_span_in_original}}</span></p>
+                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.input_label }}</i>.</p>
+                                <p class="tracked-light">Selected span: <span v-html="selected_state.original_span"></span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
-                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ this.config.output_label }}</i>.</p>
-                                    <p class="tracked-light">Selected span: <span :class="`bg-${item.name}-light`">{{selected_state.simplified_span}}</span></p>
+                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.output_label }}</i>.</p>
+                                    <p class="tracked-light">Selected span: <span v-html="selected_state.simplified_span"></span></p>
                                 </div>
                             </div>
                             <div v-if="item.type == 'composite'">
@@ -273,22 +283,24 @@ export default {
             </div>
         </div>
 
-        <div v-for="item in this.config.edits" :key="item.id">
+        <div v-for="item in config.edits" :key="item.id">
             <div class="quality-selection w-100" :id="`${item.name}_edit_annotation`" :data-category="item.name">
                 <p class="f3 courier ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
                 <div class="f4 mt0 mb2 tc">
                     <span :class="`edit-type txt-${item.name} f3`">{{ item.label }}:  </span>
+
+                    <span v-if="item.enable_input" v-html="annotating_edit_span.original"></span>
+                    <span v-if="item.enable_input && item.enable_output" :class="`edit-type txt-${item.name} f3`"> with </span>
+                    <span v-if="item.enable_output" v-html="annotating_edit_span.simplified"></span>
                     
-                    <!-- Flesh out this section, it's not the same as the original -->
-                    <span v-if="item.enable_input" :class="`pa1 edit-text br-pill-ns border-${item.name}-all ${item.name}_below txt-${item.name}`">&nbsp;{{annotating_edit_span.original}}&nbsp;</span>
-                    <span v-if="item.enable_output" :class="`pa1 edit-text br-pill-ns border-${item.name}-all ${item.name}_below txt-${item.name}`">&nbsp;{{annotating_edit_span.simplified}}&nbsp;</span>
+                    <span v-if="item.type == 'composite'" v-html="annotating_edit_span.composite"></span>
                 </div>
 
                 <div id="dropdown-button-container">
                     <div class="single_part over-hide z-bigger mt3">
                         <div class="row">
                             <div v-for="question in item.annotation" :key="question.id">
-                                <Question :edit_state="this.edit_state" :question_state="this.edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
+                                <Question :edit_state="edit_state" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
                                     :parent_show_next_question="null" isRoot=true />
                             </div>
                         </div>

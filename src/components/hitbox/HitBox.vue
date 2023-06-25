@@ -107,6 +107,12 @@ export default {
             this.setup_hit_box();
         },
         remove_selected(category, start, end) {
+            console.log('hi')
+
+            // Essentially this just removes the span from the selected_state
+            // span list and re-renders. I can use the re-rendering code already
+            // written
+
             if (this.span_type == 'original') {
                 let txt = this.hits_data[this.current_hit - 1].original
                 // remove [start,end] from selected_span_in_original_indexs
@@ -127,7 +133,7 @@ export default {
                 for (let i = 0; i < new_span_indices.length; i++) {
                     let [start, end] = new_span_indices[i];
                     // let selected_span = new_span_text.substring(start, end);
-                    new_span_text += `<span class="bg-substitution-light">\xa0`;
+                    new_span_text += `<span class="bg-${category}-light">\xa0`;
                     new_span_text += `<span @click="remove_selected('${category}',${start},${end})" class="hover-white black br-pill mr1 pointer">✘</span>`
                     new_span_text += txt.substring(start, end) + '\xa0';
                     new_span_text += `</span>`;
@@ -155,7 +161,7 @@ export default {
                 for (let i = 0; i < new_span_indices.length; i++) {
                     let [start, end] = new_span_indices[i];
                     let selected_span = new_span_text.substring(start, end);
-                    new_span_text += `<span class="bg-substitution-light">\xa0`;
+                    new_span_text += `<span class="bg-${category}-light">\xa0`;
                     new_span_text += `<span @click="remove_selected('${category}',${start},${end})" class="hover-white black br-pill mr1 pointer">✘</span>`
                     new_span_text += txt.substring(start, end) + '\xa0';
                     new_span_text += `</span>`;
@@ -174,7 +180,7 @@ export default {
             this.set_hit(1);
             this.setup_hit_box();
         }
-    },
+    }
 }
 </script>
 
@@ -209,7 +215,7 @@ export default {
             <div class="ba b--black-80 br2 pa2">
                 <div class="cf">
                     <p class="fl f3 mt1 mb1 orig-sentence-header">
-                        <span class="f5">{{ this.config.input_label }}:</span>
+                        <span class="f5">{{ config.input_label }}:</span>
                     </p>
                     <div class="fr">
                         <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
@@ -220,7 +226,7 @@ export default {
                 <Sent sent_type="original" v-bind="$props" :remove_selected="remove_selected" />
 
                 <p class="f3 mb1">
-                    <span class="f5">{{ this.config.output_label }}:</span>
+                    <span class="f5">{{ config.output_label }}:</span>
                 </p>
 
                 <Sent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" />

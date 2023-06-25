@@ -77,7 +77,7 @@ export default {
             let whether_is_selected
             const selected_idx = this.get_selected_index(sent_type)
             if (this.multi_select_enabled(sent_type)) {
-                whether_is_selected = selected_idx.some(span => next_edit[sent_type][0] == span[0] && next_edit[sent_type][1] == span[1] && next_edit['category'] == selected_category);
+                whether_is_selected = selected_idx.some(span => edit[sent_type][0] == span[0] && edit[sent_type][1] == span[1] && edit['category'] == selected_category);
                 // for (let j = 0; j < selected_idx.length; j++) {
                 //     if (edit[sent_type][0] == selected_idx[j][0] && edit[sent_type][1] == selected_idx[j][1] && edit['category'] == selected_category) {
                 //         whether_is_selected = true
@@ -219,52 +219,7 @@ export default {
                 // Render selected edits
                 let new_edit_html = ""
                 for (const edit of new_selected_edits) {
-                    // TODO: Reference edit rendering code instead
-                    // TODO: substrings are calcuated using the old span system
-
-                    const key = edit.category
-                    if (key == 'deletion') {
-                        new_edit_html += `<span class="edit-type txt-${key}">delete </span>`;
-                        new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
-                        new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].original.substring(edit[1],edit[2])}&nbsp`;
-                        new_edit_html += `</span>`;
-                        new_edit_html += ",&nbsp&nbsp";
-                    } else if (key == 'insertion') {
-                        new_edit_html += `<span class="edit-type txt-${key}">insert </span>`;
-                        new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
-                        new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].simplified.substring(edit[1],edit[2])}&nbsp`;
-                        new_edit_html += `</span>`;
-                        new_edit_html += ",&nbsp&nbsp";
-                    } else if (key == 'substitution') {
-                        new_edit_html += `<span class="edit-type txt-${key}">substitute </span>`;
-                        let original_spans_for_subs = edit["original"]
-                        let simplified_spans_for_subs = edit["simplified"]
-                        for (let j = 0; j < original_spans_for_subs.length; j++) {
-                            if (j != 0) {
-                                new_edit_html += `<span class="edit-type txt-${key}"> and </span>`;
-                            }
-                            new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
-                            new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].original.substring(original_spans_for_subs[j][1], original_spans_for_subs[j][2])}&nbsp`;
-                            new_edit_html += `</span>`;
-                        }
-
-                        new_edit_html += `<span class="edit-type txt-${key}"> with </span>`;
-                        for (let j = 0; j < simplified_spans_for_subs.length; j++) {
-                            if (j != 0) {
-                                new_edit_html += `<span class="edit-type txt-${key}"> and </span>`;
-                            }
-                            new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
-                            new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].simplified.substring(simplified_spans_for_subs[j][1],simplified_spans_for_subs[j][2])}&nbsp`;
-                            new_edit_html += `</span>`;
-                        }
-                        new_edit_html += ",&nbsp&nbsp";
-                    } else if (key == 'reorder') {
-                        new_edit_html += `<span class="edit-type txt-${key}">reorder </span>`;
-                        new_edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">`;
-                        // new_edit_html += `&nbsp${this.hits_data[this.current_hit - 1].original.substring(edit[0][1],edit[0][2])}&nbsp`;
-                        new_edit_html += `</span>`;
-                        new_edit_html += ",&nbsp&nbsp";
-                    }
+                    new_edit_html += this.render_selected_constituent_edit(edit)
                 }
                 
                 this.set_selected_edits(new_selected_edits)
@@ -273,6 +228,50 @@ export default {
                 // This provides the default behavior: simply triggering another action
                 $(`.annotation-icon[data-id=${id}]`).click()
             }
+        },
+        render_selected_constituent_edit(edit) {
+            // TODO: This is duplicate code from EditList's render_edit_text, need to clean this up
+            let edit_html = ''
+            const key = edit.category
+            
+            if (this.getEditConfig(key)['multi_span']) {
+                edit_html += `<span class="edit-type txt-${key}">substitute </span>`;
+                let original_spans = edit['input_idx']
+                for (let j = 0; j < original_spans.length; j++) {
+                    if (j != 0) {
+                        edit_html += `<span class="edit-type txt-${key}"> and </span>`;
+                    }
+                    edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
+                        &nbsp${this.hits_data[this.current_hit - 1].original.substring(original_spans[j][0], original_spans[j][1])}&nbsp</span>`;
+                }
+
+                edit_html += `<span class="edit-type txt-${key}"> with </span>`;
+
+                let simp_spans = edit['output_idx']
+                for (let j = 0; j < simp_spans.length; j++) {
+                    if (j != 0) {
+                        edit_html += `<span class="edit-type txt-${key}"> and </span>`;
+                    }
+                    edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
+                        &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(simp_spans[j][0], simp_spans[j][1])}&nbsp</span>`;
+                }
+                edit_html += ",&nbsp&nbsp";
+            } else {
+                if (edit.hasOwnProperty('input_idx')) {
+                    let in_span = edit['input_idx'][0]
+                    edit_html += `<span class="edit-type txt-${key}">${key} </span>
+                        <span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
+                            &nbsp${this.hits_data[this.current_hit - 1].original.substring(in_span[0], in_span[1])}&nbsp</span>,&nbsp&nbsp`;
+                }
+                if (edit.hasOwnProperty('output_idx')) {
+                    let out_span = edit['output_idx'][0]
+                    edit_html += `<span class="edit-type txt-${key}">${key} </span>
+                        <span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
+                            &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(out_span[0], out_span[1])}&nbsp</span>,&nbsp&nbsp`;
+                }
+            }
+
+            return edit_html
         },
         render_sentence(sent, sent_type, span_class, selected_category) {
             let prev_idx = 0

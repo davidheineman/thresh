@@ -65,128 +65,7 @@ export default {
 
             this.simplified_html = this.render_sentence(sent, sent_type, span_class, category);
         },
-        // hover_span(e) {
-        //     if ($(".quality-selection").is(":visible")) {
-        //         return
-        //     }
-        //     let category = e.target.dataset.category
-        //     let spans = $(`.${category}[data-id=${e.target.dataset.id}]`)
-        //     spans.addClass("white")
-
-        //     let split_signs = $(`.split-sign[data-id=${e.target.dataset.id}]`)
-
-        //     let below_spans= $(`.${category}_below[data-id=${e.target.dataset.id}]`)
-        //     below_spans.addClass("white")
-        //     below_spans.removeClass(`txt-${category}`)
-        //     below_spans.removeClass(`txt-${category}-light`)
-
-        //     let id = e.target.dataset.id
-        //     let real_id = id.split("-")[1]
-        //     if (e.target.classList.contains(`split-sign`)) {
-        //         if (e.target.classList.contains(`txt-${category}-light`)) {
-        //             spans.addClass(`bg-${category}-light`)
-        //             spans.addClass(`white`)
-        //             spans.removeClass(`txt-${category}-light`)
-        //             below_spans.addClass(`bg-${category}-light`)
-        //             return
-        //         } else {
-        //             spans.addClass(`bg-${category}`)
-        //             spans.addClass(`white`)
-        //             spans.removeClass(`txt-${category}`)
-        //             below_spans.addClass(`bg-${category}`)
-        //             return
-        //         }
-        //     }
-            
-        //     // check if bd-{category}-light is already in the class list
-        //     if (e.target.classList.contains(`border-${category}-light`)) {
-        //         spans.addClass(`bg-${category}-light`)
-        //         if (category == 'split') {
-        //             split_signs.removeClass(`txt-${category}-light`)
-        //         }
-        //         below_spans.addClass(`bg-${category}-light`)
-        //         try {
-        //             if (category == 'substitution') {
-        //                 this.lines[category][real_id].color = "rgba(173, 197, 250, 1.0)"
-        //             }
-        //         } catch (e) { console.log(e) }
-                
-        //     } else {
-        //         spans.addClass(`bg-${category}`)
-        //         if (category == 'split') {
-        //             split_signs.removeClass(`txt-${category}`)
-        //         }
-        //         below_spans.addClass(`bg-${category}`)
-        //         try {
-        //             if (category == 'substitution') {
-        //                 this.lines[category][real_id].color = "rgba(33, 134, 235, 1.0)"
-        //             }
-        //         } catch (e) { console.log(e) }
-        //     }
-        // },
-        // un_hover_span(e) {
-        //     if ($(".quality-selection").is(":visible")) {
-        //         return
-        //     }
-        //     let category = e.target.dataset.category
-        //     let spans = $(`.${category}[data-id=${e.target.dataset.id}]`)
-        //     spans.removeClass("white")
-
-        //     let split_signs = $(`.split-sign[data-id=${e.target.dataset.id}]`)
-
-        //     let below_spans= $(`.${category}_below[data-id=${e.target.dataset.id}]`)
-        //     below_spans.removeClass("white")
-
-        //     let id = e.target.dataset.id
-        //     let real_id = id.split("-")[1]
-
-        //     let below_spans_class_list = below_spans.attr('class').split(/\s+/)
-        //     if (e.target.classList.contains(`split-sign`)) {
-        //         if (below_spans_class_list.includes(`bg-${category}-light`)) {
-        //             spans.removeClass(`bg-${category}-light`)
-        //             spans.removeClass(`white`)
-        //             split_signs.addClass(`txt-${category}-light`)
-        //             below_spans.removeClass(`bg-${category}-light`)
-        //             below_spans.addClass(`txt-${category}-light`)
-        //             return
-        //         } else {
-        //             spans.removeClass(`bg-${category}`)
-        //             spans.removeClass(`white`)
-        //             split_signs.addClass(`txt-${category}`)
-        //             below_spans.removeClass(`bg-${category}`)
-        //             below_spans.addClass(`txt-${category}`)
-        //             return
-        //         }
-        //     }
-
-
-        //     if (e.target.classList.contains(`border-${category}-light`)) {
-        //         below_spans.addClass(`txt-${category}-light`)
-        //         if (category == 'split') {
-        //             split_signs.addClass(`txt-${category}-light`)
-        //         }
-        //         try {
-        //             if (category == 'substitution') {
-        //                 this.lines[category][real_id].color = "rgba(173, 197, 250, 0.4)"
-        //             }
-        //         } catch (e) { console.log(e) }
-        //     } else {
-        //         below_spans.addClass(`txt-${category}`)
-        //         if (category == 'split') {
-        //             split_signs.addClass(`txt-${category}`)
-        //         }
-        //         try {
-        //             if (category == 'substitution') {
-        //                 this.lines[category][real_id].color = "rgba(33, 134, 235, 0.46)"
-        //             }
-        //         } catch (e) { console.log(e) }
-        //     }
-
-        //     spans.removeClass(`bg-${category}`)
-        //     spans.removeClass(`bg-${category}-light`)
-        //     below_spans.removeClass(`bg-${category}`)
-        //     below_spans.removeClass(`bg-${category}-light`)
-        // },
+        // TOOD: I removed the hover span code, but there were some edge cases in there for split edits
         select_simplified_html(e) {
             if (!this.hit_box_config.enable_select_simplified_sentence) {
                 return
@@ -222,17 +101,22 @@ export default {
                 this.process_simplified_html_with_selected_span(selected_category)
                 return;
             }
-            this.set_span_text('\xa0' + txt.substring(start, end) + '\xa0', 'simplified');
+
+            let new_span_text = `<span class="bg-${selected_category}-light">\xa0${txt.substring(start, end)}\xa0</span>`
+            this.set_span_text(new_span_text, 'simplified');
 
             if (this.hit_box_config.enable_multi_select_simplified_sentence) {
                 let new_indices = this.selected_state.simplified_idx
+                if (new_indices == null || new_indices.length == 0) {
+                    new_indices = []
+                }
                 new_indices.push([start, end]);
                 this.set_span_indices(new_indices, 'simplified');
                 let new_span_text = "";
                 // iterate through this.selected_span_in_simplified_indexs
                 for (let i = 0; i < new_indices.length; i++) {
                     let [start, end] = new_indices[i];
-                    new_span_text += `<span class="bg-substitution-light">\xa0
+                    new_span_text += `<span class="bg-${selected_category}-light">\xa0
                         <span @click="remove_selected('${selected_category}',${start},${end})" class="hover-white black br-pill mr1 pointer">✘</span>
                             ${txt.substring(start, end)}\xa0</span>&nbsp&nbsp`;
                 }

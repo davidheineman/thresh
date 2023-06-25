@@ -98,22 +98,25 @@ export default {
                 this.process_original_html_with_selected_span(selected_category)
                 return
             }
-            this.set_span_text('\xa0' + txt.substring(start, end) + '\xa0', 'original')
+
+            let new_span_text = `<span class="bg-${selected_category}-light">\xa0${txt.substring(start, end)}\xa0</span>`
+            this.set_span_text(new_span_text, 'original')
 
             if (this.hit_box_config.enable_multi_select_original_sentence) {
                 let new_indices = this.selected_state.original_idx
+                if (new_indices == null || new_indices.length == 0) {
+                    new_indices = []
+                }
                 new_indices.push([start, end])
-                set_span_indices(new_indices, 'original')
+                this.set_span_indices(new_indices, 'original')
                 let new_span_text = ""
                 // iterate through this.selected_span_in_original_indexs
                 for (let i = 0; i < new_indices.length; i++) {
                     let [start, end] = new_indices[i]
                     new_span_text += `
-                    <span class="bg-substitution-light">\xa0
+                    <span class="bg-${selected_category}-light">\xa0
                         <span @click="remove_selected('${selected_category}', ${start}, ${end})" class="hover-white black br-pill mr1 pointer">✘</span>
-                            ${txt.substring(start, end)}\xa0
-                        </span>
-                    &nbsp&nbsp`
+                            ${txt.substring(start, end)}\xa0</span>&nbsp&nbsp`
                 }
                 this.set_span_text(new_span_text, 'original')
             } else {

@@ -7,6 +7,8 @@
 
   import tinycolor from 'tinycolor2';
   import _ from 'lodash';
+
+  import { COLORS } from '../../assets/js/constants.js';
 </script>
 
 <script>
@@ -134,11 +136,8 @@
           }
           const DEFAULT_ANNOTATING_EDIT_SPAN = {
             original: '',
-            original_for_substitution: '',
             simplified: '',
-            simplified_for_substitution: '',
-            split: '',
-            structure: ''
+            composite: ''
           }
 
           this.selected_edits = []
@@ -156,24 +155,15 @@
         set_annotating_edit_span_category_id(id) {
           this.annotating_edit_span_category_id = id;
         },
-        set_annotating_edit_span(data, sent_type = null, special_type = null) {
-          if (special_type == 'split') {
-            this.annotating_edit_span.split = data;
-          } else if (special_type == 'structure') {
-            this.annotating_edit_span.structure = data;
-          }
+        set_annotating_edit_span(data, sent_type=null) {
           if (sent_type == 'original') {
-            if (special_type == 'substitution') {
-              this.annotating_edit_span.original_for_substitution = data;
-            } else {
-              this.annotating_edit_span.original = data;
-            }
+            this.annotating_edit_span.original = data;
           } else if (sent_type == 'simplified') {
-            if (special_type == 'substitution') {
-              this.annotating_edit_span.simplified_for_substitution = data;
-            } else {
-              this.annotating_edit_span.simplified = data;
-            }
+            this.annotating_edit_span.simplified = data;
+          } else if (sent_type == 'composite') {
+            this.annotating_edit_span.composite = data;
+          } else {
+            console.warn(`Invalid sent_type : ${sent_type}`)
           }
         },
         set_lines(lines) {
@@ -182,20 +172,11 @@
         compile_style() {
           if (!this.config.hasOwnProperty('edits')) { return }
 
-          var colors = {
-            'red': '#ee2a2a',
-            'green': '#64c466',
-            'blue': '#2186eb',
-            'yellow': '#f7ce46',
-            'teal': '#3ca3a7',
-            'orange': '#e67c43'
-          }
-
           let css = ``
           for (const edit of this.config.edits) {
             let color = edit.color
-            if (colors.hasOwnProperty(color)) {
-              color = colors[color]
+            if (COLORS.hasOwnProperty(color)) {
+              color = COLORS[color]
             }
 
             let light_color = tinycolor(color).lighten(25).toHexString();

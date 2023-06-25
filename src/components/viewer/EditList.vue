@@ -2,6 +2,9 @@
 import VRuntimeTemplate from "vue3-runtime-template";
 import _ from 'lodash';
 import { LeaderLine } from '../../assets/js/leader-line.min.js';
+
+import tinycolor from 'tinycolor2';
+import { COLORS } from '../../assets/js/constants.js';
 </script>
 
 <script>
@@ -71,52 +74,59 @@ export default {
             });
 
             if (this.getEditConfig(category)['multi_span']) {
-                let original_spans_for_subs = edit_dict[category][real_id]["original"]
-                let simplified_spans_for_subs = edit_dict[category][real_id]["simplified"]
+                let original_spans = annotating_span['input_idx']
                 let new_edit_span = ""
-                for (let i = 0; i < original_spans_for_subs.length; i++) {
+                for (let i = 0; i < original_spans.length; i++) {
                     if (i != 0) {
                         new_edit_span += `<span class="edit-type txt-${category} f3"> and </span>`
                     }
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${original_sentence.substring(original_spans_for_subs[i][1], original_spans_for_subs[i][2])}&nbsp</span>`
+                        &nbsp${original_sentence.substring(original_spans[i][0], original_spans[i][1])}&nbsp</span>`
                 }
                 this.set_annotating_edit_span(new_edit_span, 'original')
+
+                let simp_spans = annotating_span['output_idx']
                 new_edit_span = ""
-                for (let i = 0; i < simplified_spans_for_subs.length; i++) {
+                for (let i = 0; i < simp_spans.length; i++) {
                     if (i != 0) {
                         new_edit_span += `<span class="edit-type txt-${category} f3"> and </span>`
                     }
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${simplified_sentence.substring(simplified_spans_for_subs[i][1], simplified_spans_for_subs[i][2])}&nbsp</span>`
+                        &nbsp${simplified_sentence.substring(simp_spans[i][0], simp_spans[i][1])}&nbsp</span>`
                 }
                 this.set_annotating_edit_span(new_edit_span, 'simplified')
             } else if (this.getEditConfig(category)['type'] == 'composite') {
                 let new_edit_span = ""
                 let light = ""
                 
+                new_edit_span += `<span class="edit-type txt-${category}${light} f3"> (</span>`;
                 for (let j = 0; j < annotating_span['constituent_edits'].length; j++) {
                     const constituent_edit = annotating_span['constituent_edits'][j];
                     const constituent_key = constituent_edit['category'];
 
                     new_edit_span += this.render_edit_text(constituent_edit, real_id, constituent_key, light)
-                    if (j != annotating_span['constituent_edits'].length - 1) {
-                        new_edit_span += `<span class="edit-type txt-${category}${light} f3"> , </span>`;
-                    } else {
+                    if (j == annotating_span['constituent_edits'].length - 1) {
                         new_edit_span += `<span class="edit-type txt-${category}${light} f3"> )</span>`;
+                    } else {
+                        new_edit_span += `<span class="edit-type txt-${category}${light} f3"> , </span>`;
                     }
                 }
-
-                this.set_annotating_edit_span(new_edit_span, '', 'structure')
+                this.set_annotating_edit_span(new_edit_span, 'composite')
             } else {
                 if (annotating_span.hasOwnProperty('input_idx')) {
                     let span_idx = annotating_span['input_idx'][0]
-                    this.set_annotating_edit_span(original_sentence.substring(span_idx[0], span_idx[1]), 'original')
+                    let new_edit_span = ""
+                    new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
+                        &nbsp${original_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
+                    this.set_annotating_edit_span(new_edit_span, 'original')
                 } 
 
                 if (annotating_span.hasOwnProperty('output_idx')) {
                     let span_idx = annotating_span['output_idx'][0]
-                    this.set_annotating_edit_span(simplified_sentence.substring(span_idx[0], span_idx[1]), 'simplified')
+                    let new_edit_span = ""
+                    new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
+                        &nbsp${simplified_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
+                    this.set_annotating_edit_span(new_edit_span, 'simplified')
                 }
             }
 
@@ -261,6 +271,7 @@ export default {
                         const constituent_key = constituent_edit['category'];
 
                         new_html += this.render_edit_text(constituent_edit, i, constituent_key, light)
+                        new_html += `</span>`;
                         if (j != edit['constituent_edits'].length - 1) {
                             new_html += `<span class="edit-type txt-${key}${light} f3"> , </span>`;
                         } else {
@@ -321,12 +332,12 @@ export default {
         draw_lines: function() {
             // There's some latency in this function, the locking ensures no line references are lost
             if (this.line_locked) { return }
+            if (!this.config.hasOwnProperty('edits')) { return }
             this.line_locked = true
 
             this.clear_lines()
 
             let new_lines = Object.fromEntries(this.config.edits.map(t => [t.name, {}]));
-
             let hit_edits = _.cloneDeep(this.hits_data[this.current_hit - 1].edits)
 
             for (let edit of hit_edits) {
@@ -340,11 +351,12 @@ export default {
                     path: "straight"
                 }
 
-                let color = "rgba(173, 197, 250, 0.4)"
-                // let color = "rgba(182, 227, 229, 0.4)" // reorder
-                if (this.hasAnnotation(edit)) {
-                    color = "rgba(33, 134, 235, 0.46)"
-                    // color = "rgba(60, 163, 167, 0.46)" // reorder
+                let color = edit_config.color
+                if (COLORS.hasOwnProperty(color)) {
+                    color = COLORS[color]
+                }
+                if (!this.hasAnnotation(edit)) {
+                    color = tinycolor(color).lighten(25).toHexString();
                 }
                 line_config.color = color
 
@@ -432,7 +444,10 @@ export default {
 
             this.set_lines(new_lines)
             this.line_locked = false
-        }
+        },
+        // TODO: Implement these via referencing using jquery
+        hover_span() {},
+        un_hover_span() {},
     },
     computed: {
         get_edits_html() {
@@ -441,12 +456,11 @@ export default {
                 methods: {
                     annotate_edit: this.annotate_edit,
                     trash_edit: this.trash_edit,
+                    hover_span: this.hover_span,
+                    un_hover_span: this.un_hover_span,
                 }
             }
         }
-        // Unused methods
-        // hover_span: this.hover_span,
-        // un_hover_span: this.un_hover_span,
     },
     created() {
         window.addEventListener("resize", this.draw_lines);

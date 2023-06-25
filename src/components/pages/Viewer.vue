@@ -25,14 +25,14 @@ export default {
         // Load data
         let file_path = get_file_path();
         if (file_path == null) {
-            file_path = '/data/salsa.json'
+            file_path = 'data/salsa.json'
         }
         download_data(file_path).then((data) => {
             this.set_data(data)
         })
 
         // Load config
-        let template = '/templates/salsa.yml'
+        let template = 'templates/salsa.yml'
         download_config(template).then((config) => {
             const parsedYaml = jsyaml.load(config);
             this.set_config(parsedYaml)
