@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { LeaderLine } from '../../assets/js/leader-line.min.js';
 
 import tinycolor from 'tinycolor2';
-import { COLORS } from '../../assets/js/constants.js';
+import { COLORS, LIKERT_COLOR_MAP } from '../../assets/js/constants.js';
 </script>
 
 <script>
@@ -58,12 +58,12 @@ export default {
 
             $(".child-question").hide();
             if (this.editor_open) {
-                $(`.quality-selection[data-category=${category}]`).hide(400);
+                $(`.quality-selection[data-category=${category}]`).hide(300);
                 this.refresh_interface_edit();
                 return;
             } else {
-                $(`.quality-selection`).hide(400)
-                $(`.quality-selection[data-category=${category}]`).slideDown(400);
+                $(`.quality-selection`).hide(300)
+                $(`.quality-selection[data-category=${category}]`).slideDown(300);
                 $(e.target).addClass(`txt-${category}`)
                 this.set_editor_state(!this.editor_open)
             }
@@ -166,6 +166,9 @@ export default {
             let ann_html = ''
             for (let edit_ann_type of ann_config) {
                 let ann_type_name = edit_ann_type['name']
+                let ann_type_label = edit_ann_type.label ? edit_ann_type.label : ann_type_name
+
+                ann_type_label = ann_type_label.replace('grammar_error', 'G') // TODO: Get rid of manual override
 
                 if (!edit_ann_type.hasOwnProperty('options')) {
                     continue
@@ -175,20 +178,23 @@ export default {
                     if (ann[ann_type_name] == "yes") {
                         // ann_html += ` <span class="brown ba bw1 pa1 br-100">G</span>`;
                         // ann_html += ` <span class="brown ba bw1 pa1 br-pills">Coref error</span>`;
-                        ann_html += ` <span class="brown ba bw1 pa1 br-pills">${ann_type_name}</span>`;
+                        ann_html += ` <span class="brown ba bw1 pa1 br-pills">${ann_type_label}</span>`;
                     }
                 } else if (edit_ann_type['options'] == 'likert-3') {
                     if (ann[ann_type_name] != null) {
-                        ann_html += `<span class="light-pink br-pills ba bw1 pa1">${ann_type_name}: ${ann[ann_type_name]}</span>`;
+                        let ann_color = LIKERT_COLOR_MAP[ann[ann_type_name]] ? LIKERT_COLOR_MAP[ann[ann_type_name]] : 'black'
+                        ann_html += `<span class="${ann_color} br-pills ba bw1 pa1">${ann_type_label}: ${ann[ann_type_name]}</span>`;
                     }
                 } else {
                     // custom edit types
                     let selected = ann[ann_type_name]["val"]
                     if (selected != null && selected != "") {
-                        ann_html = `<span class="light-purple ba bw1 pa1">${selected}</span>`
+                        ann_html += ''
 
                         if (edit_ann_type.hasOwnProperty('options')) {
                             ann_html += this.getAnnotationHtml(edit_ann_type['options'], ann[ann_type_name])
+                        } else {
+                            ann_html += `<span class="light-purple ba bw1 pa1">${selected}</span>`
                         }
                     }                            
                 } 
@@ -196,10 +202,13 @@ export default {
             return ann_html
         },
         render_edit_text(edit, i, key, light) {
+            const edit_config = this.getEditConfig(key)
+            const edit_label = edit_config.label ? edit_config.label : key
+
             let new_html = ''
             new_html += `
                 <span data-id="${key}-${i}" data-category="${key}" class="default_cursor" @mouseover="hover_span" @mouseout="un_hover_span">
-                    <span class="edit-type txt-${key}${light} f3">${key} </span>
+                    <span class="edit-type txt-${key}${light} f3">${edit_label} </span>
                     <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">`;
 
             if (edit.hasOwnProperty('input_idx')) {
@@ -212,7 +221,7 @@ export default {
                     &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(out_span[0], out_span[1])}&nbsp</span>`;
             }
             
-            if (this.getEditConfig(key)['multi_span']) {
+            if (edit_config['multi_span']) {
                 if (edit.hasOwnProperty('input_idx')) {
                     let original_spans_for_subs = edit['input_idx'].slice(1)
                     for (let original_span of original_spans_for_subs) {
@@ -254,14 +263,16 @@ export default {
                 let light = !this.hasAnnotation(edit) ? "-light" : ""
                 new_html += `
                     <div class='cf'>
-                        <div class="fl w-80 mb4 edit">`;
+                        <div class="fl w-80 edit">`;
                 
                 // Render edit
-                if (this.getEditConfig(key)['type'] == 'composite') {
+                const edit_config = this.getEditConfig(key)
+                const edit_label = edit_config.label ? edit_config.label : key
+                if (edit_config['type'] == 'composite') {
                     const composite_icon = this.getEditConfig(key)['icon']
                     new_html += `
                         <span data-id="${key}-${i}" data-category="${key}" class="default_cursor" @mouseover="hover_span" @mouseout="un_hover_span">
-                            <span class="edit-type txt-${key}${light} f3">${key} </span>
+                            <span class="edit-type txt-${key}${light} f3">${edit_label} </span>
                             <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">
                                 &nbsp<i class="fa-solid ${composite_icon}"></i>&nbsp</span>
                                 <span class="edit-type txt-${key}${light} f3"> (</span>`;
@@ -298,7 +309,7 @@ export default {
                 new_html += `
                         </span>
                     </div>
-                    <div class="fl w-20 mb4 operation tc">
+                    <div class="fl w-20 mb4 operation tr">
                         <i @click="annotate_edit" class="annotation-icon fa-solid fa-pencil mr3 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>
                         <i @click="trash_edit" class="fa-solid fa-trash-can ml4 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>
                     </div>
