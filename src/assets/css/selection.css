@@ -28,6 +28,8 @@
   
   .single_part {
     border-top: 1px solid #d6d6d6;
+    margin-bottom: 16px;
+    margin-top: 8px;
   }
   
   .single_part_error_qual {

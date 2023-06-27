@@ -242,9 +242,9 @@ export default {
 <template>
     <div class="quality-selection-divs">
         <div class="quality-selection w-100" id="add_an_edit">
-            <p class="f3 annotation-label ttu mv1">Adding an Edit <i class="fa-solid fa-plus"></i></p>
             <div id="dropdown-button-container">
-                <div class="over-hide z-bigger mt2">
+                <div class="over-hide z-bigger mt2 editor-container">
+                    <p class="f3 annotation-label ttu mv1">Adding an Edit <i class="fa-solid fa-plus"></i></p>
                     <div class="row">
                         <p class="mb2 b tracked-light"><i>Select the Edit Category.</i>
                         </p>
@@ -290,19 +290,20 @@ export default {
 
         <div v-for="item in config.edits" :key="item.id">
             <div class="quality-selection w-100" :id="`${item.name}_edit_annotation`" :data-category="item.name">
-                <p class="f3 annotation-label ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
-                <div class="f4 mt0 mb2 tc">
-                    <span :class="`edit-type txt-${item.name} f3`">{{ item.label }}:  </span>
-
-                    <span v-if="item.enable_input" v-html="annotating_edit_span.original"></span>
-                    <span v-if="item.enable_input && item.enable_output" :class="`edit-type txt-${item.name} f3`"> with </span>
-                    <span v-if="item.enable_output" v-html="annotating_edit_span.simplified"></span>
-                    
-                    <span v-if="item.type == 'composite'" v-html="annotating_edit_span.composite"></span>
-                </div>
-
                 <div id="dropdown-button-container">
-                    <div class="single_part over-hide z-bigger mt3">
+                    <div class="over-hide z-bigger mt3 editor-container">
+                        <p class="f3 annotation-label ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
+                        <div class='single_part' />
+                        <div class="f4 mt0 mb2 tc">
+                            <span :class="`edit-type txt-${item.name} f3`">{{ item.label }}:  </span>
+
+                            <span v-if="item.enable_input" v-html="annotating_edit_span.original"></span>
+                            <span v-if="item.enable_input && item.enable_output" :class="`edit-type txt-${item.name} f3`"> with </span>
+                            <span v-if="item.enable_output" v-html="annotating_edit_span.simplified"></span>
+                            
+                            <span v-if="item.type == 'composite'" v-html="annotating_edit_span.composite"></span>
+                        </div>
+
                         <div class="row">
                             <div v-for="question in item.annotation" :key="question.id">
                                 <Question :edit_state="edit_state" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
