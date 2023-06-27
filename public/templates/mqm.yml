@@ -1,80 +1,158 @@
-instructions: "This is a demo interface to show some custom features! This instruction text is customizable."
-input_label: "Input Sentence Label"
-output_label: "Output Sentence Label"
+template_name: mqm
+template_label: MQM
+template_description: A variation proposed by Freitag et al., 2021 of the Multidimensional Quality Metrics
+input_label: "Original Sentence"
+output_label: "German Translation"
 edits:
-  - name: type_1
-    label: "Edit Type 1"
-    type: primitive
+  - name: accuracy
+    label: "Accuracy"
     color: red
     icon: fa-check
-    enable_input: true
-    annotation:
-      - name: overall_type
-        question: "Here's an example question."
-        options:
-          - name: answer_name_1
-            label: "Answer 1"
-            question: "Likert scale!"
-            options: likert-3
-          - name: answer_name_none
-            label: "No scale"
-          - name: answer_name_3
-            label: "Answer 3"
-            question: "Likert scale!"
-            options: likert-3
-      - name: further_question
-        question: "Here's a further binary question."
-        options: binary
-      - name: grammar_error
-        question: "How about a grammar error?"
-        options: binary
-  - name: insertion
-    label: "Edit Type 2"
+    enable_output: true  
     type: primitive
+    annotation:
+      - name: accuracy_type
+        question: "Select the accuracy problem."
+        options:
+          - name: addition
+            label: "Addition"
+            question: "Rate the severity"
+            options: likert-3
+          - name: mistranslation
+            label: "Mistranslation"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: omission
+            label: "Omission"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: untranslated_text
+            label: "Untranslated text"
+            questions: "Rate the severity"
+            options: likert-3
+  - name: fluency
+    label: "Fluency"
+    color: teal
+    icon: fa-comment-slash
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: fluency_type
+        question: "Select the fluency problem."
+        options:
+          - name: grammar
+            label: "Grammar"
+            question: "Rate the severity"
+            options: likert-3
+          - name: inconsistency
+            label: "Inconsistency"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: punctuation
+            label: "Punctuation"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: register
+            label: "Register"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: spelling
+            label: "Spelling"
+            questions: "Rate the severity"
+            options: likert-3  
+  - name: locale_convention
+    label: "Locale Convention"
+    color: yellow
+    icon: fa-people-arrows 
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: locale_convention_type
+        question: "Select the convention problem."
+        options:
+          - name: address_format
+            label: "Address format"
+            question: "Rate the severity"
+            options: likert-3
+          - name: currency_format
+            label: "Currency format"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: date_format
+            label: "Date format"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: time_format
+            label: "Time format"
+            questions: "Rate the severity"
+            options: likert-3 
+  - name: akward
+    label: "Style"
+    color: orange
+    icon: fa-person-drowning 
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: akward_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: terminology
+    label: "Terminology"
     color: green
-    icon: fa-xmark
-    enable_ouptut: true
+    icon: fa-flask
+    enable_output: true  
+    type: primitive 
     annotation:
-      - name: insertion_type
-        question: "Select the type of this insertion edit."
+      - name: terminology_type
+        question: "Select the Terminology problem."
         options:
-          - name: elaboration
-            label: "Elaboration"
-            question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
+          - name: inappropriate_for_context
+            label: "Inappropriate for context"
+            question: "Rate the severity"
             options: likert-3
-          - name: trivial_insertion
-            label: "Trivial Insertion"
-            question: "Does it help you to read and understand the sentence?"
-            options:
-              - name: yes
-                label: "Yes"
-                question: "Rate the efficacy (how much it helps you to read and understand the sentence?)"
-                options: likert-3
-              - name: no
-                label: "No"
-          - name: repetition
-            label: "Repetition"
-            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
+          - name: inconsistent_use_of_terminology
+            label: "Inconsistent use of terminology"
+            questions: "Rate the severity"
             options: likert-3
-          - name: contradiction
-            label: "Contradiction"
-            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
-            options: likert-3
-          - name: facutal_error
-            label: "Factual Error"
-            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
-            options: likert-3
-          - name: irrelevant
-            label: "Irrelevant"
-            question: "Rate the severity (how much it makes the sentence harder to read and understand?)."
-            options: likert-3
-      - name: grammar_error
-        question: "Does this insertion edit introduce any fluency / grammar error?"
-        options: binary
-  - name: substitution
-    label: "Edit Type 3"
-    type: primitive
+  - name: non_translation
+    label: "Non-translation"
     color: blue
-    icon: fa-bolt
-    enable_input: true
-    enable_output: true
+    icon: fa-xmark
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: non_translation_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: other
+    label: "Other"
+    color: grey
+    icon: fa-ellipsis
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: other_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+citation: |
+  @article{freitag-etal-2021-experts,
+    title = "Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation",
+    author = "Freitag, Markus  and
+      Foster, George  and
+      Grangier, David  and
+      Ratnakar, Viresh  and
+      Tan, Qijun  and
+      Macherey, Wolfgang",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "9",
+    year = "2021",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2021.tacl-1.87",
+    doi = "10.1162/tacl_a_00437",
+    pages = "1460--1474",
+    abstract = "Abstract Human evaluation of modern high-quality machine translation systems is a difficult problem, and there is increasing evidence that inadequate evaluation procedures can lead to erroneous conclusions. While there has been considerable research on human evaluation, the field still lacks a commonly accepted standard procedure. As a step toward this goal, we propose an evaluation methodology grounded in explicit error analysis, based on the Multidimensional Quality Metrics (MQM) framework. We carry out the largest MQM research study to date, scoring the outputs of top systems from the WMT 2020 shared task in two language pairs using annotations provided by professional translators with access to full document context. We analyze the resulting data extensively, finding among other results a substantially different ranking of evaluated systems from the one established by the WMT crowd workers, exhibiting a clear preference for human over machine output. Surprisingly, we also find that automatic metrics based on pre-trained embeddings can outperform human crowd workers. We make our corpus publicly available for further research.",
+  }

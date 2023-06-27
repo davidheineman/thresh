@@ -182,6 +182,7 @@
             let light_color = tinycolor(color).lighten(25).toHexString();
             
             css += `
+              :root { --${edit.name}: ${color}; --${edit.name}-light: ${light_color}; }
               .border-${edit.name} { border-bottom: 3px solid ${color}; }
               .border-${edit.name}-all { border: 2px solid ${color}; }
               .bg-${edit.name} { background-color: ${color}; }
@@ -190,6 +191,11 @@
               .border-${edit.name}-light { border-bottom: 3px solid ${light_color}; }
               .border-${edit.name}-light-all { border: 2px solid ${light_color}; }
               .txt-${edit.name}-light { color: ${light_color}; }
+              .checkbox-tools-yes-no:checked + label.question-${edit.name},
+              .checkbox-tools:checked + label.question-${edit.name},
+              .checkbox-tools:checked + label.txt-${edit.name}{
+                border: 2px solid var(--${edit.name});
+              }
             `
           }
           return css

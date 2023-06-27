@@ -8,7 +8,11 @@ import $ from 'jquery';
 window.jQuery = window.$ = $
 
 const routes = [
-    { path: '/salsa', component: () => import("./components/pages/Viewer.vue") },
+    { path: '/salsa', props: {template: 'salsa'}, component: () => import("./components/pages/Viewer.vue") },
+    { path: '/mqm', props: {template: 'mqm'}, component: () => import("./components/pages/Viewer.vue") },
+    { path: '/frank', props: {template: 'frank'}, component: () => import("./components/pages/Viewer.vue") },
+    { path: '/scarecrow', props: {template: 'scarecrow'}, component: () => import("./components/pages/Viewer.vue") },
+    
     { path: '/', component: () => import("./components/pages/Builder.vue") },
 ]
 

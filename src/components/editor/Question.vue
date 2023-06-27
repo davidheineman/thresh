@@ -52,13 +52,13 @@ export default {
                 for (let i = 0; i < this.question.options.length; i++) {
                     let option = this.question.options[i];
                     let child_div = `.${this.div_name}-${option.name}`
-                    $(child_div).hide(400);
+                    $(child_div).hide(300);
                 }
 
                 // Show options of selected child
                 let child_div = `.${this.div_name}-${selected_val}`
                 if (!$(child_div).is(":visible")) {
-                    $(child_div).slideDown(400);
+                    $(child_div).slideDown(300);
                 }
             } else {
                 // else recurse upwards

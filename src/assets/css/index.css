@@ -27,6 +27,60 @@
     width: 16.6%;
 }
 
+.hit-selector {
+    min-width: 230px;
+    text-align: left;
+}
+
+.hit-browser {
+    width: 50%;
+    max-width: 700px;
+    margin-top: 0.25rem;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.hit-browser-inner {
+    text-align: -webkit-center;
+}
+
+.hit-header {
+    margin-bottom: 16px
+}
+
+.edit {
+    margin-bottom: 1.5rem;
+}
+
+.operation {
+    padding-right:16px
+}
+
+.annotation-label {
+    font-family: monospace;
+    color: #333;
+    letter-spacing: 0.9px;
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.edit-box {
+    width: 200px;
+}
+
+
 #lines {
     position: absolute;
     top: 0;

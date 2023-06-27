@@ -300,6 +300,8 @@ export default {
             
             const edits = this.process_edit_list(hit_edits, sent_type)
 
+            // Renders edits, but does not account for multiple or overlapping edge cases...
+
             for (let i = 0; i < edits.length; i++) {
                 let edit = edits[i]
                 let next_edit = edits[i + 1]

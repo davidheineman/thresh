@@ -186,8 +186,8 @@ export default {
 
 <template>
     <section id="hit">
-        <div class="cf mt1">
-            <div class="fl mb3 tc f3 w-20 mt1 hit-selector">
+        <div class="cf mt1 hit-header">
+            <div class="fl tc f3 w-20 mt1 hit-selector">
                 <button @click="go_to_hit(current_hit - 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&lt;&nbsp;</button>
                 Hit <span>{{ current_hit }}</span> / <span>{{ total_hits }}&nbsp;</span>
                 <button @click="go_to_hit(current_hit + 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&gt;&nbsp;</button>
@@ -202,12 +202,15 @@ export default {
                 <label class="file-upload br-100 w2-5 h2-5 pointer" for="upload-btn"><i class="fa fa-arrow-up"></i></label>
             </div>
 
-            <div class="fr mr3">
-                <div>
+            <div class="fr mr3 hit-browser">
+                <!-- <div>
                     <span v-for="n in Math.floor(total_hits / 2)" v-bind:key="'circle-' + n" v-bind:id="'circle-' + n" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
                 </div>
                 <div class="mt2">
                     <span v-for="n in Math.ceil(total_hits / 2)" v-bind:key="'circle-' + (n + Math.floor(total_hits / 2))" v-bind:id="'circle-' + (n + Math.floor(total_hits / 2))" @click="go_to_hit_circle(n + Math.floor(total_hits / 2), $e)" class="circle pointer"><span class="tooltiptext">{{n + Math.floor(total_hits / 2)}}</span></span>
+                </div> -->
+                <div class="hit-browser-inner">
+                    <span v-for="n in total_hits" v-bind:key="'circle-' + n" v-bind:id="'circle-' + n" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
                 </div>
             </div>
         </div>

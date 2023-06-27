@@ -8,3 +8,9 @@ export const COLORS = {
     'teal': '#3ca3a7',
     'orange': '#e67c43'
 }
+
+export const LIKERT_COLOR_MAP = {
+    'minor': 'light-blue',
+    'somewhat': 'light-orange',
+    'a lot': 'light-red',
+}

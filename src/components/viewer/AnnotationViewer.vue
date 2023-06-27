@@ -27,10 +27,10 @@ export default {
     methods: {
         add_an_edit() {
             if (this.editor_open) {
-                $('#add_an_edit').hide(400);
+                $('#add_an_edit').hide(300);
                 $(".icon-default").removeClass("open")
             } else {
-                $('#add_an_edit').slideDown(400);
+                $('#add_an_edit').slideDown(300);
                 $(".icon-default").addClass("open")
             }
             this.set_editor_state(!this.editor_open)
@@ -63,9 +63,9 @@ export default {
     <section>
         <div class="mt1 cf">
             <div class="fl w-80">
-                <p class="f3 courier ttu">Edit Annotations (<span>{{ annotated_edits }}/{{ total_edits }}</span>)</p>
+                <p class="f3 annotation-label ttu">Edit Annotations (<span>{{ annotated_edits }}/{{ total_edits }}</span>)</p>
             </div>
-            <div class="fl w-20 tc">
+            <div class="fl w-20 tr">
                 <p @click="add_an_edit" class="add_button pa2 br-pill-ns ba bw1 grow">
                     <i class="fa-solid fa-plus fa-1-5x icon-default pointer mr2"></i>
                     <span class="f4">Add Edit</span>

@@ -827,8 +827,12 @@
   box-shadow: 0px 0px 0 0px rgba(0, 0, 0, 0);
   /* color: white; */
   cursor: pointer;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -moz-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.br-pill-ns {
+  border-radius: 12px !important;
 }
 
 .comment_button {

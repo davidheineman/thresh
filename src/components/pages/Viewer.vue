@@ -13,6 +13,9 @@ export default {
             consumed_config: null,
         }
     },
+    props: [
+        'template'
+    ],
     methods: {
         set_data(data) {
             this.data = data
@@ -22,17 +25,19 @@ export default {
         },
     },
     created: async function() {
+        let template_name = this.template
+
         // Load data
         let file_path = get_file_path();
         if (file_path == null) {
-            file_path = 'data/salsa.json'
+            file_path = `data/${template_name}.json`
         }
         download_data(file_path).then((data) => {
             this.set_data(data)
         })
 
         // Load config
-        let template = 'templates/salsa.yml'
+        let template = `templates/${template_name}.yml`
         download_config(template).then((config) => {
             const parsedYaml = jsyaml.load(config);
             this.set_config(parsedYaml)
@@ -53,3 +58,7 @@ export default {
         />
     </main>
 </template>
+
+<style>
+  @import '../../assets/css/viewer.css';
+</style>

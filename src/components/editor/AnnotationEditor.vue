@@ -32,6 +32,11 @@ export default {
             edit_state: edit_state,
         }
     },
+    watch: {
+        config() {
+            this.edit_state = this.initalize_edit_state()
+        }
+    },
     methods: {
         parse_options(edit_config) {
             if (typeof edit_config !== "object") { return null }
@@ -188,8 +193,8 @@ export default {
             $("input[name=edit_cotegory]").prop("checked", false);
             $(".checkbox-tools").prop("checked", false);
             $(".checkbox-tools-yes-no").prop("checked", false);
-            $('.quality-selection').hide(400);
-            $(".span-selection-div").hide(400);
+            $('.quality-selection').hide(300);
+            $(".span-selection-div").hide(300);
 
             $(".child-question").hide();
 
@@ -197,8 +202,8 @@ export default {
             this.refresh_interface_edit()
         },
         show_span_selection(e) {
-            $(`.span-selection-div`).hide(400);
-            $(`.span-selection-div[data-category=${e.target.value}]`).slideDown(400);
+            $(`.span-selection-div`).hide(300);
+            $(`.span-selection-div[data-category=${e.target.value}]`).slideDown(300);
             const edit_config = this.getEditConfig(e.target.value);
 
             this.refresh_interface_edit()
@@ -237,17 +242,17 @@ export default {
 <template>
     <div class="quality-selection-divs">
         <div class="quality-selection w-100" id="add_an_edit">
-            <p class="f3 courier ttu mv1">Adding an Edit <i class="fa-solid fa-plus"></i></p>
+            <p class="f3 annotation-label ttu mv1">Adding an Edit <i class="fa-solid fa-plus"></i></p>
             <div id="dropdown-button-container">
                 <div class="over-hide z-bigger mt2">
                     <div class="row">
                         <p class="mb2 b tracked-light"><i>Select the Edit Category.</i>
                         </p>
                         <div class="tc mb3">
-                            <div v-for="item in config.edits" :key="item.id" class="w-15 mr2 dib">
+                            <div v-for="item in config.edits" :key="item.id" class="edit-box mr2 dib">
                                 <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" name="edit_cotegory"
                                     :id="`edit_cotegory-${item.name}`" :value="item.name">
-                                <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`">
+                                <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`" style="text-wrap: nowrap">
                                     <i :class="`fa-solid ${item.icon} fa-1-5x mb1`"></i>
                                     {{ item.label }}
                                 </label>
@@ -285,7 +290,7 @@ export default {
 
         <div v-for="item in config.edits" :key="item.id">
             <div class="quality-selection w-100" :id="`${item.name}_edit_annotation`" :data-category="item.name">
-                <p class="f3 courier ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
+                <p class="f3 annotation-label ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
                 <div class="f4 mt0 mb2 tc">
                     <span :class="`edit-type txt-${item.name} f3`">{{ item.label }}:  </span>
 
