@@ -48,11 +48,12 @@ export default {
             this.setDataValue(this.dataInput)
         },
         set_config(config) {
-            this.config = config
-            if (config != this.configInput) {
-                this.configInput = jsyaml.dump(config)
+            let parsedYaml = jsyaml.load(config);
+            this.config = parsedYaml
+            if (parsedYaml != this.configInput) {
+                this.configInput = jsyaml.dump(parsedYaml)
             }
-            this.setConfigValue(this.configInput)
+            this.setConfigValue(config)
         },
         async compile() {
             this.config = jsyaml.load(this.getConfigValue())
@@ -115,11 +116,7 @@ export default {
         // Load config
         let template = '/templates/demo.yml'
         download_config(template).then((config) => {
-            let parsedYaml = jsyaml.load(config);
-            // console.log(parsedYaml)
-            // parsedYaml = {config: parsedYaml}
-            // Essentially in prod it doesn't add the unnecessary .config key...
-            this.set_config(parsedYaml)
+            this.set_config(config)
         })
 
         // Resize handle

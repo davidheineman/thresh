@@ -190,6 +190,11 @@ export default {
             }).join(' ');
             $(".annotation-icon").removeClass(classList);
 
+            for (let cat of classList) {
+                $('#original-sentence').removeClass(`select-color-${cat}`)
+                $('#simplified-sentence').removeClass(`select-color-${cat}`)
+            }
+
             $("input[name=edit_cotegory]").prop("checked", false);
             $(".checkbox-tools").prop("checked", false);
             $(".checkbox-tools-yes-no").prop("checked", false);

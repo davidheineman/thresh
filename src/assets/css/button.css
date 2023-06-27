@@ -292,7 +292,7 @@
     height    : 2px;
     width     : 0;
     background: #000;
-    transition: 400ms ease all;
+    transition: 300ms ease all;
   }
 
   .btn-5:after {

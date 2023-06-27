@@ -196,6 +196,7 @@
               .checkbox-tools:checked + label.txt-${edit.name}{
                 border: 2px solid var(--${edit.name});
               }
+              .select-color-${edit.name}::selection { background: ${light_color} !important; }
             `
           }
           return css

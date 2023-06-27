@@ -76,6 +76,9 @@ export default {
                 this.process_simplified_html_with_selected_span(selected_category)
                 return;
             }
+
+            $('#simplified-sentence').addClass(`select-color-${selected_category}`)
+
             let range = selection.getRangeAt(0);
             let [start, end] = [range.startOffset, range.endOffset];
             

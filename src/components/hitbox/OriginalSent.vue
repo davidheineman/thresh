@@ -72,6 +72,8 @@ export default {
                 return;
             }
 
+            $('#original-sentence').addClass(`select-color-${selected_category}`)
+
             let range = selection.getRangeAt(0)
             let [start, end] = [range.startOffset, range.endOffset]
             
