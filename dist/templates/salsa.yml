@@ -256,3 +256,10 @@ edits:
     - name: grammar_error
       question: "Does this structure edit introduce any fluency / grammar error?"
       options: binary 
+citation: |
+  @article{heineman2023dancing,
+    title={Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA},
+    author={Heineman, David and Dou, Yao and Maddela, Mounica and Xu, Wei},
+    journal={arXiv preprint arXiv:2305.14458},
+    year={2023}
+  }
