@@ -1,0 +1,23 @@
+# 👋👋 Welcome to the annotation builder!
+
+# Feel free to customize the below template, or choose one of the provided
+# templates from the drop-down.
+
+# Metadata about your interface
+template_name: demo
+template_label: Demo Interface
+template_description: Add a description of your interface here
+
+# Labels for the input and/or output
+input_label: "Your Input Label"
+output_label: "Your Output Label"
+
+# "Edits" are our units of annotations. First, edits are selected, then annotated.
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red                  # Use HEX codes, or pre-defined colors
+    icon: fa-magnifying-glass   # <- Use any icon name from http://fontawesome.com/search?o=r&m=free
+    enable_input: true          # Enables selecting this edit on the input
+    enable_output: true         # Enables selecting this edit on the output
+    type: primitive             # "primitive" to select text, "composite" to select other edits

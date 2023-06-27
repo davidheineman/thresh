@@ -1,0 +1,116 @@
+template_name: scarecrow
+template_label: SCARECROW
+template_description: "Scarecrow: A framework for scrutinizing machine text"
+input_label: "Prompt (human-written)"
+output_label: "Continuation"
+edits:
+  - name: grammar_usage
+    label: "Grammar and Usage"
+    color: "#9a9a9a"
+    icon: fa-spell-check
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: grammar_usage_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: bad_math
+    label: "Bad Math"
+    color: "#111"
+    icon: fa-calculator
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: bad_math_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: commonsense
+    label: "Commonsense"
+    color: "#9eebcf"
+    icon: fa-brain
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: commonsense_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: encyclopedic
+    label: "Encyclopedic"
+    color: "#137752"
+    icon: fa-book
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: encyclopedic_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: incoherent
+    label: "Incoherent"
+    color: "#ff80cc"
+    icon: fa-comment-slash
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: incoherent_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: needs_google
+    label: "Needs Google"
+    color: "#5e2ca5"
+    icon: fa-magnifying-glass
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: needs_google_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: off_prompt
+    label: "Off-prompt"
+    color: "gold"
+    icon: fa-x
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: off_prompt_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: redundant
+    label: "Redundant"
+    color: "#e7040f"
+    icon: fa-arrows-spin
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: redundant_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: self_contradiction
+    label: "Self-Contradiction"
+    color: "#00449e"
+    icon: fa-rotate-left
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: self_contradiction_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: technical_jargon
+    label: "Technical Jargon"
+    color: "#ff6300"
+    icon: fa-flask
+    enable_output: true
+    type: primitive
+    annotation:
+      - name: technical_jargon_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3

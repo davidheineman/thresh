@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "original": "Whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles, and, by opposing, end them?",
+        "simplified": "Is it nobler to put up with all the nasty things that luck throws your way, or to fight against all those troubles by simply putting an end to them once and for all?",
+        "edits": []
+    },
+    {
+        "id": 2,
+        "original": "Yea, noise? Then I'll be brief. O happy dagger, this is thy sheath. There rust and let me die.",
+        "simplified": "Oh, noise? Then I'll be quick. Oh, good, a knife! My body will be your sheath, rust inside my body and let me die.",
+        "edits": []
+    }
+]
