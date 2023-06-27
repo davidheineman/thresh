@@ -19,12 +19,14 @@ export default {
         'parent_div_name'
     ],
     data() { 
-        let col_size = 0;
+        let col_size = 16;
         if ('options' in this.question) {
             switch (this.question.options.length) {
+                case 1: col_size = 50; break;
                 case 2: col_size = 50; break;
                 case 3: col_size = 33; break;
                 case 4: col_size = 25; break;
+                case 5: col_size = 16; break;
                 case 6: col_size = 16; break;
             }
         }

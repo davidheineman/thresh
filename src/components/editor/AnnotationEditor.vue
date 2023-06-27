@@ -198,7 +198,7 @@ export default {
             $("input[name=edit_cotegory]").prop("checked", false);
             $(".checkbox-tools").prop("checked", false);
             $(".checkbox-tools-yes-no").prop("checked", false);
-            $('.quality-selection').hide(300);
+            $('.quality-selection').slideUp(300);
             $(".span-selection-div").hide(300);
 
             $(".child-question").hide();
@@ -207,8 +207,8 @@ export default {
             this.refresh_interface_edit()
         },
         show_span_selection(e) {
-            $(`.span-selection-div`).hide(300);
-            $(`.span-selection-div[data-category=${e.target.value}]`).slideDown(300);
+            $(`.span-selection-div`).hide();
+            $(`.span-selection-div[data-category=${e.target.value}]`).show();
             const edit_config = this.getEditConfig(e.target.value);
 
             this.refresh_interface_edit()
@@ -267,12 +267,12 @@ export default {
                         <div v-for="item in config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
                                 <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.input_label }}</i>.</p>
-                                <p class="tracked-light">Selected span: <span v-html="selected_state.original_span"></span></p>
+                                <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.original_span"></span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
                                     <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.output_label }}</i>.</p>
-                                    <p class="tracked-light">Selected span: <span v-html="selected_state.simplified_span"></span></p>
+                                    <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.simplified_span"></span></p>
                                 </div>
                             </div>
                             <div v-if="item.type == 'composite'">

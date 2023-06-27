@@ -27,7 +27,7 @@ export default {
     methods: {
         add_an_edit() {
             if (this.editor_open) {
-                $('#add_an_edit').hide(300);
+                $('#add_an_edit').slideUp(300);
                 $(".icon-default").removeClass("open")
             } else {
                 $('#add_an_edit').slideDown(300);
