@@ -46,6 +46,9 @@
         set_annotating_edit_span: this.set_annotating_edit_span,
 
         refresh_interface_edit: this.refresh_interface_edit,
+
+        instructions_open: false,
+        toggle_instructions: this.toggle_instructions,
       }
     },
     props: [
@@ -169,6 +172,9 @@
         set_lines(lines) {
           this.lines = lines;
         },
+        toggle_instructions() {
+          this.instructions_open = !this.instructions_open;
+        },
         compile_style() {
           if (!this.config.hasOwnProperty('edits')) { return }
 
@@ -221,7 +227,7 @@
 <template>
   <div class="container w-65 mv3 mb-3 card-body">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
-    <!-- <Instructions :config="config" /> -->
+    <Instructions v-bind="$data" :config="config" />
     <!-- <CommentBox v-bind="$data" :config="config" /> -->
     <HitBox v-bind="$data" :config="config" />
     <AnnotationEditor v-bind="$data" :config="config" />

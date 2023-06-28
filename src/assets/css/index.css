@@ -28,17 +28,26 @@
 }
 
 .hit-selector {
-    min-width: 230px;
+    /* min-width: 230px; */
     text-align: left;
+    margin-right: 10px;
+    width: max-content;
 }
 
 .hit-browser {
-    width: 50%;
     max-width: 700px;
     margin-top: 0.25rem;
     background-color: #f6f6f6;
     border-radius: 10px;
     padding: 5px 10px;
+    height: fit-content;
+    justify-self: end;
+    width: 93%;
+}
+
+.hit-instructions-btn {
+    transition: all 0.1s ease;
+    background-color: white;
 }
 
 .hit-browser-inner {
@@ -46,7 +55,11 @@
 }
 
 .hit-header {
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0fr auto auto 4fr auto 0fr;
+    grid-gap: 10px;
 }
 
 .editor-container {
@@ -60,6 +73,29 @@
 
 .operation {
     padding-right:16px
+}
+
+.card-body .overlay {
+    position: absolute;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+  
+.card-body .modal {
+    position: absolute;
+    max-width: 700px;
+    width: 100%;
+    z-index: 9999;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: #fff;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 00%);
 }
 
 .annotation-label {
@@ -224,6 +260,7 @@ textarea {
 
 .w-65 {
     width: 95%;
+    max-width: 1200px
 }
 
 span.outside {

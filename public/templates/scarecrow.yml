@@ -1,8 +1,9 @@
 template_name: scarecrow
-template_label: SCARECROW
+template_label: SCARECROW 🎃
 template_description: "Scarecrow: A framework for scrutinizing machine text"
 input_label: "Prompt (human-written)"
 output_label: "Continuation"
+tutorial_link: https://yao-dou.github.io/qual/
 edits:
   - name: grammar_usage
     label: "Grammar and Usage"

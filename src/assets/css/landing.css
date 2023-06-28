@@ -1,0 +1,86 @@
+.landing-container h2 {
+    font-size: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem
+}
+.landing-container h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #b8b8b8;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.landing-container h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem
+}
+.landing-container {
+    /* min-width: 400px;
+    max-width: 800px; */
+    width: 700px;
+    margin: auto;
+    /* margin-top: 20%; */
+}
+.option-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
+    grid-gap: 10px;
+}
+.option-buttons button, .option-buttons a {
+    margin: auto;
+    width: 200px;
+    height: 60px;
+}
+.separator {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before,
+.separator::after {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1px solid #b8b8b8;
+}
+.separator::before {
+    margin-right: 10px;
+}
+.separator::after {
+    margin-left: 10px;
+}
+.separator span {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #b8b8b8;
+    background-color: #fff;
+} 
+.file-box {
+    width: 90%;
+    height: 150px;
+}
+#assetsFieldHandle {
+    /* display: none !important */
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.cursor-pointer {
+    top: -75px;
+    position: relative;
+    text-align: center;
+}
+  
+.landing-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* transform: translate(0, -5%); */
+}
