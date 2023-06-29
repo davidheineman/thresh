@@ -191,7 +191,7 @@ export default {
     <main class="builder-container">
         <div class="header">
             <div class="template-label-name">
-                <img src="favicon.ico" width=40 alt="Icon">
+                <img src="/favicon.ico" width=40 alt="Icon">
                 <!-- <h3>Annotation Builder</h3> -->
             </div>
             <div class="template-label-header">
