@@ -33,6 +33,11 @@ export default {
             dataEditor: null,
             configEditor: null,
 
+            dragging: {
+                vertical: false,
+                horizontal: false,
+            },
+
             getDataValue: null,
             getConfigValue: null,
             setDataValue: null,
@@ -91,6 +96,56 @@ export default {
                     reject(error);
                 });
             });
+        },
+        start_drag(type) {
+            if (type == 'vertical') {
+                this.dragging.vertical = true;
+                $("#builder")[0].style.cursor = "ew-resize";
+            } else if (type == 'horizontal') {
+                this.dragging.horizontal = true;
+                $("#editor")[0].style.cursor = "ev-resize";
+            }
+        },
+        reset_col_sizes() {
+            $("#builder")[0].style.gridTemplateColumns = '1fr 0fr 1fr'
+            $("#editor")[0].style.gridAutoRows = '2fr 0fr 1fr'
+        },
+        end_drag() {
+            this.dragging.vertical = false;
+            this.dragging.horizontal = false;
+            $("#builder")[0].style.cursor = "auto";
+        },
+        on_drag(e) {
+            if (this.dragging.vertical) {
+                const page = $("#builder")[0];
+                const editor = $("#editor")[0];
+                const editor_width = this.dragging.vertical ? e.clientX : editor.clientWidth;
+                const dragbar_width = 5;
+
+                let new_col_definition = [
+                    editor_width,
+                    dragbar_width,
+                    window.innerWidth - dragbar_width - editor_width
+                ].map(c => c.toString() + "px").join(" ");
+                page.style.gridTemplateColumns = new_col_definition;
+                e.preventDefault()
+            } else if (this.dragging.horizontal) {
+                const page = $("#editor")[0];
+                const editor = $("#config-editor-container")[0];
+                const submit_height = $('.submit-container')[0].clientHeight;
+                const header_height = $('.header')[0].clientHeight;
+                
+                const editor_height = this.dragging.horizontal ? e.clientY - submit_height - header_height : editor.clientHeight;
+                const dragbar_height = 5;
+
+                let new_col_definition = [
+                    editor_height,
+                    dragbar_height,
+                    window.innerHeight - dragbar_height - editor_height - submit_height - header_height
+                ].map(c => c.toString() + "px").join(" ");
+                page.style.gridAutoRows = new_col_definition;
+                e.preventDefault()
+            }
         }
     },
     created: async function() {
@@ -108,61 +163,79 @@ export default {
         if (file_path == null) {
             file_path = '/data/demo.json'
         }
+        let template = '/templates/demo.yml'
+
+        const urlParams = new URLSearchParams(window.location.search);
+        let template_arg = urlParams.get('t');
+        if (template_arg != null) {
+            template = `/templates/${template_arg}.yml`
+            file_path = `/data/${template_arg}.json`
+        }
+
         download_data(file_path).then((data) => {
             this.data = data
             this.set_data(this.data)
         })
 
         // Load config
-        let template = '/templates/demo.yml'
         download_config(template).then((config) => {
             this.set_config(config)
         })
 
-        // Resize handle
-        // const resizeHandle = document.querySelector('.resize-handle');
-        // const container = document.querySelector('.builder');
-        // let isResizing = false;
-        // let containerWidth = container.offsetWidth;
-        // resizeHandle.addEventListener('mousedown', () => {
-        // isResizing = true;
-        // });
-        // document.addEventListener('mousemove', (event) => {
-        // if (!isResizing) return;
-        // const containerRect = container.getBoundingClientRect();
-        // const containerWidthDelta = event.clientX - containerRect.left;
-        // container.style.flex = `0 0 ${containerWidthDelta}px`;
-        // });
-        // document.addEventListener('mouseup', () => {
-        // isResizing = false;
-        // containerWidth = container.offsetWidth;
-        // });
-        },
-    }
+        window.addEventListener('resize', this.reset_col_sizes);
+    },
+}
 </script>
 
 <template>
-    <main>
-        <div class="builder">
+    <main class="builder-container">
+        <div class="header">
+            <div class="template-label-name">
+                <img src="favicon.ico" width=40 alt="Icon">
+                <!-- <h3>Annotation Builder</h3> -->
+            </div>
+            <div class="template-label-header">
+                <h2 v-if="config != null && config != undefined">Editing: {{ config.template_label }}</h2>
+            </div>
+            <div>
+                <a href="https://github.com/davidheineman/nlproc.tools" class="github-corner" aria-label="View source on GitHub">
+                <svg width="45" height="45" viewBox="0 0 250 250" style="fill:#727272; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                </svg>
+                </a>
+            </div>
+        </div>
+        <div id="builder" class="builder" @mouseup="end_drag" @mousemove="on_drag">
             <div class="editor" id="editor">
                 <div class='submit-container'>
-                    <button class='submit-button btn-blue'>Deploy</button>
-                    <button class='submit-button btn-green' @click="compile">Compile →</button>
+                    <button class='pa2 ba bw1 pointer btn-gold' v-if="config != null && config != undefined && config.citation">
+                        <span class="f5 b">Cite this Typology</span>
+                        <i class="fa-solid fa-crown fa-1-3x icon-default ml2"></i>
+                    </button>
+                    <button class='pa2 ba bw1 pointer deploy-btn'>
+                        <span class="f5 b">Deploy</span>
+                        <i class="fa-solid fa-angles-up fa-1-3x icon-default ml2"></i>
+                    </button>
+                    <button class='pa2 ba bw1 pointer btn-blue' @click="compile">
+                        <span class="f5 b">Compile</span>
+                        <i class="fa-solid fa-repeat fa-1-3x icon-default ml2"></i>
+                    </button>
                 </div>
-                <div class='editor-container config-editor-container'>
+                <div class='editor-container config-editor-container' id="config-editor-container">
                     <div id='config-editor' />
                 </div>
-                <div class='editor-container data-editor-container'>
+                <div class="h-resize-handle" id="h-resize-handle" @mousedown="start_drag('horizontal')"><div class='h-resize-dots'></div></div>
+                <div class='editor-container data-editor-container' id="data-editor-container">
                     <div id='data-editor' />
                 </div>
             </div>
-            <div class="resize-handle" />
-            <div class="sandbox">
+            <div class="resize-handle" id="resize-handle" @mousedown="start_drag('vertical')"><div class='resize-dots'></div></div>
+            <div class="sandbox" id="sandbox">
                 <div v-if="
-                    config != null && 
-                    config != undefined &&
-                    data != null &&
-                    data != undefined
+                    config != null && config != undefined &&
+                    data != null && data != undefined
                 ">
                     <Interface 
                         :input_data={data}

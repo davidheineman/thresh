@@ -1,15 +1,70 @@
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+
+.builder-container {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-auto-rows:minmax(0,1fr);
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 .builder {
-    display: flex;
-    height: 100vh; 
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+    height: 100%; 
+    /* display: flex;
+    flex: 1; */
+}
+
+.header h3, .header h2 {
+    margin: 0
+}
+
+.header {
+    /* height: 50px; */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 10px;
+    background-color: #181818;
+}
+
+.template-label-header {
+    margin: auto;
+    text-align: center;
+    color: #727272
+}
+
+.template-label-name h3 {
+    display: inline;
+    vertical-align: middle;
+}
+
+.template-label-name img {
+    margin-top: 5px;
+    filter: invert(0.4);
+}
+
+.deploy-btn {
+    margin-left: auto !important;
+}
+
+.template-label-name {
+    margin: auto;
+    margin-left: 16px;
+    text-align: left;
+    color: #727272
 }
 
 .editor {
     flex: 1;
-    padding: 10px;
     border-right: 5px solid #181818;
-    background-color: #353535;
+    background-color: #1e1e1e;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: 35px;
+    grid-auto-rows: 2fr 0fr 1fr;
 }
 
 .sandbox {
@@ -20,20 +75,18 @@
 }
 
 .editor-container {
-    width: 100%;
+    width: 99%;
     box-sizing: border-box;
-    /* border: 5px solid #1e1e1e; */
-    padding-right: 10px;
     resize: none;
-    margin-bottom: 10px;
+    max-width: 100%;
 }
 
 .config-editor-container {
-    height: 65%;
+    height: 99%;
 }
 
 .data-editor-container {
-    height: 25%;
+    height: 99%;
 }
 
 #data-editor, #config-editor {
@@ -42,25 +95,47 @@
 }
 
 .submit-container {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    /* padding: 8px; */
+    padding-left: 64px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
+.btn-blue {
+    background-color: #9cade6 !important;
+}
+.btn-gold {
+    background-color: #ffde5b;
+}
+
+.submit-container button {
+    padding: 0 10px;
+    min-width: 115px;
+    margin: 0 4px;
+    border-width: 0;
+    /* padding-bottom: 2px; */
+    padding-top: 2px;
+}
+
+.submit-container i {
+    transform: translate(0px, 1px);
+}
+
+/* Vertical resizing */
 .resize-handle {
-    width: 6px;
     height: 100%;
+    width: 5px;
     background-color: #1e1e1e;
-    position: absolute;
-    right: 50%;
-    top: 0;
     cursor: col-resize;
 }
-
-/* Adds buttons to resize handle */
-.resize-handle::before,
-.resize-handle::after {
+.resize-dots {
+    top: 50%;
+    position: relative;
+}
+.resize-dots::before,
+.resize-dots::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -70,11 +145,40 @@
   background-color: #fff;
   border-radius: 50%;
 }
-.resize-handle::before {
-  transform: translate(-50%, -50%) translateY(-5px) translateX(1.5px);
+.resize-dots::before {
+  transform: translate(-50%, -50%) translateY(-5px) translateX(-3px);
 }
-.resize-handle::after {
-  transform: translate(-50%, -50%) translateY(5px) translateX(1.5px);
+.resize-dots::after {
+  transform: translate(-50%, -50%) translateY(5px) translateX(-3px);
+}
+
+/* Horizontal resizing */
+.h-resize-handle {
+    height: 5px;
+    width: 100%;
+    background-color: #181818;
+    cursor: row-resize;
+}
+.h-resize-dots {
+    top: 50%;
+    position: relative;
+}
+.h-resize-dots::before,
+.h-resize-dots::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.h-resize-dots::before {
+    transform: translate(-50%, -50%) translateY(0px) translateX(5px);
+}
+.h-resize-dots::after {
+    transform: translate(-50%, -50%) translateY(0px) translateX(-5px);
 }
 
 /* TODO: Use a bootstrap library for styling code */

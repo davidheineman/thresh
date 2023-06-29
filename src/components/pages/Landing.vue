@@ -71,6 +71,11 @@ export default {
     },
     created() {
       this.consume_config()
+    },
+    computed: {
+        template_link() {
+            return `/?t=${this.config.template_name}`;
+        }
     }
 }
 </script>
@@ -78,7 +83,7 @@ export default {
 <template>
     <main class="landing-box">
         <div class="container landing-container">
-            <h4>Annotating With</h4>
+            <h4>Annotating with</h4>
             <h2>{{ config.template_label }}</h2>
             <h3>{{ config.template_description }}</h3>
             <div class="flex justify-center"> <!-- flex w-full h-screen items-center justify-center text-center -->
@@ -88,7 +93,7 @@ export default {
                 
                     <label for="assetsFieldHandle" class="block cursor-pointer">
                         <div>
-                            Drag &amp; drop, or <span class="underline">click here</span> an annotation file
+                            Drag &amp; drop, or <span class="underline">click here</span> to add an annotation file
                         </div>
                     </label>
                     <!-- <ul class="mt-4" v-if="filelist.length" v-cloak>
@@ -108,8 +113,7 @@ export default {
                 <a @click="get_example_data">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">View Example Data</button>
                 </a>
-                <!-- TODO: Fix this link -->
-                <a :href="config.template_name">
+                <a :href="template_link">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Customize this Template</button>
                 </a>
                 <a v-if="config.paper_link" :href="config.paper_link">
