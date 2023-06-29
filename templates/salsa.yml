@@ -2,11 +2,16 @@ template_name: salsa
 template_label: 💃 SALSA
 template_description: Success and FAilure Linguistic Simplification Annotation
 instructions: |
-  ## SALSA 💃 Annotation Instructions
-  Please make sure you select all the edits, some edits may be easily missed when the sentence is too long.
+  ## SALSA 💃 Annotation Instructions  
+  Please make sure you select all the edits, some edits **may be easily missed** when the sentence is too long.
+  
+  If you encounter any bug or have any suggestion on this tool, please write it at this [google doc link](https://docs.google.com/document/d/1oQpOMZij_keFGonBr9ZvXUn4cmgTgfpfueME_bVU-FI/edit).
+  
+  If you have any question, please don't hesitate to ask us over **slack**.
+  
+  Have fun!!!
 input_label: "Original Sentence"
 output_label: "Simplified Sentence"
-paper_link: https://arxiv.org/abs/2305.14458
 edits:
   - name: deletion
     label: "Deletion"
@@ -259,6 +264,7 @@ edits:
     - name: grammar_error
       question: "Does this structure edit introduce any fluency / grammar error?"
       options: binary 
+paper_link: https://arxiv.org/abs/2305.14458
 citation: |
   @article{heineman2023dancing,
     title={Dancing Between Success and Failure: Edit-level Simplification Evaluation using SALSA},

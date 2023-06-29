@@ -1,7 +1,11 @@
+# ========================================================================
+#
 # 👋👋 Welcome to the annotation builder!
-
+#
 # Feel free to customize the below template, or choose one of the provided
 # templates from the drop-down.
+#
+# ========================================================================
 
 # Metadata about your interface
 template_name: demo
