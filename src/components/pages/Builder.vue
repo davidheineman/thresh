@@ -1,5 +1,7 @@
 <script setup>
     import Interface from "./Interface.vue";
+    import Deploy from "../builder/Deploy.vue";
+    import Cite from "../builder/Cite.vue";
 
     import { download_data, download_config, get_file_path } from "../../assets/js/file-util.js";
 
@@ -33,6 +35,10 @@ export default {
             dataEditor: null,
             configEditor: null,
 
+            deploy_open: false,
+            cite_open: false,
+            selectedTemplate: '',
+
             dragging: {
                 vertical: false,
                 horizontal: false,
@@ -42,6 +48,14 @@ export default {
             getConfigValue: null,
             setDataValue: null,
             setConfigValue: null,
+        }
+    },
+    watch: {
+        selectedTemplate(newValue) {
+            const urlParams = new URLSearchParams(window.location.search);
+            urlParams.set('t', newValue);
+            window.history.replaceState(null, '', `${window.location.pathname}?${urlParams}`);
+            this.load_builder(newValue);
         }
     },
     methods: {
@@ -97,6 +111,12 @@ export default {
                 });
             });
         },
+        toggle_deploy() {
+            this.deploy_open = !this.deploy_open
+        },
+        toggle_cite() {
+            this.cite_open = !this.cite_open
+        },
         start_drag(type) {
             if (type == 'vertical') {
                 this.dragging.vertical = true;
@@ -142,10 +162,32 @@ export default {
                     editor_height,
                     dragbar_height,
                     window.innerHeight - dragbar_height - editor_height - submit_height - header_height
-                ].map(c => c.toString() + "px").join(" ");
+                ].map(c => c.toString() + "px").join(" "); 
                 page.style.gridAutoRows = new_col_definition;
                 e.preventDefault()
             }
+        },
+        templatesByTask(task) {
+            return this.$templates.filter(d => d.task === task);
+        },
+        async load_builder(template_arg) {
+            if (template_arg == null) {
+                template_arg = 'demo'
+            }
+            let template = `/templates/${template_arg}.yml`
+            let file_path = `/data/${template_arg}.json`
+            this.selectedOption = template
+
+            // Load data
+            download_data(file_path).then((data) => {
+                this.data = data
+                this.set_data(this.data)
+            })
+
+            // Load config
+            download_config(template).then((config) => {
+                this.set_config(config)
+            })
         }
     },
     created: async function() {
@@ -158,36 +200,28 @@ export default {
         this.setDataValue = setDataValue
         this.setConfigValue = setConfigValue
 
-        // Load data
-        let file_path = get_file_path();
-        if (file_path == null) {
-            file_path = '/data/demo.json'
-        }
-        let template = '/templates/demo.yml'
-
         const urlParams = new URLSearchParams(window.location.search);
         let template_arg = urlParams.get('t');
-        if (template_arg != null) {
-            template = `/templates/${template_arg}.yml`
-            file_path = `/data/${template_arg}.json`
-        }
-
-        download_data(file_path).then((data) => {
-            this.data = data
-            this.set_data(this.data)
-        })
-
-        // Load config
-        download_config(template).then((config) => {
-            this.set_config(config)
-        })
+        // let file_path = get_file_path();
+        
+        this.load_builder(template_arg)
 
         window.addEventListener('resize', this.reset_col_sizes);
     },
+    computed: {
+        isViewable() {
+            return this.$templates.some(d => d.path === this.config.template_name && d.hosted);
+        },
+        uniqueTasks() {
+            return [...new Set(this.$templates.map(d => d.task))].sort();
+        }
+    }
 }
 </script>
 
 <template>
+    <Deploy :deploy_open="deploy_open" :toggle_deploy="toggle_deploy" :config="config" />
+    <Cite :cite_open="cite_open" :toggle_cite="toggle_cite" :config="config" />
     <main class="builder-container">
         <div class="header">
             <div class="template-label-name">
@@ -210,11 +244,23 @@ export default {
         <div id="builder" class="builder" @mouseup="end_drag" @mousemove="on_drag">
             <div class="editor" id="editor">
                 <div class='submit-container'>
-                    <button class='pa2 ba bw1 pointer btn-gold' v-if="config != null && config != undefined && config.citation">
+                    <select id="types" v-model="selectedTemplate" class="template-selector h-100 db h2 f6 bg-near-white ba b--sliver" name="">
+                        <option value="">Explore templates...</option>
+                        <optgroup v-for="task in uniqueTasks" :label="task" :key="task">
+                            <option v-for="(template, index) in templatesByTask(task)" :value="template.path" :key="index">{{ template.name }}</option>
+                        </optgroup>
+                    </select>
+                    <button class='pa2 ba bw1 pointer btn-gold' @click="toggle_cite" v-if="config != null && config != undefined && config.citation">
                         <span class="f5 b">Cite this Typology</span>
                         <i class="fa-solid fa-crown fa-1-3x icon-default ml2"></i>
                     </button>
-                    <button class='pa2 ba bw1 pointer deploy-btn'>
+                    <a v-if="config != null && config != undefined && isViewable" :href="config.template_name">
+                        <button class='pa2 ba bw1 pointer btn-green'>
+                            <span class="f5 b">View</span>
+                            <i class="fa-solid fa-up-right-from-square fa-1-3x icon-default ml2"></i>
+                        </button>
+                    </a> 
+                    <button class='pa2 ba bw1 pointer deploy-btn' @click="toggle_deploy">
                         <span class="f5 b">Deploy</span>
                         <i class="fa-solid fa-angles-up fa-1-3x icon-default ml2"></i>
                     </button>

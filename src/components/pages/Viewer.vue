@@ -17,7 +17,7 @@ export default {
         }
     },
     props: [
-        'template'
+        'template_path'
     ],
     methods: {
         set_data(data) {
@@ -28,7 +28,7 @@ export default {
         },
     },
     created: async function() {
-        let template_name = this.template
+        let template_name = this.template_path
 
         // Load data
         // let file_path = get_file_path();
