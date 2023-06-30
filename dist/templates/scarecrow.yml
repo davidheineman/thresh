@@ -115,3 +115,21 @@ edits:
         label: "Severity"
         question: "Rate the severity."
         options: likert-3
+paper_link: https://aclanthology.org/2022.acl-long.501/
+citation: |
+  @inproceedings{dou-etal-2022-gpt,
+      title = "Is {GPT}-3 Text Indistinguishable from Human Text? Scarecrow: A Framework for Scrutinizing Machine Text",
+      author = "Dou, Yao  and
+        Forbes, Maxwell  and
+        Koncel-Kedziorski, Rik  and
+        Smith, Noah A.  and
+        Choi, Yejin",
+      booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      month = may,
+      year = "2022",
+      address = "Dublin, Ireland",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2022.acl-long.501",
+      doi = "10.18653/v1/2022.acl-long.501",
+      pages = "7250--7274",
+  }
