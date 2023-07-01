@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "使用注释"
+  drag_drop_begin: "拖放或"
+  drag_drop_underline: "点击这里"
+  drag_drop_after: "添加一个注释文件"
+  options_header: "或者"
+  tutorial_link: "查看教程"
+  examples_link: "查看示例数据"
+  builder_link: "自定义此模板"
+  paper_link: "查看论文"
+comment_box:
+  label: "评论"
+  placeholder: "在此处评论..."
+typology:
+  source_label: "源文本"
+  target_label: "目标文本"
+  context_label: "上下文"
+  edit_unit_name: "编辑"
+  edits_unit_name: "编辑"
+  span_unit_name: "文本范围"
+  spans_unit_name: "文本范围"
+buttons:
+  save_label: "保存"
+  cancel_label: "取消"
+  add_edit_label: "编辑注释"
+  instructions_label: "说明"
+hit_box:
+  hit_label: "任务"
+annotation_editor:
+  add_edit_header: "添加编辑"
+  select_edit_header: "选择编辑类别"
+  select_instructions: "从文本范围中选择文本"
+  selected_label: "已选"
+  annotating_edit_header: "注释编辑"
+  composite_seletion_instructions: "单击与"
+  composite_span_unification: "相关的编辑"
+annotation_viewer:
+  header: "编辑注释"
+  not_annotated_text_1: "此编辑尚未注释，请点击"
+  not_annotated_text_2: "开始注释！"
+questions:
+  binary_yes: "是"
+  binary_no: "否"
+  likert_1: "1 - 微小"
+  likert_2: "2 - 有些"
+  likert_3: "3 - 很多"

@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "کے ساتھ تشریح کرنا"
+  drag_drop_begin: "ڈریگ اور ڈراپ کریں ، یا "
+  drag_drop_underline: "یہاں کلک کریں"
+  drag_drop_after: "ایک تشریح فائل شامل کرنے کے لئے"
+  options_header: "یا"
+  tutorial_link: "ٹیوٹوریل دیکھیں"
+  examples_link: "مثالیں دیکھیں"
+  builder_link: "اس ٹیمپلیٹ کو تخصیص دیں"
+  paper_link: "مضمون دیکھیں"
+comment_box:
+  label: "تبصرہ"
+  placeholder: "اس HIT پر تبصرہ کریں ..."
+typology:
+  source_label: "ماخذ"
+  target_label: "ہدف"
+  context_label: "سیاق و سباق"
+  edit_unit_name: "ترمیم"
+  edits_unit_name: "ترمیمات"
+  span_unit_name: "سپین"
+  spans_unit_name: "سپینز"
+buttons:
+  save_label: "محفوظ کریں"
+  cancel_label: "منسوخ کریں"
+  add_edit_label: "تشریحی علامات شامل کریں"
+  instructions_label: "ہدایات"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "ترمیم شامل کرنا"
+  select_edit_header: "ترمیم کیٹیگری کا انتخاب کریں."
+  select_instructions: "متن سپین منتخب کریں:"
+  selected_label: "منتخب"
+  annotating_edit_header: "ترمیم کی تشریح کرنا"
+  composite_seletion_instructions: "اس کے ساتھ منسلک ترمیمات پر کلک کریں: "
+  composite_span_unification: "کے ساتھ"
+annotation_viewer:
+  header: "ترمیمی علامات"
+  not_annotated_text_1: "اس ترمیم کی ابھی تک تشریح نہیں ہوئی ہے ، کلک کریں"
+  not_annotated_text_2: "شروع کرنے کے لئے!"
+questions:
+  binary_yes: "ہاں"
+  binary_no: "نہیں"
+  likert_1: "1 - ذیلی"
+  likert_2: "2 - تھوڑا"
+  likert_3: "3 - بہت زیادہ"

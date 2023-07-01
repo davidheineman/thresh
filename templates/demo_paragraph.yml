@@ -1,0 +1,16 @@
+# We demonstrate the "context" feature, which allows appending text before or after sentences
+# or before the sentence entirely. This could be paragraph-level context, a longer article or
+# more information related to the annotation.
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Paragraph-level Annotation Demo
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true

@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "Аннотирование с помощью"
+  drag_drop_begin: "Перетащите или "
+  drag_drop_underline: "щелкните здесь"
+  drag_drop_after: " для добавления файла аннотации"
+  options_header: "или"
+  tutorial_link: "Посмотреть руководство"
+  examples_link: "Просмотреть примеры данных"
+  builder_link: "Настроить этот шаблон"
+  paper_link: "Просмотреть документ"
+comment_box:
+  label: "Комментарий"
+  placeholder: "Оставьте комментарий к этому HIT ..."
+typology:
+  source_label: "исходный"
+  target_label: "целевой"
+  context_label: "контекст"
+  edit_unit_name: "редактирование"
+  edits_unit_name: "редактирования"
+  span_unit_name: "фрагмент"
+  spans_unit_name: "фрагменты"
+buttons:
+  save_label: "Сохранить"
+  cancel_label: "Отмена"
+  add_edit_label: "Добавить аннотации"
+  instructions_label: "Инструкции"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "Добавление редактирования"
+  select_edit_header: "Выберите категорию редактирования."
+  select_instructions: "Выберите текстовый фрагмент из"
+  selected_label: "Выбранный"
+  annotating_edit_header: "Аннотирование редактирования"
+  composite_seletion_instructions: "Щелкните редактирования, связанные с "
+  composite_span_unification: "с"
+annotation_viewer:
+  header: "Аннотации редактирования"
+  not_annotated_text_1: "это редактирование еще не аннотировано, нажмите"
+  not_annotated_text_2: "чтобы начать!"
+questions:
+  binary_yes: "Да"
+  binary_no: "Нет"
+  likert_1: "1 - незначительное"
+  likert_2: "2 - в некоторой степени"
+  likert_3: "3 - значительное"

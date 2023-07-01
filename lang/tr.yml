@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "İle Etiketleme"
+  drag_drop_begin: "Sürükle ve bırak veya "
+  drag_drop_underline: "burayı tıkla"
+  drag_drop_after: " bir etiketleme dosyası eklemek için"
+  options_header: "veya"
+  tutorial_link: "Öğreticiyı Görüntüle"
+  examples_link: "Örnek Verileri Görüntüle"
+  builder_link: "Bu Şablonu Özelleştir"
+  paper_link: "Makaleyi Görüntüle"
+comment_box:
+  label: "Yorum"
+  placeholder: "Bu HIT üzerine yorum yapın ..."
+typology:
+  source_label: "kaynak"
+  target_label: "hedef"
+  context_label: "bağlam"
+  edit_unit_name: "düzenleme"
+  edits_unit_name: "düzenlemeler"
+  span_unit_name: "aralık"
+  spans_unit_name: "aralıklar"
+buttons:
+  save_label: "Kaydet"
+  cancel_label: "İptal"
+  add_edit_label: "Düzenleme Etiketleri Ekle"
+  instructions_label: "Talimatlar"
+hit_box:
+  hit_label: "Hit"
+annotation_editor:
+  add_edit_header: "Düzenleme Ekleme"
+  select_edit_header: "Düzenleme Kategorisini Seç."
+  select_instructions: "Metin aralığını seçin:"
+  selected_label: "Seçili"
+  annotating_edit_header: "Bir Düzenlemeyi Etiketleme"
+  composite_seletion_instructions: "İle ilişkili düzenlemeleri seçin: "
+  composite_span_unification: "ile"
+annotation_viewer:
+  header: "Düzenleme Etiketleri"
+  not_annotated_text_1: "bu düzenleme henüz etiketlenmedi, tıkla"
+  not_annotated_text_2: "etiketlemeye başlamak için!"
+questions:
+  binary_yes: "Evet"
+  binary_no: "Hayır"
+  likert_1: "1 - küçük"
+  likert_2: "2 - biraz"
+  likert_3: "3 - çok"

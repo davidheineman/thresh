@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "Annotating with"
+  drag_drop_begin: "Drag &amp; drop, or "
+  drag_drop_underline: "click here"
+  drag_drop_after: " to add an annotation file"
+  options_header: "or"
+  tutorial_link: "See Tutorial"
+  examples_link: "View Example Data"
+  builder_link: "Customize this Template"
+  paper_link: "View Paper"
+comment_box:
+  label: "Comment"
+  placeholder: "Comment on this HIT ..."
+typology:
+  source_label: "Source"
+  target_label: "Target"
+  context_label: "Context"
+  edit_unit_name: "edit"
+  edits_unit_name: "edits"
+  span_unit_name: "span"
+  spans_unit_name: "spans"
+buttons:
+  save_label: "Save"
+  cancel_label: "Cancel"
+  add_edit_label: "Add Edit"
+  instructions_label: "Instructions"
+hit_box:
+  hit_label: "Hit"
+annotation_editor:
+  add_edit_header: "Adding an Edit"
+  select_edit_header: "Select the Edit Category."
+  select_instructions: "Select the text span from the"
+  selected_label: "Selected"
+  annotating_edit_header: "Annotating an Edit"
+  composite_seletion_instructions: "Click the edits that associated with "
+  composite_span_unification: "with"
+annotation_viewer:
+  header: "Edit Annotations"
+  not_annotated_text_1: "this edit is not annotated yet, click"
+  not_annotated_text_2: "to start!"
+questions:
+  binary_yes: "Yes"
+  binary_no: "No"
+  likert_1: "1 - minor"
+  likert_2: "2 - somewhat"
+  likert_3: "3 - a lot"

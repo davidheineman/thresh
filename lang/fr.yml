@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "Annotation avec"
+  drag_drop_begin: "Glissez-déposez, ou "
+  drag_drop_underline: "cliquez ici"
+  drag_drop_after: " pour ajouter un fichier d'annotation"
+  options_header: "ou"
+  tutorial_link: "Voir le tutoriel"
+  examples_link: "Voir les exemples de données"
+  builder_link: "Personnaliser ce modèle"
+  paper_link: "Voir l'article"
+comment_box:
+  label: "Commentaire"
+  placeholder: "Commentez ce HIT ..."
+typology:
+  source_label: "source"
+  target_label: "cible"
+  context_label: "contexte"
+  edit_unit_name: "modification"
+  edits_unit_name: "modifications"
+  span_unit_name: "portion"
+  spans_unit_name: "portions"
+buttons:
+  save_label: "Enregistrer"
+  cancel_label: "Annuler"
+  add_edit_label: "Modifier les annotations"
+  instructions_label: "Instructions"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "Ajout d'une modification"
+  select_edit_header: "Sélectionnez la catégorie de modification."
+  select_instructions: "Sélectionnez la portion de texte depuis"
+  selected_label: "Sélectionné"
+  annotating_edit_header: "Annotation d'une modification"
+  composite_seletion_instructions: "Cliquez sur les modifications associées à "
+  composite_span_unification: "avec"
+annotation_viewer:
+  header: "Annotations des modifications"
+  not_annotated_text_1: "cette modification n'est pas encore annotée, cliquez"
+  not_annotated_text_2: "pour commencer !"
+questions:
+  binary_yes: "Oui"
+  binary_no: "Non"
+  likert_1: "1 - mineur"
+  likert_2: "2 - quelque peu"
+  likert_3: "3 - beaucoup"
