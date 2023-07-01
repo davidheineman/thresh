@@ -10,8 +10,10 @@ instructions: |
   If you have any question, please don't hesitate to ask us over **slack**.
   
   Have fun!!!
-input_label: "Original Sentence"
-output_label: "Simplified Sentence"
+interface_text:
+  typology:
+    source_label: "Original Sentence"
+    target_label: "Simplified Sentence"
 edits:
   - name: deletion
     label: "Deletion"
