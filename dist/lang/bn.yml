@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "অ্যানোটেশন করা"
+  drag_drop_begin: "টেনে আনুন এবং পরে "
+  drag_drop_underline: "এখানে ক্লিক করুন"
+  drag_drop_after: " একটি এনটিসিকরণ ফাইল যোগ করতে"
+  options_header: "অথবা"
+  tutorial_link: "টিউটোরিয়াল দেখুন"
+  examples_link: "উদাহরণ ডেটা দেখুন"
+  builder_link: "এই টেমপ্লেটটি কাস্টমাইজ করুন"
+  paper_link: "পেপার দেখুন"
+comment_box:
+  label: "মন্তব্য"
+  placeholder: "এই এইচআইটিতে মন্তব্য করুন ..."
+typology:
+  source_label: "উৎস"
+  target_label: "লক্ষ্য"
+  context_label: "প্রসঙ্গ"
+  edit_unit_name: "সংশোধন"
+  edits_unit_name: "সংশোধন"
+  span_unit_name: "স্প্যান"
+  spans_unit_name: "স্প্যান"
+buttons:
+  save_label: "সংরক্ষণ করুন"
+  cancel_label: "বাতিল করুন"
+  add_edit_label: "সংশোধন যুক্ত করুন"
+  instructions_label: "নির্দেশাবলী"
+hit_box:
+  hit_label: "হিট"
+annotation_editor:
+  add_edit_header: "সংশোধন যোগ করা হচ্ছে"
+  select_edit_header: "সংশোধন বিভাগ নির্বাচন করুন।"
+  select_instructions: "টেক্সট স্প্যান নির্বাচন করুন"
+  selected_label: "নির্বাচিত"
+  annotating_edit_header: "সংশোধন এনটিসিকরণ"
+  composite_seletion_instructions: "সংযুক্ত সংশোধনগুলি ক্লিক করুন "
+  composite_span_unification: "এর সাথে"
+annotation_viewer:
+  header: "সংশোধন এনটিসিকরণ"
+  not_annotated_text_1: "এই সংশোধনটি এনটিসিকরণ করা হয়নি, ক্লিক করুন"
+  not_annotated_text_2: "শুরু করতে!"
+questions:
+  binary_yes: "হ্যাঁ"
+  binary_no: "না"
+  likert_1: "১ - অল্প"
+  likert_2: "২ - কিছুটা"
+  likert_3: "৩ - অনেক" 

@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "Anotando con"
+  drag_drop_begin: "Arrastra y suelta, o "
+  drag_drop_underline: "haz clic aquí"
+  drag_drop_after: " para agregar un archivo de anotación"
+  options_header: "o"
+  tutorial_link: "Ver tutorial"
+  examples_link: "Ver datos de ejemplo"
+  builder_link: "Personalizar esta plantilla"
+  paper_link: "Ver artículo"
+comment_box:
+  label: "Comentario"
+  placeholder: "Comenta en este HIT ..."
+typology:
+  source_label: "origen"
+  target_label: "destino"
+  context_label: "contexto"
+  edit_unit_name: "edición"
+  edits_unit_name: "ediciones"
+  span_unit_name: "fragmento"
+  spans_unit_name: "fragmentos"
+buttons:
+  save_label: "Guardar"
+  cancel_label: "Cancelar"
+  add_edit_label: "Editar anotaciones"
+  instructions_label: "Instrucciones"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "Añadiendo una edición"
+  select_edit_header: "Selecciona la categoría de la edición."
+  select_instructions: "Selecciona el fragmento de texto de la"
+  selected_label: "Seleccionado"
+  annotating_edit_header: "Anotando una edición"
+  composite_seletion_instructions: "Haz clic en las ediciones asociadas con "
+  composite_span_unification: "con"
+annotation_viewer:
+  header: "Anotaciones de edición"
+  not_annotated_text_1: "esta edición aún no está anotada, haz clic"
+  not_annotated_text_2: "para comenzar!"
+questions:
+  binary_yes: "Sí"
+  binary_no: "No"
+  likert_1: "1 - menor"
+  likert_2: "2 - algo"
+  likert_3: "3 - mucho"

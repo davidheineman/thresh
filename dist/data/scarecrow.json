@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "metadata": {
             "gid": "10001",
             "model": "gpt3",
@@ -8,8 +7,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "In the wild, animals display tender moments of affection all the time. Macedonian photographer Goran Anastasovski has spent 15 years honing his skills in wildlife photography so that he can share these touching instances with others.",
-        "simplified": "To honor the effort he put into his latest set of photographs, we've gathered some of our favorites for your viewing pleasure. A lion and its cub enjoy a tender moment together. The lion's paws rest on top of the front paws of its cub, who lays its head on its mother. A polar bear embraces her cub. Polar bears care for their cubs until they're about two years old, when the cubs venture out on their own. A kangaroo rubs her cheek on her joey's hand.",
+        "source": "In the wild, animals display tender moments of affection all the time. Macedonian photographer Goran Anastasovski has spent 15 years honing his skills in wildlife photography so that he can share these touching instances with others.",
+        "target": "To honor the effort he put into his latest set of photographs, we've gathered some of our favorites for your viewing pleasure. A lion and its cub enjoy a tender moment together. The lion's paws rest on top of the front paws of its cub, who lays its head on its mother. A polar bear embraces her cub. Polar bears care for their cubs until they're about two years old, when the cubs venture out on their own. A kangaroo rubs her cheek on her joey's hand.",
         "edits": [
             {
                 "id": 0,
@@ -40,7 +39,6 @@
         ]
     },
     {
-        "id": 2,
         "metadata": {
             "gid": "10002",
             "model": "gpt3",
@@ -48,8 +46,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The long-rumored Apple car might finally become a reality.",
-        "simplified": "According to the Financial Times, Apple's been talking to \"a small group of contract manufacturers to explore making an electric vehicle,\" which would ostensibly be an autonomous car. All this does sound like the loose ends of Apple's CarPlay rollout: hiring 1,200 engineers for the iOS team, building the CarPlay-specific testing track, developing a Lincoln Navigator, then poaching Burberry\u2019s head of product design to lead the integration of software and hardware. WWDC 2015 We know what you're thinking: Another Monday?",
+        "source": "The long-rumored Apple car might finally become a reality.",
+        "target": "According to the Financial Times, Apple's been talking to \"a small group of contract manufacturers to explore making an electric vehicle,\" which would ostensibly be an autonomous car. All this does sound like the loose ends of Apple's CarPlay rollout: hiring 1,200 engineers for the iOS team, building the CarPlay-specific testing track, developing a Lincoln Navigator, then poaching Burberry\u2019s head of product design to lead the integration of software and hardware. WWDC 2015 We know what you're thinking: Another Monday?",
         "edits": [
             {
                 "id": 0,
@@ -132,7 +130,6 @@
         ]
     },
     {
-        "id": 3,
         "metadata": {
             "gid": "10003",
             "model": "gpt3",
@@ -140,8 +137,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Earbuds and headphones are among the most personal devices you can buy. Choosing which type of audio gadget is for you is incredibly important.",
-        "simplified": "Wifi range and device integration features also looked at The report explains, \"Google's Assistant has been added to several hearing aids so people with hearing loss can access the Assistant. A hearing aid manufacturer said that adding Google's Assistant to hearing aids could 'put some juice back into it.' \"Android 9 Pie launched without support for new 'Always On' screens that show what's playing on headphones and earbuds. A member of the Android team said, 'We are likely to support [the API], but we don't have any concrete plans at this point.'",
+        "source": "Earbuds and headphones are among the most personal devices you can buy. Choosing which type of audio gadget is for you is incredibly important.",
+        "target": "Wifi range and device integration features also looked at The report explains, \"Google's Assistant has been added to several hearing aids so people with hearing loss can access the Assistant. A hearing aid manufacturer said that adding Google's Assistant to hearing aids could 'put some juice back into it.' \"Android 9 Pie launched without support for new 'Always On' screens that show what's playing on headphones and earbuds. A member of the Android team said, 'We are likely to support [the API], but we don't have any concrete plans at this point.'",
         "edits": [
             {
                 "id": 0,
@@ -198,7 +195,6 @@
         ]
     },
     {
-        "id": 4,
         "metadata": {
             "gid": "10004",
             "model": "gpt3",
@@ -206,8 +202,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "In a country where over 80% of residents live in public housing, a government commitment to sustainable urban design could have huge implications. ",
-        "simplified": "On one side of the spectrum, Brazil\u2019s new government is recognizing the dire need for a real \u201cdensity nation\u201d with four-fifths of the population urbanized and more than a third of the land in metropolitan areas. On the other side is the continued resistance of an entrenched \u201cgreen belt\u201d naysayer mentality that fears \u201curban sprawl\u201d and is uninterested in dealing with alternative energy, green development, or building projects in dense urban areas. In Rio de Janeiro, the mayor-elect, Eduardo Paes, has declared his intention to begin work on new urban infrastructure immediately and build seven airports. Other municipalities are pursuing similar initiatives.",
+        "source": "In a country where over 80% of residents live in public housing, a government commitment to sustainable urban design could have huge implications. ",
+        "target": "On one side of the spectrum, Brazil\u2019s new government is recognizing the dire need for a real \u201cdensity nation\u201d with four-fifths of the population urbanized and more than a third of the land in metropolitan areas. On the other side is the continued resistance of an entrenched \u201cgreen belt\u201d naysayer mentality that fears \u201curban sprawl\u201d and is uninterested in dealing with alternative energy, green development, or building projects in dense urban areas. In Rio de Janeiro, the mayor-elect, Eduardo Paes, has declared his intention to begin work on new urban infrastructure immediately and build seven airports. Other municipalities are pursuing similar initiatives.",
         "edits": [
             {
                 "id": 0,
@@ -290,7 +286,6 @@
         ]
     },
     {
-        "id": 5,
         "metadata": {
             "gid": "10005",
             "model": "gpt3",
@@ -298,8 +293,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "When visitors walk into the Pantheon in Rome and encounter its colossal dome, they may experience the same theatricality as its guests nearly 2,000 years ago.",
-        "simplified": "They also encounter a feat of architecture that still baffles scientists. How could Roman surveyors have been able to create a building with a circular dome while using only the measuring technology available at the time? How did they do it? In a groundbreaking new study, published this week in the journal Mathematics Today, members of the team that discovered the Pantheon\u2019s geometry nearly 40 years ago believe they have an answer. To make their measurements, MIT researchers Amy Epkin and Tom Webster dropped a 100-foot rope inside the Pantheon using two small robots they designed in their Cambridge lab, which enabled them to climb the scaffolding that supports the roof of the Pantheon without falling.",
+        "source": "When visitors walk into the Pantheon in Rome and encounter its colossal dome, they may experience the same theatricality as its guests nearly 2,000 years ago.",
+        "target": "They also encounter a feat of architecture that still baffles scientists. How could Roman surveyors have been able to create a building with a circular dome while using only the measuring technology available at the time? How did they do it? In a groundbreaking new study, published this week in the journal Mathematics Today, members of the team that discovered the Pantheon\u2019s geometry nearly 40 years ago believe they have an answer. To make their measurements, MIT researchers Amy Epkin and Tom Webster dropped a 100-foot rope inside the Pantheon using two small robots they designed in their Cambridge lab, which enabled them to climb the scaffolding that supports the roof of the Pantheon without falling.",
         "edits": [
             {
                 "id": 0,
@@ -317,7 +312,6 @@
         ]
     },
     {
-        "id": 6,
         "metadata": {
             "gid": "10006",
             "model": "gpt3",
@@ -325,8 +319,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Teenagers' mental health is being damaged by heavy social media use, a report has found.",
-        "simplified": "Email this article to a friend To send a link to this page you must be logged in. Researchers from the Royal Society for Public Health carried out a national survey of 1,800 young people. Some said they had experienced cyberbullying or harassment online, while others said they had been exposed to negative and harmful content. Others said they'd experienced anxiety and feelings of inadequacy after seeing what their peers were posting. The report said there was a need for social media companies to look at how they use algorithms to limit potential harm, as well as calling for more effective industry-led guidance to help protect young people.",
+        "source": "Teenagers' mental health is being damaged by heavy social media use, a report has found.",
+        "target": "Email this article to a friend To send a link to this page you must be logged in. Researchers from the Royal Society for Public Health carried out a national survey of 1,800 young people. Some said they had experienced cyberbullying or harassment online, while others said they had been exposed to negative and harmful content. Others said they'd experienced anxiety and feelings of inadequacy after seeing what their peers were posting. The report said there was a need for social media companies to look at how they use algorithms to limit potential harm, as well as calling for more effective industry-led guidance to help protect young people.",
         "edits": [
             {
                 "id": 0,
@@ -357,7 +351,6 @@
         ]
     },
     {
-        "id": 7,
         "metadata": {
             "gid": "10007",
             "model": "gpt3",
@@ -365,8 +358,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Lawmakers in Baltimore have voted to end a controversial aerial surveillance program, which had seen spy planes constantly monitoring the city.",
-        "simplified": "The program was dramatically scaled back in December, following an outcry from citizens and a scathing report from the Baltimore Police Department's (BPD) own watchdog. The aerial spying \u2014 part of a larger city-wide CitiWatch program \u2014 began in 2011, as part of a \"carefully crafted plan, directed from on high\", according to the BPD's inspector general (IG). The department had sought and gained full approval for the program in July 2012, but the IG's report shows that the plan was actually being developed as early as 2009.",
+        "source": "Lawmakers in Baltimore have voted to end a controversial aerial surveillance program, which had seen spy planes constantly monitoring the city.",
+        "target": "The program was dramatically scaled back in December, following an outcry from citizens and a scathing report from the Baltimore Police Department's (BPD) own watchdog. The aerial spying \u2014 part of a larger city-wide CitiWatch program \u2014 began in 2011, as part of a \"carefully crafted plan, directed from on high\", according to the BPD's inspector general (IG). The department had sought and gained full approval for the program in July 2012, but the IG's report shows that the plan was actually being developed as early as 2009.",
         "edits": [
             {
                 "id": 0,
@@ -423,7 +416,6 @@
         ]
     },
     {
-        "id": 8,
         "metadata": {
             "gid": "10008",
             "model": "gpt3",
@@ -431,8 +423,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Humans are designed to touch and be touched \u2013 which is why so many who live on their own have suffered during the pandemic. Will we ever fully recover?",
-        "simplified": "Will humans\u2019 natural physicality ever be the same? I really don\u2019t know. Now comes Winter. The Night of the Fire happened in Autumn. I hope to be back in Minneapolis at the DFL stadium, selling popcorn, hotdogs and Cokes. When all is said and done, I can\u2019t begrudge the will of anyone who stays away from H5N1. When I think of being careful, I\u2019ll think of my little brother Will, of all the marriages and births postponed. But I will never shut myself off from the rest of the world.",
+        "source": "Humans are designed to touch and be touched \u2013 which is why so many who live on their own have suffered during the pandemic. Will we ever fully recover?",
+        "target": "Will humans\u2019 natural physicality ever be the same? I really don\u2019t know. Now comes Winter. The Night of the Fire happened in Autumn. I hope to be back in Minneapolis at the DFL stadium, selling popcorn, hotdogs and Cokes. When all is said and done, I can\u2019t begrudge the will of anyone who stays away from H5N1. When I think of being careful, I\u2019ll think of my little brother Will, of all the marriages and births postponed. But I will never shut myself off from the rest of the world.",
         "edits": [
             {
                 "id": 0,
@@ -450,7 +442,6 @@
         ]
     },
     {
-        "id": 9,
         "metadata": {
             "gid": "10009",
             "model": "gpt3",
@@ -458,8 +449,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "If we\u2019re already working in isolation at home, why do we miss working with our heads similarly down in a public setting?",
-        "simplified": "The Other Real Reason People Mumble \u201cBe wary of a problem shared.\u201d If you only want to talk about it with a friend (whether about work or just life in general), fine. But you don\u2019t need to share it with the rest of the office if there are no potentially critical deliverables on the line for other people. Is there another reason people have stopped talking to each other around the office? If it\u2019s not about the noise, then what is it?",
+        "source": "If we\u2019re already working in isolation at home, why do we miss working with our heads similarly down in a public setting?",
+        "target": "The Other Real Reason People Mumble \u201cBe wary of a problem shared.\u201d If you only want to talk about it with a friend (whether about work or just life in general), fine. But you don\u2019t need to share it with the rest of the office if there are no potentially critical deliverables on the line for other people. Is there another reason people have stopped talking to each other around the office? If it\u2019s not about the noise, then what is it?",
         "edits": [
             {
                 "id": 0,
@@ -490,7 +481,6 @@
         ]
     },
     {
-        "id": 10,
         "metadata": {
             "gid": "10010",
             "model": "gpt3",
@@ -498,8 +488,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The term 'photographic memory' has long been used for people with an uncanny knack for remembering moments in life with absolute clarity, but is it really possible?",
-        "simplified": "A recent study completed by memory researchers and medical professionals from Lund University has found that some people are able to recall situations after looking at an image for only a few seconds. This is contrary to the typical notion that photographic memory is a rare skill, more likened to savants, but this research suggests otherwise. In fact, there are regular individuals who possess mind-boggling skills, so much so that they have been dubbed \"super-recognisers\". \"Our research shows that some people, in other words a small percentage of the population, are born with an ability that is extra-ordinary,\" said Dr. Hannes Kr\u00f6ger.",
+        "source": "The term 'photographic memory' has long been used for people with an uncanny knack for remembering moments in life with absolute clarity, but is it really possible?",
+        "target": "A recent study completed by memory researchers and medical professionals from Lund University has found that some people are able to recall situations after looking at an image for only a few seconds. This is contrary to the typical notion that photographic memory is a rare skill, more likened to savants, but this research suggests otherwise. In fact, there are regular individuals who possess mind-boggling skills, so much so that they have been dubbed \"super-recognisers\". \"Our research shows that some people, in other words a small percentage of the population, are born with an ability that is extra-ordinary,\" said Dr. Hannes Kr\u00f6ger.",
         "edits": [
             {
                 "id": 0,
@@ -543,7 +533,6 @@
         ]
     },
     {
-        "id": 11,
         "metadata": {
             "gid": "20001",
             "model": "gpt2",
@@ -551,8 +540,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Eating five servings a day of any combination of fruits and veggies could extend your life, a new study suggests. ",
-        "simplified": "Given the fact that lots of cuts are a part of some diets, it seems obvious that this year could end up being A New Year's Eve for many people, either in class or in life. * Runewee County is the majority weight loss state for about 65 percent of adults and deaths are linked to losing other lifestyle factors, such as diabetes or atopic dermatitis. MD Anderson University obesity research from 2012 shows that African American males who were obese between 22 and 40 were more likely to end up with skin, dental and vision problems than their white, \"newborn.\" ",
+        "source": "Eating five servings a day of any combination of fruits and veggies could extend your life, a new study suggests. ",
+        "target": "Given the fact that lots of cuts are a part of some diets, it seems obvious that this year could end up being A New Year's Eve for many people, either in class or in life. * Runewee County is the majority weight loss state for about 65 percent of adults and deaths are linked to losing other lifestyle factors, such as diabetes or atopic dermatitis. MD Anderson University obesity research from 2012 shows that African American males who were obese between 22 and 40 were more likely to end up with skin, dental and vision problems than their white, \"newborn.\" ",
         "edits": [
             {
                 "id": 0,
@@ -609,7 +598,6 @@
         ]
     },
     {
-        "id": 12,
         "metadata": {
             "gid": "20002",
             "model": "gpt2",
@@ -617,8 +605,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "France\u2019s former President Nicolas Sarkozy was found guilty of corruption on Monday and sentenced to three years in prison, a stunning fall from grace for a man who led his country and bestrode the world stage for five years. ",
-        "simplified": "Given the string of accusations against Mr Sarkozy and his hardline France, it could be argued that the 6/7 AIPAC scandal and the background of the president's class political career were alarming indeed. \u00a0Some of Mr Sarkozy's closest aides had openly suggested that his remarks \u2014 in which he dismissed other American Democrats as \"crazies\" who used unsavoury language \u2014 sounded like he had been flirting with suicide. \u00a0Nevertheless, - or perhaps because he did not believe in death penalty \u2014 he himself lost his job rather than resign from office in 2011 and became the president without having to resign. \u00a0In 2008, however, he became a totally shut-door candidate for the presidential election.",
+        "source": "France\u2019s former President Nicolas Sarkozy was found guilty of corruption on Monday and sentenced to three years in prison, a stunning fall from grace for a man who led his country and bestrode the world stage for five years. ",
+        "target": "Given the string of accusations against Mr Sarkozy and his hardline France, it could be argued that the 6/7 AIPAC scandal and the background of the president's class political career were alarming indeed. \u00a0Some of Mr Sarkozy's closest aides had openly suggested that his remarks \u2014 in which he dismissed other American Democrats as \"crazies\" who used unsavoury language \u2014 sounded like he had been flirting with suicide. \u00a0Nevertheless, - or perhaps because he did not believe in death penalty \u2014 he himself lost his job rather than resign from office in 2011 and became the president without having to resign. \u00a0In 2008, however, he became a totally shut-door candidate for the presidential election.",
         "edits": [
             {
                 "id": 0,
@@ -740,7 +728,6 @@
         ]
     },
     {
-        "id": 13,
         "metadata": {
             "gid": "20003",
             "model": "gpt2",
@@ -748,8 +735,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The US Soccer Federation\u2019s athletes\u2019 council removed one of its members Sunday, a day after he made a speech at the federation\u2019s annual general meeting in which he downplayed the effects of US slavery. ",
-        "simplified": "He noted that the US Department of Justice had accused the organization, the Obama administration, and \"corporate America\" of embezzlement and for defrauding the federation of $94 million in bailout funding from high-ranking officials. The coaching effort had come after two of the federation's top officials had sued American Soccer Federation president and CEO Corey Dean's past over public job postings in the USF.\u00a0The ad had surfaced after a New York Cosmos player, Abby Wambach, enrolled in US Soccer's youth soccer academy prior to her \"new\" deal with the federation, but Dean denied the allegations.\u00a0She claimed that Dean castrated her because she didn't qualify for the federation.",
+        "source": "The US Soccer Federation\u2019s athletes\u2019 council removed one of its members Sunday, a day after he made a speech at the federation\u2019s annual general meeting in which he downplayed the effects of US slavery. ",
+        "target": "He noted that the US Department of Justice had accused the organization, the Obama administration, and \"corporate America\" of embezzlement and for defrauding the federation of $94 million in bailout funding from high-ranking officials. The coaching effort had come after two of the federation's top officials had sued American Soccer Federation president and CEO Corey Dean's past over public job postings in the USF.\u00a0The ad had surfaced after a New York Cosmos player, Abby Wambach, enrolled in US Soccer's youth soccer academy prior to her \"new\" deal with the federation, but Dean denied the allegations.\u00a0She claimed that Dean castrated her because she didn't qualify for the federation.",
         "edits": [
             {
                 "id": 0,
@@ -767,7 +754,6 @@
         ]
     },
     {
-        "id": 14,
         "metadata": {
             "gid": "20004",
             "model": "gpt2",
@@ -775,8 +761,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "In October 2020, Miami-based art collector Pablo Rodriguez-Fraile spent almost $67,000 on a 10-second video artwork that he could have watched for free online. Last week, he sold it for $6.6 million. ",
-        "simplified": "Given the value of the artwork, Rodriguez-Fraile paid for it in full online at his Etsy shop. This A New Turner Falls Paradox for Future History That's Not The Kinks' New Metaphysical Tentacle of Genius Francis Mander's \"Boundary of Awesome\" is a gorgeous video that seems to cover the lost side of a cool past:\u00a0I saw the original from released on flickr \u2014 had swiss.com taken pictures or panoramic views of the original.\u00a0When you think of weird stories, exploring this obscure world seems like a natural fit. On a dark day in October, I cross my eye into this weird city.",
+        "source": "In October 2020, Miami-based art collector Pablo Rodriguez-Fraile spent almost $67,000 on a 10-second video artwork that he could have watched for free online. Last week, he sold it for $6.6 million. ",
+        "target": "Given the value of the artwork, Rodriguez-Fraile paid for it in full online at his Etsy shop. This A New Turner Falls Paradox for Future History That's Not The Kinks' New Metaphysical Tentacle of Genius Francis Mander's \"Boundary of Awesome\" is a gorgeous video that seems to cover the lost side of a cool past:\u00a0I saw the original from released on flickr \u2014 had swiss.com taken pictures or panoramic views of the original.\u00a0When you think of weird stories, exploring this obscure world seems like a natural fit. On a dark day in October, I cross my eye into this weird city.",
         "edits": [
             {
                 "id": 0,
@@ -846,7 +832,6 @@
         ]
     },
     {
-        "id": 15,
         "metadata": {
             "gid": "20005",
             "model": "gpt2",
@@ -854,12 +839,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "There is already a lot of data which has indicated that living with a pet dog is improves both psychological and physical health. ",
-        "simplified": "Pet ownership improves the spiritual health, and a loving home helps individuals and their pets live within their community. 6/27 A New York State Council for Shelter Man is creating a class on dog ownership for its Manewave County citizens. Up close and personal about the dog owners of shelters across America. Guided lectures like these cover the realities of pet ownership, the myths about joblessness and the challenge of living with a pet \u2014 from where a shelter wants to carry everyone, to the dogs themselves and how to take care of them.",
+        "source": "There is already a lot of data which has indicated that living with a pet dog is improves both psychological and physical health. ",
+        "target": "Pet ownership improves the spiritual health, and a loving home helps individuals and their pets live within their community. 6/27 A New York State Council for Shelter Man is creating a class on dog ownership for its Manewave County citizens. Up close and personal about the dog owners of shelters across America. Guided lectures like these cover the realities of pet ownership, the myths about joblessness and the challenge of living with a pet \u2014 from where a shelter wants to carry everyone, to the dogs themselves and how to take care of them.",
         "edits": []
     },
     {
-        "id": 16,
         "metadata": {
             "gid": "20006",
             "model": "gpt2",
@@ -867,8 +851,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Stocks are bouncing back big time Monday, with big tech and big travel poised for the biggest gains. This is what happens when everything comes up roses following a brutal week of selling. ",
-        "simplified": "Given the volatility of commodity stocks, this is the time to rip the edge off bulls at this time of year. ( A lot of the news for the year is driven in part by historic low highs, so it's important to compare data to close calls.) \u00a0Business owners tend to value market makers more when other folks are hurting. We must further at least quantify the different job shares for the same customer. I doubt that every employee swears because of his job or because of a departure. Will we find out more about employees lost because of Q3?",
+        "source": "Stocks are bouncing back big time Monday, with big tech and big travel poised for the biggest gains. This is what happens when everything comes up roses following a brutal week of selling. ",
+        "target": "Given the volatility of commodity stocks, this is the time to rip the edge off bulls at this time of year. ( A lot of the news for the year is driven in part by historic low highs, so it's important to compare data to close calls.) \u00a0Business owners tend to value market makers more when other folks are hurting. We must further at least quantify the different job shares for the same customer. I doubt that every employee swears because of his job or because of a departure. Will we find out more about employees lost because of Q3?",
         "edits": [
             {
                 "id": 0,
@@ -977,7 +961,6 @@
         ]
     },
     {
-        "id": 17,
         "metadata": {
             "gid": "20007",
             "model": "gpt2",
@@ -985,8 +968,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "If you are looking to make someone \u2014 even yourself \u2014 feel better during what has been a hard winter of the pandemic, consider writing a gratitude letter. ",
-        "simplified": "Sit down and agree that you really owe a lot to some individuals who have saved your human life with their help \u2014 all because of yours. \u00a0Think about each person's class and profession. \u00a0I'm high school teacher. \u00a0I work for a grocery store. \u00a0How many days did you spend in a hospital or recovery room before at least breaking apart and dying in the end? \u00a0Do you even remember those days? Where did everyone else go? \u00a0Have you ever run home from work after rescuing a bunch of \"new men.\" \u00a0Believe it or not, this isn't a benchmark for you. ",
+        "source": "If you are looking to make someone \u2014 even yourself \u2014 feel better during what has been a hard winter of the pandemic, consider writing a gratitude letter. ",
+        "target": "Sit down and agree that you really owe a lot to some individuals who have saved your human life with their help \u2014 all because of yours. \u00a0Think about each person's class and profession. \u00a0I'm high school teacher. \u00a0I work for a grocery store. \u00a0How many days did you spend in a hospital or recovery room before at least breaking apart and dying in the end? \u00a0Do you even remember those days? Where did everyone else go? \u00a0Have you ever run home from work after rescuing a bunch of \"new men.\" \u00a0Believe it or not, this isn't a benchmark for you. ",
         "edits": [
             {
                 "id": 0,
@@ -1069,7 +1052,6 @@
         ]
     },
     {
-        "id": 18,
         "metadata": {
             "gid": "20008",
             "model": "gpt2",
@@ -1077,8 +1059,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "When children gain excess weight, the culprit is more likely to be eating too much than moving too little, according to a fascinating new study of children in Ecuador. ",
-        "simplified": "Given their lack of spiritual development, they had difficulty staying in touch with God and could experience \"couples absence,\" as opposed to being spiritually acknowledged as mere mortals. \u00a0And again, the dominance of women over men is critical here. \u00a0Studies indicate that women are more scrutinized and characterized than men as psychosocial explorers and explorers of worlds beyond the reach of human beings \u2014 a challenge felt by many in the community. Plus, because of poor health, many male authors and researchers believe that children are more likely to be born prior to adulthood with lesions related to the \"wolf\" or exposure to a dangerous genetic disorder.",
+        "source": "When children gain excess weight, the culprit is more likely to be eating too much than moving too little, according to a fascinating new study of children in Ecuador. ",
+        "target": "Given their lack of spiritual development, they had difficulty staying in touch with God and could experience \"couples absence,\" as opposed to being spiritually acknowledged as mere mortals. \u00a0And again, the dominance of women over men is critical here. \u00a0Studies indicate that women are more scrutinized and characterized than men as psychosocial explorers and explorers of worlds beyond the reach of human beings \u2014 a challenge felt by many in the community. Plus, because of poor health, many male authors and researchers believe that children are more likely to be born prior to adulthood with lesions related to the \"wolf\" or exposure to a dangerous genetic disorder.",
         "edits": [
             {
                 "id": 0,
@@ -1096,7 +1078,6 @@
         ]
     },
     {
-        "id": 19,
         "metadata": {
             "gid": "20009",
             "model": "gpt2",
@@ -1104,8 +1085,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "New online tools and an array of remote classes and programs are ramping up education and training for adults. ",
-        "simplified": "Given the significant proportion of the world's population under the age of twenty, education priorities are on serious evaluation when it comes to the appropriate level and for parents and teachers alike. The inequity in the composition of resources has increased sharply in a massive amount over the past 50 years. In the 1950s and 60s, physician physicians earned 96 percent of their income from the state. Today in Canada the number is less than 80 percent \u2014 researchers say Canadians are still poor and they are still working. \u00a0Doctors earning less than $8,000 per year now earn 8 percent more than doctors in the same $10,000 earnings bracket.",
+        "source": "New online tools and an array of remote classes and programs are ramping up education and training for adults. ",
+        "target": "Given the significant proportion of the world's population under the age of twenty, education priorities are on serious evaluation when it comes to the appropriate level and for parents and teachers alike. The inequity in the composition of resources has increased sharply in a massive amount over the past 50 years. In the 1950s and 60s, physician physicians earned 96 percent of their income from the state. Today in Canada the number is less than 80 percent \u2014 researchers say Canadians are still poor and they are still working. \u00a0Doctors earning less than $8,000 per year now earn 8 percent more than doctors in the same $10,000 earnings bracket.",
         "edits": [
             {
                 "id": 0,
@@ -1136,7 +1117,6 @@
         ]
     },
     {
-        "id": 20,
         "metadata": {
             "gid": "20010",
             "model": "gpt2",
@@ -1144,8 +1124,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The technology, Wi-Fi 6, is designed to reduce congestion from devices. We put it to the test. ",
-        "simplified": "\u00a0Given the inherent advantage it gives, and a storage capacity that can be reached from anywhere within seconds, the 6 pack (TCR6KIN for short) is brilliant in class. Everything we tested was achieved from high quality storage to a massive amount of storage capacity that fit seamlessly between laptops. To top it off, the 6 pack features the unlocked charge at 20,000 darks per minute, backup from Google's own Smart Battery feature where done. With all these features, we've all had the luxury of having unlimited electrons, battery life, QHD display, interchangeable USB port and plug outside the door door to get online.",
+        "source": "The technology, Wi-Fi 6, is designed to reduce congestion from devices. We put it to the test. ",
+        "target": "\u00a0Given the inherent advantage it gives, and a storage capacity that can be reached from anywhere within seconds, the 6 pack (TCR6KIN for short) is brilliant in class. Everything we tested was achieved from high quality storage to a massive amount of storage capacity that fit seamlessly between laptops. To top it off, the 6 pack features the unlocked charge at 20,000 darks per minute, backup from Google's own Smart Battery feature where done. With all these features, we've all had the luxury of having unlimited electrons, battery life, QHD display, interchangeable USB port and plug outside the door door to get online.",
         "edits": [
             {
                 "id": 0,
@@ -1163,7 +1143,6 @@
         ]
     },
     {
-        "id": 21,
         "metadata": {
             "gid": "20011",
             "model": "gpt2-xl",
@@ -1171,8 +1150,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "During the pandemic, there was a dramatic increase in exposures to hand sanitizer reported among kids under 6, U.S. poison center data shows. ",
-        "simplified": "During the pandemic, there was a dramatic increase in exposures to hand sanitizer reported among kids under 6, U.S. poison center data shows. \u00a0Given the fact that lots of kids are going to school in 2017 wearing pink and not wearing shoes with laces, all sorts of kids may have been exposed to such chemicals in class. One alarming trend is that high school students' rates of candy consumption have plummeted over the past decade, likely due to more widespread mouthwash bans on school grounds. But at the same time, there seems to be a rise in the consumption of lollipops.",
+        "source": "During the pandemic, there was a dramatic increase in exposures to hand sanitizer reported among kids under 6, U.S. poison center data shows. ",
+        "target": "During the pandemic, there was a dramatic increase in exposures to hand sanitizer reported among kids under 6, U.S. poison center data shows. \u00a0Given the fact that lots of kids are going to school in 2017 wearing pink and not wearing shoes with laces, all sorts of kids may have been exposed to such chemicals in class. One alarming trend is that high school students' rates of candy consumption have plummeted over the past decade, likely due to more widespread mouthwash bans on school grounds. But at the same time, there seems to be a rise in the consumption of lollipops.",
         "edits": [
             {
                 "id": 0,
@@ -1203,7 +1182,6 @@
         ]
     },
     {
-        "id": 22,
         "metadata": {
             "gid": "20012",
             "model": "gpt2-xl",
@@ -1211,8 +1189,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "New climate pledges submitted to the United Nations would reduce greenhouse gas emissions by less than 1 percent, the world body announced. ",
-        "simplified": "Given the fact that the Paris talks are a framework for enacting\u00a0 agreements on climate change -unveiling AIIB as a possible partner in such a process -that represents a major step backwards from the commitments of the conference last November and presents a significant obstacle to the adoption of an ambitious yet realistic global climate pact. In the past year at the UN climate summit, in Canada's climate diplomacy released on September 8, 2015, a key part of the G7 countries have all stated that they will take part in the UNFCCC if the \"new world deal\" is not negotiated at a later stage.",
+        "source": "New climate pledges submitted to the United Nations would reduce greenhouse gas emissions by less than 1 percent, the world body announced. ",
+        "target": "Given the fact that the Paris talks are a framework for enacting\u00a0 agreements on climate change -unveiling AIIB as a possible partner in such a process -that represents a major step backwards from the commitments of the conference last November and presents a significant obstacle to the adoption of an ambitious yet realistic global climate pact. In the past year at the UN climate summit, in Canada's climate diplomacy released on September 8, 2015, a key part of the G7 countries have all stated that they will take part in the UNFCCC if the \"new world deal\" is not negotiated at a later stage.",
         "edits": [
             {
                 "id": 0,
@@ -1256,7 +1234,6 @@
         ]
     },
     {
-        "id": 23,
         "metadata": {
             "gid": "20013",
             "model": "gpt2-xl",
@@ -1264,12 +1241,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "After days of record-breaking cold and winter storms in Texas that disrupted the electrical grid and froze water lines, millions of people are now being told to boil their water for safety. ",
-        "simplified": "Given the fact that Houston is a major energy storage station, this may have a significant impact on energy supply. This poses serious security and safety concerns for residential, small business and critical infrastructure. \u00a0Due to high levels of failure rates and close proximity to electric transmission lines and distribution systems, if something were to go wrong with a water or energy distribution system, the impacts could be catastrophic for the region. In addition to the shock and chaos caused by freezing water or electricity mains, massive flooding could result, which could destroy critically important roadways, dams, levees, and transportation hubs across Houston and the surrounding region.",
+        "source": "After days of record-breaking cold and winter storms in Texas that disrupted the electrical grid and froze water lines, millions of people are now being told to boil their water for safety. ",
+        "target": "Given the fact that Houston is a major energy storage station, this may have a significant impact on energy supply. This poses serious security and safety concerns for residential, small business and critical infrastructure. \u00a0Due to high levels of failure rates and close proximity to electric transmission lines and distribution systems, if something were to go wrong with a water or energy distribution system, the impacts could be catastrophic for the region. In addition to the shock and chaos caused by freezing water or electricity mains, massive flooding could result, which could destroy critically important roadways, dams, levees, and transportation hubs across Houston and the surrounding region.",
         "edits": []
     },
     {
-        "id": 24,
         "metadata": {
             "gid": "20014",
             "model": "gpt2-xl",
@@ -1277,8 +1253,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Boeing Co and the Royal Australian Air Force (RAAF) said on Tuesday they had completed the first flight test on a pilotless fighter-like jet designed to operate in conjunction with crewed aircraft. ",
-        "simplified": "The test flew the combat-ready plane to an altitude of 5,000ft (1,667 metres) on the Aussie Air Defence Regiment's (ADR) 131 class K94E Foxhound helicopters from Pune at the end of last year. \u00a0The initial Raptor trial, which covered 75 minutes, had a safety and performance certificate at the end of 2011, in Canada's first combat mission using the US fighter-bomber. The Foxhound, which was developed by Boeing and Lockheed Martin, has been chosen as the QF-X, the Royal Australian Air Force's follow-on multi-role, twin seat, two engine stealth fighter.",
+        "source": "Boeing Co and the Royal Australian Air Force (RAAF) said on Tuesday they had completed the first flight test on a pilotless fighter-like jet designed to operate in conjunction with crewed aircraft. ",
+        "target": "The test flew the combat-ready plane to an altitude of 5,000ft (1,667 metres) on the Aussie Air Defence Regiment's (ADR) 131 class K94E Foxhound helicopters from Pune at the end of last year. \u00a0The initial Raptor trial, which covered 75 minutes, had a safety and performance certificate at the end of 2011, in Canada's first combat mission using the US fighter-bomber. The Foxhound, which was developed by Boeing and Lockheed Martin, has been chosen as the QF-X, the Royal Australian Air Force's follow-on multi-role, twin seat, two engine stealth fighter.",
         "edits": [
             {
                 "id": 0,
@@ -1322,7 +1298,6 @@
         ]
     },
     {
-        "id": 25,
         "metadata": {
             "gid": "20015",
             "model": "gpt2-xl",
@@ -1330,8 +1305,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Surprisingly strong interest from adults who do not have kids at home has helped increase subscriptions to Walt Disney Co\u2019s Disney+ streaming service beyond initial projections, Chief Executive Bob Chapek said on Monday. ",
-        "simplified": "\u202aStill, the service, which launched five months ago in an initial market of 17 countries, has not been able to gain traction among children and teens alike.\" That's pretty consistent with the competition. * Consumer Reports has discovered many products purchased by buyers ages 18 to 24 are no longer in stock, sometimes for months. It's a new and shocking story at a time when retailers could be more sensitive to customer tastes. In some cases, people have waited months before actually taking delivery of a same-day shipment. * When people think of rescuing their Nerf guns from a package, they probably imagine packing your children and your cash in a duffel bag.",
+        "source": "Surprisingly strong interest from adults who do not have kids at home has helped increase subscriptions to Walt Disney Co\u2019s Disney+ streaming service beyond initial projections, Chief Executive Bob Chapek said on Monday. ",
+        "target": "\u202aStill, the service, which launched five months ago in an initial market of 17 countries, has not been able to gain traction among children and teens alike.\" That's pretty consistent with the competition. * Consumer Reports has discovered many products purchased by buyers ages 18 to 24 are no longer in stock, sometimes for months. It's a new and shocking story at a time when retailers could be more sensitive to customer tastes. In some cases, people have waited months before actually taking delivery of a same-day shipment. * When people think of rescuing their Nerf guns from a package, they probably imagine packing your children and your cash in a duffel bag.",
         "edits": [
             {
                 "id": 0,
@@ -1401,7 +1376,6 @@
         ]
     },
     {
-        "id": 26,
         "metadata": {
             "gid": "20016",
             "model": "gpt2-xl",
@@ -1409,8 +1383,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "All 270 Apple stores in the United States are open for business on Monday, a company spokesperson confirmed. ",
-        "simplified": "Given the fact that Apple stores are closed on national holidays, this may have been expected, but with the end of the Auctus campaign and the potential of significant stock casualties due to significant holiday shopping, it may have felt odd to open all stores earlier than usual.",
+        "source": "All 270 Apple stores in the United States are open for business on Monday, a company spokesperson confirmed. ",
+        "target": "Given the fact that Apple stores are closed on national holidays, this may have been expected, but with the end of the Auctus campaign and the potential of significant stock casualties due to significant holiday shopping, it may have felt odd to open all stores earlier than usual.",
         "edits": [
             {
                 "id": 0,
@@ -1454,7 +1428,6 @@
         ]
     },
     {
-        "id": 27,
         "metadata": {
             "gid": "20017",
             "model": "gpt2-xl",
@@ -1462,8 +1435,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Starbucks is rolling out a new vegan food option, along with Oatly\u2019s oat milk, to most of its locations across the United States. ",
-        "simplified": "According to the Seattle Times, Chief Brands Officer Rebecca Thomas said,\u00a0\"We felt comfortable with serving the food on the menu, because we had already worked with the suppliers and built out the recipes for the menu from high-quality products. There is some natural demand for vegan food, and our goal is to make other options for vegan consumers.\" \u00a0If you're planning to be in Canada over the holidays, I doubt that Starbucks had anything to do with creating vegan menus in Toronto or Vancouver. Will Starbucks launch vegan options at all of its more than 5,000 locations in the United States? \u00a0I guess we'll have to see.",
+        "source": "Starbucks is rolling out a new vegan food option, along with Oatly\u2019s oat milk, to most of its locations across the United States. ",
+        "target": "According to the Seattle Times, Chief Brands Officer Rebecca Thomas said,\u00a0\"We felt comfortable with serving the food on the menu, because we had already worked with the suppliers and built out the recipes for the menu from high-quality products. There is some natural demand for vegan food, and our goal is to make other options for vegan consumers.\" \u00a0If you're planning to be in Canada over the holidays, I doubt that Starbucks had anything to do with creating vegan menus in Toronto or Vancouver. Will Starbucks launch vegan options at all of its more than 5,000 locations in the United States? \u00a0I guess we'll have to see.",
         "edits": [
             {
                 "id": 0,
@@ -1494,7 +1467,6 @@
         ]
     },
     {
-        "id": 28,
         "metadata": {
             "gid": "20018",
             "model": "gpt2-xl",
@@ -1502,12 +1474,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Google is updating its productivity software to better meet the needs of frontline and remote workers, in a bet that the pandemic has permanently changed how work gets done. ",
-        "simplified": "Google's \"Work Hours\" project, announced today, seeks to answer the hard questions human beings have been asking for decades: How do we get more done in less time? Does this technology work for me? And if so, how can I make it work for me -- and my boss -- in a way that's sustainable for both of us? But at the heart of Google's experiment is a challenge from Google's own past -- one that points to how far we have to go as a culture to shift from our traditional mindset of \"holding people accountable\" -- from having our employees report in once a month or once a year, to having each person in our suite of tools report in every day.",
+        "source": "Google is updating its productivity software to better meet the needs of frontline and remote workers, in a bet that the pandemic has permanently changed how work gets done. ",
+        "target": "Google's \"Work Hours\" project, announced today, seeks to answer the hard questions human beings have been asking for decades: How do we get more done in less time? Does this technology work for me? And if so, how can I make it work for me -- and my boss -- in a way that's sustainable for both of us? But at the heart of Google's experiment is a challenge from Google's own past -- one that points to how far we have to go as a culture to shift from our traditional mindset of \"holding people accountable\" -- from having our employees report in once a month or once a year, to having each person in our suite of tools report in every day.",
         "edits": []
     },
     {
-        "id": 29,
         "metadata": {
             "gid": "20019",
             "model": "gpt2-xl",
@@ -1515,8 +1486,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The fear that machines will render large swaths of people unemployed is vastly overblown. ",
-        "simplified": "Given the inherent advantage that computers have over humans and the threat from spreading technology, not much can justify the expense and the public sector security entanglements required to ensure a job remains on the books. *I'm using Mr. Ford's weight for he is about 65 kg. \u00a0(As a reference, Ty Cobb had a 96 kg body). \u00a0I was thinking about his weight in the modern kilograms based on US terminology.",
+        "source": "The fear that machines will render large swaths of people unemployed is vastly overblown. ",
+        "target": "Given the inherent advantage that computers have over humans and the threat from spreading technology, not much can justify the expense and the public sector security entanglements required to ensure a job remains on the books. *I'm using Mr. Ford's weight for he is about 65 kg. \u00a0(As a reference, Ty Cobb had a 96 kg body). \u00a0I was thinking about his weight in the modern kilograms based on US terminology.",
         "edits": [
             {
                 "id": 0,
@@ -1547,7 +1518,6 @@
         ]
     },
     {
-        "id": 30,
         "metadata": {
             "gid": "20020",
             "model": "gpt2-xl",
@@ -1555,12 +1525,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Today, the most innovative leaders aren\u2019t the conformers. They\u2019re the bold individualists who carve their own paths. ",
-        "simplified": "For decades, technology changed the workplace, and the effects on the leader affected directly or indirectly the way employees were forced to navigate the world. Now Google's employees don't sit behind desks but in a world where they're active, are connected through everything they've just done and have access to all of Google, from creation of the master photo to how engineers are compensated. With access to advanced knowledge at their fingertips, employees don't need 'Google.' At some point, you need to be relentless.",
+        "source": "Today, the most innovative leaders aren\u2019t the conformers. They\u2019re the bold individualists who carve their own paths. ",
+        "target": "For decades, technology changed the workplace, and the effects on the leader affected directly or indirectly the way employees were forced to navigate the world. Now Google's employees don't sit behind desks but in a world where they're active, are connected through everything they've just done and have access to all of Google, from creation of the master photo to how engineers are compensated. With access to advanced knowledge at their fingertips, employees don't need 'Google.' At some point, you need to be relentless.",
         "edits": []
     },
     {
-        "id": 31,
         "metadata": {
             "gid": "20021",
             "model": "grover-mega",
@@ -1568,8 +1537,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Robust social network is key to easing pain, avoiding downward spiral, study says.",
-        "simplified": "BP's relatively new social media campaign, the popular Spitting Image franchise, has already surpassed both #AskBP and #Karma, but there's a catch. The top question has nothing to do with the failed oil-spill response. It's about the feel-good single-mindedness needed to respond to people in crisis. \"Spitting Image's attempt to shake up mainstream corporate marketing by putting their money where their hearts are and giving people a chance to take a stand in a virtual ice bucket challenge,\" said Clickz's Peter Felts. \"They are neither risk-taking nor trying to portray themselves as 'edge cases'\"",
+        "source": "Robust social network is key to easing pain, avoiding downward spiral, study says.",
+        "target": "BP's relatively new social media campaign, the popular Spitting Image franchise, has already surpassed both #AskBP and #Karma, but there's a catch. The top question has nothing to do with the failed oil-spill response. It's about the feel-good single-mindedness needed to respond to people in crisis. \"Spitting Image's attempt to shake up mainstream corporate marketing by putting their money where their hearts are and giving people a chance to take a stand in a virtual ice bucket challenge,\" said Clickz's Peter Felts. \"They are neither risk-taking nor trying to portray themselves as 'edge cases'\"",
         "edits": [
             {
                 "id": 0,
@@ -1639,7 +1608,6 @@
         ]
     },
     {
-        "id": 32,
         "metadata": {
             "gid": "20022",
             "model": "grover-mega",
@@ -1647,8 +1615,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Nippon Steel Corp., Japan\u2019s top producer, is shifting its focus to recycling the metal as ambitious net-zero emission targets intensify a race to develop cleaner steel.",
-        "simplified": "The carbon production costs for the industry at risk of closure are less than the $33 a ton carbon price Nippon Steel assumes for five U.S. plants, according to Chief Executive Officer Kiyoshi Ota. The combined carbon costs of these plants is less than half that of the highest mid-point price for all projects contemplated under the Voluntary Carbon Price Agreement, or VCPA, spearheaded by Japan 2019 Ministry of Economy, Trade, and Industry. In the future, they won't be able to scrap their old steel for the sake of feedstock, Ota said in an interview at his office in Tokyo. He reiterated earlier comments to Bloomberg Intelligence by saying a final decision won 2019.",
+        "source": "Nippon Steel Corp., Japan\u2019s top producer, is shifting its focus to recycling the metal as ambitious net-zero emission targets intensify a race to develop cleaner steel.",
+        "target": "The carbon production costs for the industry at risk of closure are less than the $33 a ton carbon price Nippon Steel assumes for five U.S. plants, according to Chief Executive Officer Kiyoshi Ota. The combined carbon costs of these plants is less than half that of the highest mid-point price for all projects contemplated under the Voluntary Carbon Price Agreement, or VCPA, spearheaded by Japan 2019 Ministry of Economy, Trade, and Industry. In the future, they won't be able to scrap their old steel for the sake of feedstock, Ota said in an interview at his office in Tokyo. He reiterated earlier comments to Bloomberg Intelligence by saying a final decision won 2019.",
         "edits": [
             {
                 "id": 0,
@@ -1679,7 +1647,6 @@
         ]
     },
     {
-        "id": 33,
         "metadata": {
             "gid": "20023",
             "model": "grover-mega",
@@ -1687,12 +1654,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Working in the paid labor workforce may have cognitive benefits later in life for U.S. women.",
-        "simplified": "But as with men, the chances of keeping your job decrease with age, which is not a bad thing if you think of women as the majority of temporary or contract workers. A recent report also found that while men and women working in the paid labor workforce have similar risk factors for job-related chronic diseases, men are more likely to face job loss. The report released today by RAND Corporation will be published online on May 10, 2012 in the Journal of Work and Health. The report, based on an analysis of data from the U.S. Bureau of Labor Statistics and the National Health Interview Survey (NHIS), found that whether or not women work in the paid labor force decreases risk for these diseases.",
+        "source": "Working in the paid labor workforce may have cognitive benefits later in life for U.S. women.",
+        "target": "But as with men, the chances of keeping your job decrease with age, which is not a bad thing if you think of women as the majority of temporary or contract workers. A recent report also found that while men and women working in the paid labor workforce have similar risk factors for job-related chronic diseases, men are more likely to face job loss. The report released today by RAND Corporation will be published online on May 10, 2012 in the Journal of Work and Health. The report, based on an analysis of data from the U.S. Bureau of Labor Statistics and the National Health Interview Survey (NHIS), found that whether or not women work in the paid labor force decreases risk for these diseases.",
         "edits": []
     },
     {
-        "id": 34,
         "metadata": {
             "gid": "20024",
             "model": "grover-mega",
@@ -1700,8 +1666,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Growing numbers of surfers are taking to the Great Lakes - even when the weather is well below freezing.",
-        "simplified": "A Channel Islands lifeguard was this week cited for trespassing on the Calumet River at Evansville, Ind., when he went out into freezing, white-caps and swam to shore. He had no intention of causing a disturbance. The U.S. Coast Guard was called. It might be something that we just jump on and try to teach him not to do, said Coast Guard Petty Officer Byron Johnson. But the Coast Guard reminds the public that it is a crime to cross a navigable body of water while its waters are closed to navigation. No free passes. The conduct of his fellow beachcombers are another matter.",
+        "source": "Growing numbers of surfers are taking to the Great Lakes - even when the weather is well below freezing.",
+        "target": "A Channel Islands lifeguard was this week cited for trespassing on the Calumet River at Evansville, Ind., when he went out into freezing, white-caps and swam to shore. He had no intention of causing a disturbance. The U.S. Coast Guard was called. It might be something that we just jump on and try to teach him not to do, said Coast Guard Petty Officer Byron Johnson. But the Coast Guard reminds the public that it is a crime to cross a navigable body of water while its waters are closed to navigation. No free passes. The conduct of his fellow beachcombers are another matter.",
         "edits": [
             {
                 "id": 0,
@@ -1719,7 +1685,6 @@
         ]
     },
     {
-        "id": 35,
         "metadata": {
             "gid": "20025",
             "model": "grover-mega",
@@ -1727,8 +1692,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "New York\u2019s rental market has been turned upside down by the pandemic, making it hard to tell a good deal from one that\u2019s too good to be true.",
-        "simplified": "The death rates are way up at morgues, which has given rise to reports of year-round tourism rather than a temporary response to the virus. Prices are up, too and the spread of Zika has taken its toll. Based on a reassessment of Cuba's stock market, leading New York real estate company Guttman & Howry calculates real estate values around the world to be 25 percent higher than they would be without the Zika vaccine, which is proving successful in the Miami area. Of course, it's only a guess. And, in itself, that doesn't mean prices will rise in New York.",
+        "source": "New York\u2019s rental market has been turned upside down by the pandemic, making it hard to tell a good deal from one that\u2019s too good to be true.",
+        "target": "The death rates are way up at morgues, which has given rise to reports of year-round tourism rather than a temporary response to the virus. Prices are up, too and the spread of Zika has taken its toll. Based on a reassessment of Cuba's stock market, leading New York real estate company Guttman & Howry calculates real estate values around the world to be 25 percent higher than they would be without the Zika vaccine, which is proving successful in the Miami area. Of course, it's only a guess. And, in itself, that doesn't mean prices will rise in New York.",
         "edits": [
             {
                 "id": 0,
@@ -1772,7 +1737,6 @@
         ]
     },
     {
-        "id": 36,
         "metadata": {
             "gid": "20026",
             "model": "grover-mega",
@@ -1780,8 +1744,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Online tutorials for TikTok and music-video routines can help prove you wrong. The \u201cWAP\u201d dance is within your reach.",
-        "simplified": "Chances are you've heard of a few modern music-video routines. AC/DC Boogie, Grass Roots and the WAP dance, for example. But you may not be aware of its origins. Well, the WAP dance exists, and it can be mastered by any able body through WAP tutorials posted to YouTube. Created by Swedish choreographer Jonas Damgaard, the short dance is believed to have originated with his idol, Michael Jackson. In a clip posted to YouTube in 2017, Damgaard describes creating the WAP dance for Skrillex. In the clip, he explains creating the routine by backing up massive bass beats.",
+        "source": "Online tutorials for TikTok and music-video routines can help prove you wrong. The \u201cWAP\u201d dance is within your reach.",
+        "target": "Chances are you've heard of a few modern music-video routines. AC/DC Boogie, Grass Roots and the WAP dance, for example. But you may not be aware of its origins. Well, the WAP dance exists, and it can be mastered by any able body through WAP tutorials posted to YouTube. Created by Swedish choreographer Jonas Damgaard, the short dance is believed to have originated with his idol, Michael Jackson. In a clip posted to YouTube in 2017, Damgaard describes creating the WAP dance for Skrillex. In the clip, he explains creating the routine by backing up massive bass beats.",
         "edits": [
             {
                 "id": 0,
@@ -1838,7 +1802,6 @@
         ]
     },
     {
-        "id": 37,
         "metadata": {
             "gid": "20027",
             "model": "grover-mega",
@@ -1846,8 +1809,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "New research suggests that stimulating neurons in the brain can address psychological issues with surprising speed and precision.",
-        "simplified": "Dr. Keith Briand of the University of New Hampshire has discovered the human brain contains extremely sensitive contact areas which are uniquely good at detecting neuronal firing patterns. This is important for current neuroscience because it shows that we know some things about the brain that may hold keys to understanding and hopefully treating a wide variety of different conditions, says Briand. He described the research in an article published in the journal EMBO Reports. Briand and his colleague Justin Rego (who invented much of the imaging technology used in the research) focused on fluorescing DNA in a hair follicle and its direct connections to neurons in the frontal lobe of the brain.",
+        "source": "New research suggests that stimulating neurons in the brain can address psychological issues with surprising speed and precision.",
+        "target": "Dr. Keith Briand of the University of New Hampshire has discovered the human brain contains extremely sensitive contact areas which are uniquely good at detecting neuronal firing patterns. This is important for current neuroscience because it shows that we know some things about the brain that may hold keys to understanding and hopefully treating a wide variety of different conditions, says Briand. He described the research in an article published in the journal EMBO Reports. Briand and his colleague Justin Rego (who invented much of the imaging technology used in the research) focused on fluorescing DNA in a hair follicle and its direct connections to neurons in the frontal lobe of the brain.",
         "edits": [
             {
                 "id": 0,
@@ -1943,7 +1906,6 @@
         ]
     },
     {
-        "id": 38,
         "metadata": {
             "gid": "20028",
             "model": "grover-mega",
@@ -1951,8 +1913,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "During the pandemic, suicidal thinking is up. And families find that hospitals can\u2019t handle adolescents in crisis.",
-        "simplified": "Recently, a boy walked into the psychiatry department at Santa Barbara Cottage Hospital in California with an overdose. They called an ambulance and quickly gave him a lethal dose of fentanyl. All because he had been checking his text messages. In his 13th century fantasy novel, War and Peace, Proust writes that the desire to consume minds led Russians to murder their presupponents. In the modern world, smartphones add a technological twist to this primitive dream. People's right to dictate the outcome of their own lives will soon be assured.",
+        "source": "During the pandemic, suicidal thinking is up. And families find that hospitals can\u2019t handle adolescents in crisis.",
+        "target": "Recently, a boy walked into the psychiatry department at Santa Barbara Cottage Hospital in California with an overdose. They called an ambulance and quickly gave him a lethal dose of fentanyl. All because he had been checking his text messages. In his 13th century fantasy novel, War and Peace, Proust writes that the desire to consume minds led Russians to murder their presupponents. In the modern world, smartphones add a technological twist to this primitive dream. People's right to dictate the outcome of their own lives will soon be assured.",
         "edits": [
             {
                 "id": 0,
@@ -2022,7 +1984,6 @@
         ]
     },
     {
-        "id": 39,
         "metadata": {
             "gid": "20029",
             "model": "grover-mega",
@@ -2030,8 +1991,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "With new puppies and kids at home, doctors are worried about treating more children for dog bites.",
-        "simplified": "Newington State of Health officials said they're seeing the number of injuries from dog bites increased two- to three-fold over the past two years, NBC Connecticut Troubleshooters have learned. \"The problem is no one wants to go out and spend money on their pets, so there's just really no fix,\" said Eric Triquet, who volunteers at the Humane Society of the New England. Mahi McDowd was just seven-months-old when she was bitten on the ear by a neighbor's dog. \"It was overzealous, or he was just very aggressive and I don't know why he attacked her,\" said Mustof. Hilary Maxie of Portland is now in the hospital.",
+        "source": "With new puppies and kids at home, doctors are worried about treating more children for dog bites.",
+        "target": "Newington State of Health officials said they're seeing the number of injuries from dog bites increased two- to three-fold over the past two years, NBC Connecticut Troubleshooters have learned. \"The problem is no one wants to go out and spend money on their pets, so there's just really no fix,\" said Eric Triquet, who volunteers at the Humane Society of the New England. Mahi McDowd was just seven-months-old when she was bitten on the ear by a neighbor's dog. \"It was overzealous, or he was just very aggressive and I don't know why he attacked her,\" said Mustof. Hilary Maxie of Portland is now in the hospital.",
         "edits": [
             {
                 "id": 0,
@@ -2062,7 +2023,6 @@
         ]
     },
     {
-        "id": 40,
         "metadata": {
             "gid": "20030",
             "model": "grover-mega",
@@ -2070,8 +2030,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "An innovative study that examined hundreds of factors linked to heart failure found one dietary factor that may lower risk: drinking coffee.",
-        "simplified": "Advertising University of Chicago researchers found that among so-called coffee-heavy coffee drinkers, there was a lower risk of heart failure than among coffee-light coffee drinkers. But what can coffee do for your heart? Coffee contains an assortment of compounds, including antioxidants that provide a protective effect against heart disease and other illnesses. Advertising Coffee is an effective heart-healthy agent and it could lower risk of heart failure. These are promising results for coffee drinkers, said study co-author Angela C. Voracki, Professor at the University of Chicago. For the study, the researchers analysed the associations between coffee consumption and hospitalised heart failure.",
+        "source": "An innovative study that examined hundreds of factors linked to heart failure found one dietary factor that may lower risk: drinking coffee.",
+        "target": "Advertising University of Chicago researchers found that among so-called coffee-heavy coffee drinkers, there was a lower risk of heart failure than among coffee-light coffee drinkers. But what can coffee do for your heart? Coffee contains an assortment of compounds, including antioxidants that provide a protective effect against heart disease and other illnesses. Advertising Coffee is an effective heart-healthy agent and it could lower risk of heart failure. These are promising results for coffee drinkers, said study co-author Angela C. Voracki, Professor at the University of Chicago. For the study, the researchers analysed the associations between coffee consumption and hospitalised heart failure.",
         "edits": [
             {
                 "id": 0,
@@ -2141,7 +2101,6 @@
         ]
     },
     {
-        "id": 41,
         "metadata": {
             "gid": "20031",
             "model": "human",
@@ -2149,8 +2108,8 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "The more students fall behind in the pandemic, the less likely they are to feel that they can catch up.",
-        "simplified": "Pandemic school is taking its toll on students, especially teens. A recent study, conducted by NBC News and Challenge Success, a nonprofit affiliated with the Stanford Graduate School of Education, found that 50 percent more kids in high school report feeling disengaged from school this year than last. In December, Education Week reported that schools were seeing \u201cdramatic increases in the number of failing or near-failing grades\u201d on report cards. A major symptom of school disengagement is not turning in homework, a problem that can easily snowball. The further students fall behind, the more overwhelmed they often become and the less likely they are to feel that they can catch up.",
+        "source": "The more students fall behind in the pandemic, the less likely they are to feel that they can catch up.",
+        "target": "Pandemic school is taking its toll on students, especially teens. A recent study, conducted by NBC News and Challenge Success, a nonprofit affiliated with the Stanford Graduate School of Education, found that 50 percent more kids in high school report feeling disengaged from school this year than last. In December, Education Week reported that schools were seeing \u201cdramatic increases in the number of failing or near-failing grades\u201d on report cards. A major symptom of school disengagement is not turning in homework, a problem that can easily snowball. The further students fall behind, the more overwhelmed they often become and the less likely they are to feel that they can catch up.",
         "edits": [
             {
                 "id": 0,
@@ -2233,7 +2192,6 @@
         ]
     },
     {
-        "id": 42,
         "metadata": {
             "gid": "20032",
             "model": "human",
@@ -2241,8 +2199,8 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "Many big businesses have not set targets for reducing greenhouse gas emissions. Others have weak goals.",
-        "simplified": "For the past several years, BlackRock, the giant investment firm, has cast itself as a champion of the transition to clean energy. Last month, Laurence D. Fink, BlackRock\u2019s chief executive, wrote that the coronavirus pandemic had \u201cdriven us to confront the global threat of climate change more forcefully,\u201d and the company said it wants businesses it invests in to remove as much carbon dioxide from the environment as they emit by 2050 at the latest. But crucial details were missing from that widely read pledge, including what proportion of the companies BlackRock invests in will be zero-emission businesses in 2050.",
+        "source": "Many big businesses have not set targets for reducing greenhouse gas emissions. Others have weak goals.",
+        "target": "For the past several years, BlackRock, the giant investment firm, has cast itself as a champion of the transition to clean energy. Last month, Laurence D. Fink, BlackRock\u2019s chief executive, wrote that the coronavirus pandemic had \u201cdriven us to confront the global threat of climate change more forcefully,\u201d and the company said it wants businesses it invests in to remove as much carbon dioxide from the environment as they emit by 2050 at the latest. But crucial details were missing from that widely read pledge, including what proportion of the companies BlackRock invests in will be zero-emission businesses in 2050.",
         "edits": [
             {
                 "id": 0,
@@ -2286,7 +2244,6 @@
         ]
     },
     {
-        "id": 43,
         "metadata": {
             "gid": "20033",
             "model": "human",
@@ -2294,12 +2251,11 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "New research confirms that emissions from China of CFC-11, a banned gas that harms Earth\u2019s ozone layer, have fallen sharply, reversing a dangerous spike.",
-        "simplified": "Emissions from China of a banned gas that harms Earth\u2019s ozone layer have sharply declined after increasing for several years, two teams of scientists said Wednesday, a sign that the Beijing government had made good on vows to crack down on illegal production of the industrial chemical. The findings ease concerns that increased emissions of the gas, CFC-11, would slow progress in the decades-long environmental struggle to repair the ozone layer, which filters ultraviolet radiation from the sun that can cause skin cancer and damage crops. \u201cWe see a huge decline both in global emission rates and what\u2019s coming from Eastern China,\u201d said Stephen A. Montzka.",
+        "source": "New research confirms that emissions from China of CFC-11, a banned gas that harms Earth\u2019s ozone layer, have fallen sharply, reversing a dangerous spike.",
+        "target": "Emissions from China of a banned gas that harms Earth\u2019s ozone layer have sharply declined after increasing for several years, two teams of scientists said Wednesday, a sign that the Beijing government had made good on vows to crack down on illegal production of the industrial chemical. The findings ease concerns that increased emissions of the gas, CFC-11, would slow progress in the decades-long environmental struggle to repair the ozone layer, which filters ultraviolet radiation from the sun that can cause skin cancer and damage crops. \u201cWe see a huge decline both in global emission rates and what\u2019s coming from Eastern China,\u201d said Stephen A. Montzka.",
         "edits": []
     },
     {
-        "id": 44,
         "metadata": {
             "gid": "20034",
             "model": "human",
@@ -2307,8 +2263,8 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "Critics of a strong currency say it hurts American factory workers by making imports cheap.",
-        "simplified": "President Biden has made reviving American manufacturing a top priority. To deliver, he may first have to deal with something even more fundamental to the U.S. economy: the strength of the dollar. Because a strong dollar lowers the price of imports and raises the price of exports, it gives foreign companies an advantage over American competitors and can drag down U.S. employment. \u201cDollar overvaluation is the big problem,\u201d said Mike Stumo, chief executive of the Coalition for a Prosperous America, which represents small and midsize manufacturers and farmers. Mr. Stumo describes policies that prop up the dollar as a \u201cwar on the working class.\u201d",
+        "source": "Critics of a strong currency say it hurts American factory workers by making imports cheap.",
+        "target": "President Biden has made reviving American manufacturing a top priority. To deliver, he may first have to deal with something even more fundamental to the U.S. economy: the strength of the dollar. Because a strong dollar lowers the price of imports and raises the price of exports, it gives foreign companies an advantage over American competitors and can drag down U.S. employment. \u201cDollar overvaluation is the big problem,\u201d said Mike Stumo, chief executive of the Coalition for a Prosperous America, which represents small and midsize manufacturers and farmers. Mr. Stumo describes policies that prop up the dollar as a \u201cwar on the working class.\u201d",
         "edits": [
             {
                 "id": 0,
@@ -2391,7 +2347,6 @@
         ]
     },
     {
-        "id": 45,
         "metadata": {
             "gid": "20035",
             "model": "human",
@@ -2399,8 +2354,8 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "The Fed chair said better caregiving options was an \u201carea worth looking at\u201d for Congress, while reiterating the central bank\u2019s full-employment pledge.",
-        "simplified": "Jerome H. Powell, the Federal Reserve chair, suggested on Wednesday that improved child care support policies from the government might help pull more women into the labor market. The Fed chief studiously avoided commenting on specific government policy proposals during three hours of wide-ranging testimony before the House Financial Services Committee. But he did acknowledge, in response to a question, that enabling better options for affordable child-care is an \u201carea worth looking at\u201d for Congress. \u201cOur peers, our competitors, advanced economy democracies, have a more built-up function for child care, and they wind up having substantially higher labor force participation for women,\u201d Mr. Powell said.",
+        "source": "The Fed chair said better caregiving options was an \u201carea worth looking at\u201d for Congress, while reiterating the central bank\u2019s full-employment pledge.",
+        "target": "Jerome H. Powell, the Federal Reserve chair, suggested on Wednesday that improved child care support policies from the government might help pull more women into the labor market. The Fed chief studiously avoided commenting on specific government policy proposals during three hours of wide-ranging testimony before the House Financial Services Committee. But he did acknowledge, in response to a question, that enabling better options for affordable child-care is an \u201carea worth looking at\u201d for Congress. \u201cOur peers, our competitors, advanced economy democracies, have a more built-up function for child care, and they wind up having substantially higher labor force participation for women,\u201d Mr. Powell said.",
         "edits": [
             {
                 "id": 0,
@@ -2418,7 +2373,6 @@
         ]
     },
     {
-        "id": 46,
         "metadata": {
             "gid": "20036",
             "model": "human",
@@ -2426,12 +2380,11 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "Its ease and affordability made it a pandemic staple for many families and a rare bright spot in an industry that has been decimated.",
-        "simplified": "A few times a week, Elizabeth Reninger ambles to a pizza restaurant near her job for lunch. She orders the same thing every time: a cheese slice and fries for $6. For a little adventure, she sprinkles on some Parmesan and red pepper flakes. Before the coronavirus pandemic swept across the country, Ms. Reninger, a criminology student at Northern Arizona University who also works at a dog day-care facility, estimated that she ate pizza only once every couple of months. That changed late last summer when she strolled into a Slice and Ice pizza parlor.",
+        "source": "Its ease and affordability made it a pandemic staple for many families and a rare bright spot in an industry that has been decimated.",
+        "target": "A few times a week, Elizabeth Reninger ambles to a pizza restaurant near her job for lunch. She orders the same thing every time: a cheese slice and fries for $6. For a little adventure, she sprinkles on some Parmesan and red pepper flakes. Before the coronavirus pandemic swept across the country, Ms. Reninger, a criminology student at Northern Arizona University who also works at a dog day-care facility, estimated that she ate pizza only once every couple of months. That changed late last summer when she strolled into a Slice and Ice pizza parlor.",
         "edits": []
     },
     {
-        "id": 47,
         "metadata": {
             "gid": "20037",
             "model": "human",
@@ -2439,12 +2392,11 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "If you\u2019ve been fortunate enough to put away some cash, here are a few ideas on what to do with it.",
-        "simplified": "The uneven economic recovery in the U.S. is a cruel outcome of the pandemic and systematic inequality. Millions of Americans remain unemployed, and the systems we have in place to help have failed many of them. But if you squint, there is a silver lining for some: More Americans have been able to save money and pay off debt since lockdowns across the country have meant less travel, less entertainment and less dining out. For those lucky enough to be in such a position, possibly even for the first time, the next question is: What should I do with it, especially once life has returned to \u201cnormal\u201d?",
+        "source": "If you\u2019ve been fortunate enough to put away some cash, here are a few ideas on what to do with it.",
+        "target": "The uneven economic recovery in the U.S. is a cruel outcome of the pandemic and systematic inequality. Millions of Americans remain unemployed, and the systems we have in place to help have failed many of them. But if you squint, there is a silver lining for some: More Americans have been able to save money and pay off debt since lockdowns across the country have meant less travel, less entertainment and less dining out. For those lucky enough to be in such a position, possibly even for the first time, the next question is: What should I do with it, especially once life has returned to \u201cnormal\u201d?",
         "edits": []
     },
     {
-        "id": 48,
         "metadata": {
             "gid": "20038",
             "model": "human",
@@ -2452,8 +2404,8 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "The electronic Chinese yuan is now being tested in cities such as Shenzhen, Shanghai and Beijing. No other major power is as far along with a homegrown digital currency.",
-        "simplified": "Annabelle Huang recently won a government lottery to try China\u2019s latest economics experiment: a national digital currency. After joining the lottery through the social media app WeChat, Ms. Huang, 28, a business strategist in Shenzhen, received a digital envelope with 200 electronic Chinese yuan, or eCNY, worth around $30. To spend it, she went to a convenience store near her office and picked out some nuts and yogurt. Then she pulled up a QR code for the digital currency from inside her bank app, which the store scanned for payment. \u201cThe journey of how you pay, it\u2019s very similar\u201d to that of other Chinese payments apps, Ms. Huang said of the eCNY experience.",
+        "source": "The electronic Chinese yuan is now being tested in cities such as Shenzhen, Shanghai and Beijing. No other major power is as far along with a homegrown digital currency.",
+        "target": "Annabelle Huang recently won a government lottery to try China\u2019s latest economics experiment: a national digital currency. After joining the lottery through the social media app WeChat, Ms. Huang, 28, a business strategist in Shenzhen, received a digital envelope with 200 electronic Chinese yuan, or eCNY, worth around $30. To spend it, she went to a convenience store near her office and picked out some nuts and yogurt. Then she pulled up a QR code for the digital currency from inside her bank app, which the store scanned for payment. \u201cThe journey of how you pay, it\u2019s very similar\u201d to that of other Chinese payments apps, Ms. Huang said of the eCNY experience.",
         "edits": [
             {
                 "id": 0,
@@ -2471,7 +2423,6 @@
         ]
     },
     {
-        "id": 49,
         "metadata": {
             "gid": "20039",
             "model": "human",
@@ -2479,8 +2430,8 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "Massachusetts is one of the first states to put legislative guardrails around the use of facial recognition technology in criminal investigations.",
-        "simplified": "Though police have been using facial recognition technology for the last two decades to try to identify unknown people in their investigations, the practice of putting the majority of Americans into a perpetual photo lineup has gotten surprisingly little attention from lawmakers and regulators. Until now. Lawmakers, civil liberties advocates and police chiefs have debated whether and how to use the technology because of concerns about both privacy and accuracy. But figuring out how to regulate it is tricky. So far, that has meant an all-or-nothing approach. City Councils in Oakland, Portland, San Francisco, Minneapolis and elsewhere have banned police use of the technology, largely because of bias in how it works.",
+        "source": "Massachusetts is one of the first states to put legislative guardrails around the use of facial recognition technology in criminal investigations.",
+        "target": "Though police have been using facial recognition technology for the last two decades to try to identify unknown people in their investigations, the practice of putting the majority of Americans into a perpetual photo lineup has gotten surprisingly little attention from lawmakers and regulators. Until now. Lawmakers, civil liberties advocates and police chiefs have debated whether and how to use the technology because of concerns about both privacy and accuracy. But figuring out how to regulate it is tricky. So far, that has meant an all-or-nothing approach. City Councils in Oakland, Portland, San Francisco, Minneapolis and elsewhere have banned police use of the technology, largely because of bias in how it works.",
         "edits": [
             {
                 "id": 0,
@@ -2498,7 +2449,6 @@
         ]
     },
     {
-        "id": 50,
         "metadata": {
             "gid": "20040",
             "model": "human",
@@ -2506,12 +2456,11 @@
             "temperature": "0.0",
             "frequency_penalty": "0"
         },
-        "original": "Many of us already live with artificial intelligence now, but researchers say interactions with the technology will become increasingly personalized.",
-        "simplified": "This article is part of our new series, Currents, which examines how rapid advances in technology are transforming our lives. I wake up in the middle of the night. It\u2019s cold. \u201cHey, Google, what\u2019s the temperature in Zone 2,\u201d I say into the darkness. A disembodied voice responds: \u201cThe temperature in Zone 2 is 52 degrees.\u201d \u201cSet the heat to 68,\u201d I say, and then I ask the gods of artificial intelligence to turn on the light. Many of us already live with A.I., an array of unseen algorithms that control our Internet-connected devices, from smartphones to security cameras.",
+        "source": "Many of us already live with artificial intelligence now, but researchers say interactions with the technology will become increasingly personalized.",
+        "target": "This article is part of our new series, Currents, which examines how rapid advances in technology are transforming our lives. I wake up in the middle of the night. It\u2019s cold. \u201cHey, Google, what\u2019s the temperature in Zone 2,\u201d I say into the darkness. A disembodied voice responds: \u201cThe temperature in Zone 2 is 52 degrees.\u201d \u201cSet the heat to 68,\u201d I say, and then I ask the gods of artificial intelligence to turn on the light. Many of us already live with A.I., an array of unseen algorithms that control our Internet-connected devices, from smartphones to security cameras.",
         "edits": []
     },
     {
-        "id": 51,
         "metadata": {
             "gid": "30001",
             "model": "gpt3",
@@ -2519,8 +2468,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "NEW YORK: Tesla Inc\u2019s market value has climbed above Volkswagen AG\u2019s for the first time to more than US$100 billion, a threshold that will trigger a huge payout for Elon Musk if he can sustain the feat for months.",
-        "simplified": "Tesla\u2019s $47 billion market capitalization on Tuesday surpassed the auto industry giant that\u2019s the most profitable car company in the world, with $16 billion in profits last year. Advertisement VW\u2019s is at US$230 billion, almost three times the value of all US automakers combined and larger than any company on the DAX index of blue-chip German shares. Such an eye-popping figure can give Chief Executive Officer Musk a huge payday if Tesla stock rises 13 percent more. He has a $100 million performance-based bonus outstanding from last September. ",
+        "source": "NEW YORK: Tesla Inc\u2019s market value has climbed above Volkswagen AG\u2019s for the first time to more than US$100 billion, a threshold that will trigger a huge payout for Elon Musk if he can sustain the feat for months.",
+        "target": "Tesla\u2019s $47 billion market capitalization on Tuesday surpassed the auto industry giant that\u2019s the most profitable car company in the world, with $16 billion in profits last year. Advertisement VW\u2019s is at US$230 billion, almost three times the value of all US automakers combined and larger than any company on the DAX index of blue-chip German shares. Such an eye-popping figure can give Chief Executive Officer Musk a huge payday if Tesla stock rises 13 percent more. He has a $100 million performance-based bonus outstanding from last September. ",
         "edits": [
             {
                 "id": 0,
@@ -2590,7 +2539,6 @@
         ]
     },
     {
-        "id": 52,
         "metadata": {
             "gid": "30002",
             "model": "gpt3",
@@ -2598,8 +2546,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "UK\u2019s central bank will assess the possibility of a \u2018central bank digital currency\u2019\nFinancial giants",
-        "simplified": "UBS : Swiss investment bank UBS recently created a project called \"utility settlement coin\" which is designed to be a crypto-currency that settles transactions between banks. The bankers trying to create their own form of digital currency are reacting to increasing competition for their services from fintech startups such as decentralized peer-to-peer payment apps and services such as Bitcoin. The Chief Technology Officer at UBS, Richard Soley, stated recently that: \" This capability (utility settlement coin) is not going to be wasted. The business of these big banks is to stay in business and they will adopt this technology.\" ",
+        "source": "UK\u2019s central bank will assess the possibility of a \u2018central bank digital currency\u2019\nFinancial giants",
+        "target": "UBS : Swiss investment bank UBS recently created a project called \"utility settlement coin\" which is designed to be a crypto-currency that settles transactions between banks. The bankers trying to create their own form of digital currency are reacting to increasing competition for their services from fintech startups such as decentralized peer-to-peer payment apps and services such as Bitcoin. The Chief Technology Officer at UBS, Richard Soley, stated recently that: \" This capability (utility settlement coin) is not going to be wasted. The business of these big banks is to stay in business and they will adopt this technology.\" ",
         "edits": [
             {
                 "id": 0,
@@ -2643,7 +2591,6 @@
         ]
     },
     {
-        "id": 53,
         "metadata": {
             "gid": "30003",
             "model": "gpt3",
@@ -2651,12 +2598,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "By Samantha Melamed, The Philadelphia Inquirer\nPHILADELPHIA \u2014 Ross Nazimov thought he had found the perfect apartment: a room in a brand-new two-bedroom unit in Fishtown, with a roommate who assured him he was rarely home.",
-        "simplified": "Nazimov signed a lease in April 2014, paid a broker's fee, and made a $923 deposit, half of which he paid by check, half by debit card. But a few days before he was to move in, the owner called him. The building had problems with the contractor, Nazimov was told. No problem, said Nazimov. He was in no rush. \"After waiting for three weeks, he gave up,\" recalls Nazimov's sister Vera, who was helping him find an apartment. \"The money was gone.\" ",
+        "source": "By Samantha Melamed, The Philadelphia Inquirer\nPHILADELPHIA \u2014 Ross Nazimov thought he had found the perfect apartment: a room in a brand-new two-bedroom unit in Fishtown, with a roommate who assured him he was rarely home.",
+        "target": "Nazimov signed a lease in April 2014, paid a broker's fee, and made a $923 deposit, half of which he paid by check, half by debit card. But a few days before he was to move in, the owner called him. The building had problems with the contractor, Nazimov was told. No problem, said Nazimov. He was in no rush. \"After waiting for three weeks, he gave up,\" recalls Nazimov's sister Vera, who was helping him find an apartment. \"The money was gone.\" ",
         "edits": []
     },
     {
-        "id": 54,
         "metadata": {
             "gid": "30004",
             "model": "gpt3",
@@ -2664,8 +2610,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Dear Sam: I am a professional in the entertainment business \u2014 with more than 20 years of experience in my home country \u2014 who relocated to the U.S. in 2019.",
-        "simplified": "I have a sister who is also a professional, though she is less experienced, in the same business \u2014 who stayed in my country. I want to help my sister with her business, but I am not sure how best to get started. She has had me on retainer for small work in the past, but I now feel I am in a position to help her far more effectively and in a larger way. I want to help her as a matter of kindness but also because I want to be useful to others and to make a difference in their lives. But how can I go about giving her help? I am very busy in my own career. ",
+        "source": "Dear Sam: I am a professional in the entertainment business \u2014 with more than 20 years of experience in my home country \u2014 who relocated to the U.S. in 2019.",
+        "target": "I have a sister who is also a professional, though she is less experienced, in the same business \u2014 who stayed in my country. I want to help my sister with her business, but I am not sure how best to get started. She has had me on retainer for small work in the past, but I now feel I am in a position to help her far more effectively and in a larger way. I want to help her as a matter of kindness but also because I want to be useful to others and to make a difference in their lives. But how can I go about giving her help? I am very busy in my own career. ",
         "edits": [
             {
                 "id": 0,
@@ -2683,7 +2629,6 @@
         ]
     },
     {
-        "id": 55,
         "metadata": {
             "gid": "30005",
             "model": "gpt3",
@@ -2691,8 +2636,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The literary haven on the corner of Dundas and Mill streets is celebrating a milestone.",
-        "simplified": "\"It will be fun to see all these 50,000 authors come through and look and wonder where their books are and that they found a home here,\" said Friesen. \"They were all homeschooled by Paul Wilson.\" She spent a lot of time at the store every day to work with Paul and says she's noticed changes over the years. \"Paul would actually go on the road and know a lot of authors, but it was a lot smaller community back then,\" she said. \"There was the ALA and more centred around that.\" ",
+        "source": "The literary haven on the corner of Dundas and Mill streets is celebrating a milestone.",
+        "target": "\"It will be fun to see all these 50,000 authors come through and look and wonder where their books are and that they found a home here,\" said Friesen. \"They were all homeschooled by Paul Wilson.\" She spent a lot of time at the store every day to work with Paul and says she's noticed changes over the years. \"Paul would actually go on the road and know a lot of authors, but it was a lot smaller community back then,\" she said. \"There was the ALA and more centred around that.\" ",
         "edits": [
             {
                 "id": 0,
@@ -2723,7 +2668,6 @@
         ]
     },
     {
-        "id": 56,
         "metadata": {
             "gid": "30006",
             "model": "gpt3",
@@ -2731,8 +2675,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "One of Nigeria\u2019s leading academic institution, Grace Schools has announced its partnership with the Candadian institution, Loyalist college, to prepare school-leaving students for onward academic pursuits abroad.",
-        "simplified": "Under the agreement, the Canadian institution will sign out a selection of students across the school\u2019s 7 campuses, to pursue their higher studies. The five-year-programme will, according to a statement, cover scholarship, visa, accommodation, laptop, and hostel needs of selected candidates. At the signing ceremony held yesterday at the school\u2019s Abuja campus, the schools\u2019 Head, Programmes, Mrs. Opu Fadayomi said: \u201cwe at Grace Schools are proud and pleased to partner with Loyalist College to offer talented Nigerian students the opportunity to broaden their education.\u201d ",
+        "source": "One of Nigeria\u2019s leading academic institution, Grace Schools has announced its partnership with the Candadian institution, Loyalist college, to prepare school-leaving students for onward academic pursuits abroad.",
+        "target": "Under the agreement, the Canadian institution will sign out a selection of students across the school\u2019s 7 campuses, to pursue their higher studies. The five-year-programme will, according to a statement, cover scholarship, visa, accommodation, laptop, and hostel needs of selected candidates. At the signing ceremony held yesterday at the school\u2019s Abuja campus, the schools\u2019 Head, Programmes, Mrs. Opu Fadayomi said: \u201cwe at Grace Schools are proud and pleased to partner with Loyalist College to offer talented Nigerian students the opportunity to broaden their education.\u201d ",
         "edits": [
             {
                 "id": 0,
@@ -2750,7 +2694,6 @@
         ]
     },
     {
-        "id": 57,
         "metadata": {
             "gid": "30007",
             "model": "gpt3",
@@ -2758,8 +2701,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "All 18 outlets of restaurant business shut down after it failed to find a buyer\nRestaurant chain Handmade Burger Co has collapsed into administration for the second time, leading to the closure of all 18 outlets and the loss of 283 jobs.",
-        "simplified": "The administrator, David Field of Field Perry Willis, said he has sold the brand names and customer database to fellow restaurateur Richard Coop, the founder of Carluccio's and Rubicon, for an undisclosed sum. Field said: \"After much thought and deliberation, we've all agreed that the current Handmade estate is not strong enough to move the business forward and realise its potential. As a consequence, all stores have closed and unfortunately all employees have been made redundant with immediate effect.\" Debts of \u00a313.1m, including \u00a37.4m owed to its parent company Jamie Oliver Holdings Limited, were preventing Handmade Burger Co from trading, said Field. ",
+        "source": "All 18 outlets of restaurant business shut down after it failed to find a buyer\nRestaurant chain Handmade Burger Co has collapsed into administration for the second time, leading to the closure of all 18 outlets and the loss of 283 jobs.",
+        "target": "The administrator, David Field of Field Perry Willis, said he has sold the brand names and customer database to fellow restaurateur Richard Coop, the founder of Carluccio's and Rubicon, for an undisclosed sum. Field said: \"After much thought and deliberation, we've all agreed that the current Handmade estate is not strong enough to move the business forward and realise its potential. As a consequence, all stores have closed and unfortunately all employees have been made redundant with immediate effect.\" Debts of \u00a313.1m, including \u00a37.4m owed to its parent company Jamie Oliver Holdings Limited, were preventing Handmade Burger Co from trading, said Field. ",
         "edits": [
             {
                 "id": 0,
@@ -2777,7 +2720,6 @@
         ]
     },
     {
-        "id": 58,
         "metadata": {
             "gid": "30008",
             "model": "gpt3",
@@ -2785,8 +2727,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Ted Baker today experienced the dubious honour of joining a list of FTSE firms that have been shaken by accounting errors in the past year.",
-        "simplified": "The chain's shares fell 15pc after it revealed that it had overstated profit margins by \u00a37.2m. It said the money had been spent buying handbags from suppliers, partly to meet unusually high demand. The chain, whose customers have included Pamela Anderson and Demi Moore, said profits for the year to the end of July would be \u00a33.3m - 15pc below expectations. Despite the accounting gaffe, however, the group said sales had risen 29pc and margins continued to improve. Tim Melville-Ross, an analyst at Cazenove, said: \"It's not a disaster. ",
+        "source": "Ted Baker today experienced the dubious honour of joining a list of FTSE firms that have been shaken by accounting errors in the past year.",
+        "target": "The chain's shares fell 15pc after it revealed that it had overstated profit margins by \u00a37.2m. It said the money had been spent buying handbags from suppliers, partly to meet unusually high demand. The chain, whose customers have included Pamela Anderson and Demi Moore, said profits for the year to the end of July would be \u00a33.3m - 15pc below expectations. Despite the accounting gaffe, however, the group said sales had risen 29pc and margins continued to improve. Tim Melville-Ross, an analyst at Cazenove, said: \"It's not a disaster. ",
         "edits": [
             {
                 "id": 0,
@@ -2817,7 +2759,6 @@
         ]
     },
     {
-        "id": 59,
         "metadata": {
             "gid": "30009",
             "model": "gpt3",
@@ -2825,8 +2766,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "SEATTLE \u2014",
-        "simplified": "9:58 | Things are not going well for the Huskies and it\u2019s not all Apple \u201cThe Offspring\u201d Kelly\u2019s fault. USC started out 1-for-6 from three-point land in the first half \u2014 \u201cmake the freakin\u2019 shots\u201d \u2014 but the Huskies managed to only take a nine-point lead. USC is shooting well, making multiple shots from well beyond the arc, shooting 54 percent on the night and only turning it over twice (not including Lane's one-handed pass). That\u2019s a pretty polished game from the Women of Troy. ",
+        "source": "SEATTLE \u2014",
+        "target": "9:58 | Things are not going well for the Huskies and it\u2019s not all Apple \u201cThe Offspring\u201d Kelly\u2019s fault. USC started out 1-for-6 from three-point land in the first half \u2014 \u201cmake the freakin\u2019 shots\u201d \u2014 but the Huskies managed to only take a nine-point lead. USC is shooting well, making multiple shots from well beyond the arc, shooting 54 percent on the night and only turning it over twice (not including Lane's one-handed pass). That\u2019s a pretty polished game from the Women of Troy. ",
         "edits": [
             {
                 "id": 0,
@@ -2844,7 +2785,6 @@
         ]
     },
     {
-        "id": 60,
         "metadata": {
             "gid": "30010",
             "model": "gpt3",
@@ -2852,12 +2792,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Cory Booker and Jonathan Holloway were teammates on Stanford University\u2019s football team more than three decades ago.",
-        "simplified": "On Monday, Booker (a Democrat) and Holloway (a Republican) \u2014 both now mayors in the Garden State \u2014 will meet in a courtroom not far from the location of Booker\u2019s first collegiate game. Booker and the city of Newark will take the field against the City of Elizabeth, led by its Republican mayor, Robert . The litigation centers on traffic camera legislation. After the state Supreme Court unanimously overturned an earlier attempt by legislators to curb the use of traffic cameras by municipalities in June 2014, lawmakers last year approved a constitutional amendment to put limits on their use. The legal challenge to the amendment began in April 2016 and has been ongoing. ",
+        "source": "Cory Booker and Jonathan Holloway were teammates on Stanford University\u2019s football team more than three decades ago.",
+        "target": "On Monday, Booker (a Democrat) and Holloway (a Republican) \u2014 both now mayors in the Garden State \u2014 will meet in a courtroom not far from the location of Booker\u2019s first collegiate game. Booker and the city of Newark will take the field against the City of Elizabeth, led by its Republican mayor, Robert . The litigation centers on traffic camera legislation. After the state Supreme Court unanimously overturned an earlier attempt by legislators to curb the use of traffic cameras by municipalities in June 2014, lawmakers last year approved a constitutional amendment to put limits on their use. The legal challenge to the amendment began in April 2016 and has been ongoing. ",
         "edits": []
     },
     {
-        "id": 61,
         "metadata": {
             "gid": "30011",
             "model": "gpt3",
@@ -2865,8 +2804,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Nationals deputy leader Bridget McKenzie is facing an investigation into whether she breached ministerial standards as part of a sporting grants scandal.",
-        "simplified": "Senator McKenzie has come under fire for awarding former leader's adviser James Ashby $10,000 a year as a part-time \u201csport\u201d adviser. Fairfax Media revealed on Wednesday that Mr Ashby had failed to declare his financial interests properly, triggering an investigation into his behaviour. The Nationals are now coming under scrutiny over whether Senator McKenzie's behaviour was appropriate as secretary of the parliamentary secretary's fund, in light of a decision made on July 27, 2015. Nationals deputy leader Bridget McKenzie is facing an investigation into whether she breached ministerial standards. AAP ",
+        "source": "Nationals deputy leader Bridget McKenzie is facing an investigation into whether she breached ministerial standards as part of a sporting grants scandal.",
+        "target": "Senator McKenzie has come under fire for awarding former leader's adviser James Ashby $10,000 a year as a part-time \u201csport\u201d adviser. Fairfax Media revealed on Wednesday that Mr Ashby had failed to declare his financial interests properly, triggering an investigation into his behaviour. The Nationals are now coming under scrutiny over whether Senator McKenzie's behaviour was appropriate as secretary of the parliamentary secretary's fund, in light of a decision made on July 27, 2015. Nationals deputy leader Bridget McKenzie is facing an investigation into whether she breached ministerial standards. AAP ",
         "edits": [
             {
                 "id": 0,
@@ -2936,7 +2875,6 @@
         ]
     },
     {
-        "id": 62,
         "metadata": {
             "gid": "30012",
             "model": "gpt3",
@@ -2944,8 +2882,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "TEHRAN - Presidential chief of staff Mahmoud Vaezi said on Wednesday that the recent meetings between senior Iranian officials and the emir of Qatari in Tehran was mainly focusing on reinvigoration of security in the Persian Gulf.",
-        "simplified": "\u201cRecent visit of the Qatari emir to Tehran to meet with a number of senior officials is the expression of brotherly ties between the two neighboring countries,\u201d Vaezi said in his final TV appearance of the year, adding that Iran has always called for stability, security and tranquility of the region. \"The recent talks between the officials of the two countries had in fact concentrated on mechanisms of exchanging views on reinforcing security in the Persian Gulf,\" Vaezi said. READ MORE: Iran FMs to Meet Ahead of OPEC Meeting ",
+        "source": "TEHRAN - Presidential chief of staff Mahmoud Vaezi said on Wednesday that the recent meetings between senior Iranian officials and the emir of Qatari in Tehran was mainly focusing on reinvigoration of security in the Persian Gulf.",
+        "target": "\u201cRecent visit of the Qatari emir to Tehran to meet with a number of senior officials is the expression of brotherly ties between the two neighboring countries,\u201d Vaezi said in his final TV appearance of the year, adding that Iran has always called for stability, security and tranquility of the region. \"The recent talks between the officials of the two countries had in fact concentrated on mechanisms of exchanging views on reinforcing security in the Persian Gulf,\" Vaezi said. READ MORE: Iran FMs to Meet Ahead of OPEC Meeting ",
         "edits": [
             {
                 "id": 0,
@@ -2963,7 +2901,6 @@
         ]
     },
     {
-        "id": 63,
         "metadata": {
             "gid": "30013",
             "model": "gpt3",
@@ -2971,8 +2908,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "This undated image provided by Audi shows Maisie Williams in a scene from the company's 2020 Super Bowl NFL football spot.",
-        "simplified": "\"Game of Thrones\" star Maisie Williams is in the limelight for the right reasons, and it has nothing to do with getting killed off. The 19-year-old British actress has been signed as the new face of international carmaker Audi in a $300-million Super Bowl TV campaign. While Williams had already managed to win over the Internet by being picked to play Arya Stark, she was also in the news last year for acting in a steamy kiss scene on the hit HBO drama. However, she says she still feels \"very lucky\" about her career. \"You get to travel the world and be creative. Getting to meet people in all different professions. ",
+        "source": "This undated image provided by Audi shows Maisie Williams in a scene from the company's 2020 Super Bowl NFL football spot.",
+        "target": "\"Game of Thrones\" star Maisie Williams is in the limelight for the right reasons, and it has nothing to do with getting killed off. The 19-year-old British actress has been signed as the new face of international carmaker Audi in a $300-million Super Bowl TV campaign. While Williams had already managed to win over the Internet by being picked to play Arya Stark, she was also in the news last year for acting in a steamy kiss scene on the hit HBO drama. However, she says she still feels \"very lucky\" about her career. \"You get to travel the world and be creative. Getting to meet people in all different professions. ",
         "edits": [
             {
                 "id": 0,
@@ -3016,7 +2953,6 @@
         ]
     },
     {
-        "id": 64,
         "metadata": {
             "gid": "30014",
             "model": "gpt3",
@@ -3024,8 +2960,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Politics\nFormer Vice President Joe Biden on Friday morning walked back comments he made that his top competitor ahead of next week\u2019s Iowa caucuses, Bernie Sanders, is not a Democrat.",
-        "simplified": "Weiner was sentenced on Friday to 21 months in prison for sending explicit messages to a minor, a Sydney Leathers, as part of his sexting scandal. In regards to Weiner\u2019s actions, Chelsea Clinton said, \u201cAnd I just don\u2019t understand what he was thinking. I think it just\u2026 it defies\u2013 not just logic, but the moral code that we have\u2013 that you would have someone who would prey on\u2026 wait for it\u2013 teenage girls that he had just met online. It just boggles the mind. It just makes no sense.\u201d ",
+        "source": "Politics\nFormer Vice President Joe Biden on Friday morning walked back comments he made that his top competitor ahead of next week\u2019s Iowa caucuses, Bernie Sanders, is not a Democrat.",
+        "target": "Weiner was sentenced on Friday to 21 months in prison for sending explicit messages to a minor, a Sydney Leathers, as part of his sexting scandal. In regards to Weiner\u2019s actions, Chelsea Clinton said, \u201cAnd I just don\u2019t understand what he was thinking. I think it just\u2026 it defies\u2013 not just logic, but the moral code that we have\u2013 that you would have someone who would prey on\u2026 wait for it\u2013 teenage girls that he had just met online. It just boggles the mind. It just makes no sense.\u201d ",
         "edits": [
             {
                 "id": 0,
@@ -3043,7 +2979,6 @@
         ]
     },
     {
-        "id": 65,
         "metadata": {
             "gid": "30015",
             "model": "gpt3",
@@ -3051,8 +2986,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "A rally for Donald Trump in Wildwood, NJ.",
-        "simplified": "But the weather played a major factor in making sure the candidate could not arrive at the convention centre in time. A video of his Wildwood speech soon circulated with him looking distraught and complaining that organisers cancelled the event. \"They said no, we won't allow you because of the weather. What are they doing letting it rain if they know I am going to be here?\" he says. People board Donald Trump's Boeing 757 in North Carolina. \"I want to pay for this event immediately and let it go ahead. We won't even wait. Tell me where to go. We had this massive crowd ... and we had incredible enthusiasm.\" ",
+        "source": "A rally for Donald Trump in Wildwood, NJ.",
+        "target": "But the weather played a major factor in making sure the candidate could not arrive at the convention centre in time. A video of his Wildwood speech soon circulated with him looking distraught and complaining that organisers cancelled the event. \"They said no, we won't allow you because of the weather. What are they doing letting it rain if they know I am going to be here?\" he says. People board Donald Trump's Boeing 757 in North Carolina. \"I want to pay for this event immediately and let it go ahead. We won't even wait. Tell me where to go. We had this massive crowd ... and we had incredible enthusiasm.\" ",
         "edits": [
             {
                 "id": 0,
@@ -3109,7 +3044,6 @@
         ]
     },
     {
-        "id": 66,
         "metadata": {
             "gid": "30016",
             "model": "gpt3",
@@ -3117,8 +3051,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "U.S. Rep. Joe Kennedy on Friday announced that several members of the Lawrence City Council were endorsing his primary bid for the U.S. Senate seat held by Ed Markey.",
-        "simplified": "In a statement announcing endorsements from eight Democratic local officials, Kennedy said their backing \"shows what I've known all along -- that the fight for this seat is being waged by working families who are fighting for affordable health care, funding for our public schools, fair pay, and a level playing field for everyone.\" Kennedy said the endorsements came from Lawrence Mayor Dan Rivera, Ward 8 Councilor Jennifer Martinez, Ward 9 Councilor Khalid Raheem, Ward 10 Councilor E. Denise Simmons, Ward 11 Councilor Mark H. Leahy, Ward 12 Councilor Jimmy Martins, and Ward 13 Councilor Dennis Benzan. ",
+        "source": "U.S. Rep. Joe Kennedy on Friday announced that several members of the Lawrence City Council were endorsing his primary bid for the U.S. Senate seat held by Ed Markey.",
+        "target": "In a statement announcing endorsements from eight Democratic local officials, Kennedy said their backing \"shows what I've known all along -- that the fight for this seat is being waged by working families who are fighting for affordable health care, funding for our public schools, fair pay, and a level playing field for everyone.\" Kennedy said the endorsements came from Lawrence Mayor Dan Rivera, Ward 8 Councilor Jennifer Martinez, Ward 9 Councilor Khalid Raheem, Ward 10 Councilor E. Denise Simmons, Ward 11 Councilor Mark H. Leahy, Ward 12 Councilor Jimmy Martins, and Ward 13 Councilor Dennis Benzan. ",
         "edits": [
             {
                 "id": 0,
@@ -3149,7 +3083,6 @@
         ]
     },
     {
-        "id": 67,
         "metadata": {
             "gid": "30017",
             "model": "gpt3",
@@ -3157,8 +3090,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Republican Rep.",
-        "simplified": "Barletta: Senate Should Be a Check On Trump's Power Hearing the day after he was sworn in to his first term as a member of the House, Barletta said \"the only thing that's done there is political theater\". Macron To Surprise Trump With 'French Military Parade' President Trump and French President Emmanuel Macron will be meeting for the first time today at the Elysee Palace. The photo session, lasting some 15 minutes, was preceded by brief talks between the two leaders. MTV renews 'Fear Factor' for a second season \" ",
+        "source": "Republican Rep.",
+        "target": "Barletta: Senate Should Be a Check On Trump's Power Hearing the day after he was sworn in to his first term as a member of the House, Barletta said \"the only thing that's done there is political theater\". Macron To Surprise Trump With 'French Military Parade' President Trump and French President Emmanuel Macron will be meeting for the first time today at the Elysee Palace. The photo session, lasting some 15 minutes, was preceded by brief talks between the two leaders. MTV renews 'Fear Factor' for a second season \" ",
         "edits": [
             {
                 "id": 0,
@@ -3215,7 +3148,6 @@
         ]
     },
     {
-        "id": 68,
         "metadata": {
             "gid": "30018",
             "model": "gpt3",
@@ -3223,8 +3155,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "By Richard Muponde\nLATE notorious armed robber Edmund Edgar Masendeke\u2019s two siblings have been arrested by the police crack team targeting machete gang leaders after they allegedly assaulted and robbed a motorist of US$300 in Kwekwe last week.",
-        "simplified": "Mazekekiro Ncube, 30, and Vhombe Masendeke, 28, are facing charges of assault and robbery after allegedly attacking the motorist in circumstances that remain unclear. The case is the first of its kind since the formation of the special task force in Mashonaland Central. The two suspects appeared in court last Thursday facing assault and robbery charges after robbing a taxi driver of US$300 while travelling from Kwekwe to Harare at the weekend. Ncube allegedly assaulted the driver with a long stick and demanded he give her the US$300 in his pockets. ",
+        "source": "By Richard Muponde\nLATE notorious armed robber Edmund Edgar Masendeke\u2019s two siblings have been arrested by the police crack team targeting machete gang leaders after they allegedly assaulted and robbed a motorist of US$300 in Kwekwe last week.",
+        "target": "Mazekekiro Ncube, 30, and Vhombe Masendeke, 28, are facing charges of assault and robbery after allegedly attacking the motorist in circumstances that remain unclear. The case is the first of its kind since the formation of the special task force in Mashonaland Central. The two suspects appeared in court last Thursday facing assault and robbery charges after robbing a taxi driver of US$300 while travelling from Kwekwe to Harare at the weekend. Ncube allegedly assaulted the driver with a long stick and demanded he give her the US$300 in his pockets. ",
         "edits": [
             {
                 "id": 0,
@@ -3242,7 +3174,6 @@
         ]
     },
     {
-        "id": 69,
         "metadata": {
             "gid": "30019",
             "model": "gpt3",
@@ -3250,12 +3181,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "By Everson Mushava\nTuesday\u2019s Supreme Court ruling declaring that debts owed in United States dollars (US$) incurred on or before February 22, 2019 should be settled using the Zimdollar at a 1:1 parity will further deepen investor mistrust and complicate the prospects of economic revival, analysts have said.",
-        "simplified": "The surprise ruling in an expropriation case, which found that the law \u201cdoes not accommodate a retrospective effect\u201d on these obligations, deprives local creditors of the hard currency settlement option \u2014 that of receiving payment in US$ \u2013 the court insisted on \u201ca departure from the will of the legislature.\u201d Economists are concerned that this will substantially affect the prospects of investment revival. In an interview, Harare-based economist Walter Mandeya told Southern Eye that the landmark ruling has set an unprecedented legal precedent. \u201cThis case is highly regrettable. It leaves the Econometric Society regretfully concerned over the future path of our economy. ",
+        "source": "By Everson Mushava\nTuesday\u2019s Supreme Court ruling declaring that debts owed in United States dollars (US$) incurred on or before February 22, 2019 should be settled using the Zimdollar at a 1:1 parity will further deepen investor mistrust and complicate the prospects of economic revival, analysts have said.",
+        "target": "The surprise ruling in an expropriation case, which found that the law \u201cdoes not accommodate a retrospective effect\u201d on these obligations, deprives local creditors of the hard currency settlement option \u2014 that of receiving payment in US$ \u2013 the court insisted on \u201ca departure from the will of the legislature.\u201d Economists are concerned that this will substantially affect the prospects of investment revival. In an interview, Harare-based economist Walter Mandeya told Southern Eye that the landmark ruling has set an unprecedented legal precedent. \u201cThis case is highly regrettable. It leaves the Econometric Society regretfully concerned over the future path of our economy. ",
         "edits": []
     },
     {
-        "id": 70,
         "metadata": {
             "gid": "30020",
             "model": "gpt3",
@@ -3263,12 +3193,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "WATERVILLE, N.Y. -- Several elementary school students on a school bus received minor injuries when the bus was struck by a vehicle in Waterville Friday morning, according to the Oneida County Sheriff\u2019s Office.",
-        "simplified": "Oneida County Sheriff Robert Maciol said a car driven by 76-year-old Carl McDougall of Waterville struck the school bus on West Inwood Avenue around 7:15 a.m. Friday. McDougall was driving southbound on West Inwood Avenue at the time of the crash. Students on the bus included First Street Elementary School students, who are attending summer school, Maciol said. The sheriff said six First Street Elementary School students were on the bus at the time of the crash. The students suffered minor injuries and have been treated. The students have been released to the school\u2019s office staff, Maciol said. ",
+        "source": "WATERVILLE, N.Y. -- Several elementary school students on a school bus received minor injuries when the bus was struck by a vehicle in Waterville Friday morning, according to the Oneida County Sheriff\u2019s Office.",
+        "target": "Oneida County Sheriff Robert Maciol said a car driven by 76-year-old Carl McDougall of Waterville struck the school bus on West Inwood Avenue around 7:15 a.m. Friday. McDougall was driving southbound on West Inwood Avenue at the time of the crash. Students on the bus included First Street Elementary School students, who are attending summer school, Maciol said. The sheriff said six First Street Elementary School students were on the bus at the time of the crash. The students suffered minor injuries and have been treated. The students have been released to the school\u2019s office staff, Maciol said. ",
         "edits": []
     },
     {
-        "id": 71,
         "metadata": {
             "gid": "30021",
             "model": "gpt3",
@@ -3276,8 +3205,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "SYRACUSE, N.Y. -- A 59-year-old Mattydale man was charged Thursday with manslaughter in a June 2019 crash that killed a man sitting in his living room.",
-        "simplified": "Lawrence J. Hunt Sr. was charged in the death of Joseph A. Vukovich III, 52, of 212 Mercy Lane in Westvale, according to the Onondaga County District Attorney's Office. Hunt's plea is scheduled for 2:30 p.m. Feb. 14. Hunt was turning left on East Raymond Avenue near Cochran Street when he struck Vukovich as he sat in his living room, the DA's office said. Hunt pleaded guilty to felony driving while intoxicated at the end of May after he was arrested on DUI charges at least six times since 1998, according to police reports. ",
+        "source": "SYRACUSE, N.Y. -- A 59-year-old Mattydale man was charged Thursday with manslaughter in a June 2019 crash that killed a man sitting in his living room.",
+        "target": "Lawrence J. Hunt Sr. was charged in the death of Joseph A. Vukovich III, 52, of 212 Mercy Lane in Westvale, according to the Onondaga County District Attorney's Office. Hunt's plea is scheduled for 2:30 p.m. Feb. 14. Hunt was turning left on East Raymond Avenue near Cochran Street when he struck Vukovich as he sat in his living room, the DA's office said. Hunt pleaded guilty to felony driving while intoxicated at the end of May after he was arrested on DUI charges at least six times since 1998, according to police reports. ",
         "edits": [
             {
                 "id": 0,
@@ -3321,7 +3250,6 @@
         ]
     },
     {
-        "id": 72,
         "metadata": {
             "gid": "30022",
             "model": "gpt3",
@@ -3329,8 +3257,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Crime Tracker\nBOISE, Idaho (AP) - A former political figure in Idaho has pleaded guilty to two felony counts of child pornography in a plea deal dismissing 12 other charges.",
-        "simplified": "--On July 1, a magistrate ordered R. D. Palmer held on $250,000 bond. He was originally held on $500,000 bond, and his attorney said that bond was eventually increased to $700,000 before being reduced to $250,000. Riverdale man sentenced to 10 years for sexual contact with minor (IDHN.com) 11/25/2017 A Riverdale man was sentenced to 10 years in prison for his role in a sexual contact with a minor. ",
+        "source": "Crime Tracker\nBOISE, Idaho (AP) - A former political figure in Idaho has pleaded guilty to two felony counts of child pornography in a plea deal dismissing 12 other charges.",
+        "target": "--On July 1, a magistrate ordered R. D. Palmer held on $250,000 bond. He was originally held on $500,000 bond, and his attorney said that bond was eventually increased to $700,000 before being reduced to $250,000. Riverdale man sentenced to 10 years for sexual contact with minor (IDHN.com) 11/25/2017 A Riverdale man was sentenced to 10 years in prison for his role in a sexual contact with a minor. ",
         "edits": [
             {
                 "id": 0,
@@ -3374,7 +3302,6 @@
         ]
     },
     {
-        "id": 73,
         "metadata": {
             "gid": "30023",
             "model": "gpt3",
@@ -3382,8 +3309,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Two Portland police officers fired less-lethal and rifle shots simultaneously at Koben Henriksen, who was carrying two knives and seen walking in traffic last month, according to police investigative reports released Friday.",
-        "simplified": "The reports recount Officer James Crookshanks' use of an Arwen non-lethal projectile, which hit Henriksen in the leg, and Officer Steven Slade's simultaneous use of a Ruger Mini-14 rifle. The reports say the two officers both thought they were firing their Taser stun guns, which shoot barbs into the target to shock and temporarily incapacitate them. But The Oregonian/OregonLive has reported that the officers were unaware they were in fact armed with rifles. And in a July 9 news conference, police officials made no mention of rifles in describing the incident. ",
+        "source": "Two Portland police officers fired less-lethal and rifle shots simultaneously at Koben Henriksen, who was carrying two knives and seen walking in traffic last month, according to police investigative reports released Friday.",
+        "target": "The reports recount Officer James Crookshanks' use of an Arwen non-lethal projectile, which hit Henriksen in the leg, and Officer Steven Slade's simultaneous use of a Ruger Mini-14 rifle. The reports say the two officers both thought they were firing their Taser stun guns, which shoot barbs into the target to shock and temporarily incapacitate them. But The Oregonian/OregonLive has reported that the officers were unaware they were in fact armed with rifles. And in a July 9 news conference, police officials made no mention of rifles in describing the incident. ",
         "edits": [
             {
                 "id": 0,
@@ -3466,7 +3393,6 @@
         ]
     },
     {
-        "id": 74,
         "metadata": {
             "gid": "30024",
             "model": "gpt3",
@@ -3474,8 +3400,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Mr Monday Otso, the re-elected Chairman of health workers union, Keffi chapter, has promised to prioritise welfare of members to improve their living standard.",
-        "simplified": "He told newsmen in Keffi after the election that the welfare of workers will be the chief concern of the trade union. He promised that his administration will make sure that members were provided good quarters for living because of the harsh conditions under which they were living. He emphasised that most of the workers lived in poor condition, while some were even renting houses, as such, he promised that his administration will ensure that the union bought a land and constructed a decent quarters for members. Otso disclosed that Keffi chapter is blessed with one of the largest number of registered members in the state and presently the union has over 600 registered members. ",
+        "source": "Mr Monday Otso, the re-elected Chairman of health workers union, Keffi chapter, has promised to prioritise welfare of members to improve their living standard.",
+        "target": "He told newsmen in Keffi after the election that the welfare of workers will be the chief concern of the trade union. He promised that his administration will make sure that members were provided good quarters for living because of the harsh conditions under which they were living. He emphasised that most of the workers lived in poor condition, while some were even renting houses, as such, he promised that his administration will ensure that the union bought a land and constructed a decent quarters for members. Otso disclosed that Keffi chapter is blessed with one of the largest number of registered members in the state and presently the union has over 600 registered members. ",
         "edits": [
             {
                 "id": 0,
@@ -3519,7 +3445,6 @@
         ]
     },
     {
-        "id": 75,
         "metadata": {
             "gid": "30025",
             "model": "gpt3",
@@ -3527,8 +3452,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "A health official scans the body temperature of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020.",
-        "simplified": "(Jeroen Elfferich/dpa via AP) Indonesia's national Disaster Mitigation Agency personnel spray chemical on the body of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020. (Jeroen Elfferich/dpa via AP) A group of people carrying luggage move out of a place of safety and refuge at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020. (Jeroen Elfferich/dpa via AP) ",
+        "source": "A health official scans the body temperature of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020.",
+        "target": "(Jeroen Elfferich/dpa via AP) Indonesia's national Disaster Mitigation Agency personnel spray chemical on the body of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020. (Jeroen Elfferich/dpa via AP) A group of people carrying luggage move out of a place of safety and refuge at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020. (Jeroen Elfferich/dpa via AP) ",
         "edits": [
             {
                 "id": 0,
@@ -3546,7 +3471,6 @@
         ]
     },
     {
-        "id": 76,
         "metadata": {
             "gid": "30026",
             "model": "gpt3",
@@ -3554,12 +3478,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Health officials in Mexico are investigating the country's first possible case of the deadly coronavirus spreading from China, President Andrews Manuel Lopez Obrador said on Wednesday.",
-        "simplified": "The Public Health Ministry said three members of the same family had been hospitalized in the border state of Tamaulipas after returning from China. \"This is the first case that has been detected here,\" Obrador said. Health minister Jose Narro said the family includes a 5-year-old girl. She and her 2-year-old brother, who had no symptoms, have been quarantined. The girl's father is on a respirator, he said. The girl's mother is stable, as is the fifth family member who returned from China. The sixth member of the family remained in China during the epidemic, officials said. ",
+        "source": "Health officials in Mexico are investigating the country's first possible case of the deadly coronavirus spreading from China, President Andrews Manuel Lopez Obrador said on Wednesday.",
+        "target": "The Public Health Ministry said three members of the same family had been hospitalized in the border state of Tamaulipas after returning from China. \"This is the first case that has been detected here,\" Obrador said. Health minister Jose Narro said the family includes a 5-year-old girl. She and her 2-year-old brother, who had no symptoms, have been quarantined. The girl's father is on a respirator, he said. The girl's mother is stable, as is the fifth family member who returned from China. The sixth member of the family remained in China during the epidemic, officials said. ",
         "edits": []
     },
     {
-        "id": 77,
         "metadata": {
             "gid": "30027",
             "model": "gpt3",
@@ -3567,8 +3490,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Tap water contaminated with toxic chemicals has been found for the first time in several US cities, a new report finds.",
-        "simplified": "High levels of toxic chemicals linked to cancer and other diseases have been found in US water supplies for the first time, a new report finds. The chemicals, perfluorooctanoic acid (PFOA) and perfluorooctanesulfonic acid (PFOS), are chemical byproducts of processes that make products such as stain-resistant nonstick cookware, waterproof fabrics, and paper products, according to the report, published in the journal Environmental Science & Technology Letters. Both PFOS and PFOA have been linked to a number of health problems. ",
+        "source": "Tap water contaminated with toxic chemicals has been found for the first time in several US cities, a new report finds.",
+        "target": "High levels of toxic chemicals linked to cancer and other diseases have been found in US water supplies for the first time, a new report finds. The chemicals, perfluorooctanoic acid (PFOA) and perfluorooctanesulfonic acid (PFOS), are chemical byproducts of processes that make products such as stain-resistant nonstick cookware, waterproof fabrics, and paper products, according to the report, published in the journal Environmental Science & Technology Letters. Both PFOS and PFOA have been linked to a number of health problems. ",
         "edits": [
             {
                 "id": 0,
@@ -3664,7 +3587,6 @@
         ]
     },
     {
-        "id": 78,
         "metadata": {
             "gid": "30028",
             "model": "gpt3",
@@ -3672,8 +3594,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Scientists are concerned that the new Chineses coronavirus's transmission could accelerate thanks to 'super spreaders' who give the disease to a large number of people they come into contact with.",
-        "simplified": "The father's saliva, which has yet to be tested, was thought to be the source of the latest infection. It is understood that the man, who is believed to be in his late thirties, lived in Leicester, which was the centre of the country's first CCR5 bug epidemic. He had a chronic heart condition, and also had flu-like symptoms in the past few days before his death. More than 1,000 people a year in the UK die from viral respiratory infections, which includes the new bug. Previous research has shown that just 10 per cent of people are likely to become super spreaders. ",
+        "source": "Scientists are concerned that the new Chineses coronavirus's transmission could accelerate thanks to 'super spreaders' who give the disease to a large number of people they come into contact with.",
+        "target": "The father's saliva, which has yet to be tested, was thought to be the source of the latest infection. It is understood that the man, who is believed to be in his late thirties, lived in Leicester, which was the centre of the country's first CCR5 bug epidemic. He had a chronic heart condition, and also had flu-like symptoms in the past few days before his death. More than 1,000 people a year in the UK die from viral respiratory infections, which includes the new bug. Previous research has shown that just 10 per cent of people are likely to become super spreaders. ",
         "edits": [
             {
                 "id": 0,
@@ -3717,7 +3639,6 @@
         ]
     },
     {
-        "id": 79,
         "metadata": {
             "gid": "30029",
             "model": "gpt3",
@@ -3725,8 +3646,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Having lots of children - and breastfeeding them until they are one - greatly reduces the chance of an early menopause, research suggests.",
-        "simplified": "The research into the families of almost 600,000 women aged 35-40 found those who had been pregnant five times or more between ages 30 and 40 - and breastfed each child for six months or more - were 60 per cent less likely to have an early menopause. Those who had three or more children and breastfed them for 12 months were 49 per cent less likely to have an early menopause. The beneficial effect of breastfeeding was confirmed by making comparisons with other women in the same family, who did not have as many children or breastfeed them for as long. ",
+        "source": "Having lots of children - and breastfeeding them until they are one - greatly reduces the chance of an early menopause, research suggests.",
+        "target": "The research into the families of almost 600,000 women aged 35-40 found those who had been pregnant five times or more between ages 30 and 40 - and breastfed each child for six months or more - were 60 per cent less likely to have an early menopause. Those who had three or more children and breastfed them for 12 months were 49 per cent less likely to have an early menopause. The beneficial effect of breastfeeding was confirmed by making comparisons with other women in the same family, who did not have as many children or breastfeed them for as long. ",
         "edits": [
             {
                 "id": 0,
@@ -3744,7 +3665,6 @@
         ]
     },
     {
-        "id": 80,
         "metadata": {
             "gid": "30030",
             "model": "gpt3",
@@ -3752,8 +3672,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Combined with ABBV's 5.36% dividend yield, the buyback yield of 2.0% gives the stock a 7.36% total yield.",
-        "simplified": "Shares are trading at an enterprise value-to-free cash flow ratio of 7.77, which is below its five-year average of 9.21. This gives investors a margin of safety for this most coveted of stocks for income investors. Over the past decade, Gilead's EPS has grown at a compound annual growth rate of 46.0%, which bests the market's 21.8% CAGR. Dividend Stocks #5: Qualcomm Source: Shutterstock Qualcomm ( QCOM ) may not be the most appetizing of stocks, but with an annual yield of 4.50%, it's certainly worth a closer look. ",
+        "source": "Combined with ABBV's 5.36% dividend yield, the buyback yield of 2.0% gives the stock a 7.36% total yield.",
+        "target": "Shares are trading at an enterprise value-to-free cash flow ratio of 7.77, which is below its five-year average of 9.21. This gives investors a margin of safety for this most coveted of stocks for income investors. Over the past decade, Gilead's EPS has grown at a compound annual growth rate of 46.0%, which bests the market's 21.8% CAGR. Dividend Stocks #5: Qualcomm Source: Shutterstock Qualcomm ( QCOM ) may not be the most appetizing of stocks, but with an annual yield of 4.50%, it's certainly worth a closer look. ",
         "edits": [
             {
                 "id": 0,
@@ -3875,7 +3795,6 @@
         ]
     },
     {
-        "id": 81,
         "metadata": {
             "gid": "30031",
             "model": "gpt3",
@@ -3883,8 +3802,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The stock met many of our regular investment criteria but also appeared to gain during health emergencies and outbreaks making it antifragile.",
-        "simplified": "We focused on five risk factors which shaped our investment in iRobot. The risks were: 1. how technology fads and fashions shifted over time 2. how consumer robots would fare against video games and other electronics in terms of popularity 3. how premium electric car manufacturers, like Tesla (TSLA), would shift towards autonomous vehicles and impact iRobot demand for small robots 4. how consumers and clinicians would react to engaging products and services 5. our understanding of iRobot's historical performance and fiscal strength. iRobot's market capitalization was over $1 billion. ",
+        "source": "The stock met many of our regular investment criteria but also appeared to gain during health emergencies and outbreaks making it antifragile.",
+        "target": "We focused on five risk factors which shaped our investment in iRobot. The risks were: 1. how technology fads and fashions shifted over time 2. how consumer robots would fare against video games and other electronics in terms of popularity 3. how premium electric car manufacturers, like Tesla (TSLA), would shift towards autonomous vehicles and impact iRobot demand for small robots 4. how consumers and clinicians would react to engaging products and services 5. our understanding of iRobot's historical performance and fiscal strength. iRobot's market capitalization was over $1 billion. ",
         "edits": [
             {
                 "id": 0,
@@ -3902,7 +3821,6 @@
         ]
     },
     {
-        "id": 82,
         "metadata": {
             "gid": "30032",
             "model": "gpt3",
@@ -3910,8 +3828,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Health\nA new Chinese coronavirus, a cousin of the SARS virus, has infected hundreds since the outbreak began in Wuhan, China, in December.",
-        "simplified": "Chinese health authorities confirmed 31 cases of the new virus to the WHO in early March. Most of the cases were centred on Wuhan, China's most populous city, but new cases have been reported in Guangzhou, Guangdong province, and Shanghai. Sources: Xinhua News Agency;World Health Organization Weather A shark model is displayed on a makeshift street after heavy rains in Guangzhou, China, on Mar. 17, 2013. The heaviest rains in five decades hit some parts of Guangdong province, China, from Feb. 12 to 19, submerging streets and some underground lines. ",
+        "source": "Health\nA new Chinese coronavirus, a cousin of the SARS virus, has infected hundreds since the outbreak began in Wuhan, China, in December.",
+        "target": "Chinese health authorities confirmed 31 cases of the new virus to the WHO in early March. Most of the cases were centred on Wuhan, China's most populous city, but new cases have been reported in Guangzhou, Guangdong province, and Shanghai. Sources: Xinhua News Agency;World Health Organization Weather A shark model is displayed on a makeshift street after heavy rains in Guangzhou, China, on Mar. 17, 2013. The heaviest rains in five decades hit some parts of Guangdong province, China, from Feb. 12 to 19, submerging streets and some underground lines. ",
         "edits": [
             {
                 "id": 0,
@@ -3942,7 +3860,6 @@
         ]
     },
     {
-        "id": 83,
         "metadata": {
             "gid": "30033",
             "model": "gpt3",
@@ -3950,12 +3867,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Seeking a refreshing dip is a great way to discover some of the most wild and pristine landscapes in Australia",
-        "simplified": "Swimming in the wildest spots of Australia offers an aquatic adventure that is both refreshing and unforgettable. Australia's best swimming holes are also some of the greatest natural marvels the country has to offer, from cascading waterfalls to deep freshwater caves that can only be accessed by the adventurous. Here are 10 swim spots that should be on your bucket list. The freshwater swimmer at Lake Muir (photo by jdasocca/Flickr) Tasmania's Lake Muir, where wild rivers meet placid lakes ",
+        "source": "Seeking a refreshing dip is a great way to discover some of the most wild and pristine landscapes in Australia",
+        "target": "Swimming in the wildest spots of Australia offers an aquatic adventure that is both refreshing and unforgettable. Australia's best swimming holes are also some of the greatest natural marvels the country has to offer, from cascading waterfalls to deep freshwater caves that can only be accessed by the adventurous. Here are 10 swim spots that should be on your bucket list. The freshwater swimmer at Lake Muir (photo by jdasocca/Flickr) Tasmania's Lake Muir, where wild rivers meet placid lakes ",
         "edits": []
     },
     {
-        "id": 84,
         "metadata": {
             "gid": "30034",
             "model": "gpt3",
@@ -3963,8 +3879,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Jordan Brand is connecting with Chicago\u2019s creative community to represent the iconic neighborhoods in the city with footwear and apparel.",
-        "simplified": "On Thursday, the brand released teasers of the upcoming collaboration in an exclusive interview with Sneaker News. The new Air Force 1 and a tailored suit represent the neighborhood of Bronzeville while the Air Force 270 represents Chinatown. New lifestyle apparel that highlights Downtown, Chinatown, and North Center will also be released. \u201cI think what really attracted me to this project is that it\u2019s about culture. It\u2019s not about just product\u2014it\u2019s about a neighborhood,\u201d said Virgil Abloh, the mastermind behind the concept. \u201cWhen I talk about the project, I like to talk about, like, \u2018What is a neighborhood?'\u201d ",
+        "source": "Jordan Brand is connecting with Chicago\u2019s creative community to represent the iconic neighborhoods in the city with footwear and apparel.",
+        "target": "On Thursday, the brand released teasers of the upcoming collaboration in an exclusive interview with Sneaker News. The new Air Force 1 and a tailored suit represent the neighborhood of Bronzeville while the Air Force 270 represents Chinatown. New lifestyle apparel that highlights Downtown, Chinatown, and North Center will also be released. \u201cI think what really attracted me to this project is that it\u2019s about culture. It\u2019s not about just product\u2014it\u2019s about a neighborhood,\u201d said Virgil Abloh, the mastermind behind the concept. \u201cWhen I talk about the project, I like to talk about, like, \u2018What is a neighborhood?'\u201d ",
         "edits": [
             {
                 "id": 0,
@@ -4099,7 +4015,6 @@
         ]
     },
     {
-        "id": 85,
         "metadata": {
             "gid": "30035",
             "model": "gpt3",
@@ -4107,12 +4022,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Dear Abby: I just found out my husband of 18 years has been going to \u201chook-up\u201d websites.",
-        "simplified": "He had a different email address for each website, but I found him out! We have two children, ages 16 and 13. In our marriage, we have always had an active sex life. He doesn\u2019t want the girl-on-girl stuff I love. He also doesn\u2019t want me to go to singles sites looking for action. He likes me to sit at home and wait for him! I told him I won\u2019t stand for his cheating, and I\u2019ll take him to court if he doesn\u2019t \u201cbeg for forgiveness and promise to never do it again.\u201d I want an open marriage, and he doesn\u2019t. ",
+        "source": "Dear Abby: I just found out my husband of 18 years has been going to \u201chook-up\u201d websites.",
+        "target": "He had a different email address for each website, but I found him out! We have two children, ages 16 and 13. In our marriage, we have always had an active sex life. He doesn\u2019t want the girl-on-girl stuff I love. He also doesn\u2019t want me to go to singles sites looking for action. He likes me to sit at home and wait for him! I told him I won\u2019t stand for his cheating, and I\u2019ll take him to court if he doesn\u2019t \u201cbeg for forgiveness and promise to never do it again.\u201d I want an open marriage, and he doesn\u2019t. ",
         "edits": []
     },
     {
-        "id": 86,
         "metadata": {
             "gid": "30036",
             "model": "gpt3",
@@ -4120,8 +4034,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Cold open: an Oxford police station.",
-        "simplified": "A sergeant's secretary (Margaret Rutherford) calls for the appearance of a constable (Steptoe). She thinks that she's talking to the desk sergeant, but it's the bricklayer. When he leaves, she says to a portrait of King George V, \"You should see what I've just been through.\" She is heard on the next episode, asking for Inspector Steptoe, who wants to know about Enid. The episode ends in the surgery with Steptoe saying that he has never seen a woman like Enid. The \"Times Literary Supplement\" of 16 April 1974 gave a positive review of the first episode, then the novel. ",
+        "source": "Cold open: an Oxford police station.",
+        "target": "A sergeant's secretary (Margaret Rutherford) calls for the appearance of a constable (Steptoe). She thinks that she's talking to the desk sergeant, but it's the bricklayer. When he leaves, she says to a portrait of King George V, \"You should see what I've just been through.\" She is heard on the next episode, asking for Inspector Steptoe, who wants to know about Enid. The episode ends in the surgery with Steptoe saying that he has never seen a woman like Enid. The \"Times Literary Supplement\" of 16 April 1974 gave a positive review of the first episode, then the novel. ",
         "edits": [
             {
                 "id": 0,
@@ -4139,7 +4053,6 @@
         ]
     },
     {
-        "id": 87,
         "metadata": {
             "gid": "30037",
             "model": "gpt3",
@@ -4147,8 +4060,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "My best friend has a huge network of friends and family and many work and community commitments.",
-        "simplified": "He makes sure he's always in touch, and doesn't neglect his people \u2014 or their birthdays. He puts everyone else's before his own, and although he's a busy guy, he never does half the things people ask of him \u2014 because his health always comes first. Sure, Christmas is a big deal around here \u2014 but not at the expense of other things. This is how my friend shows his love in public, by saying \"I was thinking about that, but maybe not today, just because I'm sick.\" That's how you show love in an environment full of triggers and triggers and triggers. And joy. ",
+        "source": "My best friend has a huge network of friends and family and many work and community commitments.",
+        "target": "He makes sure he's always in touch, and doesn't neglect his people \u2014 or their birthdays. He puts everyone else's before his own, and although he's a busy guy, he never does half the things people ask of him \u2014 because his health always comes first. Sure, Christmas is a big deal around here \u2014 but not at the expense of other things. This is how my friend shows his love in public, by saying \"I was thinking about that, but maybe not today, just because I'm sick.\" That's how you show love in an environment full of triggers and triggers and triggers. And joy. ",
         "edits": [
             {
                 "id": 0,
@@ -4218,7 +4131,6 @@
         ]
     },
     {
-        "id": 88,
         "metadata": {
             "gid": "30038",
             "model": "gpt3",
@@ -4226,12 +4138,11 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "(Picture: Facebook/Cotton Branch Farm Sanctuary)",
-        "simplified": "Not only are Kicking Mule Rescue teaching the children about kindness and compassion, the farm owner, Stephanie, is well known for her advocacy work on behalf of pig farming. Recently, Stephanie donned a pig costume to walk from Los Angeles to San Francisco to raise awareness of the mistreatment of pigs in the pork industry. MORE: 101 guide to vegan activist Paul McCartney MORE: What it\u2019s like to turn vegan in Pakistan ",
+        "source": "(Picture: Facebook/Cotton Branch Farm Sanctuary)",
+        "target": "Not only are Kicking Mule Rescue teaching the children about kindness and compassion, the farm owner, Stephanie, is well known for her advocacy work on behalf of pig farming. Recently, Stephanie donned a pig costume to walk from Los Angeles to San Francisco to raise awareness of the mistreatment of pigs in the pork industry. MORE: 101 guide to vegan activist Paul McCartney MORE: What it\u2019s like to turn vegan in Pakistan ",
         "edits": []
     },
     {
-        "id": 89,
         "metadata": {
             "gid": "30039",
             "model": "gpt3",
@@ -4239,8 +4150,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "As soon as she saw Julia, Kitty jumped over to her (Picture: Blue Cross /SWNS.COM)",
-        "simplified": "Inspector Beth Allinson, from the Animal Welfare Team, said: \u2018As soon as the staff at the animal centre noticed Kitty, they knew there was something different about her. Advertisement Advertisement \u2018 She looks completely different from the others but is still very cute. \u2019 MORE: Delivery guy steals 38,000 bees and two dogs to sell as pets MORE: Firefighters dress up as Super Mario, Luigi and other Nintendo characters for children\u2019s Christmas party ",
+        "source": "As soon as she saw Julia, Kitty jumped over to her (Picture: Blue Cross /SWNS.COM)",
+        "target": "Inspector Beth Allinson, from the Animal Welfare Team, said: \u2018As soon as the staff at the animal centre noticed Kitty, they knew there was something different about her. Advertisement Advertisement \u2018 She looks completely different from the others but is still very cute. \u2019 MORE: Delivery guy steals 38,000 bees and two dogs to sell as pets MORE: Firefighters dress up as Super Mario, Luigi and other Nintendo characters for children\u2019s Christmas party ",
         "edits": [
             {
                 "id": 0,
@@ -4297,7 +4208,6 @@
         ]
     },
     {
-        "id": 90,
         "metadata": {
             "gid": "30040",
             "model": "gpt3",
@@ -4305,8 +4215,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "On January 19, SpaceX and NASA conducted a launch of the Crew Dragon, which will one day ferry astronauts to the International Space Station (ISS), to demonstrate its lift-off capabilities.",
-        "simplified": "The demonstration for the Dragon test, however, wasn\u2019t entirely successful as SpaceX\u2019s recovery of the parachutes couldn\u2019t be observed due to freezing temperatures. \u201cWhen Dragon reached the water, it was promptly swamped by the rather large waves. Nonetheless, the parachutes deployed and the splashdown was successful. Unfortunately, the rocket\u2019s first stage was unable to land,\u201d SpaceX stated. The statement was backed by NASA, as they haven\u2019t declared that SpaceX\u2019s recent test was a success. ",
+        "source": "On January 19, SpaceX and NASA conducted a launch of the Crew Dragon, which will one day ferry astronauts to the International Space Station (ISS), to demonstrate its lift-off capabilities.",
+        "target": "The demonstration for the Dragon test, however, wasn\u2019t entirely successful as SpaceX\u2019s recovery of the parachutes couldn\u2019t be observed due to freezing temperatures. \u201cWhen Dragon reached the water, it was promptly swamped by the rather large waves. Nonetheless, the parachutes deployed and the splashdown was successful. Unfortunately, the rocket\u2019s first stage was unable to land,\u201d SpaceX stated. The statement was backed by NASA, as they haven\u2019t declared that SpaceX\u2019s recent test was a success. ",
         "edits": [
             {
                 "id": 0,
@@ -4324,7 +4234,6 @@
         ]
     },
     {
-        "id": 91,
         "metadata": {
             "gid": "30041",
             "model": "gpt3",
@@ -4332,8 +4241,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Ecologists are on 'red alert' as warmer temperatures caused by climate change causes the Arctic to become greener.",
-        "simplified": "Researchers hope the increased vegetation will soak up excess carbon dioxide, which causes global warming, and aid those living there. Researchers have been documenting changes in the Arctic for decades, but the changes are now happening at a more alarming rate than first thought. An Arctic expert based at La Trobe University in Melbourne, Dr Phil Trathan, says the warmer temperatures are already making the Arctic greener. \"Over the last 30 years, there have been increases in the amount of vegetation in the Arctic, particularly vegetation in areas which have historically been very little vegetated,\" he said. ",
+        "source": "Ecologists are on 'red alert' as warmer temperatures caused by climate change causes the Arctic to become greener.",
+        "target": "Researchers hope the increased vegetation will soak up excess carbon dioxide, which causes global warming, and aid those living there. Researchers have been documenting changes in the Arctic for decades, but the changes are now happening at a more alarming rate than first thought. An Arctic expert based at La Trobe University in Melbourne, Dr Phil Trathan, says the warmer temperatures are already making the Arctic greener. \"Over the last 30 years, there have been increases in the amount of vegetation in the Arctic, particularly vegetation in areas which have historically been very little vegetated,\" he said. ",
         "edits": [
             {
                 "id": 0,
@@ -4364,7 +4273,6 @@
         ]
     },
     {
-        "id": 92,
         "metadata": {
             "gid": "30042",
             "model": "gpt3",
@@ -4372,8 +4280,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "A health official scans the body temperature of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020.",
-        "simplified": "Human mobility is top priority for the city's health authorities who fight what they call \"human trafficking\". Some 385 Indonesian nationals were deported from 28 countries around the world in 2018, according to the country's immigration office. Extradition Five suspects were arrested in the Vatican in August after they were found to be using the identity of a nun to exploit underage girls as sex workers. They were returned to Italy after a request by the Italian authorities. In late November, a suspected human trafficker from Indonesia who has been involved in human smuggling rings to the Netherlands and Belgium, was extradited from the United Arab Emirates to face charges in the Netherlands. ",
+        "source": "A health official scans the body temperature of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020.",
+        "target": "Human mobility is top priority for the city's health authorities who fight what they call \"human trafficking\". Some 385 Indonesian nationals were deported from 28 countries around the world in 2018, according to the country's immigration office. Extradition Five suspects were arrested in the Vatican in August after they were found to be using the identity of a nun to exploit underage girls as sex workers. They were returned to Italy after a request by the Italian authorities. In late November, a suspected human trafficker from Indonesia who has been involved in human smuggling rings to the Netherlands and Belgium, was extradited from the United Arab Emirates to face charges in the Netherlands. ",
         "edits": [
             {
                 "id": 0,
@@ -4469,7 +4377,6 @@
         ]
     },
     {
-        "id": 93,
         "metadata": {
             "gid": "30043",
             "model": "gpt3",
@@ -4477,8 +4384,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "It disappeared from the world more than a decade ago, but Motorola's nostalgic Razr is officially returning next month.",
-        "simplified": "\u2022 Most outrageously priced cars of all time Details of the new version were released yesterday on the Razr blog. You'll be able to get it in either 'Pure White' or 'Midnight Blue' for \u00a3149 and will be able to splash another \u00a375 on a case. It'll come with a larger HD screen, an 8-megapixel camera, and MotoMaker customisation, which means you'll be able to have a Razr that's just yours. ",
+        "source": "It disappeared from the world more than a decade ago, but Motorola's nostalgic Razr is officially returning next month.",
+        "target": "\u2022 Most outrageously priced cars of all time Details of the new version were released yesterday on the Razr blog. You'll be able to get it in either 'Pure White' or 'Midnight Blue' for \u00a3149 and will be able to splash another \u00a375 on a case. It'll come with a larger HD screen, an 8-megapixel camera, and MotoMaker customisation, which means you'll be able to have a Razr that's just yours. ",
         "edits": [
             {
                 "id": 0,
@@ -4548,7 +4455,6 @@
         ]
     },
     {
-        "id": 94,
         "metadata": {
             "gid": "30044",
             "model": "gpt3",
@@ -4556,8 +4462,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Google CEO Sundar Pichai has today stated artificial intelligence (AI) will be essential in humanity's future and could even be used to fight cancer.",
-        "simplified": "In an interview at Google's Big Tent Summit, a meeting of the UK's technology industry attended by Chancellor Philip Hammond, Pichai said: \"In the next five to 10 years, it will become more important in everyone's life whether you are a developer or not.\" \"Artificial intelligence will make many human occupations obsolete and we need to figure out new occupations for billions of people,\" he said. Artificial intelligence is set to replace many jobs in the coming years. Credit: PA \"AI could help scientists to better understand illnesses like cancer,\" he added. ",
+        "source": "Google CEO Sundar Pichai has today stated artificial intelligence (AI) will be essential in humanity's future and could even be used to fight cancer.",
+        "target": "In an interview at Google's Big Tent Summit, a meeting of the UK's technology industry attended by Chancellor Philip Hammond, Pichai said: \"In the next five to 10 years, it will become more important in everyone's life whether you are a developer or not.\" \"Artificial intelligence will make many human occupations obsolete and we need to figure out new occupations for billions of people,\" he said. Artificial intelligence is set to replace many jobs in the coming years. Credit: PA \"AI could help scientists to better understand illnesses like cancer,\" he added. ",
         "edits": [
             {
                 "id": 0,
@@ -4575,7 +4481,6 @@
         ]
     },
     {
-        "id": 95,
         "metadata": {
             "gid": "30045",
             "model": "gpt3",
@@ -4583,8 +4488,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "America is in the midst of an important election: Choosing a name for NASA\u2019s next Mars rover.",
-        "simplified": "NASA is tasked with exploring space. Their rovers aren\u2019t just named on a whim, but rather the spacecraft require the most fitting \u2014 and often recognizable \u2014 names. But since this rover will be searching for signs of life on the Red Planet, NASA is handing off the naming responsibilities to a tween author, Sarah Graley. Her goal: to pick a name that fits a generation poised to be part of the greatest discovery since we first gazed at the moon landing. RELATED: Gus Kenworthy, 6 Others Offer Stories to Help Protect Endangered Polar Bears ",
+        "source": "America is in the midst of an important election: Choosing a name for NASA\u2019s next Mars rover.",
+        "target": "NASA is tasked with exploring space. Their rovers aren\u2019t just named on a whim, but rather the spacecraft require the most fitting \u2014 and often recognizable \u2014 names. But since this rover will be searching for signs of life on the Red Planet, NASA is handing off the naming responsibilities to a tween author, Sarah Graley. Her goal: to pick a name that fits a generation poised to be part of the greatest discovery since we first gazed at the moon landing. RELATED: Gus Kenworthy, 6 Others Offer Stories to Help Protect Endangered Polar Bears ",
         "edits": [
             {
                 "id": 0,
@@ -4641,7 +4546,6 @@
         ]
     },
     {
-        "id": 96,
         "metadata": {
             "gid": "30046",
             "model": "gpt3",
@@ -4649,8 +4553,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "The \u201cvoice\u201d of an ancient Egyptian priest has been heard for the first time since he died and was mummified 3,000 years ago, researchers have said.",
-        "simplified": "The 3,000-year-old mummy, which was kept in catacombs deep in a castle in Germany, is giving voice to the spirit of a priest who died back when Egypt was ruled by Tutankhamun. During an audio analysis of the mummy\u2019s \u201cvoices\u201d, experts from the DLR German Aerospace Centre have discovered that the voice on the tape is significantly different from the female \u201cghosts\u201d which were previously recorded. DLR\u2019s Achim Hiller said: \u201cThe mummy\u2019s speech sounds lower and hoarser than all the other disembodied voices we have heard so far.\u201d ",
+        "source": "The \u201cvoice\u201d of an ancient Egyptian priest has been heard for the first time since he died and was mummified 3,000 years ago, researchers have said.",
+        "target": "The 3,000-year-old mummy, which was kept in catacombs deep in a castle in Germany, is giving voice to the spirit of a priest who died back when Egypt was ruled by Tutankhamun. During an audio analysis of the mummy\u2019s \u201cvoices\u201d, experts from the DLR German Aerospace Centre have discovered that the voice on the tape is significantly different from the female \u201cghosts\u201d which were previously recorded. DLR\u2019s Achim Hiller said: \u201cThe mummy\u2019s speech sounds lower and hoarser than all the other disembodied voices we have heard so far.\u201d ",
         "edits": [
             {
                 "id": 0,
@@ -4681,7 +4585,6 @@
         ]
     },
     {
-        "id": 97,
         "metadata": {
             "gid": "30047",
             "model": "gpt3",
@@ -4689,8 +4592,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Bridgestone is set to roll out airless tires in a bid to combat the air-related issues commercial trucks face while traveling cross country.",
-        "simplified": "This development comes after the company, in partnership with the U.S. Department of Energy (DOE), unveiled its prototype in 2011, which were built to be driven about 5,000 miles without being inflated. The tires, which are made with Kevlar and Carbon fiber, weigh roughly three pounds less than the pneumatic tires most commercial vehicles run on today. The Bridgestone project hit a snag, though, when the tires were found to overheat while driving in a region with temperatures over 110 degrees. Dr. Kenichi Ohmae, Bridgestone CEO, told CNN Money the company worked on the issue by installing better insulation and a special kind of rubber. ",
+        "source": "Bridgestone is set to roll out airless tires in a bid to combat the air-related issues commercial trucks face while traveling cross country.",
+        "target": "This development comes after the company, in partnership with the U.S. Department of Energy (DOE), unveiled its prototype in 2011, which were built to be driven about 5,000 miles without being inflated. The tires, which are made with Kevlar and Carbon fiber, weigh roughly three pounds less than the pneumatic tires most commercial vehicles run on today. The Bridgestone project hit a snag, though, when the tires were found to overheat while driving in a region with temperatures over 110 degrees. Dr. Kenichi Ohmae, Bridgestone CEO, told CNN Money the company worked on the issue by installing better insulation and a special kind of rubber. ",
         "edits": [
             {
                 "id": 0,
@@ -4708,7 +4611,6 @@
         ]
     },
     {
-        "id": 98,
         "metadata": {
             "gid": "30048",
             "model": "gpt3",
@@ -4716,8 +4618,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "Sonos customers are slamming the US-based audio firm's 'irresponsible' decision to axe support for their older speakers \u2014 calling it a 'total disgrace.'",
-        "simplified": "A thread on Reddit started by user 'rontomonkusz' and 'SonosBoy' has been flooded with disgruntled users, with both slamming the decision not to support the speakers. It comes just days after Sonos announced it's partnering with Google to ensure users get music, news and more in one place. \u201cSonos' move is SO irresponsible, I am not exaggerating, it is unbelievably irresponsible. Now we are looking at the horror of hundreds of thousands of Sonos owners having their systems totally locked, being unable to interact with them for months, and if they keep this decision they really are committing corporate suicide,\u201d SonosBoy writes. ",
+        "source": "Sonos customers are slamming the US-based audio firm's 'irresponsible' decision to axe support for their older speakers \u2014 calling it a 'total disgrace.'",
+        "target": "A thread on Reddit started by user 'rontomonkusz' and 'SonosBoy' has been flooded with disgruntled users, with both slamming the decision not to support the speakers. It comes just days after Sonos announced it's partnering with Google to ensure users get music, news and more in one place. \u201cSonos' move is SO irresponsible, I am not exaggerating, it is unbelievably irresponsible. Now we are looking at the horror of hundreds of thousands of Sonos owners having their systems totally locked, being unable to interact with them for months, and if they keep this decision they really are committing corporate suicide,\u201d SonosBoy writes. ",
         "edits": [
             {
                 "id": 0,
@@ -4748,7 +4650,6 @@
         ]
     },
     {
-        "id": 99,
         "metadata": {
             "gid": "30049",
             "model": "gpt3",
@@ -4756,8 +4657,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "If the EU has its way then millions of Apple iPhone users could soon be forced to buy new accessories and cables for their beloved smartphones.",
-        "simplified": "New safety regulations may result in the phasing out of iPhone power cables which have one end with the traditional 1-pronged rectangular design and the other end with an L-shaped connector. The European Union Committee says that these cables can be easily pulled apart by children, potentially risking electrical shock. The standards for cables may be based on the European Commission Recommendation On Battery Charging and Portable Electric Tools, published in January. It says the following advice to consumers: \"Do not allow children to take chargers and battery packs apart or try to insert them into sockets. ",
+        "source": "If the EU has its way then millions of Apple iPhone users could soon be forced to buy new accessories and cables for their beloved smartphones.",
+        "target": "New safety regulations may result in the phasing out of iPhone power cables which have one end with the traditional 1-pronged rectangular design and the other end with an L-shaped connector. The European Union Committee says that these cables can be easily pulled apart by children, potentially risking electrical shock. The standards for cables may be based on the European Commission Recommendation On Battery Charging and Portable Electric Tools, published in January. It says the following advice to consumers: \"Do not allow children to take chargers and battery packs apart or try to insert them into sockets. ",
         "edits": [
             {
                 "id": 0,
@@ -4788,7 +4689,6 @@
         ]
     },
     {
-        "id": 100,
         "metadata": {
             "gid": "30050",
             "model": "gpt3",
@@ -4796,8 +4696,8 @@
             "temperature": "1.0",
             "frequency_penalty": "0"
         },
-        "original": "ATTLEBORO \u2013 Sensata Technologies CEO Martha Sullivan will be succeeded by President and Chief Operating Officer Jeffrey Cote effective March 1, the company announced on Wednesday.",
-        "simplified": "Cote, a 25-year veteran of the company, was named president and chief operating officer in September 2012. He began his career at Sensata in 1991 in Plant Operations, where he held positions in plant operations planning, scheduling, and plant engineering. In 1997, he was promoted to technical leader of plant safety and environmental regulatory compliance, and was later named vice president of manufacturing engineering. In 2005, he became vice president of operations. He was named chief operating officer in 2011. Sullivan became CEO of Sensata in August, 2012. ",
+        "source": "ATTLEBORO \u2013 Sensata Technologies CEO Martha Sullivan will be succeeded by President and Chief Operating Officer Jeffrey Cote effective March 1, the company announced on Wednesday.",
+        "target": "Cote, a 25-year veteran of the company, was named president and chief operating officer in September 2012. He began his career at Sensata in 1991 in Plant Operations, where he held positions in plant operations planning, scheduling, and plant engineering. In 1997, he was promoted to technical leader of plant safety and environmental regulatory compliance, and was later named vice president of manufacturing engineering. In 2005, he became vice president of operations. He was named chief operating officer in 2011. Sullivan became CEO of Sensata in August, 2012. ",
         "edits": [
             {
                 "id": 0,

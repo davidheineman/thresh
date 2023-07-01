@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "Anotando com"
+  drag_drop_begin: "Arraste e solte, ou "
+  drag_drop_underline: "clique aqui"
+  drag_drop_after: " para adicionar um arquivo de anotação"
+  options_header: "ou"
+  tutorial_link: "Ver Tutorial"
+  examples_link: "Ver Dados de Exemplo"
+  builder_link: "Personalizar este Modelo"
+  paper_link: "Ver Artigo"
+comment_box:
+  label: "Comentário"
+  placeholder: "Comente nesta tarefa ..."
+typology:
+  source_label: "fonte"
+  target_label: "alvo"
+  context_label: "contexto"
+  edit_unit_name: "edição"
+  edits_unit_name: "edições"
+  span_unit_name: "span"
+  spans_unit_name: "spans"
+buttons:
+  save_label: "Salvar"
+  cancel_label: "Cancelar"
+  add_edit_label: "Editar Anotações"
+  instructions_label: "Instruções"
+hit_box:
+  hit_label: "Hit"
+annotation_editor:
+  add_edit_header: "Adicionando uma Edição"
+  select_edit_header: "Selecione a Categoria de Edição."
+  select_instructions: "Selecione o trecho de texto da"
+  selected_label: "Selecionado"
+  annotating_edit_header: "Anotando uma Edição"
+  composite_seletion_instructions: "Clique nas edições associadas a "
+  composite_span_unification: "com"
+annotation_viewer:
+  header: "Anotações de Edição"
+  not_annotated_text_1: "esta edição ainda não foi anotada, clique"
+  not_annotated_text_2: "para começar!"
+questions:
+  binary_yes: "Sim"
+  binary_no: "Não"
+  likert_1: "1 - pequena"
+  likert_2: "2 - um pouco"
+  likert_3: "3 - muito"

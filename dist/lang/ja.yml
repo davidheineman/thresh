@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "注釈付け"
+  drag_drop_begin: "ドラッグ＆ドロップまたは"
+  drag_drop_underline: "ここをクリック"
+  drag_drop_after: " 注釈ファイルを追加するには"
+  options_header: "または"
+  tutorial_link: "チュートリアルを見る"
+  examples_link: "サンプルデータを表示する"
+  builder_link: "このテンプレートをカスタマイズする"
+  paper_link: "論文を表示する"
+comment_box:
+  label: "コメント"
+  placeholder: "このHITにコメントを追加..."
+typology:
+  source_label: "ソース"
+  target_label: "ターゲット"
+  context_label: "コンテキスト"
+  edit_unit_name: "編集"
+  edits_unit_name: "編集"
+  span_unit_name: "スパン"
+  spans_unit_name: "スパン"
+buttons:
+  save_label: "保存"
+  cancel_label: "キャンセル"
+  add_edit_label: "注釈を編集する"
+  instructions_label: "手順"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "編集の追加"
+  select_edit_header: "編集カテゴリを選択してください。"
+  select_instructions: "テキストスパンを選択してください。"
+  selected_label: "選択された"
+  annotating_edit_header: "編集の注釈付け"
+  composite_seletion_instructions: "関連する編集をクリックしてください。"
+  composite_span_unification: "と"
+annotation_viewer:
+  header: "編集の注釈"
+  not_annotated_text_1: "この編集はまだ注釈されていません。クリックして"
+  not_annotated_text_2: "開始してください！"
+questions:
+  binary_yes: "はい"
+  binary_no: "いいえ"
+  likert_1: "1 - 少ない"
+  likert_2: "2 - いくぶん"
+  likert_3: "3 - 多い"

@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "सहित टैग करना"
+  drag_drop_begin: "खींचें और छोड़ें, या "
+  drag_drop_underline: "यहां क्लिक करें"
+  drag_drop_after: " टैग फ़ाइल जोड़ने के लिए"
+  options_header: "या"
+  tutorial_link: "ट्यूटोरियल देखें"
+  examples_link: "उदाहरण डेटा देखें"
+  builder_link: "इस टेम्पलेट को अनुकूलित करें"
+  paper_link: "पेपर देखें"
+comment_box:
+  label: "टिप्पणी"
+  placeholder: "इस HIT पर टिप्पणी करें ..."
+typology:
+  source_label: "स्रोत"
+  target_label: "लक्ष्य"
+  context_label: "संदर्भ"
+  edit_unit_name: "संपादन"
+  edits_unit_name: "संपादन"
+  span_unit_name: "स्पैन"
+  spans_unit_name: "स्पैन्स"
+buttons:
+  save_label: "सहेजें"
+  cancel_label: "रद्द करें"
+  add_edit_label: "संपादन जोड़ें"
+  instructions_label: "निर्देश"
+hit_box:
+  hit_label: "हिट"
+annotation_editor:
+  add_edit_header: "संपादन जोड़ रहा है"
+  select_edit_header: "संपादन श्रेणी का चयन करें।"
+  select_instructions: "पाठ स्पैन का चयन करें"
+  selected_label: "चयनित"
+  annotating_edit_header: "संपादन को टैग करना"
+  composite_seletion_instructions: "संपादन को जोड़ें जो संबंधित है "
+  composite_span_unification: "के साथ"
+annotation_viewer:
+  header: "संपादन टैग"
+  not_annotated_text_1: "यह संपादन अभी तक टैग नहीं किया गया है, क्लिक करें"
+  not_annotated_text_2: "शुरू करने के लिए!"
+questions:
+  binary_yes: "हाँ"
+  binary_no: "नहीं"
+  likert_1: "1 - न्यूनतम"
+  likert_2: "2 - कुछ हद तक"
+  likert_3: "3 - बहुत" 

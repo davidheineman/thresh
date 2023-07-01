@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "Chú thích với"
+  drag_drop_begin: "Kéo và thả hoặc "
+  drag_drop_underline: "nhấp vào đây"
+  drag_drop_after: " để thêm tệp chú thích"
+  options_header: "hoặc"
+  tutorial_link: "Xem Hướng dẫn"
+  examples_link: "Xem Dữ liệu Mẫu"
+  builder_link: "Tùy chỉnh Mẫu này"
+  paper_link: "Xem Bài báo"
+comment_box:
+  label: "Bình luận"
+  placeholder: "Bình luận về HIT này ..."
+typology:
+  source_label: "nguồn"
+  target_label: "đích"
+  context_label: "bối cảnh"
+  edit_unit_name: "chỉnh sửa"
+  edits_unit_name: "chỉnh sửa"
+  span_unit_name: "đoạn văn"
+  spans_unit_name: "đoạn văn"
+buttons:
+  save_label: "Lưu"
+  cancel_label: "Hủy"
+  add_edit_label: "Chú thích Chỉnh sửa"
+  instructions_label: "Hướng dẫn"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "Thêm Chỉnh sửa"
+  select_edit_header: "Chọn Danh mục Chỉnh sửa."
+  select_instructions: "Chọn đoạn văn từ"
+  selected_label: "Đã chọn"
+  annotating_edit_header: "Chú thích Chỉnh sửa"
+  composite_seletion_instructions: "Nhấp vào các chỉnh sửa liên quan đến "
+  composite_span_unification: "với"
+annotation_viewer:
+  header: "Chú thích Chỉnh sửa"
+  not_annotated_text_1: "chỉnh sửa này chưa được chú thích, nhấp vào"
+  not_annotated_text_2: "để bắt đầu!"
+questions:
+  binary_yes: "Có"
+  binary_no: "Không"
+  likert_1: "1 - nhỏ"
+  likert_2: "2 - một chút"
+  likert_3: "3 - rất nhiều"
