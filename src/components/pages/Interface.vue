@@ -7,8 +7,10 @@
 
   import tinycolor from 'tinycolor2';
   import _ from 'lodash';
+  import jsyaml from 'js-yaml';
 
   import { COLORS } from '../../assets/js/constants.js';
+  import { download_config } from "../../assets/js/file-util.js";
 </script>
 
 <script>
@@ -18,7 +20,7 @@
         total_hits: 0,
         current_hit: 1,
         hits_data: null,
-        config: {},
+        config: null,
         edits_dict: {},
         lines: {},
         selected_edits: {},
@@ -70,17 +72,18 @@
           this.set_hit(1)
         },
         consume_config() {
+          let new_config;
           if (this.consumed_config.hasOwnProperty('consumed_config')) {
-            this.config = _.cloneDeep(this.consumed_config.consumed_config)
+            new_config = _.cloneDeep(this.consumed_config.consumed_config)
           } else if (this.consumed_config.hasOwnProperty('config')) { 
-            this.config = _.cloneDeep(this.consumed_config.config)
+            new_config = _.cloneDeep(this.consumed_config.config)
           } else {
-            this.config = _.cloneDeep(this.consumed_config)
+            new_config = _.cloneDeep(this.consumed_config)
           }
+          this.config = new_config
           
           if (this.config.template_label) {
             $('title').text(this.config.template_label);
-            // TODO: Add - tagline
           }
         },
         set_hit(hit_num) {
@@ -227,7 +230,7 @@
 </script>
 
 <template>
-  <div class="container w-65 mv3 mb-3 card-body">
+  <div v-if="config != null" class="container w-65 mv3 mb-3 card-body">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
     <Instructions v-bind="$data" :config="config" />
     <!-- <CommentBox v-bind="$data" :config="config" /> -->

@@ -40,11 +40,21 @@ export default {
         // })
 
         // Load config
-        let template = `templates/${template_name}.yml`
-        download_config(template).then((config) => {
-            const parsedYaml = jsyaml.load(config);
-            this.set_config(parsedYaml)
+        const template = `templates/${template_name}.yml`
+        let config = await download_config(template).then((resp) => {
+            return jsyaml.load(resp);
         })
+
+        // Load language template
+        const lang_code = config.language || 'en'
+        const lang_template = `lang/${lang_code}.yml`
+        let language_template = await download_config(lang_template).then((language_config) => {
+            return jsyaml.load(language_config)
+        })
+        // TODO: Interweave the language template with custom text, and apply to config
+        config.interface_text = language_template
+
+        this.set_config(config)
     },
 }
 </script>

@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "guardian.260748",
@@ -94,7 +93,6 @@
         ]
     },
     {
-        "id": 2,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "guardian.260748",
@@ -207,7 +205,6 @@
         ]
     },
     {
-        "id": 3,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "guardian.260748",
@@ -374,7 +371,6 @@
         ]
     },
     {
-        "id": 4,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7452",
@@ -845,7 +841,6 @@
         ]
     },
     {
-        "id": 5,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7452",
@@ -903,7 +898,6 @@
         ]
     },
     {
-        "id": 6,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7452",
@@ -1012,7 +1006,6 @@
         ]
     },
     {
-        "id": 7,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "dailymail.co.uk.365293",
@@ -1438,7 +1431,6 @@
         ]
     },
     {
-        "id": 8,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "dailymail.co.uk.365293",
@@ -1736,7 +1728,6 @@
         ]
     },
     {
-        "id": 9,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "dailymail.co.uk.365293",
@@ -2098,7 +2089,6 @@
         ]
     },
     {
-        "id": 10,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "foxnews.100091",
@@ -2191,7 +2181,6 @@
         ]
     },
     {
-        "id": 11,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "foxnews.100091",
@@ -2772,7 +2761,6 @@
         ]
     },
     {
-        "id": 12,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "foxnews.100091",
@@ -2961,7 +2949,6 @@
         ]
     },
     {
-        "id": 13,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "metro.co.uk.12158",
@@ -3269,7 +3256,6 @@
         ]
     },
     {
-        "id": 14,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "metro.co.uk.12158",
@@ -3503,7 +3489,6 @@
         ]
     },
     {
-        "id": 15,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "metro.co.uk.12158",
@@ -3785,7 +3770,6 @@
         ]
     },
     {
-        "id": 16,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "reuters.276572",
@@ -3814,7 +3798,6 @@
         ]
     },
     {
-        "id": 17,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "reuters.276572",
@@ -3939,7 +3922,6 @@
         ]
     },
     {
-        "id": 18,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "reuters.276572",
@@ -3997,7 +3979,6 @@
         ]
     },
     {
-        "id": 19,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "aj-english.8643",
@@ -4023,7 +4004,6 @@
         ]
     },
     {
-        "id": 20,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "aj-english.8643",
@@ -4084,7 +4064,6 @@
         ]
     },
     {
-        "id": 21,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "aj-english.8643",
@@ -4096,7 +4075,6 @@
         "edits": []
     },
     {
-        "id": 22,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "stv.tv.21636",
@@ -4468,7 +4446,6 @@
         ]
     },
     {
-        "id": 23,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "stv.tv.21636",
@@ -4673,7 +4650,6 @@
         ]
     },
     {
-        "id": 24,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "stv.tv.21636",
@@ -5070,7 +5046,6 @@
         ]
     },
     {
-        "id": 25,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.363994",
@@ -5288,7 +5263,6 @@
         ]
     },
     {
-        "id": 26,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.363994",
@@ -5917,7 +5891,6 @@
         ]
     },
     {
-        "id": 27,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.363994",
@@ -6389,7 +6362,6 @@
         ]
     },
     {
-        "id": 28,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "cnbc.com.33889",
@@ -6505,7 +6477,6 @@
         ]
     },
     {
-        "id": 29,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "cnbc.com.33889",
@@ -6701,7 +6672,6 @@
         ]
     },
     {
-        "id": 30,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "cnbc.com.33889",
@@ -6772,7 +6742,6 @@
         ]
     },
     {
-        "id": 31,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7019",
@@ -7477,7 +7446,6 @@
         ]
     },
     {
-        "id": 32,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7019",
@@ -7858,7 +7826,6 @@
         ]
     },
     {
-        "id": 33,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7019",
@@ -8220,7 +8187,6 @@
         ]
     },
     {
-        "id": 34,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "huffingtonpost.com.19371",
@@ -8297,7 +8263,6 @@
         ]
     },
     {
-        "id": 35,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "huffingtonpost.com.19371",
@@ -8470,7 +8435,6 @@
         ]
     },
     {
-        "id": 36,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "huffingtonpost.com.19371",
@@ -8611,7 +8575,6 @@
         ]
     },
     {
-        "id": 37,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "rt.com.113876",
@@ -8749,7 +8712,6 @@
         ]
     },
     {
-        "id": 38,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "rt.com.113876",
@@ -9258,7 +9220,6 @@
         ]
     },
     {
-        "id": 39,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "rt.com.113876",
@@ -9643,7 +9604,6 @@
         ]
     },
     {
-        "id": 40,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "express.co.uk.10983",
@@ -10108,7 +10068,6 @@
         ]
     },
     {
-        "id": 41,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "express.co.uk.10983",
@@ -10557,7 +10516,6 @@
         ]
     },
     {
-        "id": 42,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "express.co.uk.10983",
@@ -10906,7 +10864,6 @@
         ]
     },
     {
-        "id": 43,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7059",
@@ -11368,7 +11325,6 @@
         ]
     },
     {
-        "id": 44,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7059",
@@ -11820,7 +11776,6 @@
         ]
     },
     {
-        "id": 45,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7059",
@@ -12243,7 +12198,6 @@
         ]
     },
     {
-        "id": 46,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "latimes.431856",
@@ -12510,7 +12464,6 @@
         ]
     },
     {
-        "id": 47,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "latimes.431856",
@@ -12661,7 +12614,6 @@
         ]
     },
     {
-        "id": 48,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "latimes.431856",
@@ -12982,7 +12934,6 @@
         ]
     },
     {
-        "id": 49,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.364021",
@@ -13034,7 +12985,6 @@
         ]
     },
     {
-        "id": 50,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.364021",
@@ -13131,7 +13081,6 @@
         ]
     },
     {
-        "id": 51,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.364021",
@@ -13235,7 +13184,6 @@
         ]
     },
     {
-        "id": 52,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.364021",
@@ -13376,7 +13324,6 @@
         ]
     },
     {
-        "id": 53,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.364021",
@@ -13466,7 +13413,6 @@
         ]
     },
     {
-        "id": 54,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "abcnews.364021",
@@ -13588,7 +13534,6 @@
         ]
     },
     {
-        "id": 55,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "chicago_defender.80",
@@ -14017,7 +13962,6 @@
         ]
     },
     {
-        "id": 56,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "chicago_defender.80",
@@ -14363,7 +14307,6 @@
         ]
     },
     {
-        "id": 57,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "chicago_defender.80",
@@ -14805,7 +14748,6 @@
         ]
     },
     {
-        "id": 58,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7111",
@@ -15034,7 +14976,6 @@
         ]
     },
     {
-        "id": 59,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7111",
@@ -15166,7 +15107,6 @@
         ]
     },
     {
-        "id": 60,
         "metadata": {
             "system": "eTranslation.737",
             "doc": "seattle_times.7111",

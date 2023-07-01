@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "metadata": {
             "gid": "10001",
             "model": "gpt3",
@@ -40,7 +39,6 @@
         ]
     },
     {
-        "id": 2,
         "metadata": {
             "gid": "10002",
             "model": "gpt3",
@@ -132,7 +130,6 @@
         ]
     },
     {
-        "id": 3,
         "metadata": {
             "gid": "10003",
             "model": "gpt3",
@@ -198,7 +195,6 @@
         ]
     },
     {
-        "id": 4,
         "metadata": {
             "gid": "10004",
             "model": "gpt3",
@@ -290,7 +286,6 @@
         ]
     },
     {
-        "id": 5,
         "metadata": {
             "gid": "10005",
             "model": "gpt3",
@@ -317,7 +312,6 @@
         ]
     },
     {
-        "id": 6,
         "metadata": {
             "gid": "10006",
             "model": "gpt3",
@@ -357,7 +351,6 @@
         ]
     },
     {
-        "id": 7,
         "metadata": {
             "gid": "10007",
             "model": "gpt3",
@@ -423,7 +416,6 @@
         ]
     },
     {
-        "id": 8,
         "metadata": {
             "gid": "10008",
             "model": "gpt3",
@@ -450,7 +442,6 @@
         ]
     },
     {
-        "id": 9,
         "metadata": {
             "gid": "10009",
             "model": "gpt3",
@@ -490,7 +481,6 @@
         ]
     },
     {
-        "id": 10,
         "metadata": {
             "gid": "10010",
             "model": "gpt3",
@@ -543,7 +533,6 @@
         ]
     },
     {
-        "id": 11,
         "metadata": {
             "gid": "20001",
             "model": "gpt2",
@@ -609,7 +598,6 @@
         ]
     },
     {
-        "id": 12,
         "metadata": {
             "gid": "20002",
             "model": "gpt2",
@@ -740,7 +728,6 @@
         ]
     },
     {
-        "id": 13,
         "metadata": {
             "gid": "20003",
             "model": "gpt2",
@@ -767,7 +754,6 @@
         ]
     },
     {
-        "id": 14,
         "metadata": {
             "gid": "20004",
             "model": "gpt2",
@@ -846,7 +832,6 @@
         ]
     },
     {
-        "id": 15,
         "metadata": {
             "gid": "20005",
             "model": "gpt2",
@@ -859,7 +844,6 @@
         "edits": []
     },
     {
-        "id": 16,
         "metadata": {
             "gid": "20006",
             "model": "gpt2",
@@ -977,7 +961,6 @@
         ]
     },
     {
-        "id": 17,
         "metadata": {
             "gid": "20007",
             "model": "gpt2",
@@ -1069,7 +1052,6 @@
         ]
     },
     {
-        "id": 18,
         "metadata": {
             "gid": "20008",
             "model": "gpt2",
@@ -1096,7 +1078,6 @@
         ]
     },
     {
-        "id": 19,
         "metadata": {
             "gid": "20009",
             "model": "gpt2",
@@ -1136,7 +1117,6 @@
         ]
     },
     {
-        "id": 20,
         "metadata": {
             "gid": "20010",
             "model": "gpt2",
@@ -1163,7 +1143,6 @@
         ]
     },
     {
-        "id": 21,
         "metadata": {
             "gid": "20011",
             "model": "gpt2-xl",
@@ -1203,7 +1182,6 @@
         ]
     },
     {
-        "id": 22,
         "metadata": {
             "gid": "20012",
             "model": "gpt2-xl",
@@ -1256,7 +1234,6 @@
         ]
     },
     {
-        "id": 23,
         "metadata": {
             "gid": "20013",
             "model": "gpt2-xl",
@@ -1269,7 +1246,6 @@
         "edits": []
     },
     {
-        "id": 24,
         "metadata": {
             "gid": "20014",
             "model": "gpt2-xl",
@@ -1322,7 +1298,6 @@
         ]
     },
     {
-        "id": 25,
         "metadata": {
             "gid": "20015",
             "model": "gpt2-xl",
@@ -1401,7 +1376,6 @@
         ]
     },
     {
-        "id": 26,
         "metadata": {
             "gid": "20016",
             "model": "gpt2-xl",
@@ -1454,7 +1428,6 @@
         ]
     },
     {
-        "id": 27,
         "metadata": {
             "gid": "20017",
             "model": "gpt2-xl",
@@ -1494,7 +1467,6 @@
         ]
     },
     {
-        "id": 28,
         "metadata": {
             "gid": "20018",
             "model": "gpt2-xl",
@@ -1507,7 +1479,6 @@
         "edits": []
     },
     {
-        "id": 29,
         "metadata": {
             "gid": "20019",
             "model": "gpt2-xl",
@@ -1547,7 +1518,6 @@
         ]
     },
     {
-        "id": 30,
         "metadata": {
             "gid": "20020",
             "model": "gpt2-xl",
@@ -1560,7 +1530,6 @@
         "edits": []
     },
     {
-        "id": 31,
         "metadata": {
             "gid": "20021",
             "model": "grover-mega",
@@ -1639,7 +1608,6 @@
         ]
     },
     {
-        "id": 32,
         "metadata": {
             "gid": "20022",
             "model": "grover-mega",
@@ -1679,7 +1647,6 @@
         ]
     },
     {
-        "id": 33,
         "metadata": {
             "gid": "20023",
             "model": "grover-mega",
@@ -1692,7 +1659,6 @@
         "edits": []
     },
     {
-        "id": 34,
         "metadata": {
             "gid": "20024",
             "model": "grover-mega",
@@ -1719,7 +1685,6 @@
         ]
     },
     {
-        "id": 35,
         "metadata": {
             "gid": "20025",
             "model": "grover-mega",
@@ -1772,7 +1737,6 @@
         ]
     },
     {
-        "id": 36,
         "metadata": {
             "gid": "20026",
             "model": "grover-mega",
@@ -1838,7 +1802,6 @@
         ]
     },
     {
-        "id": 37,
         "metadata": {
             "gid": "20027",
             "model": "grover-mega",
@@ -1943,7 +1906,6 @@
         ]
     },
     {
-        "id": 38,
         "metadata": {
             "gid": "20028",
             "model": "grover-mega",
@@ -2022,7 +1984,6 @@
         ]
     },
     {
-        "id": 39,
         "metadata": {
             "gid": "20029",
             "model": "grover-mega",
@@ -2062,7 +2023,6 @@
         ]
     },
     {
-        "id": 40,
         "metadata": {
             "gid": "20030",
             "model": "grover-mega",
@@ -2141,7 +2101,6 @@
         ]
     },
     {
-        "id": 41,
         "metadata": {
             "gid": "20031",
             "model": "human",
@@ -2233,7 +2192,6 @@
         ]
     },
     {
-        "id": 42,
         "metadata": {
             "gid": "20032",
             "model": "human",
@@ -2286,7 +2244,6 @@
         ]
     },
     {
-        "id": 43,
         "metadata": {
             "gid": "20033",
             "model": "human",
@@ -2299,7 +2256,6 @@
         "edits": []
     },
     {
-        "id": 44,
         "metadata": {
             "gid": "20034",
             "model": "human",
@@ -2391,7 +2347,6 @@
         ]
     },
     {
-        "id": 45,
         "metadata": {
             "gid": "20035",
             "model": "human",
@@ -2418,7 +2373,6 @@
         ]
     },
     {
-        "id": 46,
         "metadata": {
             "gid": "20036",
             "model": "human",
@@ -2431,7 +2385,6 @@
         "edits": []
     },
     {
-        "id": 47,
         "metadata": {
             "gid": "20037",
             "model": "human",
@@ -2444,7 +2397,6 @@
         "edits": []
     },
     {
-        "id": 48,
         "metadata": {
             "gid": "20038",
             "model": "human",
@@ -2471,7 +2423,6 @@
         ]
     },
     {
-        "id": 49,
         "metadata": {
             "gid": "20039",
             "model": "human",
@@ -2498,7 +2449,6 @@
         ]
     },
     {
-        "id": 50,
         "metadata": {
             "gid": "20040",
             "model": "human",
@@ -2511,7 +2461,6 @@
         "edits": []
     },
     {
-        "id": 51,
         "metadata": {
             "gid": "30001",
             "model": "gpt3",
@@ -2590,7 +2539,6 @@
         ]
     },
     {
-        "id": 52,
         "metadata": {
             "gid": "30002",
             "model": "gpt3",
@@ -2643,7 +2591,6 @@
         ]
     },
     {
-        "id": 53,
         "metadata": {
             "gid": "30003",
             "model": "gpt3",
@@ -2656,7 +2603,6 @@
         "edits": []
     },
     {
-        "id": 54,
         "metadata": {
             "gid": "30004",
             "model": "gpt3",
@@ -2683,7 +2629,6 @@
         ]
     },
     {
-        "id": 55,
         "metadata": {
             "gid": "30005",
             "model": "gpt3",
@@ -2723,7 +2668,6 @@
         ]
     },
     {
-        "id": 56,
         "metadata": {
             "gid": "30006",
             "model": "gpt3",
@@ -2750,7 +2694,6 @@
         ]
     },
     {
-        "id": 57,
         "metadata": {
             "gid": "30007",
             "model": "gpt3",
@@ -2777,7 +2720,6 @@
         ]
     },
     {
-        "id": 58,
         "metadata": {
             "gid": "30008",
             "model": "gpt3",
@@ -2817,7 +2759,6 @@
         ]
     },
     {
-        "id": 59,
         "metadata": {
             "gid": "30009",
             "model": "gpt3",
@@ -2844,7 +2785,6 @@
         ]
     },
     {
-        "id": 60,
         "metadata": {
             "gid": "30010",
             "model": "gpt3",
@@ -2857,7 +2797,6 @@
         "edits": []
     },
     {
-        "id": 61,
         "metadata": {
             "gid": "30011",
             "model": "gpt3",
@@ -2936,7 +2875,6 @@
         ]
     },
     {
-        "id": 62,
         "metadata": {
             "gid": "30012",
             "model": "gpt3",
@@ -2963,7 +2901,6 @@
         ]
     },
     {
-        "id": 63,
         "metadata": {
             "gid": "30013",
             "model": "gpt3",
@@ -3016,7 +2953,6 @@
         ]
     },
     {
-        "id": 64,
         "metadata": {
             "gid": "30014",
             "model": "gpt3",
@@ -3043,7 +2979,6 @@
         ]
     },
     {
-        "id": 65,
         "metadata": {
             "gid": "30015",
             "model": "gpt3",
@@ -3109,7 +3044,6 @@
         ]
     },
     {
-        "id": 66,
         "metadata": {
             "gid": "30016",
             "model": "gpt3",
@@ -3149,7 +3083,6 @@
         ]
     },
     {
-        "id": 67,
         "metadata": {
             "gid": "30017",
             "model": "gpt3",
@@ -3215,7 +3148,6 @@
         ]
     },
     {
-        "id": 68,
         "metadata": {
             "gid": "30018",
             "model": "gpt3",
@@ -3242,7 +3174,6 @@
         ]
     },
     {
-        "id": 69,
         "metadata": {
             "gid": "30019",
             "model": "gpt3",
@@ -3255,7 +3186,6 @@
         "edits": []
     },
     {
-        "id": 70,
         "metadata": {
             "gid": "30020",
             "model": "gpt3",
@@ -3268,7 +3198,6 @@
         "edits": []
     },
     {
-        "id": 71,
         "metadata": {
             "gid": "30021",
             "model": "gpt3",
@@ -3321,7 +3250,6 @@
         ]
     },
     {
-        "id": 72,
         "metadata": {
             "gid": "30022",
             "model": "gpt3",
@@ -3374,7 +3302,6 @@
         ]
     },
     {
-        "id": 73,
         "metadata": {
             "gid": "30023",
             "model": "gpt3",
@@ -3466,7 +3393,6 @@
         ]
     },
     {
-        "id": 74,
         "metadata": {
             "gid": "30024",
             "model": "gpt3",
@@ -3519,7 +3445,6 @@
         ]
     },
     {
-        "id": 75,
         "metadata": {
             "gid": "30025",
             "model": "gpt3",
@@ -3546,7 +3471,6 @@
         ]
     },
     {
-        "id": 76,
         "metadata": {
             "gid": "30026",
             "model": "gpt3",
@@ -3559,7 +3483,6 @@
         "edits": []
     },
     {
-        "id": 77,
         "metadata": {
             "gid": "30027",
             "model": "gpt3",
@@ -3664,7 +3587,6 @@
         ]
     },
     {
-        "id": 78,
         "metadata": {
             "gid": "30028",
             "model": "gpt3",
@@ -3717,7 +3639,6 @@
         ]
     },
     {
-        "id": 79,
         "metadata": {
             "gid": "30029",
             "model": "gpt3",
@@ -3744,7 +3665,6 @@
         ]
     },
     {
-        "id": 80,
         "metadata": {
             "gid": "30030",
             "model": "gpt3",
@@ -3875,7 +3795,6 @@
         ]
     },
     {
-        "id": 81,
         "metadata": {
             "gid": "30031",
             "model": "gpt3",
@@ -3902,7 +3821,6 @@
         ]
     },
     {
-        "id": 82,
         "metadata": {
             "gid": "30032",
             "model": "gpt3",
@@ -3942,7 +3860,6 @@
         ]
     },
     {
-        "id": 83,
         "metadata": {
             "gid": "30033",
             "model": "gpt3",
@@ -3955,7 +3872,6 @@
         "edits": []
     },
     {
-        "id": 84,
         "metadata": {
             "gid": "30034",
             "model": "gpt3",
@@ -4099,7 +4015,6 @@
         ]
     },
     {
-        "id": 85,
         "metadata": {
             "gid": "30035",
             "model": "gpt3",
@@ -4112,7 +4027,6 @@
         "edits": []
     },
     {
-        "id": 86,
         "metadata": {
             "gid": "30036",
             "model": "gpt3",
@@ -4139,7 +4053,6 @@
         ]
     },
     {
-        "id": 87,
         "metadata": {
             "gid": "30037",
             "model": "gpt3",
@@ -4218,7 +4131,6 @@
         ]
     },
     {
-        "id": 88,
         "metadata": {
             "gid": "30038",
             "model": "gpt3",
@@ -4231,7 +4143,6 @@
         "edits": []
     },
     {
-        "id": 89,
         "metadata": {
             "gid": "30039",
             "model": "gpt3",
@@ -4297,7 +4208,6 @@
         ]
     },
     {
-        "id": 90,
         "metadata": {
             "gid": "30040",
             "model": "gpt3",
@@ -4324,7 +4234,6 @@
         ]
     },
     {
-        "id": 91,
         "metadata": {
             "gid": "30041",
             "model": "gpt3",
@@ -4364,7 +4273,6 @@
         ]
     },
     {
-        "id": 92,
         "metadata": {
             "gid": "30042",
             "model": "gpt3",
@@ -4469,7 +4377,6 @@
         ]
     },
     {
-        "id": 93,
         "metadata": {
             "gid": "30043",
             "model": "gpt3",
@@ -4548,7 +4455,6 @@
         ]
     },
     {
-        "id": 94,
         "metadata": {
             "gid": "30044",
             "model": "gpt3",
@@ -4575,7 +4481,6 @@
         ]
     },
     {
-        "id": 95,
         "metadata": {
             "gid": "30045",
             "model": "gpt3",
@@ -4641,7 +4546,6 @@
         ]
     },
     {
-        "id": 96,
         "metadata": {
             "gid": "30046",
             "model": "gpt3",
@@ -4681,7 +4585,6 @@
         ]
     },
     {
-        "id": 97,
         "metadata": {
             "gid": "30047",
             "model": "gpt3",
@@ -4708,7 +4611,6 @@
         ]
     },
     {
-        "id": 98,
         "metadata": {
             "gid": "30048",
             "model": "gpt3",
@@ -4748,7 +4650,6 @@
         ]
     },
     {
-        "id": 99,
         "metadata": {
             "gid": "30049",
             "model": "gpt3",
@@ -4788,7 +4689,6 @@
         ]
     },
     {
-        "id": 100,
         "metadata": {
             "gid": "30050",
             "model": "gpt3",

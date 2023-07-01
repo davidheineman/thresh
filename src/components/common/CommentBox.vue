@@ -6,7 +6,8 @@ import _ from 'lodash';
 export default {
     props: [
         'hits_data',
-        'current_hit'
+        'current_hit',
+        'config'
     ],
     data() {
         return {}
@@ -27,11 +28,11 @@ export default {
 <template>
     <section id="response_box">
         <p @click="leave_comment" class="comment_button mv0 pa2 br-pill-ns ba bw1 grow pointer">
-            <span class="f4 mr2">Comment</span>
+            <span class="f4 mr2">{{ config.interface_text.comment_box.label }}</span>
             <i class="fa-regular fa-comment fa-1-5x icon-default pointer"></i>
         </p>
         <div id="comment_area_div" class="mt2 dn">
-            <textarea id="comment_area" class="comment_area br5 bw1 ba br4 ph3 pv2 mid-gray w-100" name="comment" placeholder="Comment on this HIT ..." @input="record_comment"></textarea>
+            <textarea id="comment_area" class="comment_area br5 bw1 ba br4 ph3 pv2 mid-gray w-100" name="comment" :placeholder="config.interface_text.comment_box.placeholder" @input="record_comment"></textarea>
         </div>
     </section>
 </template>

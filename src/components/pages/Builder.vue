@@ -66,16 +66,28 @@ export default {
             }
             this.setDataValue(this.dataInput)
         },
-        set_config(config) {
+        async set_config(config) {
             let parsedYaml = jsyaml.load(config);
-            this.config = parsedYaml
+            await this.push_config(parsedYaml)
             if (parsedYaml != this.configInput) {
                 this.configInput = jsyaml.dump(parsedYaml)
             }
             this.setConfigValue(config)
         },
+        async push_config(config) {
+            // Load language template
+            const lang_code = config.language || 'en'
+            const lang_template = `lang/${lang_code}.yml`
+            let language_template = await download_config(lang_template).then((language_config) => {
+                return jsyaml.load(language_config)
+            })
+            // TODO: Interweave the language template with custom text, and apply to config
+            config.interface_text = language_template
+            this.config = config
+        },
         async compile() {
-            this.config = jsyaml.load(this.getConfigValue())
+            let new_config = jsyaml.load(this.getConfigValue())
+            await this.push_config(new_config)
             this.data = JSON.parse(this.getDataValue())
         },
         async update_editors() {
@@ -93,7 +105,7 @@ export default {
                     const getDataValue = () => { return dataValue }
                     const setDataValue = (val) => { dataEditor.setValue(val) }
 
-                    var configValue = "" // jsyaml.dump(this.config)
+                    var configValue = ""
                     const configEditor = monaco.editor.create(document.getElementById('config-editor'), {
                         value: `${configValue}`,
                         language: 'yaml',

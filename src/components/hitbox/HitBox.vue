@@ -190,13 +190,13 @@ export default {
         <div class="cf mt1 hit-header">
             <div class="tc f3 mt1 hit-selector">
                 <button @click="go_to_hit(current_hit - 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&lt;&nbsp;</button>
-                Hit <span>{{ current_hit }}</span> / <span>{{ total_hits }}&nbsp;</span>
+                {{ config.interface_text.hit_box.hit_label }} <span>{{ current_hit }}</span> / <span>{{ total_hits }}&nbsp;</span>
                 <button @click="go_to_hit(current_hit + 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&gt;&nbsp;</button>
             </div>
 
             <div class="hit-instructions">
                 <button v-if="config.instructions && !config.prepend_instructions" @click="toggle_instructions()" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">
-                    <span class="f4">Instructions</span>
+                    <span class="f4">{{ config.interface_text.buttons.instructions_label }}</span>
                 </button>
             </div>
 
@@ -228,7 +228,7 @@ export default {
                 <div class="mb2" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].context">
                     <div class="cf">
                         <p class="fl f3 mt1 mb1">
-                            <span class="f5">Context:</span>
+                            <span class="f5">{{ config.interface_text.typology.context_label }}:</span>
                         </p>
                     </div>
                     <div class="f4 lh-paras">{{ hits_data[this.current_hit - 1].context }}</div>
@@ -236,14 +236,14 @@ export default {
 
                 <div class="cf">
                     <p class="fl f3 mt1 mb1 orig-sentence-header">
-                        <span class="f5">Source:</span>
+                        <span class="f5">{{ config.interface_text.typology.source_label }}:</span>
                     </p>
                 </div>
                 
                 <Sent sent_type="source" v-bind="$props" :remove_selected="remove_selected" />
 
                 <p class="f3 mb1">
-                    <span class="f5">Target:</span>
+                    <span class="f5">{{ config.interface_text.typology.target_label }}:</span>
                 </p>
 
                 <Sent sent_type="target" v-bind="$props" :remove_selected="remove_selected" />

@@ -85,14 +85,14 @@ export default {
                 }
                 this.set_annotating_edit_span(new_edit_span, 'source')
 
-                let simp_spans = annotating_span['output_idx']
+                let target_spans = annotating_span['output_idx']
                 new_edit_span = ""
-                for (let i = 0; i < simp_spans.length; i++) {
+                for (let i = 0; i < target_spans.length; i++) {
                     if (i != 0) {
                         new_edit_span += `<span class="edit-type txt-${category} f3"> and </span>`
                     }
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${target_sentence.substring(simp_spans[i][0], simp_spans[i][1])}&nbsp</span>`
+                        &nbsp${target_sentence.substring(target_spans[i][0], target_spans[i][1])}&nbsp</span>`
                 }
                 this.set_annotating_edit_span(new_edit_span, 'target')
             } else if (this.getEditConfig(category)['type'] == 'composite') {
@@ -298,7 +298,7 @@ export default {
                 // Render annotation
                 if (!this.hasAnnotation(edit)) {
                     new_html += `
-                        <span class="f4 i black-60">this edit is not annotated yet, click <i class="fa-solid fa-pencil"></i> to start!</span>
+                        <span class="f4 i black-60">${this.config.interface_text.annotation_viewer.not_annotated_text_1} <i class="fa-solid fa-pencil"></i> ${this.config.interface_text.annotation_viewer.not_annotated_text_2}</span>
                     `;
                 } else {
                     const edit_config = this.getEditConfig(key)

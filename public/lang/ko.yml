@@ -1,0 +1,46 @@
+landing_page:
+  header_text: "주석 달기"
+  drag_drop_begin: "드래그 & 드롭 또는 "
+  drag_drop_underline: "여기를 클릭"
+  drag_drop_after: " 주석 파일을 추가하려면"
+  options_header: "또는"
+  tutorial_link: "튜토리얼 보기"
+  examples_link: "예시 데이터 보기"
+  builder_link: "이 템플릿 사용자 정의"
+  paper_link: "논문 보기"
+comment_box:
+  label: "코멘트"
+  placeholder: "이 HIT에 대한 코멘트를 입력하세요..."
+typology:
+  source_label: "소스"
+  target_label: "대상"
+  context_label: "맥락"
+  edit_unit_name: "편집"
+  edits_unit_name: "편집"
+  span_unit_name: "스팬"
+  spans_unit_name: "스팬"
+buttons:
+  save_label: "저장"
+  cancel_label: "취소"
+  add_edit_label: "주석 편집"
+  instructions_label: "지침"
+hit_box:
+  hit_label: "HIT"
+annotation_editor:
+  add_edit_header: "편집 추가"
+  select_edit_header: "편집 카테고리 선택"
+  select_instructions: "텍스트 스팬을 선택하세요."
+  selected_label: "선택됨"
+  annotating_edit_header: "편집 주석 달기"
+  composite_seletion_instructions: "연관된 편집을 클릭하세요."
+  composite_span_unification: "와(과)"
+annotation_viewer:
+  header: "편집 주석"
+  not_annotated_text_1: "이 편집은 아직 주석이 달리지 않았습니다. 클릭하여"
+  not_annotated_text_2: "시작하세요!"
+questions:
+  binary_yes: "예"
+  binary_no: "아니오"
+  likert_1: "1 - 미미한"
+  likert_2: "2 - 어느 정도"
+  likert_3: "3 - 많은"

@@ -247,13 +247,13 @@ export default {
 
                 edit_html += `<span class="edit-type txt-${key}"> with </span>`;
 
-                let simp_spans = edit['output_idx']
-                for (let j = 0; j < simp_spans.length; j++) {
+                let target_spans = edit['output_idx']
+                for (let j = 0; j < target_spans.length; j++) {
                     if (j != 0) {
                         edit_html += `<span class="edit-type txt-${key}"> and </span>`;
                     }
                     edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
-                        &nbsp${this.hits_data[this.current_hit - 1].target.substring(simp_spans[j][0], simp_spans[j][1])}&nbsp</span>`;
+                        &nbsp${this.hits_data[this.current_hit - 1].target.substring(target_spans[j][0], target_spans[j][1])}&nbsp</span>`;
                 }
                 edit_html += ",&nbsp&nbsp";
             } else {

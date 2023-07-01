@@ -249,9 +249,9 @@ export default {
         <div class="quality-selection w-100" id="add_an_edit">
             <div id="dropdown-button-container">
                 <div class="over-hide z-bigger mt2 editor-container">
-                    <p class="f3 annotation-label ttu mv1">Adding an Edit <i class="fa-solid fa-plus"></i></p>
+                    <p class="f3 annotation-label ttu mv1">{{ config.interface_text.annotation_editor.add_edit_header }} <i class="fa-solid fa-plus"></i></p>
                     <div class="row">
-                        <p class="mb2 b tracked-light"><i>Select the Edit Category.</i>
+                        <p class="mb2 b tracked-light"><i>{{ config.interface_text.annotation_editor.select_edit_header }}.</i>
                         </p>
                         <div class="tc mb3">
                             <div v-for="item in config.edits" :key="item.id" class="edit-box mr2 dib">
@@ -266,29 +266,29 @@ export default {
 
                         <div v-for="item in config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
-                                <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.input_label }}</i>.</p>
-                                <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.source_span"></span></p>
+                                <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.source_label }}</i>.</p>
+                                <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.span_unit_name }}: <span v-html="selected_state.source_span"></span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
-                                    <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.output_label }}</i>.</p>
-                                    <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.target_span"></span></p>
+                                    <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.target_label }}</i>.</p>
+                                    <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.span_unit_name }}: <span v-html="selected_state.target_span"></span></p>
                                 </div>
                             </div>
                             <div v-if="item.type == 'composite'">
                                 <div class="span-selection-div" :data-category="item.name">
                                     <!-- <p class="mt0 mb2 b tracked-light">Click a split sign <i class="fa-solid fa-grip-lines-vertical fa-lg txt-split"></i> : <span class="txt-split">{{selected_state.split}}</span></p> -->
-                                    <p class="mt0 mb2 b tracked-light">Click the edits that associated with this {{ item.name }} change edit.</p>
-                                    <p class="tracked-light lh-paras-2">Selected edits: <span v-html="selected_edits_html"></span></p>
+                                    <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.composite_seletion_instructions }} {{ item.name }}.</p>
+                                    <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.edits_unit_name }}: <span v-html="selected_edits_html"></span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="buttons tc mt2">
-                    <button @click="cancel_click" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">Cancel <i class="fa-solid fa-close"></i></button>
+                    <button @click="cancel_click" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">{{ config.interface_text.buttons.cancel_label }} <i class="fa-solid fa-close"></i></button>
                     <!-- :class="{'o-40': add_validated_edit, 'grow': !add_validated_edit}" :disabled="add_validated_edit" -->
-                    <button @click="save_click" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns" type="button">Save <i class="fa-solid fa-check"></i></button>
+                    <button @click="save_click" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns" type="button">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
                 </div>
             </div>
         </div>
@@ -297,13 +297,13 @@ export default {
             <div class="quality-selection w-100" :id="`${item.name}_edit_annotation`" :data-category="item.name">
                 <div id="dropdown-button-container">
                     <div class="over-hide z-bigger mt3 editor-container">
-                        <p class="f3 annotation-label ttu mv1">Annotating an Edit <i class="fa-solid fa-pencil"></i></p>
+                        <p class="f3 annotation-label ttu mv1">{{ config.interface_text.annotation_editor.add_edit_header }} <i class="fa-solid fa-pencil"></i></p>
                         <div class='single_part' />
                         <div class="f4 mt0 mb2 tc">
                             <span :class="`edit-type txt-${item.name} f3`">{{ item.label }}:  </span>
 
                             <span v-if="item.enable_input" v-html="annotating_edit_span.source"></span>
-                            <span v-if="item.enable_input && item.enable_output" :class="`edit-type txt-${item.name} f3`"> with </span>
+                            <span v-if="item.enable_input && item.enable_output" :class="`edit-type txt-${item.name} f3`">&nbsp;{{ config.interface_text.annotation_editor.composite_span_unification }}&nbsp;</span>
                             <span v-if="item.enable_output" v-html="annotating_edit_span.target"></span>
                             
                             <span v-if="item.type == 'composite'" v-html="annotating_edit_span.composite"></span>
@@ -312,14 +312,14 @@ export default {
                         <div class="row">
                             <div v-for="question in item.annotation" :key="question.id">
                                 <Question :edit_state="edit_state" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
-                                    :parent_show_next_question="null" isRoot=true />
+                                    :config="config" :parent_show_next_question="null" isRoot=true />
                             </div>
                         </div>
                     </div>
                     <div class="buttons tc">
-                        <button @click="cancel_annotation_click(item.name, $e)" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">Cancel <i class="fa-solid fa-close"></i></button>
+                        <button @click="cancel_annotation_click(item.name, $e)" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">{{ config.interface_text.buttons.cancel_label }} <i class="fa-solid fa-close"></i></button>
                         <!-- :class="{'o-40': save_validated_deletion, 'grow': !save_validated_deletion}" :disabled="save_validated_deletion" -->
-                        <button @click="save_annotation_click(item.name, $e)" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns">Save <i class="fa-solid fa-check"></i></button>
+                        <button @click="save_annotation_click(item.name, $e)" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
                     </div>
                 </div>
             </div>
