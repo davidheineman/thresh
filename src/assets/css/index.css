@@ -116,6 +116,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+#sandbox {
+    overflow-y: scroll;
+}
 
 .edit-box {
     width: 200px;
@@ -153,6 +156,10 @@
 
 .mb3-5 {
     margin-bottom: 1.5rem;
+}
+
+.context-span {
+    color: #949494
 }
 
 .prev-next-btns {

@@ -87,6 +87,8 @@
             this.current_hit = hit_num;
         },
         set_hits_data(hit_data) {
+            hit_data.forEach(o => o.edits = o.edits || []);
+            hit_data.forEach((o, idx) => { o._interface_id = idx + 1; });
             this.hits_data = hit_data;
             this.total_hits = hit_data.length;
         },
@@ -94,24 +96,24 @@
             this.edits_dict = edits_dict;
         },
         set_span_text(text, type) {
-          if (type == "original") {
-            this.selected_state.original_span = text;
-          } else if (type == "simplified") {
-            this.selected_state.simplified_span = text;
+          if (type == "source") {
+            this.selected_state.source_span = text;
+          } else if (type == "target") {
+            this.selected_state.target_span = text;
           }
         },
         set_span_indices(indices, type) {
-          if (type == "original") {
-            this.selected_state.original_idx = indices;
-          } else if (type == "simplified") {
-            this.selected_state.simplified_idx = indices;
+          if (type == "source") {
+            this.selected_state.source_idx = indices;
+          } else if (type == "target") {
+            this.selected_state.target_idx = indices;
           }
         },
         set_span_category(category, type) {
-          if (type == "original") {
-            this.selected_state.original_category = category;
-          } else if (type == "simplified") {
-            this.selected_state.simplified_category = category;
+          if (type == "source") {
+            this.selected_state.source_category = category;
+          } else if (type == "target") {
+            this.selected_state.target_category = category;
           }
         },
         set_edit_html(html) {
@@ -122,24 +124,24 @@
         },
         refresh_interface_edit() {
           const DEFAULT_HIT_BOX_CONFIG = {
-            enable_select_original_sentence: false,
-            enable_select_simplified_sentence: false,
-            enable_multi_select_original_sentence: false,
-            enable_multi_select_simplified_sentence: false,
+            enable_select_source_sentence: false,
+            enable_select_target_sentence: false,
+            enable_multi_select_source_sentence: false,
+            enable_multi_select_target_sentence: false,
           }
           const DEFAULT_SELECTED_STATE = {
-            original_span: '',
-            original_idx: [],
-            original_category: '',
-            simplified_span: '',
-            simplified_idx: [],
-            simplified_category: '',
+            source_span: '',
+            source_idx: [],
+            source_category: '',
+            target_span: '',
+            target_idx: [],
+            target_category: '',
             split: '',
             split_id: null
           }
           const DEFAULT_ANNOTATING_EDIT_SPAN = {
-            original: '',
-            simplified: '',
+            source: '',
+            target: '',
             composite: ''
           }
 
@@ -159,10 +161,10 @@
           this.annotating_edit_span_category_id = id;
         },
         set_annotating_edit_span(data, sent_type=null) {
-          if (sent_type == 'original') {
-            this.annotating_edit_span.original = data;
-          } else if (sent_type == 'simplified') {
-            this.annotating_edit_span.simplified = data;
+          if (sent_type == 'source') {
+            this.annotating_edit_span.source = data;
+          } else if (sent_type == 'target') {
+            this.annotating_edit_span.target = data;
           } else if (sent_type == 'composite') {
             this.annotating_edit_span.composite = data;
           } else {

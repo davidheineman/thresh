@@ -1,7 +1,7 @@
 <script setup>
     import _ from 'lodash';
-    import OriginalSent from "./OriginalSent.vue";
-    import SimplifiedSent from "../hitbox/SimplifiedSent.vue";
+    import SourceSent from "./SourceSent.vue";
+    import TargetSent from "../hitbox/TargetSent.vue";
 </script>
 
 <script>
@@ -91,19 +91,19 @@ export default {
         },
         get_selected_index(sent_type) {
             if (sent_type == 'input_idx') {
-                return _.cloneDeep(this.selected_state.original_idx)
+                return _.cloneDeep(this.selected_state.source_idx)
             }
             if (sent_type == 'output_idx') {
-                return _.cloneDeep(this.selected_state.simplified_idx)
+                return _.cloneDeep(this.selected_state.target_idx)
             }
             return undefined
         },
         multi_select_enabled(sent_type) {
             if (sent_type == 'input_idx') {
-                return this.hit_box_config.enable_multi_select_original_sentence
+                return this.hit_box_config.enable_multi_select_source_sentence
             }
             if (sent_type == 'output_idx') {
-                return this.hit_box_config.enable_multi_select_simplified_sentence
+                return this.hit_box_config.enable_multi_select_target_sentence
             }
             return undefined
         },
@@ -236,13 +236,13 @@ export default {
             
             if (this.getEditConfig(key)['multi_span']) {
                 edit_html += `<span class="edit-type txt-${key}">substitute </span>`;
-                let original_spans = edit['input_idx']
-                for (let j = 0; j < original_spans.length; j++) {
+                let source_spans = edit['input_idx']
+                for (let j = 0; j < source_spans.length; j++) {
                     if (j != 0) {
                         edit_html += `<span class="edit-type txt-${key}"> and </span>`;
                     }
                     edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
-                        &nbsp${this.hits_data[this.current_hit - 1].original.substring(original_spans[j][0], original_spans[j][1])}&nbsp</span>`;
+                        &nbsp${this.hits_data[this.current_hit - 1].source.substring(source_spans[j][0], source_spans[j][1])}&nbsp</span>`;
                 }
 
                 edit_html += `<span class="edit-type txt-${key}"> with </span>`;
@@ -253,7 +253,7 @@ export default {
                         edit_html += `<span class="edit-type txt-${key}"> and </span>`;
                     }
                     edit_html += `<span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
-                        &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(simp_spans[j][0], simp_spans[j][1])}&nbsp</span>`;
+                        &nbsp${this.hits_data[this.current_hit - 1].target.substring(simp_spans[j][0], simp_spans[j][1])}&nbsp</span>`;
                 }
                 edit_html += ",&nbsp&nbsp";
             } else {
@@ -261,13 +261,13 @@ export default {
                     let in_span = edit['input_idx'][0]
                     edit_html += `<span class="edit-type txt-${key}">${key} </span>
                         <span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
-                            &nbsp${this.hits_data[this.current_hit - 1].original.substring(in_span[0], in_span[1])}&nbsp</span>,&nbsp&nbsp`;
+                            &nbsp${this.hits_data[this.current_hit - 1].source.substring(in_span[0], in_span[1])}&nbsp</span>,&nbsp&nbsp`;
                 }
                 if (edit.hasOwnProperty('output_idx')) {
                     let out_span = edit['output_idx'][0]
                     edit_html += `<span class="edit-type txt-${key}">${key} </span>
                         <span class="pa1 edit-text br-pill-ns txt-${key} border-${key}-all">
-                            &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(out_span[0], out_span[1])}&nbsp</span>,&nbsp&nbsp`;
+                            &nbsp${this.hits_data[this.current_hit - 1].target.substring(out_span[0], out_span[1])}&nbsp</span>,&nbsp&nbsp`;
                 }
             }
 
@@ -339,8 +339,8 @@ export default {
                     let light = !this.hasAnnotations(edit) ? "-light" : "";
                     // TODO: Add case for all split chars, in all three contexts
                     // This looks like the only difference, there's an edge case for the || chars
-                    // if (category == "split" && (simplified_sentence.substring(simplified_spans[i][1], simplified_spans[i][2]) =="||")) {
-                    //     sentence_html += `<span @mousedown.stop @mouseup.stop  @click="click_span"  @mouseover="hover_span" @mouseout="un_hover_span" class="${category} pointer span simplified_span txt-split${light} split-sign ${outside}" data-category="${category}" data-id="${category}-` + simplified_spans[i][3] + `">`;
+                    // if (category == "split" && (target_sentence.substring(target_spans[i][1], target_spans[i][2]) =="||")) {
+                    //     sentence_html += `<span @mousedown.stop @mouseup.stop  @click="click_span"  @mouseover="hover_span" @mouseout="un_hover_span" class="${category} pointer span target_span txt-split${light} split-sign ${outside}" data-category="${category}" data-id="${category}-` + target_spans[i][3] + `">`;
                     // }
                     let composite_info = edit.hasOwnProperty('child_category') ? `data-childcategory=${edit['child_category']} data-childid=${edit['child_id']}` : "" 
 
@@ -411,15 +411,31 @@ export default {
 
 <template>
     <div>
-        <template v-if="sent_type === 'original'">
-            <OriginalSent sent_type="original" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
+        <template v-if="sent_type === 'source'">
+            <span class="f4 lh-paras context-span" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].source_context_before">
+                {{ hits_data[this.current_hit - 1].source_context_before }}&nbsp;
+            </span>
+            
+            <SourceSent sent_type="source" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
             :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" 
             :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" />
+        
+            <span class="f4 lh-paras context-span" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].source_context_after">
+                &nbsp;{{ hits_data[this.current_hit - 1].source_context_after }}
+            </span>
         </template>
-        <template v-else-if="sent_type === 'simplified'">
-            <SimplifiedSent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
+        <template v-else-if="sent_type === 'target'">
+            <span class="f4 lh-paras context-span" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].target_context_before">
+                {{ hits_data[this.current_hit - 1].target_context_before }}&nbsp;
+            </span>
+
+            <TargetSent sent_type="target" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
             :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" 
             :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" />
+        
+            <span class="f4 lh-paras context-span" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].target_context_after">
+                &nbsp;{{ hits_data[this.current_hit - 1].target_context_after }}
+            </span>
         </template>
     </div>
 </template>

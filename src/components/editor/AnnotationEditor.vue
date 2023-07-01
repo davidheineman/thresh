@@ -87,16 +87,16 @@ export default {
                 'annotation': null
             }
 
-            if (config_category['type'] == 'primitive') {
+            if (config_category.type == undefined || config_category.type == 'primitive') {
                 if (config_category['enable_input']) {
-                    let new_idx = this.selected_state.original_idx
+                    let new_idx = this.selected_state.source_idx
                     if (!config_category['multi_span']) {
                         new_idx = [new_idx]
                     }
                     new_span['input_idx'] = new_idx
                 }
                 if (config_category['enable_output']) {
-                    let new_idx = this.selected_state.simplified_idx
+                    let new_idx = this.selected_state.target_idx
                     if (!config_category['multi_span']) {
                         new_idx = [new_idx]
                     }
@@ -191,8 +191,8 @@ export default {
             $(".annotation-icon").removeClass(classList);
 
             for (let cat of classList) {
-                $('#original-sentence').removeClass(`select-color-${cat}`)
-                $('#simplified-sentence').removeClass(`select-color-${cat}`)
+                $('#source-sentence').removeClass(`select-color-${cat}`)
+                $('#target-sentence').removeClass(`select-color-${cat}`)
             }
 
             $("input[name=edit_cotegory]").prop("checked", false);
@@ -214,31 +214,31 @@ export default {
             this.refresh_interface_edit()
 
             let new_hit_box_config = {
-                enable_select_original_sentence: false,
-                enable_select_simplified_sentence: false,
-                enable_multi_select_original_sentence: false,
-                enable_multi_select_simplified_sentence: false,
+                enable_select_source_sentence: false,
+                enable_select_target_sentence: false,
+                enable_multi_select_source_sentence: false,
+                enable_multi_select_target_sentence: false,
             }
                         
             if (edit_config['enable_input']) {
-                new_hit_box_config.enable_select_original_sentence = true;
+                new_hit_box_config.enable_select_source_sentence = true;
                 if (edit_config['multi_span']) {
-                    new_hit_box_config.enable_multi_select_original_sentence = true;
+                    new_hit_box_config.enable_multi_select_source_sentence = true;
                 }
             } 
             if (edit_config['enable_output']) {
-                new_hit_box_config.enable_select_simplified_sentence = true;
+                new_hit_box_config.enable_select_target_sentence = true;
                 if (edit_config['multi_span']) {
-                    new_hit_box_config.enable_multi_select_simplified_sentence = true;
+                    new_hit_box_config.enable_multi_select_target_sentence = true;
                 }
             }
 
             this.set_hit_box_config(new_hit_box_config)
 
-            this.set_span_text("", "original");
-            this.set_span_text("", "simplified");
-            this.set_span_indices("", "original");
-            this.set_span_indices("", "simplified");
+            this.set_span_text("", "source");
+            this.set_span_text("", "target");
+            this.set_span_indices("", "source");
+            this.set_span_indices("", "target");
         },
     }
 }
@@ -267,12 +267,12 @@ export default {
                         <div v-for="item in config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
                                 <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.input_label }}</i>.</p>
-                                <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.original_span"></span></p>
+                                <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.source_span"></span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
                                     <p class="mt0 mb2 b tracked-light">Select the text span from the <i>{{ config.output_label }}</i>.</p>
-                                    <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.simplified_span"></span></p>
+                                    <p class="tracked-light lh-paras-2">Selected span: <span v-html="selected_state.target_span"></span></p>
                                 </div>
                             </div>
                             <div v-if="item.type == 'composite'">
@@ -302,9 +302,9 @@ export default {
                         <div class="f4 mt0 mb2 tc">
                             <span :class="`edit-type txt-${item.name} f3`">{{ item.label }}:  </span>
 
-                            <span v-if="item.enable_input" v-html="annotating_edit_span.original"></span>
+                            <span v-if="item.enable_input" v-html="annotating_edit_span.source"></span>
                             <span v-if="item.enable_input && item.enable_output" :class="`edit-type txt-${item.name} f3`"> with </span>
-                            <span v-if="item.enable_output" v-html="annotating_edit_span.simplified"></span>
+                            <span v-if="item.enable_output" v-html="annotating_edit_span.target"></span>
                             
                             <span v-if="item.type == 'composite'" v-html="annotating_edit_span.composite"></span>
                         </div>

@@ -1,0 +1,32 @@
+# We offer language support for default interface elements for these language codes:
+# zh, en, es, hi, pt, bn, ru, ja, vi, tr, ko, fr, ur
+language: "zh"
+
+# If you want to override specific text elements:
+# http://nlproc.tools/lang/default.yml specifies the default interface text for all elements
+# you can override any element by including it using the "interface_text" argument
+
+interface_text:
+ - input_label: "Custom input label"
+
+# Note: We have not verified the accuracy of our translations. Please use discretion and feel
+# free to submit a pull request if you spot an inaccuracy!
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Demo Interface
+template_description: Add a description of your interface here
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    enable_input: true
+    enable_output: true
+    color: red
+    icon: fa-magnifying-glass
+    annotation:
+      - name: edit_quality
+        label: "Edit Quality"
+        question: "What's the quality of this edit?"
+        options: likert-3

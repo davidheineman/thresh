@@ -92,7 +92,7 @@ edits:
     multi_span: true
     annotation:
     - name: substitution_info_change
-      question: "Compared to the original phrase, the new phrase expresses:"
+      question: "Compared to the source phrase, the new phrase expresses:"
       options:
       - name: same
         label: "The same meaning"

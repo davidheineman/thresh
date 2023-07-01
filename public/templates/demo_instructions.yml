@@ -1,0 +1,36 @@
+# Click the Instructions button to view this :)
+
+instructions: |
+  ## Adding instructions to your interface
+  Instructions are formatted with [Markdown](https://www.markdownguide.org/cheat-sheet/). You can use the `prepend_instructions` argument to display this text above the interface.
+
+  ### Formatting
+  Markdown allows creating **bold** or *italicized* text and:
+  - lists
+  - of
+  - items
+
+  ```
+  You can even add blocks of code
+  ```
+  ---
+
+  You can add links to an [external tutorial](https://aclanthology.org/2020.latechclfl-1.7), [other resources](https://huggingface.co/datasets/tiny_shakespeare), and images:
+
+  ![Image Alt Text](https://www.statmt.org/moses/img/phrase-model-alignment.png)
+
+# Uncomment to prepend the instruction text to the interface, useful for MTurk deployments
+# prepend_instructions: true
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Custom Instructions Demo
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true

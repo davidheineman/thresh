@@ -48,8 +48,8 @@ export default {
     },
     methods: {
         annotate_edit(e) {
-            const original_sentence = this.hits_data[this.current_hit - 1].original
-            const simplified_sentence = this.hits_data[this.current_hit - 1].simplified
+            const source_sentence = this.hits_data[this.current_hit - 1].source
+            const target_sentence = this.hits_data[this.current_hit - 1].target
             const edit_dict = this.edits_dict
 
             const category = e.target.dataset.category
@@ -74,16 +74,16 @@ export default {
             });
 
             if (this.getEditConfig(category)['multi_span']) {
-                let original_spans = annotating_span['input_idx']
+                let source_spans = annotating_span['input_idx']
                 let new_edit_span = ""
-                for (let i = 0; i < original_spans.length; i++) {
+                for (let i = 0; i < source_spans.length; i++) {
                     if (i != 0) {
                         new_edit_span += `<span class="edit-type txt-${category} f3"> and </span>`
                     }
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${original_sentence.substring(original_spans[i][0], original_spans[i][1])}&nbsp</span>`
+                        &nbsp${source_sentence.substring(source_spans[i][0], source_spans[i][1])}&nbsp</span>`
                 }
-                this.set_annotating_edit_span(new_edit_span, 'original')
+                this.set_annotating_edit_span(new_edit_span, 'source')
 
                 let simp_spans = annotating_span['output_idx']
                 new_edit_span = ""
@@ -92,9 +92,9 @@ export default {
                         new_edit_span += `<span class="edit-type txt-${category} f3"> and </span>`
                     }
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${simplified_sentence.substring(simp_spans[i][0], simp_spans[i][1])}&nbsp</span>`
+                        &nbsp${target_sentence.substring(simp_spans[i][0], simp_spans[i][1])}&nbsp</span>`
                 }
-                this.set_annotating_edit_span(new_edit_span, 'simplified')
+                this.set_annotating_edit_span(new_edit_span, 'target')
             } else if (this.getEditConfig(category)['type'] == 'composite') {
                 let new_edit_span = ""
                 let light = ""
@@ -117,16 +117,16 @@ export default {
                     let span_idx = annotating_span['input_idx'][0]
                     let new_edit_span = ""
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${original_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
-                    this.set_annotating_edit_span(new_edit_span, 'original')
+                        &nbsp${source_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
+                    this.set_annotating_edit_span(new_edit_span, 'source')
                 } 
 
                 if (annotating_span.hasOwnProperty('output_idx')) {
                     let span_idx = annotating_span['output_idx'][0]
                     let new_edit_span = ""
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
-                        &nbsp${simplified_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
-                    this.set_annotating_edit_span(new_edit_span, 'simplified')
+                        &nbsp${target_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
+                    this.set_annotating_edit_span(new_edit_span, 'target')
                 }
             }
 
@@ -214,37 +214,37 @@ export default {
             if (edit.hasOwnProperty('input_idx')) {
                 let in_span = edit['input_idx'][0]
                 new_html += `
-                    &nbsp${this.hits_data[this.current_hit - 1].original.substring(in_span[0], in_span[1])}&nbsp</span>`;
+                    &nbsp${this.hits_data[this.current_hit - 1].source.substring(in_span[0], in_span[1])}&nbsp</span>`;
             } else if (edit.hasOwnProperty('output_idx')) {
                 let out_span = edit['output_idx'][0]
                 new_html += `
-                    &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(out_span[0], out_span[1])}&nbsp</span>`;
+                    &nbsp${this.hits_data[this.current_hit - 1].target.substring(out_span[0], out_span[1])}&nbsp</span>`;
             }
             
             if (edit_config['multi_span']) {
                 if (edit.hasOwnProperty('input_idx')) {
-                    let original_spans_for_subs = edit['input_idx'].slice(1)
-                    for (let original_span of original_spans_for_subs) {
-                        if (original_span[0] != in_span[0] || original_span[1] != in_span[1]) {
+                    let source_spans_for_subs = edit['input_idx'].slice(1)
+                    for (let source_span of source_spans_for_subs) {
+                        if (source_span[0] != in_span[0] || source_span[1] != in_span[1]) {
                             new_html += `
                                 <span class="edit-type txt-${key}${light} f3"> and </span>
                                     <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">
-                                        &nbsp${this.hits_data[this.current_hit - 1].original.substring(original_span[0], original_span[1])}&nbsp
+                                        &nbsp${this.hits_data[this.current_hit - 1].source.substring(source_span[0], source_span[1])}&nbsp
                                     </span>`;
                         }
                     }
                 }
                 new_html += `<span class="edit-type txt-${key}${light} f3"> with </span>`;
                 if (edit.hasOwnProperty('output_idx')) {
-                    let simplified_spans_for_subs = edit['output_idx'] // .slice(1)
-                    for (let j = 0; j < simplified_spans_for_subs.length; j++) {
-                        let simplified_span = simplified_spans_for_subs[j];
+                    let target_spans_for_subs = edit['output_idx'] // .slice(1)
+                    for (let j = 0; j < target_spans_for_subs.length; j++) {
+                        let target_span = target_spans_for_subs[j];
                         if (j != 0) {
                             new_html += `<span class="edit-type txt-${key}${light} f3"> and </span>`;
                         }
                         new_html += `
                             <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">
-                                &nbsp${this.hits_data[this.current_hit - 1].simplified.substring(simplified_span[0], simplified_span[1])}&nbsp</span>`;
+                                &nbsp${this.hits_data[this.current_hit - 1].target.substring(target_span[0], target_span[1])}&nbsp</span>`;
                     }
                 }
             } 
@@ -381,21 +381,21 @@ export default {
                         if (constituent_edit_config['enable_input'] && constituent_edit_config['enable_output']) {
                             new_lines[key][id].push(
                                 new LeaderLine(
-                                    $(`.${key}.original_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
-                                    $(`.${key}.simplified_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
+                                    $(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
+                                    $(`.${key}.target_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
                                     line_config
                                 )
                             )
                         }
                     }
                 } else if (edit_config['enable_input'] && edit_config['enable_output']) {
-                    if ($(`.${key}.original_span`)[0] == null) {
+                    if ($(`.${key}.source_span`)[0] == null) {
                         console.error("Something went wrong!")
                     }
 
                     new_lines[key][id] = new LeaderLine(
-                        $(`.${key}.original_span[data-id='${key}-${id}']`)[0],
-                        $(`.${key}.simplified_span[data-id='${key}-${id}']`)[0],
+                        $(`.${key}.source_span[data-id='${key}-${id}']`)[0],
+                        $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
                         line_config
                     )
                 }
@@ -422,28 +422,28 @@ export default {
             //                 if (span_category == "deletion") {
             //                     new_lines["split"][id].push(
             //                         new LeaderLine(
-            //                         $(`.split.original_span${css_config}`)[0],
+            //                         $(`.split.source_span${css_config}`)[0],
             //                         $(`.split.split-sign[data-id='split-${id}']`)[0],
             //                         line_config)
             //                     )
             //                 } else if (span_category =="insertion") {
             //                     new_lines["split"][id].push(
             //                         new LeaderLine(
-            //                         $(`.split.simplified_span${css_config}`)[0],
+            //                         $(`.split.target_span${css_config}`)[0],
             //                         $(`.split.split-sign[data-id='split-${id}']`)[0],
             //                         line_config)
             //                     )
             //                 } else if (span_category == "substitution" || span_category == "reorder") {
             //                     new_lines["split"][id].push(
             //                         new LeaderLine(
-            //                         $(`.split.original_span${css_config}`)[0],
-            //                         $(`.split.simplified_span${css_config}`)[0],
+            //                         $(`.split.source_span${css_config}`)[0],
+            //                         $(`.split.target_span${css_config}`)[0],
             //                         line_config)
             //                     )
 
             //                     new_lines["split"][id].push(
             //                         new LeaderLine(
-            //                         $(`.split.simplified_span${css_config}`)[0],
+            //                         $(`.split.target_span${css_config}`)[0],
             //                         $(`.split.split-sign[data-id='split-${id}']`)[0],
             //                         line_config)
             //                     )

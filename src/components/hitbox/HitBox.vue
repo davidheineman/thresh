@@ -96,11 +96,11 @@ export default {
             new_hits_data[this.current_hit - 1].edits = []
 
             // TODO: Adds a selectable edit for split sentences
-            // let simplified_text = new_hits_data[this.current_hit - 1].simplified;
-            // let split_signs = [...simplified_text.matchAll(/\|\|/gi)].map(a => a.index);
+            // let target_text = new_hits_data[this.current_hit - 1].target;
+            // let split_signs = [...target_text.matchAll(/\|\|/gi)].map(a => a.index);
             // for (let i = 0; i < split_signs.length; i++) {
             //     split_sign = split_signs[i];
-            //     new_hits_data[this.current_hit - 1].simplified_spans.push([2, split_sign, split_sign + 2, i]);
+            //     new_hits_data[this.current_hit - 1].target_spans.push([2, split_sign, split_sign + 2, i]);
             // }
 
             this.set_hits_data(new_hits_data)
@@ -114,11 +114,11 @@ export default {
             // span list and re-renders. I can use the re-rendering code already
             // written
 
-            if (this.span_type == 'original') {
-                let txt = this.hits_data[this.current_hit - 1].original
-                // remove [start,end] from selected_span_in_original_indexs
+            if (this.span_type == 'source') {
+                let txt = this.hits_data[this.current_hit - 1].source
+                // remove [start,end] from selected_span_in_source_indexs
 
-                let new_span_indices = this.selected_state.original_idx
+                let new_span_indices = this.selected_state.source_idx
                 for (let index in new_span_indices) {
                     let span = new_span_indices[index]
                     if (span[0] == start && span[1] == end) {
@@ -126,11 +126,11 @@ export default {
                         break
                     }
                 }
-                this.set_span_indices(new_span_indices, 'original');
+                this.set_span_indices(new_span_indices, 'source');
 
-                // this.selected_span_in_original_indexs.push([start, end]);
+                // this.selected_span_in_source_indexs.push([start, end]);
                 let new_span_text = "";
-                // iterate through this.selected_span_in_original_indexs
+                // iterate through this.selected_span_in_source_indexs
                 for (let i = 0; i < new_span_indices.length; i++) {
                     let [start, end] = new_span_indices[i];
                     // let selected_span = new_span_text.substring(start, end);
@@ -140,13 +140,13 @@ export default {
                     new_span_text += `</span>`;
                     new_span_text += "&nbsp&nbsp";
                 }
-                this.set_span_text(new_span_text, 'original');
-                // this.process_original_html_with_selected_span(category);
-            } else if (this.span_type == 'simplified')  {
-                let txt = this.hits_data[this.current_hit - 1].simplified
-                // remove [start,end] from selected_span_in_simplified_indexs
+                this.set_span_text(new_span_text, 'source');
+                // this.process_source_html_with_selected_span(category);
+            } else if (this.span_type == 'target')  {
+                let txt = this.hits_data[this.current_hit - 1].target
+                // remove [start,end] from selected_span_in_target_indexs
 
-                let new_span_indices = this.selected_state.simplified_idx
+                let new_span_indices = this.selected_state.target_idx
                 for (let index in new_span_indices) {
                     let span = new_span_indices[index]
                     if (span[0] == start && span[1] == end) {
@@ -154,11 +154,11 @@ export default {
                         break
                     }
                 }
-                this.set_span_indices(new_span_indices, 'simplified')
+                this.set_span_indices(new_span_indices, 'target')
 
-                // this.selected_span_in_simplified_indexs.push([start, end]);
+                // this.selected_span_in_target_indexs.push([start, end]);
                 let new_span_text = "";
-                // iterate through this.selected_span_in_simplified_indexs
+                // iterate through this.selected_span_in_target_indexs
                 for (let i = 0; i < new_span_indices.length; i++) {
                     let [start, end] = new_span_indices[i];
                     let selected_span = new_span_text.substring(start, end);
@@ -168,8 +168,8 @@ export default {
                     new_span_text += `</span>`;
                     new_span_text += "&nbsp&nbsp";
                 }
-                this.set_span_text(new_span_text, 'simplified');
-                // this.process_simplified_html_with_selected_span(category);
+                this.set_span_text(new_span_text, 'target');
+                // this.process_target_html_with_selected_span(category);
             }
         },
         file_download() {
@@ -195,7 +195,7 @@ export default {
             </div>
 
             <div class="hit-instructions">
-                <button v-if="config.instructions" @click="toggle_instructions()" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">
+                <button v-if="config.instructions && !config.prepend_instructions" @click="toggle_instructions()" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">
                     <span class="f4">Instructions</span>
                 </button>
             </div>
@@ -220,23 +220,33 @@ export default {
         </div>
         <div>
             <div class="ba b--black-80 br2 pa2">
+                <div class="fr">
+                    <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
+                    <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1"></i>
+                </div>
+
+                <div class="mb2" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].context">
+                    <div class="cf">
+                        <p class="fl f3 mt1 mb1">
+                            <span class="f5">Context:</span>
+                        </p>
+                    </div>
+                    <div class="f4 lh-paras">{{ hits_data[this.current_hit - 1].context }}</div>
+                </div>
+
                 <div class="cf">
                     <p class="fl f3 mt1 mb1 orig-sentence-header">
-                        <span class="f5">{{ config.input_label }}:</span>
+                        <span class="f5">Source:</span>
                     </p>
-                    <div class="fr">
-                        <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
-                        <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1"></i>
-                    </div>
                 </div>
                 
-                <Sent sent_type="original" v-bind="$props" :remove_selected="remove_selected" />
+                <Sent sent_type="source" v-bind="$props" :remove_selected="remove_selected" />
 
                 <p class="f3 mb1">
-                    <span class="f5">{{ config.output_label }}:</span>
+                    <span class="f5">Target:</span>
                 </p>
 
-                <Sent sent_type="simplified" v-bind="$props" :remove_selected="remove_selected" />
+                <Sent sent_type="target" v-bind="$props" :remove_selected="remove_selected" />
 
             </div>
         </div>

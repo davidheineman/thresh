@@ -18,6 +18,11 @@ export default {
 
 <template>
   <main>
+    <section v-if="config.instructions && config.prepend_instructions">
+        <vue-markdown :source=config.instructions :options="options" class="mt0 mb0" />
+        <br /><hr /><br />
+    </section>
+
     <div class="overlay" v-if="instructions_open" @click="toggle_instructions"></div>
     <section v-if="instructions_open" class="modal br-pill-ns">
         <vue-markdown :source=config.instructions :options="options" class="mt0 mb0" />

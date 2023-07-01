@@ -7,8 +7,8 @@
             "seg_id": "1214",
             "rater": "rater3"
         },
-        "original": "According to Minsheng Guancha, a Chinese human rights group, Cao was later able to see Wang's body and saw he was bleeding from his eyes, mouth, ears and nose and there were bruises on his face.",
-        "simplified": "Laut Minsheng Guancha, einer chinesischen Menschenrechtsgruppe, war Cao sp\u00e4ter in der Lage, Wangs K\u00f6rper zu sehen und sah, dass er aus seinen Augen, Mund, Ohren und Nase blutete und Bluterg\u00fcsse im Gesicht hatte.",
+        "source": "According to Minsheng Guancha, a Chinese human rights group, Cao was later able to see Wang's body and saw he was bleeding from his eyes, mouth, ears and nose and there were bruises on his face.",
+        "target": "Laut Minsheng Guancha, einer chinesischen Menschenrechtsgruppe, war Cao sp\u00e4ter in der Lage, Wangs K\u00f6rper zu sehen und sah, dass er aus seinen Augen, Mund, Ohren und Nase blutete und Bluterg\u00fcsse im Gesicht hatte.",
         "edits": [
             {
                 "id": 0,
@@ -101,8 +101,8 @@
             "seg_id": "1214",
             "rater": "rater2"
         },
-        "original": "According to Minsheng Guancha, a Chinese human rights group, Cao was later able to see Wang's body and saw he was bleeding from his eyes, mouth, ears and nose and there were bruises on his face.",
-        "simplified": "Laut Minsheng Guancha, einer chinesischen Menschenrechtsgruppe, war Cao sp\u00e4ter in der Lage, Wangs K\u00f6rper zu sehen und sah, dass er aus seinen Augen, Mund, Ohren und Nase blutete und Bluterg\u00fcsse im Gesicht hatte.",
+        "source": "According to Minsheng Guancha, a Chinese human rights group, Cao was later able to see Wang's body and saw he was bleeding from his eyes, mouth, ears and nose and there were bruises on his face.",
+        "target": "Laut Minsheng Guancha, einer chinesischen Menschenrechtsgruppe, war Cao sp\u00e4ter in der Lage, Wangs K\u00f6rper zu sehen und sah, dass er aus seinen Augen, Mund, Ohren und Nase blutete und Bluterg\u00fcsse im Gesicht hatte.",
         "edits": [
             {
                 "id": 0,
@@ -214,8 +214,8 @@
             "seg_id": "1214",
             "rater": "rater1"
         },
-        "original": "According to Minsheng Guancha, a Chinese human rights group, Cao was later able to see Wang's body and saw he was bleeding from his eyes, mouth, ears and nose and there were bruises on his face.",
-        "simplified": "Laut Minsheng Guancha, einer chinesischen Menschenrechtsgruppe, war Cao sp\u00e4ter in der Lage, Wangs K\u00f6rper zu sehen und sah, dass er aus seinen Augen, Mund, Ohren und Nase blutete und Bluterg\u00fcsse im Gesicht hatte.",
+        "source": "According to Minsheng Guancha, a Chinese human rights group, Cao was later able to see Wang's body and saw he was bleeding from his eyes, mouth, ears and nose and there were bruises on his face.",
+        "target": "Laut Minsheng Guancha, einer chinesischen Menschenrechtsgruppe, war Cao sp\u00e4ter in der Lage, Wangs K\u00f6rper zu sehen und sah, dass er aus seinen Augen, Mund, Ohren und Nase blutete und Bluterg\u00fcsse im Gesicht hatte.",
         "edits": [
             {
                 "id": 0,
@@ -381,8 +381,8 @@
             "seg_id": "492",
             "rater": "rater3"
         },
-        "original": "French authorities and Normandy residents are clearing up residue from a huge fire at a chemical plant as a foul stench continues to spread over a swath of territory.",
-        "simplified": "Franz\u00f6sische Beh\u00f6rden und Einwohner der Normandie r\u00e4umen die Reste eines riesigen Feuerriesigen Feuers in einem Chemiewerk auf, da sich ein fauler Gestank weiterhin \u00fcber ein ganzes Gebiet ausbreitet.",
+        "source": "French authorities and Normandy residents are clearing up residue from a huge fire at a chemical plant as a foul stench continues to spread over a swath of territory.",
+        "target": "Franz\u00f6sische Beh\u00f6rden und Einwohner der Normandie r\u00e4umen die Reste eines riesigen Feuerriesigen Feuers in einem Chemiewerk auf, da sich ein fauler Gestank weiterhin \u00fcber ein ganzes Gebiet ausbreitet.",
         "edits": [
             {
                 "id": 0,
@@ -852,8 +852,8 @@
             "seg_id": "492",
             "rater": "rater5"
         },
-        "original": "French authorities and Normandy residents are clearing up residue from a huge fire at a chemical plant as a foul stench continues to spread over a swath of territory.",
-        "simplified": "Franz\u00f6sische Beh\u00f6rden und Einwohner der Normandie r\u00e4umen die Reste eines riesigen Feuers in einem Chemiewerk auf, da sich ein fauler Gestank weiterhin \u00fcber ein ganzes Gebiet ausbreitet.",
+        "source": "French authorities and Normandy residents are clearing up residue from a huge fire at a chemical plant as a foul stench continues to spread over a swath of territory.",
+        "target": "Franz\u00f6sische Beh\u00f6rden und Einwohner der Normandie r\u00e4umen die Reste eines riesigen Feuers in einem Chemiewerk auf, da sich ein fauler Gestank weiterhin \u00fcber ein ganzes Gebiet ausbreitet.",
         "edits": [
             {
                 "id": 0,
@@ -910,8 +910,8 @@
             "seg_id": "492",
             "rater": "rater2"
         },
-        "original": "French authorities and Normandy residents are clearing up residue from a huge fire at a chemical plant as a foul stench continues to spread over a swath of territory.",
-        "simplified": "Franz\u00f6sische Beh\u00f6rden und Einwohner der Normandie r\u00e4umen die Reste eines riesigen Feuers in einem Chemiewerk auf, da sich ein fauler Gestank weiterhin \u00fcber ein ganzes Gebiet ausbreitet.",
+        "source": "French authorities and Normandy residents are clearing up residue from a huge fire at a chemical plant as a foul stench continues to spread over a swath of territory.",
+        "target": "Franz\u00f6sische Beh\u00f6rden und Einwohner der Normandie r\u00e4umen die Reste eines riesigen Feuers in einem Chemiewerk auf, da sich ein fauler Gestank weiterhin \u00fcber ein ganzes Gebiet ausbreitet.",
         "edits": [
             {
                 "id": 0,
@@ -1019,8 +1019,8 @@
             "seg_id": "697",
             "rater": "rater3"
         },
-        "original": "She added that having Meghan present 'didn't feel hierarchical', as it was 'women gathered together and a talk about the struggles we have, as well as the things we need to do to move forward and grow and change our societies'.",
-        "simplified": "Sie f\u00fcgte hinzu, dass die Anwesenheit von Meghan \u201esich nicht hierarchisch anf\u00fchlte\u201c, da es \u201eFrauen waren, die sich versammelten und \u00fcber die K\u00e4mpfe sprachen, die wir haben, sowie \u00fcber die Dinge, die wir tun m\u00fcssen, um voranzukommen und zu wachsen und unsere Gesellschaften zu ver\u00e4ndern\u201c.",
+        "source": "She added that having Meghan present 'didn't feel hierarchical', as it was 'women gathered together and a talk about the struggles we have, as well as the things we need to do to move forward and grow and change our societies'.",
+        "target": "Sie f\u00fcgte hinzu, dass die Anwesenheit von Meghan \u201esich nicht hierarchisch anf\u00fchlte\u201c, da es \u201eFrauen waren, die sich versammelten und \u00fcber die K\u00e4mpfe sprachen, die wir haben, sowie \u00fcber die Dinge, die wir tun m\u00fcssen, um voranzukommen und zu wachsen und unsere Gesellschaften zu ver\u00e4ndern\u201c.",
         "edits": [
             {
                 "id": 0,
@@ -1445,8 +1445,8 @@
             "seg_id": "697",
             "rater": "rater5"
         },
-        "original": "She added that having Meghan present 'didn't feel hierarchical', as it was 'women gathered together and a talk about the struggles we have, as well as the things we need to do to move forward and grow and change our societies'.",
-        "simplified": "Sie f\u00fcgte hinzu, dass die Anwesenheit von Meghan \u201esich nicht hierarchisch anf\u00fchlte\u201c, da es \u201eFrauen waren, die sich versammelten und \u00fcber die K\u00e4mpfe sprachen, die wir haben, sowie \u00fcber die Dinge, die wir tun m\u00fcssen, um voranzukommen und zu wachsen und unsere Gesellschaften zu ver\u00e4ndern\u201c.",
+        "source": "She added that having Meghan present 'didn't feel hierarchical', as it was 'women gathered together and a talk about the struggles we have, as well as the things we need to do to move forward and grow and change our societies'.",
+        "target": "Sie f\u00fcgte hinzu, dass die Anwesenheit von Meghan \u201esich nicht hierarchisch anf\u00fchlte\u201c, da es \u201eFrauen waren, die sich versammelten und \u00fcber die K\u00e4mpfe sprachen, die wir haben, sowie \u00fcber die Dinge, die wir tun m\u00fcssen, um voranzukommen und zu wachsen und unsere Gesellschaften zu ver\u00e4ndern\u201c.",
         "edits": [
             {
                 "id": 0,
@@ -1743,8 +1743,8 @@
             "seg_id": "697",
             "rater": "rater6"
         },
-        "original": "She added that having Meghan present 'didn't feel hierarchical', as it was 'women gathered together and a talk about the struggles we have, as well as the things we need to do to move forward and grow and change our societies'.",
-        "simplified": "Sie f\u00fcgte hinzu, dass die Anwesenheit von Meghan \u201esich nicht hierarchisch anf\u00fchlte\u201c, da es \u201eFrauen waren, die sich versammelten und \u00fcber die K\u00e4mpfe sprachen, die wir haben, sowie \u00fcber die Dinge, die wir tun m\u00fcssen, um voranzukommen und zu wachsen und unsere Gesellschaften zu ver\u00e4ndern\u201c.",
+        "source": "She added that having Meghan present 'didn't feel hierarchical', as it was 'women gathered together and a talk about the struggles we have, as well as the things we need to do to move forward and grow and change our societies'.",
+        "target": "Sie f\u00fcgte hinzu, dass die Anwesenheit von Meghan \u201esich nicht hierarchisch anf\u00fchlte\u201c, da es \u201eFrauen waren, die sich versammelten und \u00fcber die K\u00e4mpfe sprachen, die wir haben, sowie \u00fcber die Dinge, die wir tun m\u00fcssen, um voranzukommen und zu wachsen und unsere Gesellschaften zu ver\u00e4ndern\u201c.",
         "edits": [
             {
                 "id": 0,
@@ -2105,8 +2105,8 @@
             "seg_id": "434",
             "rater": "rater5"
         },
-        "original": "When Sen. Elizabeth Warren (D., Mass.) purchased drinks from two girls running a lemonade stand in August, she may not have been aware that her $10 purchase would be donated to a pro-life charity.",
-        "simplified": "Als Sen. Elizabeth Warren (D., Mass.) im August Getr\u00e4nke von zwei M\u00e4dchen kaufte, die einen Limonadenstand betrieben, war ihr m\u00f6glicherweise nicht bewusst, dass ihr Kauf von 10 Dollar an eine Wohlt\u00e4tigkeitsorganisation f\u00fcr das Leben gespendet werden w\u00fcrde.",
+        "source": "When Sen. Elizabeth Warren (D., Mass.) purchased drinks from two girls running a lemonade stand in August, she may not have been aware that her $10 purchase would be donated to a pro-life charity.",
+        "target": "Als Sen. Elizabeth Warren (D., Mass.) im August Getr\u00e4nke von zwei M\u00e4dchen kaufte, die einen Limonadenstand betrieben, war ihr m\u00f6glicherweise nicht bewusst, dass ihr Kauf von 10 Dollar an eine Wohlt\u00e4tigkeitsorganisation f\u00fcr das Leben gespendet werden w\u00fcrde.",
         "edits": [
             {
                 "id": 0,
@@ -2198,8 +2198,8 @@
             "seg_id": "434",
             "rater": "rater4"
         },
-        "original": "When Sen. Elizabeth Warren (D., Mass.) purchased drinks from two girls running a lemonade stand in August, she may not have been aware that her $10 purchase would be donated to a pro-life charity.",
-        "simplified": "Als Sen. Elizabeth Warren (D., Mass.) im August Getr\u00e4nke von zwei M\u00e4dchen kaufte, die einen Limonadenstand betrieben, war ihr m\u00f6glicherweise nicht bewusst, dass ihr Kauf von 10 Dollar an eine Wohlt\u00e4tigkeitsorganisation f\u00fcr das Leben gespendet werden w\u00fcrde.",
+        "source": "When Sen. Elizabeth Warren (D., Mass.) purchased drinks from two girls running a lemonade stand in August, she may not have been aware that her $10 purchase would be donated to a pro-life charity.",
+        "target": "Als Sen. Elizabeth Warren (D., Mass.) im August Getr\u00e4nke von zwei M\u00e4dchen kaufte, die einen Limonadenstand betrieben, war ihr m\u00f6glicherweise nicht bewusst, dass ihr Kauf von 10 Dollar an eine Wohlt\u00e4tigkeitsorganisation f\u00fcr das Leben gespendet werden w\u00fcrde.",
         "edits": [
             {
                 "id": 0,
@@ -2779,8 +2779,8 @@
             "seg_id": "434",
             "rater": "rater6"
         },
-        "original": "When Sen. Elizabeth Warren (D., Mass.) purchased drinks from two girls running a lemonade stand in August, she may not have been aware that her $10 purchase would be donated to a pro-life charity.",
-        "simplified": "Als Sen. Elizabeth Warren (D., Mass.) im August Getr\u00e4nke von zwei M\u00e4dchen kaufte, die einen Limonadenstand betrieben, war ihr m\u00f6glicherweise nicht bewusst, dass ihr Kauf von 10 Dollar an eine Wohlt\u00e4tigkeitsorganisation f\u00fcr das Leben gespendet werden w\u00fcrde.",
+        "source": "When Sen. Elizabeth Warren (D., Mass.) purchased drinks from two girls running a lemonade stand in August, she may not have been aware that her $10 purchase would be donated to a pro-life charity.",
+        "target": "Als Sen. Elizabeth Warren (D., Mass.) im August Getr\u00e4nke von zwei M\u00e4dchen kaufte, die einen Limonadenstand betrieben, war ihr m\u00f6glicherweise nicht bewusst, dass ihr Kauf von 10 Dollar an eine Wohlt\u00e4tigkeitsorganisation f\u00fcr das Leben gespendet werden w\u00fcrde.",
         "edits": [
             {
                 "id": 0,
@@ -2968,8 +2968,8 @@
             "seg_id": "888",
             "rater": "rater5"
         },
-        "original": "When collecting his gong, the reporter enthused: \"\"Indeed. What I do isn't always entertaining, and sometimes people hear things they don't like!",
-        "simplified": "Beim Sammeln seines Gongs schw\u00e4rmte der Reporter: \"In der Tat. Was ich tue, ist nicht immer unterhaltsam, und manchmal h\u00f6ren die Leute Dinge, die sie nicht m\u00f6gen!",
+        "source": "When collecting his gong, the reporter enthused: \"\"Indeed. What I do isn't always entertaining, and sometimes people hear things they don't like!",
+        "target": "Beim Sammeln seines Gongs schw\u00e4rmte der Reporter: \"In der Tat. Was ich tue, ist nicht immer unterhaltsam, und manchmal h\u00f6ren die Leute Dinge, die sie nicht m\u00f6gen!",
         "edits": [
             {
                 "id": 0,
@@ -3276,8 +3276,8 @@
             "seg_id": "888",
             "rater": "rater1"
         },
-        "original": "When collecting his gong, the reporter enthused: \"\"Indeed. What I do isn't always entertaining, and sometimes people hear things they don't like!",
-        "simplified": "Beim Sammeln seines Gongs schw\u00e4rmte der Reporter: \"In der Tat. Was ich tue, ist nicht immer unterhaltsam, und manchmal h\u00f6ren die Leute Dinge, die sie nicht m\u00f6gen!",
+        "source": "When collecting his gong, the reporter enthused: \"\"Indeed. What I do isn't always entertaining, and sometimes people hear things they don't like!",
+        "target": "Beim Sammeln seines Gongs schw\u00e4rmte der Reporter: \"In der Tat. Was ich tue, ist nicht immer unterhaltsam, und manchmal h\u00f6ren die Leute Dinge, die sie nicht m\u00f6gen!",
         "edits": [
             {
                 "id": 0,
@@ -3510,8 +3510,8 @@
             "seg_id": "888",
             "rater": "rater6"
         },
-        "original": "When collecting his gong, the reporter enthused: \"\"Indeed. What I do isn't always entertaining, and sometimes people hear things they don't like!",
-        "simplified": "Beim Sammeln seines Gongs schw\u00e4rmte der Reporter: \"In der Tat. Was ich tue, ist nicht immer unterhaltsam, und manchmal h\u00f6ren die Leute Dinge, die sie nicht m\u00f6gen!",
+        "source": "When collecting his gong, the reporter enthused: \"\"Indeed. What I do isn't always entertaining, and sometimes people hear things they don't like!",
+        "target": "Beim Sammeln seines Gongs schw\u00e4rmte der Reporter: \"In der Tat. Was ich tue, ist nicht immer unterhaltsam, und manchmal h\u00f6ren die Leute Dinge, die sie nicht m\u00f6gen!",
         "edits": [
             {
                 "id": 0,
@@ -3792,8 +3792,8 @@
             "seg_id": "629",
             "rater": "rater3"
         },
-        "original": "A competing model, called the gravitational instability model, may explain this unusual system.",
-        "simplified": "Ein konkurrierendes Modell, das Gravitationsinstabilit\u00e4tsmodell genannt wird, k\u00f6nnte dieses ungew\u00f6hnliche System erkl\u00e4ren.",
+        "source": "A competing model, called the gravitational instability model, may explain this unusual system.",
+        "target": "Ein konkurrierendes Modell, das Gravitationsinstabilit\u00e4tsmodell genannt wird, k\u00f6nnte dieses ungew\u00f6hnliche System erkl\u00e4ren.",
         "edits": [
             {
                 "id": 0,
@@ -3821,8 +3821,8 @@
             "seg_id": "629",
             "rater": "rater1"
         },
-        "original": "A competing model, called the gravitational instability model, may explain this unusual system.",
-        "simplified": "Ein konkurrierendes Modell, das \"Gravitationsinstabilit\u00e4tsmodell\" genannt wird, k\u00f6nnte dieses ungew\u00f6hnliche System erkl\u00e4ren.",
+        "source": "A competing model, called the gravitational instability model, may explain this unusual system.",
+        "target": "Ein konkurrierendes Modell, das \"Gravitationsinstabilit\u00e4tsmodell\" genannt wird, k\u00f6nnte dieses ungew\u00f6hnliche System erkl\u00e4ren.",
         "edits": [
             {
                 "id": 0,
@@ -3946,8 +3946,8 @@
             "seg_id": "629",
             "rater": "rater4"
         },
-        "original": "A competing model, called the gravitational instability model, may explain this unusual system.",
-        "simplified": "Ein konkurrierendes Modell, das Gravitationsinstabilit\u00e4tsmodell genannt wird, k\u00f6nnte dieses ungew\u00f6hnliche System erkl\u00e4ren.",
+        "source": "A competing model, called the gravitational instability model, may explain this unusual system.",
+        "target": "Ein konkurrierendes Modell, das Gravitationsinstabilit\u00e4tsmodell genannt wird, k\u00f6nnte dieses ungew\u00f6hnliche System erkl\u00e4ren.",
         "edits": [
             {
                 "id": 0,
@@ -4004,8 +4004,8 @@
             "seg_id": "201",
             "rater": "rater5"
         },
-        "original": "Afghanistan boosts security for presidential election",
-        "simplified": "Afghanistan erh\u00f6ht Sicherheit f\u00fcr Pr\u00e4sidentschaftswahlen",
+        "source": "Afghanistan boosts security for presidential election",
+        "target": "Afghanistan erh\u00f6ht Sicherheit f\u00fcr Pr\u00e4sidentschaftswahlen",
         "edits": [
             {
                 "id": 0,
@@ -4030,8 +4030,8 @@
             "seg_id": "201",
             "rater": "rater4"
         },
-        "original": "Afghanistan boosts security for presidential election",
-        "simplified": "Afghanistan erh\u00f6ht Sicherheit f\u00fcr Pr\u00e4sidentschaftswahlen",
+        "source": "Afghanistan boosts security for presidential election",
+        "target": "Afghanistan erh\u00f6ht Sicherheit f\u00fcr Pr\u00e4sidentschaftswahlen",
         "edits": [
             {
                 "id": 0,
@@ -4091,8 +4091,8 @@
             "seg_id": "201",
             "rater": "rater6"
         },
-        "original": "Afghanistan boosts security for presidential election",
-        "simplified": "Afghanistan erh\u00f6ht Sicherheit f\u00fcr Pr\u00e4sidentschaftswahlen",
+        "source": "Afghanistan boosts security for presidential election",
+        "target": "Afghanistan erh\u00f6ht Sicherheit f\u00fcr Pr\u00e4sidentschaftswahlen",
         "edits": []
     },
     {
@@ -4103,8 +4103,8 @@
             "seg_id": "66",
             "rater": "rater2"
         },
-        "original": "This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.",
-        "simplified": "\u201eDiese KonsultationKonsultation sucht nach Ansichten \u00fcber Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und im n\u00e4chsten Jahr werden wir alle Rechtsvorschriften zur Hundekontrolle eingehender pr\u00fcfen, um zu beurteilen, ob \u00c4nderungen erforderlich sind.",
+        "source": "This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.",
+        "target": "\u201eDiese KonsultationKonsultation sucht nach Ansichten \u00fcber Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und im n\u00e4chsten Jahr werden wir alle Rechtsvorschriften zur Hundekontrolle eingehender pr\u00fcfen, um zu beurteilen, ob \u00c4nderungen erforderlich sind.",
         "edits": [
             {
                 "id": 0,
@@ -4475,8 +4475,8 @@
             "seg_id": "66",
             "rater": "rater1"
         },
-        "original": "This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.",
-        "simplified": "\u201e\u201eDiese Konsultation sucht nach Ansichten \u00fcber Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und im n\u00e4chsten Jahr werden wir alle Rechtsvorschriften zur Hundekontrolle eingehender pr\u00fcfen, um zu beurteilen, ob \u00c4nderungen erforderlich sind.",
+        "source": "This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.",
+        "target": "\u201e\u201eDiese Konsultation sucht nach Ansichten \u00fcber Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und im n\u00e4chsten Jahr werden wir alle Rechtsvorschriften zur Hundekontrolle eingehender pr\u00fcfen, um zu beurteilen, ob \u00c4nderungen erforderlich sind.",
         "edits": [
             {
                 "id": 0,
@@ -4680,8 +4680,8 @@
             "seg_id": "66",
             "rater": "rater6"
         },
-        "original": "This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.",
-        "simplified": "\u201eDiese Konsultation sucht nach Ansichten \u00fcber Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und im n\u00e4chsten Jahr werden wir alle Rechtsvorschriften zur Hundekontrolle eingehender pr\u00fcfen, um zu beurteilen, ob \u00c4nderungen erforderlich sind.",
+        "source": "This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.",
+        "target": "\u201eDiese Konsultation sucht nach Ansichten \u00fcber Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und im n\u00e4chsten Jahr werden wir alle Rechtsvorschriften zur Hundekontrolle eingehender pr\u00fcfen, um zu beurteilen, ob \u00c4nderungen erforderlich sind.",
         "edits": [
             {
                 "id": 0,
@@ -5077,8 +5077,8 @@
             "seg_id": "1317",
             "rater": "rater5"
         },
-        "original": "Court documents say the surgeon was leaving a Walmart store when he was confronted by an armed man and shoved into a van. They say he was tortured for hours before being returned to his car while unconscious. Surveillance video supports the chain of events. Investigators say Nkorina's wife was a client of the surgeon.",
-        "simplified": "Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden verlie\u00df, als er von einem bewaffneten Mann konfrontiert und in einen Lieferwagen geschoben wurde. Sie sagen, dass er stundenlang gefoltert wurde, bevor er bewusstlos in sein Auto zur\u00fcckgebracht wurde. \u00dcberwachungsvideo unterst\u00fctzt die Kette der Ereignisse. Ermittler sagen, Nkorinas Frau war eine Klientin des Chirurgen.",
+        "source": "Court documents say the surgeon was leaving a Walmart store when he was confronted by an armed man and shoved into a van. They say he was tortured for hours before being returned to his car while unconscious. Surveillance video supports the chain of events. Investigators say Nkorina's wife was a client of the surgeon.",
+        "target": "Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden verlie\u00df, als er von einem bewaffneten Mann konfrontiert und in einen Lieferwagen geschoben wurde. Sie sagen, dass er stundenlang gefoltert wurde, bevor er bewusstlos in sein Auto zur\u00fcckgebracht wurde. \u00dcberwachungsvideo unterst\u00fctzt die Kette der Ereignisse. Ermittler sagen, Nkorinas Frau war eine Klientin des Chirurgen.",
         "edits": [
             {
                 "id": 0,
@@ -5295,8 +5295,8 @@
             "seg_id": "1317",
             "rater": "rater4"
         },
-        "original": "Court documents say the surgeon was leaving a Walmart store when he was confronted by an armed man and shoved into a van. They say he was tortured for hours before being returned to his car while unconscious. Surveillance video supports the chain of events. Investigators say Nkorina's wife was a client of the surgeon.",
-        "simplified": "Gerichtsdokumente sagen, dass der Chirurg einen Walmart-LadenGerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden verlie\u00df, als er von einem bewaffneten Mann konfrontiert und in einen Lieferwagen geschoben wurde. Sie sagen, dass er stundenlang gefoltert wurde, bevor er bewusstlos in sein Auto zur\u00fcckgebracht wurde. \u00dcberwachungsvideo unterst\u00fctzt die Kette der Ereignisse. Ermittler sagen, Nkorinas Frau war eine Klientin des Chirurgen.",
+        "source": "Court documents say the surgeon was leaving a Walmart store when he was confronted by an armed man and shoved into a van. They say he was tortured for hours before being returned to his car while unconscious. Surveillance video supports the chain of events. Investigators say Nkorina's wife was a client of the surgeon.",
+        "target": "Gerichtsdokumente sagen, dass der Chirurg einen Walmart-LadenGerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden verlie\u00df, als er von einem bewaffneten Mann konfrontiert und in einen Lieferwagen geschoben wurde. Sie sagen, dass er stundenlang gefoltert wurde, bevor er bewusstlos in sein Auto zur\u00fcckgebracht wurde. \u00dcberwachungsvideo unterst\u00fctzt die Kette der Ereignisse. Ermittler sagen, Nkorinas Frau war eine Klientin des Chirurgen.",
         "edits": [
             {
                 "id": 0,
@@ -5924,8 +5924,8 @@
             "seg_id": "1317",
             "rater": "rater6"
         },
-        "original": "Court documents say the surgeon was leaving a Walmart store when he was confronted by an armed man and shoved into a van. They say he was tortured for hours before being returned to his car while unconscious. Surveillance video supports the chain of events. Investigators say Nkorina's wife was a client of the surgeon.",
-        "simplified": "Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden verlie\u00df, als er von einem bewaffneten Mann konfrontiert und in einen Lieferwagen geschoben wurde. Sie sagen, dass er stundenlang gefoltert wurde, bevor er bewusstlos in sein Auto zur\u00fcckgebracht wurde. \u00dcberwachungsvideo unterst\u00fctzt die Kette der Ereignisse. Ermittler sagen, Nkorinas Frau war eine Klientin des Chirurgen.",
+        "source": "Court documents say the surgeon was leaving a Walmart store when he was confronted by an armed man and shoved into a van. They say he was tortured for hours before being returned to his car while unconscious. Surveillance video supports the chain of events. Investigators say Nkorina's wife was a client of the surgeon.",
+        "target": "Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden verlie\u00df, als er von einem bewaffneten Mann konfrontiert und in einen Lieferwagen geschoben wurde. Sie sagen, dass er stundenlang gefoltert wurde, bevor er bewusstlos in sein Auto zur\u00fcckgebracht wurde. \u00dcberwachungsvideo unterst\u00fctzt die Kette der Ereignisse. Ermittler sagen, Nkorinas Frau war eine Klientin des Chirurgen.",
         "edits": [
             {
                 "id": 0,
@@ -6396,8 +6396,8 @@
             "seg_id": "123",
             "rater": "rater3"
         },
-        "original": "Patriot missile system to Saudi Arabia after Iran oil attacks",
-        "simplified": "Patriot-Raketensystem nach Iran-\u00d6langriffen nach Saudi-Arabien",
+        "source": "Patriot missile system to Saudi Arabia after Iran oil attacks",
+        "target": "Patriot-Raketensystem nach Iran-\u00d6langriffen nach Saudi-Arabien",
         "edits": [
             {
                 "id": 0,
@@ -6512,8 +6512,8 @@
             "seg_id": "123",
             "rater": "rater2"
         },
-        "original": "Patriot missile system to Saudi Arabia after Iran oil attacks",
-        "simplified": "Patriot-Raketensystem nach Iran-\u00d6langriffen nach Saudi-Arabien",
+        "source": "Patriot missile system to Saudi Arabia after Iran oil attacks",
+        "target": "Patriot-Raketensystem nach Iran-\u00d6langriffen nach Saudi-Arabien",
         "edits": [
             {
                 "id": 0,
@@ -6708,8 +6708,8 @@
             "seg_id": "123",
             "rater": "rater1"
         },
-        "original": "Patriot missile system to Saudi Arabia after Iran oil attacks",
-        "simplified": "Patriot-Raketensystem nach Iran-\u00d6langriffen nach Saudi-Arabien",
+        "source": "Patriot missile system to Saudi Arabia after Iran oil attacks",
+        "target": "Patriot-Raketensystem nach Iran-\u00d6langriffen nach Saudi-Arabien",
         "edits": [
             {
                 "id": 0,
@@ -6779,8 +6779,8 @@
             "seg_id": "431",
             "rater": "rater3"
         },
-        "original": "The Nancy Pelosi Way\"\" will be released Nov. 26, Skyhorse Publishing announced Thursday. Christine Pelosi's book will examine how a mother of five became the first female house speaker and her current leadership of House Democrats during the Trump administration. According to Skyhorse, Christine Pelosi will weave together \"\"the professional and personal experiences\"\" of her mother.",
-        "simplified": "\u201eThe Nancy Pelosi Way\u201c wird am 26. November ver\u00f6ffentlicht, k\u00fcndigte Skyhorse Publishing am Donnerstag an. Christine Pelosis Buch wird untersuchen, wie eine f\u00fcnffache Mutter die erste weibliche Sprecherin im Repr\u00e4sentantenhausRepr\u00e4sentantenhaus und ihre derzeitige F\u00fchrung der Demokraten im Repr\u00e4sentantenhaus w\u00e4hrend der Trump-Administration wurde. Laut Skyhorse wird Christine Pelosi \u201edie beruflichen und pers\u00f6nlichen Erfahrungen\u201c ihrer Mutter miteinander verweben.",
+        "source": "The Nancy Pelosi Way\"\" will be released Nov. 26, Skyhorse Publishing announced Thursday. Christine Pelosi's book will examine how a mother of five became the first female house speaker and her current leadership of House Democrats during the Trump administration. According to Skyhorse, Christine Pelosi will weave together \"\"the professional and personal experiences\"\" of her mother.",
+        "target": "\u201eThe Nancy Pelosi Way\u201c wird am 26. November ver\u00f6ffentlicht, k\u00fcndigte Skyhorse Publishing am Donnerstag an. Christine Pelosis Buch wird untersuchen, wie eine f\u00fcnffache Mutter die erste weibliche Sprecherin im Repr\u00e4sentantenhausRepr\u00e4sentantenhaus und ihre derzeitige F\u00fchrung der Demokraten im Repr\u00e4sentantenhaus w\u00e4hrend der Trump-Administration wurde. Laut Skyhorse wird Christine Pelosi \u201edie beruflichen und pers\u00f6nlichen Erfahrungen\u201c ihrer Mutter miteinander verweben.",
         "edits": [
             {
                 "id": 0,
@@ -7484,8 +7484,8 @@
             "seg_id": "431",
             "rater": "rater1"
         },
-        "original": "The Nancy Pelosi Way\"\" will be released Nov. 26, Skyhorse Publishing announced Thursday. Christine Pelosi's book will examine how a mother of five became the first female house speaker and her current leadership of House Democrats during the Trump administration. According to Skyhorse, Christine Pelosi will weave together \"\"the professional and personal experiences\"\" of her mother.",
-        "simplified": "\u201eThe Nancy Pelosi Way\u201c wird am 26. November ver\u00f6ffentlicht, k\u00fcndigte Skyhorse Publishing am Donnerstag an. Christine Pelosis Buch wird untersuchen, wie eine f\u00fcnffache Mutter die erste weibliche Sprecherin im Repr\u00e4sentantenhaus und ihre derzeitige F\u00fchrung der Demokraten im Repr\u00e4sentantenhaus w\u00e4hrend der Trump-Administration wurde. Laut Skyhorse wird Christine Pelosi \u201edie beruflichen und pers\u00f6nlichen Erfahrungen\u201c ihrer Mutter miteinander verweben.",
+        "source": "The Nancy Pelosi Way\"\" will be released Nov. 26, Skyhorse Publishing announced Thursday. Christine Pelosi's book will examine how a mother of five became the first female house speaker and her current leadership of House Democrats during the Trump administration. According to Skyhorse, Christine Pelosi will weave together \"\"the professional and personal experiences\"\" of her mother.",
+        "target": "\u201eThe Nancy Pelosi Way\u201c wird am 26. November ver\u00f6ffentlicht, k\u00fcndigte Skyhorse Publishing am Donnerstag an. Christine Pelosis Buch wird untersuchen, wie eine f\u00fcnffache Mutter die erste weibliche Sprecherin im Repr\u00e4sentantenhaus und ihre derzeitige F\u00fchrung der Demokraten im Repr\u00e4sentantenhaus w\u00e4hrend der Trump-Administration wurde. Laut Skyhorse wird Christine Pelosi \u201edie beruflichen und pers\u00f6nlichen Erfahrungen\u201c ihrer Mutter miteinander verweben.",
         "edits": [
             {
                 "id": 0,
@@ -7865,8 +7865,8 @@
             "seg_id": "431",
             "rater": "rater4"
         },
-        "original": "The Nancy Pelosi Way\"\" will be released Nov. 26, Skyhorse Publishing announced Thursday. Christine Pelosi's book will examine how a mother of five became the first female house speaker and her current leadership of House Democrats during the Trump administration. According to Skyhorse, Christine Pelosi will weave together \"\"the professional and personal experiences\"\" of her mother.",
-        "simplified": "\u201eThe Nancy Pelosi Way\u201c wird am 26. November ver\u00f6ffentlicht, k\u00fcndigte Skyhorse Publishing am Donnerstag an. Christine Pelosis Buch wird untersuchen, wie eine f\u00fcnffache Mutter die erste weibliche Sprecherin im Repr\u00e4sentantenhaus und ihre derzeitige F\u00fchrung der Demokraten im Repr\u00e4sentantenhaus w\u00e4hrend der Trump-Administration wurde. Laut Skyhorse wird Christine Pelosi \u201edie beruflichen und pers\u00f6nlichen Erfahrungen\u201c ihrer Mutter miteinander verweben.",
+        "source": "The Nancy Pelosi Way\"\" will be released Nov. 26, Skyhorse Publishing announced Thursday. Christine Pelosi's book will examine how a mother of five became the first female house speaker and her current leadership of House Democrats during the Trump administration. According to Skyhorse, Christine Pelosi will weave together \"\"the professional and personal experiences\"\" of her mother.",
+        "target": "\u201eThe Nancy Pelosi Way\u201c wird am 26. November ver\u00f6ffentlicht, k\u00fcndigte Skyhorse Publishing am Donnerstag an. Christine Pelosis Buch wird untersuchen, wie eine f\u00fcnffache Mutter die erste weibliche Sprecherin im Repr\u00e4sentantenhaus und ihre derzeitige F\u00fchrung der Demokraten im Repr\u00e4sentantenhaus w\u00e4hrend der Trump-Administration wurde. Laut Skyhorse wird Christine Pelosi \u201edie beruflichen und pers\u00f6nlichen Erfahrungen\u201c ihrer Mutter miteinander verweben.",
         "edits": [
             {
                 "id": 0,
@@ -8227,8 +8227,8 @@
             "seg_id": "869",
             "rater": "rater5"
         },
-        "original": "Jonathan Van Ness Just Hung Out With Nancy Pelosi And They've Got A Plan",
-        "simplified": "Jonathan Van Ness hat sich einfach mit Nancy Pelosi abgefunden und sie haben einen Plan",
+        "source": "Jonathan Van Ness Just Hung Out With Nancy Pelosi And They've Got A Plan",
+        "target": "Jonathan Van Ness hat sich einfach mit Nancy Pelosi abgefunden und sie haben einen Plan",
         "edits": [
             {
                 "id": 0,
@@ -8304,8 +8304,8 @@
             "seg_id": "869",
             "rater": "rater4"
         },
-        "original": "Jonathan Van Ness Just Hung Out With Nancy Pelosi And They've Got A Plan",
-        "simplified": "Jonathan Van Ness hat sich einfach mit Nancy Pelosi abgefunden und sie haben einen Plan",
+        "source": "Jonathan Van Ness Just Hung Out With Nancy Pelosi And They've Got A Plan",
+        "target": "Jonathan Van Ness hat sich einfach mit Nancy Pelosi abgefunden und sie haben einen Plan",
         "edits": [
             {
                 "id": 0,
@@ -8477,8 +8477,8 @@
             "seg_id": "869",
             "rater": "rater6"
         },
-        "original": "Jonathan Van Ness Just Hung Out With Nancy Pelosi And They've Got A Plan",
-        "simplified": "Jonathan Van Ness hat sich einfach mit Nancy Pelosi abgefunden und sie haben einen Plan",
+        "source": "Jonathan Van Ness Just Hung Out With Nancy Pelosi And They've Got A Plan",
+        "target": "Jonathan Van Ness hat sich einfach mit Nancy Pelosi abgefunden und sie haben einen Plan",
         "edits": [
             {
                 "id": 0,
@@ -8618,8 +8618,8 @@
             "seg_id": "366",
             "rater": "rater3"
         },
-        "original": "Most US cinemas have banned masks, face paint and toy weapons after the 2012 mass shooting in Aurora, Colorado, which happened during a screening of another Batman flick, \"\"The Dark Knight Rises.\"\" The gunman wore a Joker costume when he went on a gun and tear-gas rampage, killing 12 people and injuring 70 others. Body costumes that don't hide a person's identity, however, have been generally allowed in theaters.",
-        "simplified": "Die meisten US-Kinos haben Masken, Gesichtsfarbe und Spielzeugwaffen nach der Massenerschie\u00dfung 2012 in Aurora, Colorado, verboten, die w\u00e4hrend einer Vorf\u00fchrung eines anderen Batman-Streifens, \u201eThe Dark Knight Rises\u201c, geschah. Der Sch\u00fctze trug ein Joker-Kost\u00fcm, als er mit einer Pistole und Tr\u00e4nengas randalierte, 12 Menschen t\u00f6tete und 70 weitere verletzte. K\u00f6rperkost\u00fcme, die die Identit\u00e4t einer Person nicht verbergen, wurden jedoch im Allgemeinen in Theatern erlaubt.",
+        "source": "Most US cinemas have banned masks, face paint and toy weapons after the 2012 mass shooting in Aurora, Colorado, which happened during a screening of another Batman flick, \"\"The Dark Knight Rises.\"\" The gunman wore a Joker costume when he went on a gun and tear-gas rampage, killing 12 people and injuring 70 others. Body costumes that don't hide a person's identity, however, have been generally allowed in theaters.",
+        "target": "Die meisten US-Kinos haben Masken, Gesichtsfarbe und Spielzeugwaffen nach der Massenerschie\u00dfung 2012 in Aurora, Colorado, verboten, die w\u00e4hrend einer Vorf\u00fchrung eines anderen Batman-Streifens, \u201eThe Dark Knight Rises\u201c, geschah. Der Sch\u00fctze trug ein Joker-Kost\u00fcm, als er mit einer Pistole und Tr\u00e4nengas randalierte, 12 Menschen t\u00f6tete und 70 weitere verletzte. K\u00f6rperkost\u00fcme, die die Identit\u00e4t einer Person nicht verbergen, wurden jedoch im Allgemeinen in Theatern erlaubt.",
         "edits": [
             {
                 "id": 0,
@@ -8756,8 +8756,8 @@
             "seg_id": "366",
             "rater": "rater2"
         },
-        "original": "Most US cinemas have banned masks, face paint and toy weapons after the 2012 mass shooting in Aurora, Colorado, which happened during a screening of another Batman flick, \"\"The Dark Knight Rises.\"\" The gunman wore a Joker costume when he went on a gun and tear-gas rampage, killing 12 people and injuring 70 others. Body costumes that don't hide a person's identity, however, have been generally allowed in theaters.",
-        "simplified": "Die meisten US-Kinos haben Masken, Gesichtsfarbe und Spielzeugwaffen nach der Massenerschie\u00dfung 2012 in Aurora, Colorado, verboten, die w\u00e4hrend einer Vorf\u00fchrung eines anderen Batman-Streifens, \u201eThe Dark Knight Rises\u201c, geschah. Der Sch\u00fctze trug ein Joker-Kost\u00fcm, als er mit einer Pistole und Tr\u00e4nengas randalierte, 12 Menschen t\u00f6tete und 70 weitere verletzte. K\u00f6rperkost\u00fcme, die die Identit\u00e4t einer Person nicht verbergen, wurden jedoch im Allgemeinen in Theatern erlaubt.",
+        "source": "Most US cinemas have banned masks, face paint and toy weapons after the 2012 mass shooting in Aurora, Colorado, which happened during a screening of another Batman flick, \"\"The Dark Knight Rises.\"\" The gunman wore a Joker costume when he went on a gun and tear-gas rampage, killing 12 people and injuring 70 others. Body costumes that don't hide a person's identity, however, have been generally allowed in theaters.",
+        "target": "Die meisten US-Kinos haben Masken, Gesichtsfarbe und Spielzeugwaffen nach der Massenerschie\u00dfung 2012 in Aurora, Colorado, verboten, die w\u00e4hrend einer Vorf\u00fchrung eines anderen Batman-Streifens, \u201eThe Dark Knight Rises\u201c, geschah. Der Sch\u00fctze trug ein Joker-Kost\u00fcm, als er mit einer Pistole und Tr\u00e4nengas randalierte, 12 Menschen t\u00f6tete und 70 weitere verletzte. K\u00f6rperkost\u00fcme, die die Identit\u00e4t einer Person nicht verbergen, wurden jedoch im Allgemeinen in Theatern erlaubt.",
         "edits": [
             {
                 "id": 0,
@@ -9265,8 +9265,8 @@
             "seg_id": "366",
             "rater": "rater1"
         },
-        "original": "Most US cinemas have banned masks, face paint and toy weapons after the 2012 mass shooting in Aurora, Colorado, which happened during a screening of another Batman flick, \"\"The Dark Knight Rises.\"\" The gunman wore a Joker costume when he went on a gun and tear-gas rampage, killing 12 people and injuring 70 others. Body costumes that don't hide a person's identity, however, have been generally allowed in theaters.",
-        "simplified": "Die meisten US-Kinos haben Masken, Gesichtsfarbe und Spielzeugwaffen nach der Massenerschie\u00dfung 2012 in Aurora, Colorado, verboten, die w\u00e4hrend einer Vorf\u00fchrung eines anderen Batman-Streifens, \u201eThe Dark Knight Rises\u201c, geschah. Der Sch\u00fctze trug ein Joker-Kost\u00fcm, als er mit einer Pistole und Tr\u00e4nengas randalierte, 12 Menschen t\u00f6tete und 70 weitere verletzte. K\u00f6rperkost\u00fcme, die die Identit\u00e4t einer Person nicht verbergen, wurden jedoch im Allgemeinen in Theatern erlaubt.",
+        "source": "Most US cinemas have banned masks, face paint and toy weapons after the 2012 mass shooting in Aurora, Colorado, which happened during a screening of another Batman flick, \"\"The Dark Knight Rises.\"\" The gunman wore a Joker costume when he went on a gun and tear-gas rampage, killing 12 people and injuring 70 others. Body costumes that don't hide a person's identity, however, have been generally allowed in theaters.",
+        "target": "Die meisten US-Kinos haben Masken, Gesichtsfarbe und Spielzeugwaffen nach der Massenerschie\u00dfung 2012 in Aurora, Colorado, verboten, die w\u00e4hrend einer Vorf\u00fchrung eines anderen Batman-Streifens, \u201eThe Dark Knight Rises\u201c, geschah. Der Sch\u00fctze trug ein Joker-Kost\u00fcm, als er mit einer Pistole und Tr\u00e4nengas randalierte, 12 Menschen t\u00f6tete und 70 weitere verletzte. K\u00f6rperkost\u00fcme, die die Identit\u00e4t einer Person nicht verbergen, wurden jedoch im Allgemeinen in Theatern erlaubt.",
         "edits": [
             {
                 "id": 0,
@@ -9650,8 +9650,8 @@
             "seg_id": "214",
             "rater": "rater5"
         },
-        "original": "The snaps appeared to show Texan millionaire John Bryan kissing and sucking the Duchess\"\" toes and the arch of her foot, and Prince Philip in particular, is said to have had the strongest reaction to her daughter-in-law's scandalous antics.",
-        "simplified": "Die Schnappsch\u00fcsse schienen den texanischen Million\u00e4r John Bryan zu zeigen, der die Zehen und den Fu\u00dfbogen der Herzogin k\u00fcsste und lutschte, und Prinz Philip im Besonderen soll die st\u00e4rkste Reaktion auf die skandal\u00f6sen Possen ihrer Schwiegertochter gehabt haben.",
+        "source": "The snaps appeared to show Texan millionaire John Bryan kissing and sucking the Duchess\"\" toes and the arch of her foot, and Prince Philip in particular, is said to have had the strongest reaction to her daughter-in-law's scandalous antics.",
+        "target": "Die Schnappsch\u00fcsse schienen den texanischen Million\u00e4r John Bryan zu zeigen, der die Zehen und den Fu\u00dfbogen der Herzogin k\u00fcsste und lutschte, und Prinz Philip im Besonderen soll die st\u00e4rkste Reaktion auf die skandal\u00f6sen Possen ihrer Schwiegertochter gehabt haben.",
         "edits": [
             {
                 "id": 0,
@@ -10115,8 +10115,8 @@
             "seg_id": "214",
             "rater": "rater1"
         },
-        "original": "The snaps appeared to show Texan millionaire John Bryan kissing and sucking the Duchess\"\" toes and the arch of her foot, and Prince Philip in particular, is said to have had the strongest reaction to her daughter-in-law's scandalous antics.",
-        "simplified": "Die Schnappsch\u00fcsse schienen den texanischen Million\u00e4r John Bryan zu zeigen, der die Zehen und den Fu\u00dfbogen der Herzogin k\u00fcsste und lutschte, und Prinz Philip im Besonderen soll die st\u00e4rkste Reaktion auf die skandal\u00f6sen Possen ihrerihrer Schwiegertochter gehabt haben.",
+        "source": "The snaps appeared to show Texan millionaire John Bryan kissing and sucking the Duchess\"\" toes and the arch of her foot, and Prince Philip in particular, is said to have had the strongest reaction to her daughter-in-law's scandalous antics.",
+        "target": "Die Schnappsch\u00fcsse schienen den texanischen Million\u00e4r John Bryan zu zeigen, der die Zehen und den Fu\u00dfbogen der Herzogin k\u00fcsste und lutschte, und Prinz Philip im Besonderen soll die st\u00e4rkste Reaktion auf die skandal\u00f6sen Possen ihrerihrer Schwiegertochter gehabt haben.",
         "edits": [
             {
                 "id": 0,
@@ -10564,8 +10564,8 @@
             "seg_id": "214",
             "rater": "rater6"
         },
-        "original": "The snaps appeared to show Texan millionaire John Bryan kissing and sucking the Duchess\"\" toes and the arch of her foot, and Prince Philip in particular, is said to have had the strongest reaction to her daughter-in-law's scandalous antics.",
-        "simplified": "Die Schnappsch\u00fcsse schienen den texanischen Million\u00e4r John Bryan zu zeigen, der die Zehen und den Fu\u00dfbogen der Herzogin k\u00fcsste und lutschte, und Prinz Philip im Besonderen soll die st\u00e4rkste Reaktion auf die skandal\u00f6sen Possen ihrer Schwiegertochter gehabt haben.",
+        "source": "The snaps appeared to show Texan millionaire John Bryan kissing and sucking the Duchess\"\" toes and the arch of her foot, and Prince Philip in particular, is said to have had the strongest reaction to her daughter-in-law's scandalous antics.",
+        "target": "Die Schnappsch\u00fcsse schienen den texanischen Million\u00e4r John Bryan zu zeigen, der die Zehen und den Fu\u00dfbogen der Herzogin k\u00fcsste und lutschte, und Prinz Philip im Besonderen soll die st\u00e4rkste Reaktion auf die skandal\u00f6sen Possen ihrer Schwiegertochter gehabt haben.",
         "edits": [
             {
                 "id": 0,
@@ -10913,8 +10913,8 @@
             "seg_id": "1138",
             "rater": "rater3"
         },
-        "original": "And Cesar Chavez, who modeled many of his tactics on Gandhi's in leading the farmworkers\"\" movement, traced his political awakening to a newsreel he watched at the age of 11 or 12 showing that \"\"this half-naked man without a gun had conquered the might of the British Empire.\"\"",
-        "simplified": "Und Cesar Chavez, der viele seiner Taktiken Gandhis bei der F\u00fchrung der Bauernbewegung nachempfunden hatte, f\u00fchrte sein politisches Erwachen auf eine Wochenschau zur\u00fcck, die er im Alter von 11 oder 12 Jahren beobachtete und zeigte, dass \u201edieser halbnackte Mann ohne Gewehr die Macht des britischen Empire erobert hatte\u201c.",
+        "source": "And Cesar Chavez, who modeled many of his tactics on Gandhi's in leading the farmworkers\"\" movement, traced his political awakening to a newsreel he watched at the age of 11 or 12 showing that \"\"this half-naked man without a gun had conquered the might of the British Empire.\"\"",
+        "target": "Und Cesar Chavez, der viele seiner Taktiken Gandhis bei der F\u00fchrung der Bauernbewegung nachempfunden hatte, f\u00fchrte sein politisches Erwachen auf eine Wochenschau zur\u00fcck, die er im Alter von 11 oder 12 Jahren beobachtete und zeigte, dass \u201edieser halbnackte Mann ohne Gewehr die Macht des britischen Empire erobert hatte\u201c.",
         "edits": [
             {
                 "id": 0,
@@ -11375,8 +11375,8 @@
             "seg_id": "1138",
             "rater": "rater5"
         },
-        "original": "And Cesar Chavez, who modeled many of his tactics on Gandhi's in leading the farmworkers\"\" movement, traced his political awakening to a newsreel he watched at the age of 11 or 12 showing that \"\"this half-naked man without a gun had conquered the might of the British Empire.\"\"",
-        "simplified": "Und Cesar Chavez, der viele seiner Taktiken Gandhis bei der F\u00fchrung der Bauernbewegung nachempfunden hatte, f\u00fchrte sein politisches Erwachen auf eine Wochenschau zur\u00fcck, die er im Alter von 11 oder 12 Jahren beobachtete und zeigte, dass \u201edieser halbnackte Mann ohne Gewehr die Macht des britischen Empire erobert hatte\u201c.",
+        "source": "And Cesar Chavez, who modeled many of his tactics on Gandhi's in leading the farmworkers\"\" movement, traced his political awakening to a newsreel he watched at the age of 11 or 12 showing that \"\"this half-naked man without a gun had conquered the might of the British Empire.\"\"",
+        "target": "Und Cesar Chavez, der viele seiner Taktiken Gandhis bei der F\u00fchrung der Bauernbewegung nachempfunden hatte, f\u00fchrte sein politisches Erwachen auf eine Wochenschau zur\u00fcck, die er im Alter von 11 oder 12 Jahren beobachtete und zeigte, dass \u201edieser halbnackte Mann ohne Gewehr die Macht des britischen Empire erobert hatte\u201c.",
         "edits": [
             {
                 "id": 0,
@@ -11827,8 +11827,8 @@
             "seg_id": "1138",
             "rater": "rater6"
         },
-        "original": "And Cesar Chavez, who modeled many of his tactics on Gandhi's in leading the farmworkers\"\" movement, traced his political awakening to a newsreel he watched at the age of 11 or 12 showing that \"\"this half-naked man without a gun had conquered the might of the British Empire.\"\"",
-        "simplified": "Und Cesar Chavez, der viele seiner Taktiken Gandhis bei der F\u00fchrung der Bauernbewegung nachempfunden hatte, f\u00fchrte sein politisches Erwachen auf eine Wochenschau zur\u00fcck, die er im Alter von 11 oder 12 Jahren beobachtete und zeigte, dass \u201edieser halbnackte Mann ohne Gewehr die Macht des britischen Empire erobert hatte\u201c.",
+        "source": "And Cesar Chavez, who modeled many of his tactics on Gandhi's in leading the farmworkers\"\" movement, traced his political awakening to a newsreel he watched at the age of 11 or 12 showing that \"\"this half-naked man without a gun had conquered the might of the British Empire.\"\"",
+        "target": "Und Cesar Chavez, der viele seiner Taktiken Gandhis bei der F\u00fchrung der Bauernbewegung nachempfunden hatte, f\u00fchrte sein politisches Erwachen auf eine Wochenschau zur\u00fcck, die er im Alter von 11 oder 12 Jahren beobachtete und zeigte, dass \u201edieser halbnackte Mann ohne Gewehr die Macht des britischen Empire erobert hatte\u201c.",
         "edits": [
             {
                 "id": 0,
@@ -12250,8 +12250,8 @@
             "seg_id": "297",
             "rater": "rater3"
         },
-        "original": "We think that's going to be incredibly unlikely so we wouldn't ask anyone to do that in advance,\"\" he said.",
-        "simplified": "\u201eWir denken, dass das unglaublich unwahrscheinlich sein wird, also w\u00fcrden wir niemanden bitten, das im Voraus zu tun\u201c, sagte er.",
+        "source": "We think that's going to be incredibly unlikely so we wouldn't ask anyone to do that in advance,\"\" he said.",
+        "target": "\u201eWir denken, dass das unglaublich unwahrscheinlich sein wird, also w\u00fcrden wir niemanden bitten, das im Voraus zu tun\u201c, sagte er.",
         "edits": [
             {
                 "id": 0,
@@ -12517,8 +12517,8 @@
             "seg_id": "297",
             "rater": "rater2"
         },
-        "original": "We think that's going to be incredibly unlikely so we wouldn't ask anyone to do that in advance,\"\" he said.",
-        "simplified": "\u201eWir denken, dass das unglaublich unwahrscheinlich sein wird, also w\u00fcrden wir niemanden bitten, das im Voraus zu tun\u201c, sagte er.",
+        "source": "We think that's going to be incredibly unlikely so we wouldn't ask anyone to do that in advance,\"\" he said.",
+        "target": "\u201eWir denken, dass das unglaublich unwahrscheinlich sein wird, also w\u00fcrden wir niemanden bitten, das im Voraus zu tun\u201c, sagte er.",
         "edits": [
             {
                 "id": 0,
@@ -12668,8 +12668,8 @@
             "seg_id": "297",
             "rater": "rater4"
         },
-        "original": "We think that's going to be incredibly unlikely so we wouldn't ask anyone to do that in advance,\"\" he said.",
-        "simplified": "\u201eWir denken, dass das unglaublich unwahrscheinlich sein wirdsein wird, also w\u00fcrden wir niemanden bitten, das im Voraus zu tun\u201c, sagte er.",
+        "source": "We think that's going to be incredibly unlikely so we wouldn't ask anyone to do that in advance,\"\" he said.",
+        "target": "\u201eWir denken, dass das unglaublich unwahrscheinlich sein wirdsein wird, also w\u00fcrden wir niemanden bitten, das im Voraus zu tun\u201c, sagte er.",
         "edits": [
             {
                 "id": 0,
@@ -12989,8 +12989,8 @@
             "seg_id": "1034",
             "rater": "rater5"
         },
-        "original": "Five Greek and Georgian citizens have appeared in court on charges of belonging to a criminal organization that allegedly sold babies for adoption.",
-        "simplified": "F\u00fcnf griechische und georgische B\u00fcrger sind vor Gericht erschienen, weil sie einer kriminellen Organisation angeh\u00f6rten, die angeblich Babys zur Adoption verkaufte.",
+        "source": "Five Greek and Georgian citizens have appeared in court on charges of belonging to a criminal organization that allegedly sold babies for adoption.",
+        "target": "F\u00fcnf griechische und georgische B\u00fcrger sind vor Gericht erschienen, weil sie einer kriminellen Organisation angeh\u00f6rten, die angeblich Babys zur Adoption verkaufte.",
         "edits": [
             {
                 "id": 0,
@@ -13041,8 +13041,8 @@
             "seg_id": "1034",
             "rater": "rater2"
         },
-        "original": "Five Greek and Georgian citizens have appeared in court on charges of belonging to a criminal organization that allegedly sold babies for adoption.",
-        "simplified": "F\u00fcnf griechische und georgische B\u00fcrger sind vor Gericht erschienen, weil sie einer kriminellen Organisation angeh\u00f6rten, die angeblich Babys zur Adoption verkaufte.",
+        "source": "Five Greek and Georgian citizens have appeared in court on charges of belonging to a criminal organization that allegedly sold babies for adoption.",
+        "target": "F\u00fcnf griechische und georgische B\u00fcrger sind vor Gericht erschienen, weil sie einer kriminellen Organisation angeh\u00f6rten, die angeblich Babys zur Adoption verkaufte.",
         "edits": [
             {
                 "id": 0,
@@ -13138,8 +13138,8 @@
             "seg_id": "1034",
             "rater": "rater6"
         },
-        "original": "Five Greek and Georgian citizens have appeared in court on charges of belonging to a criminal organization that allegedly sold babies for adoption.",
-        "simplified": "F\u00fcnf griechische und georgische B\u00fcrger sind vor Gericht erschienen, weil sie einer kriminellen Organisation angeh\u00f6rten, die angeblich Babys zur Adoption verkaufte.",
+        "source": "Five Greek and Georgian citizens have appeared in court on charges of belonging to a criminal organization that allegedly sold babies for adoption.",
+        "target": "F\u00fcnf griechische und georgische B\u00fcrger sind vor Gericht erschienen, weil sie einer kriminellen Organisation angeh\u00f6rten, die angeblich Babys zur Adoption verkaufte.",
         "edits": [
             {
                 "id": 0,
@@ -13242,8 +13242,8 @@
             "seg_id": "1037",
             "rater": "rater5"
         },
-        "original": "A total 12 people were arrested this week in connection with the alleged illegal adoptions and the alleged sale of human eggs. Another 54 have been charged with complicity.",
-        "simplified": "Insgesamt 12 Personen wurden diese Woche im Zusammenhang mit den mutma\u00dflichen illegalen Adoptionen und dem angeblichen Verkauf von menschlichen Eiern festgenommen, weitere 54 wurden wegen Mitt\u00e4terschaft angeklagt.",
+        "source": "A total 12 people were arrested this week in connection with the alleged illegal adoptions and the alleged sale of human eggs. Another 54 have been charged with complicity.",
+        "target": "Insgesamt 12 Personen wurden diese Woche im Zusammenhang mit den mutma\u00dflichen illegalen Adoptionen und dem angeblichen Verkauf von menschlichen Eiern festgenommen, weitere 54 wurden wegen Mitt\u00e4terschaft angeklagt.",
         "edits": [
             {
                 "id": 0,
@@ -13383,8 +13383,8 @@
             "seg_id": "1037",
             "rater": "rater2"
         },
-        "original": "A total 12 people were arrested this week in connection with the alleged illegal adoptions and the alleged sale of human eggs. Another 54 have been charged with complicity.",
-        "simplified": "Insgesamt 12 Personen wurden diese Woche im Zusammenhang mit den mutma\u00dflichen illegalen Adoptionen und dem angeblichen Verkauf von menschlichen Eiern festgenommen, weitere 54 wurden wegen Mitt\u00e4terschaft angeklagt.",
+        "source": "A total 12 people were arrested this week in connection with the alleged illegal adoptions and the alleged sale of human eggs. Another 54 have been charged with complicity.",
+        "target": "Insgesamt 12 Personen wurden diese Woche im Zusammenhang mit den mutma\u00dflichen illegalen Adoptionen und dem angeblichen Verkauf von menschlichen Eiern festgenommen, weitere 54 wurden wegen Mitt\u00e4terschaft angeklagt.",
         "edits": [
             {
                 "id": 0,
@@ -13473,8 +13473,8 @@
             "seg_id": "1037",
             "rater": "rater6"
         },
-        "original": "A total 12 people were arrested this week in connection with the alleged illegal adoptions and the alleged sale of human eggs. Another 54 have been charged with complicity.",
-        "simplified": "Insgesamt 12 Personen wurden diese Woche im Zusammenhang mit den mutma\u00dflichen illegalen Adoptionen und dem angeblichen Verkauf von menschlichen Eiern festgenommen, weitere 54 wurden wegen Mitt\u00e4terschaft angeklagt.",
+        "source": "A total 12 people were arrested this week in connection with the alleged illegal adoptions and the alleged sale of human eggs. Another 54 have been charged with complicity.",
+        "target": "Insgesamt 12 Personen wurden diese Woche im Zusammenhang mit den mutma\u00dflichen illegalen Adoptionen und dem angeblichen Verkauf von menschlichen Eiern festgenommen, weitere 54 wurden wegen Mitt\u00e4terschaft angeklagt.",
         "edits": [
             {
                 "id": 0,
@@ -13595,8 +13595,8 @@
             "seg_id": "378",
             "rater": "rater3"
         },
-        "original": "Christie Hefner, businesswoman and daughter of Playboy Founder, Hugh Hefner, says \"\"The Girlfriend's Guide to Closing The Deal\"\" is both highly entertaining and very helpful. Melody weaves together personal anecdotes, triumphs, and setbacks with useful lessons learned. From how to own your ideas in a meeting to when its time to \"\"friend up,\"\" everyone can benefit from Melody's story.\"\"",
-        "simplified": "Christie Hefner, Gesch\u00e4ftsfrau und Tochter des Playboy-Gr\u00fcnders Hugh Hefner, sagt: \"The Girlfriend\u2019s Guide to Closing The Deal\" ist sowohl sehr unterhaltsam als auch sehr hilfreich. Melody verwebt pers\u00f6nliche Anekdoten, Triumphe und R\u00fcckschl\u00e4ge mit n\u00fctzlichen Lektionen. Vom Besitzen Ihrer Ideen in einem Meeting bis zu dem Zeitpunkt, an dem es Zeit ist, sich zu \"freunden\", kann jeder von Melodys Geschichte profitieren.\u201c",
+        "source": "Christie Hefner, businesswoman and daughter of Playboy Founder, Hugh Hefner, says \"\"The Girlfriend's Guide to Closing The Deal\"\" is both highly entertaining and very helpful. Melody weaves together personal anecdotes, triumphs, and setbacks with useful lessons learned. From how to own your ideas in a meeting to when its time to \"\"friend up,\"\" everyone can benefit from Melody's story.\"\"",
+        "target": "Christie Hefner, Gesch\u00e4ftsfrau und Tochter des Playboy-Gr\u00fcnders Hugh Hefner, sagt: \"The Girlfriend\u2019s Guide to Closing The Deal\" ist sowohl sehr unterhaltsam als auch sehr hilfreich. Melody verwebt pers\u00f6nliche Anekdoten, Triumphe und R\u00fcckschl\u00e4ge mit n\u00fctzlichen Lektionen. Vom Besitzen Ihrer Ideen in einem Meeting bis zu dem Zeitpunkt, an dem es Zeit ist, sich zu \"freunden\", kann jeder von Melodys Geschichte profitieren.\u201c",
         "edits": [
             {
                 "id": 0,
@@ -14024,8 +14024,8 @@
             "seg_id": "378",
             "rater": "rater5"
         },
-        "original": "Christie Hefner, businesswoman and daughter of Playboy Founder, Hugh Hefner, says \"\"The Girlfriend's Guide to Closing The Deal\"\" is both highly entertaining and very helpful. Melody weaves together personal anecdotes, triumphs, and setbacks with useful lessons learned. From how to own your ideas in a meeting to when its time to \"\"friend up,\"\" everyone can benefit from Melody's story.\"\"",
-        "simplified": "Christie Hefner, Gesch\u00e4ftsfrau und Tochter des Playboy-Gr\u00fcnders Hugh Hefner, sagt: \"The Girlfriend\u2019s Guide to Closing The Deal\" ist sowohl sehr unterhaltsam als auch sehr hilfreich. Melody verwebt pers\u00f6nliche Anekdoten, Triumphe und R\u00fcckschl\u00e4ge mit n\u00fctzlichen Lektionen. Vom Besitzen Ihrer Ideen in einem Meeting bis zu dem Zeitpunkt, an dem es Zeit ist, sich zu \"freunden\", kann jeder von Melodys Geschichte profitieren.\u201c",
+        "source": "Christie Hefner, businesswoman and daughter of Playboy Founder, Hugh Hefner, says \"\"The Girlfriend's Guide to Closing The Deal\"\" is both highly entertaining and very helpful. Melody weaves together personal anecdotes, triumphs, and setbacks with useful lessons learned. From how to own your ideas in a meeting to when its time to \"\"friend up,\"\" everyone can benefit from Melody's story.\"\"",
+        "target": "Christie Hefner, Gesch\u00e4ftsfrau und Tochter des Playboy-Gr\u00fcnders Hugh Hefner, sagt: \"The Girlfriend\u2019s Guide to Closing The Deal\" ist sowohl sehr unterhaltsam als auch sehr hilfreich. Melody verwebt pers\u00f6nliche Anekdoten, Triumphe und R\u00fcckschl\u00e4ge mit n\u00fctzlichen Lektionen. Vom Besitzen Ihrer Ideen in einem Meeting bis zu dem Zeitpunkt, an dem es Zeit ist, sich zu \"freunden\", kann jeder von Melodys Geschichte profitieren.\u201c",
         "edits": [
             {
                 "id": 0,
@@ -14370,8 +14370,8 @@
             "seg_id": "378",
             "rater": "rater1"
         },
-        "original": "Christie Hefner, businesswoman and daughter of Playboy Founder, Hugh Hefner, says \"\"The Girlfriend's Guide to Closing The Deal\"\" is both highly entertaining and very helpful. Melody weaves together personal anecdotes, triumphs, and setbacks with useful lessons learned. From how to own your ideas in a meeting to when its time to \"\"friend up,\"\" everyone can benefit from Melody's story.\"\"",
-        "simplified": "Christie Hefner, Gesch\u00e4ftsfrau und Tochter des Playboy-Gr\u00fcnders Hugh Hefner, sagt: \"The Girlfriend\u2019s Guide to Closing The Deal\" ist sowohl sehr unterhaltsam als auch sehr hilfreich. Melody verwebt pers\u00f6nliche Anekdoten, Triumphe und R\u00fcckschl\u00e4ge mit n\u00fctzlichen Lektionen. Vom Besitzen Ihrer Ideen in einem Meeting bis zu dem Zeitpunkt, an dem es Zeit ist, sich zu \"freunden\", kann jeder von Melodys Geschichte profitieren.\u201c",
+        "source": "Christie Hefner, businesswoman and daughter of Playboy Founder, Hugh Hefner, says \"\"The Girlfriend's Guide to Closing The Deal\"\" is both highly entertaining and very helpful. Melody weaves together personal anecdotes, triumphs, and setbacks with useful lessons learned. From how to own your ideas in a meeting to when its time to \"\"friend up,\"\" everyone can benefit from Melody's story.\"\"",
+        "target": "Christie Hefner, Gesch\u00e4ftsfrau und Tochter des Playboy-Gr\u00fcnders Hugh Hefner, sagt: \"The Girlfriend\u2019s Guide to Closing The Deal\" ist sowohl sehr unterhaltsam als auch sehr hilfreich. Melody verwebt pers\u00f6nliche Anekdoten, Triumphe und R\u00fcckschl\u00e4ge mit n\u00fctzlichen Lektionen. Vom Besitzen Ihrer Ideen in einem Meeting bis zu dem Zeitpunkt, an dem es Zeit ist, sich zu \"freunden\", kann jeder von Melodys Geschichte profitieren.\u201c",
         "edits": [
             {
                 "id": 0,
@@ -14812,8 +14812,8 @@
             "seg_id": "476",
             "rater": "rater3"
         },
-        "original": "Tennessee's abortion waiting period trial goes to judge",
-        "simplified": "Tennessees Abtreibungs-Wartezeit-Prozess geht ans Gericht",
+        "source": "Tennessee's abortion waiting period trial goes to judge",
+        "target": "Tennessees Abtreibungs-Wartezeit-Prozess geht ans Gericht",
         "edits": [
             {
                 "id": 0,
@@ -15041,8 +15041,8 @@
             "seg_id": "476",
             "rater": "rater4"
         },
-        "original": "Tennessee's abortion waiting period trial goes to judge",
-        "simplified": "Tennessees Abtreibungs-Wartezeit-Prozess geht ans Gericht",
+        "source": "Tennessee's abortion waiting period trial goes to judge",
+        "target": "Tennessees Abtreibungs-Wartezeit-Prozess geht ans Gericht",
         "edits": [
             {
                 "id": 0,
@@ -15173,8 +15173,8 @@
             "seg_id": "476",
             "rater": "rater6"
         },
-        "original": "Tennessee's abortion waiting period trial goes to judge",
-        "simplified": "Tennessees Abtreibungs-Wartezeit-Prozess geht ans Gericht",
+        "source": "Tennessee's abortion waiting period trial goes to judge",
+        "target": "Tennessees Abtreibungs-Wartezeit-Prozess geht ans Gericht",
         "edits": [
             {
                 "id": 0,
