@@ -225,13 +225,13 @@ export default {
                     <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1"></i>
                 </div>
 
-                <div class="mb2" v-if="hits_data && hits_data[this.current_hit - 1] && hits_data[this.current_hit - 1].context">
+                <div class="mb2" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].context">
                     <div class="cf">
                         <p class="fl f3 mt1 mb1">
                             <span class="f5">{{ config.interface_text.typology.context_label }}:</span>
                         </p>
                     </div>
-                    <div class="f4 lh-paras">{{ hits_data[this.current_hit - 1].context }}</div>
+                    <div class="f4 lh-paras">{{ hits_data[current_hit - 1].context }}</div>
                 </div>
 
                 <div class="cf">
