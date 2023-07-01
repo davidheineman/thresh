@@ -81,8 +81,7 @@ export default {
             let language_template = await download_config(lang_template).then((language_config) => {
                 return jsyaml.load(language_config)
             })
-            // TODO: Interweave the language template with custom text, and apply to config
-            config.interface_text = language_template
+            config.interface_text = Object.assign({}, language_template, config.interface_text);
             this.config = config
         },
         async compile() {
@@ -91,15 +90,16 @@ export default {
             this.data = JSON.parse(this.getDataValue())
         },
         async update_editors() {
+            var monaco_compile = this.compile
             return new Promise((resolve, reject) => {
                 loader.init().then((monaco) => {
-                    var dataValue = "" // `${this.data}`
+                    var dataValue = ""
                     const dataEditor = monaco.editor.create(document.getElementById('data-editor'), {
                         value: dataValue,
                         language: 'json',
                         minimap: { enabled: false },
                         automaticLayout: true,
-                        theme: "vs-dark",
+                        theme: "vs-dark"
                     });
                     dataEditor.onDidChangeModelContent((e) => { dataValue = dataEditor.getValue(); });
                     const getDataValue = () => { return dataValue }
@@ -111,11 +111,22 @@ export default {
                         language: 'yaml',
                         minimap: { enabled: false },
                         automaticLayout: true,
-                        theme: "vs-dark",
+                        theme: "vs-dark"
                     });
                     configEditor.onDidChangeModelContent((e) => { configValue = configEditor.getValue(); });
                     const getConfigValue = () => { return configValue }
                     const setConfigValue = (val) => { configEditor.setValue(val) }
+
+                    dataEditor.addAction({
+                        id: "data-save", label: "",
+                        keybindings: [ monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS ],
+                        run: function () { monaco_compile() },
+                    })
+                    configEditor.addAction({
+                        id: "config-save", label: "",
+                        keybindings: [ monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS ],
+                        run: function () { monaco_compile() },
+                    })
 
                     resolve({ dataEditor, configEditor, getDataValue, getConfigValue, setDataValue, setConfigValue });
                 }).catch((error) => {

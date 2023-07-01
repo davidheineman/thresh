@@ -299,9 +299,7 @@ export default {
             }
             
             const edits = this.process_edit_list(hit_edits, sent_type)
-
-            // Renders edits, but does not account for multiple or overlapping edge cases...
-
+            
             for (let i = 0; i < edits.length; i++) {
                 let edit = edits[i]
                 let next_edit = edits[i + 1]
@@ -313,91 +311,89 @@ export default {
                 let composite_info = edit.hasOwnProperty('child_category') ? `data-childcategory=${edit['child_category']} data-childid=${edit['child_id']}` : ""
 
                 if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
-                    sentence_html += `
-                        <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">`;
+                    sentence_html += `<span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">`;
                 } else {
-                    sentence_html += `
-                        <span @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${edit['category']} border-${edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${edit['category']}" data-id="${edit['category']}-${edit['id']}" ${composite_info}>`;
+                    sentence_html += `<span @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${edit['category']} border-${edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${edit['category']}" data-id="${edit['category']}-${edit['id']}" ${composite_info}>`;
                 }
 
                 let start_i = i
-                let whether_more_overlap = false
-                while (i < edits.length - 1 && next_edit[sent_type][0] <= edits[start_i][sent_type][1]) {
-                    if (i == start_i) {
-                        sentence_html += sent.substring(edit[sent_type][0], next_edit[sent_type][0]);
-                    } else {
-                        let j = i
-                        if (whether_more_overlap) {
-                            j -= 1
-                        }
-                        sentence_html += sent.substring(edits[j][sent_type][1], next_edit[sent_type][0]);
-                    }
-                    whether_more_overlap = false             
+
+                // TODO: This current code allows up to two overlapping edits, but we want to render arbitrarily
+                // let whether_more_overlap = false
+                // while (i < edits.length - 1 && next_edit[sent_type][0] <= edits[start_i][sent_type][1]) {
+                //     if (i == start_i) {
+                //         sentence_html += sent.substring(edit[sent_type][0], next_edit[sent_type][0]);
+                //     } else {
+                //         let j = i
+                //         if (whether_more_overlap) {
+                //             j -= 1
+                //         }
+                //         sentence_html += sent.substring(edits[j][sent_type][1], next_edit[sent_type][0]);
+                //     }
+                //     whether_more_overlap = false             
                     
-                    let outside = i < edits.length - 2 && edits[i + 2][sent_type][0] <= next_edit[sent_type][1] ? "middleside" : ""
+                //     let outside = i < edits.length - 2 && edits[i + 2][sent_type][0] <= next_edit[sent_type][1] ? "middleside" : ""
                     
-                    let light = !this.hasAnnotations(edit) ? "-light" : "";
-                    // TODO: Add case for all split chars, in all three contexts
-                    // This looks like the only difference, there's an edge case for the || chars
-                    // if (category == "split" && (target_sentence.substring(target_spans[i][1], target_spans[i][2]) =="||")) {
-                    //     sentence_html += `<span @mousedown.stop @mouseup.stop  @click="click_span"  @mouseover="hover_span" @mouseout="un_hover_span" class="${category} pointer span target_span txt-split${light} split-sign ${outside}" data-category="${category}" data-id="${category}-` + target_spans[i][3] + `">`;
-                    // }
-                    let composite_info = edit.hasOwnProperty('child_category') ? `data-childcategory=${edit['child_category']} data-childid=${edit['child_id']}` : "" 
+                //     let light = !this.hasAnnotations(edit) ? "-light" : "";
+                //     // TODO: Add case for all split chars, in all three contexts
+                //     // This looks like the only difference, there's an edge case for the || chars
+                //     // if (category == "split" && (target_sentence.substring(target_spans[i][1], target_spans[i][2]) =="||")) {
+                //     //     sentence_html += `<span @mousedown.stop @mouseup.stop  @click="click_span"  @mouseover="hover_span" @mouseout="un_hover_span" class="${category} pointer span target_span txt-split${light} split-sign ${outside}" data-category="${category}" data-id="${category}-` + target_spans[i][3] + `">`;
+                //     // }
+                //     let composite_info = edit.hasOwnProperty('child_category') ? `data-childcategory=${edit['child_category']} data-childid=${edit['child_id']}` : "" 
 
-                    if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
-                        sentence_html += `
-                            <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">`;
-                    } else {
-                        sentence_html += `
-                            <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_edit['category']} border-${next_edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${next_edit['category']}" data-id="${next_edit['category']}-${next_edit['id']}" ${composite_info}>`;
-                    }
+                //     if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
+                //         sentence_html += `
+                //             <span @mouseover.stop @mouseout.stop class="bg-${edit['category']}-light span ${outside}">`;
+                //     } else {
+                //         sentence_html += `
+                //             <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_edit['category']} border-${next_edit['category']}${light} pointer span ${span_class} ${outside}" data-category="${next_edit['category']}" data-id="${next_edit['category']}-${next_edit['id']}" ${composite_info}>`;
+                //     }
 
-                    i++;
-                    edit = edits[i]
-                    next_edit = edits[i + 1]
+                //     i++;
+                //     edit = edits[i]
+                //     next_edit = edits[i + 1]
 
-                    if (i < edits.length - 1 && next_edit[sent_type][0] <= edit[sent_type][1]) {
-                        whether_more_overlap = true
-                        let next_next_edit = edits[i + 1]
-                        sentence_html += sent.substring(edit[sent_type][0], next_next_edit[sent_type][0]);  
+                //     if (i < edits.length - 1 && next_edit[sent_type][0] <= edit[sent_type][1]) {
+                //         whether_more_overlap = true
+                //         let next_next_edit = edits[i + 1]
+                //         sentence_html += sent.substring(edit[sent_type][0], next_next_edit[sent_type][0]);  
 
-                        let light = !this.hasAnnotations(next_next_edit) ? "-light" : "";
-                        composite_info = next_next_edit.hasOwnProperty('child_category') ? `data-childcategory=${next_next_edit['child_category']} data-childid=${next_next_edit['child_id']}` : ""
+                //         let light = !this.hasAnnotations(next_next_edit) ? "-light" : "";
+                //         composite_info = next_next_edit.hasOwnProperty('child_category') ? `data-childcategory=${next_next_edit['child_category']} data-childid=${next_next_edit['child_id']}` : ""
                         
-                        if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
-                            sentence_html += `
-                                <span @mouseover.stop @mouseout.stop class="bg-${next_category}-light span">`;
-                        } else {
-                            sentence_html += `
-                                <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_next_edit['category']} border-${next_next_edit['category']}${light} pointer span ${span_class}" data-category="${next_next_edit['category']}" data-id="${next_next_edit['category']}-${next_next_edit['id']}" ${composite_info}>`;
-                        }
+                //         if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
+                //             sentence_html += `
+                //                 <span @mouseover.stop @mouseout.stop class="bg-${next_category}-light span">`;
+                //         } else {
+                //             sentence_html += `
+                //                 <span @mouseover.stop @mouseout.stop @click.stop @click="click_span" @mouseover="hover_span" @mouseout="un_hover_span" class="${next_next_edit['category']} border-${next_next_edit['category']}${light} pointer span ${span_class}" data-category="${next_next_edit['category']}" data-id="${next_next_edit['category']}-${next_next_edit['id']}" ${composite_info}>`;
+                //         }
 
-                        sentence_html += `
-                                ${sent.substring(next_next_edit[sent_type][0], next_next_edit[sent_type][1])}</span>
-                            ${sent.substring(next_next_edit[sent_type][1], edit[sent_type][1])}</span>`;
+                //         sentence_html += `
+                //                 ${sent.substring(next_next_edit[sent_type][0], next_next_edit[sent_type][1])}</span>
+                //             ${sent.substring(next_next_edit[sent_type][1], edit[sent_type][1])}</span>`;
 
-                        i++;
-                        edit = edits[i]
-                        next_edit = edits[i + 1]
+                //         i++;
+                //         edit = edits[i]
+                //         next_edit = edits[i + 1]
 
-                    } else {
-                        next_edit = edits[i + 1]
-                        sentence_html += `
-                            ${sent.substring(next_edit[sent_type][0], next_edit[sent_type][1])}</span>`;
-                    }
-                }
+                //     } else {
+                //         next_edit = edits[i + 1]
+                //         sentence_html += `
+                //             ${sent.substring(next_edit[sent_type][0], next_edit[sent_type][1])}</span>`;
+                //     }
+                // }
 
                 if (start_i != i) {
                     let final_idx = i
                     if (start_i != i && whether_more_overlap) {
                         final_idx -= 1                        
                     }
-                    sentence_html += `
-                        ${sent.substring(edits[final_idx][sent_type][1], edits[start_i][sent_type][1])}</span>`;
+                    sentence_html += `${sent.substring(edits[final_idx][sent_type][1], edits[start_i][sent_type][1])}</span>`;
                     prev_idx = edits[start_i][sent_type][1];
                 } else {
-                    sentence_html += `
-                        ${sent.substring(edits[start_i][sent_type][0], edits[start_i][sent_type][1])}</span>`;
+                    sentence_html += `${sent.substring(edits[start_i][sent_type][0], edits[start_i][sent_type][1])}</span>`;
                     prev_idx = edits[start_i][sent_type][1];
                 }
             }

@@ -339,6 +339,7 @@ export default {
                     }
                 }
             }
+            $('.leader-line').remove();
         },
         draw_lines: function() {
             // There's some latency in this function, the locking ensures no line references are lost
@@ -346,7 +347,9 @@ export default {
             if (!this.config.hasOwnProperty('edits')) { return }
             this.line_locked = true
 
-            this.clear_lines()
+            try {
+                this.clear_lines()
+            } catch (e) { console.warn(e) }
 
             let new_lines = Object.fromEntries(this.config.edits.map(t => [t.name, {}]));
             let hit_edits = _.cloneDeep(this.hits_data[this.current_hit - 1].edits)
@@ -398,6 +401,23 @@ export default {
                         $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
                         line_config
                     )
+                    
+                    // My attempt to fix line drawing in builder via mutation observers
+                    // var draw_lines = this.draw_lines
+                    // const targetElement = $(`.${key}.source_span[data-id='${key}-${id}']`)[0]
+                    // let initialRect = targetElement.getBoundingClientRect();
+                    // function checkPositionChange() {
+                    //     const currentRect = targetElement.getBoundingClientRect();
+                    //     if (currentRect.x !== initialRect.x || currentRect.y !== initialRect.y) {
+                    //         draw_lines()
+                    //         initialRect = currentRect;
+                    //     }
+                    // }
+                    // const observer = new MutationObserver(() => {
+                    //     checkPositionChange();
+                    // });
+                    // observer.observe(targetElement, { attributes: true });
+                    // $('#sandbox')[0].addEventListener('scroll', checkPositionChange);
                 }
             }
 

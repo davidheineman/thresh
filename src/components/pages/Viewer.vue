@@ -51,9 +51,7 @@ export default {
         let language_template = await download_config(lang_template).then((language_config) => {
             return jsyaml.load(language_config)
         })
-        // TODO: Interweave the language template with custom text, and apply to config
-        config.interface_text = language_template
-
+        config.interface_text = Object.assign({}, language_template, config.interface_text);
         this.set_config(config)
     },
 }

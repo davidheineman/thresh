@@ -240,6 +240,66 @@ export default {
             this.set_span_indices("", "source");
             this.set_span_indices("", "target");
         },
+        annotate_edit_disabled(category) {
+            // TODO: Figure out how to call isAnnotated() to all top-level children
+            return false
+
+            if (!$('.quality-selection').is(':visible')) { return false }
+            // TODO: Check to make sure the selected category's annotation box is visible
+            const edit_config = this.getEditConfig(category)
+            if (!edit_config || !edit_config.annotation) { return false }
+
+            let filled_out = true
+
+            for (let question of edit_config.annotation) {
+                console.log(`${category}_${question.name}`)
+                const q_object = this.$refs[`${category}_${question.name}`]
+                if (q_object == undefined || q_object == {} || q_object.length == 0) { continue }
+                console.log(q_object[0])
+                console.log(this.$refs[`${category}_${question.name}`].value)
+                if (!q_object[0].isAnnotated()) {
+                    filled_out = false
+                }
+            }
+
+            return !filled_out
+        }
+    },
+    computed: {
+        add_edit_disabled() {
+            if (!this.editor_open) { return true }
+            const selected_state = this.selected_state;
+            const selected_category = $("input[name=edit_cotegory]:checked").val();
+            const config_category = this.config.edits.find((edit) => edit.name === selected_category)
+            console.log(selected_category, config_category)
+            if (selected_category == undefined || config_category == undefined) { return true }
+
+            // TODO: Support multi-span edits
+
+            let filled_out = false
+            if (config_category.type == undefined || config_category.type == 'primitive') {
+                const src = this.selected_state.source_span, tg = this.selected_state.target_span
+                if (config_category['enable_input'] && config_category['enable_output']) {
+                    if (src != null && src != '' && tg != null && tg != '') {
+                        filled_out = true
+                    }
+                } else if (config_category['enable_input']) {
+                    if (src != null && src != '') {
+                        filled_out = true
+                    }
+                } else if (config_category['enable_output']) {
+                    if (tg != null && tg != '') {
+                        filled_out = true
+                    }
+                }
+            }
+            if (config_category['type'] == 'composite') {
+                if (this.selected_edits.length > 0) {
+                    filled_out = true
+                }
+            }
+            return !filled_out
+        }
     }
 }
 </script>
@@ -287,8 +347,8 @@ export default {
                 </div>
                 <div class="buttons tc mt2">
                     <button @click="cancel_click" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">{{ config.interface_text.buttons.cancel_label }} <i class="fa-solid fa-close"></i></button>
-                    <!-- :class="{'o-40': add_validated_edit, 'grow': !add_validated_edit}" :disabled="add_validated_edit" -->
-                    <button @click="save_click" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns" type="button">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
+                    <button @click="save_click" :class="{'o-40': add_edit_disabled, 'grow': !add_edit_disabled}" :disabled="add_edit_disabled" 
+                        class="confirm-button b quality_button bw0 ba ml2 br-pill-ns" type="button">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
                 </div>
             </div>
         </div>
@@ -312,14 +372,14 @@ export default {
                         <div class="row">
                             <div v-for="question in item.annotation" :key="question.id">
                                 <Question :edit_state="edit_state" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
-                                    :config="config" :parent_show_next_question="null" isRoot=true />
+                                    :config="config" :parent_show_next_question="null" isRoot=true :ref="`${item.name}_${question.name}`" />
                             </div>
                         </div>
                     </div>
                     <div class="buttons tc">
                         <button @click="cancel_annotation_click(item.name, $e)" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">{{ config.interface_text.buttons.cancel_label }} <i class="fa-solid fa-close"></i></button>
-                        <!-- :class="{'o-40': save_validated_deletion, 'grow': !save_validated_deletion}" :disabled="save_validated_deletion" -->
-                        <button @click="save_annotation_click(item.name, $e)" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
+                        <button @click="save_annotation_click(item.name, $e)" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns"
+                            :class="{'o-40': annotate_edit_disabled(item.name), 'grow': !annotate_edit_disabled(item.name)}" :disabled="annotate_edit_disabled(item.name)">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
                     </div>
                 </div>
             </div>

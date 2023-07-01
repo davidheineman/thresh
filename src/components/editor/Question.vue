@@ -45,6 +45,10 @@ export default {
         } 
     },
     methods: {
+        isAnnotated() {
+            // TODO: Recursively check for annotation
+            return true
+        },
         has_children() {
             return this.isObject(this.question.options)
         },

@@ -1,89 +1,190 @@
-[{
-    "id": 1,
-    "annotation_id": 1,
-    "sentence_id": 1,
-    "batch": 1,
-    "hit_id": 1,
-    "user": "demo-user",
-    "system": "dataset/system-name",
-    "source": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization (Paltrow in turn claims he was the one crashing rather than the other way around).",
-    "target": "The famous actress who now runs Goop is in court because of a skiing accident that happened in 2016. || The man who crashed into her is asking for millions of dollars in compensation, but she says he was actually the one who caused the accident.",
-    "edits": [
-        {
-            "id": 0,
-            "category": "substitution",
-            "input_idx": [
-                [0, 17]
-            ],
-            "output_idx": [
-                [0, 3]
-            ],
-            "annotation": null
-        },
-        {
-            "id": 0,
-            "category": "deletion",
-            "input_idx": [
-                [20, 32]
-            ],
-            "annotation": {
-                "deletion_type": {
-                    "val": "good_deletion", 
-                    "good_deletion": "a lot",
-                    "bad_deletion": null
+[
+    {
+        "id": 1,
+        "annotation_id": 1,
+        "sentence_id": 1,
+        "batch": 1,
+        "hit_id": 1,
+        "user": "demo-user",
+        "system": "dataset/system-name",
+        "source": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization (Paltrow in turn claims he was the one crashing rather than the other way around).",
+        "target": "The famous actress who now runs Goop is in court because of a skiing accident that happened in 2016. || The man who crashed into her is asking for millions of dollars in compensation, but she says he was actually the one who caused the accident.",
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "val": null,
+                    "deletion_type": {
+                        "val": "good_deletion",
+                        "good_deletion": "somewhat",
+                        "trivial_deletion": null,
+                        "bad_deletion": null
+                    },
+                    "coreference": "no",
+                    "grammar_error": "yes"
                 },
-                "coreference": "no",
-                "grammar_error": "yes"
+                "input_idx": [
+                    [
+                        4,
+                        25
+                    ]
+                ]
+            },
+            {
+                "category": "insertion",
+                "id": 1,
+                "annotation": {
+                    "val": null,
+                    "insertion_type": {
+                        "val": "facutal_error",
+                        "elaboration": null,
+                        "trivial_insertion": {
+                            "val": null,
+                            "yes": null,
+                            "no": null
+                        },
+                        "repetition": null,
+                        "contradiction": null,
+                        "facutal_error": "a lot",
+                        "irrelevant": null
+                    },
+                    "grammar_error": "yes"
+                },
+                "output_idx": [
+                    [
+                        49,
+                        77
+                    ]
+                ]
+            },
+            {
+                "category": "reorder",
+                "id": 1,
+                "annotation": {
+                    "val": null,
+                    "reorder_level": {
+                        "val": "component_level",
+                        "word_level": {
+                            "val": null,
+                            "bad": null,
+                            "trivial": null,
+                            "good": null
+                        },
+                        "component_level": {
+                            "val": "bad",
+                            "bad": "somewhat",
+                            "trivial": null,
+                            "good": null
+                        }
+                    },
+                    "grammar_error": "no"
+                },
+                "input_idx": [
+                    [
+                        236,
+                        245
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        213,
+                        224
+                    ]
+                ]
+            },
+            {
+                "category": "insertion",
+                "id": 2,
+                "annotation": {
+                    "val": null,
+                    "insertion_type": {
+                        "val": "contradiction",
+                        "elaboration": null,
+                        "trivial_insertion": {
+                            "val": null,
+                            "yes": null,
+                            "no": null
+                        },
+                        "repetition": null,
+                        "contradiction": "somewhat",
+                        "facutal_error": null,
+                        "irrelevant": null
+                    },
+                    "grammar_error": "no"
+                },
+                "output_idx": [
+                    [
+                        108,
+                        115
+                    ]
+                ]
+            },
+            {
+                "category": "structure",
+                "id": 1,
+                "annotation": {
+                    "val": null,
+                    "structure_type": {
+                        "val": "grammar_number",
+                        "voice": null,
+                        "pos": null,
+                        "tense": null,
+                        "grammar_number": null,
+                        "clausal": null,
+                        "transition": null
+                    },
+                    "impact": {
+                        "val": "good",
+                        "bad": null,
+                        "trivial": null,
+                        "good": "a lot"
+                    },
+                    "grammar_error": "yes"
+                },
+                "constituent_edits": [
+                    {
+                        "id": 1,
+                        "category": "substitution",
+                        "input_idx": [
+                            [
+                                33,
+                                41
+                            ]
+                        ],
+                        "output_idx": [
+                            [
+                                23,
+                                36
+                            ]
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "category": "deletion",
+                        "input_idx": [
+                            [
+                                203,
+                                210
+                            ]
+                        ]
+                    }
+                ]
             }
-        },
-        {
-            "id": 1,
-            "category": "deletion",
-            "input_idx": [
-                [41, 54]
-            ],
-            "annotation": null
-        }, 
-        {
-            "id": 0,
-            "category": "insertion",
-            "output_idx": [
-                [41, 54]
-            ],
-            "annotation": null
-        },
-        {
-            "id": 0,
-            "category": "structure",
-            "constituent_edits": [
-                {
-                    "id": 1,
-                    "category": "deletion",
-                    "input_idx": [
-                        [60, 70]
-                    ]
-                },
-                {
-                    "id": 1,
-                    "category": "insertion",
-                    "output_idx": [
-                        [24, 30]
-                    ]
-                }
-            ],
-            "annotation": null
-        }
-    ]
-}, {
-    "id": 2,
-    "annotation_id": 2,
-    "sentence_id": 2,
-    "batch": 1,
-    "hit_id": 2,
-    "user": "demo-user",
-    "system": "dataset/system-name",
-    "source": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization (Paltrow in turn claims he was the one crashing rather than the other way around).",
-    "target": "The famous actress who now runs Goop is in court because of a skiing accident that happened in 2016. || The man who crashed into her is asking for millions of dollars in compensation, but she says he was actually the one who caused the accident.",
-    "edits": []
-}
+        ],
+        "_interface_id": 1
+    },
+    {
+        "id": 2,
+        "annotation_id": 2,
+        "sentence_id": 2,
+        "batch": 1,
+        "hit_id": 2,
+        "user": "demo-user",
+        "system": "dataset/system-name",
+        "source": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization (Paltrow in turn claims he was the one crashing rather than the other way around).",
+        "target": "The famous actress who now runs Goop is in court because of a skiing accident that happened in 2016. || The man who crashed into her is asking for millions of dollars in compensation, but she says he was actually the one who caused the accident.",
+        "edits": [],
+        "_interface_id": 2
+    }
 ]
