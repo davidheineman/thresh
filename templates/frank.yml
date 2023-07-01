@@ -1,8 +1,10 @@
 template_name: frank
 template_label: FRANK
 template_description: Factuality in Abstractive Summarization
-input_label: "Article"
-output_label: "Generated Summary"
+interface_text:
+  typology:
+    source_label: "Article"
+    target_label: "Generated Summary"
 edits:
   - name: RelE
     label: "Relation Error"
