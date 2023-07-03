@@ -211,7 +211,7 @@ export default {
                 <p>You can host data as well (e.g., to create individual links for annotators) using the following format:</p>
                 <pre>nlproc.tools/?i=[link to your interface]<b>&amp;d=[link to your data]</b></pre>
                 <p>For example:</p>
-                <pre><a href='http://nlproc.tools/?gh=davidheineman/salsa/interface.yml&amp;d=davidheineman/salsa/demo_interface_data.json'>nlproc.tools/?gh=davidheineman/salsa/interface.yml&amp;d=davidheineman/salsa/demo_interface_data.json</a></pre>
+                <pre><a href='http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json'>nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
                 <p>You can follow the above instructions for hosting your data on GitHub or HuggingFace.</p>
                 <h3>(Optional) Deployment with an iFrame</h3>
                 <p>Want to host your interface using a custom link? Use the following code to host your template within any HTML document:</p>
