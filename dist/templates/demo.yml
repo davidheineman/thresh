@@ -9,7 +9,9 @@
 #
 # ========================================================================
 
-# Metadata about your interface
+# Metadata about your interface. 
+#   "labels" change text displayed to the annotator and "names" change the
+#   backend object names
 template_name: demo
 template_label: Demo Interface
 template_description: Add a description of your interface here
