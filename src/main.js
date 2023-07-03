@@ -24,19 +24,15 @@ const demo_templates = [
     { name: "Multi-language Deployment", path: "demo_multilingual", task: "Examples" }
 ]
 
+// Change route for custom template links
+const params = new URLSearchParams(window.location.search)
+var iParam = params.get("i");
+var ghParam = params.get("gh");
+var hfParam = params.get("hf");
+
 const routes = [
     { path: '/annotate', props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") },
-    { path: '/', get component() {
-        const params = new URLSearchParams(window.location.search)
-        var iParam = params.get("i");
-        var ghParam = params.get("gh");
-        var hfParam = params.get("hf");
-        if (iParam || ghParam || hfParam) {
-            return import("./components/pages/Viewer.vue");
-        }
-        return import("./components/pages/Builder.vue");
-    } },
-    
+    { path: '/', component: (iParam || ghParam || hfParam) ? () => import("./components/pages/Viewer.vue") : () => import("./components/pages/Builder.vue") }
 ]
 
 for (const template of templates) {
