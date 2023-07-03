@@ -196,20 +196,34 @@ export default {
         async load_builder(template_arg) {
             if (template_arg == null) {
                 template_arg = 'demo'
+            } 
+            
+            let template, file_path
+            if (!template_arg.includes('http')) {
+                template = `/templates/${template_arg}.yml`
+                file_path = `/data/${template_arg}.json`
+            } else {
+                template = template_arg
+                file_path = `/data/demo.json`
             }
-            let template = `/templates/${template_arg}.yml`
-            let file_path = `/data/${template_arg}.json`
+            
             this.selectedOption = template
+
+            // Load config
+            var local_config;
+            await download_config(template).then((config) => {
+                local_config = jsyaml.load(config)
+                this.set_config(config)
+            })
+
+            if (local_config.default_data_link) {
+                file_path = local_config.default_data_link
+            }
 
             // Load data
             download_data(file_path).then((data) => {
                 this.data = data
                 this.set_data(this.data)
-            })
-
-            // Load config
-            download_config(template).then((config) => {
-                this.set_config(config)
             })
         }
     },
@@ -243,7 +257,7 @@ export default {
 </script>
 
 <template>
-    <Deploy :deploy_open="deploy_open" :toggle_deploy="toggle_deploy" :config="config" />
+    <Deploy :deploy_open="deploy_open" :toggle_deploy="toggle_deploy" :config="config" :input_data="data" />
     <Cite :cite_open="cite_open" :toggle_cite="toggle_cite" :config="config" />
     <main class="builder-container">
         <div class="header">

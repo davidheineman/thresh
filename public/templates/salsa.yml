@@ -266,6 +266,7 @@ edits:
     - name: grammar_error
       question: "Does this structure edit introduce any fluency / grammar error?"
       options: binary 
+default_data_link: https://nlproc.tools/data/salsa.json
 paper_link: https://arxiv.org/abs/2305.14458
 citation: |
   @article{heineman2023dancing,

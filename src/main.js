@@ -25,12 +25,23 @@ const demo_templates = [
 ]
 
 const routes = [
-    { path: '/', component: () => import("./components/pages/Builder.vue") }
+    { path: '/annotate', props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") },
+    { path: '/', get component() {
+        const params = new URLSearchParams(window.location.search)
+        var iParam = params.get("i");
+        var ghParam = params.get("gh");
+        var hfParam = params.get("hf");
+        if (iParam || ghParam || hfParam) {
+            return import("./components/pages/Viewer.vue");
+        }
+        return import("./components/pages/Builder.vue");
+    } },
+    
 ]
 
 for (const template of templates) {
     const template_path = template.path
-    routes.push({ path: `/${template.path}`, props: { template_path }, component: () => import("./components/pages/Viewer.vue") })
+    routes.push({ path: `/${template.path}`, props: () => ({ template_path: template_path }), component: () => import("./components/pages/Viewer.vue") })
 }
 
 const router = createRouter({

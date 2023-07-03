@@ -1,5 +1,6 @@
 <script setup>
 import _ from 'lodash';
+import jsyaml from 'js-yaml';
 import { handle_file_upload, download_data, get_file_path } from "../../assets/js/file-util.js";
 </script>
 
@@ -14,6 +15,8 @@ export default {
     props: [
         'consumed_config',
         'set_data',
+        'set_config',
+        'customize_template_link'
     ],
     watch: {
       consumed_config() {
@@ -37,6 +40,12 @@ export default {
         },
         async onChange(e) {
             let new_hits_data = await handle_file_upload(e)
+            if (this.config.template_name == 'serverless') {
+                let yml_template = new_hits_data.find(i => i.hasOwnProperty('_nlproc_tools_template'))?._nlproc_tools_template;
+                yml_template = jsyaml.load(yml_template)
+                this.set_config(yml_template)
+                new_hits_data = new_hits_data.filter(i => !("_nlproc_tools_template" in i));
+            }
             this.set_data(new_hits_data)
             // this.filelist = [...this.$refs.file.files];
         },
@@ -63,7 +72,16 @@ export default {
             e.currentTarget.classList.remove('bg-green-300');
         },
         get_example_data() {
-            let file_path = `data/${this.config.template_name}.json`
+            let file_path
+            if (this.customize_template_link.includes('http')) {
+                if (this.config.default_data_link) {
+                    file_path = this.config.default_data_link
+                } else {
+                    file_path = `data/demo.json`
+                }
+            } else {
+                file_path = `data/${this.config.template_name}.json`
+            }
             download_data(file_path).then((data) => {
                 this.set_data(data)
             })
@@ -74,7 +92,7 @@ export default {
     },
     computed: {
         template_link() {
-            return `/?t=${this.config.template_name}`;
+            return `/?t=${this.customize_template_link}`;
         }
     }
 }
@@ -103,10 +121,10 @@ export default {
                     </ul> -->
                 </div>
             </div>
-            <div class="separator">
+            <div class="separator" v-if="config.template_name != 'serverless'">
                 <span>or</span>
             </div>
-            <div class="option-buttons">
+            <div class="option-buttons" v-if="config.template_name != 'serverless'">
                 <a v-if="config.tutorial_link" :href="config.tutorial_link">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">See Tutorial</button>
                 </a>

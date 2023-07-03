@@ -15,10 +15,10 @@ export async function handle_file_upload(e) {
     return new_data
 }
 
-export function handle_file_download(data) {
+export function handle_file_download(data, filename=DOWNLOAD_FILE_NAME) {
     var json = JSON.stringify(data);
     var url = URL.createObjectURL(new Blob([json], { type: "application/json" }));
-    $("<a>").attr({ href: url, download: DOWNLOAD_FILE_NAME }).appendTo("body")[0].click();
+    $("<a>").attr({ href: url, download: filename }).appendTo("body")[0].click();
     URL.revokeObjectURL(url);
 }
 
