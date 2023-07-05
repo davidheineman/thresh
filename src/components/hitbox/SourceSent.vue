@@ -76,33 +76,37 @@ export default {
 
             $('#source-sentence').addClass(`select-color-${selected_category}`)
 
-            let range = selection.getRangeAt(0)
-            let [start, end] = [range.startOffset, range.endOffset]
-            
-            if (start == end) {
-                return
-            } 
-
-            end -= 1
             let split_chars = [' ']
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
                 split_chars = ['Ġ', ' ']
             }
             
             let txt = this.hits_data[this.current_hit - 1].source
-            while (split_chars.includes(txt.charAt(start))) {
-                start += 1
+
+            let range = selection.getRangeAt(0)
+            let [start, end] = [range.startOffset, range.endOffset]
+            
+            if (start == end) {
+                return
             }
-            while (start - 1 >= 0 && !split_chars.includes(txt.charAt(start - 1))) {
-                start -= 1
-            }
-            while (split_chars.includes(txt.charAt(end))) {
+
+            if (!this.config.tokenization || this.config.tokenization != 'char') {
                 end -= 1
-            }
-            while (end + 1 <= txt.length - 1 && !split_chars.includes(txt.charAt(end + 1))) {
+                while (split_chars.includes(txt.charAt(start))) {
+                    start += 1
+                }
+                while (start - 1 >= 0 && !split_chars.includes(txt.charAt(start - 1))) {
+                    start -= 1
+                }
+                while (split_chars.includes(txt.charAt(end))) {
+                    end -= 1
+                }
+                while (end + 1 <= txt.length - 1 && !split_chars.includes(txt.charAt(end + 1))) {
+                    end += 1
+                }
                 end += 1
             }
-            end += 1
+
             if (start >= end) {
                 this.process_source_html_with_selected_span(selected_category)
                 return

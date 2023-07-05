@@ -28,10 +28,10 @@ export default {
         add_an_edit() {
             if (this.editor_open) {
                 $('#add_an_edit').slideUp(300);
-                $(".icon-default").removeClass("open")
+                $(".add_button .icon-default").removeClass("open")
             } else {
                 $('#add_an_edit').slideDown(300);
-                $(".icon-default").addClass("open")
+                $(".add_button .icon-default").addClass("open")
             }
             this.set_editor_state(!this.editor_open)
         },
