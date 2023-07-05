@@ -1,0 +1,78 @@
+# We will show the different options and edit types we support. Our goal is to support
+# any subset of features, such as error selection on only outputs, or edit selection on
+# text-to-text generation tasks.
+
+edits:
+  - name: edit_with_annotation
+    label: "Custom Annotation"
+    enable_input: true
+
+    # We currently support any HEX color or the following color keywords:
+    # red, orange, yellow, green, teal, blue
+    color: "#a468c4"
+
+    # We use the open-source Font Awesome to declare icons
+    # For an icon search, see: http://fontawesome.com/search?o=r&m=free
+    icon: fa-pen
+
+    # Each edit has a corresponding annotation, but we will focus on this aspect
+    # in the next tutorial:
+    annotation:
+      - name: edit_quality
+        label: "Edit Quality"
+        question: "What's the quality of this edit?"
+        options: likert-3
+
+  - name: input_only
+    label: "Input Only"
+    enable_input: true
+    color: green
+    icon: fa-up-long
+
+  - name: output_only
+    label: "Output Only"
+    enable_output: true
+    color: red
+    icon: fa-down-long
+
+  - name: input_and_output
+    label: "Input + Output"
+    enable_input: true
+    enable_output: true
+    color: blue
+    icon: fa-up-down
+
+  # Multi-selection edits allow selecting multiple text spans. This is useful if your edit
+  # may not be a continuous set of words (such as an error in a summarization relating to
+  # multiple antecedents in a context article)
+  - name: multi_selection
+    label: "Multi-span Selection"
+    enable_input: true
+    enable_output: true
+    multi_span: true
+    color: teal
+    icon: fa-arrows-turn-to-dots
+
+  # Up until now we've only looked at one "type" of edit: primitive edits. These are edits
+  # that are directly selected on a sentence. Composite edits are formed by selecting multiple
+  # primitive edits. 
+  - name: composite
+    label: "Composite"
+    type: composite
+    color: orange
+    icon: fa-manat-sign
+
+  # Our last edit selects manually identified breakpoints in a sentence. This is useful for
+  # annotating sentence split changes, like that in SALSA.
+  - name: breakpoint
+    label: "Breakpoint"
+    type: split
+    color: yellow
+    icon: fa-grip-lines-vertical
+    
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Advanced Edit Types Demo

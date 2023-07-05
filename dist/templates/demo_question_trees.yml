@@ -1,0 +1,124 @@
+# As fine-grained annotation requires complex categories, many successful fine-grained 
+# typologies organize their classification in trees. Our interface is unique in that it can 
+# render any arbitrary annotation tree, no matter its depth or breath. We will begin with 
+# simple annotation setups, and then showcase some complex examples.
+
+edits:
+
+  # For simple annotations, "options: binary" will create a yes/no question
+  - name: binary
+    label: "Simple Binary"
+    enable_output: true
+    color: red
+    icon: fa-dice-two
+    annotation:
+      - name: binary_question
+        label: "Quality"                        # <- Displayed next to the edit after it's annotated
+        question: "Is this a quality span?"     # <- Question displayed to the user
+        options: binary
+
+  # "options: likert-3" will create a 1-3 scale
+  - name: likert
+    label: "Simple Likert"
+    enable_output: true
+    color: blue
+    icon: fa-scale-balanced
+    annotation:
+      - name: likert_question
+        label: "Likert Question"
+        question: "Can you rate the span on a scale of 1-3?"
+        options: likert-3
+
+  # This will create a custom number of responses
+  - name: custom
+    label: "Simple Custom"
+    enable_output: true
+    color: teal
+    icon: fa-plus
+    annotation:
+      - name: custom_question
+        label: "Custom Question"
+        question: "Can you select one of these custom annotation types?"
+        options: 
+          - name: child_1
+            label: "Child 1"
+          - name: child_2
+            label: "Child 2"
+          - name: child_3
+            label: "Child 3"
+          - name: child_4
+            label: "Child 4"
+
+  # You can specify any number of individual questions
+  - name: multi_question
+    label: "Multi-Question"
+    enable_output: true
+    color: green
+    icon: fa-question
+    annotation:
+      - name: binary_question
+        label: "Quality"
+        question: "Is this a quality span?"
+        options: binary
+      - name: likert_question
+        label: "Likert Question"
+        question: "Can you rate the span on a scale of 1-3?"
+        options: likert-3
+      - name: grammar_error
+        label: "Grammar Error"
+        question: "Does the span contain a grammar error?"
+        options: binary
+
+  # Within options, you can specify children annotation questions, which will
+  # appear after the parent question is answered. This is how the "tree structred"
+  # annotations are rendered
+  - name: nested_questions
+    label: "Nested Question"
+    enable_output: true
+    color: orange
+    icon: fa-network-wired
+    annotation:
+      - name: grandparent_question
+        question: "Which subtype question is important"
+        options:
+          - name: parent_question
+            label: "Custom Parent Question"
+            question: "Which subchild would you like to select"
+            options:
+              - name: child_1
+                label: "Child 1"
+              - name: child_2
+                label: "Child 2"
+              - name: child_3
+                label: "Child 3"
+              - name: child_4
+                label: "Child 4"
+          - name: parent_likert
+            label: "Likert Parent Question"
+            question: "Can you rate the span on a scale of 1-3?"
+            options: likert-3
+          - name: parent_binary
+            label: "Binary Parent Question"
+            question: "Is this a quality span?" 
+            options: binary
+      - name: additional_question
+        question: "Can you answer this second binary question?"
+        label: "Additional Question"
+        options: binary
+
+  # Now, let's showcase a complex annotation tree
+  - name: complex_tree
+    label: "Complex Tree"
+    enable_output: true
+    color: yellow
+    icon: fa-tree
+    annotation: 
+      - name: TODO
+        options: binary
+    
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Advanced Question Trees Demo
