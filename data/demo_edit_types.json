@@ -1,0 +1,146 @@
+[
+    {
+        "source": "Whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles, and, by opposing, end them?",
+        "target": "Is it nobler to put up with all the nasty things that luck throws your way, or to fight against all those troubles by simply putting an end to them once and for all?",
+        "edits": [
+            {
+                "category": "input_and_output",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        0,
+                        12
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        0,
+                        5
+                    ]
+                ]
+            },
+            {
+                "category": "input_and_output",
+                "id": 2,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        46,
+                        63
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        36,
+                        48
+                    ]
+                ]
+            },
+            {
+                "category": "output_only",
+                "id": 1,
+                "annotation": null,
+                "output_idx": [
+                    [
+                        54,
+                        75
+                    ]
+                ]
+            },
+            {
+                "category": "input_only",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        20,
+                        31
+                    ]
+                ]
+            },
+            {
+                "category": "composite",
+                "id": 1,
+                "annotation": null,
+                "constituent_edits": [
+                    {
+                        "id": 3,
+                        "category": "input_and_output",
+                        "input_idx": [
+                            [
+                                120,
+                                129
+                            ]
+                        ],
+                        "output_idx": [
+                            [
+                                100,
+                                114
+                            ]
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "category": "input_only",
+                        "input_idx": [
+                            [
+                                93,
+                                116
+                            ]
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "category": "output_only",
+                        "output_idx": [
+                            [
+                                125,
+                                152
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "category": "edit_with_annotation",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        67,
+                        86
+                    ]
+                ]
+            },
+            {
+                "category": "multi_selection",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        32,
+                        41
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        20,
+                        27
+                    ],
+                    [
+                        82,
+                        95
+                    ]
+                ]
+            }
+        ],
+        "_interface_id": 1
+    },
+    {
+        "source": "Alas, poor Yorick! I knew him, Horatio: a fellow of infinite jest, of most excellent fancy: he hath borne me on his back a thousand times; and now, how abhorred in my imagination it is!",
+        "target": "Oh, poor Yorick! I used to know him, Horatio—a very funny guy, and with an excellent imagination. He carried me on his back a thousand times, and now—how terrible—this is him.",
+        "edits": [],
+        "_interface_id": 2
+    }
+]
