@@ -12,6 +12,12 @@ export default {
     'instructions_open',
     'toggle_instructions'
   ],
+  mounted() {
+    $('.container').removeClass('container-extra-space')
+    if (this.config.prepend_instructions) {
+      $('.container').addClass('container-extra-space')
+    }
+  }
 }
 </script>
 
