@@ -289,3 +289,20 @@ span.middleside {
 .custom_style {
     display: none
 }
+
+@font-face {
+    font-family: 'BlankSpace';
+    src: url('@/assets/blank.ttf') format('truetype');
+    unicode-range: U+0020;
+}
+
+/* Changes Ġ to ' ' */
+@font-face {
+    font-family: 'SpacedG';
+    src: url('@/assets/whitespace.ttf') format('truetype');
+    unicode-range: U+0120;
+}
+
+.hide-tokenization-chars {
+    font-family: 'BlankSpace', 'SpacedG', sans-serif;
+}

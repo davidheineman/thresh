@@ -178,7 +178,7 @@ export default {
                     if (ann[ann_type_name] == "yes") {
                         // ann_html += ` <span class="brown ba bw1 pa1 br-100">G</span>`;
                         // ann_html += ` <span class="brown ba bw1 pa1 br-pills">Coref error</span>`;
-                        ann_html += ` <span class="brown ba bw1 pa1 br-pills">${ann_type_label}</span>`;
+                        ann_html += ` <span class="brown ba bw1 pa1 br-pills mr2">${ann_type_label}</span>`;
                     }
                 } else if (edit_ann_type['options'] == 'likert-3') {
                     if (ann[ann_type_name] != null) {
@@ -191,10 +191,12 @@ export default {
                     if (selected != null && selected != "") {
                         ann_html += ''
 
+                        let custom_label = edit_ann_type['options'].find(d => d.name === selected)
+                        custom_label = custom_label.label ? custom_label.label : selected
+                        ann_html += `<span class="light-purple ba bw1 pa1 mr2">${custom_label}</span>`
+
                         if (edit_ann_type.hasOwnProperty('options')) {
                             ann_html += this.getAnnotationHtml(edit_ann_type['options'], ann[ann_type_name])
-                        } else {
-                            ann_html += `<span class="light-purple ba bw1 pa1">${selected}</span>`
                         }
                     }                            
                 } 

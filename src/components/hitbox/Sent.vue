@@ -273,6 +273,13 @@ export default {
 
             return edit_html
         },
+        handle_tokenization_rendering() { 
+            if (this.config.tokenization && this.config.tokenization == 'tokenized') {
+                $('span#source-sentence, span#target-sentence, .edit-text, .selected-span-text').addClass('hide-tokenization-chars')
+            } else {
+                $('span#source-sentence, span#target-sentence, .edit-text, .selected-span-text').removeClass('hide-tokenization-chars')
+            }
+        },
         render_sentence(sent, sent_type, span_class, selected_category) {
             let prev_idx = 0
             let sentence_html = ''
@@ -412,9 +419,9 @@ export default {
                 {{ hits_data[current_hit - 1].source_context_before }}&nbsp;
             </span>
             
-            <SourceSent sent_type="source" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
+            <SourceSent sent_type="source" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" :handle_tokenization_rendering="handle_tokenization_rendering"
             :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" 
-            :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" />
+            :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" :config="config" />
         
             <span class="f4 lh-paras context-span" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].source_context_after">
                 &nbsp;{{ hits_data[current_hit - 1].source_context_after }}
@@ -425,9 +432,9 @@ export default {
                 {{ hits_data[current_hit - 1].target_context_before }}&nbsp;
             </span>
 
-            <TargetSent sent_type="target" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" 
+            <TargetSent sent_type="target" v-bind="$props" :remove_selected="remove_selected" :process_edit_list="process_edit_list" :handle_tokenization_rendering="handle_tokenization_rendering"
             :hasAnnotations="hasAnnotations" :is_selected="is_selected" :get_selected_index="get_selected_index" :multi_select_enabled="multi_select_enabled" 
-            :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" />
+            :render_sentence="render_sentence" :click_span="click_span" :hover_span="hover_span" :un_hover_span="un_hover_span" :config="config" />
         
             <span class="f4 lh-paras context-span" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].target_context_after">
                 &nbsp;{{ hits_data[current_hit - 1].target_context_after }}

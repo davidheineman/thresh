@@ -23,6 +23,7 @@ export default {
         'remove_selected',
         'lines',
         'set_lines',
+        'handle_tokenization_rendering',
 
         'process_edit_list',
         'hasAnnotations',
@@ -34,7 +35,8 @@ export default {
         'hover_span',
         'un_hover_span',
 
-        'hit_box_config'
+        'hit_box_config',
+        'config'
     ],
     watch: {
         current_hit() {
@@ -86,17 +88,22 @@ export default {
                 return;
             }
             end -= 1; 
+            let split_chars = [' ']
+            if (this.config.tokenization && this.config.tokenization == 'tokenized') {
+                split_chars = ['Ġ', ' ']
+            }
+
             let txt = this.hits_data[this.current_hit - 1].target
-            while (txt.charAt(start) == ' ') {
+            while (split_chars.includes(txt.charAt(start))) {
                 start += 1; 
             }
-            while (start - 1 >= 0 && txt.charAt(start - 1) != ' ') {
+            while (start - 1 >= 0 && !split_chars.includes(txt.charAt(start - 1))) {
                 start -= 1; 
             }
-            while (txt.charAt(end) == ' ') {
+            while (split_chars.includes(txt.charAt(end))) {
                 end -= 1; 
             }
-            while (end + 1 <= txt.length - 1 && txt.charAt(end + 1) != ' ') {
+            while (end + 1 <= txt.length - 1 && !split_chars.includes(txt.charAt(end + 1))) {
                 end += 1; 
             }
             end += 1;
@@ -105,7 +112,7 @@ export default {
                 return;
             }
 
-            let new_span_text = `<span class="bg-${selected_category}-light">\xa0${txt.substring(start, end)}\xa0</span>`
+            let new_span_text = `<span class="selected-span-text bg-${selected_category}-light">\xa0${txt.substring(start, end)}\xa0</span>`
             this.set_span_text(new_span_text, 'target');
 
             if (this.hit_box_config.enable_multi_select_target_sentence) {
@@ -119,7 +126,7 @@ export default {
                 // iterate through this.selected_span_in_target_indexs
                 for (let i = 0; i < new_indices.length; i++) {
                     let [start, end] = new_indices[i];
-                    new_span_text += `<span class="bg-${selected_category}-light">\xa0
+                    new_span_text += `<span class="selected-span-text bg-${selected_category}-light">\xa0
                         <span @click="remove_selected('${selected_category}',${start},${end})" class="hover-white black br-pill mr1 pointer">✘</span>
                             ${txt.substring(start, end)}\xa0</span>&nbsp&nbsp`;
                 }
@@ -148,7 +155,11 @@ export default {
                         remove_selected: this.remove_selected,
                         hover_span: this.hover_span,
                         un_hover_span: this.un_hover_span,
-                        click_span: this.click_span
+                        click_span: this.click_span,
+                        handle_tokenization_rendering: this.handle_tokenization_rendering
+                },
+                mounted() {
+                    this.handle_tokenization_rendering()
                 }
             }
         }

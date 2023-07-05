@@ -1,0 +1,25 @@
+# We support the following tokenization options:
+
+# - word        - Selection boundaries defined by whitespaces
+# - char        - Selection boundaries defined by characters
+# - tokenzized  - Selection boundaries defined by whitespaces and Ġ (\u0120) characters. These 
+#                 are the subword token boundaries defined by GPT and RoBERTa tokenizers
+tokenization: tokenized
+
+# In our data a white space denotes a new token, and a 'Ġ' denotes the beginning of a new word.
+# When rendering annotation, the whitespaces are ignored.
+
+# To create a tokenized dataset, please refer to tokenization.ipynb -> [ADD LINK]
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Tokenization Demo
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true

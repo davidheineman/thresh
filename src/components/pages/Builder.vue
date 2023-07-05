@@ -209,6 +209,9 @@ export default {
             
             this.selectedOption = template
 
+            this.data = null
+            this.config = null
+
             // Load config
             var local_config;
             await download_config(template).then((config) => {
