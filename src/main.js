@@ -12,6 +12,7 @@ const templates = [
     { name: "Scarecrow", path: "scarecrow", task: "Long-form Generation", hosted: true },
     { name: "FRANK", path: "frank", task: "Summarization", hosted: true },
     { name: "MQM", path: "mqm", task: "Translation", hosted: true },
+    { name: "CWZCC", path: "cwzcc", task: "Grammar Error Correction", hosted: true },
 ]
 
 const demo_templates = [
