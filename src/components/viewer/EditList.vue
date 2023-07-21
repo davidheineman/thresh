@@ -187,6 +187,7 @@ export default {
                     }
                 } else {
                     // custom edit types
+                    if (!ann[ann_type_name]) { continue }
                     let selected = ann[ann_type_name]["val"]
                     if (selected != null && selected != "") {
                         ann_html += ''
@@ -308,12 +309,17 @@ export default {
                     new_html += `<span class="f4 i">${ann_html}</span>`;
                 }
 
+                let disabled = ''
+                if (this.config.disable && Object.values(this.config.disable).includes('annotation')) {
+                    disabled = 'disabled'
+                }
+
                 new_html += `
                         </span>
                     </div>
                     <div class="fl w-20 mb4 operation tr">
-                        <i @click="annotate_edit" class="annotation-icon fa-solid fa-pencil mr3 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>
-                        <i @click="trash_edit" class="fa-solid fa-trash-can ml4 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>
+                        <i @click="annotate_edit" class="annotation-icon fa-solid fa-pencil mr3 pointer dim ${disabled}" data-id="${key}-${i}" data-category="${key}"></i>
+                        <i @click="trash_edit" class="fa-solid fa-trash-can ml4 pointer dim ${disabled}" data-id="${key}-${i}" data-category="${key}"></i>
                     </div>
                 </div>`;
             }

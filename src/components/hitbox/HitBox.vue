@@ -172,6 +172,12 @@ export default {
                 // this.process_target_html_with_selected_span(category);
             }
         },
+        target_exists() {
+            return this.hits_data && this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1].target
+        },
+        source_exists() {
+            return this.hits_data && this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1].source
+        },
         file_download() {
             handle_file_download(this.hits_data)
         },
@@ -209,12 +215,12 @@ export default {
             <div class="fr hit-file-buttons">
                 <div class="mt1 mr1 fr">
                     <input type="button" id="download-btn" @click="file_download"/>
-                    <label class="file-upload file-download br-100 w2-5 h2-5 pointer" for="download-btn"><i class="fa fa-arrow-down"></i></label>
+                    <label class="file-upload file-download br-100 w2-5 h2-5 pointer" for="download-btn" :class="{'disabled': config.disable && Object.values(config.disable).includes('download')}"><i class="fa fa-arrow-down"></i></label>
                 </div>
 
                 <div class="mt1 mr2 ml2 fr">
                     <input type="file" id="upload-btn" @change="file_upload"/>
-                    <label class="file-upload br-100 w2-5 h2-5 pointer" for="upload-btn"><i class="fa fa-arrow-up"></i></label>
+                    <label class="file-upload br-100 w2-5 h2-5 pointer" for="upload-btn" :class="{'disabled': config.disable && Object.values(config.disable).includes('upload')}"><i class="fa fa-arrow-up"></i></label>
                 </div>
             </div>            
         </div>
@@ -234,7 +240,7 @@ export default {
                     <div class="f4 lh-paras">{{ hits_data[current_hit - 1].context }}</div>
                 </div>
 
-                <div class="cf">
+                <div class="cf" v-if="source_exists()">
                     <p class="fl f3 mt1 mb1 orig-sentence-header">
                         <span class="f5">{{ config.interface_text.typology.source_label }}:</span>
                     </p>
@@ -242,7 +248,7 @@ export default {
                 
                 <Sent sent_type="source" v-bind="$props" :remove_selected="remove_selected" />
 
-                <p class="f3 mb1">
+                <p class="f3 mb1" v-if="target_exists()" :class="{'mt0': !source_exists()}">
                     <span class="f5">{{ config.interface_text.typology.target_label }}:</span>
                 </p>
 

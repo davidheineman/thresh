@@ -13,7 +13,10 @@ export default {
         'set_edit_state',
 
         'update_edit_state_parent',
+        'empty_question_state',
         'question_state',
+
+        'force_update',
 
         'isRoot',
         'parent_div_name',
@@ -45,10 +48,6 @@ export default {
         } 
     },
     methods: {
-        isAnnotated() {
-            // TODO: Recursively check for annotation
-            return true
-        },
         has_children() {
             return this.isObject(this.question.options)
         },
@@ -77,6 +76,7 @@ export default {
 
             if (Boolean(this.isRoot === 'true')) {
                 let new_edit_state = _.cloneDeep(this.edit_state);
+                new_edit_state[this.edit_type.name][this.question.name] = this.empty_question_state;
                 if (this.has_children()) {
                     new_edit_state[this.edit_type.name][this.question.name].val = val;
                 } else {
@@ -85,6 +85,7 @@ export default {
                 this.set_edit_state(new_edit_state);
             } else {
                 let new_question_state = _.cloneDeep(this.question_state);
+                new_question_state = this.empty_question_state;
                 if (this.has_children()) {
                     new_question_state.val = val;
                 } else {
@@ -99,6 +100,7 @@ export default {
 
             if (Boolean(this.isRoot === 'true')) {
                 let new_edit_state = _.cloneDeep(this.edit_state);
+                new_edit_state[this.edit_type.name][this.question.name] = this.empty_question_state;
                 new_edit_state[this.edit_type.name][this.question.name] = new_question_state;
                 this.set_edit_state(new_edit_state);
             } else {
@@ -119,6 +121,18 @@ export default {
             } else {
                 return this.question_state//[child.name] // right?
             }
+        },
+        empty_child_state(child) {
+            if (this.has_children() && typeof this.question.options !== 'string') {
+                return this.empty_question_state[child.name]
+            } else {
+                return this.empty_question_state//[child.name] // right?
+            }
+        },
+        isAnnotated() {
+            if (!this.has_children() && this.question_state != null && this.question_state.val == null) { return true }
+            if (this.question_state == null || this.question_state.val == null) { return false }
+            return true
         }
     },
     computed: {
@@ -126,14 +140,14 @@ export default {
             return (variable) => {
                 return typeof variable === "object" && variable !== null;
             };
-        },
+        }
     }
 }
 
 </script>
 
 <template>
-    <div :class="getClassNames()">
+    <div :class="getClassNames()" :annotated="isAnnotated()" :id="`question_${edit_type.name}_${question.name}`">
         <!-- If the question has children -->
         <div v-if="isObject(question.options)">
             <p class="mb3 b tracked-light">{{ question.question }}</p>
@@ -148,7 +162,7 @@ export default {
             </div>
 
             <div v-for="child in question.options" :key="child.id">
-                <Question :edit_state="edit_state" :question_state="child_state(child)" :question="child" :edit_type="edit_type" :set_edit_state="set_edit_state" 
+                <Question :edit_state="edit_state" :question_state="child_state(child)" :empty_question_state="empty_child_state(child)" :question="child" :edit_type="edit_type" :set_edit_state="set_edit_state" 
                     :parent_show_next_question="show_next_question" isRoot=false :update_edit_state_parent="update_edit_state_child"
                     :parent_div_name="div_name" :config="config" />
             </div>

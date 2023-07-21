@@ -274,6 +274,12 @@ textarea {
     max-width: 1200px
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 span.outside {
     padding-bottom: 6px;
 }
@@ -312,6 +318,50 @@ span.middleside {
 }
 
 /* For screenshots */
+/* 175 zoom on 1440p */
+/* with width: 624px 5px 834px */
 /* .f3 {
     font-size: 1.3rem;
+}
+.lh-paras {
+    line-height: 1.5;
+}
+#hit .mb1 {
+    margin-top: 0.6rem;
+}
+.orig-sentence-header {
+    margin-top: 0.1rem !important;
+}
+.annotation-label {
+    margin-bottom: 10pt
+} */
+/* For SCARECROW */
+/* span#target-sentence {
+    line-height: 1.7;
+    font-size: 10.5pt;
+} 
+.edit-box {
+    width: 165px;
+}
+.edit-box label {
+    font-size: 10pt !important;
+    padding: 7px !important;
+}
+.tracked-light {
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+}  */
+
+
+
+/* For CWZCC */
+/* .annotation-label {
+    font-size: 15pt !important;
+}
+.tracked-light {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.column-severity label {
+    padding: 6px !important;
 } */

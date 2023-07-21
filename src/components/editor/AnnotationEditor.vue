@@ -29,7 +29,9 @@ export default {
         let edit_state = this.initalize_edit_state()
 
         return {
+            force_update: false,
             edit_state: edit_state,
+            empty_edit_state: this.initalize_edit_state()
         }
     },
     watch: {
@@ -57,6 +59,10 @@ export default {
         set_edit_state(edit_state) {
             console.log(edit_state)
             this.edit_state = edit_state
+            this.force_update = !this.force_update
+        },
+        force_update_f() {
+            this.force_update = !this.force_update
         },
         cancel_click() {
             $(".icon-default").removeClass("open")
@@ -140,6 +146,30 @@ export default {
             this.refresh_edit();
         },
         save_annotation_click(category, e) {
+            function removeNullElements(obj) {
+                if (typeof obj !== 'object' || obj === null) {
+                    return obj;
+                }
+
+                if (Array.isArray(obj)) {
+                    return obj.map((item) => removeNullElements(item)).filter((item) => item !== null);
+                }
+
+                const newObj = {};
+                let hasNonNullChild = false;
+
+                for (const key in obj) {
+                    if (obj.hasOwnProperty(key)) {
+                        const value = removeNullElements(obj[key]);
+                        if (value !== null) {
+                            newObj[key] = value;
+                            hasNonNullChild = true;
+                        }
+                    }
+                }
+                return hasNonNullChild ? newObj : null;
+            }
+
             let edit_id = this.annotating_edit_span_category_id
             
             let new_hits_data = _.cloneDeep(this.hits_data);
@@ -149,7 +179,7 @@ export default {
                 return entry['category'] === category && entry['id'] === edit_id;
             });
 
-            annotating_span.annotation = new_annotation
+            annotating_span.annotation = removeNullElements(new_annotation)
 
             this.reset_annotation_colors(category, edit_id)
 
@@ -240,28 +270,38 @@ export default {
             this.set_span_indices("", "source");
             this.set_span_indices("", "target");
         },
-        annotate_edit_disabled(category) {
-            // TODO: Figure out how to call isAnnotated() to all top-level children
-            return false
-
-            if (!$('.quality-selection').is(':visible')) { return false }
-            // TODO: Check to make sure the selected category's annotation box is visible
+        annotate_edit_disabled(item) {
+            const force_update = this.force_update
+            const category = item.name
             const edit_config = this.getEditConfig(category)
+
+            if (!this.editor_open) { return true }
+            if (!$(`.quality-selection[data-category=${category}]`).is(':visible')) { return true }
             if (!edit_config || !edit_config.annotation) { return false }
 
             let filled_out = true
 
             for (let question of edit_config.annotation) {
-                console.log(`${category}_${question.name}`)
-                const q_object = this.$refs[`${category}_${question.name}`]
+                const q_object = $(`#question_${category}_${question.name}`)
                 if (q_object == undefined || q_object == {} || q_object.length == 0) { continue }
-                console.log(q_object[0])
-                console.log(this.$refs[`${category}_${question.name}`].value)
-                if (!q_object[0].isAnnotated()) {
+                const annotation = this.edit_state[category][question.name]
+
+                // TODO: Improve annotation disabling. Currently it just checks if the root questions
+                // are answered. I could implement this recursively by checking the "annotated" attribute
+                // but this creates circular updating so we need a better solution.
+                if (
+                    annotation != null && 
+                    (
+                        (annotation.val != null && annotation.val != '') ||
+                        (annotation.val == null && annotation != '' )
+                    )) { 
+                        continue 
+                }
+
+                if ($(q_object[0]).attr('annotated') != 'true') {
                     filled_out = false
                 }
             }
-
             return !filled_out
         }
     },
@@ -271,7 +311,6 @@ export default {
             const selected_state = this.selected_state;
             const selected_category = $("input[name=edit_cotegory]:checked").val();
             const config_category = this.config.edits.find((edit) => edit.name === selected_category)
-            console.log(selected_category, config_category)
             if (selected_category == undefined || config_category == undefined) { return true }
 
             // TODO: Support multi-span edits
@@ -371,15 +410,15 @@ export default {
 
                         <div class="row">
                             <div v-for="question in item.annotation" :key="question.id">
-                                <Question :edit_state="edit_state" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
-                                    :config="config" :parent_show_next_question="null" isRoot=true :ref="`${item.name}_${question.name}`" />
+                                <Question :edit_state="edit_state" :empty_question_state="empty_edit_state[item.name][question.name]" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
+                                    :config="config" :parent_show_next_question="null" isRoot=true :ref="`${item.name}_${question.name}`" :force_update="force_update_f" />
                             </div>
                         </div>
                     </div>
                     <div class="buttons tc">
                         <button @click="cancel_annotation_click(item.name, $e)" class="cancel-button b quality_button bw0 ba mr2 br-pill-ns grow" type="button">{{ config.interface_text.buttons.cancel_label }} <i class="fa-solid fa-close"></i></button>
                         <button @click="save_annotation_click(item.name, $e)" class="confirm-button b quality_button bw0 ba ml2 br-pill-ns"
-                            :class="{'o-40': annotate_edit_disabled(item.name), 'grow': !annotate_edit_disabled(item.name)}" :disabled="annotate_edit_disabled(item.name)">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
+                            :class="{'o-40': annotate_edit_disabled(item), 'grow': !annotate_edit_disabled(item)}" :disabled="annotate_edit_disabled(item)">{{ config.interface_text.buttons.save_label }} <i class="fa-solid fa-check"></i></button>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 [
     {
         "source": "",
-        "target": "pirmi man iyo ta sinti dwele.. nusabe yo porke pirmi ansina.. kwando iyo keda alegre? kwando gaha pasa el diya o mes na iyo triste?",
+        "target": "Pirmi man iyo ta sinti dwele. Nusabe yo porke pirmi ansina. Kwando iyo keda alegre? Kwando gaha pasa el diya o mes na iyo triste?",
         "edits": [
             {
                 "category": "unintentional",
@@ -348,8 +348,8 @@
                 },
                 "output_idx": [
                     [
-                        31,
-                        37
+                        30,
+                        36
                     ]
                 ]
             },
@@ -418,8 +418,8 @@
                 },
                 "output_idx": [
                     [
-                        41,
-                        46
+                        40,
+                        45
                     ]
                 ]
             },
@@ -488,8 +488,8 @@
                 },
                 "output_idx": [
                     [
-                        47,
-                        52
+                        46,
+                        51
                     ]
                 ]
             },
@@ -558,8 +558,8 @@
                 },
                 "output_idx": [
                     [
-                        62,
-                        68
+                        60,
+                        66
                     ]
                 ]
             },
@@ -628,8 +628,8 @@
                 },
                 "output_idx": [
                     [
-                        69,
-                        72
+                        67,
+                        70
                     ]
                 ]
             },
@@ -698,8 +698,8 @@
                 },
                 "output_idx": [
                     [
-                        73,
-                        77
+                        71,
+                        75
                     ]
                 ]
             },
@@ -768,8 +768,8 @@
                 },
                 "output_idx": [
                     [
-                        86,
-                        92
+                        84,
+                        90
                     ]
                 ]
             },
@@ -838,8 +838,8 @@
                 },
                 "output_idx": [
                     [
-                        106,
-                        110
+                        104,
+                        108
                     ]
                 ]
             },
@@ -908,8 +908,8 @@
                 },
                 "output_idx": [
                     [
-                        120,
-                        123
+                        118,
+                        121
                     ]
                 ]
             }

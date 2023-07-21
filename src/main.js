@@ -9,7 +9,7 @@ window.jQuery = window.$ = $
 
 const templates = [
     { name: "SALSA", path: "salsa", task: "Simplification", hosted: true },
-    { name: "Scarecrow", path: "scarecrow", task: "Long-form Generation", hosted: true },
+    { name: "Scarecrow", path: "scarecrow", task: "Open-ended Generation", hosted: true },
     { name: "FRANK", path: "frank", task: "Summarization", hosted: true },
     { name: "MQM", path: "mqm", task: "Translation", hosted: true },
     { name: "CWZCC", path: "cwzcc", task: "Grammar Error Correction", hosted: true },
