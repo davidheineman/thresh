@@ -1,0 +1,132 @@
+template_name: cwzcc
+template_label: CWZCC Error Ontology
+template_description: Spelling Errors Ontology for the Contemporany Written Zamboangueño Chabacano Corpus (CWZCC). 
+
+# English Version created Marcelo Yuji Himoro: mhimoro1@alumno.uned.es
+# The example is taken from App. B of Himoro et al., 2020 (see citation). Full dataset is not
+# publically available due to copyright and privacy concerns.
+
+tokenization: char
+interface_text:
+  typology:
+    target_label: "Document Excerpt:"
+
+edits:
+  - name: intentional
+    label: "Intentional Errors"
+    enable_output: true
+    color: blue
+    icon: fa-magnifying-glass
+    annotation:
+      - name: intentional_error_type
+        label: "Intentional Error Type"
+        options:
+          - name: abbreviations
+            label: "Abbreviations"
+          - name: eye_dialect
+            label: "Eye Dialect"
+          - name: inanities
+            label: "Inanities"
+          - name: repetitions
+            label: "Repetitions"
+          - name: homomorph_glyphs
+            label: "Use	of Homomorph Glyphs"
+          - name: euphemisms
+            label: "Euphemisms"
+  - name: unintentional
+    label: "Unintentional Errors"
+    enable_output: true
+    color: orange
+    icon: fa-magnifying-glass
+    annotation:
+      - name: error_type
+        label: "Unintentional Error Type"
+        options:
+          - name: non_random_errors
+            label: "Non-random Errors"
+            options:
+              - name: arbitrary_spelling
+                label: "Arbitrary Spelling Errors"
+                options:
+                  - name: phonogramical
+                    label: "Phonogramical Errors"
+                    options:
+                      - name: homophone_graphemes
+                        label: "Use	of Homophone Graphemes"
+                      - name: cognate_interference
+                        label: "Cross-Linguistic Cognate Interference"
+                  - name: phonetic
+                    label: "Phonetic Errors"
+                    options:
+                      - name: phoneme_grapheme
+                        label: "Phoneme-Grapheme Mismatch"
+                      - name: impossible_grapheme
+                        label: "Use	of Impossible Graphemes"
+              - name: regular_error
+                label: "Regular	Spelling Errors"
+                options:
+                  - name: orthographic
+                    label: "Orthographic Signs Errors"
+                    options:
+                      - name: auxiliary_mark
+                        label: "Auxiliary Mark Errors"
+                        options:
+                          - name: apostrophe_error
+                            label: "Apostrophe Errors"
+                            options:
+                              - name: apostrophe_omission
+                                label: "Apostrophe Omission"
+                              - name: apostrophe_misuse
+                                label: "Misuse of the Apostrophe"
+                          - name: diacritics
+                            label: "Use of Diacritics"
+                          - name: hyphen_error
+                            label: "Hyphen Errors"
+                            options:
+                              - name: hyphen_omission
+                                label: "Hyphen Omission"
+                              - name: hyphen_misuse
+                                label: "Misuse of the Hyphen"
+                      - name: inverted_punctuation
+                        label: "Use of Inverted Punctuation Marks"
+                  - name: segmentation
+                    label: "Segmentation Errors"
+                    options:
+                      - name: space_omission
+                        label: "Space Omission"
+                      - name: space_misuse
+                        label: "Misuse of Spaces" 
+                  - name: letter_case
+                    label: "Letter Case Errors"
+                    options:
+                      - name: capitalization_omission
+                        label: "Lack of Capitalisation"
+                      - name: capitalization_misuse
+                        label: "Miscapitalisation"
+          - name: random
+            label: "Random Errors"
+            options:
+              - name: insertion
+                label: "Insertion"
+              - name: omission
+                label: "Omission"
+              - name: substitution
+                label: "Substitution"
+              - name: transposition
+                label: "Transposition"
+paper_link: https://aclanthology.org/2020.lrec-1.327/
+citation: |
+  @inproceedings{himoro-pareja-lora-2020-towards,
+    title = "Towards a Spell Checker for {Z}amboanga {C}havacano Orthography",
+    author = "Himoro, Marcelo Yuji  and
+      Pareja-Lora, Antonio",
+    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.327",
+    pages = "2685--2697",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+  }

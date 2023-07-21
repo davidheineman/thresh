@@ -1,0 +1,162 @@
+language: zh
+interface_text:
+  typology:
+    source_label: "人类书面句子"
+    target_label: "语言模型翻译"
+tokenization: char
+template_name: mqm
+template_label: MQM
+template_description: A variation proposed by Freitag et al., 2021 of the Multidimensional Quality Metrics
+edits:
+  - name: accuracy
+    label: "Accuracy"
+    color: red
+    icon: fa-check
+    enable_output: true  
+    type: primitive
+    annotation:
+      - name: accuracy_type
+        question: "Select the accuracy problem."
+        options:
+          - name: addition
+            label: "Addition"
+            question: "Rate the severity"
+            options: likert-3
+          - name: mistranslation
+            label: "Mistranslation"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: omission
+            label: "Omission"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: untranslated_text
+            label: "Untranslated text"
+            questions: "Rate the severity"
+            options: likert-3
+  - name: fluency
+    label: "Fluency"
+    color: teal
+    icon: fa-comment-slash
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: fluency_type
+        question: "Select the fluency problem."
+        options:
+          - name: grammar
+            label: "Grammar"
+            question: "Rate the severity"
+            options: likert-3
+          - name: inconsistency
+            label: "Inconsistency"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: punctuation
+            label: "Punctuation"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: register
+            label: "Register"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: spelling
+            label: "Spelling"
+            questions: "Rate the severity"
+            options: likert-3  
+  - name: locale_convention
+    label: "Locale Convention"
+    color: yellow
+    icon: fa-people-arrows 
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: locale_convention_type
+        question: "Select the convention problem."
+        options:
+          - name: address_format
+            label: "Address format"
+            question: "Rate the severity"
+            options: likert-3
+          - name: currency_format
+            label: "Currency format"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: date_format
+            label: "Date format"
+            questions: "Rate the severity"
+            options: likert-3
+          - name: time_format
+            label: "Time format"
+            questions: "Rate the severity"
+            options: likert-3 
+  - name: akward
+    label: "Style"
+    color: orange
+    icon: fa-person-drowning 
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: akward_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: terminology
+    label: "Terminology"
+    color: green
+    icon: fa-flask
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: terminology_type
+        question: "Select the Terminology problem."
+        options:
+          - name: inappropriate_for_context
+            label: "Inappropriate for context"
+            question: "Rate the severity"
+            options: likert-3
+          - name: inconsistent_use_of_terminology
+            label: "Inconsistent use of terminology"
+            questions: "Rate the severity"
+            options: likert-3
+  - name: non_translation
+    label: "Non-translation"
+    color: blue
+    icon: fa-xmark
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: non_translation_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+  - name: other
+    label: "Other"
+    color: grey
+    icon: fa-ellipsis
+    enable_output: true  
+    type: primitive 
+    annotation:
+      - name: other_type
+        label: "Severity"
+        question: "Rate the severity."
+        options: likert-3
+paper_link: https://aclanthology.org/2021.tacl-1.87
+citation: |
+  @article{freitag-etal-2021-experts,
+    title = "Experts, Errors, and Context: A Large-Scale Study of Human Evaluation for Machine Translation",
+    author = "Freitag, Markus  and
+      Foster, George  and
+      Grangier, David  and
+      Ratnakar, Viresh  and
+      Tan, Qijun  and
+      Macherey, Wolfgang",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "9",
+    year = "2021",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2021.tacl-1.87",
+    doi = "10.1162/tacl_a_00437",
+    pages = "1460--1474",
+  }

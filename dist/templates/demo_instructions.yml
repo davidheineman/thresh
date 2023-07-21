@@ -2,7 +2,7 @@
 
 instructions: |
   ## Adding instructions to your interface
-  Instructions are formatted with [Markdown](https://www.markdownguide.org/cheat-sheet/). You can use the `prepend_instructions` argument to display this text above the interface.
+  Instructions are formatted with [Markdown](https://www.markdownguide.org/cheat-sheet/). You can use the `prepend_instructions` argument to display this text above the interface, or have an "Instructions" button.
 
   ### Formatting
   Markdown allows creating **bold** or *italicized* text and:
@@ -19,8 +19,8 @@ instructions: |
 
   ![Image Alt Text](https://www.statmt.org/moses/img/phrase-model-alignment.png)
 
-# Uncomment to prepend the instruction text to the interface, useful for MTurk deployments
-# prepend_instructions: true
+# Comment this to package the instructions using an "Instructions" button
+prepend_instructions: true
 
 # ========================================================================================
 # ========================================================================================
