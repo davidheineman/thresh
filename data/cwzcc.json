@@ -1,0 +1,919 @@
+[
+    {
+        "source": "",
+        "target": "Pirmi man iyo ta sinti dwele. Nusabe yo porke pirmi ansina. Kwando iyo keda alegre? Kwando gaha pasa el diya o mes na iyo triste?",
+        "edits": [
+            {
+                "category": "unintentional",
+                "id": 1,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "cognate_interference",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        0,
+                        5
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 2,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        10,
+                        13
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 3,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        17,
+                        22
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 4,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        23,
+                        28
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 5,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "regular_error",
+                            "arbitrary_spelling": {
+                                "val": "phonetic",
+                                "phonogramical": {
+                                    "val": null,
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": "segmentation",
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": "space_omission",
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        30,
+                        36
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 6,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        40,
+                        45
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 7,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "cognate_interference",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        46,
+                        51
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 8,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        60,
+                        66
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 9,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        67,
+                        70
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 10,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        71,
+                        75
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 11,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        84,
+                        90
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 12,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        104,
+                        108
+                    ]
+                ]
+            },
+            {
+                "category": "unintentional",
+                "id": 13,
+                "annotation": {
+                    "val": null,
+                    "error_type": {
+                        "val": "non_random_errors",
+                        "non_random_errors": {
+                            "val": "arbitrary_spelling",
+                            "arbitrary_spelling": {
+                                "val": "phonogramical",
+                                "phonogramical": {
+                                    "val": "homophone_graphemes",
+                                    "homophone_graphemes": null,
+                                    "cognate_interference": null
+                                },
+                                "phonetic": {
+                                    "val": null,
+                                    "phoneme_grapheme": null,
+                                    "impossible_grapheme": null
+                                }
+                            },
+                            "regular_error": {
+                                "val": null,
+                                "orthographic": {
+                                    "val": null,
+                                    "auxiliary_mark": {
+                                        "val": null,
+                                        "apostrophe_error": {
+                                            "val": null,
+                                            "apostrophe_omission": null,
+                                            "apostrophe_misuse": null
+                                        },
+                                        "diacritics": null,
+                                        "hyphen_error": {
+                                            "val": null,
+                                            "hyphen_omission": null,
+                                            "hyphen_misuse": null
+                                        }
+                                    },
+                                    "inverted_punctuation": null
+                                },
+                                "segmentation": {
+                                    "val": null,
+                                    "space_omission": null,
+                                    "space_misuse": null
+                                },
+                                "letter_case": {
+                                    "val": null,
+                                    "capitalization_omission": null,
+                                    "capitalization_misuse": null
+                                }
+                            }
+                        },
+                        "random": {
+                            "val": null,
+                            "insertion": null,
+                            "omission": null,
+                            "substitution": null,
+                            "transposition": null
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        118,
+                        121
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 1
+    }
+]

@@ -14,12 +14,9 @@
                 "category": "deletion",
                 "id": 1,
                 "annotation": {
-                    "val": null,
                     "deletion_type": {
                         "val": "good_deletion",
-                        "good_deletion": "somewhat",
-                        "trivial_deletion": null,
-                        "bad_deletion": null
+                        "good_deletion": "somewhat"
                     },
                     "coreference": "no",
                     "grammar_error": "yes"
@@ -35,19 +32,9 @@
                 "category": "insertion",
                 "id": 1,
                 "annotation": {
-                    "val": null,
                     "insertion_type": {
                         "val": "facutal_error",
-                        "elaboration": null,
-                        "trivial_insertion": {
-                            "val": null,
-                            "yes": null,
-                            "no": null
-                        },
-                        "repetition": null,
-                        "contradiction": null,
-                        "facutal_error": "a lot",
-                        "irrelevant": null
+                        "facutal_error": "a lot"
                     },
                     "grammar_error": "yes"
                 },
@@ -62,20 +49,11 @@
                 "category": "reorder",
                 "id": 1,
                 "annotation": {
-                    "val": null,
                     "reorder_level": {
                         "val": "component_level",
-                        "word_level": {
-                            "val": null,
-                            "bad": null,
-                            "trivial": null,
-                            "good": null
-                        },
                         "component_level": {
                             "val": "bad",
-                            "bad": "somewhat",
-                            "trivial": null,
-                            "good": null
+                            "bad": "somewhat"
                         }
                     },
                     "grammar_error": "no"
@@ -97,19 +75,9 @@
                 "category": "insertion",
                 "id": 2,
                 "annotation": {
-                    "val": null,
                     "insertion_type": {
                         "val": "contradiction",
-                        "elaboration": null,
-                        "trivial_insertion": {
-                            "val": null,
-                            "yes": null,
-                            "no": null
-                        },
-                        "repetition": null,
-                        "contradiction": "somewhat",
-                        "facutal_error": null,
-                        "irrelevant": null
+                        "contradiction": "somewhat"
                     },
                     "grammar_error": "no"
                 },
@@ -124,20 +92,11 @@
                 "category": "structure",
                 "id": 1,
                 "annotation": {
-                    "val": null,
                     "structure_type": {
-                        "val": "grammar_number",
-                        "voice": null,
-                        "pos": null,
-                        "tense": null,
-                        "grammar_number": null,
-                        "clausal": null,
-                        "transition": null
+                        "val": "grammar_number"
                     },
                     "impact": {
                         "val": "good",
-                        "bad": null,
-                        "trivial": null,
                         "good": "a lot"
                     },
                     "grammar_error": "yes"
@@ -172,7 +131,8 @@
                 ]
             }
         ],
-        "_interface_id": 1
+        "_interface_id": 1,
+        "_nlproc_tools_id": 1
     },
     {
         "id": 2,
@@ -185,6 +145,7 @@
         "source": "The award-winning actress turned Goop CEO is currently in court for a ski accident back in 2016, with the man who collided with her trying to get millions in indemnization (Paltrow in turn claims he was the one crashing rather than the other way around).",
         "target": "The famous actress who now runs Goop is in court because of a skiing accident that happened in 2016. || The man who crashed into her is asking for millions of dollars in compensation, but she says he was actually the one who caused the accident.",
         "edits": [],
-        "_interface_id": 2
+        "_interface_id": 2,
+        "_nlproc_tools_id": 2
     }
 ]

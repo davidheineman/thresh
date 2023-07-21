@@ -1,6 +1,6 @@
 # We support the following tokenization options:
 
-# - word        - Selection boundaries defined by whitespaces
+# - word        - Selection boundaries defined by whitespaces, enabled by default
 # - char        - Selection boundaries defined by characters
 # - tokenzized  - Selection boundaries defined by whitespaces and Ġ (\u0120) characters. These 
 #                 are the subword token boundaries defined by GPT and RoBERTa tokenizers
