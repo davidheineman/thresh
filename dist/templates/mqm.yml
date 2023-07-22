@@ -1,10 +1,18 @@
 template_name: mqm
 template_label: MQM
 template_description: A variation proposed by Freitag et al., 2021 of the Multidimensional Quality Metrics
+
+# ========================================================================================
+#
+
+#
+# ========================================================================================
+
 interface_text:
   typology:
     source_label: "Original Sentence"
     target_label: "German Translation"
+
 edits:
   - name: accuracy
     label: "Accuracy"

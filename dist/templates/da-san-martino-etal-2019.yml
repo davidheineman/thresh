@@ -1,0 +1,129 @@
+template_name: da-san-martino-etal-2019
+template_label: Da San Martino et al., 2019
+template_description: Linguistic inspection of propaganda in news articles performed by Da San Martino et al., 2019
+
+# ========================================================================================
+#
+# This interface and data come from a manual lingusitic inspection of 550 articles, the full
+# dataset description is included in the paper, and the full data is available at
+# https://propaganda.qcri.org/
+#
+# ========================================================================================
+
+interface_text:
+  typology:
+    target_label: "News Article"
+
+disable:
+- annotation
+
+edits:
+  - name: loaded_language
+    label: "Loaded language"
+    enable_output: true
+    color: "#FF5733"
+    icon: fa-comment-dots
+  - name: name_calling
+    label: "Name calling or labeling"
+    enable_output: true
+    color: "#4CAF50"
+    icon: fa-person
+  - name: repetition
+    label: "Repetition"
+    enable_output: true
+    color: "#2196F3"
+    icon: fa-repeat
+  - name: exaggeration
+    label: "Exaggeration or minimization"
+    enable_output: true
+    color: "#FFC107"
+    icon: fa-person-burst
+  - name: doubt
+    label: "Doubt"
+    enable_output: true
+    color: "#E91E63"
+    icon: fa-circle-question
+  - name: appeal_to_fear_prejudice
+    label: "Appeal to fear/prejudice"
+    enable_output: true
+    color: "#673AB7"
+    icon: fa-users-gear
+  - name: flag_waving
+    label: "Flag-waving"
+    enable_output: true
+    color: "#9C27B0"
+    icon: fa-flag
+  - name: causal_oversimplification
+    label: "Causal oversimplification"
+    enable_output: true
+    color: "#009688"
+    icon: fa-chart-simple
+  - name: slogans
+    label: "Slogans"
+    enable_output: true
+    color: "#FF9800"
+    icon: fa-landmark-flag
+  - name: appeal_to_authority
+    label: "Appeal to authority"
+    enable_output: true
+    color: "#607D8B"
+    icon: fa-chess-king
+  - name: black_and_white_fallacy
+    label: "Black-and-white fallacy"
+    enable_output: true
+    color: "#404040"
+    icon: fa-cube
+  - name: thought_terminating_cliches
+    label: "Thought-terminating cliche"
+    enable_output: true
+    color: "#03A9F4"
+    icon: fa-arrows-spin
+  - name: whataboutism
+    label: "Whataboutism"
+    enable_output: true
+    color: "#FF5722"
+    icon: fa-hand-point-left
+  - name: reductio_ad_hitlerum
+    label: "Reductio ad Hitlerum"
+    enable_output: true
+    color: "#3F51B5"
+    icon: fa-ellipsis
+  - name: red_herring
+    label: "Red herring"
+    enable_output: true
+    color: red
+    icon: fa-fish
+  - name: bandwagon
+    label: "Bandwagon"
+    enable_output: true
+    color: "#CDDC39"
+    icon: fa-truck-monster
+  - name: obfuscate
+    label: "Obfuscation, intentional vagueness, confusion"
+    enable_output: true
+    color: "#FF4081"
+    icon: fa-cloud-showers-heavy
+  - name: straw_man
+    label: "Straw man"
+    enable_output: true
+    color: "#795548"
+    icon: fa-wheat-awn-circle-exclamation
+
+paper_link: https://aclanthology.org/D19-1565
+citation: |
+  @inproceedings{da-san-martino-etal-2019-fine,
+    title = "Fine-Grained Analysis of Propaganda in News Article",
+    author = "Da San Martino, Giovanni  and
+      Yu, Seunghak  and
+      Barr{\'o}n-Cede{\~n}o, Alberto  and
+      Petrov, Rostislav  and
+      Nakov, Preslav",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1565",
+    doi = "10.18653/v1/D19-1565",
+    pages = "5636--5646"
+  }
