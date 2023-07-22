@@ -17,6 +17,9 @@ interface_text:
 disable:
 - annotation
 
+font_size:
+  target: 16
+
 edits:
   - name: loaded_language
     label: "Loaded language"
@@ -99,7 +102,7 @@ edits:
     color: "#CDDC39"
     icon: fa-truck-monster
   - name: obfuscate
-    label: "Obfuscation, intentional vagueness, confusion"
+    label: "Obfuscation, confusion"
     enable_output: true
     color: "#FF4081"
     icon: fa-cloud-showers-heavy

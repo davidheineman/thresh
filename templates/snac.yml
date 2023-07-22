@@ -4,7 +4,9 @@ template_description: Coherence Error Detection for Narrative Summarization
 
 # ========================================================================================
 #
-
+# The Goyal et al., 2022 paper annotates 3 different model sizes, which we randomly sample.
+# for our demo data. For their vizualizer, see: 
+# https://coherence-annotation-summaries.herokuapp.com/explore_dataset
 #
 # ========================================================================================
 

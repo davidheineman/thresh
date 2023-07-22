@@ -4,17 +4,58 @@ template_description: Fine-grained human feedback typology introduced by Wu et a
 
 # ========================================================================================
 #
-
+# This typology is used as part of a RLHF pipeline for fine-tuning a LLM as a  QA system.
+# The original interface had annotators select missing info at the bottom of the interface
+# instead of selecting the relevant span in the passage. See Figures 5 & 6 in App. C of 
+# Wu et al., 2023 for details.
 #
 # ========================================================================================
 
 interface_text:
   typology:
-    context_label: "Passages"
-    source_label: "Question"
+    context_label: ""
+    source_label: "Reference Answer"
     target_label: "Generation"
 
+font_size:
+  source: 16
+  target: 16
+
 edits:
+  - name: factual
+    label: "Factual Error"
+    enable_output: true
+    color: red
+    icon: fa-x
+    annotation:
+      - name: factual_error
+        question: "Select the factual/language error."
+        options:
+          - name: irrelevant
+            label: "Irrelevant"
+          - name: repetitive
+            label: "Repetitive"
+          - name: inconsistent
+            label: "Inconsistent"
+          - name: unverifiable
+            label: "Unverifiable Fact"
+          - name: incoherent
+            lable: "Incoherent"
+  
+  - name: missing_info
+    label: "Missing Info"
+    enable_input: true
+    icon: fa-question
+    annotation:
+      - name: missing_info_error
+        question: "Select the missing info error."
+        options:
+          - name: missing_answer
+            label: "Missing Answer"
+          - name: missing_major_auxiliary
+            label: "Missing Major Auxiliary Info"
+          - name: missing_minor_auxiliary
+            label: "Missing Minor Auxiliary Info"
 
 
 paper_link: https://arxiv.org/abs/2306.01693
