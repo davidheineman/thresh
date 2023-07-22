@@ -1,6 +1,3294 @@
 [
     {
         "source": "",
-        "target": "Need to add dataset"
+        "target": "It is also said that seeing Anytus pass by, Socrates remarked: \"How proudly the great man steps; he thinks, no doubt, he has performed some great and noble deed in putting me to death, and all because, seeing him deemed worthy of the highest honours of the state, I told him it ill became him to bring up his so in a tan-yard.\" He adds that Homer has ascribed to some at the point of death a power of forecasting things, and he too is minded to utter a prophecy. Once, for a brief space, he associated with the son of Anytus, and he seemed",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        42
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        264,
+                        326
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        28,
+                        34
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        341,
+                        346
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        526,
+                        539
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "One day an acquaintance told her that a lady wanted a nurse for her babe. She applied for the situation and the lady told her she preferred to have one who had been a mother. She stayed with Mrs. Bruce through the winter and spring. When she took the children out to breathe the air, she closely observed the countenances of all she met.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        29,
+                        32
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        73
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        175,
+                        337
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        191,
+                        201
+                    ]
+                ],
+                "votes": 3
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Dr. Flint never allowed anyone to whip Linda. Her grandmother tried various ways to buy her, but the answer was always the same: Linda does not belong to her, she is her daughter's property and has no legal right to sell her.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        8
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        39,
+                        44
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        45
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        129,
+                        225
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "They meet Joshua Strader, who is the owner of the club where they are staying. Langston and Markko have a heart to heart about their feelings for each other, and Langston admits to Markko that she doesn't know if she wants to be with him, but Markko assures her that they will always love each other. The mayor introduces William Harcourt as the first Newcomer of Los Angeles, and introduces him to his family and friends.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        10,
+                        24
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        79,
+                        87
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        92,
+                        98
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        79,
+                        156
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        301,
+                        310
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        322,
+                        338
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        301,
+                        422
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Mrs. Warren and Sir George Crofts arrive at the gate. Crofts asks Mr. Praed if he knows who Vivie's father is. Mr. Praed denies knowing. Crofts then asks if he thinks he might be the father. Mr. Praed is offended by this suggestion.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        11
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        16,
+                        33
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        52
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        45,
+                        47
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Holly and Jack are on their way to St. Barts to look for Danny and Tony, but the roads are closed and they can't get in or out of the car. Holly tries to call Larry, but gets his voicemail. He tells her that he's not in Florida.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        44
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        67,
+                        71
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        159,
+                        164
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "InconE",
+                "output_idx": [
+                    [
+                        190,
+                        228
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The new doctor, Rowcliffe, tends to John Greatorex who is dying. Rowcliffe is a skilled doctor and surgeon, and Alice grows increasingly pale as her heart grows larger.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        36,
+                        50
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        51,
+                        64
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        112,
+                        117
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        145,
+                        167
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "He loves no play, as thou do'st, Anthony; he hears no music and smiles in such a manner as if he mocked himself and his spirit. Not only such men as Caesar add are dangerous, but also having little enjoyment within themselves, they can never become agreeable to others or contribute to social entertainment. The utility of courage to the public and to the person possessed of it is an obvious foundation of merit. The philosophical tranquillity may be considered only as a branch of magnanimity. If the foregoing hypothesis is accepted, it will be easy to determine the question of general morals. Though we postponed the decision of that question, lest it should involve us in intricate speculations, we may resume it now and examine how far either reason or sentiment enters into all decisions of praise or censure.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        0,
+                        2
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        33,
+                        40
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        40
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        149,
+                        155
+                    ]
+                ],
+                "votes": 3
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Serebrakoff proposes to sell the estate, earning 4-5% on the investment. Until this moment, he has never had a grain of sense in his head thinking that the estate belonged to Sonia. He says that he has managed the estate for 20 years and sent the returns to SEREBRAKOFF. A shot is heard and VOITSKI flings the revolver on the floor. VOITSKI says that he attempted murder and is not going to be arrested or brought to trial. He says that he has 13 years before him and that he may live to 60. He gives ASTROFF a bottle of morphine.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        71
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        11
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        29,
+                        39
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        30,
+                        32
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        182,
+                        184
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        271,
+                        331
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        182,
+                        184
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "They find the boat and find the captain, who's been knocked unconscious by the gaff in his chest. They take him to the hospital.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        75,
+                        96
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        39
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "In Syria, Ventidius and his men arrive with the dead body of Pacorus.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        61,
+                        68
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        69
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        44,
+                        57
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        24,
+                        68
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "They shoot and kill Mr. Takagi, who is tied up and gagged in the conference room. The police arrive and take Theo away. Tony and Eddie find the gun in the board room.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        24,
+                        30
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        32,
+                        80
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        120,
+                        124
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        129,
+                        134
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        120,
+                        166
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Captain Cuttle is a man of honor and faith in the Commander of the Cautious Clara. However, as time wears on and Bunsby fails to reappear, the Captain begins to entertain uncomfortable doubts about Bunsby being decoyed to Brig Place as a hostage for his friend. He wonders if Mrs MacStinger had turned back to board.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        82
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        113,
+                        137
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        236,
+                        260
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        262,
+                        315
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Alyosha tells Dmitri that he loves no one but him. Dmitri reads Alyosha's letter and says that Alyosha was going to Katerina Ivanovna's. Alyosha says he was sent by the back-way. Mitya breaks into sobs and says there is a lot of suffering on earth. Alyosha says he loves vice and cruelty. As cheerful as ever, he was intimate with her. One day, Katerina Ivanovna walks in and looks straight at Alyosha. Alyosha shows her a banknote for five thousand roubles. Katerina Ivanovna comes in, holding out both hands to Alyosha with a radiant smile of delight. Alyosha walks through the town to the monastery. He encounters Mitya, who threatens him with death if he doesn't hand over his money. Alyosha resolves to stay with his elder to the end.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        7
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        26,
+                        28
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        46,
+                        49
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        116,
+                        124
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        150,
+                        161
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        179,
+                        248
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        26,
+                        28
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 7,
+                "category": "RepE",
+                "output_idx": [
+                    [
+                        459,
+                        485
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 8,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        554,
+                        602
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Essy is pregnant and the Vicar gives her a month's notice to leave. Her mother doesn't want a baby around the house.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        25,
+                        30
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        5,
+                        16
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        66
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        68,
+                        71
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Alice explains to Harriet that she was involved in a robbery and wants to prevent James from encountering his enemy.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        5
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        18,
+                        25
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        82,
+                        87
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        31,
+                        60
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        116
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Kay and Dee arrive at the immigration office in Mexico and find out that they will be staying in the guest house until they are processed. They are surprised to find that they are being watched over by immigration agents. Kay and Dee try to get out of there, but they are caught by the agents.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        137
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        3
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        8,
+                        11
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        171,
+                        220
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Pantagruel reflects on the particular gifts which by the divine goodness have been heaped on him and since his departure it has banished all other thoughts from his mind. He sends Malicorne to give him a true account of his health at the beginning of his voyage. Panurge tells that if they touch at the great kingdom of Gebarim, they would be honorably received and treated by the sovereign of that country, King Ohabe. Friar John relates how Basche, a brave, honest, noble-spirited gentleman, was every day cited, warned, and prosecuted at the suit and for the sport and fancy of the fat prior of St. Louant. Pantagruel shoots the physeter with darts and it dies. He demands a parley with the queen, who offers to hold of him and his the whole island and country to obey him in all his commands.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        96
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        180,
+                        189
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        408,
+                        418
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        443,
+                        449
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Munny is taken to the hospital where he tells the doctor that he is in critical condition. Little Bill reads a book to Little Bill about the murder of Corky and finds out that English Bob was the one who killed him. He tells Little Bill that if he had two guns, he could have killed him too.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        0,
+                        90
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        91,
+                        130
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        137,
+                        156
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        151,
+                        156
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        176,
+                        187
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        216,
+                        291
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        216,
+                        218
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 7,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        19,
+                        21
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 8,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        19,
+                        21
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 9,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        211,
+                        214
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Romeo and Juliet wake up in the mausoleum and realize that they've been poisoned. They try to get out of there, but Balthasar's car crashes and they are trapped in the chapel. Father Laurence arrives and rescues them.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        81
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        81
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        116,
+                        131
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        153,
+                        174
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        116,
+                        125
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 5,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        176,
+                        191
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Bora tells Conrade that he has wooed Margaret, the Lady Hero's gentlewoman, by the name of Hero.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        11,
+                        18
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        37,
+                        45
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        96
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        51,
+                        95
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Antonio agrees to send Proteus to the Emperor's court to learn more about life. Proteus has a letter from Julia that contains her oath for love.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        7
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        38,
+                        45
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "InconE",
+                "output_idx": [
+                    [
+                        94,
+                        143
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        92,
+                        111
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Natalia tells Margo that she can't be with Mace because he's in love with someone else. He tells her that he doesn't have feelings for her. She tells him that she's not afraid of him, but maybe she is.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        7
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        14,
+                        19
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        43,
+                        47
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        87
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Jack tells Algernon that he's come to town to propose to Gwendolen. Algernon says he doesn't see anything romantic about proposing and that he won't allow Jack to marry Gwendolen until he clears up the whole question of Cecily.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        11,
+                        19
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        57,
+                        66
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        220,
+                        226
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        202,
+                        226
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Johnnie debates what to buy as colors will fade. She chooses a white lawn dress, which Mandy compliments. As they enter the longroom, festivities are underway. Gray Stoddard sits beside Mandy and explains the plan to her. Johnnie and Gray dance together. Gray says none of the girls know how to waltz. Shade Buckheath, a young man from Cottonville, has always been fascinated by the prospect of finding a silver mine. One day, Gray hires Johnnie as a waitress. Lydia Sessions, a philanthropist, disapproves of Johnnie's work and tries to convince Gray to stop hiring her. Gray is shocked to learn that Johnnie has been carrying on with Himes.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        48
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        49,
+                        52
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        87,
+                        92
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        134,
+                        159
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        160,
+                        173
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 5,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        196,
+                        213
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        222,
+                        254
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 7,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        302,
+                        417
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 8,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        636,
+                        641
+                    ]
+                ],
+                "votes": 3
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Friar Laurence enters his cell alone with a basket. The earth that's nature's mother is her tomb. Virtue itself turns vice, being misapplied. Romeo is not in bed to Rom. He says he has been feasting with his enemy where on a sudden one wounded him. Romeo asks Friar to consent to marry them to-day. Friar says Rosaline knew well his love did read by rote, that could not spell. Romeo says his heart's love is set on the fair daughter of rich Capulet. Nurse says Romeo and Juliet begin with a letter. Juliet says her mother is within. Friar says Romeo shall thank thee, daughter, for us both.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        51
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        14
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        142,
+                        168
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        170,
+                        247
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        5
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        310,
+                        318
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Strether continues to make it out that Waymarsh may have one up his sleeve. Miss Barrace assures him that they take an interest in him because they feel he'll come up to the scratch. Strether realizes that Waymarsh knows about Mrs. Newsome's cables. Sarah hesitates but brings it out. \"Is it absolutely necessary you should see me again?\" she asks. Strether replies that it is if he is to give her any definite word about anything.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        74
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        75
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        227,
+                        241
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        227,
+                        248
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        349,
+                        431
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Rev. Gardner says silence. Frank says he once offered a woman 50 pounds for the letters he wrote to her when. Rev. Gardner says he put himself into her power and she never made use of her power or caused him a moment's uneasiness.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        12
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        88,
+                        108
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        38,
+                        40
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        38,
+                        40
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        38,
+                        40
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Aramis, the bishop of Vannes, visits a prisoner in the Bastille and tells him he is the legitimate heir to the throne of France, the son of King Louis XIII. Aramis says the king kept the prince near him so he could be the legitimate sovereign.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        9,
+                        11
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        39,
+                        47
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        9,
+                        11
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        178,
+                        197
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Ventidius says he has avenged Marcus Crassus' death and will inform Antony of their victory. Caesar, Antony, Lepidus, and Octavia meet and discuss their agreement.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        30,
+                        44
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        30,
+                        51
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        109,
+                        116
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        147,
+                        162
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "He asks her out to dinner and she accepts. Irene and Benicio are in the car with the driver of the car that hit and killed Benicio. They are headed to a pawn shop in the valley where they will be picked up by the boss of the pawn shop.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        116,
+                        130
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "InconE",
+                "output_idx": [
+                    [
+                        99,
+                        129
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        43,
+                        131
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        132,
+                        235
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Diane tells Jax that she thinks Jeffrey is trying to set Robert up to look like he's cheating on her. Jax tells her to stay out of his business. Jeffery tells Robert that he can't take his money back from him.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        5
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        12,
+                        15
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        32,
+                        39
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        57,
+                        63
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        100
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 5,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        101
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        145,
+                        209
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 7,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        145,
+                        209
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 8,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        22,
+                        24
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The Governor tells them to let the police handle it. The Judge tells them that he will make a decision that day. The cowboy tells the Colonel that he is going to get Little Bill and Little Bill's mother.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        12
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        19,
+                        23
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        53,
+                        62
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        19,
+                        23
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Little Bill and Alice are brought into the hospital and taken into custody. Faith and Silky take Faith to the fairgrounds to watch the rodeo. They give her two hundred dollars and a newspaper article about Bill Munny.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        11
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        11
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        16,
+                        21
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        56,
+                        75
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        76,
+                        140
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        76,
+                        81
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 6,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        86,
+                        91
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 7,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        76,
+                        121
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 8,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        206,
+                        216
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 9,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        142,
+                        146
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 10,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        152,
+                        155
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Ethan moves away toward the kitchen and his glance crosses Mattie's. As she mounts the stairs ahead of Zeena, Ethan undresses hurriedly and blows out the light so he won't see her when he takes his place at her side. Ethan feels confused that there are many things he ought to think about, but through his tingling veins and tired brain, he knows that Zeena had spoken the truth in saying that she had sat up because she felt \"too mean\" to sleep. Ethan's family and his house are the only ones Zeena goes to, drawn there by the fact that Mrs. Hale, in her youth, had done more \"doctoring\" than any other woman in Starkfield.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        67
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        103,
+                        108
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        176,
+                        179
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        176,
+                        179
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        72,
+                        75
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        72,
+                        75
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 6,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        543,
+                        547
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 7,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        447,
+                        507
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "In her desire to make atonement, Bathsheba takes flowers from a vase and lays them around the dead girl's head. Her husband, Troy, appears at the entrance to the room and beheld it all. He kisses Fanny Robin as one would kiss an infant to avoid waking it.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        14,
+                        31
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        94,
+                        98
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        90,
+                        103
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        110
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        196,
+                        207
+                    ]
+                ],
+                "votes": 3
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Jaques says that Duke Frederick heard that many people of great worth were in the forest, so he sent an army to capture his brother and kill him. However, he converted to a religious life and restored the lands to those who were exiled.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        120,
+                        123
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        32,
+                        34
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        109,
+                        144
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        145
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        32,
+                        34
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        214,
+                        235
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 6,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        155,
+                        167
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "She sends a message to Bob's office telling him that the Banshee is headed to his office. Margaret and Richard are on their way to Alaska. They meet with the immigration agent.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        57,
+                        64
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        89
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        0,
+                        19
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        90,
+                        98
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        103,
+                        110
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 5,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        90,
+                        138
+                    ]
+                ],
+                "votes": 2
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Lily and Lucinda talk about her relationship with Holden, and Lily tells Lucinda that she'll always love him, but it's time for her to move on with her life. Lucinda isn't sure if she can do that, but Lily assures her that she can. Leo is upset that he got bumped off the stage by George Simmons.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        56
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        9,
+                        16
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        50,
+                        56
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        28,
+                        31
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        232,
+                        296
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 6,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        232,
+                        235
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 7,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        281,
+                        295
+                    ]
+                ],
+                "votes": 3
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Dr. Miller receives a call to attend a case at the house of a well-to-do colored farmer. Josh and his men make their appearance in the negro quarter armed with guns and axes. A shot splinters the window casing close to Josh's head. Jerry scans the crowd looking for white friends. Carteret moves away after his futile effort to stem the torrent.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        89,
+                        93
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        89,
+                        174
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        232,
+                        237
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        232,
+                        279
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        281,
+                        344
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Pedro says Farewell, boy, you know my mind. He will leave you now to your gossiplike humor. His lord, for your many courtesies, he thanks you. He must discontinue your company. His brother the bastard is fled from Messina. For his Lord Lackbeard, he and he will meet.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        26,
+                        29
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        128,
+                        130
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        231,
+                        245
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        247,
+                        266
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Zoe wonders if the woman already has a baby or is she trying to become one. Zoe and Stan are on their way to the Farmer's Market in New York City when they are stopped by the police, who arrest Zoe for breaking and entering. They are taken to the police station, where they learn that Zoe is pregnant.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        33,
+                        74
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        76,
+                        224
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "InconE",
+                "output_idx": [
+                    [
+                        76,
+                        128
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        202,
+                        223
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        76,
+                        105
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        151,
+                        155
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Sandy and Mace take him back to Llanview. Tess and Chris share a passionate kiss, but he pulls away and tells her that he can't do this. She tells him that she doesn't know what she would do if it weren't for him.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        5
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        10,
+                        14
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 2,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        20,
+                        23
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        51,
+                        56
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "RepE",
+                "output_idx": [
+                    [
+                        86,
+                        136
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        42,
+                        136
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "They are taken to the police station, and the officer tells them that they will have to stay there until they find Sarah and Evan. Katie and Mike try to figure out how to get through to Simon and Carly, but they can't seem to find the words to tell them what they want to hear. Mike and Katie decide to go to the Lakeview to talk to Carly and Simon, but when they get there, they find out that they are being watched by the police.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        60,
+                        64
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        70,
+                        74
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        186,
+                        191
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        196,
+                        201
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 4,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        131,
+                        202
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 5,
+                "category": "InconE",
+                "output_idx": [
+                    [
+                        278,
+                        349
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Gwen tells Will that she doesn't want to be a burden to him anymore. Lily tells Holden that she can't be with him because he is in love with another woman. She tells him that she doesn't want him to give up on her.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        0,
+                        68
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        69,
+                        73
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        80,
+                        86
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        69,
+                        113
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        145,
+                        148
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Kat and her friend Mandella have a girl's night out at Club Skunk. Bianca is upset when she sees her sister, Chastity, dancing with another girl. She tells her sister that she doesn't want her to go to Bogey Lowenstein's party because she's a freak.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        3
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        66
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        202,
+                        218
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        202,
+                        226
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Shawn thinks Christy wouldn't suit him though all is saying she'll wed him now. Widow Quin puts Christy's clothes on him and he can give his answer when he has them tried. Shawn says Christy will not leave them and he's a score of divils in him the way it's well nigh certain he'll wed Pegeen. Mahon appears on the threshold and asks if she saw a young lad passing this way in the early morning or the fall of night. Widow Quin says there's harvest hundreds do be passing these days for the Sligo boat. Mahon says he wants to destroy him for breaking the head on him with the clout of a loy. Mahon yells it's Christy! by the stars of God! Widow Quin catches Mahon and says that's not his son, but a man is going to make a marriage with the daughter of this house.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        78
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        60,
+                        66
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        294,
+                        416
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        294,
+                        299
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 4,
+                "category": "GramE",
+                "output_idx": [
+                    [
+                        441,
+                        448
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CorefE",
+                "output_idx": [
+                    [
+                        35,
+                        38
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Zoe tries to convince Stan that she isn't pregnant, but he doesn't believe her. Zoe pours a glass of wine down the drain when she sees a pregnant woman sipping a drink at the bar. Stan sings a song to Zoe, but she pukes on the floor.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "InconE",
+                "output_idx": [
+                    [
+                        32,
+                        51
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        80,
+                        179
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        80,
+                        120
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 3,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        180,
+                        233
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Fouquet prepares his palace of Vaux-le-Vicomte to receive the king as a guest. The king arrives and is greeted by Fouquet, who has prepared a grand banquet for him. The king meets La Valliere in the park and expresses his love for her. After supper, the king goes to his chamber and asks Fouquet to call Colbert to him.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        76
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        0,
+                        7
+                    ]
+                ],
+                "votes": 3
+            },
+            {
+                "id": 2,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        165,
+                        234
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        180,
+                        191
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 4,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        236,
+                        319
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 5,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        304,
+                        311
+                    ]
+                ],
+                "votes": 3
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Lily and Holden talk about their feelings for each other. Lily tells him she loves him, and he tells her he loves her, and they are going to be together forever. The cops come to Brody's apartment looking for him.",
+        "edits": [
+            {
+                "id": 0,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        0,
+                        56
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 1,
+                "category": "CharE",
+                "output_idx": [
+                    [
+                        179,
+                        184
+                    ]
+                ],
+                "votes": 1
+            },
+            {
+                "id": 2,
+                "category": "SceneE",
+                "output_idx": [
+                    [
+                        162,
+                        213
+                    ]
+                ],
+                "votes": 2
+            },
+            {
+                "id": 3,
+                "category": "RefE",
+                "output_idx": [
+                    [
+                        197,
+                        212
+                    ]
+                ],
+                "votes": 1
+            }
+        ]
     }
 ]
