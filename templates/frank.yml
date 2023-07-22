@@ -1,53 +1,65 @@
 template_name: frank
 template_label: FRANK
 template_description: Factuality in Abstractive Summarization
+
+# ========================================================================================
+#
+
+#
+# ========================================================================================
+
 interface_text:
   typology:
     source_label: "Article"
     target_label: "Generated Summary"
+
+disable:
+- annotation
+
 edits:
   - name: RelE
     label: "Relation Error"
     type: primitive
-    color: red
-    icon: 
+    color: "#bd3dbf"
+    icon: fa-people-arrows
     enable_output: true
   - name: EntE
     label: "Entity Error"
     type: primitive
     color: blue
-    icon: 
+    icon: fa-box
     enable_output: true
   - name: CircE
     label: "Circumstance Error"
     type: primitive
     color: teal
-    icon: 
+    icon: fa-person-falling
     enable_output: true
   - name: CorefE
     label: "Coreference Error"
     type: primitive
     color: yellow
-    icon: 
+    icon: fa-user-minus
     enable_output: true
   - name: LinkE
     label: "Discourse Link Error"
     type: primitive
     color: orange
-    icon: 
+    icon: fa-comment-slash
     enable_output: true
   - name: OutE
     label: "Out of Article Error"
     type: primitive
     color: green
-    icon: 
+    icon: fa-file-export
     enable_output: true
   - name: GramE
     label: "Grammatical Error"
     type: primitive
     color: red
-    icon: 
+    icon: fa-spell-check
     enable_output: true
+
 paper_link: https://aclanthology.org/2021.naacl-main.383/
 citation: |
   @inproceedings{pagnoni-etal-2021-understanding,

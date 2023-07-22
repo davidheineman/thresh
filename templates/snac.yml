@@ -1,0 +1,78 @@
+template_name: snac
+template_label: SNaC
+template_description: Coherence Error Detection for Narrative Summarization
+
+# ========================================================================================
+#
+
+#
+# ========================================================================================
+
+interface_text:
+  typology:
+    source_label: "Article"
+    target_label: "Generated Summary"
+
+disable:
+- annotation
+
+edits:
+  - name: CharE
+    label: "Character w/o Introduction"
+    type: primitive
+    color: blue
+    icon: fa-person-circle-question
+    enable_output: true
+  - name: RefE
+    label: "Missing Reference"
+    type: primitive
+    color: "#bd3dbf"
+    icon: fa-expand
+    enable_output: true
+  - name: SceneE
+    label: "Abruct Scene Transition"
+    type: primitive
+    color: teal
+    icon: fa-people-pulling
+    enable_output: true
+  - name: InconE
+    label: "Inconsistency"
+    type: primitive
+    color: yellow
+    icon: fa-triangle-exclamation
+    enable_output: true
+  - name: RepE
+    label: "Repetition"
+    type: primitive
+    color: orange
+    icon: fa-arrows-spin
+    enable_output: true
+  - name: GramE
+    label: "Ungrammatical or Nonsensical"
+    type: primitive
+    color: red
+    icon: fa-spell-check
+    enable_output: true
+  - name: CorefE
+    label: "Unclear Coreference"
+    type: primitive
+    color: green
+    icon: fa-people-arrows
+    enable_output: true
+
+
+paper_link: https://aclanthology.org/2022.emnlp-main.29
+citation: |
+  @inproceedings{goyal-etal-2022-snac,
+    title = "{SN}a{C}: Coherence Error Detection for Narrative Summarization",
+    author = "Goyal, Tanya  and
+      Li, Junyi Jessy  and
+      Durrett, Greg",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.29",
+    pages = "444--463"
+  }

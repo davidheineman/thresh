@@ -1,0 +1,240 @@
+[
+    {
+        "source": "Relax, take it easy.",
+        "target": "Relax, take a deep breath, and enjoy the moment.",
+        "edits": [
+            {
+                "category": "add_new",
+                "id": 1,
+                "annotation": null,
+                "output_idx": [
+                    [
+                        14,
+                        48
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 1
+    },
+    {
+        "source": "Which is the best GRE coaching centre in Bangalore?",
+        "target": "what is the best gre training centre...",
+        "edits": [
+            {
+                "category": "word_syn",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        0,
+                        5
+                    ],
+                    [
+                        22,
+                        30
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        0,
+                        4
+                    ],
+                    [
+                        21,
+                        29
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 2
+    },
+    {
+        "source": "it looks goddamned foolish to put an oyster on the clam.",
+        "target": "Putting an oyster on a clam is a fucking joke.",
+        "edits": [
+            {
+                "category": "phrase_syn",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        3,
+                        26
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        28,
+                        46
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 3
+    },
+    {
+        "source": "Two big plates filled with some tasty looking food.",
+        "target": "Two big plates of food, and the food looks good.",
+        "edits": [
+            {
+                "category": "structure",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        15,
+                        45
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        24,
+                        48
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 4
+    },
+    {
+        "source": "Daniel Farke sacked by Norwich after first win of Premier League season over Brentford.",
+        "target": "Norwich sack Daniel Farke after first win of Premier League season.",
+        "edits": [
+            {
+                "category": "simplification",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        72,
+                        87
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 5
+    },
+    {
+        "source": "Did you have a good day today?",
+        "target": "Did you have a good day today?",
+        "edits": [
+            {
+                "category": "copy",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        0,
+                        30
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        0,
+                        30
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 6
+    },
+    {
+        "source": "FDA approves new test that can detect coronavirus in 45 minutes.",
+        "target": "the fda has approved a new test...",
+        "edits": [
+            {
+                "category": "small_change",
+                "id": 1,
+                "annotation": null,
+                "output_idx": [
+                    [
+                        0,
+                        3
+                    ],
+                    [
+                        8,
+                        20
+                    ],
+                    [
+                        21,
+                        22
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 7
+    },
+    {
+        "source": "A dog at a table wearing a birthday hat.",
+        "target": "A dog wearing a birthday hat at a dinner party.",
+        "edits": [
+            {
+                "category": "hallucination",
+                "id": 1,
+                "annotation": null,
+                "output_idx": [
+                    [
+                        34,
+                        47
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 8
+    },
+    {
+        "source": "Very sad though that the amazing AJ and Kai will be missing the final.",
+        "target": "AJ and Kai will not be in the final.",
+        "edits": [
+            {
+                "category": "miss_info",
+                "id": 1,
+                "annotation": null,
+                "input_idx": [
+                    [
+                        0,
+                        15
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 9
+    },
+    {
+        "source": "Why are most first basemen left handed?",
+        "target": "why do most of the first basemen have left hands?",
+        "edits": [
+            {
+                "category": "misinterpret",
+                "id": 1,
+                "annotation": null,
+                "output_idx": [
+                    [
+                        33,
+                        49
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 10
+    },
+    {
+        "source": "",
+        "target": "what is the best earphones for rs 3000?",
+        "edits": [
+            {
+                "category": "bad_grammar",
+                "id": 1,
+                "annotation": null,
+                "output_idx": [
+                    [
+                        5,
+                        7
+                    ]
+                ]
+            }
+        ],
+        "_nlproc_tools_id": 11
+    }
+]

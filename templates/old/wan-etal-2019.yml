@@ -1,0 +1,35 @@
+template_name: wan-etal-2019
+template_label: Wan et al., 2019
+template_description: Fine-grained spoiler detection performed by Wan et al., 2019
+
+# ========================================================================================
+#
+
+#
+# ========================================================================================
+
+interface_text:
+  typology:
+    source_label: 
+    target_label: 
+
+edits:
+
+
+paper_link: https://aclanthology.org/P19-1248
+citation: |
+  @inproceedings{wan-etal-2019-fine,
+    title = "Fine-Grained Spoiler Detection from Large-Scale Review Corpora",
+    author = "Wan, Mengting  and
+      Misra, Rishabh  and
+      Nakashole, Ndapa  and
+      McAuley, Julian",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1248",
+    doi = "10.18653/v1/P19-1248",
+    pages = "2605--2610"
+  }

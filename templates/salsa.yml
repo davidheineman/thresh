@@ -1,6 +1,13 @@
 template_name: salsa
 template_label: 💃 SALSA
 template_description: Success and FAilure Linguistic Simplification Annotation
+
+# ========================================================================================
+#
+
+#
+# ========================================================================================
+
 instructions: |
   ## SALSA 💃 Annotation Instructions  
   Please make sure you select all the edits, some edits **may be easily missed** when the sentence is too long.
@@ -10,10 +17,12 @@ instructions: |
   If you have any question, please don't hesitate to ask us over **slack**.
   
   Have fun!!!
+
 interface_text:
   typology:
     source_label: "Original Sentence"
     target_label: "Simplified Sentence"
+
 edits:
   - name: deletion
     label: "Deletion"
