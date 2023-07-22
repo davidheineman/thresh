@@ -63,7 +63,7 @@ export default {
     <section>
         <div class="mt1 cf">
             <div class="fl w-80">
-                <p class="f3 annotation-label ttu">{{ config.interface_text.annotation_viewer.header }} (<span>{{ annotated_edits }}/{{ total_edits }}</span>)</p>
+                <p class="f3 annotation-label ttu">{{ config.interface_text.annotation_viewer.header }} (<span v-if="!config.disable || !Object.values(config.disable).includes('annotation')">{{ annotated_edits }}/{{ total_edits }}</span><span v-if="config.disable && Object.values(config.disable).includes('annotation')">{{ total_edits }}</span>)</p>
             </div>
             <div class="fl w-20 tr">
                 <p @click="add_an_edit" class="add_button pa2 br-pill-ns ba bw1 grow" :class="{'disabled': config.disable && Object.values(config.disable).includes('selection')}">

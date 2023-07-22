@@ -182,7 +182,8 @@ p{
 	flex-direction: column;
 	padding: 10px;
 	/* width: 198px; */
-	height: 40px;
+	min-height: 40px;
+	height: fit-content;
 	font-size: 17px;
 	line-height: 20px;
 	letter-spacing: 1px;

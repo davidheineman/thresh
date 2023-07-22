@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "metadata": {
             "gid": "10001",
             "model": "gpt3",
@@ -39,6 +40,7 @@
         ]
     },
     {
+        "id": 2,
         "metadata": {
             "gid": "10002",
             "model": "gpt3",
@@ -130,6 +132,7 @@
         ]
     },
     {
+        "id": 3,
         "metadata": {
             "gid": "10003",
             "model": "gpt3",
@@ -195,6 +198,7 @@
         ]
     },
     {
+        "id": 4,
         "metadata": {
             "gid": "10004",
             "model": "gpt3",
@@ -286,6 +290,7 @@
         ]
     },
     {
+        "id": 5,
         "metadata": {
             "gid": "10005",
             "model": "gpt3",
@@ -312,6 +317,7 @@
         ]
     },
     {
+        "id": 6,
         "metadata": {
             "gid": "10006",
             "model": "gpt3",
@@ -351,6 +357,7 @@
         ]
     },
     {
+        "id": 7,
         "metadata": {
             "gid": "10007",
             "model": "gpt3",
@@ -416,6 +423,7 @@
         ]
     },
     {
+        "id": 8,
         "metadata": {
             "gid": "10008",
             "model": "gpt3",
@@ -442,6 +450,7 @@
         ]
     },
     {
+        "id": 9,
         "metadata": {
             "gid": "10009",
             "model": "gpt3",
@@ -481,6 +490,7 @@
         ]
     },
     {
+        "id": 10,
         "metadata": {
             "gid": "10010",
             "model": "gpt3",
@@ -533,6 +543,7 @@
         ]
     },
     {
+        "id": 11,
         "metadata": {
             "gid": "20001",
             "model": "gpt2",
@@ -598,6 +609,7 @@
         ]
     },
     {
+        "id": 12,
         "metadata": {
             "gid": "20002",
             "model": "gpt2",
@@ -728,6 +740,7 @@
         ]
     },
     {
+        "id": 13,
         "metadata": {
             "gid": "20003",
             "model": "gpt2",
@@ -754,6 +767,7 @@
         ]
     },
     {
+        "id": 14,
         "metadata": {
             "gid": "20004",
             "model": "gpt2",
@@ -832,6 +846,7 @@
         ]
     },
     {
+        "id": 15,
         "metadata": {
             "gid": "20005",
             "model": "gpt2",
@@ -844,6 +859,7 @@
         "edits": []
     },
     {
+        "id": 16,
         "metadata": {
             "gid": "20006",
             "model": "gpt2",
@@ -961,6 +977,7 @@
         ]
     },
     {
+        "id": 17,
         "metadata": {
             "gid": "20007",
             "model": "gpt2",
@@ -1052,6 +1069,7 @@
         ]
     },
     {
+        "id": 18,
         "metadata": {
             "gid": "20008",
             "model": "gpt2",
@@ -1078,6 +1096,7 @@
         ]
     },
     {
+        "id": 19,
         "metadata": {
             "gid": "20009",
             "model": "gpt2",
@@ -1117,6 +1136,7 @@
         ]
     },
     {
+        "id": 20,
         "metadata": {
             "gid": "20010",
             "model": "gpt2",
@@ -1143,6 +1163,7 @@
         ]
     },
     {
+        "id": 21,
         "metadata": {
             "gid": "20011",
             "model": "gpt2-xl",
@@ -1182,6 +1203,7 @@
         ]
     },
     {
+        "id": 22,
         "metadata": {
             "gid": "20012",
             "model": "gpt2-xl",
@@ -1234,6 +1256,7 @@
         ]
     },
     {
+        "id": 23,
         "metadata": {
             "gid": "20013",
             "model": "gpt2-xl",
@@ -1246,6 +1269,7 @@
         "edits": []
     },
     {
+        "id": 24,
         "metadata": {
             "gid": "20014",
             "model": "gpt2-xl",
@@ -1298,6 +1322,7 @@
         ]
     },
     {
+        "id": 25,
         "metadata": {
             "gid": "20015",
             "model": "gpt2-xl",
@@ -1376,6 +1401,7 @@
         ]
     },
     {
+        "id": 26,
         "metadata": {
             "gid": "20016",
             "model": "gpt2-xl",
@@ -1428,6 +1454,7 @@
         ]
     },
     {
+        "id": 27,
         "metadata": {
             "gid": "20017",
             "model": "gpt2-xl",
@@ -1467,6 +1494,7 @@
         ]
     },
     {
+        "id": 28,
         "metadata": {
             "gid": "20018",
             "model": "gpt2-xl",
@@ -1479,6 +1507,7 @@
         "edits": []
     },
     {
+        "id": 29,
         "metadata": {
             "gid": "20019",
             "model": "gpt2-xl",
@@ -1518,6 +1547,7 @@
         ]
     },
     {
+        "id": 30,
         "metadata": {
             "gid": "20020",
             "model": "gpt2-xl",
@@ -1530,6 +1560,7 @@
         "edits": []
     },
     {
+        "id": 31,
         "metadata": {
             "gid": "20021",
             "model": "grover-mega",
@@ -1608,6 +1639,7 @@
         ]
     },
     {
+        "id": 32,
         "metadata": {
             "gid": "20022",
             "model": "grover-mega",
@@ -1647,6 +1679,7 @@
         ]
     },
     {
+        "id": 33,
         "metadata": {
             "gid": "20023",
             "model": "grover-mega",
@@ -1659,6 +1692,7 @@
         "edits": []
     },
     {
+        "id": 34,
         "metadata": {
             "gid": "20024",
             "model": "grover-mega",
@@ -1685,6 +1719,7 @@
         ]
     },
     {
+        "id": 35,
         "metadata": {
             "gid": "20025",
             "model": "grover-mega",
@@ -1737,6 +1772,7 @@
         ]
     },
     {
+        "id": 36,
         "metadata": {
             "gid": "20026",
             "model": "grover-mega",
@@ -1802,6 +1838,7 @@
         ]
     },
     {
+        "id": 37,
         "metadata": {
             "gid": "20027",
             "model": "grover-mega",
@@ -1906,6 +1943,7 @@
         ]
     },
     {
+        "id": 38,
         "metadata": {
             "gid": "20028",
             "model": "grover-mega",
@@ -1984,6 +2022,7 @@
         ]
     },
     {
+        "id": 39,
         "metadata": {
             "gid": "20029",
             "model": "grover-mega",
@@ -2023,6 +2062,7 @@
         ]
     },
     {
+        "id": 40,
         "metadata": {
             "gid": "20030",
             "model": "grover-mega",
@@ -2101,6 +2141,7 @@
         ]
     },
     {
+        "id": 41,
         "metadata": {
             "gid": "20031",
             "model": "human",
@@ -2192,6 +2233,7 @@
         ]
     },
     {
+        "id": 42,
         "metadata": {
             "gid": "20032",
             "model": "human",
@@ -2244,6 +2286,7 @@
         ]
     },
     {
+        "id": 43,
         "metadata": {
             "gid": "20033",
             "model": "human",
@@ -2256,6 +2299,7 @@
         "edits": []
     },
     {
+        "id": 44,
         "metadata": {
             "gid": "20034",
             "model": "human",
@@ -2347,6 +2391,7 @@
         ]
     },
     {
+        "id": 45,
         "metadata": {
             "gid": "20035",
             "model": "human",
@@ -2373,6 +2418,7 @@
         ]
     },
     {
+        "id": 46,
         "metadata": {
             "gid": "20036",
             "model": "human",
@@ -2385,6 +2431,7 @@
         "edits": []
     },
     {
+        "id": 47,
         "metadata": {
             "gid": "20037",
             "model": "human",
@@ -2397,6 +2444,7 @@
         "edits": []
     },
     {
+        "id": 48,
         "metadata": {
             "gid": "20038",
             "model": "human",
@@ -2423,6 +2471,7 @@
         ]
     },
     {
+        "id": 49,
         "metadata": {
             "gid": "20039",
             "model": "human",
@@ -2449,6 +2498,7 @@
         ]
     },
     {
+        "id": 50,
         "metadata": {
             "gid": "20040",
             "model": "human",
@@ -2459,2337 +2509,5 @@
         "source": "Many of us already live with artificial intelligence now, but researchers say interactions with the technology will become increasingly personalized.",
         "target": "This article is part of our new series, Currents, which examines how rapid advances in technology are transforming our lives. I wake up in the middle of the night. It\u2019s cold. \u201cHey, Google, what\u2019s the temperature in Zone 2,\u201d I say into the darkness. A disembodied voice responds: \u201cThe temperature in Zone 2 is 52 degrees.\u201d \u201cSet the heat to 68,\u201d I say, and then I ask the gods of artificial intelligence to turn on the light. Many of us already live with A.I., an array of unseen algorithms that control our Internet-connected devices, from smartphones to security cameras.",
         "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30001",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "NEW YORK: Tesla Inc\u2019s market value has climbed above Volkswagen AG\u2019s for the first time to more than US$100 billion, a threshold that will trigger a huge payout for Elon Musk if he can sustain the feat for months.",
-        "target": "Tesla\u2019s $47 billion market capitalization on Tuesday surpassed the auto industry giant that\u2019s the most profitable car company in the world, with $16 billion in profits last year. Advertisement VW\u2019s is at US$230 billion, almost three times the value of all US automakers combined and larger than any company on the DAX index of blue-chip German shares. Such an eye-popping figure can give Chief Executive Officer Musk a huge payday if Tesla stock rises 13 percent more. He has a $100 million performance-based bonus outstanding from last September. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "commonsense",
-                "output_idx": [
-                    [
-                        8,
-                        41
-                    ]
-                ],
-                "annotation": {
-                    "commonsense_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "bad_math",
-                "output_idx": [
-                    [
-                        8,
-                        41
-                    ]
-                ],
-                "annotation": {
-                    "bad_math_type": "a lot"
-                }
-            },
-            {
-                "id": 2,
-                "category": "bad_math",
-                "output_idx": [
-                    [
-                        193,
-                        219
-                    ]
-                ],
-                "annotation": {
-                    "bad_math_type": "a lot"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        314,
-                        351
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 4,
-                "category": "incoherent",
-                "output_idx": [
-                    [
-                        179,
-                        219
-                    ]
-                ],
-                "annotation": {
-                    "incoherent_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30002",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "UK\u2019s central bank will assess the possibility of a \u2018central bank digital currency\u2019\nFinancial giants",
-        "target": "UBS : Swiss investment bank UBS recently created a project called \"utility settlement coin\" which is designed to be a crypto-currency that settles transactions between banks. The bankers trying to create their own form of digital currency are reacting to increasing competition for their services from fintech startups such as decentralized peer-to-peer payment apps and services such as Bitcoin. The Chief Technology Officer at UBS, Richard Soley, stated recently that: \" This capability (utility settlement coin) is not going to be wasted. The business of these big banks is to stay in business and they will adopt this technology.\" ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        401,
-                        448
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        327,
-                        353
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        0,
-                        27
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30003",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "By Samantha Melamed, The Philadelphia Inquirer\nPHILADELPHIA \u2014 Ross Nazimov thought he had found the perfect apartment: a room in a brand-new two-bedroom unit in Fishtown, with a roommate who assured him he was rarely home.",
-        "target": "Nazimov signed a lease in April 2014, paid a broker's fee, and made a $923 deposit, half of which he paid by check, half by debit card. But a few days before he was to move in, the owner called him. The building had problems with the contractor, Nazimov was told. No problem, said Nazimov. He was in no rush. \"After waiting for three weeks, he gave up,\" recalls Nazimov's sister Vera, who was helping him find an apartment. \"The money was gone.\" ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30004",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Dear Sam: I am a professional in the entertainment business \u2014 with more than 20 years of experience in my home country \u2014 who relocated to the U.S. in 2019.",
-        "target": "I have a sister who is also a professional, though she is less experienced, in the same business \u2014 who stayed in my country. I want to help my sister with her business, but I am not sure how best to get started. She has had me on retainer for small work in the past, but I now feel I am in a position to help her far more effectively and in a larger way. I want to help her as a matter of kindness but also because I want to be useful to others and to make a difference in their lives. But how can I go about giving her help? I am very busy in my own career. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        0,
-                        124
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30005",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "The literary haven on the corner of Dundas and Mill streets is celebrating a milestone.",
-        "target": "\"It will be fun to see all these 50,000 authors come through and look and wonder where their books are and that they found a home here,\" said Friesen. \"They were all homeschooled by Paul Wilson.\" She spent a lot of time at the store every day to work with Paul and says she's noticed changes over the years. \"Paul would actually go on the road and know a lot of authors, but it was a lot smaller community back then,\" she said. \"There was the ALA and more centred around that.\" ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        443,
-                        446
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        456,
-                        463
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30006",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "One of Nigeria\u2019s leading academic institution, Grace Schools has announced its partnership with the Candadian institution, Loyalist college, to prepare school-leaving students for onward academic pursuits abroad.",
-        "target": "Under the agreement, the Canadian institution will sign out a selection of students across the school\u2019s 7 campuses, to pursue their higher studies. The five-year-programme will, according to a statement, cover scholarship, visa, accommodation, laptop, and hostel needs of selected candidates. At the signing ceremony held yesterday at the school\u2019s Abuja campus, the schools\u2019 Head, Programmes, Mrs. Opu Fadayomi said: \u201cwe at Grace Schools are proud and pleased to partner with Loyalist College to offer talented Nigerian students the opportunity to broaden their education.\u201d ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        362,
-                        392
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30007",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "All 18 outlets of restaurant business shut down after it failed to find a buyer\nRestaurant chain Handmade Burger Co has collapsed into administration for the second time, leading to the closure of all 18 outlets and the loss of 283 jobs.",
-        "target": "The administrator, David Field of Field Perry Willis, said he has sold the brand names and customer database to fellow restaurateur Richard Coop, the founder of Carluccio's and Rubicon, for an undisclosed sum. Field said: \"After much thought and deliberation, we've all agreed that the current Handmade estate is not strong enough to move the business forward and realise its potential. As a consequence, all stores have closed and unfortunately all employees have been made redundant with immediate effect.\" Debts of \u00a313.1m, including \u00a37.4m owed to its parent company Jamie Oliver Holdings Limited, were preventing Handmade Burger Co from trading, said Field. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        509,
-                        648
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30008",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Ted Baker today experienced the dubious honour of joining a list of FTSE firms that have been shaken by accounting errors in the past year.",
-        "target": "The chain's shares fell 15pc after it revealed that it had overstated profit margins by \u00a37.2m. It said the money had been spent buying handbags from suppliers, partly to meet unusually high demand. The chain, whose customers have included Pamela Anderson and Demi Moore, said profits for the year to the end of July would be \u00a33.3m - 15pc below expectations. Despite the accounting gaffe, however, the group said sales had risen 29pc and margins continued to improve. Tim Melville-Ross, an analyst at Cazenove, said: \"It's not a disaster. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        516,
-                        537
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        358,
-                        466
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30009",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "SEATTLE \u2014",
-        "target": "9:58 | Things are not going well for the Huskies and it\u2019s not all Apple \u201cThe Offspring\u201d Kelly\u2019s fault. USC started out 1-for-6 from three-point land in the first half \u2014 \u201cmake the freakin\u2019 shots\u201d \u2014 but the Huskies managed to only take a nine-point lead. USC is shooting well, making multiple shots from well beyond the arc, shooting 54 percent on the night and only turning it over twice (not including Lane's one-handed pass). That\u2019s a pretty polished game from the Women of Troy. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        466,
-                        480
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30010",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Cory Booker and Jonathan Holloway were teammates on Stanford University\u2019s football team more than three decades ago.",
-        "target": "On Monday, Booker (a Democrat) and Holloway (a Republican) \u2014 both now mayors in the Garden State \u2014 will meet in a courtroom not far from the location of Booker\u2019s first collegiate game. Booker and the city of Newark will take the field against the City of Elizabeth, led by its Republican mayor, Robert . The litigation centers on traffic camera legislation. After the state Supreme Court unanimously overturned an earlier attempt by legislators to curb the use of traffic cameras by municipalities in June 2014, lawmakers last year approved a constitutional amendment to put limits on their use. The legal challenge to the amendment began in April 2016 and has been ongoing. ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30011",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Nationals deputy leader Bridget McKenzie is facing an investigation into whether she breached ministerial standards as part of a sporting grants scandal.",
-        "target": "Senator McKenzie has come under fire for awarding former leader's adviser James Ashby $10,000 a year as a part-time \u201csport\u201d adviser. Fairfax Media revealed on Wednesday that Mr Ashby had failed to declare his financial interests properly, triggering an investigation into his behaviour. The Nationals are now coming under scrutiny over whether Senator McKenzie's behaviour was appropriate as secretary of the parliamentary secretary's fund, in light of a decision made on July 27, 2015. Nationals deputy leader Bridget McKenzie is facing an investigation into whether she breached ministerial standards. AAP ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        0,
-                        16
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        50,
-                        85
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        276,
-                        286
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        441,
-                        486
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 4,
-                "category": "incoherent",
-                "output_idx": [
-                    [
-                        604,
-                        607
-                    ]
-                ],
-                "annotation": {
-                    "incoherent_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30012",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "TEHRAN - Presidential chief of staff Mahmoud Vaezi said on Wednesday that the recent meetings between senior Iranian officials and the emir of Qatari in Tehran was mainly focusing on reinvigoration of security in the Persian Gulf.",
-        "target": "\u201cRecent visit of the Qatari emir to Tehran to meet with a number of senior officials is the expression of brotherly ties between the two neighboring countries,\u201d Vaezi said in his final TV appearance of the year, adding that Iran has always called for stability, security and tranquility of the region. \"The recent talks between the officials of the two countries had in fact concentrated on mechanisms of exchanging views on reinforcing security in the Persian Gulf,\" Vaezi said. READ MORE: Iran FMs to Meet Ahead of OPEC Meeting ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        480,
-                        529
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30013",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "This undated image provided by Audi shows Maisie Williams in a scene from the company's 2020 Super Bowl NFL football spot.",
-        "target": "\"Game of Thrones\" star Maisie Williams is in the limelight for the right reasons, and it has nothing to do with getting killed off. The 19-year-old British actress has been signed as the new face of international carmaker Audi in a $300-million Super Bowl TV campaign. While Williams had already managed to win over the Internet by being picked to play Arya Stark, she was also in the news last year for acting in a steamy kiss scene on the hit HBO drama. However, she says she still feels \"very lucky\" about her career. \"You get to travel the world and be creative. Getting to meet people in all different professions. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        132,
-                        163
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        0,
-                        38
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        607,
-                        619
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30014",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Politics\nFormer Vice President Joe Biden on Friday morning walked back comments he made that his top competitor ahead of next week\u2019s Iowa caucuses, Bernie Sanders, is not a Democrat.",
-        "target": "Weiner was sentenced on Friday to 21 months in prison for sending explicit messages to a minor, a Sydney Leathers, as part of his sexting scandal. In regards to Weiner\u2019s actions, Chelsea Clinton said, \u201cAnd I just don\u2019t understand what he was thinking. I think it just\u2026 it defies\u2013 not just logic, but the moral code that we have\u2013 that you would have someone who would prey on\u2026 wait for it\u2013 teenage girls that he had just met online. It just boggles the mind. It just makes no sense.\u201d ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        0,
-                        53
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30015",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "A rally for Donald Trump in Wildwood, NJ.",
-        "target": "But the weather played a major factor in making sure the candidate could not arrive at the convention centre in time. A video of his Wildwood speech soon circulated with him looking distraught and complaining that organisers cancelled the event. \"They said no, we won't allow you because of the weather. What are they doing letting it rain if they know I am going to be here?\" he says. People board Donald Trump's Boeing 757 in North Carolina. \"I want to pay for this event immediately and let it go ahead. We won't even wait. Tell me where to go. We had this massive crowd ... and we had incredible enthusiasm.\" ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        380,
-                        385
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        246,
-                        376
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        393,
-                        398
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        444,
-                        612
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30016",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "U.S. Rep. Joe Kennedy on Friday announced that several members of the Lawrence City Council were endorsing his primary bid for the U.S. Senate seat held by Ed Markey.",
-        "target": "In a statement announcing endorsements from eight Democratic local officials, Kennedy said their backing \"shows what I've known all along -- that the fight for this seat is being waged by working families who are fighting for affordable health care, funding for our public schools, fair pay, and a level playing field for everyone.\" Kennedy said the endorsements came from Lawrence Mayor Dan Rivera, Ward 8 Councilor Jennifer Martinez, Ward 9 Councilor Khalid Raheem, Ward 10 Councilor E. Denise Simmons, Ward 11 Councilor Mark H. Leahy, Ward 12 Councilor Jimmy Martins, and Ward 13 Councilor Dennis Benzan. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        0,
-                        332
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "somewhat"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        296,
-                        332
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30017",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Republican Rep.",
-        "target": "Barletta: Senate Should Be a Check On Trump's Power Hearing the day after he was sworn in to his first term as a member of the House, Barletta said \"the only thing that's done there is political theater\". Macron To Surprise Trump With 'French Military Parade' President Trump and French President Emmanuel Macron will be meeting for the first time today at the Elysee Palace. The photo session, lasting some 15 minutes, was preceded by brief talks between the two leaders. MTV renews 'Fear Factor' for a second season \" ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        0,
-                        59
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        60,
-                        63
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "somewhat"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        205,
-                        305
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "a lot"
-                }
-            },
-            {
-                "id": 3,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        473,
-                        519
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30018",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "By Richard Muponde\nLATE notorious armed robber Edmund Edgar Masendeke\u2019s two siblings have been arrested by the police crack team targeting machete gang leaders after they allegedly assaulted and robbed a motorist of US$300 in Kwekwe last week.",
-        "target": "Mazekekiro Ncube, 30, and Vhombe Masendeke, 28, are facing charges of assault and robbery after allegedly attacking the motorist in circumstances that remain unclear. The case is the first of its kind since the formation of the special task force in Mashonaland Central. The two suspects appeared in court last Thursday facing assault and robbery charges after robbing a taxi driver of US$300 while travelling from Kwekwe to Harare at the weekend. Ncube allegedly assaulted the driver with a long stick and demanded he give her the US$300 in his pockets. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "redundant",
-                "output_idx": [
-                    [
-                        320,
-                        354
-                    ]
-                ],
-                "annotation": {
-                    "redundant_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30019",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "By Everson Mushava\nTuesday\u2019s Supreme Court ruling declaring that debts owed in United States dollars (US$) incurred on or before February 22, 2019 should be settled using the Zimdollar at a 1:1 parity will further deepen investor mistrust and complicate the prospects of economic revival, analysts have said.",
-        "target": "The surprise ruling in an expropriation case, which found that the law \u201cdoes not accommodate a retrospective effect\u201d on these obligations, deprives local creditors of the hard currency settlement option \u2014 that of receiving payment in US$ \u2013 the court insisted on \u201ca departure from the will of the legislature.\u201d Economists are concerned that this will substantially affect the prospects of investment revival. In an interview, Harare-based economist Walter Mandeya told Southern Eye that the landmark ruling has set an unprecedented legal precedent. \u201cThis case is highly regrettable. It leaves the Econometric Society regretfully concerned over the future path of our economy. ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30020",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "WATERVILLE, N.Y. -- Several elementary school students on a school bus received minor injuries when the bus was struck by a vehicle in Waterville Friday morning, according to the Oneida County Sheriff\u2019s Office.",
-        "target": "Oneida County Sheriff Robert Maciol said a car driven by 76-year-old Carl McDougall of Waterville struck the school bus on West Inwood Avenue around 7:15 a.m. Friday. McDougall was driving southbound on West Inwood Avenue at the time of the crash. Students on the bus included First Street Elementary School students, who are attending summer school, Maciol said. The sheriff said six First Street Elementary School students were on the bus at the time of the crash. The students suffered minor injuries and have been treated. The students have been released to the school\u2019s office staff, Maciol said. ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30021",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "SYRACUSE, N.Y. -- A 59-year-old Mattydale man was charged Thursday with manslaughter in a June 2019 crash that killed a man sitting in his living room.",
-        "target": "Lawrence J. Hunt Sr. was charged in the death of Joseph A. Vukovich III, 52, of 212 Mercy Lane in Westvale, according to the Onondaga County District Attorney's Office. Hunt's plea is scheduled for 2:30 p.m. Feb. 14. Hunt was turning left on East Raymond Avenue near Cochran Street when he struck Vukovich as he sat in his living room, the DA's office said. Hunt pleaded guilty to felony driving while intoxicated at the end of May after he was arrested on DUI charges at least six times since 1998, according to police reports. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        275,
-                        281
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        414,
-                        431
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        432,
-                        528
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30022",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Crime Tracker\nBOISE, Idaho (AP) - A former political figure in Idaho has pleaded guilty to two felony counts of child pornography in a plea deal dismissing 12 other charges.",
-        "target": "--On July 1, a magistrate ordered R. D. Palmer held on $250,000 bond. He was originally held on $500,000 bond, and his attorney said that bond was eventually increased to $700,000 before being reduced to $250,000. Riverdale man sentenced to 10 years for sexual contact with minor (IDHN.com) 11/25/2017 A Riverdale man was sentenced to 10 years in prison for his role in a sexual contact with a minor. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        15,
-                        46
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        70,
-                        213
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        5,
-                        12
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30023",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Two Portland police officers fired less-lethal and rifle shots simultaneously at Koben Henriksen, who was carrying two knives and seen walking in traffic last month, according to police investigative reports released Friday.",
-        "target": "The reports recount Officer James Crookshanks' use of an Arwen non-lethal projectile, which hit Henriksen in the leg, and Officer Steven Slade's simultaneous use of a Ruger Mini-14 rifle. The reports say the two officers both thought they were firing their Taser stun guns, which shoot barbs into the target to shock and temporarily incapacitate them. But The Oregonian/OregonLive has reported that the officers were unaware they were in fact armed with rifles. And in a July 9 news conference, police officials made no mention of rifles in describing the incident. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        57,
-                        85
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        167,
-                        187
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 2,
-                "category": "commonsense",
-                "output_idx": [
-                    [
-                        188,
-                        273
-                    ]
-                ],
-                "annotation": {
-                    "commonsense_type": "somewhat"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        352,
-                        393
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 4,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        462,
-                        565
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 5,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        403,
-                        461
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30024",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Mr Monday Otso, the re-elected Chairman of health workers union, Keffi chapter, has promised to prioritise welfare of members to improve their living standard.",
-        "target": "He told newsmen in Keffi after the election that the welfare of workers will be the chief concern of the trade union. He promised that his administration will make sure that members were provided good quarters for living because of the harsh conditions under which they were living. He emphasised that most of the workers lived in poor condition, while some were even renting houses, as such, he promised that his administration will ensure that the union bought a land and constructed a decent quarters for members. Otso disclosed that Keffi chapter is blessed with one of the largest number of registered members in the state and presently the union has over 600 registered members. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        182,
-                        186
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        463,
-                        464
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        486,
-                        487
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30025",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "A health official scans the body temperature of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020.",
-        "target": "(Jeroen Elfferich/dpa via AP) Indonesia's national Disaster Mitigation Agency personnel spray chemical on the body of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020. (Jeroen Elfferich/dpa via AP) A group of people carrying luggage move out of a place of safety and refuge at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020. (Jeroen Elfferich/dpa via AP) ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        310,
-                        316
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30026",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Health officials in Mexico are investigating the country's first possible case of the deadly coronavirus spreading from China, President Andrews Manuel Lopez Obrador said on Wednesday.",
-        "target": "The Public Health Ministry said three members of the same family had been hospitalized in the border state of Tamaulipas after returning from China. \"This is the first case that has been detected here,\" Obrador said. Health minister Jose Narro said the family includes a 5-year-old girl. She and her 2-year-old brother, who had no symptoms, have been quarantined. The girl's father is on a respirator, he said. The girl's mother is stable, as is the fifth family member who returned from China. The sixth member of the family remained in China during the epidemic, officials said. ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30027",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Tap water contaminated with toxic chemicals has been found for the first time in several US cities, a new report finds.",
-        "target": "High levels of toxic chemicals linked to cancer and other diseases have been found in US water supplies for the first time, a new report finds. The chemicals, perfluorooctanoic acid (PFOA) and perfluorooctanesulfonic acid (PFOS), are chemical byproducts of processes that make products such as stain-resistant nonstick cookware, waterproof fabrics, and paper products, according to the report, published in the journal Environmental Science & Technology Letters. Both PFOS and PFOA have been linked to a number of health problems. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        159,
-                        188
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        193,
-                        229
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "a lot"
-                }
-            },
-            {
-                "id": 2,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        468,
-                        472
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "a lot"
-                }
-            },
-            {
-                "id": 3,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        477,
-                        481
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "a lot"
-                }
-            },
-            {
-                "id": 4,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        463,
-                        530
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 5,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        369,
-                        462
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 6,
-                "category": "redundant",
-                "output_idx": [
-                    [
-                        463,
-                        530
-                    ]
-                ],
-                "annotation": {
-                    "redundant_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30028",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Scientists are concerned that the new Chineses coronavirus's transmission could accelerate thanks to 'super spreaders' who give the disease to a large number of people they come into contact with.",
-        "target": "The father's saliva, which has yet to be tested, was thought to be the source of the latest infection. It is understood that the man, who is believed to be in his late thirties, lived in Leicester, which was the centre of the country's first CCR5 bug epidemic. He had a chronic heart condition, and also had flu-like symptoms in the past few days before his death. More than 1,000 people a year in the UK die from viral respiratory infections, which includes the new bug. Previous research has shown that just 10 per cent of people are likely to become super spreaders. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        242,
-                        260
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        261,
-                        294
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "somewhat"
-                }
-            },
-            {
-                "id": 2,
-                "category": "commonsense",
-                "output_idx": [
-                    [
-                        375,
-                        380
-                    ]
-                ],
-                "annotation": {
-                    "commonsense_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30029",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Having lots of children - and breastfeeding them until they are one - greatly reduces the chance of an early menopause, research suggests.",
-        "target": "The research into the families of almost 600,000 women aged 35-40 found those who had been pregnant five times or more between ages 30 and 40 - and breastfed each child for six months or more - were 60 per cent less likely to have an early menopause. Those who had three or more children and breastfed them for 12 months were 49 per cent less likely to have an early menopause. The beneficial effect of breastfeeding was confirmed by making comparisons with other women in the same family, who did not have as many children or breastfeed them for as long. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "redundant",
-                "output_idx": [
-                    [
-                        55,
-                        65
-                    ]
-                ],
-                "annotation": {
-                    "redundant_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30030",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Combined with ABBV's 5.36% dividend yield, the buyback yield of 2.0% gives the stock a 7.36% total yield.",
-        "target": "Shares are trading at an enterprise value-to-free cash flow ratio of 7.77, which is below its five-year average of 9.21. This gives investors a margin of safety for this most coveted of stocks for income investors. Over the past decade, Gilead's EPS has grown at a compound annual growth rate of 46.0%, which bests the market's 21.8% CAGR. Dividend Stocks #5: Qualcomm Source: Shutterstock Qualcomm ( QCOM ) may not be the most appetizing of stocks, but with an annual yield of 4.50%, it's certainly worth a closer look. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        25,
-                        65
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 1,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        144,
-                        160
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        246,
-                        249
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 3,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        265,
-                        292
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 4,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        334,
-                        339
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 5,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        94,
-                        120
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 6,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        0,
-                        74
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 7,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        215,
-                        339
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 8,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        454,
-                        484
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30031",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "The stock met many of our regular investment criteria but also appeared to gain during health emergencies and outbreaks making it antifragile.",
-        "target": "We focused on five risk factors which shaped our investment in iRobot. The risks were: 1. how technology fads and fashions shifted over time 2. how consumer robots would fare against video games and other electronics in terms of popularity 3. how premium electric car manufacturers, like Tesla (TSLA), would shift towards autonomous vehicles and impact iRobot demand for small robots 4. how consumers and clinicians would react to engaging products and services 5. our understanding of iRobot's historical performance and fiscal strength. iRobot's market capitalization was over $1 billion. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        0,
-                        590
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30032",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Health\nA new Chinese coronavirus, a cousin of the SARS virus, has infected hundreds since the outbreak began in Wuhan, China, in December.",
-        "target": "Chinese health authorities confirmed 31 cases of the new virus to the WHO in early March. Most of the cases were centred on Wuhan, China's most populous city, but new cases have been reported in Guangzhou, Guangdong province, and Shanghai. Sources: Xinhua News Agency;World Health Organization Weather A shark model is displayed on a makeshift street after heavy rains in Guangzhou, China, on Mar. 17, 2013. The heaviest rains in five decades hit some parts of Guangdong province, China, from Feb. 12 to 19, submerging streets and some underground lines. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "encyclopedic",
-                "output_idx": [
-                    [
-                        124,
-                        158
-                    ]
-                ],
-                "annotation": {
-                    "encyclopedic_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        240,
-                        554
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30033",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Seeking a refreshing dip is a great way to discover some of the most wild and pristine landscapes in Australia",
-        "target": "Swimming in the wildest spots of Australia offers an aquatic adventure that is both refreshing and unforgettable. Australia's best swimming holes are also some of the greatest natural marvels the country has to offer, from cascading waterfalls to deep freshwater caves that can only be accessed by the adventurous. Here are 10 swim spots that should be on your bucket list. The freshwater swimmer at Lake Muir (photo by jdasocca/Flickr) Tasmania's Lake Muir, where wild rivers meet placid lakes ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30034",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Jordan Brand is connecting with Chicago\u2019s creative community to represent the iconic neighborhoods in the city with footwear and apparel.",
-        "target": "On Thursday, the brand released teasers of the upcoming collaboration in an exclusive interview with Sneaker News. The new Air Force 1 and a tailored suit represent the neighborhood of Bronzeville while the Air Force 270 represents Chinatown. New lifestyle apparel that highlights Downtown, Chinatown, and North Center will also be released. \u201cI think what really attracted me to this project is that it\u2019s about culture. It\u2019s not about just product\u2014it\u2019s about a neighborhood,\u201d said Virgil Abloh, the mastermind behind the concept. \u201cWhen I talk about the project, I like to talk about, like, \u2018What is a neighborhood?'\u201d ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        13,
-                        22
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        101,
-                        114
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        119,
-                        134
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        185,
-                        196
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 4,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        207,
-                        220
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 5,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        232,
-                        242
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 6,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        281,
-                        318
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 7,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        481,
-                        494
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 8,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        481,
-                        529
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "minor"
-                }
-            },
-            {
-                "id": 9,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        562,
-                        616
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30035",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Dear Abby: I just found out my husband of 18 years has been going to \u201chook-up\u201d websites.",
-        "target": "He had a different email address for each website, but I found him out! We have two children, ages 16 and 13. In our marriage, we have always had an active sex life. He doesn\u2019t want the girl-on-girl stuff I love. He also doesn\u2019t want me to go to singles sites looking for action. He likes me to sit at home and wait for him! I told him I won\u2019t stand for his cheating, and I\u2019ll take him to court if he doesn\u2019t \u201cbeg for forgiveness and promise to never do it again.\u201d I want an open marriage, and he doesn\u2019t. ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30036",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Cold open: an Oxford police station.",
-        "target": "A sergeant's secretary (Margaret Rutherford) calls for the appearance of a constable (Steptoe). She thinks that she's talking to the desk sergeant, but it's the bricklayer. When he leaves, she says to a portrait of King George V, \"You should see what I've just been through.\" She is heard on the next episode, asking for Inspector Steptoe, who wants to know about Enid. The episode ends in the surgery with Steptoe saying that he has never seen a woman like Enid. The \"Times Literary Supplement\" of 16 April 1974 gave a positive review of the first episode, then the novel. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        464,
-                        557
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30037",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "My best friend has a huge network of friends and family and many work and community commitments.",
-        "target": "He makes sure he's always in touch, and doesn't neglect his people \u2014 or their birthdays. He puts everyone else's before his own, and although he's a busy guy, he never does half the things people ask of him \u2014 because his health always comes first. Sure, Christmas is a big deal around here \u2014 but not at the expense of other things. This is how my friend shows his love in public, by saying \"I was thinking about that, but maybe not today, just because I'm sick.\" That's how you show love in an environment full of triggers and triggers and triggers. And joy. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        159,
-                        206
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        209,
-                        247
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "a lot"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        550,
-                        558
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 3,
-                "category": "redundant",
-                "output_idx": [
-                    [
-                        540,
-                        549
-                    ]
-                ],
-                "annotation": {
-                    "redundant_type": "minor"
-                }
-            },
-            {
-                "id": 4,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        248,
-                        331
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30038",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "(Picture: Facebook/Cotton Branch Farm Sanctuary)",
-        "target": "Not only are Kicking Mule Rescue teaching the children about kindness and compassion, the farm owner, Stephanie, is well known for her advocacy work on behalf of pig farming. Recently, Stephanie donned a pig costume to walk from Los Angeles to San Francisco to raise awareness of the mistreatment of pigs in the pork industry. MORE: 101 guide to vegan activist Paul McCartney MORE: What it\u2019s like to turn vegan in Pakistan ",
-        "edits": []
-    },
-    {
-        "metadata": {
-            "gid": "30039",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "As soon as she saw Julia, Kitty jumped over to her (Picture: Blue Cross /SWNS.COM)",
-        "target": "Inspector Beth Allinson, from the Animal Welfare Team, said: \u2018As soon as the staff at the animal centre noticed Kitty, they knew there was something different about her. Advertisement Advertisement \u2018 She looks completely different from the others but is still very cute. \u2019 MORE: Delivery guy steals 38,000 bees and two dogs to sell as pets MORE: Firefighters dress up as Super Mario, Luigi and other Nintendo characters for children\u2019s Christmas party ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "incoherent",
-                "output_idx": [
-                    [
-                        170,
-                        197
-                    ]
-                ],
-                "annotation": {
-                    "incoherent_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        198,
-                        199
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        335,
-                        339
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 3,
-                "category": "commonsense",
-                "output_idx": [
-                    [
-                        327,
-                        339
-                    ]
-                ],
-                "annotation": {
-                    "commonsense_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30040",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "On January 19, SpaceX and NASA conducted a launch of the Crew Dragon, which will one day ferry astronauts to the International Space Station (ISS), to demonstrate its lift-off capabilities.",
-        "target": "The demonstration for the Dragon test, however, wasn\u2019t entirely successful as SpaceX\u2019s recovery of the parachutes couldn\u2019t be observed due to freezing temperatures. \u201cWhen Dragon reached the water, it was promptly swamped by the rather large waves. Nonetheless, the parachutes deployed and the splashdown was successful. Unfortunately, the rocket\u2019s first stage was unable to land,\u201d SpaceX stated. The statement was backed by NASA, as they haven\u2019t declared that SpaceX\u2019s recent test was a success. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        320,
-                        380
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30041",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Ecologists are on 'red alert' as warmer temperatures caused by climate change causes the Arctic to become greener.",
-        "target": "Researchers hope the increased vegetation will soak up excess carbon dioxide, which causes global warming, and aid those living there. Researchers have been documenting changes in the Arctic for decades, but the changes are now happening at a more alarming rate than first thought. An Arctic expert based at La Trobe University in Melbourne, Dr Phil Trathan, says the warmer temperatures are already making the Arctic greener. \"Over the last 30 years, there have been increases in the amount of vegetation in the Arctic, particularly vegetation in areas which have historically been very little vegetated,\" he said. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        342,
-                        358
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        0,
-                        134
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "a lot"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30042",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "A health official scans the body temperature of a passenger as she arrives at the Soekarno-Hatta International Airport in Tangerang, Indonesia, Wednesday, Jan. 22, 2020.",
-        "target": "Human mobility is top priority for the city's health authorities who fight what they call \"human trafficking\". Some 385 Indonesian nationals were deported from 28 countries around the world in 2018, according to the country's immigration office. Extradition Five suspects were arrested in the Vatican in August after they were found to be using the identity of a nun to exploit underage girls as sex workers. They were returned to Italy after a request by the Italian authorities. In late November, a suspected human trafficker from Indonesia who has been involved in human smuggling rings to the Netherlands and Belgium, was extradited from the United Arab Emirates to face charges in the Netherlands. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        90,
-                        110
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "somewhat"
-                }
-            },
-            {
-                "id": 1,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        116,
-                        198
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        246,
-                        408
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "somewhat"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        246,
-                        271
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "minor"
-                }
-            },
-            {
-                "id": 4,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        409,
-                        480
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "minor"
-                }
-            },
-            {
-                "id": 5,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        481,
-                        498
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "minor"
-                }
-            },
-            {
-                "id": 6,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        499,
-                        702
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30043",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "It disappeared from the world more than a decade ago, but Motorola's nostalgic Razr is officially returning next month.",
-        "target": "\u2022 Most outrageously priced cars of all time Details of the new version were released yesterday on the Razr blog. You'll be able to get it in either 'Pure White' or 'Midnight Blue' for \u00a3149 and will be able to splash another \u00a375 on a case. It'll come with a larger HD screen, an 8-megapixel camera, and MotoMaker customisation, which means you'll be able to have a Razr that's just yours. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "off_prompt",
-                "output_idx": [
-                    [
-                        27,
-                        31
-                    ]
-                ],
-                "annotation": {
-                    "off_prompt_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        44,
-                        51
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        312,
-                        326
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 3,
-                "category": "technical_jargon",
-                "output_idx": [
-                    [
-                        302,
-                        311
-                    ]
-                ],
-                "annotation": {
-                    "technical_jargon_type": "somewhat"
-                }
-            },
-            {
-                "id": 4,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        0,
-                        1
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30044",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Google CEO Sundar Pichai has today stated artificial intelligence (AI) will be essential in humanity's future and could even be used to fight cancer.",
-        "target": "In an interview at Google's Big Tent Summit, a meeting of the UK's technology industry attended by Chancellor Philip Hammond, Pichai said: \"In the next five to 10 years, it will become more important in everyone's life whether you are a developer or not.\" \"Artificial intelligence will make many human occupations obsolete and we need to figure out new occupations for billions of people,\" he said. Artificial intelligence is set to replace many jobs in the coming years. Credit: PA \"AI could help scientists to better understand illnesses like cancer,\" he added. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "redundant",
-                "output_idx": [
-                    [
-                        399,
-                        471
-                    ]
-                ],
-                "annotation": {
-                    "redundant_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30045",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "America is in the midst of an important election: Choosing a name for NASA\u2019s next Mars rover.",
-        "target": "NASA is tasked with exploring space. Their rovers aren\u2019t just named on a whim, but rather the spacecraft require the most fitting \u2014 and often recognizable \u2014 names. But since this rover will be searching for signs of life on the Red Planet, NASA is handing off the naming responsibilities to a tween author, Sarah Graley. Her goal: to pick a name that fits a generation poised to be part of the greatest discovery since we first gazed at the moon landing. RELATED: Gus Kenworthy, 6 Others Offer Stories to Help Protect Endangered Polar Bears ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        105,
-                        112
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "commonsense",
-                "output_idx": [
-                    [
-                        94,
-                        104
-                    ]
-                ],
-                "annotation": {
-                    "commonsense_type": "somewhat"
-                }
-            },
-            {
-                "id": 2,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        299,
-                        320
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "somewhat"
-                }
-            },
-            {
-                "id": 3,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        325,
-                        333
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30046",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "The \u201cvoice\u201d of an ancient Egyptian priest has been heard for the first time since he died and was mummified 3,000 years ago, researchers have said.",
-        "target": "The 3,000-year-old mummy, which was kept in catacombs deep in a castle in Germany, is giving voice to the spirit of a priest who died back when Egypt was ruled by Tutankhamun. During an audio analysis of the mummy\u2019s \u201cvoices\u201d, experts from the DLR German Aerospace Centre have discovered that the voice on the tape is significantly different from the female \u201cghosts\u201d which were previously recorded. DLR\u2019s Achim Hiller said: \u201cThe mummy\u2019s speech sounds lower and hoarser than all the other disembodied voices we have heard so far.\u201d ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "incoherent",
-                "output_idx": [
-                    [
-                        0,
-                        175
-                    ]
-                ],
-                "annotation": {
-                    "incoherent_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        216,
-                        225
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "somewhat"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30047",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Bridgestone is set to roll out airless tires in a bid to combat the air-related issues commercial trucks face while traveling cross country.",
-        "target": "This development comes after the company, in partnership with the U.S. Department of Energy (DOE), unveiled its prototype in 2011, which were built to be driven about 5,000 miles without being inflated. The tires, which are made with Kevlar and Carbon fiber, weigh roughly three pounds less than the pneumatic tires most commercial vehicles run on today. The Bridgestone project hit a snag, though, when the tires were found to overheat while driving in a region with temperatures over 110 degrees. Dr. Kenichi Ohmae, Bridgestone CEO, told CNN Money the company worked on the issue by installing better insulation and a special kind of rubber. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        391,
-                        398
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30048",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "Sonos customers are slamming the US-based audio firm's 'irresponsible' decision to axe support for their older speakers \u2014 calling it a 'total disgrace.'",
-        "target": "A thread on Reddit started by user 'rontomonkusz' and 'SonosBoy' has been flooded with disgruntled users, with both slamming the decision not to support the speakers. It comes just days after Sonos announced it's partnering with Google to ensure users get music, news and more in one place. \u201cSonos' move is SO irresponsible, I am not exaggerating, it is unbelievably irresponsible. Now we are looking at the horror of hundreds of thousands of Sonos owners having their systems totally locked, being unable to interact with them for months, and if they keep this decision they really are committing corporate suicide,\u201d SonosBoy writes. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        263,
-                        267
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        608,
-                        617
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30049",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "If the EU has its way then millions of Apple iPhone users could soon be forced to buy new accessories and cables for their beloved smartphones.",
-        "target": "New safety regulations may result in the phasing out of iPhone power cables which have one end with the traditional 1-pronged rectangular design and the other end with an L-shaped connector. The European Union Committee says that these cables can be easily pulled apart by children, potentially risking electrical shock. The standards for cables may be based on the European Commission Recommendation On Battery Charging and Portable Electric Tools, published in January. It says the following advice to consumers: \"Do not allow children to take chargers and battery packs apart or try to insert them into sockets. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        116,
-                        190
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "a lot"
-                }
-            },
-            {
-                "id": 1,
-                "category": "grammar_usage",
-                "output_idx": [
-                    [
-                        366,
-                        449
-                    ]
-                ],
-                "annotation": {
-                    "grammar_usage_type": "minor"
-                }
-            }
-        ]
-    },
-    {
-        "metadata": {
-            "gid": "30050",
-            "model": "gpt3",
-            "p": "0.96",
-            "temperature": "1.0",
-            "frequency_penalty": "0"
-        },
-        "source": "ATTLEBORO \u2013 Sensata Technologies CEO Martha Sullivan will be succeeded by President and Chief Operating Officer Jeffrey Cote effective March 1, the company announced on Wednesday.",
-        "target": "Cote, a 25-year veteran of the company, was named president and chief operating officer in September 2012. He began his career at Sensata in 1991 in Plant Operations, where he held positions in plant operations planning, scheduling, and plant engineering. In 1997, he was promoted to technical leader of plant safety and environmental regulatory compliance, and was later named vice president of manufacturing engineering. In 2005, he became vice president of operations. He was named chief operating officer in 2011. Sullivan became CEO of Sensata in August, 2012. ",
-        "edits": [
-            {
-                "id": 0,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        6,
-                        39
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 1,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        44,
-                        106
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 2,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        110,
-                        166
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 3,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        259,
-                        280
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 4,
-                "category": "needs_google",
-                "output_idx": [
-                    [
-                        426,
-                        471
-                    ]
-                ],
-                "annotation": {
-                    "needs_google_type": "somewhat"
-                }
-            },
-            {
-                "id": 5,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        479,
-                        517
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "a lot"
-                }
-            },
-            {
-                "id": 6,
-                "category": "self_contradiction",
-                "output_idx": [
-                    [
-                        518,
-                        565
-                    ]
-                ],
-                "annotation": {
-                    "self_contradiction_type": "a lot"
-                }
-            }
-        ]
     }
 ]

@@ -150,7 +150,7 @@ export default {
             this.set_hits_data(new_hits_data);
         },
         hasAnnotation(edit) {
-            return edit['annotation'] != null
+            return edit['annotation'] != null || (this.config.disable && Object.values(this.config.disable).includes('annotation'))
         },
         getEditConfig(category) {
             if (!this.config.hasOwnProperty('edits')) { return {}; }

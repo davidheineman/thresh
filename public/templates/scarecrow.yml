@@ -4,7 +4,7 @@ template_description: "Scarecrow: A framework for scrutinizing machine text"
 
 # ========================================================================================
 #
-
+# See https://yao-dou.github.io for more details
 #
 # ========================================================================================
 
@@ -14,6 +14,9 @@ interface_text:
     target_label: "Continuation"
 
 tutorial_link: https://yao-dou.github.io/qual/
+
+font_size:
+  target: 18
 
 edits:
   - name: grammar_usage

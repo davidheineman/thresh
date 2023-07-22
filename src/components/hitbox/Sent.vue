@@ -71,7 +71,7 @@ export default {
             return edits
         },
         hasAnnotations(edit) {
-            return ("annotation" in edit) && edit["annotation"] != null && edit["annotation"] != ""
+            return (("annotation" in edit) && edit["annotation"] != null && edit["annotation"] != "")  || (this.config.disable && Object.values(this.config.disable).includes('annotation'))
         },
         is_selected(edit, sent_type, selected_category) {
             let whether_is_selected

@@ -183,6 +183,8 @@
         compile_style() {
           if (!this.config.hasOwnProperty('edits')) { return }
 
+          // Compile color overrides
+
           let css = ``
           for (const edit of this.config.edits) {
             let color = edit.color
@@ -210,6 +212,17 @@
               .select-color-${edit.name}::selection { background: ${light_color} !important; }
             `
           }
+
+          // Compile font size overrides
+          if (this.config.font_size) {
+            if (this.config.font_size.source) {
+              css += `#source-sentence { font-size: ${this.config.font_size.source}px; }`
+            }
+            if (this.config.font_size.target) {
+              css += `#target-sentence { font-size: ${this.config.font_size.target}px; }`
+            }
+          }
+
           return css
         }
     },

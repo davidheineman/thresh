@@ -37,9 +37,30 @@ export default {
     watch: {
         config() {
             this.edit_state = this.initalize_edit_state()
+            this.fix_edit_box_formatting()
+        },
+        editor_open() {
+            this.fix_edit_box_formatting()
         }
     },
     methods: {
+        fix_edit_box_formatting() {
+            // Fix edit box formatting
+            let editBoxes = $(".edit-box label");
+            let heightDiff = 0;
+            let maxHeight = 0;
+            for (let i = 0; i < editBoxes.length; i++) {
+                const height = editBoxes[i].offsetHeight;
+                if (height > maxHeight) {
+                    maxHeight = height;
+                    heightDiff += 1;
+                }
+            }
+            if (heightDiff > 0) {
+                $(".edit-box label").css('justify-content', 'flex-start');
+                $(".edit-box label").css('height', maxHeight-25 + "px");
+            }
+        },
         parse_options(edit_config) {
             if (typeof edit_config !== "object") { return null }
             let edit_options = {}
@@ -356,7 +377,7 @@ export default {
                             <div v-for="item in config.edits" :key="item.id" class="edit-box mr2 dib">
                                 <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" name="edit_cotegory"
                                     :id="`edit_cotegory-${item.name}`" :value="item.name">
-                                <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`" style="text-wrap: nowrap">
+                                <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`">
                                     <i :class="`fa-solid ${item.icon} fa-1-5x mb1`"></i>
                                     {{ item.label }}
                                 </label>

@@ -2,10 +2,14 @@
   import Sent from "./Sent.vue";
   import _ from 'lodash';
   import { handle_file_download, handle_file_upload } from "../../assets/js/file-util.js";
+  import VueMarkdown from 'vue-markdown-render'
 </script>
 
 <script>
 export default {
+    components: {
+        VueMarkdown
+    },
     props: [
         'hits_data',
         'current_hit',
@@ -232,12 +236,13 @@ export default {
                 </div>
 
                 <div class="mb2" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].context">
-                    <div class="cf">
+                    <div class="cf" v-if="config.interface_text.typology.context_label != ''">
                         <p class="fl f3 mt1 mb1">
                             <span class="f5">{{ config.interface_text.typology.context_label }}:</span>
                         </p>
                     </div>
-                    <div class="f4 lh-paras">{{ hits_data[current_hit - 1].context }}</div>
+                    <!-- <div class="f4 lh-paras">{{ hits_data[current_hit - 1].context }}</div> -->
+                    <vue-markdown :source="hits_data[current_hit - 1].context" class="mt0 mb0" />
                 </div>
 
                 <div class="cf" v-if="source_exists()">

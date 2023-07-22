@@ -4,13 +4,18 @@ template_description: Factuality in Abstractive Summarization
 
 # ========================================================================================
 #
-
+# While we adapt the annotation typology proposed in the FRANK paper, their annotation simply
+# has annotators select whether the error occurs in the sentence, not a span which corresponds
+# to the error, so we only show annotations on the first sentence as an example.
+# 
+# For our demo data, we only use BART summarizations on the CNN/DM split.
 #
 # ========================================================================================
 
 interface_text:
   typology:
-    source_label: "Article"
+    context_label: "Article"
+    source_label: "Reference Summary"
     target_label: "Generated Summary"
 
 disable:
