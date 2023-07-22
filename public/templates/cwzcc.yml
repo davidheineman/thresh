@@ -2,9 +2,13 @@ template_name: cwzcc
 template_label: CWZCC Error Ontology
 template_description: Spelling Errors Ontology for the Contemporany Written Zamboangueño Chabacano Corpus (CWZCC). 
 
+# ========================================================================================
+#
 # English Version created Marcelo Yuji Himoro: mhimoro1@alumno.uned.es
 # The example is taken from App. B of Himoro et al., 2020 (see citation). Full dataset is not
 # publically available due to copyright and privacy concerns.
+#
+# ========================================================================================
 
 tokenization: char
 interface_text:

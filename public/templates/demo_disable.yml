@@ -1,0 +1,22 @@
+# Often interfaces only require a subset of our features. Here you can easily disable some additional
+# features. This is useful for error selection typologies, two-stage annotation (where selection and
+# annoation are done in seperate steps), or crowdsourcing.
+
+disable:
+- download        # Disables data download, useful for crowdsourcing
+- upload          # Disables data upload, useful if data is provided with ?d= parameter
+# - selection     # Disables edit selection
+- annotation      # Disables edit annotation
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Limited Functionality Demo
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true

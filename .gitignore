@@ -30,3 +30,4 @@ coverage
 .vscode/
 data_ingestion/
 paper/
+old/

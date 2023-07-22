@@ -296,13 +296,17 @@ export default {
                     new_html += this.render_edit_text(edit, i, key, light)
                 }
                 
-                new_html += ` : `;
+                if (!this.config.disable || !Object.values(this.config.disable).includes('annotation')) { 
+                    new_html += ` : `; 
+                }
 
                 // Render annotation
                 if (!this.hasAnnotation(edit)) {
-                    new_html += `
-                        <span class="f4 i black-60">${this.config.interface_text.annotation_viewer.not_annotated_text_1} <i class="fa-solid fa-pencil"></i> ${this.config.interface_text.annotation_viewer.not_annotated_text_2}</span>
-                    `;
+                    if (!this.config.disable || !Object.values(this.config.disable).includes('annotation')) {
+                        new_html += `
+                            <span class="f4 i black-60">${this.config.interface_text.annotation_viewer.not_annotated_text_1} <i class="fa-solid fa-pencil"></i> ${this.config.interface_text.annotation_viewer.not_annotated_text_2}</span>
+                        `;
+                    }
                 } else {
                     const edit_config = this.getEditConfig(key)
                     let ann_html = this.getAnnotationHtml(edit_config['annotation'], edit['annotation'])
@@ -319,7 +323,7 @@ export default {
                     </div>
                     <div class="fl w-20 mb4 operation tr">
                         <i @click="annotate_edit" class="annotation-icon fa-solid fa-pencil mr3 pointer dim ${disabled}" data-id="${key}-${i}" data-category="${key}"></i>
-                        <i @click="trash_edit" class="fa-solid fa-trash-can ml4 pointer dim ${disabled}" data-id="${key}-${i}" data-category="${key}"></i>
+                        <i @click="trash_edit" class="fa-solid fa-trash-can ml4 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>
                     </div>
                 </div>`;
             }

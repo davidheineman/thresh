@@ -1,0 +1,27 @@
+template_name: wu-etal-2023
+template_label: Wu et al., 2023
+template_description: Fine-grained human feedback typology introduced by Wu et al., 2023 for RLHF
+
+# ========================================================================================
+#
+
+#
+# ========================================================================================
+
+interface_text:
+  typology:
+    context_label: "Passages"
+    source_label: "Question"
+    target_label: "Generation"
+
+edits:
+
+
+paper_link: https://arxiv.org/abs/2306.01693
+citation: |
+  @article{wu2023fine,
+    title={Fine-Grained Human Feedback Gives Better Rewards for Language Model Training},
+    author={Wu, Zeqiu and Hu, Yushi and Shi, Weijia and Dziri, Nouha and Suhr, Alane and Ammanabrolu, Prithviraj and Smith, Noah A and Ostendorf, Mari and Hajishirzi, Hannaneh},
+    journal={arXiv preprint arXiv:2306.01693},
+    year={2023}
+  }

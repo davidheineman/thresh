@@ -13,6 +13,15 @@ const templates = [
     { name: "FRANK", path: "frank", task: "Summarization", hosted: true },
     { name: "MQM", path: "mqm", task: "Translation", hosted: true },
     { name: "CWZCC", path: "cwzcc", task: "Grammar Error Correction", hosted: true },
+    { name: "MultiPIT", path: "multipit", task: "Paraphrase", hosted: true },
+    { name: "SNaC", path: "snac", task: "Summarization", hosted: true },
+    { name: "ERRANT", path: "errant", task: "Grammar Error Correction", hosted: true },
+    { name: "Da San Martino et al., 2019", path: "da-san-martino-etal-2019", task: "Propaganda Analysis", hosted: true },
+    { name: "Wu et al., 2023", path: "wu-etal-2023", task: "Fine-Grained RLHF", hosted: true },
+    // { name: "AttrEval", path: "attreval", task: "Attribution", hosted: true },
+    // { name: "FLASK", path: "flask", task: "Open-ended Generation", hosted: true },
+    // { name: "Gorman et al., 2019", path: "gorman-etal-2019", task: "Morphological Error Detection", hosted: true },
+    // { name: "Wan et al., 2019", path: "wan-etal-2019", task: "Spoiler Detection", hosted: true },
 ]
 
 const demo_templates = [
@@ -21,7 +30,7 @@ const demo_templates = [
     { name: "Advanced Question Trees", path: "demo_question_trees", task: "Examples" },
     { name: "Custom Instructions", path: "demo_instructions", task: "Examples" },
     { name: "Paragraph-level Annoation", path: "demo_paragraph", task: "Examples" },
-    // { name: "Limited Functionality", path: "demo_disable", task: "Examples" },
+    { name: "Limited Functionality", path: "demo_disable", task: "Examples" },
     { name: "Token Selection", path: "demo_tokenization", task: "Examples" },
     { name: "Multi-language Deployment", path: "demo_multilingual", task: "Examples" }
 ]

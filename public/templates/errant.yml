@@ -1,0 +1,211 @@
+template_name: errant
+template_label: ERRANT
+template_description: Grammatical Error Type Classification
+
+# ========================================================================================
+#
+# Unlike other interfaces, ERRANT is a rule-based GEC framework, not an inspection / evalu-
+# ation typology. This interface is helpful for GEC inspection.
+#
+# See Appendix A of Bryant et al., 2017 for full breakdown of 55 error types. To adapt their 
+# typology to an interface, we first select the "Operation Tier", then the "Token"/"Morphology"
+# tier, then the fine-grained type. 
+#
+# ========================================================================================
+
+interface_text:
+  typology:
+    target_label: "Excerpt"
+
+tokenization: char
+
+edits:
+  - name: missing
+    label: "Missing"
+    enable_output: true
+    color: red
+    icon: fa-expand
+    annotation:
+      - name: tier
+        question: "What type of error is occuring?"
+        options: 
+          - name: pos
+            label: "Part of Speech"
+            question: "What is the type of POS missing?"
+            options: 
+              - name: M:ADJ
+                label: "Adjective"
+              - name: M:ADV
+                label: "Adverb"
+              - name: M:CONJ
+                label: "Conjunction"
+              - name: M:DET
+                label: "Determiner"
+              - name: M:NOUN
+                label: "Noun"
+              - name: M:PART
+                label: "Particle"
+              - name: M:PREP
+                label: "Preposition"
+              - name: M:PRON
+                label: "Pronoun"
+              - name: M:PUNCT
+                label: "Punctuation"
+              - name: M:VERB
+                label: "Verb"
+          - name: morphology
+            label: "Morphology"
+            question: "What is the morphology error?"
+            options:
+              - name: M:NOUN:POSS 
+                label: "Noun Possessive"
+              - name: M:VERB:FORM
+                label: "Verb Form"
+              - name: M:VERB:TENSE
+                label: "Verb Tense"
+          - name: other
+            label: "Other"
+            question: "What operation is missing?"
+            options:
+              - name: M:CONTR
+                label: "Contraction"
+              - name: M:OTHER
+                label: "Other"
+  - name: unnecessary
+    label: "Unnecessary"
+    enable_output: true
+    color: blue
+    icon: fa-minus
+    annotation:
+      - name: tier
+        question: "What type of error is occuring?"
+        options: 
+          - name: pos
+            label: "Part of Speech"
+            question: "What is the type of POS missing?"
+            options: 
+              - name: U:ADJ
+                label: "Adjective"
+              - name: U:ADV
+                label: "Adverb"
+              - name: U:CONJ
+                label: "Conjunction"
+              - name: U:DET
+                label: "Determiner"
+              - name: U:NOUN
+                label: "Noun"
+              - name: U:PART
+                label: "Particle"
+              - name: U:PREP
+                label: "Preposition"
+              - name: U:PRON
+                label: "Pronoun"
+              - name: U:PUNCT
+                label: "Punctuation"
+              - name: U:VERB
+                label: "Verb"
+          - name: morphology
+            label: "Morphology"
+            question: "What is the morphology error?"
+            options:
+              - name: U:NOUN:POSS 
+                label: "Noun Possessive"
+              - name: U:VERB:FORM
+                label: "Verb Form"
+              - name: U:VERB:TENSE
+                label: "Verb Tense"
+          - name: other
+            label: "Other"
+            question: "What operation is missing?"
+            options:
+              - name: U:CONTR
+                label: "Contraction"
+              - name: U:OTHER
+                label: "Other"
+  - name: replacement
+    label: "Replacement"
+    enable_output: true
+    color: orange
+    icon: fa-shuffle
+    annotation:
+      - name: tier
+        question: "What type of error is occuring?"
+        options: 
+          - name: pos
+            label: "Part of Speech"
+            question: "What is the type of POS missing?"
+            options: 
+              - name: R:ADJ
+                label: "Adjective"
+              - name: R:ADV
+                label: "Adverb"
+              - name: R:CONJ
+                label: "Conjunction"
+              - name: R:DET
+                label: "Determiner"
+              - name: R:NOUN
+                label: "Noun"
+              - name: R:PART
+                label: "Particle"
+              - name: R:PREP
+                label: "Preposition"
+              - name: R:PRON
+                label: "Pronoun"
+              - name: R:PUNCT
+                label: "Punctuation"
+              - name: R:VERB
+                label: "Verb"
+          - name: morphology
+            label: "Morphology"
+            question: "What is the morphology error?"
+            options:
+              - name: R:ADJ:FORM 
+                label: "Adjective Form"
+              - name: R:NOUN:INFL 
+                label: "Noun Inflection"
+              - name: R:NOUN:NUM 
+                label: "Noun Number"
+              - name: R:NOUN:POSS 
+                label: "Noun Possessive"
+              - name: R:VERB:FORM
+                label: "Verb Form"
+              - name: R:VERB:INFL 
+                label: "Verb Inflection"
+              - name: R:VERB:SVA
+                label: "Verb Agreement"
+              - name: R:VERB:TENSE
+                label: "Verb Tense"
+          - name: other
+            label: "Other"
+            question: "What operation is missing?"
+            options:
+              - name: R:CONTR
+                label: "Contraction"
+              - name: R:MORPH
+                label: "Morphology"
+              - name: R:ORTH
+                label: "Orthography"
+              - name: R:OTHER
+                label: "Other"
+              - name: R:SPELL
+                label: "Spelling"
+              - name: R:WO
+                label: "Word Order"
+
+
+paper_link: https://aclanthology.org/P17-1074
+citation: |
+  @inproceedings{bryant-etal-2017-automatic,
+    title = "Automatic Annotation and Evaluation of Error Types for Grammatical Error Correction",
+    author = "Bryant, Christopher  and
+      Felice, Mariano  and
+      Briscoe, Ted",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1074",
+    doi = "10.18653/v1/P17-1074",
+    pages = "793--805"
+  }

@@ -1,0 +1,101 @@
+template_name: multipit
+template_label: MultiPIT
+template_description: Inspection of Paraphrase Generation
+
+# ========================================================================================
+#
+# This interface is adapted from the manual inspection of model generations on the Multi-
+# PIT corpus as reported in Table 7 of Dou et al., 2022.
+#
+# ========================================================================================
+
+interface_text:
+  typology:
+    source_label: "Original Sentence"
+    target_label: "Generated Paraphrase"
+
+disable:
+- annotation
+
+edits:
+    # Good Paraphrase Types
+  - name: add_new
+    label: "New Phrase"
+    enable_output: true
+    color: red
+    icon: fa-plus
+  - name: word_syn
+    label: "Word Synonym"
+    enable_input: true
+    enable_output: true
+    multi_span: true
+    color: yellow
+    icon: fa-rotate
+  - name: phrase_syn
+    label: "Phrase Synonym"
+    enable_input: true
+    enable_output: true
+    multi_span: true
+    color: blue
+    icon: fa-group-arrows-rotate
+  - name: structure
+    label: "Sentence Structure"
+    enable_input: true
+    enable_output: true
+    color: "#e657c7"
+    icon: fa-tree
+  - name: simplification
+    label: "Simplification"
+    enable_input: true
+    color: orange
+    icon: fa-circle-info
+
+    # Poor Paraphrase Types
+  - name: copy
+    label: "Copy"
+    enable_input: true
+    enable_output: true
+    color: gray
+    icon: fa-copy
+  - name: small_change
+    label: "Small Change"
+    enable_output: true
+    multi_span: true
+    color: green
+    icon: fa-compress
+  - name: hallucination
+    label: "Hallucination"
+    enable_output: true
+    color: blue
+    icon: fa-question
+  - name: miss_info
+    label: "Miss Info"
+    enable_input: true
+    color: "#3da83d"
+    icon: fa-notdef
+  - name: misinterpret
+    label: "Misinterpret"
+    enable_output: true
+    color: "#c42f63"
+    icon: fa-comment-slash
+  - name: bad_grammar
+    label: "Bad Grammar"
+    enable_output: true
+    color: "#4ea6a6"
+    icon: fa-spell-check
+
+paper_link: https://aclanthology.org/2022.emnlp-main.631
+citation: |
+  @inproceedings{dou-etal-2022-improving,
+    title = "Improving Large-scale Paraphrase Acquisition and Generation",
+    author = "Dou, Yao  and
+      Jiang, Chao  and
+      Xu, Wei",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.631",
+    pages = "9301--9323"
+  }
