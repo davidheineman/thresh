@@ -103,11 +103,16 @@ export default {
             :consumed_config={consumed_config}
         />
     </main>
-    <main v-if="
+    <main v-else-if="
         (consumed_config != null && consumed_config != undefined) &&
         (data == null || data == undefined) &&
         is_fetching == false">
         <Landing v-bind="$data" />
+    </main>
+    <main v-else>
+        <div class="spinner-container">
+            <div class="spinner"></div>
+        </div>
     </main>
 </template>
 

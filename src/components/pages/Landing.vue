@@ -134,7 +134,7 @@ export default {
                 <a :href="template_link">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Customize this Template</button>
                 </a>
-                <a v-if="config.paper_link" :href="config.paper_link">
+                <a v-if="config.paper_link" :href="config.paper_link" target="_blank">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">View Paper</button>
                 </a>
 

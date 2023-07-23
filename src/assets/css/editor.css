@@ -14,8 +14,6 @@
     display: grid;
     grid-template-columns: 1fr 0fr 1fr;
     height: 100%; 
-    /* display: flex;
-    flex: 1; */
 }
 
 .header h3, .header h2 {
@@ -95,12 +93,9 @@
 }
 
 .submit-container {
-    /* margin-bottom: 10px; */
-    /* padding: 8px; */
     padding-left: 64px;
     width: 100%;
     display: flex;
-    /* justify-content: flex-end; */
 }
 
 .btn-blue {
@@ -118,7 +113,6 @@
     min-width: 115px;
     margin: 0 4px;
     border-width: 0;
-    /* padding-bottom: 2px; */
     padding-top: 2px;
 }
 
@@ -275,7 +269,6 @@
 
     font-size: 0.9rem;
     font-weight: 500;
-    /* font-style: italic; */
     border: none;
     padding: 0px 8px;
     color: #000
@@ -348,10 +341,6 @@ select:focus{
     transition-timing-function: cubic-bezier(0.43, -0.09, 0.51, 1.13);
     
     background: #181818;
-    /* background: -moz-linear-gradient(45deg,  #ffb53c 0%,#4b4b4b 100%);
-    background: -webkit-linear-gradient(45deg, #ffb53c 0%,#4b4b4b 100%);
-    background: linear-gradient(45deg, #ffb53c 0%,#4b4b4b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 ); */
 }
 
 .data-upload-container  {
@@ -372,15 +361,15 @@ select:focus{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Grey overlay color and opacity */
-    pointer-events: none; /* Disable clicking on the overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: none;
 }
 .data-upload-container-disabled.grayed {
-    filter: grayscale(100%); /* Apply black and white effect */
+    filter: grayscale(100%); 
 }
 
 .aws-creds {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }

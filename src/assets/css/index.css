@@ -134,8 +134,6 @@
     top: 0;
     left: 0;
     z-index: 100;
-    /* width: 100%;
-    height: 100%; */
 }
 
 .light-orange {
@@ -179,14 +177,11 @@
     width: 13px;
     font-size: 10px;
     text-align: center;
-    /* border-radius: 6px; */
     padding: 1px 0;
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: -15%;
-    /* margin-left: -60px; */
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
     transition: opacity 0.4s;
   }
@@ -302,19 +297,40 @@ span.middleside {
 
 @font-face {
     font-family: 'BlankSpace';
-    src: url('@/assets/blank.ttf') format('truetype');
+    src: url('@/assets/fonts/blank.ttf') format('truetype');
     unicode-range: U+0020;
 }
 
 /* Changes Ġ to ' ' */
 @font-face {
     font-family: 'SpacedG';
-    src: url('@/assets/whitespace.ttf') format('truetype');
+    src: url('@/assets/fonts/whitespace.ttf') format('truetype');
     unicode-range: U+0120;
 }
 
 .hide-tokenization-chars {
     font-family: 'BlankSpace', 'SpacedG', sans-serif;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #181818; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  
+.spinner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* For screenshots */

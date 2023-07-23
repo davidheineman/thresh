@@ -211,5 +211,17 @@ export default {
                 </label>
             </p>
         </div>
+
+        <!-- If the question is an inline text box -->
+        <div v-if="question.options === 'textbox'">
+            <p class="mb3 b tracked-light">{{ question.question }}</p>
+        </div>
+
+        <!-- If the question is an open-ended text area -->
+        <div v-if="question.options === 'textarea'">
+            <p class="mt0 pt2 mb3 b tracked-light"> {{ question.question }}
+
+            </p>
+        </div>
     </div>
 </template>

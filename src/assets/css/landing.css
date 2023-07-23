@@ -15,11 +15,8 @@
     margin-top: 0.5rem
 }
 .landing-container {
-    /* min-width: 400px;
-    max-width: 800px; */
     width: 700px;
     margin: auto;
-    /* margin-top: 20%; */
 }
 .option-buttons {
     display: grid;
@@ -64,7 +61,6 @@
     height: 150px;
 }
 #assetsFieldHandle {
-    /* display: none !important */
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -82,5 +78,4 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    /* transform: translate(0, -5%); */
 }

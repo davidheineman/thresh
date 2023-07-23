@@ -1,8 +1,7 @@
 <script setup>
 import VRuntimeTemplate from "vue3-runtime-template";
 import _ from 'lodash';
-import { LeaderLine } from '../../assets/js/leader-line.min.js';
-
+import LeaderLine from 'leader-line-vue';
 import tinycolor from 'tinycolor2';
 import { COLORS, LIKERT_COLOR_MAP } from '../../assets/js/constants.js';
 </script>
@@ -395,7 +394,7 @@ export default {
 
                         if (constituent_edit_config['enable_input'] && constituent_edit_config['enable_output']) {
                             new_lines[key][id].push(
-                                new LeaderLine(
+                                LeaderLine.setLine(
                                     $(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
                                     $(`.${key}.target_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
                                     line_config
@@ -408,7 +407,7 @@ export default {
                         console.error("Something went wrong!")
                     }
 
-                    new_lines[key][id] = new LeaderLine(
+                    new_lines[key][id] = LeaderLine.setLine(
                         $(`.${key}.source_span[data-id='${key}-${id}']`)[0],
                         $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
                         line_config
@@ -453,28 +452,28 @@ export default {
             //                 }
             //                 if (span_category == "deletion") {
             //                     new_lines["split"][id].push(
-            //                         new LeaderLine(
+            //                         LeaderLine.setLine(
             //                         $(`.split.source_span${css_config}`)[0],
             //                         $(`.split.split-sign[data-id='split-${id}']`)[0],
             //                         line_config)
             //                     )
             //                 } else if (span_category =="insertion") {
             //                     new_lines["split"][id].push(
-            //                         new LeaderLine(
+            //                         LeaderLine.setLine(
             //                         $(`.split.target_span${css_config}`)[0],
             //                         $(`.split.split-sign[data-id='split-${id}']`)[0],
             //                         line_config)
             //                     )
             //                 } else if (span_category == "substitution" || span_category == "reorder") {
             //                     new_lines["split"][id].push(
-            //                         new LeaderLine(
+            //                         LeaderLine.setLine(
             //                         $(`.split.source_span${css_config}`)[0],
             //                         $(`.split.target_span${css_config}`)[0],
             //                         line_config)
             //                     )
 
             //                     new_lines["split"][id].push(
-            //                         new LeaderLine(
+            //                         LeaderLine.setLine(
             //                         $(`.split.target_span${css_config}`)[0],
             //                         $(`.split.split-sign[data-id='split-${id}']`)[0],
             //                         line_config)

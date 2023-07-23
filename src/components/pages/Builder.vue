@@ -294,7 +294,7 @@ export default {
                         <span class="f5 b">Cite this Typology</span>
                         <i class="fa-solid fa-crown fa-1-3x icon-default ml2"></i>
                     </button>
-                    <a v-if="config != null && config != undefined && isViewable" :href="config.template_name">
+                    <a v-if="config != null && config != undefined && isViewable" :href="config.template_name" target="_blank">
                         <button class='pa2 ba bw1 pointer btn-green'>
                             <span class="f5 b">View</span>
                             <i class="fa-solid fa-up-right-from-square fa-1-3x icon-default ml2"></i>
@@ -327,6 +327,11 @@ export default {
                         :input_data={data}
                         :consumed_config={config}
                     />
+                </div>
+                <div v-else>
+                    <div class="spinner-container">
+                        <div class="spinner"></div>
+                    </div>
                 </div>
             </div>
         </div>

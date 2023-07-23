@@ -180,7 +180,7 @@ export default {
                     <div class='data-upload' />
                 </div>
                 <button @click="package_data" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Package Data</button>
-                <a href="/annotate">
+                <a href="/annotate" target="_blank">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Visit <code>nlproc.tools/annotate</code></button>
                 </a>
             </Tab>
@@ -191,7 +191,7 @@ export default {
                 <p>You can link to any template using the format:</p>
                 <pre>nlproc.tools/<b>?i=[link to your interface]</b></pre>
                 <p>For example:</p>
-                <pre><a href='http://nlproc.tools/?i=https://salsa-eval.com/interface.yml'>nlproc.tools/?i=https://salsa-eval.com/interface.yml</a></pre>
+                <pre><a href='http://nlproc.tools/?i=https://salsa-eval.com/interface.yml' target="_blank">nlproc.tools/?i=https://salsa-eval.com/interface.yml</a></pre>
                 <p>You can host the template on your own domain, or using existing free online repositories</p>
                 <hr />
                 <h3>Host with Gihub</h3>
@@ -199,25 +199,25 @@ export default {
                 <pre>https://github.com/davidheineman/salsa/blob/main/interface.yml</pre>
                 <p>And distribute using the <code>gh</code> parameter:</p>
                 <pre>nlproc.tools/<b>?gh=[link to your github template]</b></pre>
-                <pre><a href="http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml">nlproc.tools/?gh=davidheineman/salsa/main/interface.yml</a></pre>
+                <pre><a href="http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml" target="_blank">nlproc.tools/?gh=davidheineman/salsa/main/interface.yml</a></pre>
                 <h3>Host with HuggingFace</h3>
                 <p>Create a HuggingFace dataset and add your template (e.g., alongside your published data).</p>
                 <pre>https://huggingface.co/datasets/davidheineman/salsa/resolve/main/interface.yml</pre>
                 <p>And distribute using the <code>hf</code> parameter:</p>
                 <pre>nlproc.tools/<b>?hf=[link to your huggingface template]</b></pre>
-                <pre><a href="http://nlproc.tools/?hf=davidheineman/salsa/main/interface.yml">nlproc.tools/?hf=davidheineman/salsa/main/interface.yml</a></pre>
+                <pre><a href="http://nlproc.tools/?hf=davidheineman/salsa/main/interface.yml" target="_blank">nlproc.tools/?hf=davidheineman/salsa/main/interface.yml</a></pre>
                 <hr />
                 <h3>(Optional) Host Data</h3>
                 <p>You can host data as well (e.g., to create individual links for annotators) using the following format:</p>
                 <pre>nlproc.tools/?i=[link to your interface]<b>&amp;d=[link to your data]</b></pre>
                 <p>For example:</p>
-                <pre><a href='http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json'>nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
+                <pre><a href='http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json' target="_blank">nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
                 <p>You can follow the above instructions for hosting your data on GitHub or HuggingFace.</p>
                 <h3>(Optional) Deployment with an iFrame</h3>
                 <p>Want to host your interface using a custom link? Use the following code to host your template within any HTML document:</p>
                 <pre>{{ iframe_demo_text }}</pre>
                 <p>See an example here (<i>Note: no additional setup is required! Just the iframe</i>):</p>
-                <pre><a href="http://salsa-eval.com/interface">salsa-eval.com/interface</a></pre>
+                <pre><a href="http://salsa-eval.com/interface" target="_blank">salsa-eval.com/interface</a></pre>
                 <h3>(Optional) Host Default Data</h3>
                 <p>If you are sharing your template, you can specify a link within your config to include example data. This adds a "View Example Data" button to the landing page, and provides example data when editing the template.</p>
                 <pre>default_data_link: [link to your data]</pre>
