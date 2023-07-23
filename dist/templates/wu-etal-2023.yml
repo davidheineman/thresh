@@ -40,12 +40,17 @@ edits:
           - name: unverifiable
             label: "Unverifiable Fact"
           - name: incoherent
-            lable: "Incoherent"
+            label: "Incoherent"
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
+        required: false
   
   - name: missing_info
     label: "Missing Info"
-    enable_input: true
     icon: fa-question
+    color: blue
     annotation:
       - name: missing_info_error
         question: "Select the missing info error."
@@ -56,6 +61,14 @@ edits:
             label: "Missing Major Auxiliary Info"
           - name: missing_minor_auxiliary
             label: "Missing Minor Auxiliary Info"
+      - name: passage_id
+        label: "Passage"
+        question: "In which passage does this occur?"
+        options: textbox
+      - name: sentence_id
+        label: "Sentence"
+        question: "In which sentence contains the missing info?"
+        options: textbox
 
 
 paper_link: https://arxiv.org/abs/2306.01693

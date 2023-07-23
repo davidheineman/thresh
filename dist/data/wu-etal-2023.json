@@ -10,15 +10,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         283,
                         401
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -26,15 +26,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         489,
                         572
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -42,15 +42,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         152,
                         282
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -65,15 +65,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         60,
                         82
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -81,15 +81,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         83,
                         250
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -97,15 +97,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         251,
                         419
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -113,15 +113,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Drag Me to Hell is a 2009 American supernatural horror film directed by Sam Raimi. The plot focuses on a loan officer who, because she has to prove to her boss that she can make the \"hard decisions\", chooses not to extend an elderly woman's mortgage. In retaliation, the woman places a curse on the loan officer that, after three days of escalating torment, will plunge her into the depths of Hell to burn for eternity. The film is set in Pasadena, California "
                 },
                 "output_idx": [
                     [
                         460,
                         504
                     ]
-                ],
-                "explanation": "Drag Me to Hell is a 2009 American supernatural horror film directed by Sam Raimi. The plot focuses on a loan officer who, because she has to prove to her boss that she can make the \"hard decisions\", chooses not to extend an elderly woman's mortgage. In retaliation, the woman places a curse on the loan officer that, after three days of escalating torment, will plunge her into the depths of Hell to burn for eternity. The film is set in Pasadena, California "
+                ]
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[8]"
+                }
+            },
+            {
+                "id": 5,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[10]"
+                }
             }
         ]
     },
@@ -136,15 +158,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         71
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -152,15 +174,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         72,
                         125
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[6]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
             }
         ]
     },
@@ -175,15 +219,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         260,
                         330
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -191,15 +235,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         422,
                         593
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -207,15 +251,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The Evil Queen, also known as the Wicked Queen or just the Queen, and sometimes instead identified by her given name as Queen Grimhilde, is a fictional character who appears in Walt Disney's first animated feature film \"Snow White and the Seven Dwarfs\" (1937) and a villain character in the extended Disney's Snow White franchise. "
                 },
                 "output_idx": [
                     [
                         594,
                         704
                     ]
-                ],
-                "explanation": "The Evil Queen, also known as the Wicked Queen or just the Queen, and sometimes instead identified by her given name as Queen Grimhilde, is a fictional character who appears in Walt Disney's first animated feature film \"Snow White and the Seven Dwarfs\" (1937) and a villain character in the extended Disney's Snow White franchise. "
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[5]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[7]"
+                }
             }
         ]
     },
@@ -230,15 +296,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         17,
                         158
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -246,15 +312,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         159,
                         243
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -262,15 +328,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         275,
                         307
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -278,15 +344,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         308,
                         414
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -294,15 +360,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg "
                 },
                 "output_idx": [
                     [
                         415,
                         472
                     ]
-                ],
-                "explanation": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg "
+                ]
             },
             {
                 "id": 5,
@@ -310,15 +376,59 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg as Penny "
                 },
                 "output_idx": [
                     [
                         473,
                         566
                     ]
-                ],
-                "explanation": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg as Penny "
+                ]
+            },
+            {
+                "id": 6,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[8]"
+                }
+            },
+            {
+                "id": 7,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[5]"
+                }
+            },
+            {
+                "id": 8,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[8]"
+                }
+            },
+            {
+                "id": 9,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[5]"
+                }
             }
         ]
     },
@@ -333,15 +443,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         62
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -349,15 +459,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The new album Why Don't We was released on September 27, 2016. "
                 },
                 "output_idx": [
                     [
                         63,
                         146
                     ]
-                ],
-                "explanation": "The new album Why Don't We was released on September 27, 2016. "
+                ]
             },
             {
                 "id": 2,
@@ -365,15 +475,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The new album Why Don't We was released on September 27, 2016"
                 },
                 "output_idx": [
                     [
                         147,
                         230
                     ]
-                ],
-                "explanation": "The new album Why Don't We was released on September 27, 2016"
+                ]
             }
         ]
     },
@@ -388,15 +498,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         102,
                         221
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -404,15 +514,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         282,
                         321
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -420,15 +530,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         322,
                         488
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -436,15 +546,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":2,\"sentence_id\":[4]}"
                 },
                 "output_idx": [
                     [
                         535,
                         576
                     ]
-                ],
-                "explanation": "{\"passage_id\":2,\"sentence_id\":[4]}"
+                ]
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[0, 2]"
+                }
+            },
+            {
+                "id": 5,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[8]"
+                }
             }
         ]
     },
@@ -459,15 +591,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":2,\"sentence_id\":[1]}"
                 },
                 "output_idx": [
                     [
                         7,
                         14
                     ]
-                ],
-                "explanation": "{\"passage_id\":2,\"sentence_id\":[1]}"
+                ]
             },
             {
                 "id": 1,
@@ -475,15 +607,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         43,
                         96
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -491,15 +623,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         140,
                         710
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[5]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[8, 9]"
+                }
             }
         ]
     },
@@ -514,15 +668,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         121
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -530,15 +684,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         122,
                         268
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -546,15 +700,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         269,
                         347
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -569,15 +723,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         142,
                         253
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[6]"
+                }
             }
         ]
     },
@@ -592,15 +757,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         229
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[4]"
+                }
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[7]"
+                }
             }
         ]
     },
@@ -615,15 +802,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         52,
                         75
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -631,15 +818,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         167,
                         264
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[6]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[8]"
+                }
             }
         ]
     },
@@ -654,15 +863,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         141,
                         198
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -670,15 +879,48 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         293,
                         366
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[8]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -693,15 +935,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":1,\"sentence_id\":[5]}"
                 },
                 "output_idx": [
                     [
                         196,
                         244
                     ]
-                ],
-                "explanation": "{\"passage_id\":1,\"sentence_id\":[5]}"
+                ]
             },
             {
                 "id": 1,
@@ -709,15 +951,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         245,
                         373
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -732,15 +974,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         125,
                         185
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -748,15 +990,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         190,
                         223
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -764,15 +1006,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         233,
                         276
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -780,15 +1022,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         302,
                         330
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -796,15 +1038,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         105
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -819,15 +1061,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         266,
                         384
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -835,15 +1077,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         385,
                         594
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -851,7 +1104,52 @@
         "context": "\n\n### Passage Title: SpongeBob SquarePants\nPuff endures one of SpongeBob's crashes or is otherwise frightened, she puffs up into a ball.\nSpecial episodes of the show are hosted by a live action pirate named Patchy and his pet parrot Potty, whose segments are presented in a dual narrative with the animated stories.\nPatchy is portrayed as the president of a fictional \"SpongeBob\" fan club, and his greatest aspiration is to meet SpongeBob himself.\nPotty likes to make fun of Patchy's enthusiasm and causes trouble for him while he tries to host the show.\nAn unseen figure called the French Narrator often introduces episodes and narrates the intertitles as if the series was a nature documentary about the ocean.\nHis role and distinctive manner of speaking are references to the oceanographer Jacques Cousteau.\nOther recurring characters appear throughout the series, such as the muscular lifeguard of Goo Lagoon, Larry the Lobster; a pirate specter known as the Flying Dutchman; and retired superheroes Mermaid Man and Barnacle Boy, who are idolized by SpongeBob and Patrick.\nThe series primarily takes place in the benthic underwater city of Bikini Bottom, which is located in the Pacific Ocean beneath the real-life coral reef known as Bikini Atoll.\n\n### Passage Title: The SpongeBob Movie: Sponge Out of Water\nThe SpongeBob Movie: Sponge Out of Water is a 2015 American 3D live-action/animated absurdist comedy film based on the animated television series \"SpongeBob SquarePants\".\nA stand-alone sequel to \"The SpongeBob SquarePants Movie\" (2004), it was directed by former series showrunner Paul Tibbitt in his directorial debut, with live-action sequences directed by Mike Mitchell.\nIt was the first film to be produced by Paramount Animation and the second film in the \"SpongeBob SquarePants\" film series.\nThe film stars Antonio Banderas and features the show's regular voice cast, who returned to reprise their respective roles from the series and the previous film.\nThis movie takes place during the ninth season of \"SpongeBob SquarePants\".\nThe plot follows a pirate named Burger Beard, who steals the Krabby Patty secret formula using a magical book that makes any text written upon it come true.\nSpongeBob and his friends must travel to the surface to confront Burger Beard and get the formula back.\nThe film was written by Jonathan Aibel and Glenn Berger from a story conceived by \"SpongeBob SquarePants\" creator Stephen Hillenburg and Tibbitt.\nLike the first film, the final act places the animated characters in a live-action world.\n\n### Question: What is the name of the pirate in spongebob?",
         "source": "In the American animated comedy television series SpongeBob SquarePants, the live-action pirate is known as Patchy the Pirate. His role is to serve as the president of the fictional \"SpongeBob\" fan club and host the series' special episodes. The 2015 film adaptation (spongebob 2) of the tv series, introduces a different pirate by the name of Burger Beard who steals the secret Krabby Patty formula for which SpongeBob and his friends must travel to the ocean's surface to confront him and retrieve the formula. ",
         "target": "The SpongeBob SquarePants is an American animated television series based on the cartoon series SpongeBob SquarePants. A live action pirate named Patchy and his pet parrot Potty, who host special episodes of the show, are presented in a dual narrative with the animated stories. Burger Beard is the name of the pirate in the SpongeBob SquarePants movie.",
-        "edits": []
+        "edits": [
+            {
+                "id": 0,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[7]"
+                }
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[6]"
+                }
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
+            }
+        ]
     },
     {
         "context": "\n\n### Passage Title: Rise of the Guardians\n\"Rise of the Guardians\" grossed $103,412,758 in North America, and $203,528,912 in other countries, for a worldwide total of $306,941,670.\nIn North America, the film opened to $32.3 million over its extended five-day weekend, and with $23.8 million over the three-day weekend, it reached fourth place behind \"\", \"Skyfall\", and \"Lincoln\".\nThe film's opening was the lowest debut for a DreamWorks Animation film since \"Flushed Away\".\nWhile the film did gross more than double of its $145 million budget, it still did not turn a profit for DreamWorks Animation due to its high production and marketing costs, forcing the studio to take an $83 million write-down.\nThis marked the first time that the studio had lost money on an animated film since \"\".\nAs a result of this combined with other factors, in February 2013, the studio announced it was laying off 350 employees as part of a company-wide restructuring.\nThe Rome Film Festival and \"Vanity Fair\" magazine awarded the new Vanity Fair International Award for Cinematic Excellence in November 2012 to \"Rise of the Guardians\".\nThe film also received the Hollywood Animation Award at the 16th Annual Hollywood Film Festival, held on October 22, 2012.\n\n### Passage Title: Rise of the Guardians: The Video Game\nRise of the Guardians is an action-adventure video game (with role playing elements) based on the film of the same name.\nIt is developed by Torus Games and published by D3 Publisher.\nThe game was released on November 20, 2012 in North America and November 23, 2012 in Europe for PlayStation 3, Xbox 360, Wii, Wii U, Nintendo DS, and Nintendo 3DS.\nThe player is able to play as Jack Frost with the help of Santa Claus, the Tooth Fairy, the Easter Bunny, and the Sandman as they battle the evil Pitch Black and his Nightmare minions in order to restore world belief in the Guardians.\nThe game features drop-in/drop-out cooperative play for up to four players, as well as a levelling system that allows the player to unlock greater attacks and special team moves.\nThe game received negative reviews from critics with Metacritic giving it a 43/100 for the Xbox 360 version and a 48/100 for the Wii U version.\n\n### Passage Title: Fred Tatasciore\nFrederick Tatasciore (; born June 15, 1967) is an American voice actor.\nTatasciore has portrayed mostly secondary characters as well as monster-looking types.\nHe is known for voicing the Hulk in several Marvel projects, including the \"Marvel Animated Features\", \"\", \"\" as well as \"Avengers Assemble\".\nIn video games, he is known for voicing Saren Arterius in the critically acclaimed \"Mass Effect\" series, Damon Baird in the \"Gears of War\" series and Zeratul from the game \"\".\nHe also voices the character \"8\" in the Tim Burton-produced film \"9\".\nHis most recent roles are Neftin Prog in \"\", Nikolai Belinski in the \"Call of Duty\" franchise, Megatron in \"\", \"\" and \"\", Tookit in \"ThunderCats\" and the Business Cat in the web series \"Our New Electrical Morals\", with episodes posted in the Cartoon Hangover YouTube page, administered by Frederator Studios.\nHe has also voiced Snap Shot, Slam Bam, Warnado, Zook and Cuckoo Clocker in the \"Skylanders\" franchise.\nAdditionally, he voices in Blizzard's first-person shooter \"Overwatch\" and X\u00fcr in Bungie's first-person shooter, \"Destiny\".\n\n### Question: Who plays santa claus in rise of the guardians?",
@@ -864,15 +1162,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         103,
                         129
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -880,15 +1178,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         186,
                         209
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -903,15 +1212,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         95,
                         161
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -919,15 +1228,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The UEFA European Under-21 Championship is a biennial international youth football competition organised by UEFA for the men's under-21 national teams of Europe. "
                 },
                 "output_idx": [
                     [
                         162,
                         370
                     ]
-                ],
-                "explanation": "The UEFA European Under-21 Championship is a biennial international youth football competition organised by UEFA for the men's under-21 national teams of Europe. "
+                ]
             },
             {
                 "id": 2,
@@ -935,15 +1244,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         466,
                         544
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[2]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[2]"
+                }
             }
         ]
     },
@@ -958,15 +1289,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         348,
                         454
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -974,15 +1305,48 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         216,
                         271
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[2]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[4]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[7]"
+                }
             }
         ]
     },
@@ -997,15 +1361,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         215,
                         415
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1013,15 +1377,59 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         416,
                         808
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[5]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[9]"
+                }
+            },
+            {
+                "id": 5,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[5]"
+                }
             }
         ]
     },
@@ -1036,15 +1444,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         254,
                         355
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1052,15 +1460,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         391,
                         450
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -1068,13 +1487,59 @@
         "context": "\n\n### Passage Title: Rose Bowl Game\nThe Rose Bowl Game, also frequently known as simply the Rose Bowl, is an annual American college football bowl game, usually played on January 1 (New Year's Day) at the Rose Bowl stadium in Pasadena, California.\nWhen New Year's Day falls on a Sunday, the game is played on Monday, January 2 (15 times now).\nThe Rose Bowl Game is nicknamed \"The Granddaddy of Them All\" because it is the oldest bowl game.\nIt was first played in 1902 as the Tournament East\u2013West football game, and has been played annually since 1916.\nSince 1945, it has been the highest attended college football bowl game.\nIt is a part of the Pasadena Tournament of Roses Association's \"America's New Year Celebration\", which also includes the historic Rose Parade.\nSince 2015, the game has been sponsored by Northwestern Mutual and officially known as the \"Rose Bowl Game presented by Northwestern Mutual\".\nIn 2015 and 2018, the game was also officially known as the \"College Football Playoff semifinal at the Rose Bowl Game presented by Northwestern Mutual\".\n\n### Passage Title: Rose Bowl (stadium)\nThe stadium and adjacent Brookside Golf and Country Club are owned by the city of Pasadena and managed by the Rose Bowl Operating Company, a non-profit organization whose board is selected by council members of the city of Pasadena.\nUCLA and the Pasadena Tournament of Roses also have one member on the company board.\nThe game now known as the Rose Bowl Game was played at Tournament Park though January 1922, about southeast, adjacent to the campus of the California Institute of Technology (Caltech).\nThe Pasadena Tournament of Roses Association, the game's organizer, realized the temporary stands were inadequate for a crowd of more than 40,000, and sought to build a better, permanent stadium.\nThe stadium was designed by architect Myron Hunt in 1921.\nHis design was influenced by the Yale Bowl in New Haven, Connecticut, which opened in 1914.\nThe Arroyo Seco was selected as the location for the stadium.\nThe Rose Bowl was under construction from Feb. 27, 1922 to October 1922.\nThe nearby Los Angeles Memorial Coliseum also was under construction during this time and would be completed in May 1923, shortly after the Rose Bowl was completed.\nOriginally built as a horseshoe, the stadium was expanded several times.\nThe southern stands were completed in 1928, enclosing the stadium into a complete bowl.\n\n### Passage Title: Rose Bowl Game\nAs a result, Texas Christian University (TCU) became the first team from a non-automatic qualifying conference to play in the Rose Bowl in the BCS era.\nThe 2010 TCU Horned Frogs finished their second consecutive regular season at 12\u20130, were back-to-back champions of the Mountain West Conference, and ranked No. 3 in the final BCS Poll.\nTCU defeated No. 5 Wisconsin 21\u201319 in the 2011 Rose Bowl.\nTCU's appearance satisfied the 'first time' clause of the current agreement.\nThe 100th Rose Bowl Game featured a traditional pairing of Big Ten champion versus Pac-12 champion, with Michigan State playing against Stanford on January 1, 2014.\nMichigan State won the game, 24\u201320.\nThe Bowl Championship Series format ended with the 2014 BCS National Championship Game, played at the Rose Bowl stadium on January 6.\nThe BCS was replaced in 2014 by the College Football Playoff, which selects four teams for two national semifinal games, leading to a championship game.\nAs part of the arrangement, the Rose Bowl game functions as a semifinal playoff game every three years.\nIn years when the Rose Bowl is not hosting a semifinal, it takes the Pac-12 and Big Ten champions, unless one or both teams qualify for the semifinals, in which case they are replaced by another team from the same conference.\n\n### Question: Where's the rose bowl played this year?",
         "source": "The Rose Bowl Game is an annual American college football bowl game, usually played on January 1 (New Year's Day) at the Rose Bowl Stadium in Pasadena, California. The game is sometimes played on January 2nd or sometime early January depending if January 1st falls on a Sunday.",
         "target": "The Rose Bowl Game, also frequently known as simply the Rose Bowl, is an annual American college football bowl game, usually played on January 1 (New Year's Day) at the Rose Bowl stadium in Pasadena, California. When New Year's Day falls on a Sunday, the game is played on Monday, January 2 (15 times now).",
-        "edits": []
+        "edits": [
+            {
+                "id": 0,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[3]"
+                }
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[7]"
+                }
+            }
+        ]
     },
     {
         "context": "\n\n### Passage Title: Brock Boeser\nBrock Boeser (; ; born February 25, 1997) is an American professional ice hockey player currently playing for the Vancouver Canucks of the National Hockey League (NHL).\nA top prospect with the Waterloo Black Hawks of the United States Hockey League (USHL), Boeser was selected 23rd overall in the 2015 NHL Entry Draft by the Canucks, and spent the following two seasons with the University of North Dakota.\nHe made his NHL debut in 2017 with Vancouver.\nInternationally, Boeser has played for the United States national junior team at the 2016 World Junior Championships, where he helped the team win a bronze medal.\nDuring the 2014\u201315 season, Boeser led the league with 35 goals and was named to both the 2014\u201315\nUSHL All-Rookie Team and First All-Star Team.\nIn 2015\u201316 Boeser represented Team USA in the IIHF under-20 championships, as the team took bronze overall.\nDuring the 2015\u201316 season playing for the University of North Dakota he was fourth, sixth, and third in goals (27), assists (33) and points (60) respectively in division I hockey, the same season he helped the team win the NCAA Division 1 National Championship.\nHe missed two months of the 2016\u201317 season due to a wrist injury.\n\n### Passage Title: Olli Juolevi\nOlli Juolevi (; born 5 May 1998) is a Finnish professional ice hockey defenceman who is currently playing for the Utica Comets of the American Hockey League (AHL) as a prospect for the Vancouver Canucks of the National Hockey League (NHL).\nHe was selected fifth overall by the Canucks in the 2016 NHL Entry Draft.\nBorn and raised in Finland, Juolevi developed in the Jokerit program before he moved to North America to play major junior hockey with the London Knights in 2015.\nAfter one season with them, he was drafted by the Canucks.\nInternationally Juolevi has represented Finland in three World Junior Championships, winning gold at the 2016 tournament.\nAt age 14, Juolevi began playing junior hockey in Finland for Jokerit's U16 team in 2012\u201313.\nBy the following year, he was playing for Jokerit's U20 team in the Jr.\nA SM-liiga.\nAfter scoring 32 points (6 goals and 26 assists) in 44 games, Juolevi was named to the league's First All-Star Team and awarded Rookie of the Year.\nDuring the off-season, Juolevi was selected 45th overall by the London Knights of the Ontario Hockey League (OHL) at the 2015 Canadian Hockey League Import Draft.\nJuolevi committed to the Knights shortly thereafter, leaving his junior career in Finland.\n\n### Passage Title: Elias Pettersson\nElias Pettersson (born 12 November 1998) is a Swedish professional ice hockey player for the Vancouver Canucks of the National Hockey League (NHL).\nPettersson was selected fifth overall by the Canucks in the 2017 NHL Entry Draft.\nHe was born in Sundsvall, Sweden, but grew up in \u00c5nge, Sweden.\nPettersson played hockey as a youth and made his professional debut with Timr\u00e5 IK of the HockeyAllsvenskan.\nIn his second season in the Allsvenskan in 2016\u201317, Pettersson placed second on the team in scoring with 41 points in 43 games.\nUnable to help Timr\u00e5 IK gain promotion, Pettersson signed a three-year contract with the V\u00e4xj\u00f6 Lakers of the top tier SHL, on 6 April 2017.\nPettersson was ranked second among European skaters by the NHL Central Scouting Bureau in his first year of eligibility for the 2017 NHL Entry Draft.\nHe was selected as the first Swedish player taken in the draft, fifth overall, by the Vancouver Canucks, joining former linemate and Canucks prospect Jonathan Dahl\u00e9n on 23 June 2017.\nWhile still a junior player, Pettersson dominated the Swedish Hockey League in his 2017\u201318 rookie season.\n\n### Question: Who did the canucks get in the draft?",
         "source": "In the 2015 NHL draft, the Vancouver Canucks selected Brock Boeser as a 23rd overall pick during the 2015 NHL Entry Draft. Boeser however, didn't make his NHL debut until 2017 after he'd spent two seasons with the University of North Dakota. In the following two drafts, the Canucks selected Olli Juolevi as their fifth overall pick in the 2016 draft and Elias Pettersson in the 2017 draft, also a fifth overall pick.",
         "target": "Brock Boeser was taken 23rd overall in the 2015 NHL Entry Draft by the Vancouver Canucks. Olli Juolevi, a Finnish professional ice hockey defenceman, was selected fifth overall by the Vancouver Canucks in the 2016 NHL Entry Draft.",
-        "edits": []
+        "edits": [
+            {
+                "id": 0,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[2]"
+                }
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
+            }
+        ]
     },
     {
         "context": "\n\n### Passage Title: Transamerica Pyramid\nThe Transamerica Pyramid at 600 Montgomery Street between Clay and Washington Streets in the Financial District of San Francisco, California, United States, is a 48-story futurist building and the second-tallest skyscraper in the San Francisco skyline.\nIts height is surpassed by Salesforce Tower.\nThe building no longer houses the headquarters of the Transamerica Corporation, which moved its U.S. headquarters to Baltimore, Maryland, but it is still associated with the company and is depicted in the company's logo.\nDesigned by architect William Pereira and built by Hathaway Dinwiddie Construction Company, at , on completion in 1972 it was the eighth-tallest building in the world.\nThe Transamerica building was commissioned by Transamerica CEO John (Jack) R. Beckett, with the claim that he wished to allow light in the street below.\nBuilt on the site of the historic Montgomery Block, it has a structural height of and has 48 floors of retail and office space.\nConstruction began in 1969 and finished in 1972, and was overseen by San Francisco-based contractor Dinwiddie Construction, now Hathaway Dinwiddie Construction Company.\nTransamerica moved its headquarters to the new building from across the street, where it had been based in a flatiron-shaped building now occupied by the Church of Scientology of San Francisco.\n\n### Passage Title: 181 Fremont\n181 Fremont is an mixed-use skyscraper in the South of Market District of San Francisco, California.\nThe building, designed by Heller Manus Architects, is located adjacent to the Transbay Transit Center and 199 Fremont Street developments.\nThe entire office portion of the building has been rented by Facebook to house its San Francisco office and Instagram division.\nThe slender mixed-use tower, developed initially by SKS Investments, rises to the roof with 55 floors of offices and residential condominiums.\nA parapet/mechanical screen reaches to , and a spire brings the total height to .\nThe tower will contain of office space on the lower 34 floors (from 3 to 36), and 67 condominiums on the upper 16 floors (from 39 to 55).\nThe 39th floor will contain residential amenities and a two-story open air terrace.\nMechanical spaces would be on floors 2 and 38.\nThe building will have a direct connection to the rooftop park atop the adjacent Transbay Transit Center from the 7th floor.\nUpon completion, the tower was the tallest mixed-use building in San Francisco, surpassing the nearby Millennium Tower, and the 2nd-tallest in the Western United States.\nIt was also the third tallest building in the city after the Transamerica Pyramid and the Salesforce Tower.\n181 Fremont joins several other buildings designed to catalyze the San Francisco Transbay development area.\n\n### Passage Title: 44 Montgomery\n44 Montgomery is a 43-story, office skyscraper in the heart of San Francisco's Financial District.\nWhen completed in 1967, it was the tallest building west of Dallas, it was surpassed by 555 California Street (the former world headquarters of Bank of America) in 1969.\nThe building was designed, built and dedicated for Wells Fargo Bank, and their IT subsidiary was based there at one time (the bank's headquarters are at 464 California Street).\nThe building was sold by AT&T in 1997 for US$111 million.\n44 Montgomery, as part of the original design anticipating the then-under-construction Bay Area Rapid Transit subway system, contains direct underground access to the Montgomery Street Station.\nTenants include:\n\n### Question: What is the new tallest building in san francisco?",
@@ -1087,15 +1552,48 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         67,
                         133
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[1]"
+                }
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[4]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[1, 2]"
+                }
             }
         ]
     },
@@ -1110,15 +1608,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         103,
                         143
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1126,15 +1624,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Victoria's birthday fell on 24 May 1819, and was officially recognized as her birthday on 25 May 1845. "
                 },
                 "output_idx": [
                     [
                         219,
                         245
                     ]
-                ],
-                "explanation": "Victoria's birthday fell on 24 May 1819, and was officially recognized as her birthday on 25 May 1845. "
+                ]
             },
             {
                 "id": 2,
@@ -1142,15 +1640,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":1,\"sentence_id\":[5]}"
                 },
                 "output_idx": [
                     [
                         90,
                         92
                     ]
-                ],
-                "explanation": "{\"passage_id\":1,\"sentence_id\":[5]}"
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[1]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[7]"
+                }
             }
         ]
     },
@@ -1165,15 +1685,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         295,
                         467
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1181,15 +1701,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         206,
                         294
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[8]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[2]"
+                }
             }
         ]
     },
@@ -1204,15 +1746,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         269,
                         443
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1220,15 +1762,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         104,
                         167
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1236,15 +1778,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         168,
                         268
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[2]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
             }
         ]
     },
@@ -1259,15 +1823,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         87,
                         206
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1275,15 +1839,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         416,
                         450
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1291,15 +1855,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":2,\"sentence_id\":[3]}"
                 },
                 "output_idx": [
                     [
                         539,
                         596
                     ]
-                ],
-                "explanation": "{\"passage_id\":2,\"sentence_id\":[3]}"
+                ]
             },
             {
                 "id": 3,
@@ -1307,15 +1871,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         320,
                         371
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -1323,15 +1887,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         489,
                         538
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 5,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[5]"
+                }
             }
         ]
     },
@@ -1346,15 +1921,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         73,
                         223
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1362,15 +1937,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":1,\"sentence_id\":[1]}"
                 },
                 "output_idx": [
                     [
                         227,
                         240
                     ]
-                ],
-                "explanation": "{\"passage_id\":1,\"sentence_id\":[1]}"
+                ]
             },
             {
                 "id": 2,
@@ -1378,15 +1953,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         284,
                         407
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -1394,15 +1969,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         437,
                         494
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -1417,15 +1992,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         31,
                         46
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -1440,15 +2037,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         465,
                         694
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1456,15 +2053,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         103,
                         176
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1472,15 +2069,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         177,
                         231
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -1488,15 +2085,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         232,
                         286
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -1504,15 +2101,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":2,\"sentence_id\":[9]}"
                 },
                 "output_idx": [
                     [
                         373,
                         451
                     ]
-                ],
-                "explanation": "{\"passage_id\":2,\"sentence_id\":[9]}"
+                ]
+            },
+            {
+                "id": 5,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[2]"
+                }
             }
         ]
     },
@@ -1527,15 +2135,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         13,
                         49
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1543,15 +2151,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         151,
                         169
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1559,15 +2167,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         269,
                         380
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -1575,15 +2183,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         381,
                         451
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
             }
         ]
     },
@@ -1598,15 +2217,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         150,
                         289
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1614,15 +2233,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         472,
                         480
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -1637,15 +2256,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         96
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1653,15 +2272,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         97,
                         253
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[3]"
+                }
             }
         ]
     },
@@ -1676,15 +2306,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         32,
                         95
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1692,15 +2322,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         262,
                         346
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1708,15 +2338,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         347,
                         463
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[3]"
+                }
             }
         ]
     },
@@ -1731,15 +2372,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         112
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1747,15 +2388,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         113,
                         255
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1763,15 +2404,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         318,
                         482
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -1779,15 +2420,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         483,
                         622
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -1795,15 +2436,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         259,
                         272
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -1818,15 +2459,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The density of an atom is concentrated in the nucleus, or center of the atom, where the positive charge of the atom is concentrated. "
                 },
                 "output_idx": [
                     [
                         133,
                         239
                     ]
-                ],
-                "explanation": "The density of an atom is concentrated in the nucleus, or center of the atom, where the positive charge of the atom is concentrated. "
+                ]
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[1]"
+                }
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[4]"
+                }
             }
         ]
     },
@@ -1834,7 +2497,52 @@
         "context": "\n\n### Passage Title: Energy in Australia\nEmployment in roof-top solar photovoltaic systems, including solar hot water systems, comprised half of all employment in renewable energy in 2015\u201316.\nEmployment in large scale solar and wind power is driven primarily by installation activity, rather than ongoing operation and maintenance..\nIn Western Australia, 93 per cent of all jobs in renewable energy are in solar power.\nThe proportion of employment in biomass is significantly greater in Queensland (42 per cent), where the sugar industry makes great use of sugar cane to generate electricity for sugar milling and to return to the grid.\nMost jobs in Tasmania\u2019s renewable energy industry are in hydropower (87 per cent).\nJobs in the renewable energy industry are forecast to grow substantially by 2030, driven by growth in electricity demand and new renewable energy capacity.\nConversely, jobs associated with coal-fired power stations are forecast to decline as those plants age and close.\nSuch job losses would disproportionately affect some regional areas, such as the Latrobe Valley in Victoria, Newcastle and the Hunter Valley in New South Wales, Gladstone and Rockhampton in Queensland, and Collie in Western Australia.\nHowever, it is expected that the number of jobs created in renewable energy will far exceed the number of jobs lost in coal-based generation.\n\n### Question: How does australia power our towns and cities?",
         "source": "Historically energy in Australia was sourced largely from coal and natural gas but due to the increasing effects of global warming and human-induced climate change on the global environment, there has been a shift towards renewable energy such as solar power and wind power. Biomass and water, known as hydropower, is also used to power the towns and cities. ",
         "target": "The Australian electricity grid is powered by a number of sources, including wind and solar power.",
-        "edits": []
+        "edits": [
+            {
+                "id": 0,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[4]"
+                }
+            },
+            {
+                "id": 1,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[5]"
+                }
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[6]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[7]"
+                }
+            }
+        ]
     },
     {
         "context": "\n\n### Passage Title: Fictional universe of Harry Potter\nThe depiction of the Wizarding World is centred on magic, which not only imbues objects such as wands, but is portrayed as an inborn ability.\nIt is also centred on the separation of the wizarding world from the non-wizarding (Muggle) world.\nDespite being an inherent talent, magic is honed through study of various branches of magic and practical training into a skill.\nA great deal of effort is expended in keeping the Muggles unaware of magic.\nOriginally the two worlds co-existed; however, persecution of those with magic meant magical laws have been put in place over the centuries, designed to keep the existence of the magical world hidden from Muggles.\nThe first and most important statute is the International Statute of Wizarding Secrecy of 1692.\nEnchantment of Muggle artefacts is forbidden; under-age wizards are restricted from using magic outside school, and any deliberate revelation of magical ability to the Muggle community is punishable.\nHowever, allowances are made for the use of magic in the presence of a Muggle in case of a life-threatening situation (for the wizard or the Muggle).\n\n### Passage Title: J. K. Rowling\n\"Harry Potter and the Deathly Hallows\" was released on 21 July 2007 (0:01 BST) and broke its predecessor's record as the fastest-selling book of all time.\nIt sold 11\u00a0million copies in the first day of release in the United Kingdom and United States.\nThe book's last chapter was one of the earliest things she wrote in the entire series.\n\"Harry Potter\" is now a global brand worth an estimated US$15\u00a0billion, and the last four \"Harry Potter\" books have consecutively set records as the fastest-selling books in history.\nThe series, totalling 4,195 pages, has been translated, in whole or in part, into 65 languages.\nThe \"Harry Potter\" books have also gained recognition for sparking an interest in reading among the young at a time when children were thought to be abandoning books for computers and television, although it is reported that despite the huge uptake of the books, adolescent reading has continued to decline.\nIn October 1998, Warner Bros. purchased the film rights to the first two novels for a seven-figure sum.\nA film adaptation of \"Harry Potter and the Philosopher's Stone\" was released on 16 November 2001, and \"Harry Potter and the Chamber of Secrets\" on 15 November 2002.\nBoth films were directed by Chris Columbus.\n\n### Passage Title: Wizarding World\nWarner Bros. had initially planned to release the film over 4 July 2001 weekend, making for such a short production window that several proposed directors removed themselves from consideration.\nBecause of time constraints, the date was put back, and \"Harry Potter and the Philosopher's Stone\" was released in the United Kingdom and the United States on 16 November 2001.\nHarry, Ron, and Hermione return to Hogwarts for their second year, but a mysterious chamber, hidden in the school, is opened leaving students and ghosts petrified by an unknown agent.\nThey must solve the mystery of the chamber, and discover its entrance to find and defeat the true culprit.\nColumbus and Kloves returned as director, and screenwriter for the film adaptation of\u00a0\"Chamber of Secrets\".\nJust three days after the wide release of the first film, production began on 19 November 2001 in Surrey, England, with filming continuing on location on the Isle of Man and at several other locations in Great Britain.\nLeavesden Film Studios in London made several scenes for Hogwarts.\nPrincipal photography concluded in the summer of 2002.\nThe film spent until early October in post-production.\n\"Harry Potter and the Chamber of Secrets\" premiered in the United Kingdom on 3 November 2002 before its wide release on 15 November, one year after the \"Philosopher's Stone\".\n\n### Question: What year was the harry potter series set in?",
@@ -1847,15 +2555,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         100,
                         181
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1863,15 +2571,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         251,
                         343
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1879,15 +2587,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         41,
                         99
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -1902,15 +2610,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         57,
                         76
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1918,15 +2626,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         167,
                         361
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -1934,15 +2642,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         681,
                         761
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -1950,15 +2658,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The earliest standardized minigolf course was in North Carolina in 1916. "
                 },
                 "output_idx": [
                     [
                         554,
                         628
                     ]
-                ],
-                "explanation": "The earliest standardized minigolf course was in North Carolina in 1916. "
+                ]
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[5]"
+                }
             }
         ]
     },
@@ -1973,15 +2692,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         102,
                         163
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -1989,15 +2708,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         292,
                         338
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -2005,15 +2724,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         339,
                         385
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -2021,15 +2740,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         386,
                         474
                     ]
-                ],
-                "explanation": ""
+                ]
             }
         ]
     },
@@ -2044,15 +2763,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         62
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2060,15 +2779,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         191,
                         258
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -2076,15 +2795,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "inconsistent"
-                    }
+                    },
+                    "explaination": "{\"passage_id\":1,\"sentence_id\":[5]}"
                 },
                 "output_idx": [
                     [
                         63,
                         190
                     ]
-                ],
-                "explanation": "{\"passage_id\":1,\"sentence_id\":[5]}"
+                ]
             },
             {
                 "id": 3,
@@ -2092,15 +2811,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "while driving to the airport for his final trip to Washington. "
                 },
                 "output_idx": [
                     [
                         315,
                         377
                     ]
-                ],
-                "explanation": "while driving to the airport for his final trip to Washington. "
+                ]
             },
             {
                 "id": 4,
@@ -2108,15 +2827,59 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         378,
                         632
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 5,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[4]"
+                }
+            },
+            {
+                "id": 6,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[2]"
+                }
+            },
+            {
+                "id": 7,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_answer"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
+            },
+            {
+                "id": 8,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -2131,15 +2894,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         20,
                         50
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2147,15 +2910,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         103,
                         127
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[4]"
+                }
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[5]"
+                }
             }
         ]
     },
@@ -2170,15 +2955,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         134,
                         231
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2186,15 +2971,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         232,
                         318
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -2202,15 +2987,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         319,
                         454
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 3,
@@ -2218,15 +3003,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         459,
                         504
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -2234,15 +3019,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         505,
                         521
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 5,
@@ -2250,15 +3035,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "The first subway train started in the US in 1868, in New York City "
                 },
                 "output_idx": [
                     [
                         522,
                         530
                     ]
-                ],
-                "explanation": "The first subway train started in the US in 1868, in New York City "
+                ]
             },
             {
                 "id": 6,
@@ -2266,15 +3051,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         133
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 7,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[10]"
+                }
             }
         ]
     },
@@ -2289,15 +3085,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         0,
                         173
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2305,15 +3101,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         174,
                         226
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -2321,15 +3117,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         227,
                         278
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[1]"
+                }
             }
         ]
     },
@@ -2344,15 +3151,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         64,
                         152
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2360,15 +3167,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "incoherent"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         173,
                         191
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -2376,15 +3183,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights"
                 },
                 "output_idx": [
                     [
                         370,
                         414
                     ]
-                ],
-                "explanation": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights"
+                ]
             },
             {
                 "id": 3,
@@ -2392,15 +3199,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         492,
                         542
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 4,
@@ -2408,15 +3215,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         279,
                         369
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 5,
@@ -2424,15 +3231,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe. Sony and Escape Artists started developing the project from scratch for Columbia "
                 },
                 "output_idx": [
                     [
                         594,
                         684
                     ]
-                ],
-                "explanation": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe. Sony and Escape Artists started developing the project from scratch for Columbia "
+                ]
             },
             {
                 "id": 6,
@@ -2440,15 +3247,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "repetitive"
-                    }
+                    },
+                    "explaination": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe."
                 },
                 "output_idx": [
                     [
                         433,
                         452
                     ]
-                ],
-                "explanation": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe."
+                ]
+            },
+            {
+                "id": 7,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "3",
+                    "sentence_id": "[5]"
+                }
             }
         ]
     },
@@ -2463,15 +3281,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         86,
                         122
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2479,15 +3297,26 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         132,
                         197
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 2,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "2",
+                    "sentence_id": "[3]"
+                }
             }
         ]
     },
@@ -2502,15 +3331,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         448,
                         519
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 1,
@@ -2518,15 +3347,15 @@
                 "annotation": {
                     "factual_error": {
                         "val": "irrelevant"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         120,
                         317
                     ]
-                ],
-                "explanation": ""
+                ]
             },
             {
                 "id": 2,
@@ -2534,15 +3363,37 @@
                 "annotation": {
                     "factual_error": {
                         "val": "unverifiable"
-                    }
+                    },
+                    "explaination": null
                 },
                 "output_idx": [
                     [
                         67,
                         119
                     ]
-                ],
-                "explanation": ""
+                ]
+            },
+            {
+                "id": 3,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[5]"
+                }
+            },
+            {
+                "id": 4,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_major_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[4]"
+                }
             }
         ]
     },
@@ -2550,6 +3401,18 @@
         "context": "\n\n### Passage Title: McDonald's New Zealand\nMcDonald's Restaurants (New Zealand) Limited is the New Zealand subsidiary of the international fast food restaurant chain McDonald's.\nIts first location opened in 1976.\nMcDonald's New Zealand currently has over 160 restaurants operating nationwide, serving an estimated one million people each week.\nAs with McDonald's locations worldwide, the franchise primarily sells hamburgers, cheeseburgers, chicken, french fries, breakfast items, soft drinks, milkshakes and desserts.\nIn response to changing consumer tastes, the company has expanded its menu to include salads, fish, wraps, smoothies, and fruit.\nThe company also operates the Georgie Pie and McCaf\u00e9 chains within many of its stores; through the latter McDonald's is the largest coffee shop brand in the country.\nMcDonald's New Zealand operations are based in Greenlane, Auckland.\nThe first McDonald's restaurant in New Zealand opened on Cobham Court in central Porirua on Monday 7 June 1976, however it was not officially opened until the following Saturday.\nThe original menu featured the Big Mac (75 cents), Quarter Pounder (65c), Quarter Pounder with Cheese (75c), Filet-O-Fish (65c), cheeseburger (40c) and hamburger (30c).\n\n### Question: When did mcdonald's come to new zealand?",
         "source": "McDonald's is the largest coffee shop brand in New Zealand. McDonald's Restaurants (New Zealand) Limited (also using the trading name \"Macca's\") is the New Zealand subsidiary of the international fast food restaurant chain McDonald's. The company came to New Zealand on 4 November 1975 but did not open its first restaurant until 7 June 1976. ",
         "target": "McDonald's Restaurants New Zealand Limited is the New Zealand subsidiary of the fast food restaurant chain McDonald's. Its first location opened on Cobham Court in central Porirua on Monday 7 June 1976, however it was not officially opened until the following Saturday.",
-        "edits": []
+        "edits": [
+            {
+                "id": 0,
+                "category": "missing_info",
+                "annotation": {
+                    "missing_info_error": {
+                        "val": "missing_minor_auxiliary"
+                    },
+                    "passage_id": "1",
+                    "sentence_id": "[3]"
+                }
+            }
+        ]
     }
 ]
