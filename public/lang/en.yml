@@ -44,3 +44,4 @@ questions:
   likert_1: "1 - minor"
   likert_2: "2 - somewhat"
   likert_3: "3 - a lot"
+  textbox_placeholder: "Write your answer..."

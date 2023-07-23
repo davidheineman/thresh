@@ -249,6 +249,8 @@ export default {
             $("input[name=edit_cotegory]").prop("checked", false);
             $(".checkbox-tools").prop("checked", false);
             $(".checkbox-tools-yes-no").prop("checked", false);
+            $('.question-textbox').val('');
+            $('.question-area').val('');
             $('.quality-selection').slideUp(300);
             $(".span-selection-div").hide(300);
 
@@ -319,7 +321,7 @@ export default {
                         continue 
                 }
 
-                if ($(q_object[0]).attr('annotated') != 'true') {
+                if ($(q_object[0]).attr('annotated') != 'true' && (!question.hasOwnProperty('required') || question.required)) {
                     filled_out = false
                 }
             }
@@ -351,6 +353,8 @@ export default {
                     if (tg != null && tg != '') {
                         filled_out = true
                     }
+                } else {
+                    filled_out = true
                 }
             }
             if (config_category['type'] == 'composite') {

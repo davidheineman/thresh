@@ -58,14 +58,24 @@ export default {
             const span_class = 'target_span'
             const sent = this.hits_data[this.current_hit - 1].target
 
-            this.target_html = this.render_sentence(sent, sent_type, span_class, null);
+            try {
+                this.target_html = this.render_sentence(sent, sent_type, span_class, null);
+            } catch (e) {
+                this.target_html = ''
+                console.error(e)
+            }
         },
         process_target_html_with_selected_span(category) {
             const sent_type = 'output_idx'
             const span_class = 'target_span'
             const sent = this.hits_data[this.current_hit - 1].target
 
-            this.target_html = this.render_sentence(sent, sent_type, span_class, category);
+            try {
+                this.target_html = this.render_sentence(sent, sent_type, span_class, category);
+            } catch (e) {
+                this.target_html = ''
+                console.error(e)
+            }
         },
         // TOOD: I removed the hover span code, but there were some edge cases in there for split edits
         select_target_html(e) {

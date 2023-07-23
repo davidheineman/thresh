@@ -213,15 +213,22 @@ export default {
         </div>
 
         <!-- If the question is an inline text box -->
-        <div v-if="question.options === 'textbox'">
+        <div v-if="question.options === 'textbox'" class="flex items-center mt2">
             <p class="mb3 b tracked-light">{{ question.question }}</p>
+            <input type="text" class="question-textbox" :name="`${div_name}-textbox`" :id="`${div_name}`" 
+                :placeholder="config.interface_text.questions.textbox_placeholder" @input="update_edit_state($event.target.value)"
+                :class="`db border-box hover-black ba b--black-20 pa2 br2 ml3 flex-auto`" />
+            <label :class="`normal for-question-textbox question-${edit_type.name}`" :for="`${div_name}`"></label>
+            
         </div>
 
         <!-- If the question is an open-ended text area -->
         <div v-if="question.options === 'textarea'">
-            <p class="mt0 pt2 mb3 b tracked-light"> {{ question.question }}
+            <p class="mt0 pt2 mb3 b tracked-light"> {{ question.question }}</p>
 
-            </p>
+            <textarea class="question-textarea" :name="`${div_name}-textarea`" :id="`${div_name}`" :placeholder="config.interface_text.questions.textbox_placeholder" 
+                @input="update_edit_state($event.target.value)" :class="`db border-box hover-black w-100 ba b--black-20 pa2 br2 mb2`" />
+            <label :class="`normal for-question-textarea question-${edit_type.name}`" :for="`${div_name}`"></label>
         </div>
     </div>
 </template>

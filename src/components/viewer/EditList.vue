@@ -184,6 +184,11 @@ export default {
                         let ann_color = LIKERT_COLOR_MAP[ann[ann_type_name]] ? LIKERT_COLOR_MAP[ann[ann_type_name]] : 'black'
                         ann_html += `<span class="${ann_color} br-pills ba bw1 pa1">${ann_type_label}: ${ann[ann_type_name]}</span>`;
                     }
+                } else if (edit_ann_type['options'] == 'textarea' || edit_ann_type['options'] == 'textbox') {
+                    if (ann[ann_type_name] != null) {
+                        let ann_color = 'green'
+                        ann_html += `<span class="${ann_color} br-pills ba bw1 pa1 mr2">${ann_type_label}: ${ann[ann_type_name]}</span>`;
+                    }
                 } else {
                     // custom edit types
                     if (!ann[ann_type_name]) { continue }
@@ -210,35 +215,28 @@ export default {
             let new_html = ''
             new_html += `
                 <span data-id="${key}-${i}" data-category="${key}" class="default_cursor" @mouseover="hover_span" @mouseout="un_hover_span">
-                    <span class="edit-type txt-${key}${light} f3">${edit_label} </span>
-                    <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">`;
+                    <span class="edit-type txt-${key}${light} f3">${edit_label} </span>`;
 
-            if (edit.hasOwnProperty('input_idx')) {
-                let in_span = edit['input_idx'][0]
-                new_html += `
-                    &nbsp${this.hits_data[this.current_hit - 1].source.substring(in_span[0], in_span[1])}&nbsp</span>`;
-            } else if (edit.hasOwnProperty('output_idx')) {
-                let out_span = edit['output_idx'][0]
-                new_html += `
-                    &nbsp${this.hits_data[this.current_hit - 1].target.substring(out_span[0], out_span[1])}&nbsp</span>`;
-            }
-            
+            if (!edit.hasOwnProperty('input_idx') && !edit.hasOwnProperty('output_idx')) { return new_html }
+
             if (edit_config['multi_span']) {
                 if (edit.hasOwnProperty('input_idx')) {
-                    let source_spans_for_subs = edit['input_idx'].slice(1)
-                    for (let source_span of source_spans_for_subs) {
-                        if (source_span[0] != in_span[0] || source_span[1] != in_span[1]) {
-                            new_html += `
-                                <span class="edit-type txt-${key}${light} f3"> and </span>
-                                    <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">
-                                        &nbsp${this.hits_data[this.current_hit - 1].source.substring(source_span[0], source_span[1])}&nbsp
-                                    </span>`;
+                    let source_spans_for_subs = edit['input_idx']
+                    for (let j = 0; j < source_spans_for_subs.length; j++) {
+                        let source_span = source_spans_for_subs[j];
+                        if (j != 0) {
+                            new_html += `<span class="edit-type txt-${key}${light} f3"> and </span>`;
                         }
+                        new_html += `
+                            <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">
+                                &nbsp${this.hits_data[this.current_hit - 1].source.substring(source_span[0], source_span[1])}&nbsp</span>`;
                     }
                 }
-                new_html += `<span class="edit-type txt-${key}${light} f3"> with </span>`;
+                if (edit.hasOwnProperty('input_idx') && edit.hasOwnProperty('output_idx')) {
+                    new_html += `<span class="edit-type txt-${key}${light} f3"> with </span>`;
+                }
                 if (edit.hasOwnProperty('output_idx')) {
-                    let target_spans_for_subs = edit['output_idx'] // .slice(1)
+                    let target_spans_for_subs = edit['output_idx']
                     for (let j = 0; j < target_spans_for_subs.length; j++) {
                         let target_span = target_spans_for_subs[j];
                         if (j != 0) {
@@ -249,7 +247,20 @@ export default {
                                 &nbsp${this.hits_data[this.current_hit - 1].target.substring(target_span[0], target_span[1])}&nbsp</span>`;
                     }
                 }
-            } 
+            } else {
+                new_html += `
+                <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">`;
+                if (edit.hasOwnProperty('input_idx')) {
+                    let in_span = edit['input_idx'][0]
+                    new_html += `
+                        &nbsp${this.hits_data[this.current_hit - 1].source.substring(in_span[0], in_span[1])}&nbsp</span>`;
+                } else if (edit.hasOwnProperty('output_idx')) {
+                    let out_span = edit['output_idx'][0]
+                    new_html += `
+                        &nbsp${this.hits_data[this.current_hit - 1].target.substring(out_span[0], out_span[1])}&nbsp</span>`;
+                }
+            }
+
             return new_html
         },
         process_edits_html() {

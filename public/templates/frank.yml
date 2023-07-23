@@ -6,9 +6,7 @@ template_description: Factuality in Abstractive Summarization
 #
 # While we adapt the annotation typology proposed in the FRANK paper, their annotation simply
 # has annotators select whether the error occurs in the sentence, not a span which corresponds
-# to the error, so we only show annotations on the first sentence as an example.
-# 
-# For our demo data, we only use BART summarizations on the CNN/DM split.
+# to the error.
 #
 # ========================================================================================
 
@@ -27,43 +25,36 @@ edits:
     type: primitive
     color: "#bd3dbf"
     icon: fa-people-arrows
-    enable_output: true
   - name: EntE
     label: "Entity Error"
     type: primitive
     color: blue
     icon: fa-box
-    enable_output: true
   - name: CircE
     label: "Circumstance Error"
     type: primitive
     color: teal
     icon: fa-person-falling
-    enable_output: true
   - name: CorefE
     label: "Coreference Error"
     type: primitive
     color: yellow
     icon: fa-user-minus
-    enable_output: true
   - name: LinkE
     label: "Discourse Link Error"
     type: primitive
     color: orange
     icon: fa-comment-slash
-    enable_output: true
   - name: OutE
     label: "Out of Article Error"
     type: primitive
     color: green
     icon: fa-file-export
-    enable_output: true
   - name: GramE
     label: "Grammatical Error"
     type: primitive
     color: red
     icon: fa-spell-check
-    enable_output: true
 
 paper_link: https://aclanthology.org/2021.naacl-main.383/
 citation: |

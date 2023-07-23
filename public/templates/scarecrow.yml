@@ -26,6 +26,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: grammar_usage_type
         label: "Severity"
         question: "Rate the severity."
@@ -37,6 +41,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: bad_math_type
         label: "Severity"
         question: "Rate the severity."
@@ -48,6 +56,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: commonsense_type
         label: "Severity"
         question: "Rate the severity."
@@ -59,6 +71,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: encyclopedic_type
         label: "Severity"
         question: "Rate the severity."
@@ -70,6 +86,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: incoherent_type
         label: "Severity"
         question: "Rate the severity."
@@ -81,6 +101,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: needs_google_type
         label: "Severity"
         question: "Rate the severity."
@@ -92,6 +116,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: off_prompt_type
         label: "Severity"
         question: "Rate the severity."
@@ -101,8 +129,13 @@ edits:
     color: "#e7040f"
     icon: fa-arrows-spin
     enable_output: true
+    multi_span: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: redundant_type
         label: "Severity"
         question: "Rate the severity."
@@ -112,8 +145,13 @@ edits:
     color: "#00449e"
     icon: fa-rotate-left
     enable_output: true
+    multi_span: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: self_contradiction_type
         label: "Severity"
         question: "Rate the severity."
@@ -125,6 +163,10 @@ edits:
     enable_output: true
     type: primitive
     annotation:
+      - name: explaination
+        label: "Explaination"
+        question: "Explain your selection."
+        options: textarea
       - name: technical_jargon_type
         label: "Severity"
         question: "Rate the severity."

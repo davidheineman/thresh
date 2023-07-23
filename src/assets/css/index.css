@@ -333,6 +333,15 @@ span.middleside {
     100% { transform: rotate(360deg); }
 }
 
+.question-textarea {
+    min-height: 100px;
+}
+
+.question-textbox {
+    display: inline;
+    max-width: 600px;
+}
+
 /* For screenshots */
 /* 175 zoom on 1440p */
 /* with width: 624px 5px 834px */

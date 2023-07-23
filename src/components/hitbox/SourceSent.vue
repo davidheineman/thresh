@@ -53,14 +53,24 @@ export default {
     },
     methods: {
         process_source_html() {
-            this.process_source_html_with_selected_span(null);
+            try {
+                this.process_source_html_with_selected_span(null);
+            } catch (e) {
+                this.source_html = ''
+                console.error(e)
+            }
         },
         process_source_html_with_selected_span(category) {
             const sent_type = 'input_idx'
             const span_class = 'source_span'
             const sent = this.hits_data[this.current_hit - 1].source
 
-            this.source_html = this.render_sentence(sent, sent_type, span_class, category);
+            try {
+                this.source_html = this.render_sentence(sent, sent_type, span_class, category);
+            } catch (e) {
+                this.source_html = ''
+                console.error(e)
+            }
         },
         select_source_html() {
             if (!this.hit_box_config.enable_select_source_sentence) {
