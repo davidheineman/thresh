@@ -4,7 +4,9 @@ template_description: A variation proposed by Freitag et al., 2021 of the Multid
 
 # ========================================================================================
 #
-
+# The original guidelines for MQM are detailed here: https://aclanthology.org/2013.tc-1.6
+# The full data collection for this typology, as well as the original web viewer for MQM are here:
+# https://github.com/google/wmt-mqm-human-evaluation
 #
 # ========================================================================================
 

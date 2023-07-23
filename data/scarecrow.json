@@ -21,6 +21,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'm not sure if polar bear cubs stay with their mothers until they are two years old I would need to use google to find out. ",
                     "needs_google_type": "minor"
                 }
             },
@@ -34,6 +35,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This \"who\" isn't very clear, it should be something like \"while the cub\"",
                     "grammar_usage_type": "somewhat"
                 }
             }
@@ -61,6 +63,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Apple would develop their own car, not just make a copy of a Lincoln Navigator",
                     "commonsense_type": "somewhat"
                 }
             },
@@ -74,6 +77,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Someone who works at a clothing company like Burberry wouldn't have the technical expertise needed for the job",
                     "commonsense_type": "somewhat"
                 }
             },
@@ -87,6 +91,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The topic has changed from the Apple car",
                     "off_prompt_type": "somewhat"
                 }
             },
@@ -100,6 +105,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "CarPlay can be used in any car, so there's no need for a specific testing track for it",
                     "commonsense_type": "somewhat"
                 }
             },
@@ -113,6 +119,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "CarPlay is an existing in-car system, so it is off-topic from the possible Apple car that would be developed",
                     "off_prompt_type": "somewhat"
                 }
             },
@@ -126,6 +133,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Need to google if the article appeared in the Financial Times",
                     "needs_google_type": "minor"
                 }
             }
@@ -153,6 +161,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Doesn't need capitalized ",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -163,9 +172,14 @@
                     [
                         258,
                         270
+                    ],
+                    [
+                        194,
+                        205
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Doesn't need to be stated twice in one sentence.",
                     "redundant_type": "minor"
                 }
             },
@@ -179,6 +193,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Needs to be a quotation mark.",
                     "grammar_usage_type": "somewhat"
                 }
             },
@@ -189,16 +204,21 @@
                     [
                         308,
                         316
+                    ],
+                    [
+                        79,
+                        88
                     ]
                 ],
                 "annotation": {
+                    "explaination": "We don't need another quotation mark here, as we are already in a statement.",
                     "redundant_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 4,
+        "id": 1,
         "metadata": {
             "gid": "10004",
             "model": "gpt3",
@@ -219,6 +239,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Does Brazil have a new government?",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -232,6 +253,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Has Brazil's government recognized the need to become a more urban country?",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -245,6 +267,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is the entrenched green belt not interested in the priorities of urban development?",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -258,6 +281,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is Eduardo Paes the mayor elect for Rio de Janerio?",
                     "needs_google_type": "minor"
                 }
             },
@@ -271,6 +295,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Has Paes announced his desire to build infrastructure and build seven airports?",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -281,16 +306,21 @@
                     [
                         288,
                         306
+                    ],
+                    [
+                        237,
+                        257
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The discontent from these people is already mentioned through their continued resistance. ",
                     "redundant_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 5,
+        "id": 1,
         "metadata": {
             "gid": "10005",
             "model": "gpt3",
@@ -311,13 +341,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "It was built a lot longer than 40 years ago.",
                     "commonsense_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 6,
+        "id": 2,
         "metadata": {
             "gid": "10006",
             "model": "gpt3",
@@ -338,6 +369,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "A period is needed here since this is the end of one sentence and the beginning of another.",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -351,13 +383,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "To clean up the run-on sentence this would read better as, 'harm. It also called'",
                     "grammar_usage_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 7,
+        "id": 3,
         "metadata": {
             "gid": "10007",
             "model": "gpt3",
@@ -378,6 +411,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Would need to verify this quote.",
                     "needs_google_type": "minor"
                 }
             },
@@ -391,6 +425,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Would need to verify the date.",
                     "needs_google_type": "minor"
                 }
             },
@@ -404,6 +439,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Would need to verify this date because it conflicts with the earlier statement the program began in 2011.",
                     "needs_google_type": "minor"
                 }
             },
@@ -417,13 +453,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Again, need to verify this date since a previous date of 2011 was mentioned as the state of the program.",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 8,
+        "id": 4,
         "metadata": {
             "gid": "10008",
             "model": "gpt3",
@@ -444,13 +481,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don't understand how these three sentences relate to the prompt.  The first two sentences seem abstract and unrelated and the third sentence is very specific but doesn't seem to address anything in the promt.",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 9,
+        "id": 5,
         "metadata": {
             "gid": "10009",
             "model": "gpt3",
@@ -471,6 +509,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "There is no need to capitalize anything beyond \"The\"",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -484,13 +523,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This doesn't seem related to anything from the human text.",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 10,
+        "id": 6,
         "metadata": {
             "gid": "10010",
             "model": "gpt3",
@@ -508,9 +548,14 @@
                     [
                         307,
                         344
+                    ],
+                    [
+                        201,
+                        217
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The sentence already states that the findings do not agree with previously assumed facts.",
                     "redundant_type": "minor"
                 }
             },
@@ -521,9 +566,14 @@
                     [
                         530,
                         617
+                    ],
+                    [
+                        201,
+                        281
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Earlier, it was stated that the research claims having a photographic memory has been found not to be a rare skill. It later states that only a small percentage of the population has shown these abilities, meaning it is a rare skill.",
                     "self_contradiction_type": "somewhat"
                 }
             },
@@ -537,13 +587,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is Dr. Hannes Kroger affiliated with Lund University?",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 11,
+        "id": 1,
         "metadata": {
             "gid": "20001",
             "model": "gpt2",
@@ -564,6 +615,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "lots of cuts of what? needs to be more specific",
                     "incoherent_type": "a lot"
                 }
             },
@@ -577,6 +629,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "the sentence does not make sense and not sure what it has to do with the prompt",
                     "off_prompt_type": "minor"
                 }
             },
@@ -590,6 +643,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "it would make more sense if the word losing were left out of this sentence",
                     "commonsense_type": "somewhat"
                 }
             },
@@ -603,13 +657,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this word isn't correct here in this sentence",
                     "grammar_usage_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 12,
+        "id": 2,
         "metadata": {
             "gid": "20002",
             "model": "gpt2",
@@ -630,6 +685,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This part doesn't make sense.",
                     "incoherent_type": "somewhat"
                 }
             },
@@ -643,6 +699,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I need to look up what 6/7 AIPAC means.",
                     "needs_google_type": "a lot"
                 }
             },
@@ -656,6 +713,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This word is unnecessary here.",
                     "grammar_usage_type": "somewhat"
                 }
             },
@@ -669,6 +727,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This does not make sense. Dismissing American Democrats isn't flirting with suicide.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -682,6 +741,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "It should be \"the death penalty.\"",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -695,6 +755,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The prompt is about Sarkozy's corruption and not death penalty.",
                     "off_prompt_type": "a lot"
                 }
             },
@@ -705,9 +766,14 @@
                     [
                         560,
                         580
+                    ],
+                    [
+                        504,
+                        516
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Becoming president contradicts losing the job which was mentioned earlier.",
                     "self_contradiction_type": "a lot"
                 }
             },
@@ -721,6 +787,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don\u2019t know exactly what this terms mean without looking it up.",
                     "technical_jargon_type": "a lot"
                 }
             },
@@ -731,16 +798,21 @@
                     [
                         599,
                         606
+                    ],
+                    [
+                        529,
+                        535
                     ]
                 ],
                 "annotation": {
+                    "explaination": "resign is used twice in the same sentence.",
                     "redundant_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 13,
+        "id": 1,
         "metadata": {
             "gid": "20003",
             "model": "gpt2",
@@ -761,13 +833,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "None of this has to do with the removed council member (Seth Jahn for reference)",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 14,
+        "id": 2,
         "metadata": {
             "gid": "20004",
             "model": "gpt2",
@@ -788,6 +861,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I read this several times and I can't make any sense of it at all. I am not sure whether it is supposed to be a title or what.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -801,6 +875,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Why would he pay for it online at his Etsy shop? Unless it means someone else's Etsy shop, but that is not clear to me here. Also, a video would not be in an Etsy shop anyway, would it?",
                     "incoherent_type": "a lot"
                 }
             },
@@ -814,6 +889,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I think there should probably be more words after this, like \"when it was\" ",
                     "grammar_usage_type": "somewhat"
                 }
             },
@@ -827,6 +903,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don't understand what this means and the relevance of swiss.com",
                     "incoherent_type": "a lot"
                 }
             },
@@ -840,13 +917,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Who is \"I\"? This sentence doesn't really fit well at all.",
                     "incoherent_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 15,
+        "id": 3,
         "metadata": {
             "gid": "20005",
             "model": "gpt2",
@@ -859,7 +937,7 @@
         "edits": []
     },
     {
-        "id": 16,
+        "id": 4,
         "metadata": {
             "gid": "20006",
             "model": "gpt2",
@@ -880,6 +958,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The prompt does not refer to commodities, but to travel and technology stocks.",
                     "off_prompt_type": "somewhat"
                 }
             },
@@ -893,6 +972,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "An idiom was attempted, but this is incorrect and incoherent.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -906,6 +986,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "There is no such thing as a \"historic low high\".",
                     "incoherent_type": "a lot"
                 }
             },
@@ -919,6 +1000,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "It is unclear what \"close calls\" are being referred to.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -932,6 +1014,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "It is unclear who the \"market makers\" are.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -945,6 +1028,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This has nothing to do with the increase in stock prices.",
                     "off_prompt_type": "somewhat"
                 }
             },
@@ -958,6 +1042,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This is irrelevant to the increase in current stock prices.",
                     "off_prompt_type": "somewhat"
                 }
             },
@@ -971,13 +1056,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This has nothing to do with the increase in certain stock prices. ",
                     "off_prompt_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 17,
+        "id": 5,
         "metadata": {
             "gid": "20007",
             "model": "gpt2",
@@ -998,6 +1084,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This just isn't something a human would say, it sounds silly. ",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1011,6 +1098,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This just doesn't even make sense.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -1024,6 +1112,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "there should be an 'a' before high",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1034,9 +1123,14 @@
                     [
                         211,
                         239
+                    ],
+                    [
+                        185,
+                        210
                     ]
                 ],
                 "annotation": {
+                    "explaination": "They stated they already work somewhere else.",
                     "self_contradiction_type": "a lot"
                 }
             },
@@ -1050,6 +1144,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This has nothing to do with anything, is completely jibberish. ",
                     "off_prompt_type": "a lot"
                 }
             },
@@ -1060,16 +1155,21 @@
                     [
                         353,
                         386
+                    ],
+                    [
+                        335,
+                        352
                     ]
                 ],
                 "annotation": {
+                    "explaination": "You wouldn't remember if you died. ",
                     "self_contradiction_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 18,
+        "id": 1,
         "metadata": {
             "gid": "20008",
             "model": "gpt2",
@@ -1090,13 +1190,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "None of this has anything to do with the topic of child weight gain and it's causes.",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 19,
+        "id": 2,
         "metadata": {
             "gid": "20009",
             "model": "gpt2",
@@ -1117,6 +1218,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "None of this has to do with educational tools or remote programs.",
                     "off_prompt_type": "a lot"
                 }
             },
@@ -1130,13 +1232,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This is not a sentence about adults or remote programs.",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 20,
+        "id": 3,
         "metadata": {
             "gid": "20010",
             "model": "gpt2",
@@ -1154,16 +1257,21 @@
                     [
                         600,
                         604
+                    ],
+                    [
+                        600,
+                        604
                     ]
                 ],
                 "annotation": {
+                    "explaination": "repeated word",
                     "redundant_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 21,
+        "id": 1,
         "metadata": {
             "gid": "20011",
             "model": "gpt2-xl",
@@ -1184,6 +1292,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This sentence is coherent, but it's a straight copy of the original prompt, and doesn't need repeated.",
                     "incoherent_type": "minor"
                 }
             },
@@ -1197,13 +1306,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Has nothing to do with the original prompt",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 22,
+        "id": 2,
         "metadata": {
             "gid": "20012",
             "model": "gpt2-xl",
@@ -1224,6 +1334,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I am unfamiliar with this and would need to research it.",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -1237,6 +1348,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'm not 100% sure if I know this, so I would have to look it up",
                     "needs_google_type": "minor"
                 }
             },
@@ -1250,13 +1362,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This year seems incorrect.",
                     "bad_math_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 23,
+        "id": 3,
         "metadata": {
             "gid": "20013",
             "model": "gpt2-xl",
@@ -1269,7 +1382,7 @@
         "edits": []
     },
     {
-        "id": 24,
+        "id": 4,
         "metadata": {
             "gid": "20014",
             "model": "gpt2-xl",
@@ -1290,6 +1403,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'd have to make sure these numbers are correct.",
                     "needs_google_type": "minor"
                 }
             },
@@ -1303,6 +1417,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "not everyone will know what these look like, or what they are exactly",
                     "technical_jargon_type": "somewhat"
                 }
             },
@@ -1316,13 +1431,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This seems really old and outdated. I'd have to look up and see if the date is right",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 25,
+        "id": 5,
         "metadata": {
             "gid": "20015",
             "model": "gpt2-xl",
@@ -1343,6 +1459,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Extraneous quotation mark",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1356,6 +1473,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The prompt is about the Disney+ service, not a physical product that needs to be delivered.",
                     "off_prompt_type": "a lot"
                 }
             },
@@ -1369,6 +1487,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Packing children in a duffel bag doesn't make any sense at all",
                     "incoherent_type": "a lot"
                 }
             },
@@ -1382,6 +1501,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Need to google to confirm it initially launched in 17 countries.",
                     "needs_google_type": "minor"
                 }
             },
@@ -1395,13 +1515,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Other streaming platforms are very popular with teenagers",
                     "commonsense_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 26,
+        "id": 6,
         "metadata": {
             "gid": "20016",
             "model": "gpt2-xl",
@@ -1419,9 +1540,14 @@
                     [
                         192,
                         221
+                    ],
+                    [
+                        156,
+                        184
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Stocks would not suffer casualties if holiday shopping sales numbers are strong.",
                     "self_contradiction_type": "somewhat"
                 }
             },
@@ -1435,6 +1561,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'm not sure what this is trying to say",
                     "incoherent_type": "a lot"
                 }
             },
@@ -1448,13 +1575,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "If it was expected there would be no need for spokesperson confirmation.",
                     "off_prompt_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 27,
+        "id": 1,
         "metadata": {
             "gid": "20017",
             "model": "gpt2-xl",
@@ -1475,6 +1603,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "There are over 14 thousand in the US",
                     "bad_math_type": "somewhat"
                 }
             },
@@ -1488,13 +1617,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This is referencing CA when, we are talking about US locations",
                     "off_prompt_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 28,
+        "id": 2,
         "metadata": {
             "gid": "20018",
             "model": "gpt2-xl",
@@ -1507,7 +1637,7 @@
         "edits": []
     },
     {
-        "id": 29,
+        "id": 3,
         "metadata": {
             "gid": "20019",
             "model": "gpt2-xl",
@@ -1528,6 +1658,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Mr. Ford and his weight have nothing to do with machines taking jobs.",
                     "off_prompt_type": "a lot"
                 }
             },
@@ -1541,13 +1672,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "The prompt is making the argument that worrying about computers taking jobs isn't necessary, while this sentence is saying that it would be optimal to have fewer humans and more computers on jobs.",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 30,
+        "id": 4,
         "metadata": {
             "gid": "20020",
             "model": "gpt2-xl",
@@ -1560,7 +1692,7 @@
         "edits": []
     },
     {
-        "id": 31,
+        "id": 5,
         "metadata": {
             "gid": "20021",
             "model": "grover-mega",
@@ -1581,6 +1713,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This should end at the comma and start another sentence.  So, change the comma to a period, add a space, capitalize the B in but, then add a comma after but.  The original sentence is too long and feels like a run-on. ",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1594,6 +1727,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "When the author says this campaign has \"already surpassed\" #AskBP and #Karma, I would need to check this to see if it really has surpassed it.  ",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -1607,6 +1741,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "What failed oil-spill response?  There is an assumption I know exactly what failed oil-spill response they are referring to but I would need to Google this to fully understand. ",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -1620,6 +1755,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "There needs to be a period at the end before the double quotation.",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1633,13 +1769,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "There should be a [sic] inserted here after attempt since it is a quote that is grammatically incorrect.  It would sound better as, \"Spitting Image is attempting\".  But, since it is a quote, at least acknowledging the grammar snafu would help.  So, add a [sic]. ",
                     "grammar_usage_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 32,
+        "id": 6,
         "metadata": {
             "gid": "20022",
             "model": "grover-mega",
@@ -1660,6 +1797,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don't know what this means and it isn't common knowledge.",
                     "technical_jargon_type": "a lot"
                 }
             },
@@ -1673,13 +1811,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this doesn't make sense without more context",
                     "incoherent_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 33,
+        "id": 7,
         "metadata": {
             "gid": "20023",
             "model": "grover-mega",
@@ -1692,7 +1831,7 @@
         "edits": []
     },
     {
-        "id": 34,
+        "id": 8,
         "metadata": {
             "gid": "20024",
             "model": "grover-mega",
@@ -1713,13 +1852,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This follow up sentence doesn't make sense to me.",
                     "incoherent_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 35,
+        "id": 9,
         "metadata": {
             "gid": "20025",
             "model": "grover-mega",
@@ -1740,6 +1880,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is Guttman & Howry a New York real estate company",
                     "needs_google_type": "minor"
                 }
             },
@@ -1750,9 +1891,14 @@
                     [
                         512,
                         559
+                    ],
+                    [
+                        140,
+                        154
                     ]
                 ],
                 "annotation": {
+                    "explaination": "First says prices are up, and later that it doesn't mean prices will rise",
                     "self_contradiction_type": "somewhat"
                 }
             },
@@ -1766,13 +1912,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "What does Cuba's stock market has to do with New York prices",
                     "off_prompt_type": "somewhat"
                 }
             }
         ]
     },
     {
-        "id": 36,
+        "id": 1,
         "metadata": {
             "gid": "20026",
             "model": "grover-mega",
@@ -1793,6 +1940,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this should be a comma not a period",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1806,6 +1954,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this should simply be: The WAP dance can be mastered",
                     "grammar_usage_type": "somewhat"
                 }
             },
@@ -1819,6 +1968,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I have no way of knowing if this is true or not without looking it up ",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -1832,13 +1982,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This sentence feels like it just stops and should have more information included",
                     "incoherent_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 37,
+        "id": 2,
         "metadata": {
             "gid": "20027",
             "model": "grover-mega",
@@ -1859,6 +2010,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I have no idea what this is.",
                     "technical_jargon_type": "a lot"
                 }
             },
@@ -1872,6 +2024,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Not a term used outside of science",
                     "technical_jargon_type": "a lot"
                 }
             },
@@ -1885,6 +2038,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Should have a comma after the word",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1898,6 +2052,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This is not common reading material",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -1911,6 +2066,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'm not sure everyone would know this term.",
                     "technical_jargon_type": "minor"
                 }
             },
@@ -1924,6 +2080,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Should have a comma after the word",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -1937,13 +2094,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Should have a comma after it.",
                     "grammar_usage_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 38,
+        "id": 3,
         "metadata": {
             "gid": "20028",
             "model": "grover-mega",
@@ -1961,9 +2119,18 @@
                     [
                         12,
                         144
+                    ],
+                    [
+                        16,
+                        53
+                    ],
+                    [
+                        125,
+                        144
                     ]
                 ],
                 "annotation": {
+                    "explaination": "why would you call an ambulance for someone who is already in the hospital?",
                     "self_contradiction_type": "somewhat"
                 }
             },
@@ -1977,6 +2144,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "the hospital would not give someone a lethal dose",
                     "commonsense_type": "somewhat"
                 }
             },
@@ -1990,6 +2158,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this has nothing to do with an overdose",
                     "incoherent_type": "a lot"
                 }
             },
@@ -2003,6 +2172,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "war and peace was not written in the 13th century",
                     "commonsense_type": "somewhat"
                 }
             },
@@ -2016,13 +2186,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this has nothing to do with the prompt",
                     "off_prompt_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 39,
+        "id": 2,
         "metadata": {
             "gid": "20029",
             "model": "grover-mega",
@@ -2043,6 +2214,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This person's hospital stay doesn't seem to have anything to do with puppies or children or dog bites.",
                     "off_prompt_type": "minor"
                 }
             },
@@ -2056,13 +2228,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don't know who this person is, it's never explained in the text.",
                     "grammar_usage_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 40,
+        "id": 3,
         "metadata": {
             "gid": "20030",
             "model": "grover-mega",
@@ -2083,6 +2256,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I have no idea who the professor is.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2096,6 +2270,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don't think \"Advertising Coffee\" is an actual thing, let alone a health-agent, so I chose needs Google because I wasn't sure where to put it.",
                     "needs_google_type": "somewhat"
                 }
             },
@@ -2109,6 +2284,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "In the U.S. this would be \"hospitalized.\"",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -2122,6 +2298,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This word is not logical here and out of place.",
                     "incoherent_type": "a lot"
                 }
             },
@@ -2135,13 +2312,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This word doesn't belong here.",
                     "incoherent_type": "a lot"
                 }
             }
         ]
     },
     {
-        "id": 41,
+        "id": 4,
         "metadata": {
             "gid": "20031",
             "model": "human",
@@ -2162,6 +2340,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "There is no such thing as pandemic school.",
                     "incoherent_type": "somewhat"
                 }
             },
@@ -2175,6 +2354,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Did NBC news and Challenge Success conduct this study?",
                     "needs_google_type": "minor"
                 }
             },
@@ -2188,6 +2368,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is Challenge Success affiliated with the Stanford Graduate School of Education?",
                     "needs_google_type": "minor"
                 }
             },
@@ -2201,6 +2382,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is Challenge Success a non-profit?",
                     "needs_google_type": "minor"
                 }
             },
@@ -2214,6 +2396,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Did the report claim that high school teens feel more disengaged this year?",
                     "needs_google_type": "minor"
                 }
             },
@@ -2227,13 +2410,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Did Education Week make this report?",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 42,
+        "id": 5,
         "metadata": {
             "gid": "20032",
             "model": "human",
@@ -2254,6 +2438,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Starting a sentence with a conjunction is not preferred. \"However\" is a better choice here.",
                     "grammar_usage_type": "minor"
                 }
             },
@@ -2267,6 +2452,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Need to google whether this company transitioned to clean energy.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2280,13 +2466,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Need to google if Laurence is BlackRock's chief executive",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 43,
+        "id": 6,
         "metadata": {
             "gid": "20033",
             "model": "human",
@@ -2299,7 +2486,7 @@
         "edits": []
     },
     {
-        "id": 44,
+        "id": 7,
         "metadata": {
             "gid": "20034",
             "model": "human",
@@ -2320,6 +2507,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "This isn't common knowledge to me, feels like it needs to be looked up.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2333,6 +2521,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'd need to check both the quote and whether this is actually currently a problem.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2346,6 +2535,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Need to verify whether Mike Stumo really is the chief of this organization.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2359,6 +2549,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Has he explicitly stated this? Would need to verify.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2372,6 +2563,7 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "Is it really fundamental? I would need to verify.",
                     "needs_google_type": "minor"
                 }
             },
@@ -2385,13 +2577,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I might want to verify this quote.",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 45,
+        "id": 8,
         "metadata": {
             "gid": "20035",
             "model": "human",
@@ -2412,13 +2605,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I don't know who this is off the top of my head",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 46,
+        "id": 9,
         "metadata": {
             "gid": "20036",
             "model": "human",
@@ -2431,7 +2625,7 @@
         "edits": []
     },
     {
-        "id": 47,
+        "id": 10,
         "metadata": {
             "gid": "20037",
             "model": "human",
@@ -2444,7 +2638,7 @@
         "edits": []
     },
     {
-        "id": 48,
+        "id": 11,
         "metadata": {
             "gid": "20038",
             "model": "human",
@@ -2465,13 +2659,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "I'd have to Google this to fact check the conversion rate.",
                     "needs_google_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 49,
+        "id": 12,
         "metadata": {
             "gid": "20039",
             "model": "human",
@@ -2492,13 +2687,14 @@
                     ]
                 ],
                 "annotation": {
+                    "explaination": "this should be a comma not a period",
                     "grammar_usage_type": "minor"
                 }
             }
         ]
     },
     {
-        "id": 50,
+        "id": 13,
         "metadata": {
             "gid": "20040",
             "model": "human",
