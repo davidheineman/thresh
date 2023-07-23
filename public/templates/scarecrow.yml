@@ -51,7 +51,7 @@ edits:
         options: likert-3
   - name: commonsense
     label: "Commonsense"
-    color: "#9eebcf"
+    color: "#4ecc9e"
     icon: fa-brain
     enable_output: true
     type: primitive
@@ -81,7 +81,7 @@ edits:
         options: likert-3
   - name: incoherent
     label: "Incoherent"
-    color: "#ff80cc"
+    color: "#d93898"
     icon: fa-comment-slash
     enable_output: true
     type: primitive

@@ -250,7 +250,7 @@ export default {
             $(".checkbox-tools").prop("checked", false);
             $(".checkbox-tools-yes-no").prop("checked", false);
             $('.question-textbox').val('');
-            $('.question-area').val('');
+            $('.question-textarea').val('');
             $('.quality-selection').slideUp(300);
             $(".span-selection-div").hide(300);
 

@@ -74,5 +74,9 @@ edits:
 # ========================================================================================
 # ========================================================================================
 
+# For this tutorial, we disable the annotation component
+disable:
+ - annotation
+
 template_name: demo
 template_label: Advanced Edit Types Demo

@@ -30,6 +30,20 @@
                 ]
             },
             {
+                "category": "text_input",
+                "id": 1,
+                "annotation": {
+                    "textbox_question": "Here's a text answer!",
+                    "textarea_question": "Longer answer!!"
+                },
+                "output_idx": [
+                    [
+                        136,
+                        156
+                    ]
+                ]
+            },
+            {
                 "category": "custom",
                 "id": 1,
                 "annotation": {
