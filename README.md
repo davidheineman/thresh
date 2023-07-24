@@ -7,7 +7,7 @@
 ------------------------------------------------
 
 ## Quick Start
-Visit [nlproc.tools/?t=demo](https://nlproc.tools/?t=demo) to for demo tutorials.
+Visit [nlproc.tools/?t=demo](https://nlproc.tools/?t=demo) for demo tutorials.
 
 ## The `nlproc-tools` Python Package
 ```python
