@@ -29,6 +29,23 @@ edits:
         question: "Can you rate the span on a scale of 1-3?"
         options: likert-3
 
+  # "options: textbox" and "options: textarea" will create text inputs
+  - name: text_input
+    label: "Text Box"
+    enable_output: true
+    color: "#964db0"
+    icon: fa-font
+    annotation:
+      - name: textbox_question
+        label: "Text Box"
+        question: "Here is an inline textbox:"
+        options: textbox
+      - name: textarea_question
+        label: "Text Area"
+        question: "Here is a larger textarea, for open-ended questions:"
+        options: textarea
+        required: false       # <- Use this flag to make a question optional
+
   # This will create a custom number of responses
   - name: custom
     label: "Simple Custom"

@@ -16,12 +16,12 @@ edits:
     icon: fa-pen
 
     # Each edit has a corresponding annotation, but we will focus on this aspect
-    # in the next tutorial:
-    annotation:
-      - name: edit_quality
-        label: "Edit Quality"
-        question: "What's the quality of this edit?"
-        options: likert-3
+    # in the next tutorial. We have disabled annotation in this tutorial
+    # annotation:
+    #   - name: edit_quality
+    #     label: "Edit Quality"
+    #     question: "What's the quality of this edit?"
+    #     options: likert-3
 
   - name: input_only
     label: "Input Only"
@@ -73,6 +73,10 @@ edits:
 
 # ========================================================================================
 # ========================================================================================
+
+# For this tutorial, we disable the annotation component
+disable:
+ - annotation
 
 template_name: demo
 template_label: Advanced Edit Types Demo
