@@ -31,3 +31,8 @@ coverage
 data_ingestion/
 paper/
 old/
+debug.ipynb
+.creds
+*.egg-info
+__pycache__/
+data_test/
