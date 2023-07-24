@@ -195,8 +195,10 @@ export default {
         },
         async load_builder(template_arg) {
             if (template_arg == null) {
-                template_arg = 'demo'
+                template_arg = 'demo_start'
             } 
+
+            template_arg = template_arg.replace('demo_', 'demo/')
             
             let template, file_path
             if (!template_arg.includes('http')) {
@@ -204,7 +206,7 @@ export default {
                 file_path = `/data/${template_arg}.json`
             } else {
                 template = template_arg
-                file_path = `/data/demo.json`
+                file_path = `/data/demo/start.json`
             }
             
             this.selectedOption = template

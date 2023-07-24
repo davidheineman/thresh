@@ -15,7 +15,7 @@ pip install nlproc-tools
 ```
 
 ## Data Conversion
-To convert to our standardized data format, see the [`data`](./data) directory for more information and links.
+To convert to our standardized data format, see [**data**](./data) for more information and links.
 ```
 git clone https://github.com/davidheineman/nlproc.tools.git
 cd nlproc.tools/data

@@ -77,10 +77,12 @@ export default {
                 if (this.config.default_data_link) {
                     file_path = this.config.default_data_link
                 } else {
-                    file_path = `data/demo.json`
+                    file_path = `data/demo/start.json`
                 }
             } else {
-                file_path = `data/${this.config.template_name}.json`
+                let tmp_name = this.config.template_name
+                tmp_name = tmp_name.replace('demo_', 'demo/')
+                file_path = `data/${tmp_name}.json`
             }
             download_data(file_path).then((data) => {
                 this.set_data(data)

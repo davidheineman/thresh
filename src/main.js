@@ -25,7 +25,7 @@ const templates = [
 ]
 
 const demo_templates = [
-    { name: "Start Here", path: "demo", task: "Examples" },
+    { name: "Start Here", path: "demo_start", task: "Examples" },
     { name: "Advanced Edit Types", path: "demo_edit_types", task: "Examples" },
     { name: "Advanced Question Trees", path: "demo_question_trees", task: "Examples" },
     { name: "Custom Instructions", path: "demo_instructions", task: "Examples" },
