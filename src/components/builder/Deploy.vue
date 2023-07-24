@@ -223,15 +223,15 @@ export default {
                 <pre>default_data_link: [link to your data]</pre>
             </Tab>
             <Tab name="python" :selected="active_tab == 'python'">
-                <h2>Deploy your template using <code>nlproc-tools</code> + Python</h2>
-                <p>Plug your interface generation directly into your code using the <code>nlproc-tools</code> pip library. This is recommended for orchestrating large-scale annotation projects, using multiple interfaces simultaneously (e.g., a multi-lingual project) or for creating a pipeline between generation and annotation (e.g., a RLHF training setup).</p>
+                <h2>Deploy your template using <code>nlproc_tools</code> + Python</h2>
+                <p>Plug your interface generation directly into your code using the <code>nlproc_tools</code> pip library. This is recommended for orchestrating large-scale annotation projects, using multiple interfaces simultaneously (e.g., a multi-lingual project) or for creating a pipeline between generation and annotation (e.g., a RLHF training setup).</p>
                 <h3>Setup</h3>
-                <pre>pip install nlproc-tools</pre>
+                <pre>pip install nlproc_tools</pre>
                 <pre>TODO ADD CODE</pre>
                 <p>Then you can send directly to annotators, or upload to your own server (see Hosted).</p>
                 <hr />
                 <h3>(Optional) Deploy to MTurk</h3>
-                <p>To allow direct access to the AWS API, we have not created wrapper functions. Instead, check out our <a href='/'>example notebook →</a> which uses <code>nlproc-tools</code> and <code>boto3</code> to deploy a large-scale annotation project.</p>
+                <p>To allow direct access to the AWS API, we have not created wrapper functions. Instead, check out our <a href='/'>example notebook →</a> which uses <code>nlproc_tools</code> and <code>boto3</code> to deploy a large-scale annotation project.</p>
                 <h3>(Optional) Integrate with HuggingFace Transformers</h3>
                 <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p>
             </Tab>
