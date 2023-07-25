@@ -159,11 +159,11 @@ export default {
         <div class="wrapper">
             <nav class="tabs">
                 <div class="selector"></div>
-                <!-- :class="{'is-active': active_tab == 'mturk'} -->
+                <!-- :class="{'is-active': active_tab == 'crowdsource'} -->
                 <a @click="selectTab('serverless')" class="active">Serverless</a>
                 <a @click="selectTab('hosted')">Hosted</a>
                 <a @click="selectTab('python')">Python</a>
-                <a @click="selectTab('mturk')">MTurk</a>
+                <a @click="selectTab('crowdsource')">Crowdsource</a>
             </nav>
         </div>
 
@@ -230,14 +230,14 @@ export default {
                 <pre>TODO ADD CODE</pre>
                 <p>Then you can send directly to annotators, or upload to your own server (see Hosted).</p>
                 <hr />
-                <h3>(Optional) Deploy to MTurk</h3>
+                <h3>(Optional) Deploy to Crowdsource</h3>
                 <p>To allow direct access to the AWS API, we have not created wrapper functions. Instead, check out our <a href='/'>example notebook →</a> which uses <code>nlproc_tools</code> and <code>boto3</code> to deploy a large-scale annotation project.</p>
                 <h3>(Optional) Integrate with HuggingFace Transformers</h3>
                 <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p>
             </Tab>
-            <Tab name="mturk" :selected="active_tab == 'mturk'">
-                <h2>Deploy to MTurk</h2>
-                <p>This will directly create an MTurk job for your dataset in this browser. This is recommended for small scale annotation or debugging, NOT for a large project. In that case, we recommend deploying with Python.</p>
+            <Tab name="crowdsource" :selected="active_tab == 'crowdsource'">
+                <h2>Deploy to Crowdsource</h2>
+                <p>This will directly create an Crowdsource job for your dataset in this browser. This is recommended for small scale annotation or debugging, NOT for a large project. In that case, we recommend deploying with Python.</p>
                 <h3>Data</h3>
                 <div class="flex items-center mb2">
                     <input class="mr2 use_editor_data" type="checkbox" id="use_editor_data" value="use_editor_data" checked @change="use_editor_data_handler">
@@ -248,15 +248,15 @@ export default {
                 </div>
                 <h3>Job Configuration</h3>
                 <div class="flex items-center mb2">
-                    <input class="mr2" type="checkbox" id="mturk_test_env" value="mturk_test_env" checked>
-                    <label for="mturk_test_env" class="lh-copy">Deploy to MTurk test environment (at <code>requester.mturk.com/developer/sandbox</code>)</label>
+                    <input class="mr2" type="checkbox" id="crowdsource_test_env" value="crowdsource_test_env" checked>
+                    <label for="crowdsource_test_env" class="lh-copy">Deploy to Crowdsource test environment (at <code>requester.crowdsource.com/developer/sandbox</code>)</label>
                 </div>
                 <div class="flex items-center mb2">
                     <input class="mr2" type="checkbox" id="enable_files" value="enable_files" checked>
                     <label for="enable_files" class="lh-copy">Add the <code>disable_upload_download=True</code> flag to disable annotators from using the file upload/download buttons</label>
                 </div>
                 <h3>Security Credentials</h3>
-                <p><i>Note: We do NOT see your credentials, as the MTurk API calls are done exclusively in your browser (<a href='/'>see source code</a>).</i></p>
+                <p><i>Note: We do NOT see your credentials, as the Crowdsource API calls are done exclusively in your browser (<a href='/'>see source code</a>).</i></p>
                 <div class="aws-creds mb2">
                     <div class="w-100">
                         <label for="name" class="f6 b db mb2">Access Key ID</label>

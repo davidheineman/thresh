@@ -13,7 +13,7 @@ const templates = [
     { name: "FRANK", path: "frank", task: "Summarization", hosted: true },
     { name: "MQM", path: "mqm", task: "Translation", hosted: true },
     { name: "CWZCC", path: "cwzcc", task: "Grammar Error Correction", hosted: true },
-    { name: "MultiPIT", path: "multipit", task: "Paraphrase", hosted: true },
+    { name: "MultiPIT", path: "multipit", task: "Paraphrase Generation", hosted: true },
     { name: "SNaC", path: "snac", task: "Summarization", hosted: true },
     { name: "ERRANT", path: "errant", task: "Grammar Error Correction", hosted: true },
     { name: "Da San Martino et al., 2019", path: "da-san-martino-etal-2019", task: "Propaganda Analysis", hosted: true },

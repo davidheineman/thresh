@@ -404,13 +404,15 @@ export default {
                         const constituent_edit_config = this.getEditConfig(ccategory)
 
                         if (constituent_edit_config['enable_input'] && constituent_edit_config['enable_output']) {
-                            new_lines[key][id].push(
-                                LeaderLine.setLine(
-                                    $(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
-                                    $(`.${key}.target_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
-                                    line_config
+                            try {
+                                new_lines[key][id].push(
+                                    LeaderLine.setLine(
+                                        $(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
+                                        $(`.${key}.target_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
+                                        line_config
+                                    )
                                 )
-                            )
+                            } catch (e) { console.warn(e) }
                         }
                     }
                 } else if (edit_config['enable_input'] && edit_config['enable_output']) {
