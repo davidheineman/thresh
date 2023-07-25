@@ -268,7 +268,13 @@ export default {
 
             let hit_edits = _.cloneDeep(this.hits_data[this.current_hit - 1].edits)
 
-            // TODO: Sort edits
+            // Sort edits
+            const getSmallestValue = (arr) => (arr ? Math.min(...arr.map((arr) => arr[0])) : Infinity);
+            hit_edits.sort((a, b) => {
+                const aMin = Math.min(getSmallestValue(a.input_idx), getSmallestValue(a.output_idx));
+                const bMin = Math.min(getSmallestValue(b.input_idx), getSmallestValue(b.output_idx));
+                return aMin - bMin;
+            });
 
             for (let edit of hit_edits) {
                 let i = edit['id']
