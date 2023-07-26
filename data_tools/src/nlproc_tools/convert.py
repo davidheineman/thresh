@@ -1,8 +1,9 @@
+from .util import verify_exists
 import csv, json, os, copy, logging, argparse
 
-utils_path = "utils"
+utils_path = "datasets"
 
-def convert_dataset(dataset_name, data_path, output_path, reverse=False):
+def convert_dataset(dataset_name: str, data_path: str, output_path: str, reverse: bool=False):
     logger.info("=" * 60)
     logger.info(f"Dataset name: {dataset_name}")
     logger.info(f"Data path: {data_path}")
@@ -10,13 +11,10 @@ def convert_dataset(dataset_name, data_path, output_path, reverse=False):
     logger.info(f"Reverse flag: {reverse}")
     logger.info("=" * 60)
 
-    if not os.path.isfile(data_path):
-        error_value = f"The provided 'data_path' does not point to an existing file. Recieved: '{data_path}'"
-        logger.error(error_value)
-        raise ValueError(error_value)
+    verify_exists(data_path)
 
     try:
-        dataset_module = __import__(f"utils.{dataset_name}", fromlist=[utils_path])
+        dataset_module = __import__(f"{utils_path}.{dataset_name}", fromlist=[utils_path])
         logger.info("Converting dataset...")
         if reverse:
             # converted_data = dataset_module.convert_data_backward(data_path, output_path)

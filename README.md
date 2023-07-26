@@ -19,11 +19,9 @@ To load annotations, simply load your JSON data and call `load_annotations`:
 ```python
 from nlproc_tools import load_annotations
 
-with open("<file_name>.json", "r") as f:
-    raw_data = json.load(f)
-
-data = load_annotations(
-    raw_data,
+# Load & serialize data from <file_name>.json
+nlproc_data = load_annotations(
+    filename="<file_name>.json",
     typology="<path_to_typology>.yml"
 )
 ```
@@ -32,13 +30,32 @@ To prepare a dataset for annotation, simply export your `List[Annotation]` objec
 ```python
 from nlproc_tools import export_data
 
-raw_data = export_data(
-    data,
+# Export data to <file_name>.json for annotation
+export_data(
+    data=nlproc_data,
+    filename="<file_name>.json",
     typology="<path_to_typology>.yml"
 )
+```
 
-with open(f"<file_name>.json", "w") as f:
-    json.dump(raw_data, f)
+### Internal Data Classes
+Our data loading code is backed by custom internal classes which are created based on your typology. You can access these classes directly:
+```python
+from nlproc_tools import get_entry_class
+
+# Get the custom data class for the SALSA typology
+SalsaEntry = get_entry_class("salsa.yml")
+
+# Create a new entry
+custom_entry = SalsaEntry(
+    annotator = annotator_1, 
+    system = new-wiki-1/GPT-3-zero-shot, 
+    target = The film has made more than $552 million at the box office and is currently the eighth most successful movie of 2022., 
+    source = The film has grossed over $552 million worldwide, becoming the eighth highest-grossing film of 2022.
+)
+
+print(custom_entry.system)
+>> new-wiki-1/GPT-3-zero-shot
 ```
 
 ## Data Conversion
@@ -49,18 +66,18 @@ pip install nlproc_tools
 To convert to our standardized data format, our library includes bi-directional conversion from existing fine-grained annotation typologies:
 
 ```python
-from nlproc_tools import convert
+from nlproc_tools import convert_dataset
 
 # To convert to the nlproc.tools standardized format:
-nlproc_data = convert(
-    original_data, 
-    dataset=<dataset_name>
+nlproc_data = convert_dataset(
+    data=original_data, 
+    dataset="<dataset_name>"
 )
 
 # To convert back to the original format:
-original_data = convert(
-    nlproc_data, 
-    dataset=<dataset_name>, 
+original_data = convert_dataset(
+    data=nlproc_data, 
+    dataset="<dataset_name>", 
     reverse=True
 )
 ```
