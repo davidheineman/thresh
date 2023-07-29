@@ -26,8 +26,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: grammar_usage_type
@@ -41,8 +41,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: bad_math_type
@@ -56,8 +56,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: commonsense_type
@@ -71,8 +71,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: encyclopedic_type
@@ -86,8 +86,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: incoherent_type
@@ -101,8 +101,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: needs_google_type
@@ -116,8 +116,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: off_prompt_type
@@ -132,8 +132,8 @@ edits:
     multi_span: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: redundant_type
@@ -148,8 +148,8 @@ edits:
     multi_span: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: self_contradiction_type
@@ -163,8 +163,8 @@ edits:
     enable_output: true
     type: primitive
     annotation:
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
       - name: technical_jargon_type

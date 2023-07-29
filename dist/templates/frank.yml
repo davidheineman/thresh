@@ -55,6 +55,11 @@ edits:
     type: primitive
     color: red
     icon: fa-spell-check
+  - name: OtherE
+    label: "Other Error"
+    type: primitive
+    color: grey
+    icon: fa-minus
 
 paper_link: https://aclanthology.org/2021.naacl-main.383/
 citation: |
