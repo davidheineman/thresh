@@ -9,7 +9,8 @@ tokenization: tokenized
 # In our data a white space denotes a new token, and a 'Ġ' denotes the beginning of a new word.
 # When rendering annotation, the whitespaces are ignored.
 
-# To create a tokenized dataset, please refer to tokenization.ipynb -> [ADD LINK]
+# For a guide on how to create a tokenized dataset, please refer to:
+# https://github.com/davidheineman/nlproc.tools/blob/main/notebook_tutorials/subword_annotation.ipynb
 
 # ========================================================================================
 # ========================================================================================

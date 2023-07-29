@@ -1,0 +1,29 @@
+# We allow integrating wtih crowdsourcing tools out-of-the-box. For a full tutorial on
+# programatic deployment, please see:
+# https://github.com/davidheineman/nlproc.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb
+
+# Try it out by clicking the ">" button to get to the last HIT, then the "Submit" button!
+
+crowdsource: "prolific"                 # Currently we only support prolific integration
+prolific_completion_code: "XXXXXXX"     # Specify the redirect code on completion
+disable:
+- upload
+- download
+
+instructions: |
+  ## Crowdsourcing Demo
+  You can add instructions here. Click to the end and press "Submit" to be redirected back to Prolific
+prepend_instructions: true
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Crowdsourcing Demo
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true
