@@ -41,8 +41,8 @@ edits:
             label: "Unverifiable Fact"
           - name: incoherent
             label: "Incoherent"
-      - name: explaination
-        label: "Explaination"
+      - name: explanation
+        label: "Explanation"
         question: "Explain your selection."
         options: textarea
         required: false
