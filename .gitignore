@@ -39,5 +39,5 @@ data_test/
 debug_export.json
 data_tools/**/salsa*
 
-notebooks/*
-!notebooks/*.ipynb
+notebook_tutorials/*
+!notebook_tutorials/*.ipynb
