@@ -38,7 +38,7 @@ export default {
             // TODO: Add - tagline
           }
         },
-        async onChange(e) {
+        async handle_drag_drop(e) {
             let new_hits_data = await handle_file_upload(e)
             if (this.config.template_name == 'serverless') {
                 let yml_template = new_hits_data.find(i => i.hasOwnProperty('_nlproc_tools_template'))?._nlproc_tools_template;
@@ -67,7 +67,7 @@ export default {
         },
         async drop(e) {
             e.preDefault();
-            await onChange(e)
+            await handle_drag_drop(e)
             e.currentTarget.classList.add('bg-gray-100');
             e.currentTarget.classList.remove('bg-green-300');
         },
@@ -109,7 +109,7 @@ export default {
             <div class="flex justify-center"> <!-- flex w-full h-screen items-center justify-center text-center -->
                 <div class="ba b--dashed bw2 file-box" @dragover="dragover" @dragleave="dragleave" @drop="drop"> <!-- p-12 bg-gray-100 border border-gray-300  --> 
                     <input type="file" multiple name="fields[assetsFieldHandle][]" id="assetsFieldHandle" 
-                        class="file-input-field" @change="onChange" ref="file" accept=".json" /> <!-- w-px h-px opacity-0 overflow-hidden absolute -->
+                        class="file-input-field" @change="handle_drag_drop" ref="file" accept=".json" /> <!-- w-px h-px opacity-0 overflow-hidden absolute -->
                 
                     <label for="assetsFieldHandle" class="block cursor-pointer">
                         <div>

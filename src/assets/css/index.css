@@ -54,6 +54,12 @@
     background-color: white;
 }
 
+.crowdsource-submit {
+    transition: all 0.1s ease;
+    background-color: white;
+    font-size: 20px
+}
+
 .hit-browser-inner {
     text-align: -webkit-center;
 }

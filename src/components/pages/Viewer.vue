@@ -39,6 +39,11 @@ export default {
         var ghParam = params.get("gh");
         var hfParam = params.get("hf");
 
+        // Prolific parameters
+        var prolificPID = params.get("PROLIFIC_PID");
+        var prolificStudyId = params.get("STUDY_ID");
+        var prolificSessionId = params.get("SESSION_ID");
+
         if (iParam) {
             template_name = iParam
             this.customize_template_link = template_name
@@ -62,7 +67,14 @@ export default {
         // Load config
         const template = template_name
         let config = await download_config(template).then((resp) => {
-            return jsyaml.load(resp);
+            let config = jsyaml.load(resp);
+            
+            // Enable crowdsource mode
+            if (prolificPID) {
+                config['crowdsource'] = "prolific"
+            }
+
+            return config
         })
 
         // Load language template
@@ -84,6 +96,18 @@ export default {
                 datapath = `https://huggingface.co/datasets/${dParam.replace('main', 'resolve/main')}`
             }
             await download_data(datapath).then((data) => {
+                // Inject crowdsource parameters
+                if (prolificPID) {
+                    for (let sent of data) {
+                        if (!sent['metadata']) {
+                            sent['metadata'] = {}
+                        }
+                        sent['metadata']['PROLIFIC_PID'] = prolificPID
+                        sent['metadata']['STUDY_ID'] = prolificStudyId
+                        sent['metadata']['SESSION_ID'] = prolificSessionId
+                    }
+                }
+
                 this.set_data(data)
             })
         }

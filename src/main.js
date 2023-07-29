@@ -32,7 +32,8 @@ const demo_templates = [
     { name: "Paragraph-level Annoation", path: "demo_paragraph", task: "Examples" },
     { name: "Limited Functionality", path: "demo_disable", task: "Examples" },
     { name: "Word-level Selection", path: "demo_tokenization", task: "Examples" },
-    { name: "Multi-language Deployment", path: "demo_multilingual", task: "Examples" }
+    { name: "Multi-language Deployment", path: "demo_multilingual", task: "Examples" },
+    { name: "Crowdsource Deployment", path: "demo_crowdsource", task: "Examples" }
 ]
 
 // Change route for custom template links

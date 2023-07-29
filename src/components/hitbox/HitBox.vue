@@ -190,6 +190,12 @@ export default {
             this.set_hits_data(new_hits_data);
             this.set_hit(1);
             this.setup_hit_box();
+        },
+        submit_crowsource() {
+            if (this.config.crowdsource && this.config.crowdsource == "prolific") {
+                let prolific_completion_code = this.config.prolific_completion_code;
+                window.location.href = `https://app.prolific.co/submissions/complete?cc=${prolific_completion_code}`;
+            }
         }
     }
 }
@@ -201,11 +207,12 @@ export default {
             <div class="tc f3 mt1 hit-selector">
                 <button @click="go_to_hit(current_hit - 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&lt;&nbsp;</button>
                 {{ config.interface_text.hit_box.hit_label }} <span>{{ current_hit }}</span> / <span>{{ total_hits }}&nbsp;</span>
-                <button @click="go_to_hit(current_hit + 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&gt;&nbsp;</button>
+                <button v-if="!(config.crowdsource && current_hit == total_hits)" @click="go_to_hit(current_hit + 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&gt;&nbsp;</button>
+                <button v-else @click="submit_crowsource()" class="ml2 pa1 ph3 br-pill-ns ba bw1 grow pointer crowdsource-submit">Submit</button>
             </div>
 
             <div class="hit-instructions">
-                <button v-if="config.instructions && !config.prepend_instructions" @click="toggle_instructions()" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">
+                <button v-if="config.instructions && !config.prepend_instructions" @click="toggle_instructions()" class="pa2 ph3 br-pill-ns ba bw1 grow pointer hit-instructions-btn">
                     <span class="f4">{{ config.interface_text.buttons.instructions_label }}</span>
                 </button>
             </div>
