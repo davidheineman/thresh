@@ -18,26 +18,59 @@ pip install nlproc_tools
 To load annotations, simply load your JSON data and call `load_annotations`:
 
 ```python
-from nlproc_tools import load_annotations
+from nlproc_tools import load_interface
+
+# Serialize your typology into a class
+YourInterface = load_interface(
+    "<path_to_typology>.yml"
+)
 
 # Load & serialize data from <file_name>.json
-nlproc_data = load_annotations(
-    filename="<file_name>.json",
-    typology="<path_to_typology>.yml"
+nlproc_data = YourInterface.load_annotations(
+    "<file_name>.json"
 )
+```
+
+For example, using the SALSA demo data:
+```python
+from nlproc_tools import load_interface
+
+# Load SALSA data using the SALSA typology
+Salsa = load_interface("salsa.yml")
+salsa_data = Salsa.load_annotations("salsa.json")
+
+print(salsa_data[0])
+>> SalsaEntry(
+>>   annotator: annotator_1, 
+>>   system: new-wiki-1/Human-2-written, 
+>>   source: "Further important aspects of Fungi ...", 
+>>   target: "An important aspect of Fungi in Art is ...", 
+>>   edits: [
+>>     DeletionEdit(
+>>       input_idx: [[259, 397]], 
+>>       annotation: DeletionAnnotation(
+>>         deletion_type: GoodDeletion(
+>>           val: 3
+>>         ), 
+>>         coreference: False, 
+>>         grammar_error: False
+>>       ),
+>>     ), 
+>>     ...
+>>   ]
+>> )
 ```
 
 To prepare a dataset for annotation, simply export your `List[Annotation]` object and call `export_data`:
 ```python
-from nlproc_tools import export_data
-
 # Export data to <file_name>.json for annotation
-export_data(
+YourInterface.export_data(
     data=nlproc_data,
-    filename="<file_name>.json",
-    typology="<path_to_typology>.yml"
+    filename="<file_name>.json"
 )
 ```
+
+For a full tutorial with examples and advanced usage, please see [**/notebook_tutorials/load_data.ipynb**](./notebook_tutorials/load_data.ipynb).
 
 ### Internal Data Classes
 Our data loading code is backed by custom internal classes which are created based on your typology. You can access these classes directly:
@@ -45,7 +78,8 @@ Our data loading code is backed by custom internal classes which are created bas
 from nlproc_tools import get_entry_class
 
 # Get the custom data class for the SALSA typology
-SalsaEntry = get_entry_class("salsa.yml")
+Salsa = load_interface("salsa.yml")
+SalsaEntry = Salsa.get_entry_class()
 
 # Create a new entry
 custom_entry = SalsaEntry(
@@ -71,7 +105,7 @@ from nlproc_tools import convert_dataset
 
 # To convert to the nlproc.tools standardized format:
 nlproc_data = convert_dataset(
-    data=original_data, 
+    data_path="<path_to_original_data>"", 
     dataset="<dataset_name>"
 )
 
