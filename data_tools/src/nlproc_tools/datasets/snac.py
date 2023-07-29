@@ -5,7 +5,7 @@ def find_substring_indices(main_string, substring):
     end_index = start_index + len(substring) if start_index != -1 else -1
     return start_index, end_index
 
-def convert_entry(sent):
+def convert_entry_forward(sent):
     new_sent = {
         'source': '',
         'target': sent['text'],
@@ -26,21 +26,20 @@ def convert_entry(sent):
 
     return new_sent
 
-def convert_data_forward(data, limit=None):
-    if type(data) == str:
-        with open(data, "r", encoding='utf-8') as f:
-            data = json.load(f)
+def convert_data_forward(data_path, limit=None):
+    with open(data_path, "r", encoding='utf-8') as f:
+        data = json.load(f)
 
     data = [i for j in [list(x.values()) for x in list(data.values())] for i in j]
     
     if limit:
-        data = [s for s in data if len(s['errors']) > 3]
+        # data = [s for s in data if len(s['errors']) > 3]
         random.shuffle(data)
         data = data[:limit]
 
     ported_data = []
     for sent in data:
-        ported_data += [convert_entry(sent)]
+        ported_data += [convert_entry_forward(sent)]
     
     return ported_data
 

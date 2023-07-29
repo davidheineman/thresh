@@ -23,3 +23,10 @@ def get_meta_keys(data: dict) -> List[str]:
     Get all unique metadata keys
     """
     return list(set([_ for _ in [list(s['metadata'].keys()) for s in data if 'metadata' in s.keys()] for _ in _]))
+
+
+def format_class_str(class_str: any) -> str:
+    """
+    Indents any class string for pretty printing
+    """
+    return str(class_str).replace('\n', '\n  ')

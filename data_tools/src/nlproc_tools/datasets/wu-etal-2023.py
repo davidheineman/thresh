@@ -1,9 +1,4 @@
-filename = 'wu-etal-2023/dev_feedback.json'
-
-with open(filename, "r", encoding='utf-8') as f:
-    data = json.load(f)
-
-data = data[:50]
+import json, os, copy, random, logging
 
 category_map = {
     'Irrelevant': 'irrelevant',
@@ -11,66 +6,70 @@ category_map = {
     'Wrong-Grounding': 'inconsistent',
     'Unverifiable': 'unverifiable',
     'Incoherent': 'incoherent',
-
     'Missing-Answer': 'missing_answer',
     'Missing-Major-Auxiliary': 'missing_major_auxiliary',
     'Missing-Minor-Auxiliary': 'missing_minor_auxiliary',
 }
+reverse_category_map = {v: k for k, v in category_map.items()}
 
-ported_data = []
-for sent in data:
-    if 'feedback' not in sent: continue
+def convert_data_forward(data_path, limit=None):
+    with open(data_path, "r", encoding='utf-8') as f:
+        data = json.load(f)
 
-    passages = sent['passages']
-    if len(passages) == 0: continue
+    if limit: data = data[:limit]
 
-    context = ""
-    for passage in passages:
-        passage_text = f'\n\n### Passage Title: {passage[0]}'
-        for passage_sent in passage[1:]:
-            passage_text += "\n" + passage_sent.replace(passage[0] + "\n\n", "")
-        context += passage_text
+    ported_data = []
+    for sent in data:
+        if 'feedback' not in sent: continue
 
-    context += f'\n\n### Question: {sent["question"]}' 
+        passages = sent['passages']
+        if len(passages) == 0: continue
 
-    new_sent = {
-        'context': context,
-        'source': sent['gold'],
-        'target': sent['prediction 1'],
-        'edits': []
-    }
+        context = ""
+        for passage in passages:
+            passage_text = f'\n\n### Passage Title: {passage[0]}'
+            for passage_sent in passage[1:]:
+                passage_text += "\n" + passage_sent.replace(passage[0] + "\n\n", "")
+            context += passage_text
 
-    for i, edit in enumerate(sent['feedback']['errors']):
-        new_edit = {
-            'id': i,
-            'category': 'factual',
-            'annotation': {
-                'factual_error': {
-                    'val': category_map[edit['error type']]
-                },
-                'explaination': edit['explanation'] if edit['explanation'] != '' else None
-            },
-            'output_idx': [[edit['start'], edit['end']]],
+        context += f'\n\n### Question: {sent["question"]}' 
+
+        new_sent = {
+            'context': context,
+            'source': sent['gold'],
+            'target': sent['prediction 1'],
+            'edits': []
         }
-        new_sent['edits'] += [new_edit]
 
-    for i, edit in enumerate(sent['feedback']['missing-info']):
-        new_edit = {
-            'id': i + len(sent['feedback']['errors']),
-            'category': 'missing_info',
-            'annotation': {
-                'missing_info_error': {
-                    'val': category_map[edit['error type']]
+        for i, edit in enumerate(sent['feedback']['errors']):
+            new_edit = {
+                'id': i,
+                'category': 'factual',
+                'annotation': {
+                    'factual_error': {
+                        'val': category_map[edit['error type']]
+                    },
+                    'explanation': edit['explanation'] if edit['explanation'] != '' else None
                 },
-                "passage_id": str(edit['passage_id']),
-                "sentence_id": str(edit['sentence_id'])
+                'output_idx': [[edit['start'], edit['end']]],
             }
-        }
-        new_sent['edits'] += [new_edit]
+            new_sent['edits'] += [new_edit]
 
-    # TODO: need to add corrected-prediction
+        for i, edit in enumerate(sent['feedback']['missing-info']):
+            new_edit = {
+                'id': i + len(sent['feedback']['errors']),
+                'category': 'missing_info',
+                'annotation': {
+                    'missing_info_error': {
+                        'val': category_map[edit['error type']]
+                    },
+                    "passage_id": str(edit['passage_id']),
+                    "sentence_id": str(edit['sentence_id'])
+                }
+            }
+            new_sent['edits'] += [new_edit]
 
-    ported_data += [new_sent]
+        # TODO: need to add corrected-prediction
 
-with open('../public/data/wu-etal-2023.json', 'w') as f:
-    json.dump(ported_data, f, indent=4)
+        ported_data += [new_sent]
+    return ported_data

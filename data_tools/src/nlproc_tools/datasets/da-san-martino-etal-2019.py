@@ -1,4 +1,4 @@
-from deepdiff import DeepDiff
+import json, csv, os, copy, random, logging
 
 category_map = {
     'Loaded_Language': 'loaded_language',
@@ -20,6 +20,7 @@ category_map = {
     'Obfuscation,Intentional_Vagueness,Confusion': 'obfuscate',
     'Straw_Men': 'straw_man'
 }
+reverse_category_map = {v: k for k, v in category_map.items()}
 
 def load_propaganda(filename):
     data = []
@@ -28,7 +29,7 @@ def load_propaganda(filename):
         data = [r for r in reader]
     return data
 
-def load_article(filename):
+def convert_entry_forward(filename):
     label_filename = f'{filename}.labels.tsv'
     text_filename = f'{filename}.txt'
     annotations = load_propaganda(label_filename)
@@ -51,16 +52,18 @@ def load_article(filename):
         'edits': edits
     }
 
-dirpath = 'da-san-martino-etal-2019/test/'
-article_names = set([dirpath+x.replace('.txt', '').replace('.labels.tsv', '') for x in os.listdir(dirpath) if 'article' in x])
+def convert_data_forward(data_path, limit=None):
+    """
+    Note: dir_path should correspond to a folder containing pairs of .txt and .labels.tsv files.
+    """
+    article_names = set([data_path + x.replace('.txt', '').replace('.labels.tsv', '') for x in os.listdir(data_path) if 'article' in x])
 
-article_names = list(article_names)[:50]
-random.shuffle(article_names)
+    if limit:
+        article_names = list(article_names)[:limit]
+        random.shuffle(article_names)
 
-ported_data = []
-for name in article_names:
-    article = load_article(name)
-    ported_data += [article]
+    ported_data = []
+    for filename in article_names:
+        ported_data += [convert_entry_forward(filename)]
 
-with open('../public/data/da-san-martino-etal-2019.json', 'w') as f:
-    json.dump(ported_data, f, indent=4)
+    return ported_data

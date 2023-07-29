@@ -14,6 +14,7 @@ Visit [**nlproc.tools/?t=demo**](https://nlproc.tools/?t=demo) for demo tutorial
 pip install nlproc_tools
 ```
 
+### Loading Annotations
 To load annotations, simply load your JSON data and call `load_annotations`:
 
 ```python

@@ -36,3 +36,8 @@ debug.ipynb
 *.egg-info
 __pycache__/
 data_test/
+debug_export.json
+data_tools/**/salsa*
+
+notebooks/*
+!notebooks/*.ipynb

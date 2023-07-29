@@ -1,15 +1,5 @@
+import json, csv, os, copy, random, logging
 from deepdiff import DeepDiff
-
-filename = 'mqm/mqm_newstest2020_ende.tsv'
-
-def load_mqm(filename):
-    data = []
-    with open(filename, 'r', newline='', encoding='utf-8') as tsvfile:
-        reader = csv.DictReader(tsvfile, delimiter='\t')
-        data = [r for r in reader]
-    return data
-
-data = load_mqm(filename)
 
 severity_map = {
     'Major': 'a lot', 
@@ -17,17 +7,9 @@ severity_map = {
     'Neutral': 'minor',
     'no-error': None
 }
+reverse_severity_map = {v: k for k, v in severity_map.items()}
 
-systems = set([s['system'] for s in data])
-
-seg_ids = set([s['seg_id'] for s in data])
-seg_ids = set(list(seg_ids)[:20])
-
-raters = set([s['rater'] for s in data])
-
-ported_data = []
-
-def process_sentences(matching_sentences):
+def convert_entry_forward(matching_sentences):
     new_sent = {}
     sources, targets = [s['source'] for s in matching_sentences], [s['target'] for s in matching_sentences]
 
@@ -42,8 +24,8 @@ def process_sentences(matching_sentences):
         'metadata': {
             'system': matching_sentences[0]['system'],
             'doc': matching_sentences[0]['doc'],
-            'seg_id': seg_id,
-            'rater': rater,
+            'seg_id': matching_sentences[0]['seg_id'],
+            'rater': matching_sentences[0]['rater'],
         },
         'source': source,
         'target': target,
@@ -64,7 +46,6 @@ def process_sentences(matching_sentences):
             return None
 
         severity = target_data['severity']
-
         category = target_data['category'].replace('Style/Awkward', 'akward').split('/')
 
         type_ = category[0]
@@ -110,29 +91,39 @@ def process_sentences(matching_sentences):
         j_id += 1
     return new_sent
 
-i = 1
-for system in systems:
-    for seg_id in seg_ids:
-        for rater in raters:
-            matching_sentences = [s for s in data if\
-                s['seg_id'] == seg_id and\
-                s['rater'] == rater and\
-                s['system'] == system\
-            ]
-            
-            new_sent = process_sentences(matching_sentences)
 
-            if new_sent == None: continue
+def convert_data_forward(data_path, limit=None):
+    data = []
+    with open(data_path, 'r', newline='', encoding='utf-8') as tsvfile:
+        reader = csv.DictReader(tsvfile, delimiter='\t')
+        data = [r for r in reader]
 
-            new_sent.update({
-                'id': i
-            })
+    systems = set([s['system'] for s in data])
+    seg_ids = set([s['seg_id'] for s in data])
+    raters = set([s['rater'] for s in data])
 
-            if i > 50: break
+    if limit: seg_ids = set(list(seg_ids)[:limit])
 
-            ported_data += [new_sent]
+    ported_data = []
+    for system in systems:
+        for seg_id in seg_ids:
+            for rater in raters:
+                matching_sentences = [s for s in data if\
+                    s['seg_id'] == seg_id and\
+                    s['rater'] == rater and\
+                    s['system'] == system\
+                ]
+                
+                new_sent = convert_entry_forward(matching_sentences)
 
-            i += 1
+                if new_sent == None: continue
 
-with open('../public/data/mqm.json', 'w') as f:
-    json.dump(ported_data, f, indent=4)
+                new_sent.update({
+                    'id': len(ported_data) + 1
+                })
+
+                if limit and len(ported_data) > limit: break
+
+                ported_data += [new_sent]
+
+    return ported_data

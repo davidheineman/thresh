@@ -11,7 +11,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -27,7 +27,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -43,7 +43,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -66,7 +66,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -82,7 +82,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -98,7 +98,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -114,7 +114,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Drag Me to Hell is a 2009 American supernatural horror film directed by Sam Raimi. The plot focuses on a loan officer who, because she has to prove to her boss that she can make the \"hard decisions\", chooses not to extend an elderly woman's mortgage. In retaliation, the woman places a curse on the loan officer that, after three days of escalating torment, will plunge her into the depths of Hell to burn for eternity. The film is set in Pasadena, California "
+                    "explanation": "Drag Me to Hell is a 2009 American supernatural horror film directed by Sam Raimi. The plot focuses on a loan officer who, because she has to prove to her boss that she can make the \"hard decisions\", chooses not to extend an elderly woman's mortgage. In retaliation, the woman places a curse on the loan officer that, after three days of escalating torment, will plunge her into the depths of Hell to burn for eternity. The film is set in Pasadena, California "
                 },
                 "output_idx": [
                     [
@@ -159,7 +159,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -175,7 +175,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -220,7 +220,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -236,7 +236,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -252,7 +252,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The Evil Queen, also known as the Wicked Queen or just the Queen, and sometimes instead identified by her given name as Queen Grimhilde, is a fictional character who appears in Walt Disney's first animated feature film \"Snow White and the Seven Dwarfs\" (1937) and a villain character in the extended Disney's Snow White franchise. "
+                    "explanation": "The Evil Queen, also known as the Wicked Queen or just the Queen, and sometimes instead identified by her given name as Queen Grimhilde, is a fictional character who appears in Walt Disney's first animated feature film \"Snow White and the Seven Dwarfs\" (1937) and a villain character in the extended Disney's Snow White franchise. "
                 },
                 "output_idx": [
                     [
@@ -297,7 +297,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -313,7 +313,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -329,7 +329,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -345,7 +345,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -361,7 +361,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg "
+                    "explanation": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg "
                 },
                 "output_idx": [
                     [
@@ -377,7 +377,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg as Penny "
+                    "explanation": "Inspector Gadget is a 1999 American action comedy film directed by David Kellogg and written by Kerry Ehrin and Zak Penn from a story by Ehrin and Dana Olsen. The film stars Matthew Broderick as the title character, Rupert Everett as Dr. Claw, Michelle Trachtenberg as Penny "
                 },
                 "output_idx": [
                     [
@@ -444,7 +444,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -460,7 +460,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The new album Why Don't We was released on September 27, 2016. "
+                    "explanation": "The new album Why Don't We was released on September 27, 2016. "
                 },
                 "output_idx": [
                     [
@@ -476,7 +476,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The new album Why Don't We was released on September 27, 2016"
+                    "explanation": "The new album Why Don't We was released on September 27, 2016"
                 },
                 "output_idx": [
                     [
@@ -499,7 +499,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -515,7 +515,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -531,7 +531,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -547,7 +547,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":2,\"sentence_id\":[4]}"
+                    "explanation": "{\"passage_id\":2,\"sentence_id\":[4]}"
                 },
                 "output_idx": [
                     [
@@ -592,7 +592,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":2,\"sentence_id\":[1]}"
+                    "explanation": "{\"passage_id\":2,\"sentence_id\":[1]}"
                 },
                 "output_idx": [
                     [
@@ -608,7 +608,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -624,7 +624,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -669,7 +669,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -685,7 +685,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -701,7 +701,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -724,7 +724,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -758,7 +758,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -803,7 +803,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -819,7 +819,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -864,7 +864,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -880,7 +880,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -936,7 +936,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":1,\"sentence_id\":[5]}"
+                    "explanation": "{\"passage_id\":1,\"sentence_id\":[5]}"
                 },
                 "output_idx": [
                     [
@@ -952,7 +952,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -975,7 +975,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -991,7 +991,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1007,7 +1007,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1023,7 +1023,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1039,7 +1039,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1062,7 +1062,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1078,7 +1078,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1163,7 +1163,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1179,7 +1179,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1213,7 +1213,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1229,7 +1229,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The UEFA European Under-21 Championship is a biennial international youth football competition organised by UEFA for the men's under-21 national teams of Europe. "
+                    "explanation": "The UEFA European Under-21 Championship is a biennial international youth football competition organised by UEFA for the men's under-21 national teams of Europe. "
                 },
                 "output_idx": [
                     [
@@ -1245,7 +1245,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1290,7 +1290,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1306,7 +1306,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1362,7 +1362,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1378,7 +1378,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1445,7 +1445,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1461,7 +1461,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1553,7 +1553,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1609,7 +1609,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1625,7 +1625,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Victoria's birthday fell on 24 May 1819, and was officially recognized as her birthday on 25 May 1845. "
+                    "explanation": "Victoria's birthday fell on 24 May 1819, and was officially recognized as her birthday on 25 May 1845. "
                 },
                 "output_idx": [
                     [
@@ -1641,7 +1641,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":1,\"sentence_id\":[5]}"
+                    "explanation": "{\"passage_id\":1,\"sentence_id\":[5]}"
                 },
                 "output_idx": [
                     [
@@ -1686,7 +1686,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1702,7 +1702,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1747,7 +1747,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1763,7 +1763,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1779,7 +1779,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1824,7 +1824,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1840,7 +1840,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1856,7 +1856,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":2,\"sentence_id\":[3]}"
+                    "explanation": "{\"passage_id\":2,\"sentence_id\":[3]}"
                 },
                 "output_idx": [
                     [
@@ -1872,7 +1872,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1888,7 +1888,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1922,7 +1922,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1938,7 +1938,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":1,\"sentence_id\":[1]}"
+                    "explanation": "{\"passage_id\":1,\"sentence_id\":[1]}"
                 },
                 "output_idx": [
                     [
@@ -1954,7 +1954,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1970,7 +1970,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -1993,7 +1993,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2038,7 +2038,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2054,7 +2054,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2070,7 +2070,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2086,7 +2086,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2102,7 +2102,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":2,\"sentence_id\":[9]}"
+                    "explanation": "{\"passage_id\":2,\"sentence_id\":[9]}"
                 },
                 "output_idx": [
                     [
@@ -2136,7 +2136,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2152,7 +2152,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2168,7 +2168,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2184,7 +2184,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2218,7 +2218,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2234,7 +2234,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2257,7 +2257,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2273,7 +2273,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2307,7 +2307,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2323,7 +2323,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2339,7 +2339,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2373,7 +2373,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2389,7 +2389,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2405,7 +2405,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2421,7 +2421,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2437,7 +2437,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2460,7 +2460,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The density of an atom is concentrated in the nucleus, or center of the atom, where the positive charge of the atom is concentrated. "
+                    "explanation": "The density of an atom is concentrated in the nucleus, or center of the atom, where the positive charge of the atom is concentrated. "
                 },
                 "output_idx": [
                     [
@@ -2556,7 +2556,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2572,7 +2572,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2588,7 +2588,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2611,7 +2611,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2627,7 +2627,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2643,7 +2643,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2659,7 +2659,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The earliest standardized minigolf course was in North Carolina in 1916. "
+                    "explanation": "The earliest standardized minigolf course was in North Carolina in 1916. "
                 },
                 "output_idx": [
                     [
@@ -2693,7 +2693,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2709,7 +2709,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2725,7 +2725,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2741,7 +2741,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2764,7 +2764,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2780,7 +2780,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2796,7 +2796,7 @@
                     "factual_error": {
                         "val": "inconsistent"
                     },
-                    "explaination": "{\"passage_id\":1,\"sentence_id\":[5]}"
+                    "explanation": "{\"passage_id\":1,\"sentence_id\":[5]}"
                 },
                 "output_idx": [
                     [
@@ -2812,7 +2812,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "while driving to the airport for his final trip to Washington. "
+                    "explanation": "while driving to the airport for his final trip to Washington. "
                 },
                 "output_idx": [
                     [
@@ -2828,7 +2828,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2895,7 +2895,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2911,7 +2911,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2956,7 +2956,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2972,7 +2972,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -2988,7 +2988,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3004,7 +3004,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3020,7 +3020,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3036,7 +3036,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "The first subway train started in the US in 1868, in New York City "
+                    "explanation": "The first subway train started in the US in 1868, in New York City "
                 },
                 "output_idx": [
                     [
@@ -3052,7 +3052,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3086,7 +3086,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3102,7 +3102,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3118,7 +3118,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3152,7 +3152,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3168,7 +3168,7 @@
                     "factual_error": {
                         "val": "incoherent"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3184,7 +3184,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights"
+                    "explanation": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights"
                 },
                 "output_idx": [
                     [
@@ -3200,7 +3200,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3216,7 +3216,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3232,7 +3232,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe. Sony and Escape Artists started developing the project from scratch for Columbia "
+                    "explanation": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe. Sony and Escape Artists started developing the project from scratch for Columbia "
                 },
                 "output_idx": [
                     [
@@ -3248,7 +3248,7 @@
                     "factual_error": {
                         "val": "repetitive"
                     },
-                    "explaination": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe."
+                    "explanation": "Masters of the Universe is a media franchise created by Mattel. From 1982 to 2009, Mattel owned the rights to the toys and games Master of the Universe. From September 2009 to September 2009, Sony owned the rights to produce the live action adaptation of Master of the Universe."
                 },
                 "output_idx": [
                     [
@@ -3282,7 +3282,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3298,7 +3298,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3332,7 +3332,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3348,7 +3348,7 @@
                     "factual_error": {
                         "val": "irrelevant"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [
@@ -3364,7 +3364,7 @@
                     "factual_error": {
                         "val": "unverifiable"
                     },
-                    "explaination": null
+                    "explanation": null
                 },
                 "output_idx": [
                     [

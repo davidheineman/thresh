@@ -1,2 +1,2 @@
-from .dataloader import load_annotations, export_data, get_entry_class
+from .dataloader import load_interface
 from .convert import convert_dataset
