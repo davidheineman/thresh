@@ -30,6 +30,11 @@ export default {
         set_config(config) {
             this.consumed_config = config
         },
+        highlight_container(i) {
+            if (this.consumed_config.highlight_first_interface && i == 1) {
+                return "adjudication-container-highlight"
+            }
+        }
     },
     created: async function() {
         let template_name;
@@ -108,12 +113,27 @@ export default {
                     }
                 }
 
+                if (config.adjudication) {
+                    data = Array(config.adjudication).fill(data)
+                }
+
                 this.set_data(data)
             })
+        } else if (config.adjudication) {
+            let data = Array(config.adjudication).fill(null)
+            for (let idx = 1; idx < config.adjudication + 1; idx++) {
+                var ajudicationDParam = params.get(`d${idx}`);
+                if (ajudicationDParam) {
+                    data[idx-1] = {
+                        "data": await download_data(ajudicationDParam)
+                    }
+                }
+            }
+            this.set_data(data)
         }
 
         this.is_fetching = false
-    },
+    }
 }
 </script>
 
@@ -122,10 +142,22 @@ export default {
         consumed_config != null && consumed_config != undefined &&
         data != null && data != undefined &&
         is_fetching == false">
-        <Interface 
-            :input_data={data}
-            :consumed_config={consumed_config}
-        />
+        <div v-if="consumed_config.adjudication" class="adjudication-container mh4">
+            <Interface 
+                v-for="idx in consumed_config.adjudication"
+                v-bind:key="idx"
+                :class="highlight_container(idx)"
+                :highlight="consumed_config.highlight_first_interface && idx == 1"
+                :input_data="data[idx-1]"
+                :consumed_config={consumed_config}
+            />
+        </div>
+        <div v-else class="mt4">
+            <Interface 
+                :input_data={data}
+                :consumed_config={consumed_config}
+            />
+        </div>
     </main>
     <main v-else-if="
         (consumed_config != null && consumed_config != undefined) &&

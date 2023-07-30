@@ -354,10 +354,7 @@ span.middleside {
 .adjudication-container {
     display: flex;
     justify-content: center;
-}
-
-.adjudication-highlight {
-
+    margin-top: 2vh;
 }
 
 .adjudication-container-highlight {
@@ -365,7 +362,7 @@ span.middleside {
     border-color: #333333;
     border-style: dotted;
     border-bottom: 0;
-    min-height: 100vh;
+    min-height: 98vh;
 }
 
 /* For screenshots */

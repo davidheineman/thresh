@@ -69,6 +69,7 @@
     flex: 1;
     padding: 10px;
     padding-bottom: 0;
+    padding-top: 0;
     position: sticky;
     overflow-y: auto;
 }
