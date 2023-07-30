@@ -7,6 +7,9 @@ highlight_first_interface: true   # <- Adds a box around the first interface
 # data sources by using "d1", "d2", ... corresponding to each dataset. For example:
 # nlproc.tools/?d1=<DATASET_1>&d2=<DATASET_2>
 
+# Here's an example of a full URL with multiple datasets:
+# http://nlproc.tools/?i=https://raw.githubusercontent.com/davidheineman/nlproc.tools/main/public/templates/demo/adjudication.yml&d1=https://raw.githubusercontent.com/davidheineman/nlproc.tools/main/public/data/demo/adjudication.json&d2=https://raw.githubusercontent.com/davidheineman/nlproc.tools/main/public/data/demo/adjudication.json
+
 # ========================================================================================
 # ========================================================================================
 
