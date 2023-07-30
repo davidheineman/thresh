@@ -230,10 +230,10 @@ export default {
                 <pre>TODO ADD CODE</pre>
                 <p>Then you can send directly to annotators, or upload to your own server (see Hosted).</p>
                 <hr />
-                <h3>(Optional) Deploy to Crowdsource</h3>
-                <p>To allow direct access to the AWS API, we have not created wrapper functions. Instead, check out our <a href='/'>example notebook →</a> which uses <code>nlproc_tools</code> and <code>boto3</code> to deploy a large-scale annotation project.</p>
-                <h3>(Optional) Integrate with HuggingFace Transformers</h3>
-                <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p>
+                <h3>(Optional) Deploy to Crowdsourcing Platforms</h3>
+                <p>Check out our <a href='https://github.com/davidheineman/nlproc.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb'>example notebook →</a> which uses <code>nlproc_tools</code> and <code>dallinger</code> to deploy a large-scale annotation project to Prolific programatically.</p>
+                <!-- <h3>(Optional) Integrate with HuggingFace Transformers</h3>
+                <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p> -->
             </Tab>
             <Tab name="crowdsource" :selected="active_tab == 'crowdsource'">
                 <h2>Deploy to Crowdsource</h2>
