@@ -34,6 +34,8 @@ annotation_editor:
   annotating_edit_header: "Annotating an Edit"
   composite_seletion_instructions: "Click the edits that associated with "
   composite_span_unification: "with"
+adjudication:
+  highlight_label: "Your Annotations"
 annotation_viewer:
   header: "Edit Annotations"
   not_annotated_text_1: "this edit is not annotated yet, click"
