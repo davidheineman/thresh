@@ -55,7 +55,8 @@
     },
     props: [
       'input_data',
-      'consumed_config'
+      'consumed_config',
+      'highlight'
     ],
     watch: {
       input_data() {
@@ -87,7 +88,10 @@
           }
         },
         set_hit(hit_num) {
-            this.current_hit = hit_num;
+          if (hit_num != this.current_hit && this.config.adjudication) {
+            $(`.circle-${hit_num}`).click()
+          }
+          this.current_hit = hit_num;
         },
         set_hits_data(hit_data) {
             hit_data.forEach(o => o.edits = o.edits || []);
@@ -243,8 +247,11 @@
 </script>
 
 <template>
-  <div v-if="config != null" class="container w-65 mv3 mb-3 card-body">
+  <div v-if="config != null" class="container w-65 mt3 mb0 card-body">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
+    <div v-if="highlight" class="tc f3 b mb3 mt3 adjudication-highlight">
+      {{ config.interface_text.adjudication.highlight_label }}
+    </div>
     <Instructions v-bind="$data" :config="config" />
     <!-- <CommentBox v-bind="$data" :config="config" /> -->
     <HitBox v-bind="$data" :config="config" />

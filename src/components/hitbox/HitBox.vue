@@ -45,18 +45,26 @@ export default {
     },
     methods: {
         setup_hit_box() {
-            $(`.circle`).removeClass('circle-active');
-            $(`.bookmark`).removeClass('bookmark-active');
-
-            $(`#circle-${this.current_hit}`).addClass('circle-active');            
             $(`#comment_area`).val('');
-
-            if ("bookmark" in this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1]["bookmark"]) {
-                $(`.bookmark`).addClass('bookmark-active');
-            }
             if ("comment" in this.hits_data[this.current_hit - 1]) {
                 $(`#comment_area`).val(this.hits_data[this.current_hit - 1]["comment"]);
             }
+        },
+        get_circle_class(n) {
+            let class_name = 'circle-' + n
+            if (n == this.current_hit) {
+                class_name += ' circle-active'
+            }
+            if (this.hits_data && "bookmark" in this.hits_data[n - 1] && this.hits_data[n - 1]["bookmark"]) {
+                class_name += ' circle-bookmark'
+            }
+            return class_name
+        },
+        get_bookmark_class() {
+            if (this.hits_data && "bookmark" in this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1]["bookmark"]) {
+                return 'bookmark-active'
+            }
+            return ''
         },
         go_to_hit(hit_num) {
             if (hit_num > this.total_hits) {
@@ -87,13 +95,6 @@ export default {
                 new_hits_data[this.current_hit - 1].bookmark = true
                 this.set_hits_data(new_hits_data)
             }
-            if ($(".bookmark").hasClass("bookmark-active")) {
-                $(".bookmark").removeClass("bookmark-active");
-                $(`#circle-${this.current_hit}`).removeClass('circle-bookmark');
-            } else {
-                $(".bookmark").addClass("bookmark-active")
-                $(`#circle-${this.current_hit}`).addClass('circle-bookmark');
-            }
         },
         restart_hit() {
             let new_hits_data = _.cloneDeep(this.hits_data);
@@ -112,8 +113,6 @@ export default {
             this.setup_hit_box();
         },
         remove_selected(category, start, end) {
-            console.log('hi')
-
             // Essentially this just removes the span from the selected_state
             // span list and re-renders. I can use the re-rendering code already
             // written
@@ -219,7 +218,7 @@ export default {
 
             <div class="mr3 hit-browser">
                 <div class="hit-browser-inner">
-                    <span v-for="n in total_hits" v-bind:key="'circle-' + n" v-bind:id="'circle-' + n" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
+                    <span v-for="n in total_hits" v-bind:key="'circle-' + n" v-bind:id="'circle-' + n" v-bind:class="get_circle_class(n)" @click="go_to_hit_circle(n, $e)" class="circle pointer"><span class="tooltiptext">{{n}}</span></span>
                 </div>
             </div>
 
@@ -239,7 +238,7 @@ export default {
             <div class="ba b--black-80 br2 pa2">
                 <div class="fr">
                     <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
-                    <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1"></i>
+                    <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1" :class="get_bookmark_class()"></i>
                 </div>
 
                 <div class="mb2" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].context">

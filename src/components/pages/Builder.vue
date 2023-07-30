@@ -230,6 +230,11 @@ export default {
                 this.data = data
                 this.set_data(this.data)
             })
+        },
+        highlight_container(i) {
+            if (this.config.highlight_first_interface && i == 1) {
+                return "adjudication-container-highlight"
+            }
         }
     },
     created: async function() {
@@ -325,10 +330,22 @@ export default {
                     config != null && config != undefined &&
                     data != null && data != undefined
                 ">
-                    <Interface 
-                        :input_data={data}
-                        :consumed_config={config}
-                    />
+                    <div v-if="config.adjudication" class="adjudication-container">
+                        <Interface 
+                            v-for="idx in config.adjudication"
+                            v-bind:key="idx"
+                            :class="highlight_container(idx)"
+                            :highlight="config.highlight_first_interface && idx == 1"
+                            :input_data={data}
+                            :consumed_config={config}
+                        />
+                    </div>
+                    <div v-else>
+                        <Interface 
+                            :input_data={data}
+                            :consumed_config={config}
+                        />
+                    </div>
                 </div>
                 <div v-else>
                     <div class="spinner-container">

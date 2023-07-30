@@ -30,6 +30,7 @@ const demo_templates = [
     { name: "Advanced Question Trees", path: "demo_question_trees", task: "Examples" },
     { name: "Custom Instructions", path: "demo_instructions", task: "Examples" },
     { name: "Paragraph-level Annoation", path: "demo_paragraph", task: "Examples" },
+    { name: "Adjudication", path: "demo_adjudication", task: "Examples" },
     { name: "Limited Functionality", path: "demo_disable", task: "Examples" },
     { name: "Word-level Selection", path: "demo_tokenization", task: "Examples" },
     { name: "Multi-language Deployment", path: "demo_multilingual", task: "Examples" },

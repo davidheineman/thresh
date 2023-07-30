@@ -78,7 +78,7 @@ export default {
             return edit_state
         },
         set_edit_state(edit_state) {
-            console.log(edit_state)
+            console.info(edit_state)
             this.edit_state = edit_state
             this.force_update = !this.force_update
         },

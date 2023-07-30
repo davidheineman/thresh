@@ -1,11 +1,11 @@
 <div align="center">
-    <img src="./public/logo.png" width="400"/>
+    <img src="./public/img/logo.png" width="400"/>
 
 [**Build an Interface**](https://nlproc.tools) | [**Video Tutorial**](https://www.youtube.com) | [**Paper**](https://arxiv.org/)
 </div>
 <br />
 <div align="center">
-    <img src="./public/github-banner.jpg" width="100%" style="max-width: 1000px" />
+    <img src="./public/img/github-banner.jpg" width="100%" style="max-width: 1000px" />
 </div>
 
 ------------------------------------------------

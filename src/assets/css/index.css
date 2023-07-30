@@ -2,6 +2,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
+    min-width: 450px;
 }
 
 .container-extra-space {
@@ -47,6 +48,8 @@
     height: fit-content;
     justify-self: end;
     width: 93%;
+    max-height: 81px;
+    overflow: hidden;
 }
 
 .hit-instructions-btn {
@@ -346,6 +349,23 @@ span.middleside {
 .question-textbox {
     display: inline;
     max-width: 600px;
+}
+
+.adjudication-container {
+    display: flex;
+    justify-content: center;
+}
+
+.adjudication-highlight {
+
+}
+
+.adjudication-container-highlight {
+    border-width: 4px;
+    border-color: #333333;
+    border-style: dotted;
+    border-bottom: 0;
+    min-height: 100vh;
 }
 
 /* For screenshots */

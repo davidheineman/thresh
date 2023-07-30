@@ -34,31 +34,31 @@ export default {
     created: async function() {
         let template_name;
 
-        const params = new URLSearchParams(window.location.search)
+        const params = new URLSearchParams(window.location.search);
+
+        // Template paramters
         var iParam = params.get("i");
         var ghParam = params.get("gh");
         var hfParam = params.get("hf");
-
-        // Prolific parameters
-        var prolificPID = params.get("PROLIFIC_PID");
-        var prolificStudyId = params.get("STUDY_ID");
-        var prolificSessionId = params.get("SESSION_ID");
 
         if (iParam) {
             template_name = iParam
             this.customize_template_link = template_name
         } else if (ghParam) {
-            // https://raw.githubusercontent.com/davidheineman/salsa/main/interface.yml
             template_name = `https://raw.githubusercontent.com/${ghParam}`
             this.customize_template_link = template_name
         } else if (hfParam) {
-            // https://huggingface.co/datasets/davidheineman/salsa/resolve/main/interface.yml
             template_name = `https://huggingface.co/datasets/${hfParam.replace('main', 'resolve/main')}`
             this.customize_template_link = template_name
         } else {
             this.customize_template_link = this.template_path
             template_name = `templates/${this.template_path}.yml`
         }
+
+        // Prolific parameters
+        var prolificPID = params.get("PROLIFIC_PID");
+        var prolificStudyId = params.get("STUDY_ID");
+        var prolificSessionId = params.get("SESSION_ID");
 
         if (this.serverless) {
             template_name = `templates/serverless.yml`
