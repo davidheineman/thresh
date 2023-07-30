@@ -1,0 +1,21 @@
+# This simply replicates our interface for viewing multiple data sources simultaneously
+
+adjudication: 2                   # <- Number of views to add
+highlight_first_interface: true   # <- Adds a box around the first interface
+
+# Unlike the traditional dataloader (which uses the d parameter), you can specify multiple
+# data sources by using "d1", "d2", ... corresponding to each dataset. For example:
+# nlproc.tools/?d1=<DATASET_1>&d2=<DATASET_2>
+
+# ========================================================================================
+# ========================================================================================
+
+template_name: demo
+template_label: Adjudication Demo
+edits:
+  - name: edit_name
+    label: "Edit Name"
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true 
