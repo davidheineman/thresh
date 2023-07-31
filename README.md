@@ -176,7 +176,7 @@ Deployment will create a `gh-pages` branch. You will need to go into GitHub Page
 You do *not* need to do this if you want to use your interface (please see [**Deploy an Interface**](#deploy)). This will add your interface to the thresh.tools homepage!
 
 <div align="left">
-    <img src="./public/img/hosted-interface.png" width="100%" style="max-width: 300px" />
+    <img src="./public/img/hosted-interface.png" width="300px" />
 </div>
 
 To make your interface available in the thresh.tools interface, please clone this repo and submit a pull request with the following:
