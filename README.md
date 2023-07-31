@@ -17,11 +17,11 @@ Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explana
 
 <!-- TODO ADD TUTORIAL VIDEO HERE -->
 
-## Learn `thresh`
+## Learn `thresh.tools`
 
 <!-- Add a figure which shows the thresh lifecycle, from building, deploying and managing annotations -->
 
-### Interface Tutorials
+### Interface Builder Tutorials
 | feature | tutorial | documentation |
 |:--- | :--: |  :-- | 
 | Edit Types | [🔗](https://thresh.tools/?t=demo_edit_types) | [**Adding Edits**](#demo_edit_types)
@@ -326,7 +326,7 @@ We do not create dataloaders for the following interfaces:
 
 <a id="local"></a>
 
-### Set Up thresh.tools Locally
+### Set Up `thresh.tools` Locally
 Clone this repo: 
 ```sh
 git clone https://github.com/davidheineman/thresh.tools.git
@@ -343,13 +343,13 @@ npm run deploy  # Push to gh-pages
 Deployment will create a `gh-pages` branch. You will need to go into GitHub Pages settings and set the source branch to `gh-pages`.
 
 ### Submit a New Typology
-You do *not* need to do this if you want to use your interface (please see [**Deploy an Interface**](#deploy)). This will add your interface to the thresh.tools homepage!
+You do *not* need to do this if you want to use your interface (please see [**Deploy an Interface**](#deploy)). This will add your interface to the `thresh.tools` homepage!
 
 <div align="left">
     <img src="./public/img/hosted-interface.png" width="300px" />
 </div>
 
-To make your interface available in the thresh.tools interface, please clone this repo and submit a pull request with the following:
+To make your interface available in the `thresh.tools` builder, please clone this repo and submit a pull request with the following:
 
 1. Add your typology YML file to [**public/templates/**](./public/templates/).
 2. Add your demo data JSON file to [**public/data/**](./public/data/). We encourage authors to submit a sample of 50 examples for their full dataset, but this is not required.
@@ -364,12 +364,12 @@ To make your interface available in the thresh.tools interface, please clone thi
     ]
     ```
     In this case `<your_task>` will correspond to the task you are grouped with. *Note: You can preview your changes by setting up [**thresh.tools locally**](#local)!*
-4. Submit a [**pull request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes! Then we will merge with the thresh.tools main branch. Please reach out if you have any questions.
+4. Submit a [**pull request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes! Then we will merge with the `thresh.tools` main branch. Please reach out if you have any questions.
 
 <a id="language_contribute"></a>
 
 ### Add Language Support
-Multi-lingual deployment is core to thresh.tools, and we are actively working to add support for more languages. If you would like to add support for a new language (or revise our existing support), our language templates are located in [**public/lang/**](./public/lang/).
+Multi-lingual deployment is core to `thresh.tools`, and we are actively working to add support for more languages. If you would like to add support for a new language (or revise our existing support), our language templates are located in [**public/lang/**](./public/lang/).
 - To add support for a new language, simply create a new `.yml` using the structure of an [**existing language template**](./public/lang/en.yml).
 - To revise an existing template, simply make changes within the template.
 
@@ -389,7 +389,7 @@ python -m build
 python -m twine upload --repository pypi dist/*
 ```
 
-## Cite thresh.tools
+## Cite `thresh.tools`
 If you find our library helpful, please consider citing our work:
 ```
 @citation{
