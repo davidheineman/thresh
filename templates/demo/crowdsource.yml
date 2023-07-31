@@ -1,6 +1,6 @@
 # We allow integrating wtih crowdsourcing tools out-of-the-box. For a full tutorial on
 # programatic deployment, please see:
-# https://github.com/davidheineman/nlproc.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb
+# https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb
 
 # Try it out by clicking the ">" button to get to the last HIT, then the "Submit" button!
 

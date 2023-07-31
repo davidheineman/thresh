@@ -3,7 +3,7 @@
 language: zh
 
 # If you want to override specific text elements:
-# http://nlproc.tools/lang/en.yml specifies the default interface text for all elements
+# http://thresh.tools/lang/en.yml specifies the default interface text for all elements
 # you can override any element by including it using the "interface_text" argument
 
 interface_text:

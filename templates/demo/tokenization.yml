@@ -10,7 +10,7 @@ tokenization: tokenized
 # When rendering annotation, the whitespaces are ignored.
 
 # For a guide on how to create a tokenized dataset, please refer to:
-# https://github.com/davidheineman/nlproc.tools/blob/main/notebook_tutorials/subword_annotation.ipynb
+# https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/subword_annotation.ipynb
 
 # ========================================================================================
 # ========================================================================================
