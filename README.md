@@ -1,7 +1,6 @@
 <div align="center">
     <img src="./public/img/logo.png" width="400" style="margin-bottom: 0"/>
-
-<h3 style="margin: 0">thresh.tools: Fine-grained evaluation for text generation</h3>
+    <h3 style="margin: 0">thresh.tools: Fine-grained evaluation for text generation</h3>
 
 [**Build an Interface**](https://thresh.tools) | [**Video Tutorial**](https://www.youtube.com) | [**Paper**](https://arxiv.org/)
 </div>
