@@ -13,12 +13,14 @@
 
 ------------------------------------------------
 
+`thresh.tools` is software which makes it easy to create and share fine-grained annotation. It was written specifically for complex annotation for text generation (such as [**SCARECROW**](https://thresh.tools/scarecrow) or [**SALSA**](https://thresh.tools/salsa)). 
+
 ## Quick Start
 Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
 
 <!-- TODO ADD TUTORIAL VIDEO HERE -->
 
-## Learn `thresh.tools`
+## Getting Started with `thresh.tools`
 
 ### Overview
 `thrash.tools` can be used to [***customize***](#customize) a fine-grained typology, [***deploy***](#deploy) an interface with co-authors, annotators or the research community and [***manage***](#manage) fine-grained annotations using Python. We support each step of the fine-grained annotation lifecycle:
@@ -26,7 +28,9 @@ Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explana
     <img src="./public/img/lifecycle.png" width="100%" style="max-width: 1000px" />
 </div>
 
-### Interface Builder Tutorials
+### Interface Customization Tutorials
+These tutorials show how to customize an interface for annotation on `thresh.tools`. 
+
 | feature | tutorial | documentation |
 |:--- | :--: |  :-- | 
 | Edit Types | [🔗](https://thresh.tools/?t=demo_edit_types) | [**Adding Edits**](#demo_edit_types)
@@ -39,8 +43,8 @@ Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explana
 | Multi-lingual Annotation | [🔗](https://thresh.tools/?t=demo_multilingual) | [**Multi-lingual Annotation**](#demo_multilingual)
 | Crowdsource Deployment | [🔗](https://thresh.tools/?t=demo_crowdsource) | [**Deploy to Crowdsource Platforms**](#demo_crowdsource)
 
-### Additional Tutorials
-We release supplimentary notebook tutorials to show broader usage of `thresh.tools`:
+### Deploy & Manage Annotation Tutorials
+These notebook tutorials show broader usage of `thresh` for deploying to annoation platforms and managing annotations in Python:
 
 | description | tutorial |
 |:--- | :--: |
@@ -52,7 +56,7 @@ We release supplimentary notebook tutorials to show broader usage of `thresh.too
 
 <a id="customize"></a>
 
-## Building an Interface
+## Customize an Interface
 
 All interfaces consists of two elements the *typology* and the *data*.
 
@@ -198,7 +202,7 @@ prolific_completion_code: "XXXXXXX"
 
 <a id="manage"></a>
 
-## Manage Your Data with the `thresh` Library
+## Manage Data with the `thresh` Library
 ```sh
 pip install thresh
 ```
@@ -283,6 +287,8 @@ print(custom_entry.system)
 ```
 
 ## Data Conversion
+Our `thresh` data format is meant to be universal across fine-grained annotation tasks. To show this, we have created conversion scripts from exisitng fine-grained typologies. Use the `thresh` library to convert from existing data formats:
+
 ```sh
 pip install thresh
 ```
