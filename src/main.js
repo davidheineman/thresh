@@ -44,8 +44,9 @@ var ghParam = params.get("gh");
 var hfParam = params.get("hf");
 
 const routes = [
-    { path: '/annotate', props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") },
-    { path: '/', component: (iParam || ghParam || hfParam) ? () => import("./components/pages/Viewer.vue") : () => import("./components/pages/Builder.vue") }
+    { path: '/', component: (iParam || ghParam || hfParam) ? () => import("./components/pages/Viewer.vue") : () => import("./components/pages/Builder.vue") },
+    { path: `/demo`, component: () => import("./components/pages/Builder.vue") },
+    { path: '/annotate', props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") }
 ]
 
 for (const template of templates) {

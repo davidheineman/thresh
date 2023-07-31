@@ -8,17 +8,187 @@
     <img src="./public/img/github-banner.jpg" width="100%" style="max-width: 1000px" />
 </div>
 
+<!-- TODO ADD GIF DEMO HERE -->
+
 ------------------------------------------------
 
 ## Quick Start
-Visit [**thresh.tools/?t=demo**](https://thresh.tools/?t=demo) for demo tutorials.
+Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
+
+<!-- TODO ADD TUTORIAL VIDEO HERE -->
+
+## Learn `thresh`
+
+<!-- Add a figure which shows the thresh lifecycle, from building, deploying and managing annotations -->
+
+### Interface Tutorials
+| feature | tutorial | documentation |
+|:--- | :--: |  :-- | 
+| Edit Types | [🔗](https://thresh.tools/?t=demo_edit_types) | [**Adding Edits**](#demo_edit_types)
+| Recursive Question Trees | [🔗](https://thresh.tools/?t=demo_question_trees) | [**Annotating with Recursive Structure**](#demo_question_trees)
+| Custom Instructions | [🔗](https://thresh.tools/?t=demo_instructions) | [**Add Instructions**](#demo_instructions)
+| Paragraph-level Annotation | [🔗](https://thresh.tools/?t=demo_paragraph) | [**Paragraph-level Annotation**](#demo_paragraph)
+| Adjudication | [🔗](https://thresh.tools/?t=demo_adjudication) | [**Multi-interface Adjudication**](#demo_adjudication)
+| Disable Features | [🔗](https://thresh.tools/?t=demo_disable) | --
+| Sub-word Selection | [🔗](https://thresh.tools/?t=demo_tokenization) | [**Sub-word Selection**](#demo_tokenization)
+| Multi-lingual Annotation | [🔗](https://thresh.tools/?t=demo_multilingual) | [**Multi-lingual Annotation**](#demo_multilingual)
+| Crowdsource Deployment | [🔗](https://thresh.tools/?t=demo_crowdsource) | [**Deploy to Crowdsource Platforms**](#demo_crowdsource)
+
+### Additional Tutorials
+We release supplimentary notebook tutorials to show broader usage of `thresh.tools`:
+
+| description | tutorial |
+|:--- | :--: |
+| Load data using the `thresh` library | [**load_data.ipynb**](./notebook_tutorials/load_data.ipynb) |
+| Deploy an interface to the Prolific platform | [**deploy_to_prolific.ipynb**](./notebook_tutorials/deploy_to_prolific.ipynb) |
+| Use `tokenizers` to pre-process your dataset | [**subword_annotation.ipynb**](./notebook_tutorials/subword_annotation.ipynb) |
 
 <a id="deploy"></a>
 
+<!-- TODO: Add a screenshot under all of these -->
+
+## Building an Interface
+
+All interfaces consists of two elements the *typology* and the *data*.
+
+`<typology>.yml`:
+
+```yaml
+template_name: my_template
+template_label: My First thresh.tools Template!
+edits:
+    ...
+```
+
+`<data>.json`:
+```json
+{
+    "source": "...",
+    "target": "..."
+}
+```
+
+<a id="demo_edit_types"></a>
+
+### Adding Edits [↗️](https://thresh.tools/?t=demo_edit_types)
+
+```yaml
+edits:
+  - name: edit_with_annotation
+    label: "Custom Annotation"
+    type: <composite|primitive>
+    enable_input: <true|false>
+    enable_output: <true|false>
+```
+
+<a id="demo_question_trees"></a>
+
+### Annotating with Recursive Structure [↗️](https://thresh.tools/?t=demo_question_trees)
+
+```yaml
+edits:
+    - name: edit_with_annotation
+        ...
+        annotation:
+        - name: grandparent_question
+            question: "Which subtype question is important"
+            options:
+            - name: parent_question_1
+                label: "Custom Parent Question"
+                question: "Which subchild would you like to select"
+                options:
+                - name: child_1
+                    label: "Child 1"
+                - name: child_2
+                    label: "Child 2"
+                ...
+            - name: parent_question_2
+                label: "Likert Parent Question"
+                question: "Can you rate the span on a scale of 1-3?"
+                options: <likert-3|binary|textbox|textarea>
+            ...
+        - name: additional_question
+            question: "Can you answer this second question?"
+            options: <likert-3|binary|textbox|textarea>
+        ...
+```
+
+<a id="demo_instructions"></a>
+
+### Add Instructions [↗️](https://thresh.tools/?t=demo_instructions)
+
+```yaml
+prepend_instructions: <true|false>
+instructions: |
+  Your instruction text in markdown format.
+```
+
+<a id="demo_paragraph"></a>
+
+### Paragraph-level Annotation [↗️](https://thresh.tools/?t=demo_paragraph)
+
+```json
+[
+  {
+    "context": "<context written in markdown>",
+    "source_context_before": "...",
+    "source": "<selectable text with context>",
+    "source_context_after": "...",
+    "target_context_before": "...",
+    "target": "<selectable text with context>",
+    "target_context_after": "...",
+  }
+]
+```
+
+<a id="demo_adjudication"></a>
+
+### Multi-interface Adjudication [↗️](https://thresh.tools/?t=demo_adjudication)
+
+```yaml
+adjudication: 2
+highlight_first_interface: true
+```
+
+<a id="demo_tokenization"></a>
+
+### Sub-word Selection [↗️](https://thresh.tools/?t=demo_tokenization)
+
+```yaml
+tokenization: <word|char|tokenized>
+```
+
+<a id="demo_multilingual"></a>
+
+### Multi-lingual Annotation [↗️](https://thresh.tools/?t=demo_multilingual)
+
+```yaml
+language: <zh|en|es|hi|pt|bn|ru|ja|vi|tr|ko|fr|ur>
+interface_text:
+  typology:
+    source_label: "莎士比亚"
+    target_label: "现代英语"
+```
+
+Looking to expand our language support? See our section on [**contributing**](#language_contribute).
+
+
 ## Deploy an Interface
 
-## Data Tools
-```python
+### Share with Co-authors
+
+### Share Your Interface Publically
+
+<a id="demo_crowdsource"></a>
+
+### Deploy to Crowdsource Platforms [↗️](https://thresh.tools/?t=demo_crowdsource)
+```yaml
+crowdsource: <prolific>
+prolific_completion_code: "XXXXXXX"
+```
+
+## Manage Your Data with the `thresh` Library
+```sh
 pip install thresh
 ```
 
@@ -102,7 +272,7 @@ print(custom_entry.system)
 ```
 
 ## Data Conversion
-```python
+```sh
 pip install thresh
 ```
 
@@ -135,21 +305,21 @@ frank, scarecrow, mqm, snac, wu-etal-2023, da-san-martino-etal-2019
 In the table below you can find all the original data for each interface. For our demo data, we randomly selected 50 annotations from each dataset. We include the file names of the specific datsets we use below, selecting from the test set when applicable:
 
 | interface | data | implementation | file name |
-|:---: | :--: | :---: | :---: |
-| FRANK | [🔗](https://github.com/artidoro/frank) | [thresh.tools/frank](https://thresh.tools/frank) | `human_annotations.json` |
-| SCARECROW | [🔗](https://yao-dou.github.io/scarecrow) | [thresh.tools/scarecrow](https://thresh.tools/scarecrow) | `grouped_data.csv` |
-| MQM | [🔗](https://github.com/google/wmt-mqm-human-evaluation) | [thresh.tools/mqm](https://thresh.tools/mqm) | `mqm_newstest2020_ende.tsv` |
-| SALSA | [🔗](https://github.com/davidheineman/salsa) | [thresh.tools/salsa](https://thresh.tools/salsa) | `salsa_test.json` |
-| SNaC | [🔗](https://github.com/tagoyal/snac) | [thresh.tools/snac](https://thresh.tools/snac) | `SNaC_data.json` |
-| Wu et al., 2023 | [🔗](https://github.com/allenai/FineGrainedRLHF) | [thresh.tools/wu-etal-2023](https://thresh.tools/wu-etal-2023) | `dev_feedback.json` |
-| Da San Martino et al., 2019 | [🔗](https://propaganda.qcri.org/) | [thresh.tools/da-san-martino-etal-2019](https://thresh.tools/da-san-martino-etal-2019) | `test/article<X>.labels.tsv` |
+|:--- | :--: | :--- | :---: |
+| FRANK | [🔗](https://github.com/artidoro/frank) | [**thresh.tools/frank**](https://thresh.tools/frank) | `human_annotations.json` |
+| SCARECROW | [🔗](https://yao-dou.github.io/scarecrow) | [**thresh.tools/scarecrow**](https://thresh.tools/scarecrow) | `grouped_data.csv` |
+| MQM | [🔗](https://github.com/google/wmt-mqm-human-evaluation) | [**thresh.tools/mqm**](https://thresh.tools/mqm) | `mqm_newstest2020_ende.tsv` |
+| SALSA | [🔗](https://github.com/davidheineman/salsa) | [**thresh.tools/salsa**](https://thresh.tools/salsa) | `salsa_test.json` |
+| SNaC | [🔗](https://github.com/tagoyal/snac) | [**thresh.tools/snac**](https://thresh.tools/snac) | `SNaC_data.json` |
+| Wu et al., 2023 | [🔗](https://github.com/allenai/FineGrainedRLHF) | [**thresh.tools/wu-etal-2023**](https://thresh.tools/wu-etal-2023) | `dev_feedback.json` |
+| Da San Martino et al., 2019 | [🔗](https://propaganda.qcri.org/) | [**thresh.tools/da-san-martino-etal-2019**](https://thresh.tools/da-san-martino-etal-2019) | `test/article<X>.labels.tsv` |
 
 We do not create dataloaders for the following interfaces:
 
 | interface | reason |
-|:---: | :--: |
-| MultiPIT | This is an inspection interface, examples are taken from Table 7 of the [MultiPIT paper](https://aclanthology.org/2022.emnlp-main.631). |
-| CWZCC | The example is taken from App. B of the [CWZCC paper](https://aclanthology.org/2020.lrec-1.327). Full dataset is not publically available due to copyright and privacy concerns. |
+|:---: | :-- |
+| MultiPIT | This is an inspection interface, examples are taken from Table 7 of the [**MultiPIT paper**](https://aclanthology.org/2022.emnlp-main.631). |
+| CWZCC | The example is taken from App. B of the [**CWZCC paper**](https://aclanthology.org/2020.lrec-1.327). Full dataset is not publically available due to copyright and privacy concerns. |
 | ERRANT | ? |
 
 ## Contributing
@@ -196,6 +366,8 @@ To make your interface available in the thresh.tools interface, please clone thi
     In this case `<your_task>` will correspond to the task you are grouped with. *Note: You can preview your changes by setting up [**thresh.tools locally**](#local)!*
 4. Submit a [**pull request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with your changes! Then we will merge with the thresh.tools main branch. Please reach out if you have any questions.
 
+<a id="language_contribute"></a>
+
 ### Add Language Support
 Multi-lingual deployment is core to thresh.tools, and we are actively working to add support for more languages. If you would like to add support for a new language (or revise our existing support), our language templates are located in [**public/lang/**](./public/lang/).
 - To add support for a new language, simply create a new `.yml` using the structure of an [**existing language template**](./public/lang/en.yml).
@@ -218,7 +390,7 @@ python -m twine upload --repository pypi dist/*
 ```
 
 ## Cite thresh.tools
-If you find thresh.tools helpful, please consider cite our work:
+If you find our library helpful, please consider citing our work:
 ```
 @citation{
     coming soon!
