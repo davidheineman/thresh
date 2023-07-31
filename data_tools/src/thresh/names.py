@@ -6,7 +6,7 @@ import json, yaml, logging, os
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-excluded_sent_cols = ['metadata', 'edits', '_nlproc_tools_id']      # <- Exclude this from key checking for Entry
+excluded_sent_cols = ['metadata', 'edits', '_thresh_id']      # <- Exclude this from key checking for Entry
 excluded_edit_cols = ['id', 'category']                             # <- Exclude this from key checking for Edit
 
 # Manually specify strings to convert to primitive Python values
@@ -79,7 +79,7 @@ class Interface:
 
     def load_annotations(self, data_or_filename: Union[str, dict]) -> List[Entry]:
         """
-        Load a nlproc.tools annotation and serialize it into a custom Entry object.
+        Load a thresh.tools annotation and serialize it into a custom Entry object.
         """
 
         # Verify and load files
@@ -96,7 +96,7 @@ class Interface:
         sent_keys, meta_keys = get_sent_keys(data), get_meta_keys(data)
 
         # Convert each entry
-        nlproc_data = []
+        thresh_data = []
         for sent in data:
             # Initialize the main columns, excluding columns with custom loading
             sent_data = {k: None for k in sent_keys}
@@ -113,24 +113,24 @@ class Interface:
 
             # Initialize edits
             if 'edits' in sent.keys():
-                nlproc_edits = []
+                thresh_edits = []
                 for edit in sent['edits']:
                     if 'category' not in edit.keys():
                         continue
                     EditClass = self.edit_classes[edit['category']]
-                    nlproc_edit = EditClass(**{k: v for k, v in edit.items() if k not in excluded_edit_cols})
-                    nlproc_edits += [nlproc_edit]
+                    thresh_edit = EditClass(**{k: v for k, v in edit.items() if k not in excluded_edit_cols})
+                    thresh_edits += [thresh_edit]
 
             sent_kwargs = {}
             sent_kwargs.update(metadata)
             sent_kwargs.update(sent_data)
-            sent_kwargs.update({'edits': nlproc_edits})
+            sent_kwargs.update({'edits': thresh_edits})
 
-            nlproc_sent = self.entry_class(**sent_kwargs)
+            thresh_sent = self.entry_class(**sent_kwargs)
 
-            nlproc_data += [nlproc_sent]
+            thresh_data += [thresh_sent]
 
-        return nlproc_data
+        return thresh_data
 
     def create_entry_class(self, data: dict=None) -> Entry:
         """

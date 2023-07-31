@@ -1,3 +1,3 @@
-## Data Tools for nlproc.tools
+## Data Tools for thresh.tools
 
-This is a helper library for [**nlproc.tools**](https://nlproc.tools/). Please see the [**main repo**](https://github.com/davidheineman/nlproc.tools) for documentation.
+This is a helper library for [**thresh.tools**](https://thresh.tools/). Please see the [**main repo**](https://github.com/davidheineman/thresh.tools) for documentation.

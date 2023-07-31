@@ -95,7 +95,7 @@
         },
         set_hits_data(hit_data) {
             hit_data.forEach(o => o.edits = o.edits || []);
-            hit_data.forEach((o, idx) => { o._nlproc_tools_id = idx + 1; });
+            hit_data.forEach((o, idx) => { o._thresh_id = idx + 1; });
             this.hits_data = hit_data;
             this.total_hits = hit_data.length;
         },

@@ -6,7 +6,7 @@ import json, yaml
 
 def load_interface(typology_dict: str) -> Interface:
     """
-    Load an nlproc.tools interface given its typology
+    Load an thresh.tools interface given its typology
     """
 
     # Verify and load files

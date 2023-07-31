@@ -41,10 +41,10 @@ export default {
         async handle_drag_drop(e) {
             let new_hits_data = await handle_file_upload(e)
             if (this.config.template_name == 'serverless') {
-                let yml_template = new_hits_data.find(i => i.hasOwnProperty('_nlproc_tools_template'))?._nlproc_tools_template;
+                let yml_template = new_hits_data.find(i => i.hasOwnProperty('_thresh_template'))?._thresh_template;
                 yml_template = jsyaml.load(yml_template)
                 this.set_config(yml_template)
-                new_hits_data = new_hits_data.filter(i => !("_nlproc_tools_template" in i));
+                new_hits_data = new_hits_data.filter(i => !("_thresh_template" in i));
             }
             this.set_data(new_hits_data)
             // this.filelist = [...this.$refs.file.files];

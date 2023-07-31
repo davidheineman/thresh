@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 def convert_dataset(dataset_name: str, data_path: str, reverse: bool=False, output_path: str=None, limit: int=None) -> dict:
     """
-    Converts to the nlproc.tools dataset format from supported dataset formats.
+    Converts to the thresh.tools dataset format from supported dataset formats.
     """
     logger.info("=" * 60)
     logger.info(f"Dataset name: {dataset_name}")
@@ -23,7 +23,7 @@ def convert_dataset(dataset_name: str, data_path: str, reverse: bool=False, outp
         verify_exists(data_path)
     
     try:
-        dataset_module = importlib.import_module(f"nlproc_tools.{utils_path}.{dataset_name}")
+        dataset_module = importlib.import_module(f"thresh.{utils_path}.{dataset_name}")
         logger.info("Converting dataset...")
         if reverse:
             # converted_data = dataset_module.convert_data_backward(data_path, output_path)

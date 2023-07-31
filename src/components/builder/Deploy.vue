@@ -84,7 +84,7 @@ export default {
             const parsed_data = JSON.parse(data)
             const pared_config = jsyaml.dump(this.config)
             parsed_data.push({
-                "_nlproc_tools_template": pared_config
+                "_thresh_template": pared_config
             });
             let filename;
             if (this.config.template_name) {
@@ -169,8 +169,8 @@ export default {
 
         <div id="tab-contents">
             <Tab name="serverless" :selected="active_tab == 'serverless'">
-                <h2>Package with data and annotate on <code>nlproc.tools</code></h2>
-                <p>This will package your data alongside the template, and you can send this directly to annotators to annotate at <code>nlproc.tools/annotate</code>. This is recommended for sharing data quickly (e.g. among co-authors), or small-scale annotation projects.</p>
+                <h2>Package with data and annotate on <code>thresh.tools</code></h2>
+                <p>This will package your data alongside the template, and you can send this directly to annotators to annotate at <code>thresh.tools/annotate</code>. This is recommended for sharing data quickly (e.g. among co-authors), or small-scale annotation projects.</p>
                 <h3>Data</h3>
                 <div class="flex items-center mb2">
                     <input class="mr2 use_editor_data" type="checkbox" id="use_editor_data" value="use_editor_data" checked @change="use_editor_data_handler">
@@ -181,37 +181,37 @@ export default {
                 </div>
                 <button @click="package_data" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Package Data</button>
                 <a href="/annotate" target="_blank">
-                    <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Visit <code>nlproc.tools/annotate</code></button>
+                    <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Visit <code>thresh.tools/annotate</code></button>
                 </a>
             </Tab>
             <Tab name="hosted" :selected="active_tab == 'hosted'">
-                <h2>Host template and annotate on <code>nlproc.tools</code></h2>
-                <p>Host the template at your own domain and link it to <code>nlproc.tools</code>. This is recommended for sharing your template alongside your work, in-house annotation projects or ablation studies.</p>
+                <h2>Host template and annotate on <code>thresh.tools</code></h2>
+                <p>Host the template at your own domain and link it to <code>thresh.tools</code>. This is recommended for sharing your template alongside your work, in-house annotation projects or ablation studies.</p>
                 <h3>Linking Templates</h3>
                 <p>You can link to any template using the format:</p>
-                <pre>nlproc.tools/<b>?i=[link to your interface]</b></pre>
+                <pre>thresh.tools/<b>?i=[link to your interface]</b></pre>
                 <p>For example:</p>
-                <pre><a href='http://nlproc.tools/?i=https://salsa-eval.com/interface.yml' target="_blank">nlproc.tools/?i=https://salsa-eval.com/interface.yml</a></pre>
+                <pre><a href='http://thresh.tools/?i=https://salsa-eval.com/interface.yml' target="_blank">thresh.tools/?i=https://salsa-eval.com/interface.yml</a></pre>
                 <p>You can host the template on your own domain, or using existing free online repositories</p>
                 <hr />
                 <h3>Host with Gihub</h3>
                 <p>Create a GitHub repo and add your template.</p>
                 <pre>https://github.com/davidheineman/salsa/blob/main/interface.yml</pre>
                 <p>And distribute using the <code>gh</code> parameter:</p>
-                <pre>nlproc.tools/<b>?gh=[link to your github template]</b></pre>
-                <pre><a href="http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml" target="_blank">nlproc.tools/?gh=davidheineman/salsa/main/interface.yml</a></pre>
+                <pre>thresh.tools/<b>?gh=[link to your github template]</b></pre>
+                <pre><a href="http://thresh.tools/?gh=davidheineman/salsa/main/interface.yml" target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface.yml</a></pre>
                 <h3>Host with HuggingFace</h3>
                 <p>Create a HuggingFace dataset and add your template (e.g., alongside your published data).</p>
                 <pre>https://huggingface.co/datasets/davidheineman/salsa/resolve/main/interface.yml</pre>
                 <p>And distribute using the <code>hf</code> parameter:</p>
-                <pre>nlproc.tools/<b>?hf=[link to your huggingface template]</b></pre>
-                <pre><a href="http://nlproc.tools/?hf=davidheineman/salsa/main/interface.yml" target="_blank">nlproc.tools/?hf=davidheineman/salsa/main/interface.yml</a></pre>
+                <pre>thresh.tools/<b>?hf=[link to your huggingface template]</b></pre>
+                <pre><a href="http://thresh.tools/?hf=davidheineman/salsa/main/interface.yml" target="_blank">thresh.tools/?hf=davidheineman/salsa/main/interface.yml</a></pre>
                 <hr />
                 <h3>(Optional) Host Data</h3>
                 <p>You can host data as well (e.g., to create individual links for annotators) using the following format:</p>
-                <pre>nlproc.tools/?i=[link to your interface]<b>&amp;d=[link to your data]</b></pre>
+                <pre>thresh.tools/?i=[link to your interface]<b>&amp;d=[link to your data]</b></pre>
                 <p>For example:</p>
-                <pre><a href='http://nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json' target="_blank">nlproc.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
+                <pre><a href='http://thresh.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json' target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
                 <p>You can follow the above instructions for hosting your data on GitHub or HuggingFace.</p>
                 <h3>(Optional) Deployment with an iFrame</h3>
                 <p>Want to host your interface using a custom link? Use the following code to host your template within any HTML document:</p>
@@ -223,15 +223,15 @@ export default {
                 <pre>default_data_link: [link to your data]</pre>
             </Tab>
             <Tab name="python" :selected="active_tab == 'python'">
-                <h2>Deploy your template using <code>nlproc_tools</code> + Python</h2>
-                <p>Plug your interface generation directly into your code using the <code>nlproc_tools</code> pip library. This is recommended for orchestrating large-scale annotation projects, using multiple interfaces simultaneously (e.g., a multi-lingual project) or for creating a pipeline between generation and annotation (e.g., a RLHF training setup).</p>
+                <h2>Deploy your template using <code>thresh</code> + Python</h2>
+                <p>Plug your interface generation directly into your code using the <code>thresh</code> pip library. This is recommended for orchestrating large-scale annotation projects, using multiple interfaces simultaneously (e.g., a multi-lingual project) or for creating a pipeline between generation and annotation (e.g., a RLHF training setup).</p>
                 <h3>Setup</h3>
-                <pre>pip install nlproc_tools</pre>
+                <pre>pip install thresh</pre>
                 <pre>TODO ADD CODE</pre>
                 <p>Then you can send directly to annotators, or upload to your own server (see Hosted).</p>
                 <hr />
                 <h3>(Optional) Deploy to Crowdsourcing Platforms</h3>
-                <p>Check out our <a href='https://github.com/davidheineman/nlproc.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb'>example notebook →</a> which uses <code>nlproc_tools</code> and <code>dallinger</code> to deploy a large-scale annotation project to Prolific programatically.</p>
+                <p>Check out our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb'>example notebook →</a> which uses <code>thresh</code> and <code>dallinger</code> to deploy a large-scale annotation project to Prolific programatically.</p>
                 <!-- <h3>(Optional) Integrate with HuggingFace Transformers</h3>
                 <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p> -->
             </Tab>
