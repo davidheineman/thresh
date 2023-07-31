@@ -1,6 +1,8 @@
 <div align="center">
     <img src="./public/img/logo.png" width="400"/>
 
+<h3 style="margin: 2pt">Fine-grained evaluation for text generation</h3>
+
 [**Build an Interface**](https://thresh.tools) | [**Video Tutorial**](https://www.youtube.com) | [**Paper**](https://arxiv.org/)
 </div>
 <br />
