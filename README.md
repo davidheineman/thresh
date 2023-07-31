@@ -19,7 +19,11 @@ Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explana
 
 ## Learn `thresh.tools`
 
-<!-- Add a figure which shows the thresh lifecycle, from building, deploying and managing annotations -->
+### Overview
+`thrash.tools` can be used to [***customize***](#customize) a fine-grained typology, [***deploy***](#deploy) an interface with co-authors, annotators or the research community and [***manage***](#manage) fine-grained annotations using Python. We support each step of the fine-grained annotation lifecycle:
+<div align="center">
+    <img src="./public/img/lifecycle.png" width="100%" style="max-width: 1000px" />
+</div>
 
 ### Interface Builder Tutorials
 | feature | tutorial | documentation |
@@ -43,9 +47,9 @@ We release supplimentary notebook tutorials to show broader usage of `thresh.too
 | Deploy an interface to the Prolific platform | [**deploy_to_prolific.ipynb**](./notebook_tutorials/deploy_to_prolific.ipynb) |
 | Use `tokenizers` to pre-process your dataset | [**subword_annotation.ipynb**](./notebook_tutorials/subword_annotation.ipynb) |
 
-<a id="deploy"></a>
-
 <!-- TODO: Add a screenshot under all of these -->
+
+<a id="customize"></a>
 
 ## Building an Interface
 
@@ -98,12 +102,12 @@ edits:
                 question: "Which subchild would you like to select"
                 options:
                 - name: child_1
-                    label: "Child 1"
+                    label: "Custom Child Option 1"
                 - name: child_2
-                    label: "Child 2"
+                    label: "Custom Child Option 2"
                 ...
             - name: parent_question_2
-                label: "Likert Parent Question"
+                label: "Pre-defined Parent Question"
                 question: "Can you rate the span on a scale of 1-3?"
                 options: <likert-3|binary|textbox|textarea>
             ...
@@ -162,16 +166,20 @@ tokenization: <word|char|tokenized>
 
 ### Multi-lingual Annotation [↗️](https://thresh.tools/?t=demo_multilingual)
 
+For a full list of interface text overrides, please reference a [**langauage template**](./public/lang/en.yml).
+
 ```yaml
 language: <zh|en|es|hi|pt|bn|ru|ja|vi|tr|ko|fr|ur>
 interface_text:
   typology:
     source_label: "莎士比亚"
     target_label: "现代英语"
+  ...
 ```
 
 Looking to expand our language support? See our section on [**contributing**](#language_contribute).
 
+<a id="deploy"></a>
 
 ## Deploy an Interface
 
@@ -186,6 +194,8 @@ Looking to expand our language support? See our section on [**contributing**](#l
 crowdsource: <prolific>
 prolific_completion_code: "XXXXXXX"
 ```
+
+<a id="manage"></a>
 
 ## Manage Your Data with the `thresh` Library
 ```sh
