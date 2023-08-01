@@ -13,7 +13,7 @@
 
 ------------------------------------------------
 
-**thresh.tools** is a platform which makes it easy to create and share fine-grained annotation. It was written specifically for complex annotation for text generation (such as [**SCARECROW**](https://thresh.tools/scarecrow) or [**SALSA**](https://thresh.tools/salsa)) and built to be universal across annotation tasks, quickly customizable and easily deployable.
+**thresh.tools** is a platform which makes it easy to create and share fine-grained annotation. It was written specifically for complex annotation of text generation (such as [**SCARECROW**](https://thresh.tools/scarecrow) or [**SALSA**](https://thresh.tools/salsa)) and built to be universal across annotation tasks, quickly customizable and easily deployable.
 
 ## Quick Start
 Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
@@ -156,7 +156,7 @@ instructions: |
 
 ```yaml
 adjudication: 2
-highlight_first_interface: true
+highlight_first_interface: <true|false>
 ```
 
 <a id="demo_tokenization"></a>
