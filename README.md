@@ -18,7 +18,7 @@
 ## Quick Start
 Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
 
-https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/demo.mp4
+![](https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/demo.mp4)
 
 ## Getting Started with `thresh.tools`
 
