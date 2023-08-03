@@ -1,0 +1,111 @@
+template_name: arxiv-edits
+template_label: arXivEdits
+template_description: Understanding the Human Revision Process in Scientific Writing
+
+interface_text:
+  typology:
+    source_label: "Original Sentence"
+    target_label: "Revision"
+
+edits:
+  - name: insertion
+    label: "Insertion"
+    type: primitive
+    color: green
+    icon: fa-circle-plus
+    enable_input: true
+    annotation:
+    - name: intention
+      question: "What is the intention of the edit?"
+      options:
+      - name: lang
+        label: "Improve Language"
+        question: "How has the language been improved?"
+        options:
+        - name: accurate-spefific
+          label: "More Accurate/Specific"
+        - name: professional-improve-style
+          label: "Improve Style"
+        - name: improve-readability-simplify
+          label: "Simplify"
+        - name: other
+          label: "Other"
+      - name: improve-grammar-typo
+        label: "Correct Grammar/Typo"
+      - name: content
+        label: "Update Content"
+      - name: format
+        label: "Adjust Format"
+  - name: deletion
+    label: "Deletion"
+    type: primitive
+    color: red
+    icon: fa-delete-left
+    enable_output: true
+    annotation:
+    - name: intention
+      question: "What is the intention of the edit?"
+      options:
+      - name: lang
+        label: "Improve Language"
+        question: "How has the language been improved?"
+        options:
+        - name: accurate-spefific
+          label: "More Accurate/Specific"
+        - name: professional-improve-style
+          label: "Improve Style"
+        - name: improve-readability-simplify
+          label: "Simplify"
+        - name: other
+          label: "Other"
+      - name: improve-grammar-typo
+        label: "Correct Grammar/Typo"
+      - name: content
+        label: "Update Content"
+      - name: format
+        label: "Adjust Format"
+  - name: substitute
+    label: "Substitution"
+    type: primitive
+    color: blue
+    icon: fa-sort
+    enable_input: true
+    enable_output: true
+    annotation:
+    - name: intention
+      question: "What is the intention of the edit?"
+      options:
+      - name: lang
+        label: "Improve Language"
+        question: "How has the language been improved?"
+        options:
+        - name: accurate-spefific
+          label: "More Accurate/Specific"
+        - name: professional-improve-style
+          label: "Improve Style"
+        - name: improve-readability-simplify
+          label: "Simplify"
+        - name: other
+          label: "Other"
+      - name: improve-grammar-typo
+        label: "Correct Grammar/Typo"
+      - name: content
+        label: "Update Content"
+      - name: format
+        label: "Adjust Format"
+
+paper_link: https://aclanthology.org/2022.emnlp-main.641/
+citation: |
+  @inproceedings{jiang-etal-2022-arxivedits,
+    title = "ar{X}iv{E}dits: Understanding the Human Revision Process in Scientific Writing",
+    author = "Jiang, Chao  and
+      Xu, Wei  and
+      Stevens, Samuel",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.641",
+    pages = "9420--9435"
+  }
