@@ -13,7 +13,7 @@
 
 ------------------------------------------------
 
-**thresh.tools** is a platform which makes it easy to create and share fine-grained annotation. It was written specifically for complex annotation of text generation (such as [**SCARECROW**](https://thresh.tools/scarecrow) or [**SALSA**](https://thresh.tools/salsa)) and built to be universal across annotation tasks, quickly customizable and easily deployable.
+**thresh.tools** is a platform which makes it easy to create and share fine-grained annotation. It was written specifically for complex annotation of text generation (such as [**Scarecrow**](https://thresh.tools/scarecrow) or [**SALSA**](https://thresh.tools/salsa)) and built to be universal across annotation tasks, quickly customizable and easily deployable.
 
 ## Quick Start
 Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
@@ -324,10 +324,11 @@ In the table below you can find all the original data for each interface. For ou
 | interface | data | implementation | file name |
 |:--- | :--: | :--- | :---: |
 | FRANK | [🔗](https://github.com/artidoro/frank) | [**thresh.tools/frank**](https://thresh.tools/frank) | `human_annotations.json` |
-| SCARECROW | [🔗](https://yao-dou.github.io/scarecrow) | [**thresh.tools/scarecrow**](https://thresh.tools/scarecrow) | `grouped_data.csv` |
+| Scarecrow | [🔗](https://yao-dou.github.io/scarecrow) | [**thresh.tools/scarecrow**](https://thresh.tools/scarecrow) | `grouped_data.csv` |
 | MQM | [🔗](https://github.com/google/wmt-mqm-human-evaluation) | [**thresh.tools/mqm**](https://thresh.tools/mqm) | `mqm_newstest2020_ende.tsv` |
 | SALSA | [🔗](https://github.com/davidheineman/salsa) | [**thresh.tools/salsa**](https://thresh.tools/salsa) | `salsa_test.json` |
 | SNaC | [🔗](https://github.com/tagoyal/snac) | [**thresh.tools/snac**](https://thresh.tools/snac) | `SNaC_data.json` |
+| arXivEdits | [🔗](https://github.com/chaojiang06/arXivEdits) | [**thresh.tools/arxiv-edits**](https://thresh.tools/arxiv-edits) | `test.json` |
 | Wu et al., 2023 | [🔗](https://github.com/allenai/FineGrainedRLHF) | [**thresh.tools/wu-etal-2023**](https://thresh.tools/wu-etal-2023) | `dev_feedback.json` |
 | Da San Martino et al., 2019 | [🔗](https://propaganda.qcri.org/) | [**thresh.tools/da-san-martino-etal-2019**](https://thresh.tools/da-san-martino-etal-2019) | `test/article<X>.labels.tsv` |
 
@@ -337,7 +338,7 @@ We do not create dataloaders for the following interfaces:
 |:---: | :-- |
 | MultiPIT | This is an inspection interface, examples are taken from Table 7 of the [**MultiPIT paper**](https://aclanthology.org/2022.emnlp-main.631). |
 | CWZCC | The example is taken from App. B of the [**CWZCC paper**](https://aclanthology.org/2020.lrec-1.327). Full dataset is not publically available due to copyright and privacy concerns. |
-| ERRANT | ? |
+| ERRANT | No human evaluation data has been collected to our knowledge. |
 
 ## Contributing
 

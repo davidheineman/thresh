@@ -16,6 +16,7 @@ const templates = [
     { name: "MultiPIT", path: "multipit", task: "Paraphrase Generation", hosted: true },
     { name: "SNaC", path: "snac", task: "Summarization", hosted: true },
     { name: "ERRANT", path: "errant", task: "Grammar Error Correction", hosted: true },
+    { name: "arXivEdits", path: "arxiv-edits", task: "Text Revision", hosted: true },
     { name: "Da San Martino et al., 2019", path: "da-san-martino-etal-2019", task: "Propaganda Analysis", hosted: true },
     { name: "Wu et al., 2023", path: "wu-etal-2023", task: "Fine-Grained RLHF", hosted: true },
     // { name: "AttrEval", path: "attreval", task: "Attribution", hosted: true },

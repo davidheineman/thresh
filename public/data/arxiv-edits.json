@@ -1,0 +1,2095 @@
+[
+    {
+        "source": "The other one is panel information criteria ( [MATH] ) , correspondence with [MATH] , they also have three styles , one of them is : [EQUATION]",
+        "target": "The other one is panel information criteria ( [MATH] ) , corresponding to [MATH] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 0,
+            "arxiv-id": "1301.2079",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        81,
+                        83
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        84,
+                        144
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        57,
+                        77
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        57,
+                        74
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In Refs [CITATION] the authors observe clear signatures of anisotropically deformed conformations of monodisperse entangled polystyrene melts in non-linear flow , and the subsequent relaxation in agreement with the GLaMM tube model .",
+        "target": "In Refs [CITATION] the authors observe clear signatures of anisotropically deformed conformations of monodisperse entangled polystyrene melts in nonlinear flow , and even for unentangled chains subject to extremely fast flow [CITATION] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 1,
+            "arxiv-id": "1805.01935",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        166,
+                        236
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        167,
+                        232
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        145,
+                        156
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        145,
+                        155
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In Figure [REF] , we show the magnetic field strength as a function of density weighted by mass at the time of the halo 's collapse .",
+        "target": "In Figure [REF] , we show the magnetic field strength scaled by [MATH] as a function of density weighted by mass at the time of the halo 's collapse .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 2,
+            "arxiv-id": "1606.08477",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        54,
+                        71
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Given the brightness of the host star ( [MATH] =12.17 , [MATH] =9.42 ) , K2-3d is currently one of the best targets for spectroscopic characterizations of potentially habitable planets .",
+        "target": "Given the brightness of the host star ( [MATH] , [MATH] ) , K2-3d is currently one of the best targets for spectroscopic characterizations of potentially habitable planets .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 3,
+            "arxiv-id": "1610.01333",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        47,
+                        54
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        63,
+                        69
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Expanding the commutators in Eq. [REF] , applying Wick 's theorem to remove the many terms which are zero , and enforcing the connectivity constraint , one obtains many topologically distinct terms .",
+        "target": "Expanding the commutators in Eq. [REF] , applying Wick 's theorem to remove the many vanishing terms , and enforcing the connectivity constraint , one obtains many topologically distinct terms .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 4,
+            "arxiv-id": "1206.2567",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "professional-improve-style"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        91,
+                        106
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        85,
+                        95
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Similarly to what we did in Figure [REF] , the statistical results obtained by means of quantum trajectories and standard quantum mechanics ( a ) , as well as a sample of representative trajectories ( b ) are plotted .",
+        "target": "Similarly to what we did in Fig. [REF] , the statistical results obtained by means of quantum trajectories and standard quantum mechanics ( a ) , as well as a sample of representative trajectories ( b ) are plotted .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 5,
+            "arxiv-id": "0803.2581",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        28,
+                        35
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        28,
+                        33
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "We have not been able to derive the analog of the Clausius-Mossotti formula using the above propagator formalism , so we limit ourselves only to terms which are linear in the atomic density , although according to Ref. [CITATION] such generalization is possible .",
+        "target": "We have not been able to derive the analog of the Clausius-Mossotti formula using the above propagator formalism , so we limit ourselves only to terms which are linear in the atomic density , although according to Ref. [CITATION] such a generalization is possible .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 6,
+            "arxiv-id": "1902.05725",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "output_idx": [
+                    [
+                        235,
+                        237
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Due to the lack of 3D numerical simulations , some authors resort to spherical symmetry or even 1D to solve the problem .",
+        "target": "Due to the lack of 3D numerical simulations , some authors resort to spherical symmetry or even 1D to study this problem .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 7,
+            "arxiv-id": "0806.0232",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "professional-improve-style"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        102,
+                        112
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        102,
+                        113
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In addition to the optical data provided by IPHAS , the Galactic Plane Survey ( GPS ; Lucas et al. 2008 , submitted ) of the UKIDSS is also observing a similar area in J , H and K .",
+        "target": "In addition to the optical data provided by IPHAS , the Galactic Plane Survey of the UKIDSS is also observing a similar area in J , H and K .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 8,
+            "arxiv-id": "0712.0384",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        78,
+                        118
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Moreover , we note that in the nuclear ( particle ) physics literature [CITATION] the magnetic polarizability is denoted by [MATH] .",
+        "target": "Moreover , we note that in the nuclear ( particle ) physics literature [CITATION] , the magnetic polarizability is denoted by [MATH] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 9,
+            "arxiv-id": "1902.05725",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        82,
+                        84
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The idea of combining different spectrograms can also be found in the time-frequency literature ; see e.g. [CITATION] .",
+        "target": "The idea of combining different spectrograms can also be found in the time-frequency literature ; see e.g. [CITATION] and the references given therein .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 10,
+            "arxiv-id": "1506.08880",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        118,
+                        151
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "But , in general , the form of [MATH] is not necessarily to be restricted to manifest or pseudo manifest symmetric type , so the [MATH] mass limit can be lowered to approximately 300 GeV by taking the following forms of [MATH] [CITATION] ; [EQUATION] where [MATH] .",
+        "target": "But , in general , the form of [MATH] is not necessarily to be restricted to manifest or pseudo-manifest symmetric type , so the [MATH] mass limit can be lowered to approximately 300 GeV by taking the following forms of [MATH] [CITATION] ; [EQUATION] where [MATH] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 11,
+            "arxiv-id": "hep-ph-0206037",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        89,
+                        105
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        89,
+                        105
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Provided the boundary conditions also satisfy the symmetry condition , an algebraic manipulation yields that each column of the characteristic matrix of [MATH] is a scalar multiple of a unique column of [MATH] ( see e.g. the proof of [CITATION] ) .",
+        "target": "Provided the boundary conditions also satisfy the symmetry condition , an algebraic manipulation yields that each column of the characteristic matrix of [MATH] is a scalar multiple of a column of [MATH] ( see the proof of [CITATION] ) .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 12,
+            "arxiv-id": "1205.4567",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        186,
+                        193
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        216,
+                        221
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Centralized algorithms for solving optimization problems can become unviable due to lack of powerful enough centralized computational units , or because the problem can not be formed as a centralized optimization problem due to structural constraints in the problem , such as privacy requirements .",
+        "target": "Centralized algorithms for solving optimization problems of the form [REF] can be unviable .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 13,
+            "arxiv-id": "1406.2192",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        57,
+                        75
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        77,
+                        297
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "professional-improve-style"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        61,
+                        68
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        79,
+                        82
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The proof follows nearly directly by application of [CITATION] , building upon the seminal work of Robertson and Seymour [CITATION] : the authors show that for any fixed [MATH] , the [MATH] -link-disjoint path problem can be decided in polynomial-runtime of [MATH] on undirected graphs .",
+        "target": "The proof follows by application of [CITATION] , building upon the seminal work of Robertson and Seymour [CITATION] : the authors show that for any fixed [MATH] , the [MATH] -link-disjoint path problem can be decided in polynomial-runtime of [MATH] on undirected graphs .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 14,
+            "arxiv-id": "1705.00055",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        18,
+                        34
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "For for large [MATH] and small [MATH] it can be expressed via its value for the Hamiltonian dynamics on a torus where [MATH] ( for [MATH] ) [CITATION] .",
+        "target": "For large [MATH] and small [MATH] it can be expressed via its value for the Hamiltonian dynamics on a torus where [MATH] ( for [MATH] ) [CITATION] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 15,
+            "arxiv-id": "0709.2336",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        4,
+                        8
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The presence of the extremely large ejections of the order parameter values corresponds to this situation , as shown in Fig. [REF] .",
+        "target": "The presence of extremely large ejections of the order parameter values corresponds to this situation , as shown in figure [REF] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 16,
+            "arxiv-id": "1405.1364",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        16,
+                        20
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        120,
+                        125
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        116,
+                        123
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Assuming these cases to have been solved , let us immediately prove the general case .",
+        "target": "Assuming these cases have been solved , let us immediately prove the general case .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 17,
+            "arxiv-id": "0902.4528",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        21,
+                        24
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In low dimensional rings superfluidity can persist even if spectral stability is lost [CITATION] , because dynamical stability can still be maintained ( see also [CITATION] ) .",
+        "target": "However , in low dimensional rings superfluidity can persist even if energetic-stability is lost [CITATION] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 18,
+            "arxiv-id": "1412.5929",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "professional-improve-style"
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        0,
+                        10
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        97,
+                        175
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        59,
+                        78
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        69,
+                        89
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "From this a precision determination of the baryon density follows [CITATION] : [EQUATION] [MATH] is the fraction of critical density contributed by baryons , [MATH] , and the physical baryon density [MATH] .",
+        "target": "From this , a precision determination of the baryon density follows [CITATION] : [EQUATION] [MATH] is the fraction of critical density contributed by baryons , [MATH] , and the physical baryon density [MATH] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 19,
+            "arxiv-id": "astro-ph-0008495",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        10,
+                        12
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "We use the generalized method of moments ( GMM , [CITATION] ) to estimate [MATH] under [REF] .",
+        "target": "We use the generalized method of moments ( GMM ) in [CITATION] to estimate [MATH] under [REF] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 20,
+            "arxiv-id": "1709.00081",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "output_idx": [
+                    [
+                        49,
+                        52
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        47,
+                        49
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "We measure a flux level of 3.8 [MATH] Jy at the proper motion corrected position for TRAPPIST-1 , consistent with the noise level .",
+        "target": "We measure a flux density level of 3.8 [MATH] Jy in the synthesized beam at the proper motion corrected position for TRAPPIST-1 , consistent with the noise level .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 21,
+            "arxiv-id": "1806.00480",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        18,
+                        26
+                    ]
+                ]
+            },
+            {
+                "category": "insertion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        49,
+                        73
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Equation ( [REF] ) is the zeroth order current which is the time-dependent Landauer formula .",
+        "target": "Equation ( 56 ) represented the zeroth order current which is the time-dependent Landauer formula .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 22,
+            "arxiv-id": "1102.5645",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        11,
+                        17
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        11,
+                        14
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        19,
+                        22
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        16,
+                        28
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "When the latter assumption fails , alternatively , narrow-band estimates can be entertained ; these estimates ensure convergence to a zero-mean Gaussian distribution , with a slightly slower convergence rate [MATH] .",
+        "target": "When the latter assumption fails , alternatively , narrow-band estimates can be entertained ; these estimates ensure convergence to a zero-mean Gaussian distribution , with a slightly slower convergence rate .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 23,
+            "arxiv-id": "1110.3777",
+            "sentence-1-level": 3,
+            "sentence-2-level": 4
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        208,
+                        215
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "As a final means to draw conclusions from the data we have plotted our results for the solute substitution energy , solute-vacancy binding energies and binding energies of solutes to the most stable interstitial dumbbells in the mixed positions in austenitic Fe against the corresponding values for bcc Fe in FIG. [REF] .",
+        "target": "As a final means to draw conclusions from the data we have plotted our results for the solute substitution energy , solute-vacancy binding energies and binding energies of solutes to the most stable interstitial dumbbells in the mixed positions in austenitic Fe against the corresponding values for bcc Fe in Fig. [REF] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 24,
+            "arxiv-id": "1107.0260",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        309,
+                        314
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        309,
+                        314
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Then , for the first [MATH] queries , we couple the samplings of the noisy query outputs using the rule [ LapNull ] .",
+        "target": "For the first [MATH] queries , we couple the samplings of the noisy query outputs using the rule [ LapNull ] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 25,
+            "arxiv-id": "1601.05047",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        0,
+                        7
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "NYC and Seoul are divided into 10 [MATH] 20 and 50 [MATH] 50 respectively , considering the area of cities .",
+        "target": "NYC and Seoul are divided into 10 [MATH] 20 and 50 [MATH] 50 regions respectively , considering the area size of cities .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 26,
+            "arxiv-id": "1905.10709",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        61,
+                        69
+                    ]
+                ]
+            },
+            {
+                "category": "insertion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "output_idx": [
+                    [
+                        105,
+                        110
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The high baryon density requires a leptonic asymmetry in order to be compatible with \" degenerate BBN \" , and following ref. [CITATION] , this large asymmetry is allowed precisely in presence of a low cosmological constant .",
+        "target": "The high baryon density requires a leptonic asymmetry in order to be compatible with the observed light elements abundances ( unless systematic errors have been underestimated in all recent analyses ) , and following ref. [CITATION] , this large asymmetry is allowed precisely in presence of a low cosmological constant .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 27,
+            "arxiv-id": "astro-ph-0004412",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        124,
+                        201
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        85,
+                        104
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        85,
+                        124
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The solid line indicates the spectral stability border and the dashed lines indicates the dynamical stability borders as determined from the BdG analysis ( see below ) .",
+        "target": "The solid and dashed lines indicate the energetic and the dynamical stability borders , as determined from the BdG analysis ( see below ) .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 28,
+            "arxiv-id": "1412.5929",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        86,
+                        88
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        10,
+                        86
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        10,
+                        54
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In Fig. ( [REF] ) we show the static transverse susceptibility at the points indicated in the phase diagram Fig. ( [REF] ) .",
+        "target": "In figure [REF] we show the static transverse susceptibility at the points indicated in the phase diagram figure [REF] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 29,
+            "arxiv-id": "1007.1949",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        16,
+                        18
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        121,
+                        123
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        108,
+                        115
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        106,
+                        113
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 3,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        3,
+                        10
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        3,
+                        10
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "This conundrum was resolved [CITATION] when it was shown that Cr atoms in bcc Fe exhibit strong nearest neighbour repulsion , resulting from magnetic frustration , with weaker repulsion still present up to 6th nearest neighbour separation [CITATION] .",
+        "target": "This conundrum was resolved [CITATION] when it was shown that Cr atoms in bcc Fe exhibit strong nearest neighbour repulsion , resulting from magnetic frustration , with weaker repulsion still present up to sixth-nearest-neighbour separation [CITATION] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 30,
+            "arxiv-id": "1107.0260",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        206,
+                        228
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        206,
+                        230
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The results concerning the strong-coupling contribution in [MATH] and based on the mentioned simple model are described in Ref. [ 16 ] .",
+        "target": "The results concerning the strong-coupling contribution in [MATH] and based on the mentioned simple model are described in Ref. [ 21 ] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 31,
+            "arxiv-id": "cond-mat-0111161",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        130,
+                        133
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        130,
+                        133
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In non-magnetic elements such as molybdenum and vanadium it was shown that the pseudopotential plane wave method reproduced experimentally-inferred self-interstitial migration energy barriers to within 0.1 eV [CITATION] , giving confidence that experimentally inaccessible quantities such as interstitial formation energies would also be reliable .",
+        "target": "In non-magnetic elements such as molybdenum and vanadium it was shown that the pseudopotential plane-wave method reproduced experimentally-inferred self-interstitial migration energy barriers to within 0.1 eV [CITATION] , giving confidence that experimentally inaccessible quantities such as interstitial formation energies would also be reliable .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 32,
+            "arxiv-id": "1107.0260",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        95,
+                        106
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        95,
+                        106
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In some cases the energies of some DOFs are lumped together and can not be separated , each [MATH] depending also on [MATH] with [MATH] ( see e. g. the planetary system and the globally chaotic oscillator below ) .",
+        "target": "In some cases the energies of some DOFs are lumped together and can not be separated , each [MATH] depending also on [MATH] with [MATH] ( see e. g. the planetary system and the globally chaotic oscillator below ) or even in the angle variables ( the Kuramoto model in Section [REF] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 33,
+            "arxiv-id": "cond-mat-0602186",
+            "sentence-1-level": 3,
+            "sentence-2-level": 4
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        213,
+                        282
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "For all [MATH] we have that [EQUATION]",
+        "target": "For [MATH] , we have hence [EQUATION]",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 34,
+            "arxiv-id": "1110.3777",
+            "sentence-1-level": 2,
+            "sentence-2-level": 3
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        11,
+                        13
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        4,
+                        8
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "professional-improve-style"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        23,
+                        28
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        21,
+                        27
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Because the qubit is either encoded in the subspace [MATH] or the subspace [MATH] , the error [MATH] has no effect on the qubit state , i.e. can be ignored .",
+        "target": "Because the qubit is either encoded in the subspace [MATH] or [MATH] , the error [MATH] has no effect on the qubit state , i.e. can be ignored .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 35,
+            "arxiv-id": "1512.05089",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        62,
+                        75
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "This self-consistency proves to be challenging when assessing the fidelity and the uncertainty of a reconstructed unitary matrix .",
+        "target": "This self-consistency proves to be challenging when assessing the fidelity and the uncertainty of a reconstructed matrix in the presence of measurement errors .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 36,
+            "arxiv-id": "1512.04769",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        121,
+                        159
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        114,
+                        122
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "At the end we shall prove the following identity [EQUATION] for every positive integer [MATH] by using double shuffle relations and one relation coming from a substitution in the iterated integral representation of [MATH] .",
+        "target": "At the end we shall prove the following long standing conjecture : for every positive integer [MATH] [EQUATION] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 37,
+            "arxiv-id": "0705.2267",
+            "sentence-1-level": 3,
+            "sentence-2-level": 4
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        101,
+                        112
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        94,
+                        222
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        40,
+                        60
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        40,
+                        67
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Nonetheless , recall thm : und-cap , thm : hard-directed , where we showed that the problem also stays hard on general graphs even if the flow sizes are of unit size .",
+        "target": "Nonetheless , recall thm : und-cap , thm : hard-directed , where we showed that the problem also stays strongly NP-complete on general graphs .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 38,
+            "arxiv-id": "1705.00055",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        126,
+                        166
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        103,
+                        108
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        103,
+                        124
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "It converges rapidly in the weak and strong coupling limit and even far from these limits .",
+        "target": "This leads to a rapid convergence in the weak and strong coupling regimes and even far from these limits .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 39,
+            "arxiv-id": "0812.2456",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "professional-improve-style"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        0,
+                        21
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        0,
+                        34
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        53,
+                        59
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        66,
+                        74
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "For instance , the correction factors for [MATH] are , respectively , [MATH] and [MATH] .",
+        "target": "For instance , the correction factors for [MATH] are , respectively , [MATH] , [MATH] , and [MATH] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 40,
+            "arxiv-id": "1110.3777",
+            "sentence-1-level": 3,
+            "sentence-2-level": 4
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        77,
+                        88
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "First , we illustrate the energy-dissipation behavior of different schemes .",
+        "target": "First , we illustrate the energy-stability of different schemes .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 41,
+            "arxiv-id": "1602.08649",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "accurate-spefific"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        26,
+                        54
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        26,
+                        43
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The connection between probabilistic liftings and couplings was only recently noted by [CITATION] , after the development of more than half a dozen tools centered around liftings .",
+        "target": "The connection between liftings and couplings was recently noted by [CITATION] .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 42,
+            "arxiv-id": "1601.05047",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        23,
+                        37
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "improve-readability-simplify"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        64,
+                        69
+                    ]
+                ]
+            },
+            {
+                "category": "deletion",
+                "id": 2,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "input_idx": [
+                    [
+                        98,
+                        179
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "However , in his work there is no general statement about the cases that do not satisfy the regularity conditions .",
+        "target": "However , he gives no general statement about the cases that do not satisfy these regularity conditions .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 43,
+            "arxiv-id": "1205.4567",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "lang",
+                        "lang": {
+                            "val": "other"
+                        }
+                    }
+                },
+                "input_idx": [
+                    [
+                        10,
+                        31
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        10,
+                        19
+                    ]
+                ]
+            },
+            {
+                "category": "substitute",
+                "id": 1,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        88,
+                        92
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        76,
+                        82
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In the fuzzy set literature [CITATION] , a fuzzy implication is defined as a generalization of the classical crisp implementation .",
+        "target": "In the fuzzy set literature [CITATION] , a fuzzy implication is defined as a generalization of the classical crisp implication .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 44,
+            "arxiv-id": "1707.02292",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        115,
+                        130
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        115,
+                        127
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "As a result , for [MATH] , we have [MATH] .",
+        "target": "As a result , for [MATH] , we have [MATH] , and vice versa .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 45,
+            "arxiv-id": "1710.01496",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "content"
+                    }
+                },
+                "output_idx": [
+                    [
+                        42,
+                        59
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "Our basic idea is to construct a filtration of [MATH] [EQUATION] and then compute each grad quotient .",
+        "target": "Our basic idea is to construct a filtration of [MATH] [EQUATION] and then compute each graded quotient .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 46,
+            "arxiv-id": "1203.6053",
+            "sentence-1-level": 4,
+            "sentence-2-level": 5
+        },
+        "edits": [
+            {
+                "category": "substitute",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "input_idx": [
+                    [
+                        87,
+                        92
+                    ]
+                ],
+                "output_idx": [
+                    [
+                        87,
+                        94
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "By comparing chain conformations and an expansion of small angle scattering patterns [CITATION] in spherical harmonics we demonstrate how the overall scattering patterns infer the internal structure of the chain conformations .",
+        "target": "By comparing chain conformations and an expansion of small angle scattering patterns [CITATION] in spherical harmonics [CITATION] we demonstrate how the overall scattering patterns infer the internal structure of the chain conformations .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 47,
+            "arxiv-id": "1805.01935",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "output_idx": [
+                    [
+                        119,
+                        130
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "In all these cases , the PDE discrete spectrum is equal to the discrete spectrum of the operator , [CITATION] .",
+        "target": "In all these cases , the PDE discrete spectrum is equal to the discrete spectrum of the operator .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 48,
+            "arxiv-id": "1205.4567",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "deletion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "format"
+                    }
+                },
+                "input_idx": [
+                    [
+                        97,
+                        110
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "The telescope was defocused such that the FWHM of the stellar point spread function ( PSF ) was within the ranges of 15-21 , 18-24 , and 19-25 pixels for [MATH] , [MATH] , and [MATH] bands , respectively .",
+        "target": "The telescope was defocused such that the FWHM of the stellar point spread function ( PSF ) was within the ranges of 15-21 , 18-24 , and 19-25 pixels for the [MATH] , [MATH] , and [MATH] bands , respectively .",
+        "metadata": {
+            "easy-or-hard": "easy",
+            "sentence-pair-index": 49,
+            "arxiv-id": "1610.01333",
+            "sentence-1-level": 1,
+            "sentence-2-level": 2
+        },
+        "edits": [
+            {
+                "category": "insertion",
+                "id": 0,
+                "annotation": {
+                    "intention": {
+                        "val": "improve-grammar-typo"
+                    }
+                },
+                "output_idx": [
+                    [
+                        154,
+                        158
+                    ]
+                ]
+            }
+        ]
+    }
+]
