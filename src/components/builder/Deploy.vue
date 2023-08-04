@@ -5,7 +5,7 @@ import { toRaw } from 'vue'
 import * as monaco from 'monaco-editor'
 import loader from "@monaco-editor/loader";
 import jsyaml from 'js-yaml';
-import { handle_file_download } from "../../assets/js/file-util.js";
+import { handle_file_download, handle_interface_download } from "../../assets/js/file-util.js";
 </script>
 
 <script>
@@ -82,9 +82,9 @@ export default {
             // TODO: Make sure this data is coming from the right monaco editor
             const data = this.getDataValue()[0]
             const parsed_data = JSON.parse(data)
-            const pared_config = jsyaml.dump(this.config)
+            const parsed_config = jsyaml.dump(this.config)
             parsed_data.push({
-                "_thresh_template": pared_config
+                "_thresh_template": parsed_config
             });
             let filename;
             if (this.config.template_name) {
@@ -144,6 +144,24 @@ export default {
                     reject(error);
                 });
             });
+        },
+        download_interface() {
+            const parsed_config = jsyaml.dump(this.config)
+            handle_interface_download(
+                parsed_config,
+                this.config.template_name,
+                this.input_data,
+                false
+            )
+        },
+        download_interface_packaged() {
+            const parsed_config = jsyaml.dump(this.config)
+            handle_interface_download(
+                parsed_config,
+                this.config.template_name,
+                null,
+                true
+            )
         }
     },
     mounted() {
@@ -169,9 +187,9 @@ export default {
 
         <div id="tab-contents">
             <Tab name="serverless" :selected="active_tab == 'serverless'">
-                <h2>Package with data and annotate on <code>thresh.tools</code></h2>
-                <p>This will package your data alongside the template, and you can send this directly to annotators to annotate at <code>thresh.tools/annotate</code>. This is recommended for sharing data quickly (e.g. among co-authors), or small-scale annotation projects.</p>
-                <h3>Data</h3>
+                <h2>Package template + annotate on <code>thresh.tools</code></h2>
+                <p>This will package your data and template in a single JSON file, and you can send this directly to annotators to annotate at <code>thresh.tools/annotate</code>. This is recommended for sharing data quickly (e.g. among co-authors), or small-scale annotation projects.</p>
+                <h3>Export Data</h3>
                 <div class="flex items-center mb2">
                     <input class="mr2 use_editor_data" type="checkbox" id="use_editor_data" value="use_editor_data" checked @change="use_editor_data_handler">
                     <label for="use_editor_data" class="lh-copy">Use data from editor</label>
@@ -179,15 +197,16 @@ export default {
                 <div class='upload-container data-upload-container data-upload-container-disabled' id="data-upload-container">
                     <div class='data-upload' />
                 </div>
-                <button @click="package_data" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Package Data</button>
+                <button @click="package_data" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Package Data + Interface</button>
                 <a href="/annotate" target="_blank">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Visit <code>thresh.tools/annotate</code></button>
                 </a>
             </Tab>
             <Tab name="hosted" :selected="active_tab == 'hosted'">
-                <h2>Host template and annotate on <code>thresh.tools</code></h2>
+                <h2>Host template + connect to <code>thresh.tools</code></h2>
                 <p>Host the template at your own domain and link it to <code>thresh.tools</code>. This is recommended for sharing your template alongside your work, in-house annotation projects or ablation studies.</p>
-                <h3>Linking Templates</h3>
+                <button @click="download_interface" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Download Interface</button>
+                <h3>Linking a Template</h3>
                 <p>You can link to any template using the format:</p>
                 <pre>thresh.tools/<b>?i=[link to your interface]</b></pre>
                 <p>For example:</p>
@@ -200,6 +219,7 @@ export default {
                 <p>And distribute using the <code>gh</code> parameter:</p>
                 <pre>thresh.tools/<b>?gh=[link to your github template]</b></pre>
                 <pre><a href="http://thresh.tools/?gh=davidheineman/salsa/main/interface.yml" target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface.yml</a></pre>
+                <hr />
                 <h3>Host with HuggingFace</h3>
                 <p>Create a HuggingFace dataset and add your template (e.g., alongside your published data).</p>
                 <pre>https://huggingface.co/datasets/davidheineman/salsa/resolve/main/interface.yml</pre>
@@ -213,31 +233,58 @@ export default {
                 <p>For example:</p>
                 <pre><a href='http://thresh.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json' target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
                 <p>You can follow the above instructions for hosting your data on GitHub or HuggingFace.</p>
+                <hr />
                 <h3>(Optional) Deployment with an iFrame</h3>
-                <p>Want to host your interface using a custom link? Use the following code to host your template within any HTML document:</p>
-                <pre>{{ iframe_demo_text }}</pre>
+                <p>Want to host your interface using a custom link? Use the following code to host your template within any HTML document. The following will package your interface into an HTML file for distribution:</p>
+                <button @click="download_interface_packaged" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Download Interface as HTML</button>
                 <p>See an example here (<i>Note: no additional setup is required! Just the iframe</i>):</p>
                 <pre><a href="http://salsa-eval.com/interface" target="_blank">salsa-eval.com/interface</a></pre>
+                <hr />
                 <h3>(Optional) Host Default Data</h3>
                 <p>If you are sharing your template, you can specify a link within your config to include example data. This adds a "View Example Data" button to the landing page, and provides example data when editing the template.</p>
                 <pre>default_data_link: [link to your data]</pre>
             </Tab>
             <Tab name="python" :selected="active_tab == 'python'">
-                <h2>Deploy your template using <code>thresh</code> + Python</h2>
-                <p>Plug your interface generation directly into your code using the <code>thresh</code> pip library. This is recommended for orchestrating large-scale annotation projects, using multiple interfaces simultaneously (e.g., a multi-lingual project) or for creating a pipeline between generation and annotation (e.g., a RLHF training setup).</p>
+                <h2>Manage data collection using <code>thresh</code> + Python</h2>
+                <p>Plug your interface generation directly into your code using the <code>thresh</code> pip library. This is recommended for orchestrating large-scale annotation projects, deploying multiple interfaces simultaneously or for creating a pipeline between generation and annotation (e.g., a RLHF training setup).</p>
+                <button @click="download_interface" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Download Interface</button>
                 <h3>Setup</h3>
                 <pre>pip install thresh</pre>
-                <pre>TODO ADD CODE</pre>
-                <p>Then you can send directly to annotators, or upload to your own server (see Hosted).</p>
+                <p>With the <code>thresh</code> library, your interface template is used to serialize your data into a Python object. Simply call <code>load_interface()</code>:</p>
+                <pre>
+from thresh import load_interface
+
+# Load SALSA data using the SALSA typology
+YourInterface = load_interface("your_interface.yml")
+
+# Load existing annotations
+thresh_data = YourInterface.load_annotations("your_data.json")</pre>
+                <p>When you are finished preparing your data, you can export your data object to JSON using <code>export_data</code>:</p>
+                <pre>
+# Export data to [file_name].json for annotation
+YourInterface.export_data(
+    data=thresh_data,
+    filename="[file_name].json"
+)
+</pre>
+                <p>Then you can send directly to annotators, or upload to your own server.</p>
                 <hr />
-                <h3>(Optional) Deploy to Crowdsourcing Platforms</h3>
-                <p>Check out our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb'>example notebook →</a> which uses <code>thresh</code> and <code>dallinger</code> to deploy a large-scale annotation project to Prolific programatically.</p>
+                <h3>Learn more</h3>
+                <p>Check out our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/load_data.ipynb'>example notebook →</a> which details each feature of the <code>thresh</code>, including using the custom <code>thresh</code> data classes.</p>
                 <!-- <h3>(Optional) Integrate with HuggingFace Transformers</h3>
                 <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p> -->
             </Tab>
             <Tab name="crowdsource" :selected="active_tab == 'crowdsource'">
-                <h2>Deploy to Crowdsource</h2>
-                <p>This will directly create an Crowdsource job for your dataset in this browser. This is recommended for small scale annotation or debugging, NOT for a large project. In that case, we recommend deploying with Python.</p>
+                <h2>Deploy to crowdsource platforms</h2>
+                <p>For large-scale crowdsource annotation projects, we reccomend using <code>thresh</code> and Python to deploy. Just add this line to configure crowdsourcing:</p>
+                <pre>crowdsource: "[platform]"</pre>
+                <button @click="download_interface" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Download Interface</button>
+                <p>View our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb'>example notebook →</a> which uses <code>thresh</code> and <code>dallinger</code> to deploy a large-scale annotation project to Prolific programatically.</p>
+                <div style="text-align: center">
+                    <img src="img/prolific.png" width="500">
+                    <img src="img/prolific-deployed.png" width="500">
+                </div>
+                <!-- <p>This will directly create an Crowdsource job for your dataset in this browser. This is recommended for small scale annotation or debugging, NOT for a large project. In that case, we recommend deploying with Python.</p>
                 <h3>Data</h3>
                 <div class="flex items-center mb2">
                     <input class="mr2 use_editor_data" type="checkbox" id="use_editor_data" value="use_editor_data" checked @change="use_editor_data_handler">
@@ -271,7 +318,7 @@ export default {
                         <input id="name" class="input-reset ba b--black-20 pa2 mb2 db" type="text" aria-describedby="name-desc">
                     </div>
                 </div>
-                <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Deploy</button>
+                <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Deploy</button> -->
             </Tab>
         </div>
     </section>

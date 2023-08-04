@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous"></script>
+  </head>
+  <body></body>
+  <script>
+    var template = `
+crowdsource: prolific
+prolific_completion_code: XXXXXXX
+disable:
+  - upload
+  - download
+instructions: >
+  ## Crowdsourcing Demo
+
+  You can add instructions here. Click to the end and press "Submit" to be
+  redirected back to Prolific
+prepend_instructions: true
+template_name: demo
+template_label: Crowdsourcing Demo
+edits:
+  - name: edit_name
+    label: Edit Name
+    color: red
+    icon: fa-magnifying-glass
+    enable_input: true
+    enable_output: true
+interface_text:
+  landing_page:
+    header_text: Annotating with
+    drag_drop_begin: 'Drag &amp; drop, or '
+    drag_drop_underline: click here
+    drag_drop_after: ' to add an annotation file'
+    options_header: or
+    tutorial_link: See Tutorial
+    examples_link: View Example Data
+    builder_link: Customize this Template
+    paper_link: View Paper
+  comment_box:
+    label: Comment
+    placeholder: Comment on this HIT ...
+  typology:
+    source_label: Source
+    target_label: Target
+    context_label: Context
+    edit_unit_name: edit
+    edits_unit_name: edits
+    span_unit_name: span
+    spans_unit_name: spans
+  buttons:
+    save_label: Save
+    cancel_label: Cancel
+    add_edit_label: Add Edit
+    instructions_label: Instructions
+  hit_box:
+    hit_label: Hit
+  annotation_editor:
+    add_edit_header: Adding an Edit
+    select_edit_header: Select the Edit Category.
+    select_instructions: Select the text span from the
+    selected_label: Selected
+    annotating_edit_header: Annotating an Edit
+    composite_seletion_instructions: 'Click the edits that associated with '
+    composite_span_unification: with
+  adjudication:
+    highlight_label: Your Annotations
+  annotation_viewer:
+    header: Edit Annotations
+    not_annotated_text_1: this edit is not annotated yet, click
+    not_annotated_text_2: to start!
+  questions:
+    binary_yes: 'Yes'
+    binary_no: 'No'
+    likert_1: 1 - minor
+    likert_2: 2 - somewhat
+    likert_3: 3 - a lot
+    textbox_placeholder: Write your answer...
+`;
+
+var data = `
+[
+  {
+    "source": "Whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles, and, by opposing, end them?",
+    "target": "Is it nobler to put up with all the nasty things that luck throws your way, or to fight against all those troubles by simply putting an end to them once and for all?"
+  },
+  {
+    "source": "Alas, poor Yorick! I knew him, Horatio: a fellow of infinite jest, of most excellent fancy: he hath borne me on his back a thousand times; and now, how abhorred in my imagination it is!",
+    "target": "Oh, poor Yorick! I used to know him, Horatio—a very funny guy, and with an excellent imagination. He carried me on his back a thousand times, and now—how terrible—this is him."
+  }
+]
+`;
+
+    // var ghParameter = "davidheineman/salsa/main/interface.yml";      // <- Add GitHub path to host interface.yml instead!
+    // var dParameter = "demo_data.json";                               // <- Add data to show up on load!
+    // iframeUrl = "https://thresh.tools/?gh=" + encodeURIComponent(ghParameter) + "&d=" + encodeURIComponent(dParameter);
+
+    // iframeUrl = "https://thresh.tools/custom"
+    iframeUrl = "http://localhost:5173/custom"
+
+    var iframe = document.createElement('iframe');
+    iframe.src = iframeUrl;
+    iframe.id = "iframe"
+    Object.assign(iframe.style, {
+        position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', border: 'none'
+    });
+    document.body.appendChild(iframe);
+
+    $('#iframe').on("load", function() {
+      // let iframe = window.parent.$(this).contents();
+      // $("#input-config", iframe).val(template);
+      // $("#hidden-config-injection", iframe).submit();
+      $('#iframe')[0].contentWindow.postMessage({
+        template: template,
+        data: data
+      }, 'http://localhost:5173');
+    })
+  </script>
+</html>

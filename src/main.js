@@ -47,6 +47,7 @@ var hfParam = params.get("hf");
 const routes = [
     { path: '/', component: (iParam || ghParam || hfParam) ? () => import("./components/pages/Viewer.vue") : () => import("./components/pages/Builder.vue") },
     { path: `/demo`, component: () => import("./components/pages/Builder.vue") },
+    { path: '/custom', props: () => ({ injection: true }), component: () => import("./components/pages/Viewer.vue") },
     { path: '/annotate', props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") }
 ]
 
