@@ -281,8 +281,8 @@ YourInterface.export_data(
                 <button @click="download_interface" class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn mr2">Download Interface</button>
                 <p>View our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_to_prolific.ipynb'>example notebook →</a> which uses <code>thresh</code> and <code>dallinger</code> to deploy a large-scale annotation project to Prolific programatically.</p>
                 <div style="text-align: center">
-                    <img src="img/prolific.png" width="500">
-                    <img src="img/prolific-deployed.png" width="500">
+                    <img src="/img/prolific.png" width="500">
+                    <img src="/img/prolific-deployed.png" width="500">
                 </div>
                 <!-- <p>This will directly create an Crowdsource job for your dataset in this browser. This is recommended for small scale annotation or debugging, NOT for a large project. In that case, we recommend deploying with Python.</p>
                 <h3>Data</h3>
