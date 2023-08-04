@@ -338,7 +338,7 @@ We do not create dataloaders for the following interfaces:
 |:---: | :-- |
 | MultiPIT | This is an inspection interface, examples are taken from Table 7 of the [**MultiPIT paper**](https://aclanthology.org/2022.emnlp-main.631). |
 | CWZCC | The example is taken from App. B of the [**CWZCC paper**](https://aclanthology.org/2020.lrec-1.327). Full dataset is not publically available due to copyright and privacy concerns. |
-| ERRANT | No human evaluation data has been collected to our knowledge. |
+| ERRANT | Our example data is taken from the annotations from the [**W&I+LOCNESS corpus**]() collected by [**Bryant et al., 2019**](https://aclanthology.org/W19-4406/) from original exerpts from [**Yannakoudakis et al., 2018**](https://www.tandfonline.com/doi/abs/10.1080/08957347.2018.1464447) and [**Granger, 1998**](https://www.learnercorpusassociation.org/resources/tools/locness-corpus/). The dataset was released as part of the [**Building Educational Applications 2019 Shared Task**](https://www.cl.cam.ac.uk/research/nl/bea2019st/#data). |
 
 ## Contributing
 
