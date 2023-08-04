@@ -8,7 +8,7 @@ highlight_first_interface: true   # <- Adds a box around the first interface
 # thresh.tools/?d1=<DATASET_1>&d2=<DATASET_2>
 
 # Here's an example of a full URL with multiple datasets:
-# http://thresh.tools/?i=https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/templates/demo/adjudication.yml&d1=https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/data/demo/adjudication.json&d2=https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/data/demo/adjudication.json
+# https://thresh.tools/?i=https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/templates/demo/adjudication.yml&d1=https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/data/demo/adjudication.json&d2=https://raw.githubusercontent.com/davidheineman/thresh.tools/main/public/data/demo/adjudication.json
 
 # ========================================================================================
 # ========================================================================================
