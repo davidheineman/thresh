@@ -1,4 +1,4 @@
-import{m as uo,p as Uh,q as E1,o as De,c as Pe,a as ae,t as Fe,F as kr,r as li,h as At,e as bn,b as dt,d as jt,f as gl,s as ml,u as Sr,x as A1,y as C1,z as O1,A as ll}from"./index-73c688b9.js";var vs={exports:{}};/**
+import{m as uo,p as Uh,q as E1,o as De,c as Pe,a as ae,t as Fe,F as kr,r as li,h as At,e as bn,b as dt,d as jt,f as gl,s as ml,u as Sr,x as A1,y as C1,z as O1,A as ll}from"./index-00796d50.js";var vs={exports:{}};/**
  * @license
  * Lodash <https://lodash.com/>
  * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
@@ -50,6 +50,7 @@ var data = \`
 
     var iframe = document.createElement('iframe');
     iframe.src = iframeUrl;
+    iframe.id = 'iframe';
     Object.assign(iframe.style, {
         position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', border: 'none'
     });
@@ -57,11 +58,11 @@ var data = \`
 
     // Sends our interface & data to the iframe
     $('#iframe').on("load", function() {
-        $('#iframe')[0].contentWindow.postMessage({
-          template: template,
-          data: data
-        }, 'https://thresh.tools');
-      })
+      $('#iframe')[0].contentWindow.postMessage({
+        template: template,
+        data: data
+      }, 'https://thresh.tools');
+    })
   <\/script>
 </html>
 `,Tb={props:["hits_data","set_hits_data","current_hit","edits_dict","set_edits_dict","editor_open","set_editor_state","refresh_interface_edit","annotating_edit_span_category_id","set_annotating_edit_span_category_id","annotating_edit_span","set_annotating_edit_span","lines","set_lines","config"],data(){return{edits_html:"",line_locked:!1}},watch:{current_hit(){$(`#circle-${this.current_hit}`).addClass("circle-active"),this.process_edits_html(),this.draw_lines()},hits_data(){this.process_edits_html(),this.draw_lines()},edits_dict(){this.draw_lines()}},methods:{annotate_edit(e){const t=this.hits_data[this.current_hit-1].source,r=this.hits_data[this.current_hit-1].target,o=this.edits_dict,a=e.target.dataset.category,c=e.target.dataset.id,u=parseInt(e.target.dataset.id.split("-")[1]);if($(".child-question").hide(),this.editor_open){$(`.quality-selection[data-category=${a}]`).hide(300),this.refresh_interface_edit();return}else $(".quality-selection").hide(300),$(`.quality-selection[data-category=${a}]`).slideDown(300),$(e.target).addClass(`txt-${a}`),this.set_editor_state(!this.editor_open);$(`.${a}[data-id=${c}]`).removeClass(`border-${a}-light`).addClass(`white border-${a} bg-${a}`);let f=o.find(function(p){return p.category===a&&p.id===u});if(this.getEditConfig(a).multi_span){let p=f.input_idx,v="";for(let k=0;k<p.length;k++)k!=0&&(v+=`<span class="edit-type txt-${a} f3"> and </span>`),v+=`<span class="pa1 edit-text br-pill-ns txt-${a} border-${a}-all ${a}_below">
