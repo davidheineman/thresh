@@ -150,7 +150,7 @@ export default {
             handle_interface_download(
                 parsed_config,
                 this.config.template_name,
-                this.input_data,
+                null,
                 false
             )
         },
@@ -159,7 +159,7 @@ export default {
             handle_interface_download(
                 parsed_config,
                 this.config.template_name,
-                null,
+                this.input_data,
                 true
             )
         }
