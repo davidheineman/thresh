@@ -71,6 +71,10 @@ edits:
                 label: "Contraction"
               - name: M:OTHER
                 label: "Other"
+      - name: correction
+        label: "Correction"
+        question: "Correct your selection."
+        options: textbox
   - name: unnecessary
     label: "Unnecessary"
     enable_output: true
@@ -122,6 +126,10 @@ edits:
                 label: "Contraction"
               - name: U:OTHER
                 label: "Other"
+      - name: correction
+        label: "Correction"
+        question: "Correct your selection."
+        options: textbox
   - name: replacement
     label: "Replacement"
     enable_output: true
@@ -191,7 +199,10 @@ edits:
                 label: "Spelling"
               - name: R:WO
                 label: "Word Order"
-
+      - name: correction
+        label: "Correction"
+        question: "Correct your selection."
+        options: textbox
 
 paper_link: https://aclanthology.org/P17-1074
 citation: |
