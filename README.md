@@ -52,13 +52,11 @@ These notebook tutorials show broader usage of `thresh` for deploying to annoati
 | Deploy an interface to the Prolific platform | [**deploy_to_prolific.ipynb**](./notebook_tutorials/deploy_to_prolific.ipynb) |
 | Use `tokenizers` to pre-process your dataset | [**subword_annotation.ipynb**](./notebook_tutorials/subword_annotation.ipynb) |
 
-<!-- TODO: Add a screenshot under all of these -->
-
 <a id="customize"></a>
 
 ## Customize an Interface
 
-All interfaces consists of two elements the *typology* and the *data*.
+All interfaces consists of two elements the *typology* and the *data*. The typology defines your interface and data defines the examples to be annotated.
 
 `<typology>.yml`:
 
@@ -81,50 +79,85 @@ edits:
 
 ### Adding Edits [↗️](https://thresh.tools/?t=demo_edit_types)
 
+The `edits` command defines a list of edits. Each edit can be one of these types:
+
+| ![](./public/img/docs/edit_input_output.png) | ![](./public/img/docs/edit_multispan.png) | ![](./public/img/docs/edit_composite.png) |
+| :--: | :--: | :--: | 
+| `type: single_span` | `type: multi_span` | `type: composite` |
+
+Additionally, the `enable_input` and `enable_output` commands are used to enable selecting the span on the source or target sentences respectively.
+
+| ![](./public/img/docs/edit_input.png) | ![](./public/img/docs/edit_output.png) | ![](./public/img/docs/edit_input_output.png) |
+|:--: | :--: | :--: |
+| `enable_input: true` | `enable_output: true` | `enable_input: true` & `enable_output: true` |
+
+To style your edits, the `icon` is any [**Font Awesome icon**](http://fontawesome.com/search?o=r&m=free) and `color` is the associated edit color. 
+
 ```yaml
 edits:
   - name: edit_with_annotation
     label: "Custom Annotation"
-    type: <composite|primitive>
+    icon: fa-<icon>
+    color: <red|orange|yellow|green|teal|blue>
+    type: <single_span|multi_span|composite>
     enable_input: <true|false>
     enable_output: <true|false>
+    annotation: ...
 ```
 
 <a id="demo_question_trees"></a>
 
 ### Annotating with Recursive Structure [↗️](https://thresh.tools/?t=demo_question_trees)
 
+Within each edit, the `annotation` command is used to specify the annotation questions for each edit. Using the `options` command, you can specify the question type:
+
+| ![](./public/img/docs/question_binary.png) | ![](./public/img/docs/question_likert.png) | ![](./public/img/docs/question_text.png) |
+| :--: | :--: | :--: | 
+| `options: binary` | `options: likert-3` | `options: textbox` & `options: textarea` |
+
+Qustions are structured as a tree, so if you list sub-questions under the `options` field, they will appear after the user has selected a certain annotation.
+
+| ![](./public/img/docs/question_custom.png) | ![](./public/img/docs/question_multi.png) | ![](./public/img/docs/question_children.png) |
+|:--: | :--: | :--: |
+| List of children in `options` | Multiple questions in `options` | Nested sub-children in `options` |
+
 ```yaml
 edits:
-    - name: edit_with_annotation
+  - name: edit_with_annotation
+    ...
+    annotation:
+    - name: simple_question
+      question: "Can you answer this question?"
+      options: <likert-3|binary|textbox|textarea>
+    - name: grandparent_question
+      question: "Which subtype question is important"
+      options:
+      - name: parent_question_1
+        label: "Custom Parent Question"
+        question: "Which subchild would you like to select"
+        options:
+      - name: child_1
+        label: "Custom Child Option 1"
+      - name: child_2
+        label: "Custom Child Option 2"
         ...
-        annotation:
-        - name: grandparent_question
-            question: "Which subtype question is important"
-            options:
-            - name: parent_question_1
-                label: "Custom Parent Question"
-                question: "Which subchild would you like to select"
-                options:
-                - name: child_1
-                    label: "Custom Child Option 1"
-                - name: child_2
-                    label: "Custom Child Option 2"
-                ...
-            - name: parent_question_2
-                label: "Pre-defined Parent Question"
-                question: "Can you rate the span on a scale of 1-3?"
-                options: <likert-3|binary|textbox|textarea>
-            ...
-        - name: additional_question
-            question: "Can you answer this second question?"
-            options: <likert-3|binary|textbox|textarea>
-        ...
+      - name: parent_question_2
+        label: "Pre-defined Parent Question"
+        question: "Can you rate the span on a scale of 1-3?"
+        options: <likert-3|binary|textbox|textarea>
+      ...
+  ...
 ```
 
 <a id="demo_instructions"></a>
 
 ### Add Instructions [↗️](https://thresh.tools/?t=demo_instructions)
+
+Using the `instructions` flag, you can add an instructions modal, or prepend the text above the interface using the `prepend_instructions` flag. Instructions are fomatted with [**Markdown**](https://www.markdownguide.org/cheat-sheet/).
+
+<div align="center">
+    <img src="./public/img/docs/instructions.png" width="100%" style="max-width: 400px" />
+</div>
 
 ```yaml
 prepend_instructions: <true|false>
@@ -135,6 +168,12 @@ instructions: |
 <a id="demo_paragraph"></a>
 
 ### Paragraph-level Annotation [↗️](https://thresh.tools/?t=demo_paragraph)
+
+To add text before or after the annotation, add the `context` and `_context_before` entries to your data JSON. The context field is formatted in [**Markdown**](https://www.markdownguide.org/cheat-sheet/), allowing for titles, subsections or code in your annotation context.
+
+<div align="center">
+    <img src="./public/img/docs/paragraph.png" width="100%" style="max-width: 400px" />
+</div>
 
 ```json
 [
@@ -154,14 +193,32 @@ instructions: |
 
 ### Multi-interface Adjudication [↗️](https://thresh.tools/?t=demo_adjudication)
 
+To display multiple interfaces simultaneously, use the `adjudication` flag with the number of interfaces you want to show, and use `highlight_first_interface` to add a "Your Annotations" label on the first interface. 
+
+<div align="center">
+    <img src="./public/img/docs/adjudication.png" width="100%" style="max-width: 600px" />
+</div>
+
 ```yaml
 adjudication: 2
 highlight_first_interface: <true|false>
 ```
 
+Unlike the traditional data loader (which uses the `d` parameter), you can specify multiple datasources with the `dX` parameter as such:
+
+```
+thresh.tools/?d1=<DATASET_1>&d2=<DATASET_2>
+```
+
 <a id="demo_tokenization"></a>
 
 ### Sub-word Selection [↗️](https://thresh.tools/?t=demo_tokenization)
+
+To allow a smoother annotation experience, the span selection will "snap" to the closest word boundary. This boundary is `word` by default, but can also be defined as such:
+
+<!-- TODO: ADD SCREENSHOT -->
+
+For a guide on pre-processing your dataset, please see [**notebook_tutorials/subword_annotation.ipynb**](./notebook_tutorials/subword_annotation.ipynb).
 
 ```yaml
 tokenization: <word|char|tokenized>
@@ -170,6 +227,8 @@ tokenization: <word|char|tokenized>
 <a id="demo_multilingual"></a>
 
 ### Multi-lingual Annotation [↗️](https://thresh.tools/?t=demo_multilingual)
+
+Any text in our interface can be overriden by specifying its source using the `interface_text` flag. We create templates for different languages which can be used the `language` flag.
 
 For a full list of interface text overrides, please reference a [**langauage template**](./public/lang/en.yml).
 
@@ -188,13 +247,22 @@ Looking to expand our language support? See our section on [**contributing**](#l
 
 ## Deploy an Interface
 
-### Share with Co-authors
+Please reference the "Deploy" modal within our interface for more detail!
 
-### Share Your Interface Publically
+<div align="center">
+    <img src="./public/img/docs/deploy.png" width="100%" style="max-width: 400px" />
+</div>
+
+<!-- ### Share with Co-authors
+
+### Share Your Interface Publically -->
 
 <a id="demo_crowdsource"></a>
 
 ### Deploy to Crowdsource Platforms [↗️](https://thresh.tools/?t=demo_crowdsource)
+
+Use the `crowdsource` command to specify a "Submit" button at the end of annotation. Please see [**notebook_tutorials/deploy_to_prolific.ipynb**](./notebook_tutorials/deploy_to_prolific.ipynb) for a full guide on deploying an interface programatically.
+
 ```yaml
 crowdsource: <prolific>
 prolific_completion_code: "XXXXXXX"
