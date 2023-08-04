@@ -42,6 +42,7 @@ var data = \`
 
     var iframe = document.createElement('iframe');
     iframe.src = iframeUrl;
+    iframe.id = 'iframe';
     Object.assign(iframe.style, {
         position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', border: 'none'
     });
@@ -49,11 +50,11 @@ var data = \`
 
     // Sends our interface & data to the iframe
     $('#iframe').on("load", function() {
-        $('#iframe')[0].contentWindow.postMessage({
-          template: template,
-          data: data
-        }, 'https://thresh.tools');
-      })
+      $('#iframe')[0].contentWindow.postMessage({
+        template: template,
+        data: data
+      }, 'https://thresh.tools');
+    })
   </script>
 </html>
 `;
