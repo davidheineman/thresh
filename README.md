@@ -156,7 +156,7 @@ edits:
 Using the `instructions` flag, you can add an instructions modal, or prepend the text above the interface using the `prepend_instructions` flag. Instructions are fomatted with [**Markdown**](https://www.markdownguide.org/cheat-sheet/).
 
 <div align="center">
-    <img src="./public/img/docs/instructions.png" width="100%" style="max-width: 400px" />
+    <img src="./public/img/docs/instructions.png" width="400" />
 </div>
 
 ```yaml
@@ -172,7 +172,7 @@ instructions: |
 To add text before or after the annotation, add the `context` and `_context_before` entries to your data JSON. The context field is formatted in [**Markdown**](https://www.markdownguide.org/cheat-sheet/), allowing for titles, subsections or code in your annotation context.
 
 <div align="center">
-    <img src="./public/img/docs/paragraph.png" width="100%" style="max-width: 400px" />
+    <img src="./public/img/docs/paragraph.png" width="400" />
 </div>
 
 ```json
@@ -196,7 +196,7 @@ To add text before or after the annotation, add the `context` and `_context_befo
 To display multiple interfaces simultaneously, use the `adjudication` flag with the number of interfaces you want to show, and use `highlight_first_interface` to add a "Your Annotations" label on the first interface. 
 
 <div align="center">
-    <img src="./public/img/docs/adjudication.png" width="100%" style="max-width: 600px" />
+    <img src="./public/img/docs/adjudication.png" width="600" />
 </div>
 
 ```yaml
@@ -250,7 +250,7 @@ Looking to expand our language support? See our section on [**contributing**](#l
 Please reference the "Deploy" modal within our interface for more detail!
 
 <div align="center">
-    <img src="./public/img/docs/deploy.png" width="100%" style="max-width: 400px" />
+    <img src="./public/img/docs/deploy.png" width="400" />
 </div>
 
 <!-- ### Share with Co-authors
