@@ -1,6 +1,2920 @@
 [
     {
         "source": "",
-        "target": "Need to add dataset"
+        "target": "There you will find a modern building with two different doors a red and a blue one .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        63,
+                        63
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:NOUN"
+                        }
+                    },
+                    "correction": "one"
+                },
+                "output_idx": [
+                    [
+                        69,
+                        69
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The college will arrange a mini - bus to come and pick you up every morning at 8:45 , so you can arrive to the college around 9 o'clock and have some time before the conference starts at 9:15 .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PREP"
+                        }
+                    },
+                    "correction": "for"
+                },
+                "output_idx": [
+                    [
+                        25,
+                        25
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "at"
+                },
+                "output_idx": [
+                    [
+                        104,
+                        107
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "To hear the voice from the person you love is the feelling that hard to describe , it 's wonderful and so real , you can imagine their face clearly .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "of"
+                },
+                "output_idx": [
+                    [
+                        18,
+                        23
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:DET"
+                        }
+                    },
+                    "correction": "a"
+                },
+                "output_idx": [
+                    [
+                        46,
+                        50
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "feeling"
+                },
+                "output_idx": [
+                    [
+                        50,
+                        59
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:VERB"
+                        }
+                    },
+                    "correction": "is"
+                },
+                "output_idx": [
+                    [
+                        64,
+                        64
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PUNCT"
+                        }
+                    },
+                    "correction": ";"
+                },
+                "output_idx": [
+                    [
+                        81,
+                        83
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 5,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PUNCT"
+                        }
+                    },
+                    "correction": ". You"
+                },
+                "output_idx": [
+                    [
+                        111,
+                        117
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Finally , on the last day , I suggest you could go the market at town during the 3-hour gap .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "U:VERB:TENSE"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        42,
+                        48
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PREP"
+                        }
+                    },
+                    "correction": "to"
+                },
+                "output_idx": [
+                    [
+                        51,
+                        51
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "in"
+                },
+                "output_idx": [
+                    [
+                        62,
+                        65
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "During the Second World War all school were demolished only our is left .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        32,
+                        32
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:NOUN:NUM"
+                        }
+                    },
+                    "correction": "schools"
+                },
+                "output_idx": [
+                    [
+                        32,
+                        39
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:CONJ"
+                        }
+                    },
+                    "correction": "and"
+                },
+                "output_idx": [
+                    [
+                        55,
+                        55
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:DET"
+                        }
+                    },
+                    "correction": "ours"
+                },
+                "output_idx": [
+                    [
+                        60,
+                        64
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "On the other hand , if you prefer to have a relaxing day , you could have a pic - nic in the wonderful park .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "picnic"
+                },
+                "output_idx": [
+                    [
+                        76,
+                        86
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "I hope you found thes letter uselfuel and If you have nay question let my know .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "this"
+                },
+                "output_idx": [
+                    [
+                        17,
+                        22
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "useful"
+                },
+                "output_idx": [
+                    [
+                        29,
+                        38
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:ORTH"
+                        }
+                    },
+                    "correction": "if"
+                },
+                "output_idx": [
+                    [
+                        42,
+                        45
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "any"
+                },
+                "output_idx": [
+                    [
+                        54,
+                        58
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:NOUN:NUM"
+                        }
+                    },
+                    "correction": "questions"
+                },
+                "output_idx": [
+                    [
+                        58,
+                        67
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 5,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        67,
+                        67
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 6,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PRON"
+                        }
+                    },
+                    "correction": "me"
+                },
+                "output_idx": [
+                    [
+                        71,
+                        74
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "And the best way to get from there to the conference is to by coach , as there are about 35 internation students , they are all strangers here .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:PREP"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        56,
+                        59
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "international"
+                },
+                "output_idx": [
+                    [
+                        92,
+                        104
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:CONJ"
+                        }
+                    },
+                    "correction": "and"
+                },
+                "output_idx": [
+                    [
+                        115,
+                        115
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "We 'll have drink and food and music for dance .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:WO"
+                        }
+                    },
+                    "correction": "food and drink"
+                },
+                "output_idx": [
+                    [
+                        12,
+                        27
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:NOUN:NUM"
+                        }
+                    },
+                    "correction": "dancing"
+                },
+                "output_idx": [
+                    [
+                        41,
+                        47
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "This is just a relaxing party , just for the members have a chance to relax and make friends .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "so"
+                },
+                "output_idx": [
+                    [
+                        37,
+                        41
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Telephone is very important investigation if we can use it correct without use it as type of entertaiment as they are doing nowadys many people .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "The telephone"
+                },
+                "output_idx": [
+                    [
+                        0,
+                        10
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "a"
+                },
+                "output_idx": [
+                    [
+                        13,
+                        13
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:NOUN"
+                        }
+                    },
+                    "correction": "invention"
+                },
+                "output_idx": [
+                    [
+                        28,
+                        42
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:MORPH"
+                        }
+                    },
+                    "correction": "correctly"
+                },
+                "output_idx": [
+                    [
+                        59,
+                        67
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 5,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:FORM"
+                        }
+                    },
+                    "correction": "using"
+                },
+                "output_idx": [
+                    [
+                        75,
+                        79
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 6,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "a"
+                },
+                "output_idx": [
+                    [
+                        85,
+                        85
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 7,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "entertainment"
+                },
+                "output_idx": [
+                    [
+                        93,
+                        106
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 8,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:PRON"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        109,
+                        114
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 9,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "many people do nowadays"
+                },
+                "output_idx": [
+                    [
+                        114,
+                        144
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "After this invention travel around the world is so much easier .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "With"
+                },
+                "output_idx": [
+                    [
+                        0,
+                        6
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Well , unless there was n't anything wrong with the power supply .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "is"
+                },
+                "output_idx": [
+                    [
+                        20,
+                        28
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:NOUN"
+                        }
+                    },
+                    "correction": "something"
+                },
+                "output_idx": [
+                    [
+                        28,
+                        37
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "I hope I give you enough details .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:TENSE"
+                        }
+                    },
+                    "correction": "have given"
+                },
+                "output_idx": [
+                    [
+                        9,
+                        14
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "It is a good example of a great architecture that was designed to provide services to the public .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:DET"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        24,
+                        26
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "for"
+                },
+                "output_idx": [
+                    [
+                        83,
+                        86
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Think about when the electricity in your house got a short circuit .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:DET"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        51,
+                        53
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:FORM"
+                        }
+                    },
+                    "correction": "circuited"
+                },
+                "output_idx": [
+                    [
+                        59,
+                        67
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "\" Sagrada Familia \" a real holly building .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        20,
+                        20
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "holy"
+                },
+                "output_idx": [
+                    [
+                        27,
+                        33
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "It looks nice and have good meaning .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:SVA"
+                        }
+                    },
+                    "correction": "has"
+                },
+                "output_idx": [
+                    [
+                        18,
+                        23
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The same hotel that will you stay .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "you will be staying"
+                },
+                "output_idx": [
+                    [
+                        20,
+                        34
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PREP"
+                        }
+                    },
+                    "correction": "at"
+                },
+                "output_idx": [
+                    [
+                        34,
+                        34
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The opening time starts from 7.30 AM . till late at night when the theatre is closed .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "It is open"
+                },
+                "output_idx": [
+                    [
+                        0,
+                        24
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "closes"
+                },
+                "output_idx": [
+                    [
+                        75,
+                        85
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Apart from the main Hall , there are also lots of other gallaries .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "galleries"
+                },
+                "output_idx": [
+                    [
+                        56,
+                        66
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Finally I would say that the telephone is very efficient for people .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        8,
+                        8
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "However I suggest you could wear the same outfit as you wear for the conference .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        8,
+                        8
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "U:VERB:TENSE"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        22,
+                        28
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "that"
+                },
+                "output_idx": [
+                    [
+                        49,
+                        52
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "M:VERB:TENSE"
+                        }
+                    },
+                    "correction": "will"
+                },
+                "output_idx": [
+                    [
+                        56,
+                        56
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "First of all , the name of hotel which we have been booked into is Palace Hotel .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        27,
+                        27
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        67,
+                        67
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Yours faithfully ,",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:ADV"
+                        }
+                    },
+                    "correction": "sincerely"
+                },
+                "output_idx": [
+                    [
+                        6,
+                        17
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Finally I would recommend you visited Barkely Square area .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:TENSE"
+                        }
+                    },
+                    "correction": "visit"
+                },
+                "output_idx": [
+                    [
+                        30,
+                        38
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        38,
+                        38
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Lastly the way of communications has been also changed .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:VERB"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        37,
+                        42
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "First of all , the main interest of the museum is the olympic history .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:DET"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        50,
+                        54
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:ORTH"
+                        }
+                    },
+                    "correction": "Olympic"
+                },
+                "output_idx": [
+                    [
+                        54,
+                        62
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Firstly people are able to talk to person on every time . Be it : just for fun or also to discuss some important and relevant thins .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        8,
+                        8
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "a"
+                },
+                "output_idx": [
+                    [
+                        35,
+                        35
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "at"
+                },
+                "output_idx": [
+                    [
+                        42,
+                        45
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:DET"
+                        }
+                    },
+                    "correction": "any"
+                },
+                "output_idx": [
+                    [
+                        45,
+                        51
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PUNCT"
+                        }
+                    },
+                    "correction": ", be"
+                },
+                "output_idx": [
+                    [
+                        56,
+                        61
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 5,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:PUNCT"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        64,
+                        66
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 6,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:ADV"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        82,
+                        87
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 7,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:NOUN"
+                        }
+                    },
+                    "correction": "things"
+                },
+                "output_idx": [
+                    [
+                        126,
+                        132
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Finally at your last day I propose you to do a sightseeing tour in our town .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        8,
+                        8
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "on"
+                },
+                "output_idx": [
+                    [
+                        8,
+                        11
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ","
+                },
+                "output_idx": [
+                    [
+                        25,
+                        25
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:VERB"
+                        }
+                    },
+                    "correction": "suggest"
+                },
+                "output_idx": [
+                    [
+                        27,
+                        35
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "U:VERB:FORM"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        39,
+                        42
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "First of all we need the telephone in our house because it 's important to make call if you need something of if it something happend to your house and nobody is next to you .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "a"
+                },
+                "output_idx": [
+                    [
+                        80,
+                        80
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "or"
+                },
+                "output_idx": [
+                    [
+                        107,
+                        110
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:PRON"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        113,
+                        116
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "happens"
+                },
+                "output_idx": [
+                    [
+                        126,
+                        134
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "with"
+                },
+                "output_idx": [
+                    [
+                        162,
+                        170
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "I look forward hearing from you .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "M:VERB:TENSE"
+                        }
+                    },
+                    "correction": "to"
+                },
+                "output_idx": [
+                    [
+                        15,
+                        15
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Please note that the alchocholich drinks are only sold untill 11 pm .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:DET"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        17,
+                        21
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "alcoholic"
+                },
+                "output_idx": [
+                    [
+                        21,
+                        34
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "until"
+                },
+                "output_idx": [
+                    [
+                        55,
+                        62
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The telephone a very important invention",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": ":"
+                },
+                "output_idx": [
+                    [
+                        14,
+                        14
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PUNCT"
+                        }
+                    },
+                    "correction": "."
+                },
+                "output_idx": [
+                    [
+                        41,
+                        41
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Firstly , the hotel in which the group is going to stay is ' Palace Hotel ' .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        59,
+                        59
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Thank you for your lettre .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "letter"
+                },
+                "output_idx": [
+                    [
+                        19,
+                        26
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "That 's all .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "everything"
+                },
+                "output_idx": [
+                    [
+                        8,
+                        12
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The location of Po Lin Temple is in Lotus Island , which is the second biggest island in Hong Kong .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "on"
+                },
+                "output_idx": [
+                    [
+                        33,
+                        36
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "You should visit there .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:VERB"
+                        }
+                    },
+                    "correction": "go"
+                },
+                "output_idx": [
+                    [
+                        11,
+                        17
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "We are living in a busy world .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:TENSE"
+                        }
+                    },
+                    "correction": "live"
+                },
+                "output_idx": [
+                    [
+                        3,
+                        14
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "It will start by a speech from the Director of the conference , followed by a meal .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PREP"
+                        }
+                    },
+                    "correction": "with"
+                },
+                "output_idx": [
+                    [
+                        14,
+                        17
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "It is a traditional type of chinese temple .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:ORTH"
+                        }
+                    },
+                    "correction": "Chinese"
+                },
+                "output_idx": [
+                    [
+                        28,
+                        36
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "When shopping , we do n't need to wait the Kasse to take every article 's note by hand .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:PREP"
+                        }
+                    },
+                    "correction": "for"
+                },
+                "output_idx": [
+                    [
+                        39,
+                        39
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:NOUN"
+                        }
+                    },
+                    "correction": "cashier"
+                },
+                "output_idx": [
+                    [
+                        43,
+                        49
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Some people might say the electricity more important than another thingh .",
+        "edits": [
+            {
+                "category": "unnecessary",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:DET"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        22,
+                        26
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:VERB"
+                        }
+                    },
+                    "correction": "is"
+                },
+                "output_idx": [
+                    [
+                        38,
+                        38
+                    ]
+                ]
+            },
+            {
+                "category": "missing",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "any"
+                },
+                "output_idx": [
+                    [
+                        58,
+                        58
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 3,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "other"
+                },
+                "output_idx": [
+                    [
+                        58,
+                        66
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 4,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "thing"
+                },
+                "output_idx": [
+                    [
+                        66,
+                        73
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "You can admire every kind of equipments you need to do any particular sport .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:NOUN:NUM"
+                        }
+                    },
+                    "correction": "equipment"
+                },
+                "output_idx": [
+                    [
+                        29,
+                        40
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "So , what did the phone - revolution for us ?",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "has the phone revolution done"
+                },
+                "output_idx": [
+                    [
+                        10,
+                        37
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "Cars , boats , motobikes , airplanes : Who did never use this once ?",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "motorbikes"
+                },
+                "output_idx": [
+                    [
+                        15,
+                        25
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:OTHER"
+                        }
+                    },
+                    "correction": "has never used"
+                },
+                "output_idx": [
+                    [
+                        43,
+                        57
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "R:PRON"
+                        }
+                    },
+                    "correction": "them"
+                },
+                "output_idx": [
+                    [
+                        57,
+                        62
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "It was built by Canovas architect in 1638 .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        16,
+                        16
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:WO"
+                        }
+                    },
+                    "correction": "architect Canovas"
+                },
+                "output_idx": [
+                    [
+                        16,
+                        34
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "The increasing number of cars related and infrastructure are now creeting problems .",
+        "edits": [
+            {
+                "category": "replacement",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "morphology",
+                        "morphology": {
+                            "val": "R:VERB:SVA"
+                        }
+                    },
+                    "correction": "is"
+                },
+                "output_idx": [
+                    [
+                        57,
+                        61
+                    ]
+                ]
+            },
+            {
+                "category": "replacement",
+                "id": 2,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "other",
+                        "other": {
+                            "val": "R:SPELL"
+                        }
+                    },
+                    "correction": "creating"
+                },
+                "output_idx": [
+                    [
+                        65,
+                        74
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "source": "",
+        "target": "I would recommend you get to the conference by subway , because subway station is situated in 5 minutes ' walk from the hotel .",
+        "edits": [
+            {
+                "category": "missing",
+                "id": 0,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "M:DET"
+                        }
+                    },
+                    "correction": "the"
+                },
+                "output_idx": [
+                    [
+                        64,
+                        64
+                    ]
+                ]
+            },
+            {
+                "category": "unnecessary",
+                "id": 1,
+                "metadata": {
+                    "annotator": "0"
+                },
+                "annotation": {
+                    "tier": {
+                        "val": "pos",
+                        "pos": {
+                            "val": "U:PREP"
+                        }
+                    },
+                    "correction": null
+                },
+                "output_idx": [
+                    [
+                        91,
+                        94
+                    ]
+                ]
+            }
+        ]
     }
 ]
