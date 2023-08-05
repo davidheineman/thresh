@@ -28,14 +28,14 @@ edits:
     label: "Word Synonym"
     enable_input: true
     enable_output: true
-    multi_span: true
+    type: multi_span
     color: yellow
     icon: fa-rotate
   - name: phrase_syn
     label: "Phrase Synonym"
     enable_input: true
     enable_output: true
-    multi_span: true
+    type: multi_span
     color: blue
     icon: fa-group-arrows-rotate
   - name: structure
@@ -60,7 +60,7 @@ edits:
   - name: small_change
     label: "Small Change"
     enable_output: true
-    multi_span: true
+    type: multi_span
     color: green
     icon: fa-compress
   - name: hallucination

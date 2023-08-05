@@ -2,7 +2,9 @@
     <img src="./public/img/logo.png" width="400" />
     <!-- <h3 style="margin: 0">thresh.tools: Fine-grained evaluation for text generation</h3> -->
 
-[**Build an Interface**](https://thresh.tools) | [**Video Tutorial**](https://www.youtube.com) | [**Paper**](https://arxiv.org/)
+[**Build an Interface**](https://thresh.tools) | [**Video Tutorial**](#quick_start) | *Paper coming soon!*
+
+<!-- | [**Paper**](https://arxiv.org/) -->
 </div>
 <br />
 <div align="center">
@@ -15,6 +17,8 @@
 
 **thresh.tools** is a platform which makes it easy to create and share fine-grained annotation. It was written specifically for complex annotation of text generation (such as [**Scarecrow**](https://thresh.tools/scarecrow) or [**SALSA**](https://thresh.tools/salsa)) and built to be universal across annotation tasks, quickly customizable and easily deployable.
 
+<a id="quick_start"></a>
+
 ## Quick Start
 Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
 
@@ -23,7 +27,7 @@ Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explana
 ## Getting Started with `thresh.tools`
 
 ### Overview
-`thrash.tools` can be used to [***customize***](#customize) a fine-grained typology, [***deploy***](#deploy) an interface with co-authors, annotators or the research community and [***manage***](#manage) fine-grained annotations using Python. We support each step of the fine-grained annotation lifecycle:
+`thresh.tools` can be used to [***customize***](#customize) a fine-grained typology, [***deploy***](#deploy) an interface with co-authors, annotators or the research community and [***manage***](#manage) fine-grained annotations using Python. We support each step of the fine-grained annotation lifecycle:
 <div align="center">
     <img src="./public/img/lifecycle.png" width="100%" style="max-width: 1000px" />
 </div>
@@ -247,7 +251,7 @@ Looking to expand our language support? See our section on [**contributing**](#l
 
 ## Deploy an Interface
 
-Please reference the "Deploy" modal within our interface for more detail!
+Please reference the "Deploy" modal within [**the interface builder**](https://thresh.tools/) for more detail!
 
 <div align="center">
     <img src="./public/img/docs/deploy.png" width="400" />

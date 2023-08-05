@@ -26,7 +26,6 @@ interface_text:
 edits:
   - name: deletion
     label: "Deletion"
-    type: primitive
     color: red
     icon: fa-delete-left
     enable_input: true
@@ -52,7 +51,6 @@ edits:
         options: binary
   - name: insertion
     label: "Insertion"
-    type: primitive
     color: green
     icon: fa-circle-plus
     enable_output: true
@@ -95,12 +93,11 @@ edits:
         options: binary
   - name: substitution
     label: "Substitution"
-    type: primitive
     color: blue
     icon: fa-sort
     enable_input: true
     enable_output: true
-    multi_span: true
+    type: multi_span
     annotation:
     - name: substitution_info_change
       question: "Compared to the source phrase, the new phrase expresses:"
@@ -176,7 +173,6 @@ edits:
       options: binary
   - name: reorder
     label: "Reorder"
-    type: primitive
     color: teal
     icon: fa-arrows-left-right
     enable_input: true

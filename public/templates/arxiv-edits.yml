@@ -10,7 +10,6 @@ interface_text:
 edits:
   - name: insertion
     label: "Insertion"
-    type: primitive
     color: green
     icon: fa-circle-plus
     enable_input: true
@@ -38,7 +37,6 @@ edits:
         label: "Adjust Format"
   - name: deletion
     label: "Deletion"
-    type: primitive
     color: red
     icon: fa-delete-left
     enable_output: true
@@ -66,7 +64,6 @@ edits:
         label: "Adjust Format"
   - name: substitute
     label: "Substitution"
-    type: primitive
     color: blue
     icon: fa-sort
     enable_input: true

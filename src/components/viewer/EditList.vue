@@ -219,7 +219,7 @@ export default {
 
             if (!edit.hasOwnProperty('input_idx') && !edit.hasOwnProperty('output_idx')) { return new_html }
 
-            if (edit_config['multi_span']) {
+            if (edit_config['type'] == 'multi_span') {
                 if (edit.hasOwnProperty('input_idx')) {
                     let source_spans_for_subs = edit['input_idx']
                     for (let j = 0; j < source_spans_for_subs.length; j++) {

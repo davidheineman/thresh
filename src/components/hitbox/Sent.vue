@@ -234,7 +234,7 @@ export default {
             let edit_html = ''
             const key = edit.category
             
-            if (this.getEditConfig(key)['multi_span']) {
+            if (this.getEditConfig(key)['type'] == 'multi_span') {
                 edit_html += `<span class="edit-type txt-${key}">substitute </span>`;
                 let source_spans = edit['input_idx']
                 for (let j = 0; j < source_spans.length; j++) {

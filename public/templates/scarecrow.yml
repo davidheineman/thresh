@@ -24,7 +24,6 @@ edits:
     color: "#9a9a9a"
     icon: fa-spell-check
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -39,7 +38,6 @@ edits:
     color: "#111"
     icon: fa-calculator
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -54,7 +52,6 @@ edits:
     color: "#4ecc9e"
     icon: fa-brain
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -69,7 +66,6 @@ edits:
     color: "#137752"
     icon: fa-book
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -84,7 +80,6 @@ edits:
     color: "#d93898"
     icon: fa-comment-slash
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -99,7 +94,6 @@ edits:
     color: "#5e2ca5"
     icon: fa-magnifying-glass
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -114,7 +108,6 @@ edits:
     color: "gold"
     icon: fa-x
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"
@@ -129,8 +122,7 @@ edits:
     color: "#e7040f"
     icon: fa-arrows-spin
     enable_output: true
-    multi_span: true
-    type: primitive
+    type: multi_span
     annotation:
       - name: explanation
         label: "Explanation"
@@ -145,8 +137,7 @@ edits:
     color: "#00449e"
     icon: fa-rotate-left
     enable_output: true
-    multi_span: true
-    type: primitive
+    type: multi_span
     annotation:
       - name: explanation
         label: "Explanation"
@@ -161,7 +152,6 @@ edits:
     color: "#ff6300"
     icon: fa-flask
     enable_output: true
-    type: primitive
     annotation:
       - name: explanation
         label: "Explanation"

@@ -114,17 +114,17 @@ export default {
                 'annotation': null
             }
 
-            if (config_category.type == undefined || config_category.type == 'primitive') {
+            if (config_category.type == undefined || config_category.type == 'single_span' || config_category.type == 'multi_span') {
                 if (config_category['enable_input']) {
                     let new_idx = this.selected_state.source_idx
-                    if (!config_category['multi_span']) {
+                    if (!(config_category['type'] == 'multi_span')) {
                         new_idx = [new_idx]
                     }
                     new_span['input_idx'] = new_idx
                 }
                 if (config_category['enable_output']) {
                     let new_idx = this.selected_state.target_idx
-                    if (!config_category['multi_span']) {
+                    if (!(config_category['type'] == 'multi_span')) {
                         new_idx = [new_idx]
                     }
                     new_span['output_idx'] = new_idx
@@ -275,13 +275,13 @@ export default {
                         
             if (edit_config['enable_input']) {
                 new_hit_box_config.enable_select_source_sentence = true;
-                if (edit_config['multi_span']) {
+                if (edit_config['type'] == 'multi_span') {
                     new_hit_box_config.enable_multi_select_source_sentence = true;
                 }
             } 
             if (edit_config['enable_output']) {
                 new_hit_box_config.enable_select_target_sentence = true;
-                if (edit_config['multi_span']) {
+                if (edit_config['type'] == 'multi_span') {
                     new_hit_box_config.enable_multi_select_target_sentence = true;
                 }
             }
@@ -339,7 +339,7 @@ export default {
             // TODO: Support multi-span edits
 
             let filled_out = false
-            if (config_category.type == undefined || config_category.type == 'primitive') {
+            if (config_category.type == undefined || config_category.type == 'single_span'  || config_category.type == 'multi_span') {
                 const src = this.selected_state.source_span, tg = this.selected_state.target_span
                 if (config_category['enable_input'] && config_category['enable_output']) {
                     if (src != null && src != '' && tg != null && tg != '') {

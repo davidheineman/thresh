@@ -29,14 +29,14 @@ def load_interface(typology_dict: str) -> Interface:
         self.entry_class = self.create_entry_class()
 
         # Create classes for each edit
-        primitive_edits = [e for e in self.edits if 'type' not in e.keys() or e['type'] == 'primitive']
+        single_span_edits = [e for e in self.edits if 'type' not in e.keys() or e['type'] == 'single_span']
         composite_edits = [e for e in self.edits if 'type' in e.keys() and e['type'] == 'composite']
 
         self.edit_classes = {}
         self.annotation_classes = {}
 
-        primitive_edit_classes = {k: self.create_edit_class(k) for k in set([e['name'] for e in primitive_edits])}
-        self.edit_classes.update(primitive_edit_classes)
+        single_span_edit_classes = {k: self.create_edit_class(k) for k in set([e['name'] for e in single_span_edits])}
+        self.edit_classes.update(single_span_edit_classes)
 
         composite_edit_classes = {k: self.create_edit_class(k) for k in set([e['name'] for e in composite_edits])}
         self.edit_classes.update(composite_edit_classes)
