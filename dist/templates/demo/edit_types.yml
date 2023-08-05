@@ -49,13 +49,13 @@ edits:
     label: "Multi-span Selection"
     enable_input: true
     enable_output: true
-    multi_span: true
+    type: multi_span
     color: teal
     icon: fa-arrows-turn-to-dots
 
-  # Up until now we've only looked at one "type" of edit: primitive edits. These are edits
+  # Up until now we've only looked at one "type" of edit: single_span edits. These are edits
   # that are directly selected on a sentence. Composite edits are formed by selecting multiple
-  # primitive edits. 
+  # single_span edits. 
   - name: composite
     label: "Composite"
     type: composite

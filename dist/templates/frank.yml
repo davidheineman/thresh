@@ -22,42 +22,34 @@ disable:
 edits:
   - name: RelE
     label: "Relation Error"
-    type: primitive
     color: "#bd3dbf"
     icon: fa-people-arrows
   - name: EntE
     label: "Entity Error"
-    type: primitive
     color: blue
     icon: fa-box
   - name: CircE
     label: "Circumstance Error"
-    type: primitive
     color: teal
     icon: fa-person-falling
   - name: CorefE
     label: "Coreference Error"
-    type: primitive
     color: yellow
     icon: fa-user-minus
   - name: LinkE
     label: "Discourse Link Error"
-    type: primitive
     color: orange
     icon: fa-comment-slash
   - name: OutE
     label: "Out of Article Error"
-    type: primitive
     color: green
     icon: fa-file-export
   - name: GramE
     label: "Grammatical Error"
-    type: primitive
     color: red
     icon: fa-spell-check
   - name: OtherE
     label: "Other Error"
-    type: primitive
     color: grey
     icon: fa-minus
 
