@@ -133,7 +133,7 @@ export default {
                 <a @click="get_example_data">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">View Example Data</button>
                 </a>
-                <a :href="template_link" v-if="this.customize_template_link">
+                <a :href="template_link" v-if="customize_template_link">
                     <button class="pa2 ph3 br-pill-ns ba bw1 grow hit-instructions-btn">Customize this Template</button>
                 </a>
                 <a v-if="config.paper_link" :href="config.paper_link" target="_blank">

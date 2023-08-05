@@ -130,8 +130,8 @@ export default {
             template_name = `https://huggingface.co/datasets/${hfParam.replace('main', 'resolve/main')}`
             this.customize_template_link = template_name
         } else {
-            this.customize_template_link = this.template_path
             template_name = `templates/${this.template_path}.yml`
+            this.customize_template_link = this.template_path
         }
 
         if (this.serverless) {
