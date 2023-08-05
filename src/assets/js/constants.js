@@ -38,23 +38,40 @@ var data = \`
     // var dParameter = "demo_data.json";                               // <- Add data to show up on load!
     // iframeUrl = "https://thresh.tools/?gh=" + encodeURIComponent(ghParameter) + "&d=" + encodeURIComponent(dParameter);
 
-    iframeUrl = "https://thresh.tools/custom"
-
-    var iframe = document.createElement('iframe');
-    iframe.src = iframeUrl;
-    iframe.id = 'iframe';
-    Object.assign(iframe.style, {
-        position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', border: 'none'
-    });
-    document.body.appendChild(iframe);
+    const targetOrigin = 'https://thresh.tools';
+    const retryInterval = 2000;
 
     // Sends our interface & data to the iframe
-    $('#iframe').on("load", function() {
-      $('#iframe')[0].contentWindow.postMessage({
-        template: template,
-        data: data
-      }, 'https://thresh.tools');
-    })
+    function postMessageWithRetry(template, data) {
+      const maxRetryAttempts = 2; 
+      let retryCount = 0;
+
+      function tryPostMessage() {
+        try {
+          const response = $('#iframe')[0].contentWindow.postMessage({ template: template, data: data }, targetOrigin);
+        } catch (error) {
+          console.error('Error sending postMessage:', error);
+        }
+
+        if (retryCount < maxRetryAttempts) {
+          retryCount++;
+          console.warn('Retrying in ' + retryInterval + ' milliseconds (attempt ' + retryCount + '}).');
+          setTimeout(tryPostMessage, retryInterval);
+        }
+      }
+
+      tryPostMessage();
+    }
+
+    // Create the iframe
+    var iframe = $('<iframe>', {
+      src: targetOrigin + '/custom',
+      id: 'iframe',
+    }).on("load", function() {
+      setTimeout(postMessageWithRetry(template, data), retryInterval);
+    }).css({ position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', border: 'none' });
+
+    $('body').append(iframe);
   </script>
 </html>
 `;

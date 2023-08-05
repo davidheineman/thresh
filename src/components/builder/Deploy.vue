@@ -14,9 +14,7 @@ export default {
         return {
             active_tab: 'serverless',
             packaged_data: '',
-            dataEditor: null,
-            
-            iframe_demo_text: `ADD CODE`
+            dataEditor: null
         };
     },
     props: [
