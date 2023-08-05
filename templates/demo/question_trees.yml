@@ -123,17 +123,6 @@ edits:
         label: "Additional Question"
         options: binary
 
-  # Now, let's showcase a complex annotation tree
-  - name: complex_tree
-    label: "Complex Tree"
-    enable_output: true
-    color: yellow
-    icon: fa-tree
-    annotation: 
-      - name: TODO
-        options: binary
-    
-
 # ========================================================================================
 # ========================================================================================
 

@@ -21,7 +21,6 @@ edits:
     color: red
     icon: fa-check
     enable_output: true  
-    type: primitive
     annotation:
       - name: accuracy_type
         question: "Select the accuracy problem."
@@ -46,8 +45,7 @@ edits:
     label: "Fluency"
     color: teal
     icon: fa-comment-slash
-    enable_output: true  
-    type: primitive 
+    enable_output: true   
     annotation:
       - name: fluency_type
         question: "Select the fluency problem."
@@ -76,8 +74,7 @@ edits:
     label: "Locale Convention"
     color: yellow
     icon: fa-people-arrows 
-    enable_output: true  
-    type: primitive 
+    enable_output: true   
     annotation:
       - name: locale_convention_type
         question: "Select the convention problem."
@@ -102,8 +99,7 @@ edits:
     label: "Style"
     color: orange
     icon: fa-person-drowning 
-    enable_output: true  
-    type: primitive 
+    enable_output: true   
     annotation:
       - name: akward_type
         label: "Severity"
@@ -113,8 +109,7 @@ edits:
     label: "Terminology"
     color: green
     icon: fa-flask
-    enable_output: true  
-    type: primitive 
+    enable_output: true   
     annotation:
       - name: terminology_type
         question: "Select the Terminology problem."
@@ -131,8 +126,7 @@ edits:
     label: "Non-translation"
     color: blue
     icon: fa-xmark
-    enable_output: true  
-    type: primitive 
+    enable_output: true   
     annotation:
       - name: non_translation_type
         label: "Severity"
@@ -142,8 +136,7 @@ edits:
     label: "Other"
     color: grey
     icon: fa-ellipsis
-    enable_output: true  
-    type: primitive 
+    enable_output: true   
     annotation:
       - name: other_type
         label: "Severity"
