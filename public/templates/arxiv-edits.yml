@@ -12,7 +12,7 @@ edits:
     label: "Insertion"
     color: green
     icon: fa-circle-plus
-    enable_input: true
+    enable_output: true
     annotation:
     - name: intention
       question: "What is the intention of the edit?"
@@ -39,7 +39,7 @@ edits:
     label: "Deletion"
     color: red
     icon: fa-delete-left
-    enable_output: true
+    enable_input: true
     annotation:
     - name: intention
       question: "What is the intention of the edit?"
