@@ -386,7 +386,7 @@ original_data = convert_dataset(
 
 We support conversion for the following datasets:
 ```
-frank, scarecrow, mqm, snac, wu-etal-2023, da-san-martino-etal-2019
+frank, scarecrow, mqm, snac, fg-rlhf, propaganda
 ```
 
 ### Demo Data Sources
@@ -400,9 +400,9 @@ In the table below you can find all the original data for each interface. For ou
 | MQM | [🔗](https://github.com/google/wmt-mqm-human-evaluation) | [**thresh.tools/mqm**](https://thresh.tools/mqm) | `mqm_newstest2020_ende.tsv` |
 | SALSA | [🔗](https://github.com/davidheineman/salsa) | [**thresh.tools/salsa**](https://thresh.tools/salsa) | `salsa_test.json` |
 | SNaC | [🔗](https://github.com/tagoyal/snac) | [**thresh.tools/snac**](https://thresh.tools/snac) | `SNaC_data.json` |
-| arXivEdits | [🔗](https://github.com/chaojiang06/arXivEdits) | [**thresh.tools/arxiv-edits**](https://thresh.tools/arxiv-edits) | `test.json` |
-| Wu et al., 2023 | [🔗](https://github.com/allenai/FineGrainedRLHF) | [**thresh.tools/wu-etal-2023**](https://thresh.tools/wu-etal-2023) | `dev_feedback.json` |
-| Da San Martino et al., 2019 | [🔗](https://propaganda.qcri.org/) | [**thresh.tools/da-san-martino-etal-2019**](https://thresh.tools/da-san-martino-etal-2019) | `test/article<X>.labels.tsv` |
+| arXivEdits | [🔗](https://github.com/chaojiang06/arXivEdits) | [**thresh.tools/arxivedits**](https://thresh.tools/arxivedits) | `test.json` |
+| Wu et al., 2023 | [🔗](https://github.com/allenai/FineGrainedRLHF) | [**thresh.tools/fg-rlhf**](https://thresh.tools/fg-rlhf) | `dev_feedback.json` |
+| Da San Martino et al., 2019 | [🔗](https://propaganda.qcri.org/) | [**thresh.tools/propaganda**](https://thresh.tools/propaganda) | `test/article<X>.labels.tsv` |
 
 We do not create dataloaders for the following interfaces:
 
@@ -469,7 +469,7 @@ When you are finished, please submit a [**pull request**](https://docs.github.co
 Clone this repo: 
 ```sh
 git clone https://github.com/davidheineman/thresh.tools.git
-cd data_tools\src
+cd data_tools
 ```
 
 Make any changes to the library and push to PyPi:

@@ -268,7 +268,7 @@ YourInterface.export_data(
                 <p>Then you can send directly to annotators, or upload to your own server.</p>
                 <hr />
                 <h3>Learn more</h3>
-                <p>Check out our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/load_data.ipynb'>example notebook →</a> which details each feature of the <code>thresh</code>, including using the custom <code>thresh</code> data classes.</p>
+                <p>Check out our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/load_data.ipynb'>example notebook →</a> which details each feature of the <code>thresh</code> library, including using the custom <code>thresh</code> data classes.</p>
                 <!-- <h3>(Optional) Integrate with HuggingFace Transformers</h3>
                 <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p> -->
             </Tab>

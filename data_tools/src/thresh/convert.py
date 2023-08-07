@@ -2,7 +2,7 @@ from .util import verify_exists
 import csv, json, os, copy, logging, importlib
 
 utils_path = "datasets"
-folder_based_datasets = ["da-san-martino-etal-2019"]
+folder_based_datasets = ["propaganda"]
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)

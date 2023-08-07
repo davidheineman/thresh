@@ -1,4 +1,4 @@
-template_name: wu-etal-2023
+template_name: fg-rlhf
 template_label: Wu et al., 2023
 template_description: Fine-grained human feedback typology introduced by Wu et al., 2023 for RLHF
 
