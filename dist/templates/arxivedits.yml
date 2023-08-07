@@ -1,4 +1,4 @@
-template_name: arxiv-edits
+template_name: arxivedits
 template_label: arXivEdits
 template_description: Understanding the Human Revision Process in Scientific Writing
 
@@ -12,7 +12,7 @@ edits:
     label: "Insertion"
     color: green
     icon: fa-circle-plus
-    enable_input: true
+    enable_output: true
     annotation:
     - name: intention
       question: "What is the intention of the edit?"
@@ -39,7 +39,7 @@ edits:
     label: "Deletion"
     color: red
     icon: fa-delete-left
-    enable_output: true
+    enable_input: true
     annotation:
     - name: intention
       question: "What is the intention of the edit?"
