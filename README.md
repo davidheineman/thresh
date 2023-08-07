@@ -419,7 +419,7 @@ We do not create dataloaders for the following interfaces:
 ### Set Up `thresh.tools` Locally
 Clone this repo: 
 ```sh
-git clone https://github.com/davidheineman/thresh.tools.git
+git clone https://github.com/davidheineman/thresh.git
 ```
 
 Set up Vue: 
@@ -468,7 +468,7 @@ When you are finished, please submit a [**pull request**](https://docs.github.co
 ### Set Up the `thresh` Python Library
 Clone this repo: 
 ```sh
-git clone https://github.com/davidheineman/thresh.tools.git
+git clone https://github.com/davidheineman/thresh.git
 cd data_tools
 ```
 
