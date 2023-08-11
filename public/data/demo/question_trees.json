@@ -91,17 +91,6 @@
                         95
                     ]
                 ]
-            },
-            {
-                "category": "complex_tree",
-                "id": 1,
-                "annotation": {},
-                "output_idx": [
-                    [
-                        96,
-                        124
-                    ]
-                ]
             }
         ],
         "_interface_id": 1
