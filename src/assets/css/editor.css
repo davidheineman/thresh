@@ -22,6 +22,7 @@
 
 .header {
     /* height: 50px; */
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-gap: 10px;

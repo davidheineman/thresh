@@ -62,7 +62,7 @@ export default {
                 this.target_html = this.render_sentence(sent, sent_type, span_class, null);
             } catch (e) {
                 this.target_html = ''
-                console.error(e)
+                console.warn(e)
             }
         },
         process_target_html_with_selected_span(category) {
@@ -74,7 +74,7 @@ export default {
                 this.target_html = this.render_sentence(sent, sent_type, span_class, category);
             } catch (e) {
                 this.target_html = ''
-                console.error(e)
+                console.warn(e)
             }
         },
         // TOOD: I removed the hover span code, but there were some edge cases in there for split edits

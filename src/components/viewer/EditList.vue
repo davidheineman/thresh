@@ -349,22 +349,14 @@ export default {
         },
         clear_lines: function() {
             // Remove existing lines as defined by LeaderLine
-            let old_lines = this.lines
-            for (let category in old_lines) {
-                for (let i in old_lines[category]) {
-                    if (old_lines[category][i] instanceof Array) {
-                        for (let j in old_lines[category][i]) {
-                            if (old_lines[category][i][j] != null) {
-                                old_lines[category][i][j].remove()
-                            }
-                            old_lines[category][i][j] = null
-                        }
-                    } else {
-                        if (old_lines[category][i] != null) {
-                            old_lines[category][i].remove()
-                        }
-                        old_lines[category][i] = null
-                    }
+            const lines_list = [].concat(...Object.values(this.lines).map(e => Object.values(e)));
+            for (let line of lines_list) {
+                if (line instanceof Array) {
+                    Object.values(line).forEach(l => {
+                        try {l.remove()} catch (e) { console.warn(e) }
+                    });
+                } else {
+                    try { line.remove() } catch (e) { console.warn(e) }
                 }
             }
             $('.leader-line').remove();
@@ -402,15 +394,15 @@ export default {
                 }
                 line_config.color = color
 
-                if (edit_config['type'] == 'composite') {
-                    for (let constituent_edit of edit['constituent_edits']) {
-                        new_lines[key][id] = []
-                        const cid = constituent_edit['id']
-                        const ccategory = constituent_edit['category']
-                        const constituent_edit_config = this.getEditConfig(ccategory)
+                try {
+                    if (edit_config['type'] == 'composite') {
+                        for (let constituent_edit of edit['constituent_edits']) {
+                            new_lines[key][id] = []
+                            const cid = constituent_edit['id']
+                            const ccategory = constituent_edit['category']
+                            const constituent_edit_config = this.getEditConfig(ccategory)
 
-                        if (constituent_edit_config['enable_input'] && constituent_edit_config['enable_output']) {
-                            try {
+                            if (constituent_edit_config['enable_input'] && constituent_edit_config['enable_output']) {
                                 new_lines[key][id].push(
                                     LeaderLine.setLine(
                                         $(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
@@ -418,37 +410,37 @@ export default {
                                         line_config
                                     )
                                 )
-                            } catch (e) { console.warn(e) }
+                            }
                         }
-                    }
-                } else if (edit_config['enable_input'] && edit_config['enable_output']) {
-                    if ($(`.${key}.source_span`)[0] == null) {
-                        console.error("Something went wrong!")
-                    }
+                    } else if (edit_config['enable_input'] && edit_config['enable_output']) {
+                        if ($(`.${key}.source_span`)[0] == null) {
+                            console.warn("Something went wrong!")
+                        }
 
-                    new_lines[key][id] = LeaderLine.setLine(
-                        $(`.${key}.source_span[data-id='${key}-${id}']`)[0],
-                        $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
-                        line_config
-                    )
-                    
-                    // My attempt to fix line drawing in builder via mutation observers
-                    // var draw_lines = this.draw_lines
-                    // const targetElement = $(`.${key}.source_span[data-id='${key}-${id}']`)[0]
-                    // let initialRect = targetElement.getBoundingClientRect();
-                    // function checkPositionChange() {
-                    //     const currentRect = targetElement.getBoundingClientRect();
-                    //     if (currentRect.x !== initialRect.x || currentRect.y !== initialRect.y) {
-                    //         draw_lines()
-                    //         initialRect = currentRect;
-                    //     }
-                    // }
-                    // const observer = new MutationObserver(() => {
-                    //     checkPositionChange();
-                    // });
-                    // observer.observe(targetElement, { attributes: true });
-                    // $('#sandbox')[0].addEventListener('scroll', checkPositionChange);
-                }
+                        new_lines[key][id] = LeaderLine.setLine(
+                            $(`.${key}.source_span[data-id='${key}-${id}']`)[0],
+                            $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
+                            line_config
+                        )
+                        
+                        // My attempt to fix line drawing in builder via mutation observers
+                        // var draw_lines = this.draw_lines
+                        // const targetElement = $(`.${key}.source_span[data-id='${key}-${id}']`)[0]
+                        // let initialRect = targetElement.getBoundingClientRect();
+                        // function checkPositionChange() {
+                        //     const currentRect = targetElement.getBoundingClientRect();
+                        //     if (currentRect.x !== initialRect.x || currentRect.y !== initialRect.y) {
+                        //         draw_lines()
+                        //         initialRect = currentRect;
+                        //     }
+                        // }
+                        // const observer = new MutationObserver(() => {
+                        //     checkPositionChange();
+                        // });
+                        // observer.observe(targetElement, { attributes: true });
+                        // $('#sandbox')[0].addEventListener('scroll', checkPositionChange);
+                    }
+                } catch (e) { console.warn(e) }
             }
 
             // TODO: This is essentially code which points from split edits to other edits
@@ -506,9 +498,22 @@ export default {
             this.set_lines(new_lines)
             this.line_locked = false
         },
+        reposition_lines() {
+            // this.draw_lines()
+            const lines_list = [].concat(...Object.values(this.lines).map(e => Object.values(e)));
+            for (let line of lines_list) {
+                if (line instanceof Array) {
+                    Object.values(line).forEach(l => {
+                        try {l.position()} catch (e) { console.warn(e) }
+                    });
+                } else {
+                    try { line.position() } catch (e) { console.warn(e) }
+                }
+            }
+        },
         // TODO: Implement these via referencing using jquery
         hover_span() {},
-        un_hover_span() {},
+        un_hover_span() {}
     },
     computed: {
         get_edits_html() {
@@ -524,11 +529,22 @@ export default {
         }
     },
     created() {
-        window.addEventListener("resize", this.draw_lines);
+        $(window).on("resize", this.reposition_lines);
+
+        if ($('#sandbox').length) {
+            $("#sandbox").on("scroll", this.reposition_lines);
+            $("#sandbox").on("resize", this.reposition_lines);
+            const sandboxObserver = new ResizeObserver(entries => {
+                for (const e of entries) {
+                    if (e.target.id === 'sandbox') { this.reposition_lines() }
+                }
+            });
+            sandboxObserver.observe(document.getElementById('sandbox'));
+        }
     },
-    destroyed() {
-        window.removeEventListener("resize", this.draw_lines);
-    },
+    // destroyed() {
+    //     window.removeEventListener("resize", this.reposition_lines);
+    // },
 }
 </script>
 

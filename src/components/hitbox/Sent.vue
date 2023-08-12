@@ -384,7 +384,6 @@ export default {
                         i++;
                         edit = edits[i]
                         next_edit = edits[i + 1]
-
                     } else {
                         next_edit = edits[i + 1]
                         sentence_html += `

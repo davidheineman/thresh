@@ -57,7 +57,7 @@ export default {
                 this.process_source_html_with_selected_span(null);
             } catch (e) {
                 this.source_html = ''
-                console.error(e)
+                console.warn(e)
             }
         },
         process_source_html_with_selected_span(category) {
@@ -69,7 +69,7 @@ export default {
                 this.source_html = this.render_sentence(sent, sent_type, span_class, category);
             } catch (e) {
                 this.source_html = ''
-                console.error(e)
+                console.warn(e)
             }
         },
         select_source_html() {
