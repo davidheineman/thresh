@@ -1,5 +1,8 @@
 import json, csv, os, copy, random, logging
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+
 category_map = {
     'Loaded_Language': 'loaded_language',
     'Name_Calling,Labeling': 'name_calling',
@@ -34,6 +37,8 @@ def convert_entry_forward(filename):
     text_filename = f'{filename}.txt'
     annotations = load_propaganda(label_filename)
 
+    article_id = int(os.path.basename(filename).replace('article', ''))
+
     with open(text_filename, "r", encoding='utf-8') as f:
         article = f.read()
 
@@ -49,6 +54,9 @@ def convert_entry_forward(filename):
     return {
         'source': '',
         'target': article,
+        'metadata': {
+            'article_id': article_id
+        },
         'edits': edits
     }
 
@@ -67,3 +75,43 @@ def convert_data_forward(data_path, limit=None):
         ported_data += [convert_entry_forward(filename)]
 
     return ported_data
+
+def convert_entry_backward(sent):
+    labels = []
+    for edit in sent['edits']:
+        labels += [[
+            reverse_category_map[edit['category']],
+            edit['output_idx'][0][0],
+            edit['output_idx'][0][1]
+        ]]
+
+    return {
+        'labels': labels,
+        'article': sent['target'],
+        'id': sent['metadata']['article_id']
+    }
+
+def convert_data_backward(data_path, output_path, limit=None):
+    with open(data_path, "r", encoding='utf-8') as f:
+        data = json.load(f)
+
+    ported_data = [convert_entry_backward(sent) for sent in data]
+
+    logger.info(f"Saving to the {output_path} folder...")
+
+    if not os.path.isdir(output_path):
+        raise ValueError(f"Propaganda saves a folder of files for each article, recieved {output_path}")
+
+    for entry in ported_data:
+        i = entry['id']
+        logger.info(f"Saving article {i} to {output_path}article{i}...")
+
+        with open(os.path.join(output_path, f"article{i}.txt"), 'w', encoding='utf-8') as f:
+            f.write(entry['article'])
+
+        for j, label in enumerate(entry['labels']):
+            entry['labels'][j] = [i] + label
+
+        with open(os.path.join(output_path, f"article{i}.labels.tsv"), mode='w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f, delimiter='\t')
+            writer.writerows(entry['labels'])

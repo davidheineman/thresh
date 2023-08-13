@@ -9,6 +9,9 @@ severity_map = {
 }
 reverse_severity_map = {v: k for k, v in severity_map.items()}
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+
 def convert_entry_forward(matching_sentences):
     new_sent = {}
     sources, targets = [s['source'] for s in matching_sentences], [s['target'] for s in matching_sentences]
@@ -127,3 +130,22 @@ def convert_data_forward(data_path, limit=None):
                 ported_data += [new_sent]
 
     return ported_data
+
+def convert_data_backward(data_path, output_path, limit=None):
+    with open(data_path, "r", encoding='utf-8') as f:
+        data = json.load(f)
+
+    base_name, extension = os.path.splitext(output_path)
+    if extension.lower() != ".tsv":
+        raise ValueError(f"File extension should be '.tsv', recieved {output_path}")
+
+    logger.info(f"Saving to {output_path}...")
+
+    raise NotImplementedError()
+
+    headers = []
+    ported_data = []
+    with open(output_path, mode='w', newline='') as f:
+        writer = csv.writer(f, delimiter='\t')
+        writer.writerow(headers)
+        writer.writerows(ported_data)

@@ -32,6 +32,25 @@ class Annotation:
     def __repr__(self) -> str:
         return self.__str__()
 
+    def to_dict(self) -> dict:
+        converted_annotation = {}
+
+        for k, v in self.__dict__.items():
+            new_value = v
+            if isinstance(v, Annotation):
+                subannotation_name = v.__annotationname__()
+                new_value = {
+                    'val': subannotation_name,
+                    subannotation_name: v.to_dict()
+                }
+                if isinstance(new_value[subannotation_name]['val'], str) and new_value[subannotation_name]['val'] in value_map.keys():
+                    new_value[subannotation_name] = new_value[subannotation_name]['val']
+            elif v in reverse_value_map.keys():
+                new_value = reverse_value_map[v]
+            converted_annotation.update({k: new_value})
+
+        return converted_annotation
+
 
 class Edit:
     def __init__(self, **kwargs):
@@ -44,6 +63,18 @@ class Edit:
 
     def __repr__(self) -> str:
         return self.__str__()
+
+    def to_dict(self) -> dict:
+        converted_edit = {k: getattr(self, k) for k in self.__dict__.keys() if k not in ['annotation', 'constituent_edits']}
+        converted_edit.update({'category': self.__editname__()})
+
+        if hasattr(self, 'annotation'):
+            converted_edit.update({'annotation': self.annotation.to_dict()})
+
+        if hasattr(self, 'constituent_edits'):
+            converted_edit.update({'constituent_edits': [e.to_dict() for e in self.constituent_edits]})
+            
+        return converted_edit
 
     def flatten() -> None:
         raise NotImplementedError()
@@ -61,6 +92,27 @@ class Entry:
     def __repr__(self) -> str:
         return self.__str__()
 
+    def to_dict(self) -> dict:
+        excluded_cols = excluded_sent_cols
+        if hasattr(self, '__metakeys__'):
+            excluded_cols += self.__metakeys__()
+
+        # Add sentence-level data
+        converted_sent = {k: getattr(self, k) for k in self.__dict__.keys() if k not in excluded_cols}
+        
+        # Add metadata
+        if hasattr(self, '__metakeys__'):
+            converted_sent.update({'metadata': {k: getattr(self, k) for k in self.__metakeys__()}})
+
+        # Add edits
+        if hasattr(self, 'edits') and self.edits is not None:
+            converted_edits = []
+            for edit in self.edits:
+                converted_edits += [edit.to_dict()]
+            converted_sent.update({'edits': converted_edits})
+
+        return converted_sent
+
 
 class Interface:
     def __init__(self, **kwargs):
@@ -75,7 +127,10 @@ class Interface:
         return self.__str__()
 
     def to_dict(self, data: List[Entry]) -> dict:
-        return {}
+        """
+        Convert interface data back to a json for export.
+        """
+        return [entry.to_dict() for entry in data]
 
     def load_annotations(self, data_or_filename: Union[str, dict]) -> List[Entry]:
         """
@@ -154,7 +209,11 @@ class Interface:
                     raise ValueError(f"Missing key '{key}'. Keys as defined by the '{interface_name}' interface are: {all_keys}")
             for key, value in kwargs.items():
                 setattr(self, key, value)
-        return type(f'{class_name}Entry', (Entry,), {"__init__": custom_init})
+
+        def __metakeys__(self) -> List[str]:
+            return get_meta_keys(data)
+
+        return type(f'{class_name}Entry', (Entry,), {"__init__": custom_init, "__metakeys__": __metakeys__})
 
     def create_edit_class(self, name: str) -> Edit:
         """
@@ -205,7 +264,10 @@ class Interface:
             if 'annotation' in kwargs.keys() and kwargs['annotation'] is not None:
                 self.annotation = annotation_class(**kwargs['annotation'])
 
-        return type(f'{class_name}Edit', (Edit,), {"__init__": custom_init})
+        def __editname__(self) -> str:
+            return name
+
+        return type(f'{class_name}Edit', (Edit,), {"__init__": custom_init, "__editname__": __editname__})
 
     def create_annotation_class(self, name: str, annotation_declaration: dict) -> Annotation:
         """
@@ -224,6 +286,9 @@ class Interface:
             for child_option in child_declaration['options']:
                 child_subclasses[child_key][child_option['name']] = self.create_annotation_subclass(child_option['name'], child_option)
             
+        def __annotationname__(self) -> str:
+            return name
+
         def custom_init(self, **kwargs):
             for key in all_keys:
                 if key not in kwargs.keys():
@@ -239,7 +304,7 @@ class Interface:
                     if isinstance(value, str) and value in value_map.keys(): value = value_map[value]
                     setattr(self, key, value)
 
-        return type(f'{class_name}Annotation', (Edit,), {"__init__": custom_init})
+        return type(f'{class_name}Annotation', (Annotation,), {"__init__": custom_init, "__annotationname__": __annotationname__})
 
     def create_annotation_subclass(self, name: str, annotation_declaration: dict) -> Annotation:
         """
@@ -259,6 +324,9 @@ class Interface:
                 child_declaration = [o for o in annotation_declaration['options'] if o['name'] == child_key][0]
                 child_subclasses[child_key] = self.create_annotation_subclass(child_key, child_declaration)
             
+        def __annotationname__(self) -> str:
+            return name
+
         def custom_init(self, **kwargs):
             if "val" not in kwargs.keys():
                 logger.warn(f"Missing key 'val' from annotation '{kwargs}' for sub-annotation: {name}")
@@ -271,7 +339,7 @@ class Interface:
                 if isinstance(value, str) and value in value_map.keys(): value = value_map[value]
                 setattr(self, "val", value)
 
-        return type(f'{class_name}', (Edit,), {"__init__": custom_init})
+        return type(f'{class_name}', (Annotation,), {"__init__": custom_init, "__annotationname__": __annotationname__})
 
     def get_edit_class(self, name: str) -> Edit:
         return self.edit_classes[name]
@@ -298,4 +366,4 @@ class Interface:
         converted_data = self.to_dict(data)
 
         with open(output_filename, 'w') as f:
-            json.dump(converted_data, f, indent=4)
+            json.dump(converted_data, f, indent=2)
