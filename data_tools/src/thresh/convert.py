@@ -24,33 +24,33 @@ def convert_dataset(dataset_name: str, data_path: str, reverse: bool=False, outp
     
     try:
         dataset_module = importlib.import_module(f"thresh.{utils_path}.{dataset_name}")
-        logger.info("Converting dataset...")
-        if reverse:
-            if output_path == None:
-                raise ValueError('Must specify an output path when saving reverse data.')
-            if not os.path.exists(os.path.dirname(output_path)):
-                os.makedirs(os.path.dirname(output_path))
-            converted_data = dataset_module.convert_data_backward(data_path, output_path)
-            logger.info(f"Done!")
-            return
-        else:
-            converted_data = dataset_module.convert_data_forward(data_path, limit=limit)
-            logger.info("Done!")
-            
-            if output_path is None:
-                return converted_data
-
-            logger.info(f"Saving to {output_path}...")
-            if not os.path.exists(os.path.dirname(output_path)):
-                os.makedirs(os.path.dirname(output_path))
-            with open(output_path, 'w') as f:
-                json.dump(converted_data, f, indent=4)
-            return converted_data
     except ImportError:
         error_value = f"Dataset '{dataset_name}' is not supported. {supported_datasets()}"
         logger.error(error_value)
         raise ValueError(error_value)
 
+    logger.info("Converting dataset...")
+    if reverse:
+        if output_path == None:
+            raise ValueError('Must specify an output path when saving reverse data.')
+        if not os.path.exists(os.path.dirname(output_path)) and os.path.dirname(output_path) != '':
+            os.makedirs(os.path.dirname(output_path))
+        converted_data = dataset_module.convert_data_backward(data_path, output_path)
+        logger.info(f"Done!")
+        return
+    else:
+        converted_data = dataset_module.convert_data_forward(data_path, limit=limit)
+        logger.info("Done!")
+        
+        if output_path is None:
+            return converted_data
+
+        logger.info(f"Saving to {output_path}...")
+        if not os.path.exists(os.path.dirname(output_path)) and os.path.dirname(output_path) != '':
+            os.makedirs(os.path.dirname(output_path))
+        with open(output_path, 'w') as f:
+            json.dump(converted_data, f, indent=4)
+        return converted_data
 
 def supported_datasets():
     if not os.path.exists(utils_path):

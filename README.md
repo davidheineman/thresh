@@ -331,7 +331,7 @@ To prepare a dataset for annotation, simply export your `List[Annotation]` objec
 # Export data to <file_name>.json for annotation
 YourInterface.export_data(
     data=thresh_data,
-    filename="<file_name>.json"
+    output_filename="<file_name>.json"
 )
 ```
 
@@ -373,20 +373,22 @@ from thresh import convert_dataset
 # To convert to the thresh.tools standardized format:
 thresh_data = convert_dataset(
     data_path="<path_to_original_data>", 
-    dataset="<dataset_name>"
+    output_path="<path_to_output_data>.json", # (Optional) Will save data locally
+    dataset_name="<dataset_name>"
 )
 
 # To convert back to the original format:
 original_data = convert_dataset(
-    data=thresh_data, 
-    dataset="<dataset_name>", 
+    data_path="<path_to_original_data>.json", 
+    output_path="<path_to_output_data>",
+    dataset_name="<dataset_name>", 
     reverse=True
 )
 ```
 
 We support conversion for the following datasets:
 ```
-frank, scarecrow, mqm, snac, fg-rlhf, propaganda
+frank, scarecrow, mqm, snac, fg-rlhf, propaganda, arxivedits
 ```
 
 ### Demo Data Sources
