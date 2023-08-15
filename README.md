@@ -22,7 +22,7 @@
 ## Quick Start
 Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explanation of how our interface creation works!
 
-https://github.com/davidheineman/thresh.tools/assets/9833172/c0ff22bf-1220-4a80-85d6-e7e8824a148f
+https://github.com/davidheineman/thresh/assets/9833172/6138408a-1650-42ec-8588-0affb5c98eb5
 
 ## Getting Started with `thresh.tools`
 
