@@ -2,7 +2,7 @@
     <img src="./public/img/logo.png" width="400" />
     <!-- <h3 style="margin: 0">thresh.tools: Fine-grained evaluation for text generation</h3> -->
 
-[**Build an Interface**](https://thresh.tools) | [**Video Tutorial**](#quick_start) | *Paper coming soon!*
+[**Build an Interface**](https://thresh.tools) | [**Video Tutorial**](#quick_start) | [**Paper**](https://arxiv.org/abs/2308.06953)
 
 <!-- | [**Paper**](https://arxiv.org/) -->
 </div>
@@ -482,9 +482,12 @@ python -m twine upload --repository pypi dist/*
 ```
 
 ## Cite `thresh.tools`
-If you find our library helpful, please consider citing our work:
+If you find our library helpful, please consider citing [**our work**](https://arxiv.org/abs/2308.06953):
 ```
-@citation{
-    coming soon!
+@article{heineman2023thresh,
+  title={Thresh: A Unified, Customizable and Deployable Platform for Fine-Grained Text Evaluation},
+  author={Heineman, David and Dou, Yao and and Xu, Wei},
+  journal={arXiv preprint arXiv:2308.06953},
+  year={2023}
 }
 ```
