@@ -19,6 +19,9 @@ interface_text:
 disable:
 - annotation
 
+display:
+- side-by-side
+
 edits:
   - name: RelE
     label: "Relation Error"
