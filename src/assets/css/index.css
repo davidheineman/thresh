@@ -384,13 +384,14 @@ span.middleside {
     max-height: 97vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-bottom: 75vh;
 }
 
 .annotation-adjacent {
     padding-right: 16px;
 }
 
-.selection-adjacent::-webkit-scrollbar {
+.selection-adjacent::-webkit-scrollbar, .annotation-adjacent::-webkit-scrollbar {
     display: none
 }
 
