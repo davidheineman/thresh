@@ -7,10 +7,7 @@
 
   import tinycolor from 'tinycolor2';
   import _ from 'lodash';
-  import jsyaml from 'js-yaml';
-
   import { COLORS } from '../../assets/js/constants.js';
-  import { download_config } from "../../assets/js/file-util.js";
 </script>
 
 <script>
@@ -228,6 +225,9 @@
           }
 
           return css
+        },
+        isAdjacent() {
+          return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('side-by-side')
         }
     },
     updated() {
@@ -247,16 +247,22 @@
 </script>
 
 <template>
-  <div v-if="config != null" class="container w-65 mb0 card-body">
+  <div v-if="config != null" class="container w-65 mb0 card-body" v-bind:class="{ 'w-adjacent': isAdjacent() }">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
     <div v-if="highlight" class="tc f3 b mb3 mt3 adjudication-highlight">
       {{ config.interface_text.adjudication.highlight_label }}
     </div>
-    <Instructions v-bind="$data" :config="config" />
-    <!-- <CommentBox v-bind="$data" :config="config" /> -->
-    <HitBox v-bind="$data" :config="config" />
-    <AnnotationEditor v-bind="$data" :config="config" />
-    <AnnotationViewer v-bind="$data" :config="config" />
+    <main v-bind:class="{ 'adjacent': isAdjacent() }">
+      <div v-bind:class="{ 'selection-adjacent': isAdjacent() }">
+        <Instructions v-bind="$data" :config="config" />
+        <!-- <CommentBox v-bind="$data" :config="config" /> -->
+        <HitBox v-bind="$data" :config="config" />
+      </div>
+      <div v-bind:class="{ 'annotation-adjacent': isAdjacent() }">
+        <AnnotationEditor v-bind="$data" :config="config" />
+        <AnnotationViewer v-bind="$data" :config="config" />
+      </div>
+    </main>
   </div>
 </template>
 

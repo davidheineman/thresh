@@ -20,6 +20,9 @@ disable:
 font_size:
   target: 16
 
+display:
+- side-by-side
+
 edits:
   - name: loaded_language
     label: "Loaded language"

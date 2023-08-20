@@ -278,6 +278,12 @@ textarea {
     max-width: 1200px
 }
 
+.w-adjacent {
+    max-width: 1600px;
+    min-width: 1000px;
+    padding-bottom: 0;
+}
+
 .disabled {
     pointer-events: none;
     opacity: 0.4;
@@ -366,6 +372,32 @@ span.middleside {
     min-height: 98vh;
 }
 
+.adjacent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+    grid-auto-flow: column;
+    max-height: 97vh;
+}
+
+.annotation-adjacent, .selection-adjacent {
+    max-height: 97vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.annotation-adjacent {
+    padding-right: 16px;
+}
+
+.selection-adjacent::-webkit-scrollbar {
+    display: none
+}
+
+.mh4 {
+    margin-top: 3vh;
+}
+
 /* For screenshots */
 /* 175 zoom on 1440p */
 /* with width: 624px 5px 834px */
@@ -414,3 +446,4 @@ span.middleside {
 .column-severity label {
     padding: 6px !important;
 } */
+

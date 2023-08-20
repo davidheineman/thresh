@@ -177,7 +177,7 @@ export default {
                 :consumed_config={consumed_config}
             />
         </div>
-        <div v-else class="mt4">
+        <div v-else class="mh4">
             <Interface 
                 :input_data={data}
                 :consumed_config={consumed_config}
