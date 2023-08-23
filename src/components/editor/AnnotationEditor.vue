@@ -37,6 +37,7 @@ export default {
     watch: {
         config() {
             this.edit_state = this.initalize_edit_state()
+            this.empty_edit_state = this.initalize_edit_state()
             this.fix_edit_box_formatting()
         },
         editor_open() {
