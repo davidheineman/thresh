@@ -58,7 +58,7 @@ export default {
             }
             if (heightDiff > 0) {
                 $(".edit-box label").css('justify-content', 'flex-start');
-                $(".edit-box label").css('height', maxHeight-25 + "px");
+                $(".edit-box label").css('height', maxHeight-24 + "px");
             }
         },
         parse_options(edit_config) {

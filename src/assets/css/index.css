@@ -399,6 +399,11 @@ span.middleside {
     margin-top: 3vh;
 }
 
+.wmin-50 { min-width: 50% }
+.wmin-33 { min-width: 33% }
+.wmin-25 { min-width: 25% }
+.wmin-16 { min-width: 16% }
+
 /* For screenshots */
 /* 175 zoom on 1440p */
 /* with width: 624px 5px 834px */

@@ -152,7 +152,7 @@ export default {
         <div v-if="isObject(question.options)">
             <p class="mb3 b tracked-light">{{ question.question }}</p>
             <div class="tc" >
-                <div :class="`column-severity w-${col_size}`" v-for="option in question.options" :key="option.id">
+                <div :class="`column-severity wmin-${col_size}`" v-for="option in question.options" :key="option.id">
                     <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="question.name"
                         :id="`${div_name}-${option.name}`" :value="option.name" @input="update_edit_state($event.target.value)">
                     <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-${option.name}`">
