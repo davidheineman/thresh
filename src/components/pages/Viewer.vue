@@ -65,6 +65,9 @@ export default {
             const params = new URLSearchParams(window.location.search);
 
             var dParam = params.get("d");
+            var ghParam = params.get("gh");
+            var hfParam = params.get("hf");
+            
             var prolificPID = params.get("PROLIFIC_PID");
             var prolificStudyId = params.get("STUDY_ID");
             var prolificSessionId = params.get("SESSION_ID");
