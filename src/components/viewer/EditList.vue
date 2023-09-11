@@ -97,7 +97,7 @@ export default {
             } else if (this.getEditConfig(category)['type'] == 'composite') {
                 let new_edit_span = ""
                 let light = ""
-                
+
                 new_edit_span += `<span class="edit-type txt-${category}${light} f3"> (</span>`;
                 for (let j = 0; j < annotating_span['constituent_edits'].length; j++) {
                     const constituent_edit = annotating_span['constituent_edits'][j];
@@ -118,7 +118,7 @@ export default {
                     new_edit_span += `<span class="pa1 edit-text br-pill-ns txt-${category} border-${category}-all ${category}_below">
                         &nbsp${source_sentence.substring(span_idx[0], span_idx[1])}&nbsp</span>`
                     this.set_annotating_edit_span(new_edit_span, 'source')
-                } 
+                }
 
                 if (annotating_span.hasOwnProperty('output_idx')) {
                     let span_idx = annotating_span['output_idx'][0]
@@ -135,7 +135,7 @@ export default {
             const real_id = parseInt(e.target.dataset.id.split("-")[1])
             const category = e.target.dataset.category
             const old_edits_list = this.hits_data[this.current_hit - 1]["edits"]
-            
+
             let new_edits_list = []
             for (const old_edit of old_edits_list) {
                 if (old_edit["id"] == real_id && old_edit["category"] == category) {
@@ -157,11 +157,14 @@ export default {
                 return entry['name'] === category;
             });
         },
+        linesDisabled() {
+          return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('disable-lines')
+        },
         getAnnotationHtml(ann_config, ann) {
             if (ann == null) {
                 return '';
             }
-            
+
             let ann_html = ''
             for (let edit_ann_type of ann_config) {
                 let ann_type_name = edit_ann_type['name']
@@ -203,8 +206,8 @@ export default {
                         if (edit_ann_type.hasOwnProperty('options')) {
                             ann_html += this.getAnnotationHtml(edit_ann_type['options'], ann[ann_type_name])
                         }
-                    }                            
-                } 
+                    }
+                }
             }
             return ann_html
         },
@@ -283,7 +286,7 @@ export default {
                 new_html += `
                     <div class='cf'>
                         <div class="fl w-80 edit">`;
-                
+
                 // Render edit
                 const edit_config = this.getEditConfig(key)
                 const edit_label = edit_config.label ? edit_config.label : key
@@ -295,7 +298,7 @@ export default {
                             <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">
                                 &nbsp<i class="fa-solid ${composite_icon}"></i>&nbsp</span>
                                 <span class="edit-type txt-${key}${light} f3"> (</span>`;
-                    
+
                     for (let j = 0; j < edit['constituent_edits'].length; j++) {
                         const constituent_edit = edit['constituent_edits'][j];
                         const constituent_key = constituent_edit['category'];
@@ -311,9 +314,9 @@ export default {
                 } else {
                     new_html += this.render_edit_text(edit, i, key, light)
                 }
-                
-                if (!this.config.disable || !Object.values(this.config.disable).includes('annotation')) { 
-                    new_html += ` : `; 
+
+                if (!this.config.disable || !Object.values(this.config.disable).includes('annotation')) {
+                    new_html += ` : `;
                 }
 
                 // Render annotation
@@ -343,7 +346,7 @@ export default {
                     </div>
                 </div>`;
             }
-            
+
             this.set_edits_dict(hit_edits);
             this.edits_html = new_html;
         },
@@ -364,7 +367,7 @@ export default {
         draw_lines: function() {
             // There's some latency in this function, the locking ensures no line references are lost
             if (this.line_locked) { return }
-            if (!this.config.hasOwnProperty('edits')) { return }
+            if (!this.config.hasOwnProperty('edits') || this.linesDisabled()) { return }
             this.line_locked = true
 
             try {
@@ -422,7 +425,7 @@ export default {
                             $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
                             line_config
                         )
-                        
+
                         // My attempt to fix line drawing in builder via mutation observers
                         // var draw_lines = this.draw_lines
                         // const targetElement = $(`.${key}.source_span[data-id='${key}-${id}']`)[0]
@@ -549,5 +552,5 @@ export default {
 </script>
 
 <template>
-    <component :is="get_edits_html"></component> 
+    <component :is="get_edits_html"></component>
 </template>
