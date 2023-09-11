@@ -29,7 +29,7 @@
         hit_box_config: undefined,
         selected_state: undefined,
         annotating_edit_span: undefined,
-        
+
         set_hit: this.set_hit,
         set_hits_data: this.set_hits_data,
         set_edits_dict: this.set_edits_dict,
@@ -73,13 +73,13 @@
           let new_config;
           if (this.consumed_config.hasOwnProperty('consumed_config')) {
             new_config = _.cloneDeep(this.consumed_config.consumed_config)
-          } else if (this.consumed_config.hasOwnProperty('config')) { 
+          } else if (this.consumed_config.hasOwnProperty('config')) {
             new_config = _.cloneDeep(this.consumed_config.config)
           } else {
             new_config = _.cloneDeep(this.consumed_config)
           }
           this.config = new_config
-          
+
           if (this.config.template_label) {
             $('title').text(this.config.template_label);
           }
@@ -194,7 +194,7 @@
             }
 
             let light_color = tinycolor(color).lighten(25).toHexString();
-            
+
             css += `
               :root { --${edit.name}: ${color}; --${edit.name}-light: ${light_color}; }
               .border-${edit.name} { border-bottom: 3px solid ${color}; }
@@ -233,7 +233,7 @@
     updated() {
       $('#custom_style').html(`<style>${this.compile_style()}</style>`)
       $(`#circle-${this.current_hit}`).addClass('circle-active');
-    }, 
+    },
     mounted() {
       this.consume_data()
       this.consume_config()
@@ -243,11 +243,11 @@
       this.refresh_interface_edit()
     }
   }
-  
+
 </script>
 
 <template>
-  <div v-if="config != null" class="container w-65 mb0 card-body" v-bind:class="{ 'w-adjacent': isAdjacent() }">
+  <div v-if="config != null" class="container w-100 mb0 card-body" v-bind:class="{ 'w-adjacent': isAdjacent() }">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
     <div v-if="highlight" class="tc f3 b mb3 mt3 adjudication-highlight">
       {{ config.interface_text.adjudication.highlight_label }}
