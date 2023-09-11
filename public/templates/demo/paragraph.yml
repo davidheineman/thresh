@@ -14,3 +14,11 @@ edits:
     icon: fa-magnifying-glass
     enable_input: true
     enable_output: true
+
+# When working with long texts, you might prefer a horizontal layout to minimize scrolling.
+# The following options can be freely combined.
+
+# display:
+# - side-by-side         # shows text and editor next to each other
+# - text-side-by-side    # shows source and target next to each other
+# - disable-lines        # disables lines between annotations which can be distracting
