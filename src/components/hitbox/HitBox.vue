@@ -3,6 +3,8 @@
   import _ from 'lodash';
   import { handle_file_download, handle_file_upload } from "../../assets/js/file-util.js";
   import VueMarkdown from 'vue-markdown-render'
+  import { initializeApp } from 'firebase/app'
+  import { getFirestore, doc, updateDoc, arrayUnion } from "firebase/firestore";
 </script>
 
 <script>
@@ -190,10 +192,36 @@ export default {
             this.set_hit(1);
             this.setup_hit_box();
         },
-        submit_crowsource() {
+        async submit_crowsource() {
+            if (this.config.database && this.config.database.type && this.config.database.type == "firebase") {
+                // Send data to firebase
+                const firebaseApp = initializeApp({
+                    databaseURL: this.config.database.url,
+                    projectId: this.config.database.project_id,
+                });
+
+                const collection = this.config.database.collection || 'thresh';
+                const doc_id = this.config.database.document || 'annotations';
+                const field_id = this.config.database.field;
+                const prolific = this.config.prolific_completion_code || null;
+
+                const db = getFirestore(firebaseApp);
+                const docRef = doc(db, collection, doc_id);
+
+                await updateDoc(docRef, {
+                    [field_id]: arrayUnion({
+                        "prolific_completion_code": prolific,
+                        "annotations": JSON.stringify(this.hits_data, null, 2),
+                        "time_submitted": new Date().toLocaleString()
+                    })
+                });
+            }
+
             if (this.config.crowdsource && this.config.crowdsource == "prolific") {
                 let prolific_completion_code = this.config.prolific_completion_code;
                 window.location.href = `https://app.prolific.co/submissions/complete?cc=${prolific_completion_code}`;
+            } else {
+                alert("You have successfully submitted your annotations.")
             }
         }
     }
