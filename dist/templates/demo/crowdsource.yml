@@ -10,6 +10,23 @@ disable:
 - upload
 - download
 
+# Want to integrate a database to collect annotations? You can directly post to a firebase
+# database with this configuration:
+
+# database: 
+#   type: firebase
+#   project_id: [YOUR_FIREBASE_PROJECT_ID]
+#   url: https://[YOUR_FIREBASE_PROJECT_URL].firebaseio.com/
+#   # collection: thresh      # (default: thresh) The database to use, this must exist on the firestore
+#   # document: annotation    # (default: annotation) The document to use, this must exist on the firestore
+#   field: annotation_set_1   # The document field to store annotations, we recommend changing this value between data collection runs
+
+# If you want to use database integration with a different platform, please use this flag:
+# crowdsource: "custom"
+
+# ========================================================================================
+# ========================================================================================
+
 instructions: |
   ## Crowdsourcing Demo
   You can add instructions here. Click to the end and press "Submit" to be redirected back to Prolific
