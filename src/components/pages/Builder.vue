@@ -200,13 +200,14 @@ export default {
 
             template_arg = template_arg.replace('demo_', 'demo/')
             
+            const basePath = import.meta.env.BASE_URL;
             let template, file_path
             if (!template_arg.includes('http')) {
-                template = `/templates/${template_arg}.yml`
-                file_path = `/data/${template_arg}.json`
+                template = `${basePath}/templates/${template_arg}.yml`
+                file_path = `${basePath}/data/${template_arg}.json`
             } else {
                 template = template_arg
-                file_path = `/data/demo/start.json`
+                file_path = `${basePath}/data/demo/start.json`
             }
             
             this.selectedOption = template
