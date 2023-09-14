@@ -159,7 +159,7 @@ export default {
     computed: {
         get_source_html() {
             return {
-                template: `<span @mousedown='deselect_source_html' @mouseup='select_source_html' id="source-sentence" class="f4 lh-paras">${this.source_html}</span>`,
+                template: `<pre @mousedown='deselect_source_html' @mouseup='select_source_html' id="source-sentence" class="f4 lh-paras sans-serif" style="white-space: pre-line;">${this.source_html}</pre>`,
                 methods: {
                     select_source_html: this.select_source_html,
                     deselect_source_html: this.deselect_source_html,

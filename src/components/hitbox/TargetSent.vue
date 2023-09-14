@@ -162,7 +162,7 @@ export default {
     computed: {
         get_target_html() {
             return {
-                template: ` <span @mousedown='deselect_target_html' @mouseup='select_target_html' id="target-sentence" class="f4 lh-paras"> ${ this.target_html } </span> `,
+                template: ` <pre @mousedown='deselect_target_html' @mouseup='select_target_html' id="target-sentence" class="f4 lh-paras sans-serif" style="white-space: pre-line;"> ${ this.target_html } </pre> `,
                 methods: {
                         select_target_html: this.select_target_html,
                         deselect_target_html: this.deselect_target_html,
