@@ -3,7 +3,7 @@
     import Deploy from "../builder/Deploy.vue";
     import Cite from "../builder/Cite.vue";
 
-    import { download_data, download_config, get_file_path } from "../../assets/js/file-util.js";
+    import { download_data, download_config, get_file_path, joinPaths } from "../../assets/js/file-util.js";
 
     import jsyaml from 'js-yaml';
     import * as monaco from 'monaco-editor'
@@ -26,6 +26,8 @@
 </script>
 
 <script>
+
+
 export default {
     data() {
         return {
@@ -203,11 +205,11 @@ export default {
             const basePath = import.meta.env.BASE_URL;
             let template, file_path
             if (!template_arg.includes('http')) {
-                template = `${basePath}/templates/${template_arg}.yml`
-                file_path = `${basePath}/data/${template_arg}.json`
+                template = joinPaths(basePath, `/templates/${template_arg}.yml`)
+                file_path = joinPaths(basePath, `/data/${template_arg}.json`)
             } else {
                 template = template_arg
-                file_path = `${basePath}/data/demo/start.json`
+                file_path = joinPaths(basePath, `/data/demo/start.json`)
             }
             
             this.selectedOption = template
