@@ -203,16 +203,27 @@ export default {
                 const collection = this.config.database.collection || 'thresh';
                 const doc_id = this.config.database.document || 'annotations';
                 const field_id = this.config.database.field;
-                const prolific = this.config.prolific_completion_code || null;
+
+                // Get Prolific information if it exists
+                var prolific = null;
+                if (this.config.crowdsource == "prolific") {
+                    const params = new URLSearchParams(window.location.search);
+                    var prolific = {
+                        "completion_code": this.config.prolific_completion_code || null,
+                        "prolific_pid": params.get("PROLIFIC_PID") || null,
+                        "study_id": params.get("STUDY_ID") || null,
+                        "session_id": params.get("SESSION_ID") || null
+                    }
+                }
 
                 const db = getFirestore(firebaseApp);
                 const docRef = doc(db, collection, doc_id);
 
                 await updateDoc(docRef, {
                     [field_id]: arrayUnion({
-                        "prolific_completion_code": prolific,
                         "annotations": JSON.stringify(this.hits_data, null, 2),
-                        "time_submitted": new Date().toLocaleString()
+                        "time_submitted": new Date().toLocaleString(),
+                        "prolific_metadata": JSON.stringify(prolific, null, 2),
                     })
                 });
             }
