@@ -91,9 +91,9 @@ export default {
 
             $('#target-sentence').addClass(`select-color-${selected_category}`)
 
-            let split_chars = [' ']
+            let split_chars = [' ', '\n']
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
-                split_chars = ['Ġ', ' ']
+                split_chars = ['Ġ', ' ', '\n']
             }
             let txt = this.hits_data[this.current_hit - 1].target
 
