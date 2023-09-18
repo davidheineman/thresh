@@ -83,6 +83,7 @@ export default {
             let range = selection.getRangeAt(0)
             let [start, end] = [range.startOffset, range.endOffset]
             if (start == end || !txt.substring(start, end).trim()) {
+                this.process_source_html(null); // rerender if blocking 
                 return;
             }
             if (selection.anchorNode != selection.focusNode || selection.anchorNode == null) {
