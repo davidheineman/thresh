@@ -235,7 +235,7 @@ export default {
                     <input type="file" id="upload-btn" @change="file_upload"/>
                     <label class="file-upload br-100 w2-5 h2-5 pointer" for="upload-btn" :class="{'disabled': config.disable && Object.values(config.disable).includes('upload')}"><i class="fa fa-arrow-up"></i></label>
                 </div>
-            </div>
+            </div>            
         </div>
         <div>
             <div class="ba b--black-80 br2 pa2">
