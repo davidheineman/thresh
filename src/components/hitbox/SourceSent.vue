@@ -79,6 +79,13 @@ export default {
 
             let selected_category = $("input[name=edit_cotegory]:checked").val();
             let selection = window.getSelection();
+            let txt = this.hits_data[this.current_hit - 1].source
+            let range = selection.getRangeAt(0)
+            let [start, end] = [range.startOffset, range.endOffset]
+            if (start == end || !txt.substring(start, end).trim()) {
+                this.process_source_html(null); // rerender if blocking 
+                return;
+            }
             if (selection.anchorNode != selection.focusNode || selection.anchorNode == null) {
                 this.process_source_html_with_selected_span(selected_category)
                 return;
@@ -89,15 +96,6 @@ export default {
             let split_chars = [' ', '\n']
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
                 split_chars = ['Ġ', ' ', '\n']
-            }
-            
-            let txt = this.hits_data[this.current_hit - 1].source
-
-            let range = selection.getRangeAt(0)
-            let [start, end] = [range.startOffset, range.endOffset]
-            
-            if (start == end) {
-                return
             }
 
             if (!this.config.tokenization || this.config.tokenization != 'char') {
