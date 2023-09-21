@@ -59,3 +59,7 @@ export function download_config(file_path) {
         .then(response => response.text())
         .then(r => {return r});
 }
+
+export function joinPaths(path1, path2) {
+    return path1.replace(/\/$/, '') + '/' + path2.replace(/^\//, '');
+}

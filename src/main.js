@@ -1,6 +1,7 @@
 import { createApp, h } from "vue/dist/vue.esm-bundler.js"
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import { joinPaths  } from "./assets/js/file-util";
 
 // Add global imports
 import './assets/js/font-awesome.min.js';
@@ -44,16 +45,17 @@ var iParam = params.get("i");
 var ghParam = params.get("gh");
 var hfParam = params.get("hf");
 
+const basePath = import.meta.env.BASE_URL;
 const routes = [
-    { path: '/', component: (iParam || ghParam || hfParam) ? () => import("./components/pages/Viewer.vue") : () => import("./components/pages/Builder.vue") },
-    { path: `/demo`, component: () => import("./components/pages/Builder.vue") },
-    { path: '/custom', props: () => ({ injection: true }), component: () => import("./components/pages/Viewer.vue") },
-    { path: '/annotate', props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") }
+    { path: joinPaths(basePath, '/'), component: (iParam || ghParam || hfParam) ? () => import("./components/pages/Viewer.vue") : () => import("./components/pages/Builder.vue") },
+    { path: joinPaths(basePath, '/demo'), component: () => import("./components/pages/Builder.vue") },
+    { path: joinPaths(basePath, '/custom'), props: () => ({ injection: true }), component: () => import("./components/pages/Viewer.vue") },
+    { path: joinPaths(basePath, '/annotate'), props: () => ({ serverless: true }), component: () => import("./components/pages/Viewer.vue") }
 ]
 
 for (const template of templates) {
     const template_path = template.path
-    routes.push({ path: `/${template.path}`, props: () => ({ template_path: template_path }), component: () => import("./components/pages/Viewer.vue") })
+    routes.push({ path: joinPaths(basePath, `/${template.path}`), props: () => ({ template_path: template_path }), component: () => import("./components/pages/Viewer.vue") })
 }
 
 const router = createRouter({
