@@ -20,6 +20,11 @@
     margin-right: auto!important;
 }
 
+.selection-area {
+    white-space: pre-line;
+    margin: 0;
+}
+
 .w-13 {
     width: 13%;
 }

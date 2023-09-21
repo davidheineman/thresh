@@ -86,9 +86,9 @@ export default {
 
             $('#source-sentence').addClass(`select-color-${selected_category}`)
 
-            let split_chars = [' ']
+            let split_chars = [' ', '\n']
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
-                split_chars = ['Ġ', ' ']
+                split_chars = ['Ġ', ' ', '\n']
             }
             
             let txt = this.hits_data[this.current_hit - 1].source
@@ -159,7 +159,7 @@ export default {
     computed: {
         get_source_html() {
             return {
-                template: `<span @mousedown='deselect_source_html' @mouseup='select_source_html' id="source-sentence" class="f4 lh-paras">${this.source_html}</span>`,
+                template: `<pre @mousedown='deselect_source_html' @mouseup='select_source_html' id="source-sentence" class="f4 lh-paras sans-serif selection-area">${this.source_html}</pre>`,
                 methods: {
                     select_source_html: this.select_source_html,
                     deselect_source_html: this.deselect_source_html,

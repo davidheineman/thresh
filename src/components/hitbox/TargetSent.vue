@@ -91,9 +91,9 @@ export default {
 
             $('#target-sentence').addClass(`select-color-${selected_category}`)
 
-            let split_chars = [' ']
+            let split_chars = [' ', '\n']
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
-                split_chars = ['Ġ', ' ']
+                split_chars = ['Ġ', ' ', '\n']
             }
             let txt = this.hits_data[this.current_hit - 1].target
 
@@ -162,7 +162,7 @@ export default {
     computed: {
         get_target_html() {
             return {
-                template: ` <span @mousedown='deselect_target_html' @mouseup='select_target_html' id="target-sentence" class="f4 lh-paras"> ${ this.target_html } </span> `,
+                template: `<pre @mousedown='deselect_target_html' @mouseup='select_target_html' id="target-sentence" class="f4 lh-paras sans-serif selection-area"> ${ this.target_html } </pre> `,
                 methods: {
                         select_target_html: this.select_target_html,
                         deselect_target_html: this.deselect_target_html,
