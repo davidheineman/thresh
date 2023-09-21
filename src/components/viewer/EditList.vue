@@ -315,7 +315,7 @@ export default {
                     new_html += this.render_edit_text(edit, i, key, light)
                 }
                 
-                if (!this.config.disable || !Object.values(this.config.disable).includes('annotation')) {
+                if (!this.config.disable || !Object.values(this.config.disable).includes('annotation')) { 
                     new_html += ` : `; 
                 }
 
