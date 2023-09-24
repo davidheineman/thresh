@@ -76,7 +76,7 @@
 }
 
 .editor-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -452,4 +452,3 @@ span.middleside {
 .column-severity label {
     padding: 6px !important;
 } */
-

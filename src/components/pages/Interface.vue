@@ -247,7 +247,7 @@
 </script>
 
 <template>
-  <div v-if="config != null" class="container w-65 mb0 card-body" v-bind:class="{ 'w-adjacent': isAdjacent() }">
+  <div v-if="config != null" class="container mb0 card-body" v-bind:class="{ 'w-100 w-adjacent': isAdjacent(), 'w-65': !isAdjacent() }">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
     <div v-if="highlight" class="tc f3 b mb3 mt3 adjudication-highlight">
       {{ config.interface_text.adjudication.highlight_label }}
