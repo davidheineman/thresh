@@ -157,6 +157,9 @@ export default {
                 return entry['name'] === category;
             });
         },
+        linesDisabled() {
+          return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('disable-lines')
+        },
         getAnnotationHtml(ann_config, ann) {
             if (ann == null) {
                 return '';
@@ -364,7 +367,7 @@ export default {
         draw_lines: function() {
             // There's some latency in this function, the locking ensures no line references are lost
             if (this.line_locked) { return }
-            if (!this.config.hasOwnProperty('edits')) { return }
+            if (!this.config.hasOwnProperty('edits') || this.linesDisabled()) { return }
             this.line_locked = true
 
             try {

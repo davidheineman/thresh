@@ -183,6 +183,9 @@ export default {
         source_exists() {
             return this.hits_data && this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1].source
         },
+        showAdjacent() {
+          return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('text-side-by-side') && this.source_exists() && this.target_exists()
+        },
         file_download() {
             handle_file_download(this.hits_data)
         },
@@ -290,20 +293,24 @@ export default {
                     <vue-markdown :source="hits_data[current_hit - 1].context" class="mt0 mb0" />
                 </div>
 
-                <div class="cf" v-if="source_exists()">
-                    <p class="fl f3 mt1 mb1 orig-sentence-header">
-                        <span class="f5">{{ config.interface_text.typology.source_label }}:</span>
-                    </p>
+                <div class="cf" v-if="source_exists()" />
+                <div :class="{'adjacent': showAdjacent() }">
+                    <div class="grid-child">
+                        <div class="cf" v-if="source_exists()">
+                            <p class="fl f3 mt0 mb1 orig-sentence-header">
+                                <span class="f5">{{ config.interface_text.typology.source_label }}:</span>
+                            </p>
+                        </div>
+                        <Sent sent_type="source" v-bind="$props" :remove_selected="remove_selected" />
+                    </div>
+
+                    <div class="grid-child">
+                        <p class="f3 mb1" v-if="target_exists()" :class="{'mt0': !source_exists() || showAdjacent() }">
+                            <span class="f5">{{ config.interface_text.typology.target_label }}:</span>
+                        </p>
+                        <Sent sent_type="target" v-bind="$props" :remove_selected="remove_selected" />
+                    </div>
                 </div>
-                
-                <Sent sent_type="source" v-bind="$props" :remove_selected="remove_selected" />
-
-                <p class="f3 mb1" v-if="target_exists()" :class="{'mt0': !source_exists()}">
-                    <span class="f5">{{ config.interface_text.typology.target_label }}:</span>
-                </p>
-
-                <Sent sent_type="target" v-bind="$props" :remove_selected="remove_selected" />
-
             </div>
         </div>
     </section>
