@@ -293,7 +293,8 @@ export default {
                     <vue-markdown :source="hits_data[current_hit - 1].context" class="mt0 mb0" />
                 </div>
 
-                <div class="cf" v-if="source_exists()" />
+                <div class="cf" v-if="showAdjacent() && source_exists()"></div>
+
                 <div :class="{'adjacent': showAdjacent() }">
                     <div class="grid-child">
                         <div class="cf" v-if="source_exists()">
