@@ -35,7 +35,9 @@ export default {
         'toggle_instructions'
     ],
     data() {
-        return {}
+        return {
+            showContext: false
+        }
     },
     watch: {
         current_hit() {
@@ -44,12 +46,21 @@ export default {
         hits_data() {
             this.setup_hit_box();
         },
+        showContext() {
+            
+        }
     },
     methods: {
         setup_hit_box() {
             $(`#comment_area`).val('');
             if ("comment" in this.hits_data[this.current_hit - 1]) {
                 $(`#comment_area`).val(this.hits_data[this.current_hit - 1]["comment"]);
+            }
+            if (this.showConfigToggle()) {
+                $('.context-container').hide(0);
+                this.showContext = false;
+            } else {
+                $('.context-container').show(0);
             }
         },
         get_circle_class(n) {
@@ -96,6 +107,16 @@ export default {
             } else {
                 new_hits_data[this.current_hit - 1].bookmark = true
                 this.set_hits_data(new_hits_data)
+            }
+        },
+        toggle_context() {
+            this.showContext = !this.showContext;
+            if (this.showContext) {
+                $('.context-container').hide(0);
+                $('.context-container').show(300);
+            } else {
+                $('.context-container').show(0);
+                $('.context-container').hide(300);
             }
         },
         restart_hit() {
@@ -183,8 +204,14 @@ export default {
         source_exists() {
             return this.hits_data && this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1].source
         },
+        context_exists() {
+            return this.hits_data && this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1].context
+        },
         showAdjacent() {
           return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('text-side-by-side') && this.source_exists() && this.target_exists()
+        },
+        showConfigToggle() {
+          return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('hide-context') && this.context_exists()
         },
         file_download() {
             handle_file_download(this.hits_data)
@@ -283,14 +310,27 @@ export default {
                     <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1" :class="get_bookmark_class()"></i>
                 </div>
 
-                <div class="mb2" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].context">
-                    <div class="cf" v-if="config.interface_text.typology.context_label != ''">
-                        <p class="fl f3 mt1 mb1">
-                            <span class="f5">{{ config.interface_text.typology.context_label }}:</span>
-                        </p>
+                <p v-if="showConfigToggle()" @click="toggle_context" class="context_button pa2 br-pill-ns ba bw1 grow" :class="{'disabled': config.disable && Object.values(config.disable).includes('selection')}">
+                    <div v-if="showContext">
+                        <i class="fa-solid fa-arrow-up-short-wide fa-1-5x icon-default pointer mr2"></i>
+                        <span class="f5">{{ config.interface_text.buttons.hide_context_label }}</span>
                     </div>
-                    <!-- <div class="f4 lh-paras">{{ hits_data[current_hit - 1].context }}</div> -->
-                    <vue-markdown :source="hits_data[current_hit - 1].context" class="mt0 mb0" />
+                    <div v-else>
+                        <i class="fa-solid fa-arrow-down-short-wide fa-1-5x icon-default pointer mr2"></i>
+                        <span class="f5">{{ config.interface_text.buttons.show_context_label }}</span>
+                    </div>
+                </p>
+
+                <div class="context-container">
+                    <div class="mb2" v-if="hits_data && hits_data[current_hit - 1] && hits_data[current_hit - 1].context">
+                        <div class="cf" v-if="config.interface_text.typology.context_label != ''">
+                            <p class="fl f3 mt1 mb1">
+                                <span class="f5">{{ config.interface_text.typology.context_label }}:</span>
+                            </p>
+                        </div>
+                        <!-- <div class="f4 lh-paras">{{ hits_data[current_hit - 1].context }}</div> -->
+                        <vue-markdown :source="hits_data[current_hit - 1].context" class="mt0 mb0" />
+                    </div>
                 </div>
 
                 <div class="cf" v-if="showAdjacent() && source_exists()"></div>
