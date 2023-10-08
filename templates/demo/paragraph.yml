@@ -8,9 +8,10 @@
 # The following options can be freely combined.
 
 # display:
-# - side-by-side         # shows text and editor next to each other
-# - text-side-by-side    # shows source and target next to each other
-# - disable-lines        # disables lines between annotations which can be distracting
+#  - side-by-side         # shows text and editor next to each other
+#  - text-side-by-side    # shows source and target next to each other
+#  - disable-lines        # disables lines between annotations which can be distracting
+#  - hide-context         # hides the context by default, adding a "show context" button
 
 # ========================================================================================
 # ========================================================================================

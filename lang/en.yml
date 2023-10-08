@@ -24,6 +24,8 @@ buttons:
   cancel_label: "Cancel"
   add_edit_label: "Add Edit"
   instructions_label: "Instructions"
+  show_context_label: "Show Context"
+  hide_context_label: "Hide Context"
 hit_box:
   hit_label: "Hit"
 annotation_editor:
