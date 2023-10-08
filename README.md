@@ -193,6 +193,19 @@ To add text before or after the annotation, add the `context` and `_context_befo
 ]
 ```
 
+Additionally, we have utilities under the `display` command to help with side-by-side or long-context annotations:
+```yaml
+display:
+ - side-by-side         # shows text and editor next to each other
+ - text-side-by-side    # shows source and target next to each other
+ - disable-lines        # disables lines between annotations which can be distracting
+ - hide-context         # hides the context by default, adding a "show context" button
+```
+
+<div align="center">
+    <img src="./public/img/docs/paragraph_horizontal.png" width="600" />
+</div>
+
 <a id="demo_adjudication"></a>
 
 ### Multi-interface Adjudication [↗️](https://thresh.tools/?t=demo_adjudication)
@@ -257,9 +270,22 @@ Please reference the "Deploy" modal within [**the interface builder**](https://t
     <img src="./public/img/docs/deploy.png" width="400" />
 </div>
 
-<!-- ### Share with Co-authors
+<a id="demo_database"></a>
 
-### Share Your Interface Publically -->
+### Deploy with a Database [↗️](https://thresh.tools/?t=demo_crowdsource)
+
+Use the `database` command to specify a public database to save annotations after users click a "Submit" button. We currently support [**Firebase**](https://firebase.google.com/) for any deployment method (in-house or crowdsourcing). Please see [**notebook_tutorials/deploy_database_with_firebase.md**](./notebook_tutorials/deploy_database_with_firebase.md) for a full tutorial on connecting a Firebase database to Thresh.
+
+```yml
+crowdsource: "custom"
+database: 
+    type: firebase
+    project_id: [your-project-id]
+    url: https://[your-project-id].firebaseio.com/
+    # collection: thresh     # (default: thresh) The database to use
+    # document: annotation   # (default: annotation) The document to use
+    field: annotation_set_1  # The document field to store annotations
+```
 
 <a id="demo_crowdsource"></a>
 

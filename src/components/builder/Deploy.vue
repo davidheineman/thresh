@@ -241,6 +241,9 @@ export default {
                 <h3>(Optional) Host Default Data</h3>
                 <p>If you are sharing your template, you can specify a link within your config to include example data. This adds a "View Example Data" button to the landing page, and provides example data when editing the template.</p>
                 <pre>default_data_link: [link to your data]</pre>
+                <hr />
+                <h3>(Optional) Save Annotations to a Hosted Database</h3>
+                <p>Please see our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_database_with_firebase.md'>step-by-step tutorial →</a> to integrate with a Firebase database to push annotations once they are completed.</p>
             </Tab>
             <Tab name="python" :selected="active_tab == 'python'">
                 <h2>Manage data collection using <code>thresh</code> + Python</h2>
@@ -269,8 +272,9 @@ YourInterface.export_data(
                 <hr />
                 <h3>Learn more</h3>
                 <p>Check out our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/load_data.ipynb'>example notebook →</a> which details each feature of the <code>thresh</code> library, including using the custom <code>thresh</code> data classes.</p>
-                <!-- <h3>(Optional) Integrate with HuggingFace Transformers</h3>
-                <p>If you want to create a RLHF pipeline with your data, feel free to take a look at <a href='/'>our example notebook</a> on the topic!</p> -->
+                <hr />
+                <h3>(Optional) Save Annotations to a Hosted Database</h3>
+                <p>Please see our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_database_with_firebase.md'>step-by-step tutorial →</a> to integrate with a Firebase database to push annotations once they are completed.</p>
             </Tab>
             <Tab name="crowdsource" :selected="active_tab == 'crowdsource'">
                 <h2>Deploy to crowdsource platforms</h2>
@@ -282,6 +286,9 @@ YourInterface.export_data(
                     <img src="/img/prolific.png" width="500">
                     <img src="/img/prolific-deployed.png" width="500">
                 </div>
+                <hr />
+                <h3>(Optional) Save Annotations to a Hosted Database</h3>
+                <p>Please see our <a href='https://github.com/davidheineman/thresh.tools/blob/main/notebook_tutorials/deploy_database_with_firebase.md'>step-by-step tutorial →</a> to integrate with a Firebase database to push annotations once they are completed.</p>
                 <!-- <p>This will directly create an Crowdsource job for your dataset in this browser. This is recommended for small scale annotation or debugging, NOT for a large project. In that case, we recommend deploying with Python.</p>
                 <h3>Data</h3>
                 <div class="flex items-center mb2">

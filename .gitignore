@@ -43,3 +43,4 @@ video_demo*.ipynb
 
 notebook_tutorials/*
 !notebook_tutorials/*.ipynb
+!notebook_tutorials/*.md
