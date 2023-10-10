@@ -34,8 +34,8 @@ var data = \`
 \`;
 
     // Heads up! The best practice is to host your interface.yml and data.json files on GitHub and use the following URL format:
-    // var ghParameter = "davidheineman/salsa/main/interface.yml";      // <- Add GitHub path to host interface.yml instead!
-    // var dParameter = "demo_data.json";                               // <- Add data to show up on load!
+    // var ghParameter = "davidheineman/salsa/main/interface/salsa.yml";      // <- Add GitHub path to host interface.yml instead!
+    // var dParameter = "demo_data.json";                                     // <- Add data to show up on load!
     // iframeUrl = "https://thresh.tools/?gh=" + encodeURIComponent(ghParameter) + "&d=" + encodeURIComponent(dParameter);
 
     const targetOrigin = 'https://thresh.tools';

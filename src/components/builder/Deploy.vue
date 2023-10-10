@@ -213,23 +213,23 @@ export default {
                 <hr />
                 <h3>Host with Gihub</h3>
                 <p>Create a GitHub repo and add your template.</p>
-                <pre>https://github.com/davidheineman/salsa/blob/main/interface.yml</pre>
+                <pre>https://github.com/davidheineman/salsa/blob/main/interface/salsa.yml</pre>
                 <p>And distribute using the <code>gh</code> parameter:</p>
                 <pre>thresh.tools/<b>?gh=[link to your github template]</b></pre>
-                <pre><a href="https://thresh.tools/?gh=davidheineman/salsa/main/interface.yml" target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface.yml</a></pre>
+                <pre><a href="https://thresh.tools/?gh=davidheineman/salsa/main/interface/interface/salsa.yml" target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface/salsa.yml</a></pre>
                 <hr />
                 <h3>Host with HuggingFace</h3>
                 <p>Create a HuggingFace dataset and add your template (e.g., alongside your published data).</p>
-                <pre>https://huggingface.co/datasets/davidheineman/salsa/resolve/main/interface.yml</pre>
+                <pre>https://huggingface.co/datasets/davidheineman/salsa/resolve/main/interface/salsa.yml</pre>
                 <p>And distribute using the <code>hf</code> parameter:</p>
                 <pre>thresh.tools/<b>?hf=[link to your huggingface template]</b></pre>
-                <pre><a href="https://thresh.tools/?hf=davidheineman/salsa/main/interface.yml" target="_blank">thresh.tools/?hf=davidheineman/salsa/main/interface.yml</a></pre>
+                <pre><a href="https://thresh.tools/?hf=davidheineman/salsa/main/interface/interface/salsa.yml" target="_blank">thresh.tools/?hf=davidheineman/salsa/main/interface/salsa.yml</a></pre>
                 <hr />
                 <h3>(Optional) Host Data</h3>
                 <p>You can host data as well (e.g., to create individual links for annotators) using the following format:</p>
                 <pre>thresh.tools/?i=[link to your interface]<b>&amp;d=[link to your data]</b></pre>
                 <p>For example:</p>
-                <pre><a href='https://thresh.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json' target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
+                <pre><a href='https://thresh.tools/?gh=davidheineman/salsa/main/interface/salsa.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json' target="_blank">thresh.tools/?gh=davidheineman/salsa/main/interface/salsa.yml&amp;d=davidheineman/salsa/main/demo_interface_data.json</a></pre>
                 <p>You can follow the above instructions for hosting your data on GitHub or HuggingFace.</p>
                 <hr />
                 <h3>(Optional) Deployment with an iFrame</h3>
