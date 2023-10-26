@@ -21,6 +21,7 @@
         edits_dict: {},
         lines: {},
         selected_edits: {},
+        timers: [],
 
         editor_open: false,
         selected_edits_html: '',
@@ -88,11 +89,22 @@
           if (hit_num != this.current_hit && this.config.adjudication) {
             $(`.circle-${hit_num}`).click()
           }
+          this.stop_timer(this.current_hit)
+          this.start_timer(hit_num)
           this.current_hit = hit_num;
+        },
+        start_timer(hit_num) {
+          this.timers[hit_num - 1] = setInterval(() => {
+            this.hits_data[hit_num - 1]['_seconds_spent']++;
+          }, 1000); // Increment every second
+        },
+        stop_timer(hit_num) {
+          clearInterval(this.timers[hit_num - 1]);
         },
         set_hits_data(hit_data) {
             hit_data.forEach(o => o.edits = o.edits || []);
             hit_data.forEach((o, idx) => { o._thresh_id = idx + 1; });
+            hit_data.forEach(o => o._seconds_spent = o._seconds_spent || 0);
             this.hits_data = hit_data;
             this.total_hits = hit_data.length;
         },
