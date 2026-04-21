@@ -9,6 +9,7 @@ import { COLORS, LIKERT_COLOR_MAP } from '../../assets/js/constants.js';
 <script>
 export default {
     props: [
+        'panelId',
         'hits_data',
         'set_hits_data',
         'current_hit',
@@ -33,7 +34,7 @@ export default {
     },
     watch: {
         current_hit() {
-            $(`#circle-${this.current_hit}`).addClass('circle-active');
+            this.$p(`.circle-${this.current_hit}`).addClass('circle-active');
             this.process_edits_html();
             this.draw_lines();
         },
@@ -46,6 +47,10 @@ export default {
         },
     },
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         annotate_edit(e) {
             const source_sentence = this.hits_data[this.current_hit - 1].source
             const target_sentence = this.hits_data[this.current_hit - 1].target
@@ -55,18 +60,18 @@ export default {
             const id = e.target.dataset.id
             const real_id = parseInt(e.target.dataset.id.split("-")[1])
 
-            $(".child-question").hide();
+            this.$p(".child-question").hide();
             if (this.editor_open) {
-                $(`.quality-selection[data-category=${category}]`).hide(300);
+                this.$p(`.quality-selection[data-category=${category}]`).hide(300);
                 this.refresh_interface_edit();
                 return;
             } else {
-                $(`.quality-selection`).hide(300)
-                $(`.quality-selection[data-category=${category}]`).slideDown(300);
+                this.$p(`.quality-selection`).hide(300)
+                this.$p(`.quality-selection[data-category=${category}]`).slideDown(300);
                 $(e.target).addClass(`txt-${category}`)
                 this.set_editor_state(!this.editor_open)
             }
-            $(`.${category}[data-id=${id}]`).removeClass(`border-${category}-light`).addClass(`white border-${category} bg-${category}`)
+            this.$p(`.${category}[data-id=${id}]`).removeClass(`border-${category}-light`).addClass(`white border-${category} bg-${category}`)
 
             let annotating_span = edit_dict.find(function(entry) {
                 return entry['category'] === category && entry['id'] === real_id;
@@ -362,7 +367,7 @@ export default {
                     try { line.remove() } catch (e) { console.warn(e) }
                 }
             }
-            $('.leader-line').remove();
+            this.$p('.leader-line').remove();
         },
         draw_lines: function() {
             // There's some latency in this function, the locking ensures no line references are lost
@@ -408,21 +413,21 @@ export default {
                             if (constituent_edit_config['enable_input'] && constituent_edit_config['enable_output']) {
                                 new_lines[key][id].push(
                                     LeaderLine.setLine(
-                                        $(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
-                                        $(`.${key}.target_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
+                                        this.$p(`.${key}.source_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
+                                        this.$p(`.${key}.target_span[data-id='${key}-${id}'][data-childcategory=${ccategory}][data-childid=${cid}]`)[0],
                                         line_config
                                     )
                                 )
                             }
                         }
                     } else if (edit_config['enable_input'] && edit_config['enable_output']) {
-                        if ($(`.${key}.source_span`)[0] == null) {
+                        if (this.$p(`.${key}.source_span`)[0] == null) {
                             console.warn("Something went wrong!")
                         }
 
                         new_lines[key][id] = LeaderLine.setLine(
-                            $(`.${key}.source_span[data-id='${key}-${id}']`)[0],
-                            $(`.${key}.target_span[data-id='${key}-${id}']`)[0],
+                            this.$p(`.${key}.source_span[data-id='${key}-${id}']`)[0],
+                            this.$p(`.${key}.target_span[data-id='${key}-${id}']`)[0],
                             line_config
                         )
                         

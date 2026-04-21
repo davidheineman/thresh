@@ -13,6 +13,7 @@ export default {
         VueMarkdown
     },
     props: [
+        'panelId',
         'hits_data',
         'current_hit',
         'total_hits',
@@ -36,7 +37,8 @@ export default {
     ],
     data() {
         return {
-            showContext: false
+            showContext: false,
+            uid: this.$.uid
         }
     },
     watch: {
@@ -51,16 +53,20 @@ export default {
         }
     },
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         setup_hit_box() {
-            $(`#comment_area`).val('');
+            this.$p('.comment_area').val('');
             if ("comment" in this.hits_data[this.current_hit - 1]) {
-                $(`#comment_area`).val(this.hits_data[this.current_hit - 1]["comment"]);
+                this.$p('.comment_area').val(this.hits_data[this.current_hit - 1]["comment"]);
             }
             if (this.showConfigToggle()) {
-                $('.context-container').hide(0);
+                this.$p('.context-container').hide(0);
                 this.showContext = false;
             } else {
-                $('.context-container').show(0);
+                this.$p('.context-container').show(0);
             }
         },
         get_circle_class(n) {
@@ -112,11 +118,11 @@ export default {
         toggle_context() {
             this.showContext = !this.showContext;
             if (this.showContext) {
-                $('.context-container').hide(0);
-                $('.context-container').show(300);
+                this.$p('.context-container').hide(0);
+                this.$p('.context-container').show(300);
             } else {
-                $('.context-container').show(0);
-                $('.context-container').hide(300);
+                this.$p('.context-container').show(0);
+                this.$p('.context-container').hide(300);
             }
         },
         restart_hit() {
@@ -293,13 +299,13 @@ export default {
 
             <div class="fr hit-file-buttons">
                 <div class="mt1 mr1 fr">
-                    <input type="button" id="download-btn" @click="file_download"/>
-                    <label class="file-upload file-download br-100 w2-5 h2-5 pointer" for="download-btn" :class="{'disabled': config.disable && Object.values(config.disable).includes('download')}"><i class="fa fa-arrow-down"></i></label>
+                    <input type="button" class="download-btn-input" :id="'download-btn-' + uid" @click="file_download"/>
+                    <label class="file-upload file-download br-100 w2-5 h2-5 pointer" :for="'download-btn-' + uid" :class="{'disabled': config.disable && Object.values(config.disable).includes('download')}"><i class="fa fa-arrow-down"></i></label>
                 </div>
 
                 <div class="mt1 mr2 ml2 fr">
-                    <input type="file" id="upload-btn" @change="file_upload"/>
-                    <label class="file-upload br-100 w2-5 h2-5 pointer" for="upload-btn" :class="{'disabled': config.disable && Object.values(config.disable).includes('upload')}"><i class="fa fa-arrow-up"></i></label>
+                    <input type="file" class="upload-btn-input" :id="'upload-btn-' + uid" @change="file_upload"/>
+                    <label class="file-upload br-100 w2-5 h2-5 pointer" :for="'upload-btn-' + uid" :class="{'disabled': config.disable && Object.values(config.disable).includes('upload')}"><i class="fa fa-arrow-up"></i></label>
                 </div>
             </div>            
         </div>

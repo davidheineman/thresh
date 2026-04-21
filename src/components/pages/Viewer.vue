@@ -93,22 +93,26 @@ export default {
                     }
 
                     if (this.consumed_config.adjudication) {
-                        data = Array(this.consumed_config.adjudication).fill(data)
+                        data = Array(this.consumed_config.adjudication).fill(null).map(() => ({ "data": data }))
                     }
 
                     this.set_data(data)
                 })
             } else if (this.consumed_config.adjudication) {
                 let data = Array(this.consumed_config.adjudication).fill(null)
+                let hasAnyData = false
                 for (let idx = 1; idx < this.consumed_config.adjudication + 1; idx++) {
                     var ajudicationDParam = params.get(`d${idx}`);
                     if (ajudicationDParam) {
                         data[idx-1] = {
                             "data": await download_data(ajudicationDParam)
                         }
+                        hasAnyData = true
                     }
                 }
-                this.set_data(data)
+                if (hasAnyData) {
+                    this.set_data(data)
+                }
             } else {
                 this.set_data(data)
             }

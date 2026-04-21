@@ -13,9 +13,11 @@ export default {
     'toggle_instructions'
   ],
   mounted() {
-    $('.container').removeClass('container-extra-space')
+    const panel = this.$el?.closest('[data-panel]')
+    const $p = panel ? $(panel) : $('.container')
+    $p.removeClass('container-extra-space')
     if (this.config.prepend_instructions) {
-      $('.container').addClass('container-extra-space')
+      $p.addClass('container-extra-space')
     }
   }
 }

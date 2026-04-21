@@ -10,6 +10,7 @@ export default {
         }
     },
     props: [
+        'panelId',
         'hits_data',
         'current_hit',
         'edits_dict',
@@ -52,6 +53,10 @@ export default {
         }
     },
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         process_source_html() {
             try {
                 this.process_source_html_with_selected_span(null);
@@ -77,7 +82,7 @@ export default {
                 return
             }
 
-            let selected_category = $("input[name=edit_cotegory]:checked").val();
+            let selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val();
             let selection = window.getSelection();
             let txt = this.hits_data[this.current_hit - 1].source
             let range = selection.getRangeAt(0)
@@ -91,7 +96,7 @@ export default {
                 return;
             }
 
-            $('#source-sentence').addClass(`select-color-${selected_category}`)
+            this.$p('#source-sentence').addClass(`select-color-${selected_category}`)
 
             let split_chars = [' ', '\n']
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
@@ -150,7 +155,7 @@ export default {
             if (!this.hit_box_config.enable_select_source_sentence) {
                 return
             }
-            $("#source-sentence").html(this.hits_data[this.current_hit - 1].source)
+            this.$p("#source-sentence").html(this.hits_data[this.current_hit - 1].source)
             this.source_html = this.hits_data[this.current_hit - 1].source
         }
     },

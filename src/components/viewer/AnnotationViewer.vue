@@ -5,6 +5,7 @@ import EditList from "./EditList.vue";
 <script>
 export default {
     props: [
+        'panelId',
         'hits_data',
         'set_hits_data',
         'current_hit',
@@ -25,13 +26,17 @@ export default {
         return {}
     },
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         add_an_edit() {
             if (this.editor_open) {
-                $('#add_an_edit').slideUp(300);
-                $(".add_button .icon-default").removeClass("open")
+                this.$p('#add_an_edit').slideUp(300);
+                this.$p(".add_button .icon-default").removeClass("open")
             } else {
-                $('#add_an_edit').slideDown(300);
-                $(".add_button .icon-default").addClass("open")
+                this.$p('#add_an_edit').slideDown(300);
+                this.$p(".add_button .icon-default").addClass("open")
             }
             this.set_editor_state(!this.editor_open)
         },

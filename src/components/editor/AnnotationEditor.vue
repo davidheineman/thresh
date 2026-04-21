@@ -6,6 +6,7 @@
 <script>
 export default {
     props: [
+        'panelId',
         'edits_dict',
         'hits_data',
         'current_hit',
@@ -45,9 +46,12 @@ export default {
         }
     },
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         fix_edit_box_formatting() {
-            // Fix edit box formatting
-            let editBoxes = $(".edit-box label");
+            let editBoxes = this.$p(".edit-box label");
             let heightDiff = 0;
             let maxHeight = 0;
             for (let i = 0; i < editBoxes.length; i++) {
@@ -58,8 +62,8 @@ export default {
                 }
             }
             if (heightDiff > 0) {
-                $(".edit-box label").css('justify-content', 'flex-start');
-                $(".edit-box label").css('height', maxHeight-24 + "px");
+                this.$p(".edit-box label").css('justify-content', 'flex-start');
+                this.$p(".edit-box label").css('height', maxHeight-24 + "px");
             }
         },
         parse_options(edit_config) {
@@ -87,16 +91,16 @@ export default {
             this.force_update = !this.force_update
         },
         cancel_click() {
-            $(".icon-default").removeClass("open")
+            this.$p(".icon-default").removeClass("open")
             this.refresh_edit();
         },
         save_click() {
             let new_hits_data = _.cloneDeep(this.hits_data);
 
-            $(".icon-default").removeClass("open")
+            this.$p(".icon-default").removeClass("open")
             this.set_editor_state(!this.editor_open)
             
-            let selected_category = $("input[name=edit_cotegory]:checked").val();
+            let selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val();
             const edits_data = new_hits_data[this.current_hit - 1].edits
 
             // Get highest key
@@ -161,7 +165,7 @@ export default {
         },
         cancel_annotation_click(category, e) {
             const id = this.annotating_edit_span_category_id
-            $(".icon-default").removeClass("open")
+            this.$p(".icon-default").removeClass("open")
 
             this.reset_annotation_colors(category, id)
             this.set_hits_data(_.cloneDeep(this.hits_data))
@@ -222,8 +226,8 @@ export default {
                 border_class = `border-${category}`
             }
 
-            let spans = $(`.${category}[data-id=${category}-${id}]`)
-            let below_spans= $(`.${category}_below[data-id=${category}-${id}]`)
+            let spans = this.$p(`.${category}[data-id=${category}-${id}]`)
+            let below_spans= this.$p(`.${category}_below[data-id=${category}-${id}]`)
             below_spans.addClass(color_class)
             spans.removeClass(`white bg-${category} bg-${category}-light`)
             spans.addClass(border_class)
@@ -240,29 +244,29 @@ export default {
             let classList = this.config.edits.map(function(edit) {
                 return `txt-${edit.name}`;
             }).join(' ');
-            $(".annotation-icon").removeClass(classList);
+            this.$p(".annotation-icon").removeClass(classList);
 
             for (let cat of classList) {
-                $('#source-sentence').removeClass(`select-color-${cat}`)
-                $('#target-sentence').removeClass(`select-color-${cat}`)
+                this.$p('#source-sentence').removeClass(`select-color-${cat}`)
+                this.$p('#target-sentence').removeClass(`select-color-${cat}`)
             }
 
-            $("input[name=edit_cotegory]").prop("checked", false);
-            $(".checkbox-tools").prop("checked", false);
-            $(".checkbox-tools-yes-no").prop("checked", false);
-            $('.question-textbox').val('');
-            $('.question-textarea').val('');
-            $('.quality-selection').slideUp(300);
-            $(".span-selection-div").hide(300);
+            this.$p(`input[name=edit_cotegory_${this.panelId}]`).prop("checked", false);
+            this.$p(".checkbox-tools").prop("checked", false);
+            this.$p(".checkbox-tools-yes-no").prop("checked", false);
+            this.$p('.question-textbox').val('');
+            this.$p('.question-textarea').val('');
+            this.$p('.quality-selection').slideUp(300);
+            this.$p(".span-selection-div").hide(300);
 
-            $(".child-question").hide();
+            this.$p(".child-question").hide();
 
             this.edit_state = this.initalize_edit_state()
             this.refresh_interface_edit()
         },
         show_span_selection(e) {
-            $(`.span-selection-div`).hide();
-            $(`.span-selection-div[data-category=${e.target.value}]`).show();
+            this.$p(`.span-selection-div`).hide();
+            this.$p(`.span-selection-div[data-category=${e.target.value}]`).show();
             const edit_config = this.getEditConfig(e.target.value);
 
             this.refresh_interface_edit()
@@ -300,13 +304,13 @@ export default {
             const edit_config = this.getEditConfig(category)
 
             if (!this.editor_open) { return true }
-            if (!$(`.quality-selection[data-category=${category}]`).is(':visible')) { return true }
+            if (!this.$p(`.quality-selection[data-category=${category}]`).is(':visible')) { return true }
             if (!edit_config || !edit_config.annotation) { return false }
 
             let filled_out = true
 
             for (let question of edit_config.annotation) {
-                const q_object = $(`#question_${category}_${question.name}`)
+                const q_object = this.$p(`#question_${category}_${question.name}`)
                 if (q_object == undefined || q_object == {} || q_object.length == 0) { continue }
                 const annotation = this.edit_state[category][question.name]
 
@@ -333,7 +337,7 @@ export default {
         add_edit_disabled() {
             if (!this.editor_open) { return true }
             const selected_state = this.selected_state;
-            const selected_category = $("input[name=edit_cotegory]:checked").val();
+            const selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val();
             const config_category = this.config.edits.find((edit) => edit.name === selected_category)
             if (selected_category == undefined || config_category == undefined) { return true }
 
@@ -380,9 +384,9 @@ export default {
                         </p>
                         <div class="tc mb3">
                             <div v-for="item in config.edits" :key="item.id" class="edit-box mr2 dib">
-                                <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" name="edit_cotegory"
-                                    :id="`edit_cotegory-${item.name}`" :value="item.name">
-                                <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}`">
+                                <input @click="show_span_selection" class="checkbox-tools-edit-category checkbox-tools" type="radio" :name="'edit_cotegory_' + panelId"
+                                    :id="`edit_cotegory-${item.name}-${panelId}`" :value="item.name">
+                                <label :class="`txt-${item.name}`" :for="`edit_cotegory-${item.name}-${panelId}`">
                                     <i :class="`fa-solid ${item.icon} fa-1-5x mb1`"></i>
                                     {{ item.label }}
                                 </label>
@@ -437,7 +441,7 @@ export default {
                         <div class="row">
                             <div v-for="question in item.annotation" :key="question.id">
                                 <Question :edit_state="edit_state" :empty_question_state="empty_edit_state[item.name][question.name]" :question_state="edit_state[item.name][question.name]" :question="question" :edit_type="item" :set_edit_state="set_edit_state"
-                                    :config="config" :parent_show_next_question="null" isRoot=true :ref="`${item.name}_${question.name}`" :force_update="force_update_f" />
+                                    :config="config" :panelId="panelId" :parent_show_next_question="null" isRoot=true :ref="`${item.name}_${question.name}`" :force_update="force_update_f" />
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,7 @@
 <script>
 export default {
     props: [
+        'panelId',
         'edit_state',
         'question',
         'edit_type',
@@ -48,23 +49,25 @@ export default {
         } 
     },
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         has_children() {
             return this.isObject(this.question.options)
         },
         show_next_question(e) {
             let selected_val = e.target.value
             if (this.has_children()) {
-                // Hide other children
                 for (let i = 0; i < this.question.options.length; i++) {
                     let option = this.question.options[i];
                     let child_div = `.${this.div_name}-${option.name}`
-                    $(child_div).hide(300);
+                    this.$p(child_div).hide(300);
                 }
 
-                // Show options of selected child
                 let child_div = `.${this.div_name}-${selected_val}`
-                if (!$(child_div).is(":visible")) {
-                    $(child_div).slideDown(300);
+                if (!this.$p(child_div).is(":visible")) {
+                    this.$p(child_div).slideDown(300);
                 }
             } else {
                 // else recurse upwards
@@ -153,9 +156,9 @@ export default {
             <p class="mb3 b tracked-light">{{ question.question }}</p>
             <div class="tc" >
                 <div :class="`column-severity wmin-${col_size}`" v-for="option in question.options" :key="option.id">
-                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="question.name"
-                        :id="`${div_name}-${option.name}`" :value="option.name" @input="update_edit_state($event.target.value)">
-                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-${option.name}`">
+                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="question.name + '_' + panelId"
+                        :id="`${div_name}-${option.name}-${panelId}`" :value="option.name" @input="update_edit_state($event.target.value)">
+                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-${option.name}-${panelId}`">
                         {{ option.label }}
                     </label>
                 </div>
@@ -164,7 +167,7 @@ export default {
             <div v-for="child in question.options" :key="child.id">
                 <Question :edit_state="edit_state" :question_state="child_state(child)" :empty_question_state="empty_child_state(child)" :question="child" :edit_type="edit_type" :set_edit_state="set_edit_state" 
                     :parent_show_next_question="show_next_question" isRoot=false :update_edit_state_parent="update_edit_state_child"
-                    :parent_div_name="div_name" :config="config" />
+                    :parent_div_name="div_name" :config="config" :panelId="panelId" />
             </div>
         </div>
 
@@ -173,23 +176,23 @@ export default {
             <p class="mb3 b tracked-light">{{ question.question }}</p>
             <div class="tc">
                 <div class="column-severity w-33">
-                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="`${div_name}-severity`"
-                        :id="`${div_name}-severity-1`" value="minor" @input="update_edit_state($event.target.value)">
-                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-severity-1`">
+                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="`${div_name}-severity-${panelId}`"
+                        :id="`${div_name}-severity-1-${panelId}`" value="minor" @input="update_edit_state($event.target.value)">
+                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-severity-1-${panelId}`">
                         {{ config.interface_text.questions.likert_1 }}
                     </label>
                 </div>
                 <div class="column-severity w-33">
-                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="`${div_name}-severity`"
-                        :id="`${div_name}-severity-2`" value="somewhat" @input="update_edit_state($event.target.value)">
-                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-severity-2`">
+                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="`${div_name}-severity-${panelId}`"
+                        :id="`${div_name}-severity-2-${panelId}`" value="somewhat" @input="update_edit_state($event.target.value)">
+                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-severity-2-${panelId}`">
                         {{ config.interface_text.questions.likert_2 }}
                     </label>
                 </div>
                 <div class="column-severity w-33">
-                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="`${div_name}-severity`"
-                        :id="`${div_name}-severity-3`" value="a lot" @input="update_edit_state($event.target.value)">
-                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-severity-3`">
+                    <input @click="show_next_question" class="checkbox-tools checkbox-tools-severity " type="radio" :name="`${div_name}-severity-${panelId}`"
+                        :id="`${div_name}-severity-3-${panelId}`" value="a lot" @input="update_edit_state($event.target.value)">
+                    <label :class="`for-checkbox-tools-severity question-${edit_type.name}`" :for="`${div_name}-severity-3-${panelId}`">
                         {{ config.interface_text.questions.likert_3 }}
                     </label>
                 </div>
@@ -199,14 +202,14 @@ export default {
         <!-- If the question is binary -->
         <div v-if="question.options === 'binary'">
             <p class="mt0 pt2 mb3 b tracked-light"> {{ question.question }}
-                <input class="checkbox-tools-yes-no" type="radio" :name="`${div_name}-yes-no`"
-                    :id="`${div_name}-yes`" value="yes" @input="update_edit_state($event.target.value)">
-                <label :class="`normal for-checkbox-tools-yes-no question-${edit_type.name}`" :for="`${div_name}-yes`">
+                <input class="checkbox-tools-yes-no" type="radio" :name="`${div_name}-yes-no-${panelId}`"
+                    :id="`${div_name}-yes-${panelId}`" value="yes" @input="update_edit_state($event.target.value)">
+                <label :class="`normal for-checkbox-tools-yes-no question-${edit_type.name}`" :for="`${div_name}-yes-${panelId}`">
                     {{ config.interface_text.questions.binary_yes }}
                 </label>
-                <input class="checkbox-tools-yes-no" type="radio" :name="`${div_name}-yes-no`"
-                    :id="`${div_name}-no`" value="no" @input="update_edit_state($event.target.value)">
-                <label :class="`normal for-checkbox-tools-yes-no question-${edit_type.name}`" :for="`${div_name}-no`">
+                <input class="checkbox-tools-yes-no" type="radio" :name="`${div_name}-yes-no-${panelId}`"
+                    :id="`${div_name}-no-${panelId}`" value="no" @input="update_edit_state($event.target.value)">
+                <label :class="`normal for-checkbox-tools-yes-no question-${edit_type.name}`" :for="`${div_name}-no-${panelId}`">
                     {{ config.interface_text.questions.binary_no }}
                 </label>
             </p>
@@ -215,10 +218,10 @@ export default {
         <!-- If the question is an inline text box -->
         <div v-if="question.options === 'textbox'" class="flex items-center mt2">
             <p class="mb3 b tracked-light">{{ question.question }}</p>
-            <input type="text" class="question-textbox" :name="`${div_name}-textbox`" :id="`${div_name}`" 
+            <input type="text" class="question-textbox" :name="`${div_name}-textbox-${panelId}`" :id="`${div_name}-${panelId}`" 
                 :placeholder="config.interface_text.questions.textbox_placeholder" @input="update_edit_state($event.target.value)"
                 :class="`db border-box hover-black ba b--black-20 pa2 br2 ml3 flex-auto`" />
-            <label :class="`normal for-question-textbox question-${edit_type.name}`" :for="`${div_name}`"></label>
+            <label :class="`normal for-question-textbox question-${edit_type.name}`" :for="`${div_name}-${panelId}`"></label>
             
         </div>
 
@@ -226,9 +229,9 @@ export default {
         <div v-if="question.options === 'textarea'">
             <p class="mt0 pt2 mb3 b tracked-light"> {{ question.question }}</p>
 
-            <textarea class="question-textarea" :name="`${div_name}-textarea`" :id="`${div_name}`" :placeholder="config.interface_text.questions.textbox_placeholder" 
+            <textarea class="question-textarea" :name="`${div_name}-textarea-${panelId}`" :id="`${div_name}-${panelId}`" :placeholder="config.interface_text.questions.textbox_placeholder" 
                 @input="update_edit_state($event.target.value)" :class="`db border-box hover-black w-100 ba b--black-20 pa2 br2 mb2`" />
-            <label :class="`normal for-question-textarea question-${edit_type.name}`" :for="`${div_name}`"></label>
+            <label :class="`normal for-question-textarea question-${edit_type.name}`" :for="`${div_name}-${panelId}`"></label>
         </div>
     </div>
 </template>
