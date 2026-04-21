@@ -93,7 +93,7 @@ export default {
                     }
 
                     if (this.consumed_config.adjudication) {
-                        data = Array(this.consumed_config.adjudication).fill(data)
+                        data = Array(this.consumed_config.adjudication).fill(null).map(() => ({ "data": data }))
                     }
 
                     this.set_data(data)

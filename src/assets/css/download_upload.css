@@ -11,7 +11,7 @@
     /* font-size: 100px; */
   }
 
-  #download-btn {
+  .download-btn-input {
     position: absolute;
     width: 0;
     height: 0;
@@ -21,7 +21,7 @@
     box-sizing: border-box;
   }
 
-  #upload-btn {
+  .upload-btn-input {
     position: absolute;
     width: 0;
     height: 0;

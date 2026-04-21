@@ -12,6 +12,7 @@ export default {
         }
     },
     props: [
+        'panelId',
         'hits_data',
         'current_hit',
         'edits_dict',
@@ -33,6 +34,10 @@ export default {
         'selected_state',
     ],
     methods: {
+        $p(selector) {
+            const panel = this.$el?.closest('[data-panel]')
+            return panel ? $(panel).find(selector) : $(selector)
+        },
         process_edit_list(edits, sent_type) {
             edits = edits.map(edit => {
                 let flattened_edits = []
@@ -108,7 +113,7 @@ export default {
             return undefined
         },
         hover_span(e) {
-            if ($(".quality-selection").is(":visible")) {
+            if (this.$p(".quality-selection").is(":visible")) {
                 return
             }
 
@@ -125,8 +130,8 @@ export default {
                 color_class = "rgba(33, 134, 235, 1.0)"
             }
 
-            let spans = $(`.${category}[data-id=${id}]`)
-            let below_spans= $(`.${category}_below[data-id=${id}]`)
+            let spans = this.$p(`.${category}[data-id=${id}]`)
+            let below_spans= this.$p(`.${category}_below[data-id=${id}]`)
             spans.addClass(`white ${color_code}`)
             below_spans.addClass(`white ${color_code}`)
             below_spans.removeClass(`txt-${category} txt-${category}-light`)
@@ -138,7 +143,7 @@ export default {
             } catch (e) { console.log(e) }
         },
         un_hover_span(e) {
-            if ($(".quality-selection").is(":visible")) {
+            if (this.$p(".quality-selection").is(":visible")) {
                 return
             }
 
@@ -155,8 +160,8 @@ export default {
                 color_class = `txt-${category}`
             }
 
-            let spans = $(`.${category}[data-id=${id}]`)
-            let below_spans= $(`.${category}_below[data-id=${id}]`)
+            let spans = this.$p(`.${category}[data-id=${id}]`)
+            let below_spans= this.$p(`.${category}_below[data-id=${id}]`)
             below_spans.addClass(color_class)
             spans.removeClass(`white bg-${category} bg-${category}-light`)
             below_spans.removeClass(`white bg-${category} bg-${category}-light`)
@@ -178,7 +183,7 @@ export default {
             const id = e.target.dataset.id
             const real_id = id.split("-")[1]
 
-            if ($(".quality-selection").is(":visible")) {
+            if (this.$p(".quality-selection").is(":visible")) {
                 if (this.getEditConfig(category)['type'] && this.getEditConfig(category)['type'] == 'composite') { return }
 
                 const selected_span = this.hits_data[this.current_hit - 1]['edits'].find(function(entry) {
@@ -191,7 +196,7 @@ export default {
                 }) === undefined ? false : true;
                 
                 // Rules for selecting split signs
-                if ($("input[name=edit_cotegory]:checked").val() == 'split') {
+                if (this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val() == 'split') {
                     let normal_id = parseInt(real_id) + 1
                     if (e.target.classList.contains(`split-sign`)) {
                         if (normal_id == 1) {
@@ -226,7 +231,7 @@ export default {
                 this.set_edit_html(new_edit_html)
             } else {
                 // This provides the default behavior: simply triggering another action
-                $(`.annotation-icon[data-id=${id}]`).click()
+                this.$p(`.annotation-icon[data-id=${id}]`).click()
             }
         },
         render_selected_constituent_edit(edit) {
@@ -275,9 +280,9 @@ export default {
         },
         handle_tokenization_rendering() { 
             if (this.config.tokenization && this.config.tokenization == 'tokenized') {
-                $('span#source-sentence, span#target-sentence, .edit-text, .selected-span-text').addClass('hide-tokenization-chars')
+                this.$p('span#source-sentence, span#target-sentence, .edit-text, .selected-span-text').addClass('hide-tokenization-chars')
             } else {
-                $('span#source-sentence, span#target-sentence, .edit-text, .selected-span-text').removeClass('hide-tokenization-chars')
+                this.$p('span#source-sentence, span#target-sentence, .edit-text, .selected-span-text').removeClass('hide-tokenization-chars')
             }
         },
         render_sentence(sent, sent_type, span_class, selected_category) {

@@ -46,6 +46,9 @@ export default {
                 this.set_config(yml_template)
                 new_hits_data = new_hits_data.filter(i => !("_thresh_template" in i));
             }
+            if (this.consumed_config.adjudication) {
+                new_hits_data = Array(this.consumed_config.adjudication).fill(null).map(() => ({ "data": new_hits_data }))
+            }
             this.set_data(new_hits_data)
             // this.filelist = [...this.$refs.file.files];
         },
@@ -85,6 +88,9 @@ export default {
                 file_path = `data/${tmp_name}.json`
             }
             download_data(file_path).then((data) => {
+                if (this.consumed_config.adjudication) {
+                    data = Array(this.consumed_config.adjudication).fill(null).map(() => ({ "data": data }))
+                }
                 this.set_data(data)
             })
         }
