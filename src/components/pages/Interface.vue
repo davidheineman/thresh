@@ -67,6 +67,7 @@
     },
     methods: {
         consume_data() {
+          if (!this.input_data || !this.input_data.data) { return }
           let data = _.cloneDeep(this.input_data.data);
           this.set_hits_data(data)
           this.set_hit(1)
