@@ -6,8 +6,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && cpy dist/index.html . --rename=404.html && cpy CNAME dist --rename=CNAME && git add -f ./dist && git commit -m 'deploy' && git subtree push --prefix dist origin gh-pages",
-    "redeploy": "git push origin --delete gh-pages && git push origin && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@monaco-editor/loader": "^1.3.3",
